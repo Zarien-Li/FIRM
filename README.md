@@ -26,6 +26,15 @@
   <a href="skills/INDEX.md"><strong>Browse the skills</strong></a>
 </p>
 
+<p align="center">
+  <img src="assets/firm-field-tested.png" width="100%" alt="FIRM field record: 100B+ model tokens, 3 research papers, 9 official ARR reviews, and mean overall assessments of 3.50, 3.33, and 3.17">
+</p>
+
+<p align="center">
+  <strong>Not a weekend prompt pack.</strong> FIRM was repeatedly rebuilt inside
+  long-running research programs, then tested against the mistakes those programs actually made.
+</p>
+
 ---
 
 Most auto-research systems reward motion: more searches, more jobs, more files,
@@ -105,33 +114,29 @@ The cases are sanitized composites distilled from recurring behavior in real
 research programs. They are decision patterns, not claims that one prompt
 guarantees a paper.
 
-## Built From Field Failure
+## Why 100B+ Tokens Matter
 
-| **100B+** | **17** | **3** |
-|:---:|:---:|:---:|
-| model tokens across live research | focused research skills | ARR-reviewed submissions |
+The scale is not decoration. It is the failure dataset behind FIRM. Across
+long-running projects, we watched research agents close fields after one bad
+realization, multiply seeds after a design failure, drift from important
+programs into private cells, and write polished papers before checking decisive
+controls. The skills were revised, merged, or deleted whenever those failures
+showed that the system itself was teaching the wrong research behavior.
 
-The token count is not a benchmark. It is the stress test that exposed where
-long-horizon research agents repeatedly lose judgment. Rules were revised,
-merged, or deleted when experience showed that they created rigidity,
-premature closure, seed theater, or endless research.
+## Official External Evidence
 
-Three submissions developed under successive workflow versions received mean
-official ACL ARR reviewer scores of **3.50**, **3.33**, and **3.17**. This is an
-external signal, not an acceptance claim or a controlled estimate of FIRM's
-causal effect.
-
-<details>
-<summary><strong>View the official-review evidence and exact limitations</strong></summary>
-
-At the time of the captured ACL ARR 2026 May dashboard, one submission had
-been withdrawn and none had received a recommendation.
+Three papers developed under successive workflow versions received **nine
+official ACL ARR reviews**, with mean overall assessments of **3.50**,
+**3.33**, and **3.17**.
 
 <p align="center">
   <img src="assets/arr-2026-may-review-evidence.png" width="720" alt="ACL ARR official review scores">
 </p>
 
-</details>
+At the time of the captured ACL ARR 2026 May dashboard, one submission had
+been withdrawn and none had received a recommendation. These scores are
+external evidence that the workflow was used to produce serious research, not
+a controlled estimate of FIRM's causal effect.
 
 ## Skill System
 

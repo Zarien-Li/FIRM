@@ -10,6 +10,7 @@ required=(
   NOTICE
   FAILURE_MAP.md
   assets/firm-hero.png
+  assets/firm-field-tested.png
   assets/firm-five-decisions.png
   assets/arr-2026-may-review-evidence.png
   docs/ORIGIN_AND_DESIGN.md
