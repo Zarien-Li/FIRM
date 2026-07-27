@@ -72,7 +72,7 @@
 
 - [x] Lock the repository identity as `Zoiya-Li/ResearcherOS`.
 - [x] Restore GitHub authentication for `Zoiya-Li`.
-- [ ] Approve creation of the public repository and its license visibility.
+- [x] Approve creation of the public repository and its license visibility.
 - [ ] Provide publishable evidence or preferred wording for the three ARR
   reviewer-score claims.
 - [ ] Record the real Claude Code response and voice-over for the 90-second
@@ -91,8 +91,8 @@
 ## After Repository Creation
 
 - [x] Replace repository placeholders with the canonical URL.
-- [ ] Initialize Git, commit, push, and verify the public repository in an
-  incognito browser.
-- [ ] Test `git clone` plus `bash install.sh` in a clean temporary home.
+- [x] Initialize Git, commit, push, and verify the public repository with a
+  clean public clone.
+- [x] Test `git clone` plus `bash install.sh` in a clean temporary home.
 - [ ] Add the final MP4/GIF/WebM demo asset and link it from README.
 - [ ] Create release `v1.0.0` with a concise changelog.
