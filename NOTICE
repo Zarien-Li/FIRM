@@ -1,0 +1,18 @@
+ResearcherOS
+Copyright (c) 2026 ResearcherOS contributors
+
+This project was developed independently and is not an official ARIS
+distribution. Selected workflow concepts and portions of its skill lineage
+were adapted from:
+
+  ARIS (Auto-Research-In-Sleep)
+  https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+  Copyright (c) 2026 wanshuiyin
+  Licensed under the MIT License
+
+ARIS also provides the technical report:
+
+  "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration"
+  https://arxiv.org/abs/2605.03042
+
+The upstream copyright and permission notice are preserved in LICENSE.

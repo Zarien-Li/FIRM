@@ -1,0 +1,22 @@
+.DS_Store
+*.swp
+*.tmp
+
+# Private session and conversation exports
+codex-chat*.md
+open-sessions*.md
+extract_*chat*.py
+
+# Runtime traces and local state
+.research-skills/
+.claude/
+__pycache__/
+.DS_Store
+*.swp
+*.swo
+*~
+.researcheros-backup-*/
+demo/*.mp4
+demo/*.mov
+demo/*.webm
+demo/*.gif
