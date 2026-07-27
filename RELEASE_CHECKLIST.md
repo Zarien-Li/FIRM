@@ -47,7 +47,7 @@
 ## D-2: Evidence And Integrity Audit
 
 - **Owner:** provide publishable support or revised wording for the three ARR
-  reviewer-score claims.
+  reviewer-score claims. Completed with the official-review dashboard capture.
 - **Codex:** run the release checker, attribution/license audit, secret/path
   scan, and claim-language audit.
 - **Exit condition:** no unresolved URL, private path, credential, unsupported
@@ -73,7 +73,7 @@
 - [x] Lock the repository identity as `Zoiya-Li/ResearcherOS`.
 - [x] Restore GitHub authentication for `Zoiya-Li`.
 - [x] Approve creation of the public repository and its license visibility.
-- [ ] Provide publishable evidence or preferred wording for the three ARR
+- [x] Provide publishable evidence and bounded wording for the three ARR
   reviewer-score claims.
 - [ ] Record the real Claude Code response and voice-over for the 90-second
   demo. The script and fixture are ready; a real response should not be faked.

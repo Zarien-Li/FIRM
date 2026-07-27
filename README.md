@@ -37,7 +37,7 @@ recognize when an honest paper is ready.
 |---|---|
 | **Since 2025** | Began as an exploration of whether long-horizon auto-research could become a company |
 | **100B+ model tokens** | Rewritten through live research programs, not a handful of demonstrations |
-| **Three ARR-reviewed papers** | Successive workflow versions supported papers receiving mean scores of **3.50, 3.33, and 3.17** |
+| **Three ARR-reviewed submissions** | Work developed under successive workflow versions received mean official-review scores of **3.50, 3.33, and 3.17** |
 | **ARIS lineage** | Selected foundations were adapted from ARIS; the current system is an independent, unofficial field evolution |
 
 > **Star ResearcherOS if you would rather inherit these lessons than pay to rediscover them.**
@@ -205,12 +205,18 @@ For the original project and technical report:
 
 ## Evidence, Not A Promise
 
-Three papers developed under successive versions of this workflow received mean reviewer scores
-of **3.50**, **3.33**, and **3.17** in ACL Rolling Review.
+Three submissions developed under successive versions of this workflow received mean official
+reviewer scores of **3.50**, **3.33**, and **3.17** in the ACL ARR 2026 May cycle.
 
 These scores are external evidence that the workflow has supported research artifacts evaluated
 by real reviewers. They are not an acceptance guarantee, a controlled causal estimate of the
-skills, or a claim that every research program will succeed.
+skills, or a claim that every research program will succeed. At the time of the captured
+dashboard, one submission had been withdrawn and none had received a recommendation.
+
+![ACL ARR 2026 May official-review score evidence](assets/arr-2026-may-review-evidence.png)
+
+<sub>Official-review dashboard evidence supplied by the project owner. Reviewer identifiers are
+anonymous system codes; paper titles and author identities are not shown.</sub>
 
 The more important evidence is developmental: the current rules preserve lessons from many
 projects that did not work cleanly. Negative results are useful here only when they improve the
@@ -238,8 +244,9 @@ researcher, not when they are repackaged as success.
 钻牛角尖、混淆忙碌与进展，并在不知不觉间把一个重要研究方向做成无人关心的小问题。你下载的
 不只是 17 个 Markdown 文件，而是一张用 100B+ token 的真实研究代价换来的 failure map。
 
-真正开源的是从这些长期成败中蒸馏出的研究判断。其不同版本已经支持三篇论文在 ARR 获得平均
-**3.50 / 3.33 / 3.17** 的评审分数。我们不能承诺录用，但愿意公开这套系统如何在真实失败中
+真正开源的是从这些长期成败中蒸馏出的研究判断。使用不同版本工作流形成的三个 ARR 投稿获得了
+平均 **3.50 / 3.33 / 3.17** 的官方评审分数。截图时其中一个投稿已撤稿，三个投稿均未获得
+recommendation；这些分数不是录用证明或因果效果估计。我们愿意公开这套系统如何在真实失败中
 成长，也欢迎社区继续挑战和改进它。
 
 ## Included Skills
