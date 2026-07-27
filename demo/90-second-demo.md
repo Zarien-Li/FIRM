@@ -3,6 +3,9 @@
 Target duration: 85-90 seconds. Record at 1920x1080 or 1440x900 with terminal
 font at least 18 px. Use captions even when voice-over is present.
 
+Run `make demo` for the timed 90-second terminal storyboard. Use
+`DEMO_SPEED=0 bash demo/demo.sh` for an instant rehearsal.
+
 ## Timeline And Voice-Over
 
 ### 0-8s: The problem

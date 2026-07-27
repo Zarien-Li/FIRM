@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SPEED="${DEMO_SPEED:-1}"
+SPEED="${DEMO_SPEED:-3}"
 
 pause() {
   sleep "$1"
