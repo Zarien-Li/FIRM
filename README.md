@@ -201,6 +201,23 @@ ARIS authors. Attribution is preserved in [NOTICE](NOTICE).
 Read the [long-form origin, design rationale, evidence, and ARIS
 relationship](docs/ORIGIN_AND_DESIGN.md).
 
+## Field Notes
+
+| Period | Milestone |
+|---|---|
+| **2025** | The project began as a sustained attempt to make AI agents carry real research responsibility across many failed and revised hypotheses. |
+| **2026 H1** | Three human-verified papers developed under successive workflow versions received nine official ACL ARR reviews, with mean overall assessments of **3.50**, **3.33**, and **3.17**. Only aggregate scores are reported while paper identities and review metadata remain private. |
+| **2026-07-27** | After more than **100B model tokens** of live research, the most durable lessons were consolidated into FIRM: 17 focused skills, a failure map, project onboarding, and an independent second-PI workflow. |
+
+### Human Accountability
+
+FIRM is designed to improve research judgment, not automate submission volume
+or use peer review as a debugging endpoint. Every paper included in the review
+record was manually checked by a human author before submission. Human authors
+reviewed the final manuscript, its claims, supporting evidence and provenance,
+citations, and the decision to submit. Nothing was submitted automatically;
+scientific and publication responsibility remained with the authors.
+
 <details>
 <summary><strong>中文简介</strong></summary>
 
@@ -210,6 +227,10 @@ relationship](docs/ORIGIN_AND_DESIGN.md).
 它不是保证论文产出的固定流程，而是一组经过长期真实研究反复修改的
 skills：防止重要 seed 漂移成无人关心的小问题，区分设计失败与统计不确定性，
 让 probe 服务于方法设计，在写作前完成证据审计，并在贡献成熟时及时收获。
+
+FIRM 不把同行评审当作自动化测试集。计入上述评审记录的每篇论文都由人类作者
+在投稿前核对最终稿、研究主张、支撑证据及其来源、引用和投稿决定；没有论文被
+Agent 自动提交，科研与发表责任始终由作者承担。
 
 </details>
 
