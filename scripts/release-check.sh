@@ -9,7 +9,9 @@ required=(
   LICENSE
   NOTICE
   FAILURE_MAP.md
+  assets/firm-hero.png
   assets/arr-2026-may-review-evidence.png
+  docs/ORIGIN_AND_DESIGN.md
   install.sh
   scripts/verify-install.sh
   examples/README.md
