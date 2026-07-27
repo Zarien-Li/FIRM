@@ -203,11 +203,20 @@ relationship](docs/ORIGIN_AND_DESIGN.md).
 
 ## Field Notes
 
-| Period | Milestone |
+This is the development log that matters: not every new feature, but the moments
+when live research forced us to reject part of our own operating model.
+
+| Period | Major turn |
 |---|---|
-| **2025** | The project began as a sustained attempt to make AI agents carry real research responsibility across many failed and revised hypotheses. |
-| **2026 H1** | Three human-verified papers developed under successive workflow versions received nine official ACL ARR reviews, with mean overall assessments of **3.50**, **3.33**, and **3.17**. Only aggregate scores are reported while paper identities and review metadata remain private. |
-| **2026-07-27** | After more than **100B model tokens** of live research, the most durable lessons were consolidated into FIRM: 17 focused skills, a failure map, project onboarding, and an independent second-PI workflow. |
+| **2025 · Original thesis** | We learned that keeping an agent running is easier than keeping it scientifically responsible. The goal changed from an autonomous loop to a persistent first author grounded in durable evidence. |
+| **2025–early 2026 · Workflow foundation** | Portable skills, artifacts, and cross-model review made long research possible. Selected ARIS foundations became the starting scaffold, not a permanent architecture. |
+| **2026 H1 · State-machine break** | The early S0–S6 state machine, kill ledgers, and cheap-falsifier gates made agents obey workflow verdicts instead of reinterpreting science. Permanent terminal labels and stage permissions were deleted. |
+| **2026 H1 · Method-formation break** | One failed realization was closing whole method families, while competent negative designs triggered wasteful seed expansion. FIRM separated run, realization, primitive, and family failure, then made constructive redesign the default response to design evidence. |
+| **2026 H1 · Value and scope break** | Broad programs kept shrinking into private cells, and failed methods were being repackaged as analysis papers. Program/paper separation, value spine, scope debt, reintegration, and the analysis-paper deletion test were introduced. |
+| **2026 H1 · Evidence and harvest break** | Baseline, scorer, provenance, and control failures arrived after drafts hardened, while moving standards kept mature work unfinished. Evidence integrity moved earlier; candidate claims and independent paper entry made finishing part of research. |
+| **2026 H1 · Second-PI break** | Codex was being used late as a stop judge, and MCP outages were allowed to pause research. Review moved upstream into `Prize/Fidelity → Interpret → Invent → Attack → Decide`; infrastructure failure lost scientific authority. |
+| **2026 H1 · External checkpoint** | Three human-verified papers developed under successive versions received nine official ACL ARR reviews, with mean overall assessments of **3.50**, **3.33**, and **3.17**. Only aggregate scores are public. |
+| **2026-07-27 · Consolidation** | After more than **100B model tokens**, overlapping skills and audits were reduced to one persistent researcher, 17 focused tools, a failure map, project onboarding, and a tested first-run path. |
 
 ### Human Accountability
 

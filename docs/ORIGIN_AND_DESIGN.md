@@ -65,6 +65,25 @@ We originally considered keeping that accumulated judgment proprietary. We are o
 because the most useful part is not a hidden platform. It is the inspectable record of what agents
 repeatedly get wrong, and the compact set of instructions that helped them recover.
 
+## Development Evolution
+
+The project did not improve by accumulating more rules. Its important versions were created when
+real projects falsified part of the operating model:
+
+| Period | Failure in the current design | Durable correction |
+|---|---|---|
+| **2025** | The first thesis optimized autonomous continuation, but an agent could continue for a long time while losing contact with scientific value. | Persistent ownership and evidence became more important than uninterrupted looping. |
+| **2025–early 2026** | Portable workflows and artifacts enabled longer research, then grew into increasingly fine-grained stages and permissions. | ARIS-informed foundations were retained, while their role was narrowed to infrastructure for a more independent researcher. |
+| **2026 H1: state-machine stress** | S0–S6, kill ledgers, and cheap-falsifier gates turned provisional agent judgments into binding research law. | Stage authority and permanent terminal labels were deleted; specialist skills became tools used by one researcher. |
+| **2026 H1: method stress** | A failed v1 closed whole method families, while a competent negative design result was followed by ceremonial seed expansion. | Failure levels and constructive method lineage separated design uncertainty from statistical uncertainty. |
+| **2026 H1: value stress** | Important seeds narrowed into private cells; failed intervention histories were promoted into analysis papers without an independent object. | Program/paper separation, scope debt, reintegration, and the deletion test made significance part of the live state. |
+| **2026 H1: paper stress** | Baseline, scorer, provenance, and control failures arrived after drafting; other projects never harvested because the bar moved after every result. | Evidence integrity moved before paper identity, while candidate claims and independent entry made finishing an explicit scientific decision. |
+| **2026 H1: reviewer stress** | Codex was used as a terminal judge, and tool outages became reasons to stop. | The reviewer became an early second PI for Prize, Fidelity, interpretation, invention, attack, and decision; infrastructure failures lost scientific authority. |
+| **2026-07 consolidation** | The accumulated solution had too many overlapping skills, ledgers, and audits for a creative researcher to hold productively. | The suite was reduced to one persistent researcher and 17 on-demand tools, then packaged with a failure map and tested project onboarding. |
+
+This evolution is why FIRM preserves historical evidence but does not preserve historical rules as
+authority. A rule earns its place only while it continues to improve decisions in live research.
+
 ## The Failure Map Behind 100B+ Tokens
 
 The token count is not a benchmark and it is not the product. It is the stress test that exposed
