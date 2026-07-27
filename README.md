@@ -5,8 +5,8 @@
 <h1 align="center">FIRM</h1>
 
 <p align="center">
-  <strong>Failure-Informed Research for Machines</strong><br>
-  The judgment layer for long-horizon AI research.
+  <strong>The PI layer your research agent is missing.</strong><br>
+  Your agent can run experiments. FIRM stops it from confidently researching the wrong thing.
 </p>
 
 <p align="center">
@@ -28,16 +28,18 @@
 
 ---
 
-Research agents can launch experiments. The harder problem is deciding what a
-result means.
+Most auto-research systems reward motion: more searches, more jobs, more files,
+more prose. They do not reliably notice when the research itself has gone wrong.
 
-A method loses once. A simple baseline wins. A broad seed quietly becomes a
-private benchmark cell. More runs create more files but no method. A polished
-draft reaches independent review before anyone checks whether the scorer,
-provenance, or decisive control is sound.
+FIRM installs the missing PI layer. It keeps the important seed visible,
+forces failures to change the next design, brings in an independent model
+before expensive commitments, and prevents a plausible narrative from becoming
+a paper before the evidence is ready.
 
-**FIRM is not another auto-research loop. It gives the machine the research
-judgment needed to survive many loops.**
+> **Installation takes one command. Recovering from a month of seed drift does not.**
+
+If your agent only writes code, you do not need FIRM. If it decides **what to
+test, what a failure means, and when a paper exists**, you do.
 
 ## Install
 
@@ -48,44 +50,48 @@ git clone https://github.com/Zoiya-Li/FIRM.git && cd FIRM && bash install.sh
 The installer backs up conflicting skill directories, installs the full suite,
 and verifies the result. It supports `--dry-run` and `--target /path/to/skills`.
 
-## What Usually Breaks
+## The Failures That Consume Weeks
 
-| Research moment | Common agent reflex | FIRM response |
+| Pattern | Without FIRM | With FIRM |
 |---|---|---|
-| The first method loses | Close the field, or sweep ceremonial seeds | Diagnose the realization, then repair the implicated component |
-| A real pattern appears | Narrow until only the project cares about it | Track scope debt and reconnect to a standard task or system |
-| A probe predicts failure | Promote the probe into the contribution | Require a design consequence and train the actual method |
-| A deadline approaches | Turn experiment count into paper maturity | Audit prize, fidelity, evidence integrity, and paper entry first |
+| **Baseline shock** | A stronger baseline arrives late and resets the paper | Reproduce matched incumbents before the claim hardens |
+| **Method panic** | One loss closes the family, or triggers a meaningless seed sweep | Separate design failure from statistical uncertainty and construct the next version |
+| **Seed drift** | An important field becomes a clean result in a private cell | Track scope debt and require a path back to standard value |
+| **Probe addiction** | Predicting the failure is mistaken for fixing it | Require every probe to change a method decision |
+| **Paper theater** | Files and plots are counted as maturity | Audit raw evidence, contribution prize, and paper entry before full drafting |
 
 These are recurring behaviors observed across live projects, not hypothetical
 prompt mistakes. The full [failure map](FAILURE_MAP.md) connects each symptom
 to its hidden confusion, scientific cost, and repair.
 
-## The Operating Model
+FIRM is cheapest before the wrong experiment, not after the wrong paper.
 
-```mermaid
-flowchart LR
-    A["Important seed"] --> B["Matched baseline"]
-    B --> C["Read natural behavior"]
-    C --> D["Form a load-bearing method"]
-    D --> E["Run a representative test"]
-    E --> F{"What did the evidence change?"}
-    F -->|"Design uncertainty"| D
-    F -->|"Stable evidence"| G["Independent second PI"]
-    G --> H["Write, repair, or continue"]
-```
+## Five Decisions Before Another Week Of Compute
 
-One persistent `research-pipeline` owns the program. Specialist skills are
-tools, not permission gates or a mandatory state machine.
+<p align="center">
+  <img src="assets/firm-five-decisions.png" width="100%" alt="Five FIRM research checkpoints: Prize, Fidelity, Design, Evidence, and Entry">
+</p>
 
-FIRM keeps four distinctions visible:
+| Checkpoint | The question FIRM forces | What changes |
+|---|---|---|
+| **01 · PRIZE** | If everything works, will the community care? | Low-value private cells cannot borrow importance from the original seed |
+| **02 · FIDELITY** | Is the current paper still solving the program we started? | Qualifiers become visible scope debt with an explicit repayment path |
+| **03 · DESIGN** | Did the run fail, the realization fail, or the primitive fail? | The next experiment repairs a causal component instead of decorating v1 |
+| **04 · EVIDENCE** | Do raw artifacts support the story under matched controls? | An independent second PI interprets, invents, and attacks before commitment |
+| **05 · ENTRY** | Is there an earned positive object and decisive comparison? | Full manuscript work waits for `PAPER_ENTRY.md: PASS` |
 
-| Distinction | Decision |
+## What Appears In Your Project
+
+| Artifact | Why it matters |
 |---|---|
-| Important program vs. current paper | Is the paper still solving something the field values? |
-| Failed run vs. failed method family | What exactly did the evidence contradict? |
-| Design uncertainty vs. statistical uncertainty | Redesign now, or replicate for reliability? |
-| More understanding vs. enough contribution | Expand the program, or harvest an honest paper? |
+| **One compact live state** | Keeps the original program, current paper, contrary evidence, scope debt, method lineage, active jobs, and one chosen next action together |
+| **A constructive method lineage** | Records what activated, what failed, and what the next version must preserve or change |
+| **Independent second-PI synthesis** | Challenges prize, fidelity, explanation, method design, and maturity before sunk cost takes over |
+| **`CANDIDATE_CLAIM.md`** | Keeps the claim provisional while research is still changing |
+| **`PAPER_ENTRY.md`** | Stops polished writing from outrunning the evidence |
+
+One persistent `research-pipeline` owns the program. The other skills are
+on-demand capabilities, not permission gates or a rigid state machine.
 
 ## Three Real Failure Patterns
 
@@ -187,5 +193,5 @@ FIRM is released under the [MIT License](LICENSE). Selected lineage from ARIS
 is credited in [NOTICE](NOTICE).
 
 <p align="center">
-  <strong>Inherit the failure map. Do not pay to rediscover it.</strong>
+  <strong>Before your agent spends another week proving the wrong thing, give it FIRM.</strong>
 </p>
