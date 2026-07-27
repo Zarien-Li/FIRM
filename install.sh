@@ -3,18 +3,18 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_DIR="${ROOT_DIR}/skills"
-TARGET_DIR="${RESEARCHEROS_SKILLS_DIR:-${HOME}/.claude/skills}"
+TARGET_DIR="${FIRM_SKILLS_DIR:-${HOME}/.claude/skills}"
 DRY_RUN=0
 
 usage() {
   cat <<'EOF'
-Install ResearcherOS skills for Claude Code.
+Install FIRM skills for Claude Code.
 
 Usage:
   bash install.sh [--target PATH] [--dry-run]
 
 Environment:
-  RESEARCHEROS_SKILLS_DIR  Override the default ~/.claude/skills target.
+  FIRM_SKILLS_DIR  Override the default ~/.claude/skills target.
 
 Existing directories with the same names are moved into a timestamped backup
 inside the target directory before installation.
@@ -50,11 +50,11 @@ done
 }
 
 timestamp="$(date +%Y%m%d-%H%M%S)"
-backup_dir="${TARGET_DIR}/.researcheros-backup-${timestamp}"
+backup_dir="${TARGET_DIR}/.firm-backup-${timestamp}"
 installed=0
 backed_up=0
 
-echo "ResearcherOS installer"
+echo "FIRM installer"
 echo "  source: ${SOURCE_DIR}"
 echo "  target: ${TARGET_DIR}"
 
@@ -91,7 +91,7 @@ fi
 bash "${ROOT_DIR}/scripts/verify-install.sh" "${TARGET_DIR}"
 
 echo
-echo "Installed ${installed} ResearcherOS directories."
+echo "Installed ${installed} FIRM directories."
 if [[ ${backed_up} -gt 0 ]]; then
   echo "Backed up ${backed_up} existing directories to:"
   echo "  ${backup_dir}"

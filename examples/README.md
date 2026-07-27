@@ -8,7 +8,7 @@ Each case contains:
 
 - the research situation;
 - the failure mode of an unassisted long-horizon agent;
-- the ResearcherOS intervention;
+- the FIRM intervention;
 - a copy-paste starting prompt;
 - the artifacts and decision that should emerge.
 

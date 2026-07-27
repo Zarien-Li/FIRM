@@ -31,16 +31,23 @@ for path in "${required[@]}"; do
 done
 
 if grep -R -n -E 'REPOSITORY_URL|<your-repository-url>|YOUR_ACCOUNT' \
-  "${ROOT_DIR}/README.md" "${ROOT_DIR}/demo" >/tmp/researcheros-placeholders.txt; then
+  "${ROOT_DIR}/README.md" "${ROOT_DIR}/demo" >/tmp/firm-placeholders.txt; then
   echo "UNRESOLVED repository placeholders:" >&2
-  cat /tmp/researcheros-placeholders.txt >&2
+  cat /tmp/firm-placeholders.txt >&2
+  errors=$((errors + 1))
+fi
+
+if grep -R -n -E 'ResearcherOS|researcheros' \
+  "${ROOT_DIR}" --exclude='release-check.sh' >/tmp/firm-legacy-brand.txt; then
+  echo "LEGACY brand references:" >&2
+  cat /tmp/firm-legacy-brand.txt >&2
   errors=$((errors + 1))
 fi
 
 if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY' \
-  "${ROOT_DIR}" --exclude='release-check.sh' >/tmp/researcheros-private-paths.txt; then
+  "${ROOT_DIR}" --exclude='release-check.sh' >/tmp/firm-private-paths.txt; then
   echo "POSSIBLE private paths or credentials:" >&2
-  cat /tmp/researcheros-private-paths.txt >&2
+  cat /tmp/firm-private-paths.txt >&2
   errors=$((errors + 1))
 fi
 

@@ -1,7 +1,8 @@
-<h1 align="center">ResearcherOS</h1>
+<h1 align="center">FIRM</h1>
 
 <p align="center">
-  <strong>100B+ tokens of real research, distilled into a map of where AI loses research judgment and the skills that bring it back.</strong>
+  <strong>Failure-Informed Research for Machines</strong><br>
+  100B+ tokens of real research, distilled into a map of where AI loses research judgment and the skills that bring it back.
 </p>
 
 <p align="center">
@@ -12,7 +13,7 @@
 </p>
 
 > Most autonomous-research systems optimize the loop.  
-> **ResearcherOS optimizes the researcher that must survive many loops.**
+> **FIRM gives the machine the research judgment needed to survive many loops.**
 
 The meaning of **100B+ tokens** is not that an AI kept working for a long time. It is that we now
 know where research agents repeatedly stumble, become trapped in narrow lines of thought, confuse
@@ -29,7 +30,7 @@ the evidence does not support its central claim.
 
 That is where autonomous research usually breaks.
 
-ResearcherOS is a curated suite of agent skills for what happens next: preserving ownership,
+FIRM is a curated suite of agent skills for what happens next: preserving ownership,
 research value, scientific judgment, method lineage, evidence integrity, and the ability to
 recognize when an honest paper is ready.
 
@@ -40,7 +41,7 @@ recognize when an honest paper is ready.
 | **Three ARR-reviewed submissions** | Work developed under successive workflow versions received mean official-review scores of **3.50, 3.33, and 3.17** |
 | **ARIS lineage** | Selected foundations were adapted from ARIS; the current system is an independent, unofficial field evolution |
 
-> **Star ResearcherOS if you would rather inherit these lessons than pay to rediscover them.**
+> **Star FIRM if you would rather inherit these lessons than pay to rediscover them.**
 
 ## From A Startup Thesis To Open Source
 
@@ -103,7 +104,7 @@ the skill responses developed from them.
 The suite is evolved by the same rule it gives the researcher: interpret the evidence, repair the
 causal failure, and remove obsolete structure instead of endlessly adding patches.
 
-## What ResearcherOS Changes
+## What FIRM Changes
 
 ### One persistent first author
 
@@ -128,7 +129,7 @@ evidence that a natural problem matters.
 A first prototype is not judged as if it were a finished method. Components are added, removed,
 replaced, frozen, rerouted, or factorized so that each result teaches the next design.
 
-ResearcherOS distinguishes:
+FIRM distinguishes:
 
 - a failed run;
 - an immature realization;
@@ -181,7 +182,7 @@ circuit breaker freezes polishing while the broader program continues.
 
 ## Relationship To ARIS
 
-ResearcherOS is an **independent and unofficial project**. It is neither maintained nor endorsed
+FIRM is an **independent and unofficial project**. It is neither maintained nor endorsed
 by the ARIS authors.
 
 Its lineage is explicit:
@@ -224,7 +225,7 @@ researcher, not when they are repackaged as success.
 
 ## 中文简介
 
-**大多数 auto-research 项目优化的是一次闭环；ResearcherOS 优化的是能够穿越许多次失败闭环的研究者。**
+**大多数 auto-research 项目优化的是一次闭环；FIRM 让机器获得穿越许多次失败闭环所需的研究判断。**
 
 这个项目始于 2025 年。最初我们在探索它能否成为一家 auto-research 创业公司的基础。后来，
 [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) 提供了重要启发：
@@ -268,7 +269,7 @@ library.
 The suite is primarily tested with Claude Code's `SKILL.md` format:
 
 ```bash
-git clone https://github.com/Zoiya-Li/ResearcherOS.git && cd ResearcherOS && bash install.sh
+git clone https://github.com/Zoiya-Li/FIRM.git && cd FIRM && bash install.sh
 ```
 
 The installer backs up conflicting skill directories, installs the complete
@@ -303,7 +304,7 @@ frontmatter tool names should be mapped to equivalent tools in the target runtim
 
 ## See It On Real Failure Patterns
 
-ResearcherOS is easiest to understand at the point where an ordinary research
+FIRM is easiest to understand at the point where an ordinary research
 loop loses judgment:
 
 1. [A method loses once](examples/01-method-loss-is-not-field-loss.md): diagnose
@@ -354,11 +355,11 @@ improvement:
 5. test for new rigidity, lost creativity, or conflicting guidance;
 6. remove or consolidate superseded instructions.
 
-ResearcherOS should become wiser through iteration, not merely longer.
+FIRM should become wiser through iteration, not merely longer.
 
 ## License And Attribution
 
-ResearcherOS is released under the MIT License. See [`LICENSE`](LICENSE).
+FIRM is released under the MIT License. See [`LICENSE`](LICENSE).
 
 Selected concepts and portions of the skill lineage were adapted from
 [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep), Copyright (c) 2026

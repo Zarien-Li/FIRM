@@ -21,12 +21,12 @@ when a draft becomes more important than the evidence."
 **Screen:**
 
 ```bash
-git clone https://github.com/Zoiya-Li/ResearcherOS.git && cd ResearcherOS && bash install.sh
+git clone https://github.com/Zoiya-Li/FIRM.git && cd FIRM && bash install.sh
 ```
 
 Show the final `Verification passed` output.
 
-**Voice-over:** "ResearcherOS installs as ordinary Claude Code skills. Existing
+**Voice-over:** "FIRM installs as ordinary Claude Code skills. Existing
 skills are backed up, and the installation verifies itself."
 
 ### 20-36s: What 100B+ tokens bought
@@ -51,7 +51,7 @@ three key decisions.
 3. "Repair the component the evidence implicates."
 
 **Voice-over:** "Here the first method loses. A typical agent either abandons
-the field or runs more seeds. ResearcherOS separates statistical uncertainty
+the field or runs more seeds. FIRM separates statistical uncertainty
 from design uncertainty, preserves the research program, and turns the loss
 into the next constructive ablation."
 
@@ -68,7 +68,7 @@ stronger method follows?"
 
 **Screen:** Return to README hero and GitHub star button.
 
-**Voice-over:** "ResearcherOS is not another loop. It is the research judgment
+**Voice-over:** "FIRM is not another loop. It is the research judgment
 needed to survive many loops. Open source now."
 
 **Final caption:** "Inherit the failure map. Do not pay to rediscover it."

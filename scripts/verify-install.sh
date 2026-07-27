@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SOURCE_DIR="${ROOT_DIR}/skills"
-TARGET_DIR="${1:-${RESEARCHEROS_SKILLS_DIR:-${HOME}/.claude/skills}}"
+TARGET_DIR="${1:-${FIRM_SKILLS_DIR:-${HOME}/.claude/skills}}"
 
 missing=0
 skill_count=0

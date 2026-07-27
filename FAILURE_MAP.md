@@ -1,4 +1,4 @@
-# The ResearcherOS Failure Map
+# The FIRM Failure Map
 
 > AI research agents rarely fail by doing nothing. They fail by doing plausible work in the
 > wrong scientific direction.
@@ -8,12 +8,12 @@ long-horizon research work. It is not a taxonomy invented before deployment. Eac
 exists because live projects repeatedly exposed the same underlying confusion.
 
 The map is deliberately compact. It describes recognizable behavior, the mistaken inference
-behind it, the cost to the research program, and the ResearcherOS capability intended to repair
+behind it, the cost to the research program, and the FIRM capability intended to repair
 it.
 
 ## 1. Value And Scope Failures
 
-| Observable behavior | Hidden confusion | Scientific cost | ResearcherOS response |
+| Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
 | A broad seed such as image editing or knowledge editing becomes a paper about one project-defined cell | A reproducible phenomenon is assumed to be important merely because it is specific | The work becomes rigorous but irrelevant | Keep the original program, current paper, value spine, scope debt, and reintegration path visible in [`research-pipeline`](skills/research-pipeline/SKILL.md) |
 | The agent keeps drilling inward after each result | Mechanistic depth is confused with community value | Months of work optimize an abstraction few researchers care about | Re-run Prize and Fidelity review before major method, compute, and paper-identity commitments |
@@ -21,7 +21,7 @@ it.
 
 ## 2. Method-Formation Failures
 
-| Observable behavior | Hidden confusion | Scientific cost | ResearcherOS response |
+| Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
 | Method v1 fails and the whole method family is retired | One realization is confused with the underlying primitive | Promising directions die before constructive design begins | Preserve what activated, locate the failed component, and form v2 through constructive ablation in [`method-primitive-synthesis`](skills/method-primitive-synthesis/SKILL.md) |
 | A simple baseline wins and the agent exits | Winning is treated only as rejection, not as evidence about the mechanism | The strongest clue to a better method is discarded | Explain why the baseline wins, find its natural boundary, and design beyond that boundary |
@@ -30,7 +30,7 @@ it.
 
 ## 3. Experiment-Allocation Failures
 
-| Observable behavior | Hidden confusion | Scientific cost | ResearcherOS response |
+| Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
 | One competent seed shows a large design failure, then ten more seeds are launched | Design uncertainty is confused with statistical uncertainty | GPU and time are spent confirming the wrong question | Diagnose or redesign after a mechanistically decisive failure; add seeds only for a defined stochastic claim |
 | A noisy small effect triggers immediate redesign | Statistical uncertainty is confused with design failure | Potentially valid mechanisms are abandoned too early | Use matched seeds, confidence intervals, and power-aware replication through [`experiment-plan`](skills/experiment-plan/SKILL.md) |
@@ -39,7 +39,7 @@ it.
 
 ## 4. Evidence-Integrity Failures
 
-| Observable behavior | Hidden confusion | Scientific cost | ResearcherOS response |
+| Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
 | The main claim is drafted before scorer, masking, provenance, or padding is audited | A plausible number is treated as a trustworthy measurement | Late audit can invalidate the paper identity | Audit evaluation boundaries before expensive scaling and again before submission with [`experiment-audit`](skills/experiment-audit/SKILL.md) |
 | A strong baseline is compared under mismatched data, cost, or training | A familiar name is mistaken for a fair incumbent | Claimed progress disappears under matched conditions | Reproduce the actual incumbent and lock comparison semantics |
@@ -48,7 +48,7 @@ it.
 
 ## 5. Interpretation And Review Failures
 
-| Observable behavior | Hidden confusion | Scientific cost | ResearcherOS response |
+| Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
 | The independent reviewer is called only when the project wants permission to stop | Review is treated as judgment instead of co-research | Fatal controls arrive late; invention never benefits from a second view | Use [`research-review`](skills/research-review/SKILL.md) as a second PI: Prize and Fidelity, Interpret, Invent, Attack, Assess Maturity, Decide |
 | Reviewer criticism becomes a permanent prohibition | A model-authored verdict is mistaken for user authority | One review silently shrinks the research program | Treat reviewer output as evidence and argument, never as an irreversible gate |
@@ -57,7 +57,7 @@ it.
 
 ## 6. Paper-Identity And Harvest Failures
 
-| Observable behavior | Hidden confusion | Scientific cost | ResearcherOS response |
+| Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
 | Several failed methods are repackaged as an analysis paper | Difficulty of intervention is confused with an independent positive object | The paper has history but no contribution readers need | Apply the deletion test: if the analysis collapses when failed methods are removed, it is not yet an analysis contribution |
 | Correct abstention or certification failure is presented as method success | Conservative behavior is confused with positive capability | The paper overstates what was achieved | Map results to bounded claims and real value metrics |
@@ -84,7 +84,7 @@ week answering the wrong question.
 The defensible asset in autonomous research is not a longer prompt. It is accumulated knowledge
 of how plausible research behavior goes wrong.
 
-ResearcherOS makes that knowledge inspectable. New contributions should add a failure only when
+FIRM makes that knowledge inspectable. New contributions should add a failure only when
 it has recurred in real use, identify the causal instruction or omission, and show that the repair
 does not create an equal and opposite failure.
 

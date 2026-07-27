@@ -15,7 +15,7 @@ Agents often choose one of two bad reactions:
 
 Both confuse design uncertainty with statistical uncertainty.
 
-## ResearcherOS Response
+## FIRM Response
 
 The first seed has already answered the statistical question needed at this
 stage: the current realization is not competitive. The next action is to find

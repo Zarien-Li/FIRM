@@ -2,7 +2,7 @@
 
 ## Before Recording
 
-- Show the live `https://github.com/Zoiya-Li/ResearcherOS` repository and test
+- Show the live `https://github.com/Zoiya-Li/FIRM` repository and test
   the exact install command before recording.
 - Run `bash scripts/release-check.sh`.
 - Test installation in a clean temporary home.

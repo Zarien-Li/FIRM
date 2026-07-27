@@ -12,7 +12,7 @@ Experimental volume is mistaken for maturity. Once a draft exists, every new
 result is interpreted in ways that protect the narrative. A late reviewer then
 finds the baseline, scorer, seed provenance, or cost comparison is not fair.
 
-## ResearcherOS Response
+## FIRM Response
 
 Before complete manuscript writing, the researcher assembles a raw-evidence
 packet and asks an independent second PI to judge:

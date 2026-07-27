@@ -14,7 +14,7 @@ or a decision that the community values.
 
 The result can become statistically clean while the paper becomes irrelevant.
 
-## ResearcherOS Response
+## FIRM Response
 
 The researcher keeps three objects visible:
 

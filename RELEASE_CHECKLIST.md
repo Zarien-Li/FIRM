@@ -70,7 +70,7 @@
 
 ## Blocking: Owner Action
 
-- [x] Lock the repository identity as `Zoiya-Li/ResearcherOS`.
+- [x] Lock the repository identity as `Zoiya-Li/FIRM`.
 - [x] Restore GitHub authentication for `Zoiya-Li`.
 - [x] Approve creation of the public repository and its license visibility.
 - [x] Provide publishable evidence and bounded wording for the three ARR
