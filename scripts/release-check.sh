@@ -40,14 +40,14 @@ if grep -R -n -E 'REPOSITORY_URL|<your-repository-url>|YOUR_ACCOUNT' \
 fi
 
 if grep -R -n -E 'ResearcherOS|researcheros' \
-  "${ROOT_DIR}" --exclude='release-check.sh' >/tmp/firm-legacy-brand.txt; then
+  "${ROOT_DIR}" --exclude='release-check.sh' --exclude-dir='.git' >/tmp/firm-legacy-brand.txt; then
   echo "LEGACY brand references:" >&2
   cat /tmp/firm-legacy-brand.txt >&2
   errors=$((errors + 1))
 fi
 
 if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY' \
-  "${ROOT_DIR}" --exclude='release-check.sh' >/tmp/firm-private-paths.txt; then
+  "${ROOT_DIR}" --exclude='release-check.sh' --exclude-dir='.git' >/tmp/firm-private-paths.txt; then
   echo "POSSIBLE private paths or credentials:" >&2
   cat /tmp/firm-private-paths.txt >&2
   errors=$((errors + 1))
