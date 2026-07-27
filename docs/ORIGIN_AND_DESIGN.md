@@ -197,17 +197,13 @@ For the original project and technical report:
 ## Evidence, Not A Promise
 
 Three submissions developed under successive versions of this workflow received mean official
-reviewer scores of **3.50**, **3.33**, and **3.17** in the ACL ARR 2026 May cycle.
+ACL ARR reviewer scores of **3.50**, **3.33**, and **3.17** across nine reviews.
 
 These scores are external evidence that the workflow has supported research artifacts evaluated
 by real reviewers. They are not an acceptance guarantee, a controlled causal estimate of the
-skills, or a claim that every research program will succeed. At the time of the captured
-dashboard, one submission had been withdrawn and none had received a recommendation.
-
-![ACL ARR 2026 May official-review score evidence](../assets/arr-2026-may-review-evidence.png)
-
-<sub>Official-review dashboard evidence supplied by the project owner. Reviewer identifiers are
-anonymous system codes; paper titles and author identities are not shown.</sub>
+skills, or a claim that every research program will succeed. Only the aggregate score record is
+reported publicly; paper identities, submission metadata, reviewer identifiers, review text, and
+dashboard screenshots remain private while the work may still participate in anonymous review.
 
 The more important evidence is developmental: the current rules preserve lessons from many
 projects that did not work cleanly. Negative results are useful here only when they improve the
@@ -236,9 +232,9 @@ researcher, not when they are repackaged as success.
 不只是 17 个 Markdown 文件，而是一张用 100B+ token 的真实研究代价换来的 failure map。
 
 真正开源的是从这些长期成败中蒸馏出的研究判断。使用不同版本工作流形成的三个 ARR 投稿获得了
-平均 **3.50 / 3.33 / 3.17** 的官方评审分数。截图时其中一个投稿已撤稿，三个投稿均未获得
-recommendation；这些分数不是录用证明或因果效果估计。我们愿意公开这套系统如何在真实失败中
-成长，也欢迎社区继续挑战和改进它。
+平均 **3.50 / 3.33 / 3.17** 的官方评审分数，共计九份评审。公开版本只保留聚合分数，不包含
+论文身份、投稿轮次、Reviewer ID、评审文本或后台截图；这些分数也不是录用证明或因果效果估计。
+我们愿意公开这套系统如何在真实失败中成长，也欢迎社区继续挑战和改进它。
 
 ## Included Skills
 

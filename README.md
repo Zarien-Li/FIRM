@@ -156,20 +156,18 @@ programs into private cells, and write polished papers before checking decisive
 controls. The skills were revised, merged, or deleted whenever those failures
 showed that the system itself was teaching the wrong research behavior.
 
-## Official External Evidence
+## External Review Record
 
 Three papers developed under successive workflow versions received **nine
 official ACL ARR reviews**, with mean overall assessments of **3.50**,
 **3.33**, and **3.17**.
 
-<p align="center">
-  <img src="assets/arr-2026-may-review-evidence.png" width="720" alt="ACL ARR official review scores">
-</p>
-
-At the time of the captured ACL ARR 2026 May dashboard, one submission had
-been withdrawn and none had received a recommendation. These scores are
-external evidence that the workflow was used to produce serious research, not
-a controlled estimate of FIRM's causal effect.
+We report only the aggregate score record. Paper identities, submission
+metadata, reviewer identifiers, review text, and dashboard screenshots remain
+private while the work may still participate in anonymous review. The scores
+show that successive workflow versions were used to produce serious research;
+they are not an acceptance claim or a controlled estimate of FIRM's causal
+effect.
 
 ## Skill System
 

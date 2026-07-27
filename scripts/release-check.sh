@@ -15,7 +15,6 @@ required=(
   assets/firm-field-tested.png
   assets/firm-first-run.png
   assets/firm-five-decisions.png
-  assets/arr-2026-may-review-evidence.png
   docs/ORIGIN_AND_DESIGN.md
   firm
   install.sh
@@ -61,6 +60,19 @@ if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY' \
   "${ROOT_DIR}" --exclude='release-check.sh' --exclude-dir='.git' >/tmp/firm-private-paths.txt; then
   echo "POSSIBLE private paths or credentials:" >&2
   cat /tmp/firm-private-paths.txt >&2
+  errors=$((errors + 1))
+fi
+
+if [[ -e "${ROOT_DIR}/assets/arr-2026-may-review-evidence.png" ]]; then
+  echo "ARR dashboard screenshot must not ship in the public release." >&2
+  errors=$((errors + 1))
+fi
+
+if grep -R -n -E \
+  'Official Reviews Submitted|Reviewer [A-Za-z0-9]{4}:|ACL ARR 2026 May|arr-2026-may-review-evidence|captured dashboard|截图时其中一个投稿' \
+  "${ROOT_DIR}/README.md" "${ROOT_DIR}/docs" >/tmp/firm-review-fingerprints.txt; then
+  echo "POSSIBLE review fingerprint in public documentation:" >&2
+  cat /tmp/firm-review-fingerprints.txt >&2
   errors=$((errors + 1))
 fi
 
