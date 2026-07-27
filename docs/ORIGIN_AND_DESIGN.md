@@ -89,6 +89,20 @@ authority. A rule earns its place only while it continues to improve decisions i
 The token count is not a benchmark and it is not the product. It is the stress test that exposed
 a repeatable failure surface for long-horizon AI research.
 
+The total came primarily from live sessions across five model families and 17 deployed model or
+research-runtime configurations:
+
+- **GLM:** `glm-4.7`, `glm-5.1`, `glm-5.2`, `glm-5.7`
+- **Kimi:** `kimi-k2.5`, `kimi-k2.6`, `kimi-k3`
+- **Claude:** `claude-opus-4.6`, `claude-opus-4.7`, `claude-opus-4.8`, plus the
+  `claude-fable-5` research configuration
+- **DeepSeek:** `deepseek-v4-pro`
+- **GPT:** `gpt-5.1`, `gpt-5.2`, `gpt-5.3`, `gpt-5.4`, `gpt-5.5`
+
+This is runtime coverage, not a controlled comparison. Token allocation was not equal across
+models, model labels may include provider or research configurations, and FIRM does not infer a
+model-performance ranking from this experience.
+
 Every major instruction in this repository should answer a real failure:
 
 - **Seed drift:** Is the current paper still solving the important program we started with?

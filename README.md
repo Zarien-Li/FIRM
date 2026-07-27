@@ -156,6 +156,21 @@ programs into private cells, and write polished papers before checking decisive
 controls. The skills were revised, merged, or deleted whenever those failures
 showed that the system itself was teaching the wrong research behavior.
 
+The total was accumulated primarily across five model families and 17 deployed
+model or research-runtime configurations:
+
+| Family | Models or configurations used in live research |
+|---|---|
+| **GLM** | `glm-4.7`, `glm-5.1`, `glm-5.2`, `glm-5.7` |
+| **Kimi** | `kimi-k2.5`, `kimi-k2.6`, `kimi-k3` |
+| **Claude** | `claude-opus-4.6`, `claude-opus-4.7`, `claude-opus-4.8`, and the `claude-fable-5` research configuration |
+| **DeepSeek** | `deepseek-v4-pro` |
+| **GPT** | `gpt-5.1`, `gpt-5.2`, `gpt-5.3`, `gpt-5.4`, `gpt-5.5` |
+
+These labels describe the systems used in real sessions. The token total is not
+an equal-allocation, head-to-head model benchmark, and no per-model performance
+ranking is implied.
+
 ## External Review Record
 
 Three papers developed under successive workflow versions received **nine
@@ -216,7 +231,7 @@ when live research forced us to reject part of our own operating model.
 | **2026 H1 · Evidence and harvest break** | Baseline, scorer, provenance, and control failures arrived after drafts hardened, while moving standards kept mature work unfinished. Evidence integrity moved earlier; candidate claims and independent paper entry made finishing part of research. |
 | **2026 H1 · Second-PI break** | Codex was being used late as a stop judge, and MCP outages were allowed to pause research. Review moved upstream into `Prize/Fidelity → Interpret → Invent → Attack → Decide`; infrastructure failure lost scientific authority. |
 | **2026 H1 · External checkpoint** | Three human-verified papers developed under successive versions received nine official ACL ARR reviews, with mean overall assessments of **3.50**, **3.33**, and **3.17**. Only aggregate scores are public. |
-| **2026-07-27 · Consolidation** | After more than **100B model tokens**, overlapping skills and audits were reduced to one persistent researcher, 17 focused tools, a failure map, project onboarding, and a tested first-run path. |
+| **2026-07-27 · Consolidation** | After more than **100B model tokens** across five model families and 17 deployed configurations, overlapping skills and audits were reduced to one persistent researcher, 17 focused tools, a failure map, project onboarding, and a tested first-run path. |
 
 ### Human Accountability
 
