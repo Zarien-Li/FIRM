@@ -16,18 +16,21 @@ Run `make demo` for the timed 90-second terminal storyboard. Use
 experiment. It fails after the first method loses, when the project drifts, or
 when a draft becomes more important than the evidence."
 
-### 8-20s: One-command install
+### 8-20s: Attach to a project
 
 **Screen:**
 
 ```bash
-git clone https://github.com/Zoiya-Li/FIRM.git && cd FIRM && bash install.sh
+git clone https://github.com/Zoiya-Li/FIRM.git ~/FIRM
+~/FIRM/firm init ~/research/my-project
 ```
 
-Show the final `Verification passed` output.
+Show the final `Verification passed` output and the generated research card,
+first-message templates, and project-local skill directory.
 
-**Voice-over:** "FIRM installs as ordinary Claude Code skills. Existing
-skills are backed up, and the installation verifies itself."
+**Voice-over:** "FIRM attaches to a real research project. It preserves
+existing instructions, installs local skills, creates the research-program
+card, and verifies itself."
 
 ### 20-36s: What 100B+ tokens bought
 
@@ -42,7 +45,7 @@ where agents repeatedly lose scientific judgment."
 
 **Screen:** Open `demo/fixture/RESULT.md`, highlighting baseline 72.4 and method
 69.1. Then paste `demo/fixture/PROMPT.md` into Claude Code. Cut to the agent's
-three key decisions.
+three key decisions and the updated compact research state.
 
 **On-screen captions:**
 

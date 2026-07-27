@@ -1,0 +1,164 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+usage() {
+  cat <<'EOF'
+FIRM project launcher
+
+Usage:
+  ./firm init [PROJECT]        Attach FIRM to a research project.
+  ./firm doctor [PROJECT]      Verify a project installation.
+  ./firm prompt new            Print the new-project first message.
+  ./firm prompt audit          Print the existing-project audit message.
+
+PROJECT defaults to the current directory.
+EOF
+}
+
+absolute_project() {
+  local requested="$1"
+  mkdir -p "${requested}"
+  (
+    cd "${requested}"
+    pwd
+  )
+}
+
+init_project() {
+  local project
+  project="$(absolute_project "${1:-$PWD}")"
+
+  mkdir -p "${project}/.firm"
+  bash "${ROOT_DIR}/install.sh" --project "${project}"
+
+  if [[ ! -e "${project}/.firm/RESEARCH_PROGRAM.md" ]]; then
+    cp "${ROOT_DIR}/templates/RESEARCH_PROGRAM.md" \
+      "${project}/.firm/RESEARCH_PROGRAM.md"
+    echo "Created .firm/RESEARCH_PROGRAM.md"
+  else
+    echo "Kept existing .firm/RESEARCH_PROGRAM.md"
+  fi
+
+  cp "${ROOT_DIR}/templates/FIRST_MESSAGE_NEW.md" \
+    "${project}/.firm/FIRST_MESSAGE_NEW.md"
+  cp "${ROOT_DIR}/templates/FIRST_MESSAGE_AUDIT.md" \
+    "${project}/.firm/FIRST_MESSAGE_AUDIT.md"
+
+  local claude_file="${project}/CLAUDE.md"
+  local marker="<!-- FIRM:BEGIN -->"
+  if [[ ! -e "${claude_file}" ]]; then
+    {
+      printf '# Project Instructions\n\n'
+      cat "${ROOT_DIR}/templates/CLAUDE_FIRM_BLOCK.md"
+    } > "${claude_file}"
+    echo "Created CLAUDE.md with the FIRM research contract"
+  elif grep -Fq "${marker}" "${claude_file}"; then
+    echo "Kept existing FIRM block in CLAUDE.md"
+  else
+    local backup="${project}/.firm/CLAUDE.md.before-firm"
+    cp "${claude_file}" "${backup}"
+    {
+      printf '\n\n'
+      cat "${ROOT_DIR}/templates/CLAUDE_FIRM_BLOCK.md"
+    } >> "${claude_file}"
+    echo "Added the FIRM block to CLAUDE.md"
+    echo "Backed up the previous file at .firm/CLAUDE.md.before-firm"
+  fi
+
+  echo
+  echo "FIRM is attached to:"
+  echo "  ${project}"
+  echo
+  echo "Next:"
+  echo "  1. Complete .firm/RESEARCH_PROGRAM.md"
+  echo "  2. Run: cd \"${project}\" && claude"
+  echo "  3. Paste .firm/FIRST_MESSAGE_NEW.md for a new program,"
+  echo "     or .firm/FIRST_MESSAGE_AUDIT.md for an existing project."
+}
+
+doctor_project() {
+  local requested="${1:-$PWD}"
+  if [[ ! -d "${requested}" ]]; then
+    echo "error: project directory not found: ${requested}" >&2
+    exit 2
+  fi
+  local project
+  project="$(
+    cd "${requested}"
+    pwd
+  )"
+  local failures=0
+
+  if ! bash "${ROOT_DIR}/scripts/verify-install.sh" \
+    "${project}/.claude/skills"; then
+    failures=$((failures + 1))
+  fi
+
+  for required in \
+    "${project}/CLAUDE.md" \
+    "${project}/.firm/RESEARCH_PROGRAM.md" \
+    "${project}/.firm/FIRST_MESSAGE_NEW.md" \
+    "${project}/.firm/FIRST_MESSAGE_AUDIT.md"; do
+    if [[ ! -s "${required}" ]]; then
+      echo "MISSING project file: ${required}" >&2
+      failures=$((failures + 1))
+    fi
+  done
+
+  if command -v claude >/dev/null 2>&1; then
+    echo "Claude Code: found"
+  else
+    echo "Claude Code: not found" >&2
+    failures=$((failures + 1))
+  fi
+
+  if command -v codex >/dev/null 2>&1; then
+    echo "Codex CLI: found (recommended second PI)"
+  else
+    echo "Codex CLI: not found (FIRM still runs; independent review is deferred)"
+  fi
+
+  if [[ ${failures} -ne 0 ]]; then
+    echo "FIRM doctor found ${failures} blocking issue(s)." >&2
+    exit 1
+  fi
+
+  echo "FIRM doctor passed."
+}
+
+print_prompt() {
+  case "${1:-}" in
+    new)
+      cat "${ROOT_DIR}/templates/FIRST_MESSAGE_NEW.md"
+      ;;
+    audit)
+      cat "${ROOT_DIR}/templates/FIRST_MESSAGE_AUDIT.md"
+      ;;
+    *)
+      echo "error: prompt requires new or audit" >&2
+      exit 2
+      ;;
+  esac
+}
+
+case "${1:-help}" in
+  init)
+    init_project "${2:-$PWD}"
+    ;;
+  doctor)
+    doctor_project "${2:-$PWD}"
+    ;;
+  prompt)
+    print_prompt "${2:-}"
+    ;;
+  -h|--help|help)
+    usage
+    ;;
+  *)
+    echo "error: unknown command: $1" >&2
+    usage >&2
+    exit 2
+    ;;
+esac

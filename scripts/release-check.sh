@@ -6,16 +6,25 @@ errors=0
 
 required=(
   README.md
+  AGENT_GUIDE.md
   LICENSE
   NOTICE
   FAILURE_MAP.md
+  GETTING_STARTED.md
   assets/firm-hero.png
   assets/firm-field-tested.png
+  assets/firm-first-run.png
   assets/firm-five-decisions.png
   assets/arr-2026-may-review-evidence.png
   docs/ORIGIN_AND_DESIGN.md
+  firm
   install.sh
+  scripts/test-onboarding.sh
   scripts/verify-install.sh
+  templates/CLAUDE_FIRM_BLOCK.md
+  templates/FIRST_MESSAGE_AUDIT.md
+  templates/FIRST_MESSAGE_NEW.md
+  templates/RESEARCH_PROGRAM.md
   examples/README.md
   examples/01-method-loss-is-not-field-loss.md
   examples/02-seed-drift.md
@@ -59,5 +68,10 @@ if [[ ${errors} -ne 0 ]]; then
   echo "Release check failed with ${errors} blocking category/categories." >&2
   exit 1
 fi
+
+bash -n "${ROOT_DIR}/firm"
+bash -n "${ROOT_DIR}/install.sh"
+bash -n "${ROOT_DIR}/scripts/test-onboarding.sh"
+bash "${ROOT_DIR}/scripts/test-onboarding.sh"
 
 echo "Release check passed."

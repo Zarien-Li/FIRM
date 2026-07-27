@@ -17,13 +17,13 @@
 </p>
 
 <p align="center">
-  <a href="#install"><strong>Install</strong></a>
+  <a href="#start-in-5-minutes"><strong>Start in 5 minutes</strong></a>
   ·
   <a href="#three-real-failure-patterns"><strong>See the cases</strong></a>
   ·
   <a href="FAILURE_MAP.md"><strong>Open the failure map</strong></a>
   ·
-  <a href="skills/INDEX.md"><strong>Browse the skills</strong></a>
+  <a href="GETTING_STARTED.md"><strong>Full setup guide</strong></a>
 </p>
 
 <p align="center">
@@ -50,14 +50,47 @@ a paper before the evidence is ready.
 If your agent only writes code, you do not need FIRM. If it decides **what to
 test, what a failure means, and when a paper exists**, you do.
 
-## Install
+## Start In 5 Minutes
+
+<p align="center">
+  <img src="assets/firm-first-run.png" width="100%" alt="FIRM first run: attach to a project, define the research program, start Claude with a second PI, and receive one next action">
+</p>
+
+**1. Attach FIRM to a project**
 
 ```bash
-git clone https://github.com/Zoiya-Li/FIRM.git && cd FIRM && bash install.sh
+git clone https://github.com/Zoiya-Li/FIRM.git ~/FIRM
+chmod +x ~/FIRM/firm
+~/FIRM/firm init ~/research/my-project
 ```
 
-The installer backs up conflicting skill directories, installs the full suite,
-and verifies the result. It supports `--dry-run` and `--target /path/to/skills`.
+This installs project-local skills, preserves existing instructions, and creates
+a research-program card plus two first-message templates.
+
+**2. Define the program**
+
+Complete `~/research/my-project/.firm/RESEARCH_PROGRAM.md`: field, accepted
+benchmarks or real workflow, community value, strong baseline families, and
+resource boundary. Do not preselect the final failure or method.
+
+**3. Start the researcher**
+
+```bash
+cd ~/research/my-project
+claude
+```
+
+| Your situation | First message |
+|---|---|
+| Starting a new field or program | Paste the contents of `.firm/FIRST_MESSAGE_NEW.md` |
+| Auditing an existing project | Paste the contents of `.firm/FIRST_MESSAGE_AUDIT.md` |
+
+The first useful output is not a paper. It is one evidence-backed research
+state: original program, current method and paper identity, contrary evidence,
+scope debt, constructive method lineage, and one next action.
+
+For Codex second-PI setup, existing-project behavior, expected artifacts, and
+troubleshooting, follow the [zero-to-first-decision guide](GETTING_STARTED.md).
 
 ## The Failures That Consume Weeks
 
@@ -150,16 +183,6 @@ a controlled estimate of FIRM's causal effect.
 
 See [the complete skill index](skills/INDEX.md) for activation guidance and
 shared references.
-
-## Start A Research Program
-
-```text
-Use research-pipeline as the persistent researcher for this project.
-The field is [FIELD], the accepted benchmark or system surface is [BENCHMARK/SYSTEM],
-the value is [WHY THE COMMUNITY CARES], and the resource boundary is [BUDGET].
-Reproduce credible anchors, inspect raw behavior, form the problem from evidence,
-and autonomously pursue the highest-value method and paper path.
-```
 
 The suite is primarily tested with Claude Code's `SKILL.md` format. The
 Markdown workflows can be adapted to Codex and other agent runtimes by mapping

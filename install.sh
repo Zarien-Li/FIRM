@@ -11,10 +11,15 @@ usage() {
 Install FIRM skills for Claude Code.
 
 Usage:
-  bash install.sh [--target PATH] [--dry-run]
+  bash install.sh [--target PATH | --project PATH] [--dry-run]
 
 Environment:
   FIRM_SKILLS_DIR  Override the default ~/.claude/skills target.
+
+Options:
+  --project PATH   Install into PATH/.claude/skills.
+  --target PATH    Install directly into a skills directory.
+  --dry-run        Show what would change without writing files.
 
 Existing directories with the same names are moved into a timestamped backup
 inside the target directory before installation.
@@ -26,6 +31,12 @@ while [[ $# -gt 0 ]]; do
     --target)
       [[ $# -ge 2 ]] || { echo "error: --target requires a path" >&2; exit 2; }
       TARGET_DIR="$2"
+      shift 2
+      ;;
+    --project)
+      [[ $# -ge 2 ]] || { echo "error: --project requires a path" >&2; exit 2; }
+      [[ -d "$2" ]] || { echo "error: project directory not found: $2" >&2; exit 2; }
+      TARGET_DIR="$2/.claude/skills"
       shift 2
       ;;
     --dry-run)

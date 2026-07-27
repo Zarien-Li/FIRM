@@ -30,10 +30,11 @@ printf '  seed drift  |  premature closure  |  probe addiction\n'
 printf '  seed theater  |  late integrity failure  |  endless research\n'
 pause "$((5 * SPEED))"
 
-slide "One-command install"
-printf '$ git clone https://github.com/Zoiya-Li/FIRM.git && \\\n'
-printf '    cd FIRM && bash install.sh\n\n'
+slide "Attach FIRM to a real project"
+printf '$ git clone https://github.com/Zoiya-Li/FIRM.git ~/FIRM\n'
+printf '$ ~/FIRM/firm init ~/research/my-project\n\n'
 printf '\033[1;32mVerification passed.\033[0m\n'
+printf 'Created research card, first messages, and project-local skills.\n'
 pause "$((5 * SPEED))"
 
 slide "A real decision pattern"
