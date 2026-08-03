@@ -1,267 +1,257 @@
 <p align="center">
-  <img src="assets/firm-hero.png" width="100%" alt="Failed research branches converging into an evidence-guided trajectory">
+  <strong>FIRM</strong><br>
+  <sub>Failure-Informed Research for Machines</sub>
 </p>
 
-<h1 align="center">FIRM</h1>
+<h1 align="center">The research judgment layer for AI coding agents.</h1>
 
 <p align="center">
-  <strong>The PI layer your research agent is missing.</strong><br>
-  Your agent can run experiments. FIRM stops it from confidently researching the wrong thing.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/field_tested-100B%2B_model_tokens-171717?style=flat-square" alt="100B+ model tokens">
-  <img src="https://img.shields.io/badge/research_skills-17-1d4ed8?style=flat-square" alt="17 research skills">
-  <img src="https://img.shields.io/badge/license-MIT-15803d?style=flat-square" alt="MIT License">
-  <a href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"><img src="https://img.shields.io/badge/lineage-ARIS-b91c1c?style=flat-square" alt="ARIS lineage"></a>
+  Claude Code can run 1,000 experiments and still spend a month answering the wrong question.<br>
+  FIRM keeps the broad problem alive, turns failures into better designs, and makes a paper earn its way into writing.
 </p>
 
 <p align="center">
-  <a href="#start-in-5-minutes"><strong>Start in 5 minutes</strong></a>
-  ·
-  <a href="#three-real-failure-patterns"><strong>See the cases</strong></a>
-  ·
-  <a href="FAILURE_MAP.md"><strong>Open the failure map</strong></a>
-  ·
-  <a href="GETTING_STARTED.md"><strong>Full setup guide</strong></a>
+  <a href="#start-in-one-command"><strong>Start in one command</strong></a> ·
+  <a href="#see-the-difference">See the difference</a> ·
+  <a href="GETTING_STARTED.md">Read the guide</a> ·
+  <a href="examples/README.md">Inspect the cases</a>
 </p>
 
 <p align="center">
-  <img src="assets/firm-field-tested.png" width="100%" alt="FIRM field record: 100B+ model tokens, 3 research papers, 9 official ARR reviews, and mean overall assessments of 3.50, 3.33, and 3.17">
-</p>
-
-<p align="center">
-  <strong>Not a weekend prompt pack.</strong> FIRM was repeatedly rebuilt inside
-  long-running research programs, then tested against the mistakes those programs actually made.
+  <img src="https://img.shields.io/badge/field_observation-100B%2B_model_tokens-111318?style=flat-square" alt="100B+ model tokens">
+  <img src="https://img.shields.io/badge/research_tools-17-285943?style=flat-square" alt="17 research tools">
+  <img src="https://img.shields.io/badge/primary_runtime-Claude_Code-D97757?style=flat-square" alt="Claude Code">
+  <img src="https://img.shields.io/badge/second_PI-Codex-111318?style=flat-square" alt="Codex second PI">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f81f7?style=flat-square" alt="MIT License"></a>
 </p>
 
 ---
 
-Most auto-research systems reward motion: more searches, more jobs, more files,
-more prose. They do not reliably notice when the research itself has gone wrong.
+FIRM is an open research operating model built from the failure patterns of more
+than **100B model tokens** across Claude, GPT, GLM, Kimi, and DeepSeek systems.
+It is not another giant prompt, fixed stage machine, or autonomous paper mill.
+It is a compact set of skills that helps an agent make the decisions a strong
+first author or PI would make while the evidence is still changing.
 
-FIRM installs the missing PI layer. It keeps the important seed visible,
-forces failures to change the next design, brings in an independent model
-before expensive commitments, and prevents a plausible narrative from becoming
-a paper before the evidence is ready.
-
-> **Installation takes one command. Recovering from a month of seed drift does not.**
-
-If your agent only writes code, you do not need FIRM. If it decides **what to
-test, what a failure means, and when a paper exists**, you do.
-
-## Start In 5 Minutes
+## See The Difference
 
 <p align="center">
-  <img src="assets/firm-first-run.png" width="100%" alt="FIRM first run: attach to a project, define the research program, start Claude with a second PI, and receive one next action">
+  <img src="assets/firm-decision-demo.png" width="100%" alt="The same failed method result produces a field-closure decision without FIRM and a constructive design diagnosis with FIRM">
 </p>
 
-**1. Attach FIRM to a project**
+One competent run says the prototype loses. The wrong response is either to kill
+the field or to search more seeds for a lucky sign. FIRM asks what component the
+result actually diagnosed, what evidence survives, and which single next
+experiment changes the design.
+
+## Start In One Command
+
+Run this inside an existing research project, or inside an empty directory for a
+new one:
 
 ```bash
-git clone https://github.com/Zoiya-Li/FIRM.git ~/FIRM
-chmod +x ~/FIRM/firm
-~/FIRM/firm init ~/research/my-project
+git clone https://github.com/Zoiya-Li/FIRM.git ~/FIRM && ~/FIRM/firm init .
 ```
 
-This installs project-local skills, preserves existing instructions, and creates
-a research-program card plus two first-message templates.
-
-**2. Define the program**
-
-Complete `~/research/my-project/.firm/RESEARCH_PROGRAM.md`: field, accepted
-benchmarks or real workflow, community value, strong baseline families, and
-resource boundary. Do not preselect the final failure or method.
-
-**3. Start the researcher**
+Then start Claude Code as usual. FIRM preserves an existing `CLAUDE.md`, installs
+project-local skills, creates a compact research program, and prints the exact
+first message to send.
 
 ```bash
-cd ~/research/my-project
 claude
 ```
 
-| Your situation | First message |
-|---|---|
-| Starting a new field or program | Paste the contents of `.firm/FIRST_MESSAGE_NEW.md` |
-| Auditing an existing project | Paste the contents of `.firm/FIRST_MESSAGE_AUDIT.md` |
+Verify the installation at any time:
 
-The first useful output is not a paper. It is one evidence-backed research
-state: original program, current method and paper identity, contrary evidence,
-scope debt, constructive method lineage, and one next action.
+```bash
+~/FIRM/firm doctor .
+```
 
-For Codex second-PI setup, existing-project behavior, expected artifacts, and
-troubleshooting, follow the [zero-to-first-decision guide](GETTING_STARTED.md).
+Already have `~/FIRM`? Run `git -C ~/FIRM pull` and then `~/FIRM/firm init .`.
+The installer also supports [global, project-local, and dry-run modes](GETTING_STARTED.md).
 
-## The Failures That Consume Weeks
+This is backed by the runnable fixture in [`demo/fixture`](demo/fixture), not a
+made-up interface. Try the 90-second terminal walkthrough:
 
-| Pattern | Without FIRM | With FIRM |
+```bash
+make demo
+```
+
+## What FIRM Changes
+
+| Protect the problem | Build through failure | Earn the paper |
 |---|---|---|
-| **Baseline shock** | A stronger baseline arrives late and resets the paper | Reproduce matched incumbents before the claim hardens |
-| **Method panic** | One loss closes the family, or triggers a meaningless seed sweep | Separate design failure from statistical uncertainty and construct the next version |
-| **Seed drift** | An important field becomes a clean result in a private cell | Track scope debt and require a path back to standard value |
-| **Probe addiction** | Predicting the failure is mistaken for fixing it | Require every probe to change a method decision |
-| **Paper theater** | Files and plots are counted as maturity | Audit raw evidence, contribution prize, and paper entry before full drafting |
+| Keeps the original broad program separate from the current experiment or draft | Separates run, realization, primitive, and method-family failure | Requires an independent Prize/Fidelity/Entry review before full manuscript production |
+| Tracks scope debt when a useful field quietly collapses into a private slice | Uses a bad result to choose the next constructive ablation, not an arbitrary seed sweep | Prevents failed method lineages from quietly becoming weak analysis papers |
+| Reintegrates local mechanisms into a standard task, system, or value metric | Distinguishes design uncertainty from statistical uncertainty | Aligns claims, baselines, evidence, costs, limitations, and writing |
 
-These are recurring behaviors observed across live projects, not hypothetical
-prompt mistakes. The full [failure map](FAILURE_MAP.md) connects each symptom
-to its hidden confusion, scientific cost, and repair.
+The output is intentionally small: one live state, one method lineage, one
+contrary-evidence register, and one highest-value next action. FIRM adds judgment,
+not paperwork.
+
+## Why Agents Need It
+
+Research agents usually fail after the code starts working.
+
+| Expensive failure pattern | What it looks like in practice | FIRM's correction |
+|---|---|---|
+| **Seed drift** | A broad topic becomes a tiny cell only the project itself cares about | Preserve the original program, value spine, and reintegration path |
+| **One-loss closure** | Method v1 loses, so the agent declares the direction exhausted | Diagnose the realization and construct v2 at the evidence-indicated locus |
+| **Seed laundering** | A competent negative run triggers ten more seeds | Repair design uncertainty before paying for statistical certainty |
+| **Probe addiction** | Predicting a failure is mistaken for fixing it | Every probe must change a method decision |
+| **Baseline debt** | The paper forms before the strong matched baseline is correct | Audit fidelity and provenance before locking paper identity |
+| **Analysis fallback** | Failed interventions are repackaged as an analysis contribution | Require a positive object that survives deletion of the failed methods |
+| **Premature writing** | A polished draft creates commitment to an immature claim | Keep a candidate claim until independent paper-entry review passes |
 
 FIRM is cheapest before the wrong experiment, not after the wrong paper.
 
-## Five Decisions Before Another Week Of Compute
+## Field Tested, Carefully Stated
 
-<p align="center">
-  <img src="assets/firm-five-decisions.png" width="100%" alt="Five FIRM research checkpoints: Prize, Fidelity, Design, Evidence, and Entry">
-</p>
+| Observed development scale | Human research checkpoint |
+|---|---|
+| **100B+ model tokens** across five model families and 17 deployed configurations | **3 human-verified papers** developed under successive FIRM versions |
+| Repeated use across method, analysis, systems, and multimodal projects | **9 official ACL ARR reviews** with mean overall assessments of **3.50**, **3.33**, and **3.17** |
 
-| Checkpoint | The question FIRM forces | What changes |
+Why the token count matters: it is the failure dataset behind FIRM. At that
+scale, recurring mistakes stop looking anecdotal. We observed agents repeatedly
+drift from valuable seeds, overinterpret one run, expand seeds when a design is
+broken, discover fatal controls after writing, and mistake activity for method
+maturity. FIRM encodes the countermeasures that survived those repetitions.
+
+The review record is reported only in aggregate to protect active double-blind
+submissions. Every counted paper was read, checked, and approved by human
+authors before submission. These scores are **not acceptance decisions**, and
+they are not a controlled estimate of FIRM's causal effect. They are an external
+checkpoint showing that this system was exercised on real papers under real
+review, rather than written as an untested prompt collection.
+
+## The Operating Model
+
+FIRM keeps one persistent researcher active and loads specialist skills only
+when they are useful:
+
+```text
+RESEARCH PROGRAM
+      |
+      v
+Prize -> Fidelity -> Design -> Evidence -> Entry
+  ^         |          |          |          |
+  |         +----------+----------+----------+
+  |             evidence can revise the program
+  +------------------------------------------------
+```
+
+1. **Prize:** If everything works, is the result important enough to matter?
+2. **Fidelity:** Are the task, baseline, scorer, provenance, and costs real?
+3. **Design:** What load-bearing primitive follows from the evidence?
+4. **Evidence:** What does this run diagnose, and what remains alive?
+5. **Entry:** Has the current claim earned full paper writing?
+
+Codex acts as an independent second PI at consequential boundaries. Its role is
+to challenge prize and fidelity, reinterpret evidence, invent alternatives, and
+attack the strongest explanation. It is not a stop-button oracle, and a Codex
+outage does not pause the lead researcher's work.
+
+## What Gets Installed
+
+```text
+your-project/
+├── CLAUDE.md                    # existing instructions preserved
+├── .firm/
+│   ├── RESEARCH_PROGRAM.md      # broad problem, value, resources
+│   ├── FIRST_MESSAGE_NEW.md     # exact new-program startup prompt
+│   ├── FIRST_MESSAGE_AUDIT.md   # exact existing-project audit prompt
+│   └── ...                      # backups and install metadata
+└── .claude/skills/
+    ├── research-pipeline/       # persistent first-author identity
+    ├── research-lit/            # decision-linked literature work
+    ├── baseline/                # matched reproduction and raw behavior
+    ├── method-primitive-synthesis/
+    ├── experiment-plan/         # adaptive, claim-aware experiments
+    ├── research-review/         # independent second PI
+    ├── signal-analysis/         # interpretation and design consequence
+    ├── paper-writing/           # gated manuscript production
+    └── ...                      # 17 focused tools in total
+```
+
+Read the complete [`skills/INDEX.md`](skills/INDEX.md). The suite is one
+researcher with tools, not 17 competing personalities and not a rigid state
+machine.
+
+## Inspect Before You Trust
+
+Start with three sanitized field cases:
+
+| Case | The costly mistake | What FIRM changes |
 |---|---|---|
-| **01 · PRIZE** | If everything works, will the community care? | Low-value private cells cannot borrow importance from the original seed |
-| **02 · FIDELITY** | Is the current paper still solving the program we started? | Qualifiers become visible scope debt with an explicit repayment path |
-| **03 · DESIGN** | Did the run fail, the realization fail, or the primitive fail? | The next experiment repairs a causal component instead of decorating v1 |
-| **04 · EVIDENCE** | Do raw artifacts support the story under matched controls? | An independent second PI interprets, invents, and attacks before commitment |
-| **05 · ENTRY** | Is there an earned positive object and decisive comparison? | Full manuscript work waits for `PAPER_ENTRY.md: PASS` |
+| [A method loses once](examples/01-method-loss-is-not-field-loss.md) | One realization is confused with the field | Preserve valid evidence and form the next constructive ablation |
+| [The seed disappears](examples/02-seed-drift.md) | A valuable program shrinks into an isolated diagnostic cell | Track scope debt and force standard-task reintegration |
+| [The paper starts too early](examples/03-paper-entry-audit.md) | Writing quality hides scientific immaturity | Run independent Prize/Fidelity/Entry review first |
 
-## What Appears In Your Project
+Then inspect the implementation:
 
-| Artifact | Why it matters |
-|---|---|
-| **One compact live state** | Keeps the original program, current paper, contrary evidence, scope debt, method lineage, active jobs, and one chosen next action together |
-| **A constructive method lineage** | Records what activated, what failed, and what the next version must preserve or change |
-| **Independent second-PI synthesis** | Challenges prize, fidelity, explanation, method design, and maturity before sunk cost takes over |
-| **`CANDIDATE_CLAIM.md`** | Keeps the claim provisional while research is still changing |
-| **`PAPER_ENTRY.md`** | Stops polished writing from outrunning the evidence |
-
-One persistent `research-pipeline` owns the program. The other skills are
-on-demand capabilities, not permission gates or a rigid state machine.
-
-## Three Real Failure Patterns
-
-| Case | What goes wrong | Corrective move |
-|---|---|---|
-| [A method loses once](examples/01-method-loss-is-not-field-loss.md) | One realization is confused with the field, while extra seeds cannot repair design | Preserve the program and form the next constructive ablation |
-| [The paper drifts from the seed](examples/02-seed-drift.md) | A rigorous private cell replaces the important problem | Expose scope debt and require a reintegration path |
-| [Writing starts too early](examples/03-paper-entry-audit.md) | Experimental volume is mistaken for contribution maturity | Run evidence integrity and independent paper-entry review |
-
-The cases are sanitized composites distilled from recurring behavior in real
-research programs. They are decision patterns, not claims that one prompt
-guarantees a paper.
-
-## Why 100B+ Tokens Matter
-
-The scale is not decoration. It is the failure dataset behind FIRM. Across
-long-running projects, we watched research agents close fields after one bad
-realization, multiply seeds after a design failure, drift from important
-programs into private cells, and write polished papers before checking decisive
-controls. The skills were revised, merged, or deleted whenever those failures
-showed that the system itself was teaching the wrong research behavior.
-
-The total was accumulated primarily across five model families and 17 deployed
-model or research-runtime configurations:
-
-| Family | Models or configurations used in live research |
-|---|---|
-| **GLM** | `glm-4.7`, `glm-5.1`, `glm-5.2`, `glm-5.7` |
-| **Kimi** | `kimi-k2.5`, `kimi-k2.6`, `kimi-k3` |
-| **Claude** | `claude-opus-4.6`, `claude-opus-4.7`, `claude-opus-4.8`, and the `claude-fable-5` research configuration |
-| **DeepSeek** | `deepseek-v4-pro` |
-| **GPT** | `gpt-5.1`, `gpt-5.2`, `gpt-5.3`, `gpt-5.4`, `gpt-5.5` |
-
-These labels describe the systems used in real sessions. The token total is not
-an equal-allocation, head-to-head model benchmark, and no per-model performance
-ranking is implied.
-
-## External Review Record
-
-Three papers developed under successive workflow versions received **nine
-official ACL ARR reviews**, with mean overall assessments of **3.50**,
-**3.33**, and **3.17**.
-
-We report only the aggregate score record. Paper identities, submission
-metadata, reviewer identifiers, review text, and dashboard screenshots remain
-private while the work may still participate in anonymous review. The scores
-show that successive workflow versions were used to produce serious research;
-they are not an acceptance claim or a controlled estimate of FIRM's causal
-effect.
-
-## Skill System
-
-| Research responsibility | Skills |
-|---|---|
-| Own the program | `research-pipeline` |
-| Establish empirical contact | `frontier-direction-discovery`, `research-lit`, `baseline`, `signal-analysis` |
-| Form and test methods | `method-primitive-synthesis`, `experiment-plan`, `research-contract`, `run-experiment`, `monitor-experiment` |
-| Review evidence and claims | `research-review`, `experiment-audit`, `research-state-audit`, `citation-audit` |
-| Write and improve the paper | `paper-writing`, `paper-figure`, `auto-paper-improvement-loop` |
-
-See [the complete skill index](skills/INDEX.md) for activation guidance and
-shared references.
-
-The suite is primarily tested with Claude Code's `SKILL.md` format. The
-Markdown workflows can be adapted to Codex and other agent runtimes by mapping
-tool names to their equivalents.
+- [`research-pipeline`](skills/research-pipeline/SKILL.md): persistent ownership and continuity
+- [`method-primitive-synthesis`](skills/method-primitive-synthesis/SKILL.md): constructive method formation
+- [`research-review`](skills/research-review/SKILL.md): second-PI protocol
+- [`paper-writing`](skills/paper-writing/SKILL.md): evidence-gated writing
+- [`scripts/test-onboarding.sh`](scripts/test-onboarding.sh): clean and repeated-install tests
+- [`scripts/release-check.sh`](scripts/release-check.sh): public-release safety checks
 
 ## Origin And Lineage
 
 FIRM began in 2025 as an attempt to make auto-research persist through real
-scientific uncertainty rather than merely complete a workflow. Selected
-foundations were adapted from
-[ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep),
-including portable Markdown skills, persistent artifacts, and cross-model
-review. Later versions were repeatedly restructured through live research.
+projects, not just complete a benchmark loop. Early versions borrowed useful
+execution ideas from [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep).
+The project then diverged through repeated field use: research ownership,
+program protection, constructive method lineage, evidence interpretation,
+second-PI review, scope-debt control, paper-entry gating, and public release
+safety were rebuilt across many versions.
 
-FIRM is independent and unofficial. It is not maintained or endorsed by the
-ARIS authors. Attribution is preserved in [NOTICE](NOTICE).
+FIRM is independent and unofficial. It is not maintained or endorsed by ARIS,
+Anthropic, OpenAI, ACL, or ARR.
 
-Read the [long-form origin, design rationale, evidence, and ARIS
-relationship](docs/ORIGIN_AND_DESIGN.md).
+<details>
+<summary><strong>Development field notes</strong></summary>
 
-## Field Notes
+| Period | What broke | What changed in FIRM |
+|---|---|---|
+| **2025 H1** | Long agents could execute experiments but repeatedly returned ordinary decisions to the user | Added persistent first-author ownership and durable live state |
+| **2025 H2** | Projects accumulated diagnostics while the method never formed | Made every probe pay rent through a concrete design consequence |
+| **2026 Q1** | A failed realization closed a field, while broken designs triggered wasteful seed expansion | Separated failure levels and design uncertainty from statistical uncertainty |
+| **2026 Q2** | Broad programs collapsed into private slices; failed methods became analysis fallbacks | Added value spine, scope debt, reintegration, and the analysis deletion test |
+| **2026 Q2** | Strong controls and scorer bugs arrived after the paper identity had hardened | Moved fidelity and best-case prize review before major compute and writing |
+| **2026 H1 external checkpoint** | Three human-verified papers entered real peer review | Nine official ACL ARR reviews returned mean overall assessments of **3.50**, **3.33**, and **3.17** |
+| **2026-07-27** | Overlapping skills had become another source of agent confusion | Consolidated the system into one persistent researcher and 17 focused tools |
 
-This is the development log that matters: not every new feature, but the moments
-when live research forced us to reject part of our own operating model.
+</details>
 
-| Period | Major turn |
-|---|---|
-| **2025 · Original thesis** | We learned that keeping an agent running is easier than keeping it scientifically responsible. The goal changed from an autonomous loop to a persistent first author grounded in durable evidence. |
-| **2025–early 2026 · Workflow foundation** | Portable skills, artifacts, and cross-model review made long research possible. Selected ARIS foundations became the starting scaffold, not a permanent architecture. |
-| **2026 H1 · State-machine break** | The early S0–S6 state machine, kill ledgers, and cheap-falsifier gates made agents obey workflow verdicts instead of reinterpreting science. Permanent terminal labels and stage permissions were deleted. |
-| **2026 H1 · Method-formation break** | One failed realization was closing whole method families, while competent negative designs triggered wasteful seed expansion. FIRM separated run, realization, primitive, and family failure, then made constructive redesign the default response to design evidence. |
-| **2026 H1 · Value and scope break** | Broad programs kept shrinking into private cells, and failed methods were being repackaged as analysis papers. Program/paper separation, value spine, scope debt, reintegration, and the analysis-paper deletion test were introduced. |
-| **2026 H1 · Evidence and harvest break** | Baseline, scorer, provenance, and control failures arrived after drafts hardened, while moving standards kept mature work unfinished. Evidence integrity moved earlier; candidate claims and independent paper entry made finishing part of research. |
-| **2026 H1 · Second-PI break** | Codex was being used late as a stop judge, and MCP outages were allowed to pause research. Review moved upstream into `Prize/Fidelity → Interpret → Invent → Attack → Decide`; infrastructure failure lost scientific authority. |
-| **2026 H1 · External checkpoint** | Three human-verified papers developed under successive versions received nine official ACL ARR reviews, with mean overall assessments of **3.50**, **3.33**, and **3.17**. Only aggregate scores are public. |
-| **2026-07-27 · Consolidation** | After more than **100B model tokens** across five model families and 17 deployed configurations, overlapping skills and audits were reduced to one persistent researcher, 17 focused tools, a failure map, project onboarding, and a tested first-run path. |
+## Human Accountability
 
-### Human Accountability
-
-FIRM is designed to improve research judgment, not automate submission volume
-or use peer review as a debugging endpoint. Every paper included in the review
-record was manually checked by a human author before submission. Human authors
-reviewed the final manuscript, its claims, supporting evidence and provenance,
-citations, and the decision to submit. Nothing was submitted automatically;
-scientific and publication responsibility remained with the authors.
+FIRM improves research judgment; it does not automate submission volume.
+Researchers remain responsible for novelty, licenses, data provenance, compute,
+authorship, citations, disclosure, claims, and the final decision to submit.
+Peer review is not a unit-test endpoint. Every public result should survive
+human reading and verification.
 
 <details>
 <summary><strong>中文简介</strong></summary>
 
-大多数 auto-research 项目优化的是一次实验闭环。FIRM
-关注的是机器如何在许多轮失败、反常结果和方法重构中保持研究判断。
+FIRM 是面向 Claude Code 的研究判断层，并把 Codex 作为独立 second PI。
+它解决的不是“如何多跑实验”，而是更昂贵的问题：如何避免宽泛且重要的
+研究方向逐渐缩成无人关心的小切片，如何把方法失败变成下一版设计证据，
+以及如何在论文真正成熟之前阻止过早写作。
 
-它不是保证论文产出的固定流程，而是一组经过长期真实研究反复修改的
-skills：防止重要 seed 漂移成无人关心的小问题，区分设计失败与统计不确定性，
-让 probe 服务于方法设计，在写作前完成证据审计，并在贡献成熟时及时收获。
-
-FIRM 不把同行评审当作自动化测试集。计入上述评审记录的每篇论文都由人类作者
-在投稿前核对最终稿、研究主张、支撑证据及其来源、引用和投稿决定；没有论文被
-Agent 自动提交，科研与发表责任始终由作者承担。
+这套系统来自超过 100B 模型 token 的长期实战迭代，并在三篇经过人工核实
+的论文上经历了九份 ACL ARR 正式评审。公开分数仅作为真实研究使用记录，
+不代表录用结果，也不声称能够单独证明 FIRM 的因果效果。
 
 </details>
 
 ## License
 
-FIRM is released under the [MIT License](LICENSE). Selected lineage from ARIS
-is credited in [NOTICE](NOTICE).
+FIRM is released under the [MIT License](LICENSE). Contributions should preserve
+the project's core promise: better research decisions, inspectable evidence,
+and human accountability.
 
 <p align="center">
   <strong>Before your agent spends another week proving the wrong thing, give it FIRM.</strong>

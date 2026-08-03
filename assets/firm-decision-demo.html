@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIRM decision demo</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1800px; height: 980px; overflow: hidden; }
+    body {
+      background: #0b0d10;
+      color: #f7f8fa;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .canvas {
+      width: 1800px;
+      height: 980px;
+      padding: 68px 76px 62px;
+      background:
+        linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px),
+        #0b0d10;
+      background-size: 44px 44px;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #9da4ae;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid #61d493;
+      color: #61d493;
+      font-size: 18px;
+      font-weight: 800;
+    }
+    h1 {
+      margin: 21px 0 42px;
+      max-width: 1180px;
+      font-size: 62px;
+      line-height: 1.08;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+    h1 span { color: #61d493; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .panel {
+      height: 548px;
+      overflow: hidden;
+      border: 1px solid #323842;
+      background: rgba(17, 20, 24, .97);
+      box-shadow: 0 22px 65px rgba(0,0,0,.28);
+    }
+    .panel.firm { border-color: #37664b; }
+    .chrome {
+      height: 66px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 24px;
+      border-bottom: 1px solid #292e36;
+      background: #12151a;
+    }
+    .dot { width: 11px; height: 11px; border-radius: 50%; background: #464d58; }
+    .chrome-label {
+      margin-left: 10px;
+      color: #8d95a0;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 17px;
+    }
+    .terminal {
+      padding: 28px 31px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 19px;
+      line-height: 1.52;
+    }
+    .prompt { color: #9da4ae; }
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0 21px;
+      padding: 16px 18px;
+      border: 1px solid #2d333c;
+      background: #0d1014;
+      color: #e8eaed;
+    }
+    .bad { color: #ff7d77; }
+    .good { color: #61d493; }
+    .muted { color: #777f8a; }
+    .verdict {
+      margin-top: 18px;
+      padding: 18px;
+      border-left: 3px solid #ff7d77;
+      background: rgba(255,125,119,.07);
+    }
+    .firm .verdict {
+      border-left-color: #61d493;
+      background: rgba(97,212,147,.07);
+    }
+    .steps {
+      display: grid;
+      gap: 12px;
+      margin-top: 19px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      color: #d9dde2;
+    }
+    .n { color: #61d493; font-weight: 800; }
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 37px;
+      color: #8d95a0;
+      font-size: 19px;
+    }
+    .foot strong { color: #f7f8fa; font-weight: 650; }
+    .pill {
+      padding: 10px 14px;
+      border: 1px solid #343a43;
+      background: #111419;
+      color: #bbc1c9;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="eyebrow"><div class="mark">F</div> One result. Two research decisions.</div>
+    <h1>FIRM turns a failed run into <span>design evidence.</span></h1>
+    <section class="grid">
+      <article class="panel">
+        <div class="chrome"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="chrome-label">without-firm / agent</span></div>
+        <div class="terminal">
+          <div class="prompt">$ inspect RESULT.md</div>
+          <div class="metric"><span>routing prototype v1</span><span class="bad">69.1%</span></div>
+          <div class="metric"><span>matched baseline</span><span>72.4%</span></div>
+          <div class="verdict">
+            <div class="bad">DIRECTION EXHAUSTED</div>
+            <div style="margin-top:10px">Run 10 more seeds, pivot fields,<br>or write an analysis paper.</div>
+          </div>
+          <div class="muted" style="margin-top:27px">The run became a verdict on the field.</div>
+        </div>
+      </article>
+      <article class="panel firm">
+        <div class="chrome"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="chrome-label">with-firm / research-pipeline</span></div>
+        <div class="terminal">
+          <div class="prompt">$ firm audit RESULT.md</div>
+          <div class="metric"><span>routing prototype v1</span><span class="bad">69.1%</span></div>
+          <div class="metric"><span>matched baseline</span><span>72.4%</span></div>
+          <div class="verdict">
+            <div class="good">REALIZATION FAILURE != FIELD FAILURE</div>
+            <div class="steps">
+              <div class="step"><span class="n">01</span><span>Diagnose: routing changed, target errors did not.</span></div>
+              <div class="step"><span class="n">02</span><span>Preserve: broad program + valid evidence.</span></div>
+              <div class="step"><span class="n">03</span><span>Next: one ablation that tests actuation.</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer class="foot"><strong>Less wandering. Better research decisions.</strong><span class="pill">REAL REPOSITORY FIXTURE</span></footer>
+  </main>
+</body>
+</html>

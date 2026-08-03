@@ -11,10 +11,8 @@ required=(
   NOTICE
   FAILURE_MAP.md
   GETTING_STARTED.md
-  assets/firm-hero.png
-  assets/firm-field-tested.png
-  assets/firm-first-run.png
-  assets/firm-five-decisions.png
+  assets/firm-decision-demo.png
+  assets/firm-decision-demo.html
   docs/ORIGIN_AND_DESIGN.md
   firm
   install.sh
