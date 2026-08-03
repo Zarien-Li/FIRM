@@ -6,14 +6,16 @@ errors=0
 
 required=(
   README.md
-  AGENT_GUIDE.md
+  docs/README.md
+  docs/agent-guide.md
   LICENSE
   NOTICE
-  FAILURE_MAP.md
-  GETTING_STARTED.md
+  docs/failure-map.md
+  docs/getting-started.md
   assets/firm-decision-demo.png
-  assets/firm-decision-demo.html
-  docs/ORIGIN_AND_DESIGN.md
+  assets/source/firm-decision-demo.html
+  docs/origin-and-design.md
+  docs/releasing.md
   firm
   install.sh
   scripts/test-onboarding.sh

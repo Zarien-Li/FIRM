@@ -1,8 +1,8 @@
 # FIRM Agent Guide
 
 This file is for AI coding and research agents helping a user adopt FIRM.
-Humans should start with [README.md](README.md) or
-[GETTING_STARTED.md](GETTING_STARTED.md).
+Humans should start with the [README](../README.md) or the
+[getting-started guide](getting-started.md).
 
 ## Product Identity
 

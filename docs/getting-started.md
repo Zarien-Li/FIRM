@@ -136,4 +136,4 @@ bash ~/FIRM/install.sh --dry-run
 ```
 
 For the product rationale and exact skill catalog, return to
-[README.md](README.md) and [skills/INDEX.md](skills/INDEX.md).
+[README](../README.md) and [skills index](../skills/INDEX.md).

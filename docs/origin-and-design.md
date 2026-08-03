@@ -121,7 +121,7 @@ Every major instruction in this repository should answer a real failure:
 
 These are not hypothetical prompt-design concerns. They recurred across live projects often
 enough to reveal stable confusions in agent behavior. Read the
-[`FAILURE_MAP.md`](../FAILURE_MAP.md) for the symptoms, underlying confusions, scientific costs, and
+[`failure-map.md`](failure-map.md) for the symptoms, underlying confusions, scientific costs, and
 the skill responses developed from them.
 
 The suite is evolved by the same rule it gives the researcher: interpret the evidence, repair the

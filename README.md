@@ -13,7 +13,7 @@
 <p align="center">
   <a href="#start-in-one-command"><strong>Start in one command</strong></a> ·
   <a href="#see-the-difference">See the difference</a> ·
-  <a href="GETTING_STARTED.md">Read the guide</a> ·
+  <a href="docs/getting-started.md">Read the guide</a> ·
   <a href="examples/README.md">Inspect the cases</a>
 </p>
 
@@ -68,7 +68,7 @@ Verify the installation at any time:
 ```
 
 Already have `~/FIRM`? Run `git -C ~/FIRM pull` and then `~/FIRM/firm init .`.
-The installer also supports [global, project-local, and dry-run modes](GETTING_STARTED.md).
+The installer also supports [global, project-local, and dry-run modes](docs/getting-started.md).
 
 This is backed by the runnable fixture in [`demo/fixture`](demo/fixture), not a
 made-up interface. Try the 90-second terminal walkthrough:

@@ -10,7 +10,7 @@ Run `make demo` for the timed 90-second terminal storyboard. Use
 
 ### 0-8s: The problem
 
-**Screen:** README hero, then `FAILURE_MAP.md`.
+**Screen:** README hero, then `docs/failure-map.md`.
 
 **Voice-over:** "Auto-research rarely fails because the agent cannot launch an
 experiment. It fails after the first method loses, when the project drifts, or
