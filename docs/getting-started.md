@@ -51,6 +51,7 @@ FIRM creates:
 ```text
 my-project/
 ├── CLAUDE.md
+├── CLAUDE-RESEARCH.md       # public research system-prompt addendum
 ├── .claude/skills/           # project-local FIRM skills
 └── .firm/
     ├── RESEARCH_PROGRAM.md
@@ -66,7 +67,7 @@ Then start Claude Code:
 
 ```bash
 cd ~/research/my-project
-claude
+claude --append-system-prompt-file CLAUDE-RESEARCH.md
 ```
 
 Paste the contents of `.firm/FIRST_MESSAGE_NEW.md`.

@@ -46,6 +46,14 @@ init_project() {
   cp "${ROOT_DIR}/templates/FIRST_MESSAGE_AUDIT.md" \
     "${project}/.firm/FIRST_MESSAGE_AUDIT.md"
 
+  local research_prompt="${project}/CLAUDE-RESEARCH.md"
+  if [[ ! -e "${research_prompt}" ]]; then
+    cp "${ROOT_DIR}/CLAUDE-RESEARCH.md" "${research_prompt}"
+    echo "Created CLAUDE-RESEARCH.md"
+  else
+    echo "Kept existing CLAUDE-RESEARCH.md"
+  fi
+
   local claude_file="${project}/CLAUDE.md"
   local marker="<!-- FIRM:BEGIN -->"
   if [[ ! -e "${claude_file}" ]]; then
@@ -73,7 +81,7 @@ init_project() {
   echo
   echo "Next:"
   echo "  1. Complete .firm/RESEARCH_PROGRAM.md"
-  echo "  2. Run: cd \"${project}\" && claude"
+  echo "  2. Run: cd \"${project}\" && claude --append-system-prompt-file CLAUDE-RESEARCH.md"
   echo "  3. Paste .firm/FIRST_MESSAGE_NEW.md for a new program,"
   echo "     or .firm/FIRST_MESSAGE_AUDIT.md for an existing project."
 }
@@ -98,6 +106,7 @@ doctor_project() {
 
   for required in \
     "${project}/CLAUDE.md" \
+    "${project}/CLAUDE-RESEARCH.md" \
     "${project}/.firm/RESEARCH_PROGRAM.md" \
     "${project}/.firm/FIRST_MESSAGE_NEW.md" \
     "${project}/.firm/FIRST_MESSAGE_AUDIT.md"; do

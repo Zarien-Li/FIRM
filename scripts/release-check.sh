@@ -6,6 +6,7 @@ errors=0
 
 required=(
   README.md
+  CLAUDE-RESEARCH.md
   docs/README.md
   docs/agent-guide.md
   LICENSE

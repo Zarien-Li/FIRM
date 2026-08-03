@@ -57,12 +57,13 @@ git clone https://github.com/Zarien-Li/FIRM.git ~/FIRM && ~/FIRM/firm init .
 Then start Claude Code normally:
 
 ```bash
-claude
+claude --append-system-prompt-file CLAUDE-RESEARCH.md
 ```
 
 `firm init` preserves an existing `CLAUDE.md`, installs project-local skills,
-and creates a research-program card plus first-message templates. Verify the
-installation with `~/FIRM/firm doctor .`. See the
+installs the public [`CLAUDE-RESEARCH.md`](CLAUDE-RESEARCH.md) system-prompt
+addendum, and creates a research-program card plus first-message templates.
+Verify the installation with `~/FIRM/firm doctor .`. See the
 [getting-started guide](docs/getting-started.md) for global, project-local, and
 dry-run installation.
 
