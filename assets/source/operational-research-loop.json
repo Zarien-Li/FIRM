@@ -1,0 +1,110 @@
+{
+  "canvas": {
+    "width": 1200,
+    "height": 500,
+    "background": "#0B0D10"
+  },
+  "title": "THE OPERATIONAL RESEARCH LOOP",
+  "subtitle": "One persistent researcher. Evidence can revise any earlier decision.",
+  "nodes": [
+    {
+      "id": "prize",
+      "label": "PRIZE\nImportant problem",
+      "x": 135,
+      "y": 230,
+      "width": 160,
+      "height": 100,
+      "shape": "rounded",
+      "fill": "#111419",
+      "stroke": "#343A43"
+    },
+    {
+      "id": "fidelity",
+      "label": "FIDELITY\nLiterature + baselines",
+      "x": 321,
+      "y": 230,
+      "width": 160,
+      "height": 100,
+      "shape": "rounded",
+      "fill": "#111419",
+      "stroke": "#343A43"
+    },
+    {
+      "id": "design",
+      "label": "DESIGN\nThesis + method",
+      "x": 507,
+      "y": 230,
+      "width": 160,
+      "height": 100,
+      "shape": "rounded",
+      "fill": "#111419",
+      "stroke": "#343A43"
+    },
+    {
+      "id": "experiment",
+      "label": "EXPERIMENT\nPlan · register · run",
+      "x": 693,
+      "y": 230,
+      "width": 160,
+      "height": 100,
+      "shape": "rounded",
+      "fill": "#111419",
+      "stroke": "#343A43"
+    },
+    {
+      "id": "evidence",
+      "label": "EVIDENCE\nDiagnose the result",
+      "x": 879,
+      "y": 230,
+      "width": 160,
+      "height": 100,
+      "shape": "rounded",
+      "fill": "#102018",
+      "stroke": "#61D493",
+      "text_color": "#F7F8FA"
+    },
+    {
+      "id": "entry",
+      "label": "ENTRY\nAudit · write · improve",
+      "x": 1065,
+      "y": 230,
+      "width": 160,
+      "height": 100,
+      "shape": "rounded",
+      "fill": "#111419",
+      "stroke": "#37664B"
+    }
+  ],
+  "edges": [
+    {"from": "prize", "to": "fidelity"},
+    {"from": "fidelity", "to": "design"},
+    {"from": "design", "to": "experiment"},
+    {"from": "experiment", "to": "evidence"},
+    {"from": "evidence", "to": "entry"},
+    {
+      "from": "evidence",
+      "to": "design",
+      "label": "REPAIR THE REALIZATION",
+      "style": "dashed",
+      "curve": true,
+      "route": "lower-inner"
+    },
+    {
+      "from": "evidence",
+      "to": "prize",
+      "label": "REFRAME THE QUESTION",
+      "style": "dashed",
+      "curve": true,
+      "route": "lower-outer"
+    },
+    {
+      "from": "entry",
+      "to": "fidelity",
+      "label": "CLAIM OR EVIDENCE GAP",
+      "style": "dashed",
+      "curve": true,
+      "route": "upper"
+    }
+  ],
+  "note": "HIGH-IMPACT ACTIONS REMAIN EXPLICIT · RUN · MONITOR · AUDIT · WRITE"
+}

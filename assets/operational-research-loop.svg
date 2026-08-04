@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">The operational research loop</title>
+  <desc id="desc">A six-stage research workflow from prize to paper entry, with evidence-driven feedback to the problem, fidelity, and method design.</desc>
+
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#252A31" stroke-width="1" opacity=".34"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#727B86"/>
+    </marker>
+    <marker id="feedback-arrow" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#61D493"/>
+    </marker>
+    <style>
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+      .stage { fill: #8F98A4; font-size: 12px; font-weight: 750; letter-spacing: 1.5px; }
+      .stage-accent { fill: #61D493; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; }
+      .node-label { fill: #F1F3F5; font-size: 15px; font-weight: 650; }
+      .step { fill: #5E6671; font-size: 11px; font-weight: 700; }
+      .edge-label { fill: #9BE6BA; font-size: 10px; font-weight: 750; letter-spacing: 1.1px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" fill="#0B0D10"/>
+  <rect width="1200" height="500" fill="url(#grid)"/>
+
+  <g class="sans">
+    <rect x="45" y="32" width="34" height="34" rx="3" fill="none" stroke="#61D493"/>
+    <text x="62" y="55" fill="#61D493" font-size="17" font-weight="850" text-anchor="middle">F</text>
+    <text x="96" y="48" fill="#F7F8FA" font-size="17" font-weight="800" letter-spacing="2.4">THE OPERATIONAL RESEARCH LOOP</text>
+    <text x="96" y="71" fill="#8D95A0" font-size="14">One persistent researcher. Evidence can revise any earlier decision.</text>
+  </g>
+
+  <rect x="35" y="154" width="1130" height="151" rx="18" fill="#0F1216" stroke="#252B33"/>
+
+  <g fill="none" stroke="#727B86" stroke-width="1.6" marker-end="url(#arrow)">
+    <path d="M 215 230 L 237 230"/>
+    <path d="M 401 230 L 423 230"/>
+    <path d="M 587 230 L 609 230"/>
+    <path d="M 773 230 L 795 230"/>
+    <path d="M 959 230 L 981 230"/>
+  </g>
+
+  <g fill="none" stroke="#61D493" stroke-width="1.6" stroke-dasharray="6 6" opacity=".86" marker-end="url(#feedback-arrow)">
+    <path d="M 1080 180 C 1080 112, 321 112, 321 180"/>
+    <path d="M 910 280 C 910 352, 530 352, 530 280"/>
+    <path d="M 850 280 C 850 420, 135 420, 135 280"/>
+  </g>
+
+  <g class="sans">
+    <g transform="translate(585 98)">
+      <rect width="220" height="27" rx="13.5" fill="#102018" stroke="#2E6948"/>
+      <text class="edge-label" x="110" y="18" text-anchor="middle">CLAIM OR EVIDENCE GAP</text>
+    </g>
+    <g transform="translate(602 338)">
+      <rect width="213" height="27" rx="13.5" fill="#102018" stroke="#2E6948"/>
+      <text class="edge-label" x="106.5" y="18" text-anchor="middle">REPAIR THE REALIZATION</text>
+    </g>
+    <g transform="translate(357 405)">
+      <rect width="210" height="27" rx="13.5" fill="#102018" stroke="#2E6948"/>
+      <text class="edge-label" x="105" y="18" text-anchor="middle">REFRAME THE QUESTION</text>
+    </g>
+  </g>
+
+  <g class="sans">
+    <g transform="translate(55 180)">
+      <rect width="160" height="100" rx="12" fill="#111419" stroke="#343A43"/>
+      <text class="stage" x="18" y="31">PRIZE</text>
+      <text class="step mono" x="142" y="31" text-anchor="end">01</text>
+      <text class="node-label" x="18" y="64">Important</text>
+      <text class="node-label" x="18" y="84">problem</text>
+    </g>
+
+    <g transform="translate(241 180)">
+      <rect width="160" height="100" rx="12" fill="#111419" stroke="#343A43"/>
+      <text class="stage" x="18" y="31">FIDELITY</text>
+      <text class="step mono" x="142" y="31" text-anchor="end">02</text>
+      <text class="node-label" x="18" y="64">Literature +</text>
+      <text class="node-label" x="18" y="84">baselines</text>
+    </g>
+
+    <g transform="translate(427 180)">
+      <rect width="160" height="100" rx="12" fill="#111419" stroke="#343A43"/>
+      <text class="stage" x="18" y="31">DESIGN</text>
+      <text class="step mono" x="142" y="31" text-anchor="end">03</text>
+      <text class="node-label" x="18" y="64">Thesis +</text>
+      <text class="node-label" x="18" y="84">method</text>
+    </g>
+
+    <g transform="translate(613 180)">
+      <rect width="160" height="100" rx="12" fill="#111419" stroke="#343A43"/>
+      <text class="stage" x="18" y="31">EXPERIMENT</text>
+      <text class="step mono" x="142" y="31" text-anchor="end">04</text>
+      <text class="node-label" x="18" y="64">Plan &#183; register</text>
+      <text class="node-label" x="18" y="84">&#183; run</text>
+    </g>
+
+    <g transform="translate(799 180)">
+      <rect width="160" height="100" rx="12" fill="#102018" stroke="#61D493" stroke-width="2"/>
+      <rect x="18" y="18" width="7" height="7" rx="3.5" fill="#61D493"/>
+      <text class="stage-accent" x="34" y="31">EVIDENCE</text>
+      <text class="step mono" x="142" y="31" text-anchor="end" fill="#61D493">05</text>
+      <text class="node-label" x="18" y="64">Diagnose</text>
+      <text class="node-label" x="18" y="84">the result</text>
+    </g>
+
+    <g transform="translate(985 180)">
+      <rect width="160" height="100" rx="12" fill="#111A16" stroke="#37664B"/>
+      <text class="stage-accent" x="18" y="31">ENTRY</text>
+      <text class="step mono" x="142" y="31" text-anchor="end">06</text>
+      <text class="node-label" x="18" y="64">Audit &#183; write</text>
+      <text class="node-label" x="18" y="84">&#183; improve</text>
+    </g>
+  </g>
+
+  <g class="mono" font-size="10.5" letter-spacing=".8">
+    <line x1="45" y1="466" x2="74" y2="466" stroke="#727B86" stroke-width="1.6"/>
+    <text x="84" y="470" fill="#747D88">FORWARD WORK</text>
+    <line x1="205" y1="466" x2="234" y2="466" stroke="#61D493" stroke-width="1.6" stroke-dasharray="5 5"/>
+    <text x="244" y="470" fill="#747D88">EVIDENCE FEEDBACK</text>
+    <text x="1155" y="470" fill="#747D88" text-anchor="end">HIGH-IMPACT ACTIONS REMAIN EXPLICIT</text>
+  </g>
+</svg>

@@ -107,18 +107,9 @@ unavailability does not pause the lead researcher's work.
 
 ### The operational research loop
 
-```mermaid
-flowchart LR
-    A[Important problem] --> B[Literature and baselines]
-    B --> C[Causal thesis and method]
-    C --> D[Plan, register, and run]
-    D --> E[Diagnose the result]
-    E -->|repair the realization| C
-    E -->|reframe the question| A
-    E --> F[Audit the evidence]
-    F --> G[Write and improve the paper]
-    G -->|claim or evidence gap| B
-```
+<p align="center">
+  <img src="assets/operational-research-loop.svg" width="100%" alt="The FIRM operational research loop: Prize, Fidelity, Design, Experiment, Evidence, and Entry with evidence-driven feedback">
+</p>
 
 This is a living loop, not a mandatory stage machine. One researcher keeps the
 original program, current paper, discovery slice, method lineage, scope debt,

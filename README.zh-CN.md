@@ -100,18 +100,9 @@ Prize -> Fidelity -> Design -> Evidence -> Entry
 
 ### 实际科研循环
 
-```mermaid
-flowchart LR
-    A[重要问题] --> B[文献与可信基线]
-    B --> C[因果解释与方法]
-    C --> D[规划、注册并运行实验]
-    D --> E[诊断结果]
-    E -->|修复当前 realization| C
-    E -->|重新校准问题| A
-    E --> F[审计证据]
-    F --> G[写作与改进论文]
-    G -->|claim 或证据缺口| B
-```
+<p align="center">
+  <img src="assets/operational-research-loop.svg" width="100%" alt="FIRM 实际科研循环：Prize、Fidelity、Design、Experiment、Evidence 和 Entry，以及由证据驱动的反馈">
+</p>
 
 这是一个持续更新的科研循环，不是强制阶段机。同一个研究者始终维护原始研究计划、当前
 论文、发现切片、方法谱系、scope debt、活动任务和下一步动作之间的一致性。
