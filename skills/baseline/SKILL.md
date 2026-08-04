@@ -1,6 +1,8 @@
 ---
 name: baseline
-description: Establish, reproduce, compare, or repair the empirical anchors of a research project. Use when the project needs credible field-standard baselines, benchmark fidelity, raw failure traces, or evidence that a result is real enough to support scientific reasoning.
+description: Establishes credible empirical anchors by selecting, reproducing, and behaviorally inspecting strong field-standard baselines.
+when_to_use: Use when a project needs benchmark fidelity, a trustworthy comparison, raw failure traces, or proof that an observed result is real enough to support method reasoning.
+argument-hint: "[task, benchmark, or baseline]"
 ---
 
 # Baseline
@@ -130,4 +132,4 @@ Keep raw logs and results at durable paths. The report should interpret them wit
 
 ## Continue The Same Researcher
 
-Use `signal-analysis` when raw behavior needs contrastive organization, artifact removal, or competing explanations. Return here whenever a later hypothesis exposes a missing anchor or integrity concern. This is not a stage handoff: the same researcher retains the thesis and reads only the additional evidence needed for the live question.
+Use `diagnose-result` when raw behavior needs contrastive organization, artifact removal, or competing explanations. Return here whenever a later hypothesis exposes a missing anchor or integrity concern. This is not a stage handoff: the same researcher retains the thesis and reads only the additional evidence needed for the live question.

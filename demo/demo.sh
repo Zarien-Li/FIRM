@@ -2,14 +2,18 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SPEED="${DEMO_SPEED:-3}"
+SPEED="${DEMO_SPEED:-1}"
 
 pause() {
-  sleep "$1"
+  if [[ "${SPEED}" != "0" ]]; then
+    sleep "$1"
+  fi
 }
 
 clear_screen() {
-  printf '\033[2J\033[H'
+  if [[ -t 1 ]]; then
+    printf '\033[2J\033[H'
+  fi
 }
 
 slide() {
@@ -17,41 +21,36 @@ slide() {
   printf '\n\033[1;36m%s\033[0m\n\n' "$1"
 }
 
-slide "Research agents do not usually fail at launching experiments."
-printf 'They fail after the first method loses.\n'
-printf 'They drift from an important seed into a private cell.\n'
-printf 'They polish a paper before the evidence is ready.\n'
-pause "$((4 * SPEED))"
+slide "FIRM — research judgment for Claude Code"
+printf 'Claude can search, code, run, and write.\n'
+printf 'FIRM helps it decide what the evidence means and what to do next.\n'
+pause 3
 
-slide "FIRM"
-printf 'Failure-Informed Research for Machines\n\n'
-printf '100B+ model tokens of failure-driven research judgment.\n\n'
-printf '  seed drift  |  premature closure  |  probe addiction\n'
-printf '  seed theater  |  late integrity failure  |  endless research\n'
-pause "$((5 * SPEED))"
+slide "Install as a Claude Code plugin"
+printf '/plugin marketplace add Zarien-Li/FIRM\n'
+printf '/plugin install firm@firm-research\n'
+printf '/reload-plugins\n'
+pause 4
 
-slide "Attach FIRM to a real project"
-printf '$ git clone https://github.com/Zoiya-Li/FIRM.git ~/FIRM\n'
-printf '$ ~/FIRM/firm init ~/research/my-project\n\n'
-printf '\033[1;32mVerification passed.\033[0m\n'
-printf 'Created research card, first messages, and project-local skills.\n'
-pause "$((5 * SPEED))"
+slide "Neutral result packet"
+sed -n '1,18p' "${ROOT_DIR}/demo/fixture/RESULT.md"
+pause 5
 
-slide "A real decision pattern"
-sed -n '1,16p' "${ROOT_DIR}/demo/fixture/RESULT.md"
-pause "$((5 * SPEED))"
+slide "Run the flagship diagnosis skill"
+printf 'cd demo/fixture\n'
+printf 'claude\n\n'
+printf '\033[1;32m/firm:diagnose-result RESULT.md\033[0m\n'
+pause 4
 
-slide "The FIRM response"
-printf '1. One clear loss diagnoses this realization.\n'
-printf '2. Do not sweep seeds. Do not close the field.\n'
-printf '3. Repair the component the evidence implicates.\n'
-pause "$((6 * SPEED))"
+slide "What a strong response should separate"
+printf '  • what the run establishes\n'
+printf '  • what one seed cannot establish\n'
+printf '  • which component the evidence implicates\n'
+printf '  • which next experiment distinguishes the leading explanations\n'
+pause 5
 
-slide "Independent second PI"
-printf 'Prize / Fidelity / Entry\n'
-printf '        -> Interpret -> Invent -> Attack\n'
-pause "$((5 * SPEED))"
-
-slide "Inherit the failure map."
-printf 'Do not pay to rediscover it.\n\n'
-printf 'Open source now.\n'
+slide "Then continue the research loop"
+printf '/firm:design-method\n'
+printf '/firm:plan-experiments\n'
+printf '/firm:second-pi\n\n'
+printf 'A failed method is evidence—not a verdict on the field.\n'

@@ -1,98 +1,60 @@
-# Seven-Day Release Checklist
+# Release Checklist
 
-## D-7: Lock The Public Identity
+## Validate
 
-- **Owner:** choose the final GitHub owner/repository name and restore GitHub
-  authentication.
-- **Codex:** replace every repository placeholder, initialize the repository,
-  and prepare the first clean commit.
-- **Exit condition:** the public repository URL is fixed and the release check
-  has no placeholders.
+```bash
+make check
+claude plugin validate .
+```
 
-## D-6: Prove Installation
+`make check` validates the repository without external dependencies. The official
+Claude Code validator should also pass in a current Claude Code installation before
+tagging a release.
 
-- **Codex:** push the repository, clone it into a clean temporary environment,
-  test fresh installation, conflict backup, dry-run, and verification.
-- **Owner:** confirm the README's first-run wording matches the intended user.
-- **Exit condition:** a new user can install the suite from the public URL with
-  one shell command and receives `Verification passed`.
+The release is blocked by invalid frontmatter, broken local references, a skill
+above the line budget, unsafe command patterns, inconsistent plugin metadata, or
+non-idempotent onboarding.
 
-## D-5: Freeze The Three Cases
+## Test the real install path
 
-- **Codex:** check every case against the current skills and remove claims that
-  are not demonstrated by the artifacts.
-- **Owner:** approve whether the cases may be described as sanitized composites
-  of the private research history.
-- **Exit condition:** all three cases are public, reproducible decision
-  patterns rather than anonymous testimonials.
+In a clean Claude Code session:
 
-## D-4: Capture The Real Demo
+```text
+/plugin marketplace add Zarien-Li/FIRM
+/plugin install firm@firm-research
+/reload-plugins
+```
 
-- **Owner:** record the real Claude Code interaction and voice-over. Do not use
-  a fabricated agent response.
-- **Codex:** provide the exact prompt, terminal storyboard, shot order,
-  captions, and timing; inspect the raw recording for scientific and privacy
-  issues.
-- **Exit condition:** one truthful 85-90 second recording exists.
+Verify at least:
 
-## D-3: Edit And Embed
+```text
+/firm:research
+/firm:diagnose-result demo/fixture/RESULT.md
+/firm:second-pi
+```
 
-- **Codex:** trim the recording, prepare captions and a compact GIF/WebM
-  preview, add the media to README, and verify links.
-- **Owner:** approve public-facing voice, identity, and any visible account
-  information.
-- **Exit condition:** the value can be understood without reading the entire
-  README.
+Also test project-local onboarding:
 
-## D-2: Evidence And Integrity Audit
+```bash
+./firm init /tmp/firm-release-test
+./firm doctor /tmp/firm-release-test
+```
 
-- **Owner:** provide publishable support or revised wording for the three ARR
-  reviewer-score claims. Completed with the official-review dashboard capture.
-- **Codex:** run the release checker, attribution/license audit, secret/path
-  scan, and claim-language audit.
-- **Exit condition:** no unresolved URL, private path, credential, unsupported
-  evidence claim, or attribution issue remains.
+## Review documentation truthfulness
 
-## D-1: Public Dry Run
+- Every displayed command must exist.
+- The demo must distinguish a guided storyboard from a real model response.
+- Neutral evaluation prompts must not contain the expected conclusion.
+- No unpublished titles, reviewer identities, server paths, credentials, or
+  private URLs may ship.
+- Historical usage claims must not be presented as controlled causal evidence.
+- Upstream attribution in `NOTICE` and `LICENSE` must remain intact.
 
-- **Codex:** verify an incognito clone, install, examples, demo, and rendered
-  README; prepare the `v1.0.0` changelog.
-- **Owner:** review the repository exactly as a first-time visitor would and
-  approve launch.
-- **Exit condition:** release candidate is frozen except for genuine blockers.
+## Version and publish
 
-## D-0: Release
-
-- **Codex:** tag `v1.0.0`, publish the GitHub release, and return the canonical
-  links and tested install command.
-- **Owner:** make the launch posts and respond personally to early community
-  questions.
-
-## Blocking: Owner Action
-
-- [x] Lock the repository identity as `Zoiya-Li/FIRM`.
-- [x] Restore GitHub authentication for `Zoiya-Li`.
-- [x] Approve creation of the public repository and its license visibility.
-- [x] Provide publishable evidence and bounded wording for the three ARR
-  reviewer-score claims.
-- [ ] Record the real Claude Code response and voice-over for the 90-second
-  demo. The script and fixture are ready; a real response should not be faked.
-
-## Prepared By Codex
-
-- [x] Reversible one-command installer with conflict backups.
-- [x] Installation verifier.
-- [x] Three sanitized field-tested cases.
-- [x] 90-second timeline, narration, fixture, terminal preview, and recording
-  checklist.
-- [x] Automated release check for missing files, placeholders, and private
-  paths.
-
-## After Repository Creation
-
-- [x] Replace repository placeholders with the canonical URL.
-- [x] Initialize Git, commit, push, and verify the public repository with a
-  clean public clone.
-- [x] Test `git clone` plus `bash install.sh` in a clean temporary home.
-- [ ] Add the final MP4/GIF/WebM demo asset and link it from README.
-- [ ] Create release `v1.0.0` with a concise changelog.
+Update the release version in `.claude-plugin/plugin.json` and the top-level
+marketplace manifest version. Do not duplicate the plugin version inside the marketplace
+entry. Then update `CHANGELOG.md`, create the Git tag, and publish the GitHub release.
+After publication, repeat the marketplace install from the public repository.
+Upload `assets/social-preview.png` as the repository social preview in GitHub's
+repository settings so shared links use the intended launch card.

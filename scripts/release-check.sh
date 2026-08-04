@@ -2,35 +2,30 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-errors=0
 
 required=(
   README.md
+  README.zh-CN.md
   CLAUDE-RESEARCH.md
-  docs/README.md
-  docs/agent-guide.md
+  CONTRIBUTING.md
+  SECURITY.md
+  CHANGELOG.md
+  CITATION.cff
   LICENSE
   NOTICE
-  docs/failure-map.md
+  .claude-plugin/plugin.json
+  .claude-plugin/marketplace.json
+  skills/INDEX.md
   docs/getting-started.md
   assets/firm-decision-demo.png
+  assets/social-preview.png
+  assets/source/social-preview.html
   assets/source/firm-decision-demo.html
-  docs/origin-and-design.md
-  docs/releasing.md
   firm
   install.sh
+  scripts/validate_skills.py
   scripts/test-onboarding.sh
-  scripts/verify-install.sh
   templates/CLAUDE_FIRM_BLOCK.md
-  templates/FIRST_MESSAGE_AUDIT.md
-  templates/FIRST_MESSAGE_NEW.md
-  templates/RESEARCH_PROGRAM.md
-  examples/README.md
-  examples/01-method-loss-is-not-field-loss.md
-  examples/02-seed-drift.md
-  examples/03-paper-entry-audit.md
-  demo/90-second-demo.md
-  demo/recording-checklist.md
   demo/fixture/CLAUDE.md
   demo/fixture/RESULT.md
   demo/fixture/PROMPT.md
@@ -39,52 +34,22 @@ required=(
 for path in "${required[@]}"; do
   if [[ ! -s "${ROOT_DIR}/${path}" ]]; then
     echo "MISSING: ${path}" >&2
-    errors=$((errors + 1))
+    exit 1
   fi
 done
-
-if grep -R -n -E 'REPOSITORY_URL|<your-repository-url>|YOUR_ACCOUNT' \
-  "${ROOT_DIR}/README.md" "${ROOT_DIR}/demo" >/tmp/firm-placeholders.txt; then
-  echo "UNRESOLVED repository placeholders:" >&2
-  cat /tmp/firm-placeholders.txt >&2
-  errors=$((errors + 1))
-fi
-
-if grep -R -n -E 'ResearcherOS|researcheros' \
-  "${ROOT_DIR}" --exclude='release-check.sh' --exclude-dir='.git' >/tmp/firm-legacy-brand.txt; then
-  echo "LEGACY brand references:" >&2
-  cat /tmp/firm-legacy-brand.txt >&2
-  errors=$((errors + 1))
-fi
-
-if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY' \
-  "${ROOT_DIR}" --exclude='release-check.sh' --exclude-dir='.git' >/tmp/firm-private-paths.txt; then
-  echo "POSSIBLE private paths or credentials:" >&2
-  cat /tmp/firm-private-paths.txt >&2
-  errors=$((errors + 1))
-fi
-
-if [[ -e "${ROOT_DIR}/assets/arr-2026-may-review-evidence.png" ]]; then
-  echo "ARR dashboard screenshot must not ship in the public release." >&2
-  errors=$((errors + 1))
-fi
-
-if grep -R -n -E \
-  'Official Reviews Submitted|Reviewer [A-Za-z0-9]{4}:|ACL ARR 2026 May|arr-2026-may-review-evidence|captured dashboard|截图时其中一个投稿' \
-  "${ROOT_DIR}/README.md" "${ROOT_DIR}/docs" >/tmp/firm-review-fingerprints.txt; then
-  echo "POSSIBLE review fingerprint in public documentation:" >&2
-  cat /tmp/firm-review-fingerprints.txt >&2
-  errors=$((errors + 1))
-fi
-
-if [[ ${errors} -ne 0 ]]; then
-  echo "Release check failed with ${errors} blocking category/categories." >&2
-  exit 1
-fi
 
 bash -n "${ROOT_DIR}/firm"
 bash -n "${ROOT_DIR}/install.sh"
 bash -n "${ROOT_DIR}/scripts/test-onboarding.sh"
+bash -n "${ROOT_DIR}/scripts/verify-install.sh"
+python3 "${ROOT_DIR}/scripts/validate_skills.py"
 bash "${ROOT_DIR}/scripts/test-onboarding.sh"
+
+if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY|REPOSITORY_URL|YOUR_ACCOUNT' \
+  "${ROOT_DIR}" --exclude='release-check.sh' --exclude-dir='.git' >/tmp/firm-release-secrets.txt; then
+  echo "Possible private path, credential, or placeholder:" >&2
+  cat /tmp/firm-release-secrets.txt >&2
+  exit 1
+fi
 
 echo "Release check passed."

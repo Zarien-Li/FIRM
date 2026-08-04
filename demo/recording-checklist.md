@@ -1,31 +1,25 @@
 # Demo Recording Checklist
 
-## Before Recording
+## Before recording
 
-- Show the live `https://github.com/Zoiya-Li/FIRM` repository and test
-  the exact install command before recording.
-- Run `bash scripts/release-check.sh`.
-- Test installation in a clean temporary home.
-- Restart Claude Code after installation.
-- Open `demo/fixture` in a fresh Claude Code session.
-- Paste `PROMPT.md` and capture a real response.
-- Select three short response excerpts that match the evidence. Do not stage a
-  fake agent response or claim deterministic behavior.
+- Test the exact public marketplace install in a clean Claude Code session.
+- Run `make check` from a clean clone.
+- Use `demo/fixture/PROMPT.md` without adding the desired conclusion.
+- Capture a real `/firm:diagnose-result RESULT.md` response.
+- Preserve the raw response in the release notes or demo branch when practical.
 
 ## Capture
 
-- 16:9, at least 1080p, terminal font at least 18 px.
-- Record clean terminal and editor windows with notifications hidden.
-- Keep raw capture under two minutes; edit to 85-90 seconds.
-- Add burned-in captions.
-- Remove usernames, local paths, API keys, unpublished paper titles, server
-  addresses, and reviewer identities.
+- Use 16:9 at 1080p or higher and a readable terminal font.
+- Hide notifications and remove usernames, machine paths, API keys, private paper
+  titles, server addresses, and reviewer identities.
+- Distinguish generated output from explanatory captions.
+- Do not present `make demo` as a live model evaluation.
 
-## Final Checks
+## Final checks
 
-- The install shown in the video is the exact command in README.
-- The repository is public when the video goes live.
-- All links in the video description resolve.
-- ARR scores are described as reviewer signals, not guarantees.
-- ARIS is credited as inspiration, not presented as an endorsement.
-- Export an MP4 plus a short GIF/WebM teaser for README and social posts.
+- Every command shown exists in the released repository.
+- The install command matches README exactly.
+- The model response is not edited into a stronger conclusion than it produced.
+- Historical usage is not described as a controlled benchmark.
+- Upstream inspiration is credited without implying endorsement.

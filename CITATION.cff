@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If FIRM contributes materially to your research workflow, cite this repository."
+title: "FIRM: Failure-Informed Research for Machines"
+type: software
+authors:
+  - family-names: Li
+    given-names: Zeyan
+repository-code: "https://github.com/Zarien-Li/FIRM"
+url: "https://github.com/Zarien-Li/FIRM"
+license: MIT
+version: 1.0.0
+date-released: 2026-08-04

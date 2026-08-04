@@ -1,0 +1,38 @@
+{
+  "name": "firm-research",
+  "version": "1.0.0",
+  "description": "Research judgment skills for Claude Code.",
+  "owner": {
+    "name": "Zeyan Li",
+    "url": "https://github.com/Zoiya-Li"
+  },
+  "plugins": [
+    {
+      "name": "firm",
+      "displayName": "FIRM — Research Judgment",
+      "source": "./",
+      "description": "17 research skills for choosing directions, diagnosing results, designing methods, running experiments, auditing evidence, and writing papers.",
+      "author": {
+        "name": "Zeyan Li",
+        "url": "https://github.com/Zoiya-Li"
+      },
+      "homepage": "https://github.com/Zoiya-Li/FIRM",
+      "repository": "https://github.com/Zoiya-Li/FIRM",
+      "license": "MIT",
+      "keywords": [
+        "research",
+        "machine-learning",
+        "experiments",
+        "paper-writing",
+        "claude-code"
+      ],
+      "tags": [
+        "research-agent",
+        "scientific-reasoning",
+        "machine-learning",
+        "academic-writing"
+      ],
+      "category": "productivity"
+    }
+  ]
+}

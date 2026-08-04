@@ -1,142 +1,104 @@
 ---
 name: monitor-experiment
-description: Monitor running experiments, check progress, collect results. Use when user says "check results", "is it done", "monitor", or wants experiment output.
+description: Checks running experiments, collects logs and result files, and summarizes progress without inventing missing outcomes.
+when_to_use: Invoke explicitly to inspect local, screen, Slurm, SSH, or W&B jobs and connect completed outputs back to the research state.
+argument-hint: "[job, server, or result path]"
+disable-model-invocation: true
 ---
 
-# Monitor Experiment Results
+# Monitor an Experiment
 
-Monitor: $ARGUMENTS
+Inspect the requested jobs and return an evidence-linked status. Monitoring is
+read-oriented: do not restart, cancel, delete, or modify jobs unless the user
+explicitly requests that action after the diagnosis.
 
-## Workflow
+## 1. Recover durable job identity
 
-### Step 0: Durable State Preflight
+Read the launch record, tracker, scheduler ID, PID/session name, host, working
+directory, log path, checkpoint path, and expected result path. On shared servers,
+attribute jobs by project path and command, not only by Linux username or container
+name.
 
-Before polling, read the project state/tracker when available (`PIPELINE_STATE.md`, `EXPERIMENT_TRACKER.md`, `refine-logs/EXPERIMENT_PLAN.md`). Identify the durable state surfaces:
+If the requested job cannot be uniquely identified, show the plausible candidates
+and the evidence needed to distinguish them. Do not attach another researcher's
+process to the project.
 
-- launch command and expected screen/process/job id
-- log path
-- result path
-- checkpoint path, if any
-- expected completion marker or final result file
-- registered scale, seeds, and stopping condition
+## 2. Inspect runtime status
 
-A session-only reminder, Claude cron, or chat promise is not a monitor. If no durable log/result/marker path exists, report `monitor_state_missing` and create/update the project tracker before interpreting the run.
+Use the runtime that actually launched the job:
 
-### Step 1: Check What's Running
+- local PID/process manager;
+- `tmux` or `screen` session;
+- Slurm queue and accounting;
+- remote process over an already authorized SSH connection;
+- W&B or another tracker configured by the project.
 
-Before polling, identify the expected run matrix from the experiment plan or user's request:
+Collect:
 
-- expected datasets
-- expected baselines/methods
-- expected seeds
-- expected GPUs
-- expected result files
+- current state and elapsed time;
+- latest meaningful log lines;
+- step/epoch/progress indicator;
+- recent loss or task metrics when available;
+- GPU memory/utilization and obvious stalls;
+- checkpoint creation and freshness;
+- errors, preemption, OOM, disk, or evaluator failures;
+- final result file existence and parseability.
 
-Report progress as `completed / expected`, not just "some files exist."
+Do not dump large raw logs into the main response. Read enough context around the
+first causal error and preserve exact paths for deeper inspection.
 
-**SSH server:**
-```bash
-ssh <server> "screen -ls"
+## 3. Classify the status
+
+Use one of:
+
+- `RUNNING_HEALTHY`;
+- `RUNNING_SLOW_OR_UNCERTAIN`;
+- `STALLED`;
+- `FAILED_INFRASTRUCTURE`;
+- `FAILED_EXPERIMENT`;
+- `PREEMPTED_RESUMABLE`;
+- `COMPLETED_UNVERIFIED`;
+- `COMPLETED_VALID`;
+- `NOT_FOUND`;
+- `AMBIGUOUS_IDENTITY`.
+
+A process exit with a file present is not automatically a valid completion. Check
+that the expected evaluator ran and the result corresponds to the requested config.
+
+## 4. Decide the operational next step
+
+Recommend exactly one of:
+
+- continue monitoring;
+- inspect a named error or artifact;
+- resume from a verified checkpoint;
+- repair and relaunch under `/firm:run-experiment`;
+- collect completed outputs for `/firm:diagnose-result`;
+- ask the user before cancellation or another irreversible action.
+
+Do not change scientific parameters under the label “resume.” If a batch size,
+precision, seed, data, evaluator, or model changes, record it as a new run or an
+explicit deviation.
+
+## 5. Return a concise report
+
+```markdown
+# Experiment Status
+
+- Experiment/job ID:
+- Project path:
+- Runtime and host:
+- Status:
+- Elapsed/progress:
+- Latest meaningful evidence:
+- GPU/resource state:
+- Checkpoint:
+- Result artifact:
+- Error or uncertainty:
+- Recommended next action:
+- Exact command or path for the next inspection:
 ```
 
-### Step 2: Collect Output from Each Screen
-For each screen session, capture the last N lines:
-```bash
-ssh <server> "screen -S <name> -X hardcopy /tmp/screen_<name>.txt && tail -50 /tmp/screen_<name>.txt"
-```
-
-If hardcopy fails, check for log files or tee output.
-
-### Step 3: Check for JSON Result Files
-```bash
-ssh <server> "ls -lt <results_dir>/*.json 2>/dev/null | head -20"
-```
-
-If JSON results exist, fetch and parse them:
-```bash
-ssh <server> "cat <results_dir>/<latest>.json"
-```
-
-### Step 3.5: Pull W&B Metrics (when `wandb: true` in CLAUDE.md)
-
-**Skip this step entirely if `wandb` is not set or is `false` in CLAUDE.md.**
-
-Pull training curves and metrics from Weights & Biases via Python API:
-
-```bash
-# List recent runs in the project
-ssh <server> "python3 -c \"
-import wandb
-api = wandb.Api()
-runs = api.runs('<entity>/<project>', per_page=10)
-for r in runs:
-    print(f'{r.id}  {r.state}  {r.name}  {r.summary.get(\"eval/loss\", \"N/A\")}')
-\""
-
-# Pull specific metrics from a run (last 50 steps)
-ssh <server> "python3 -c \"
-import wandb, json
-api = wandb.Api()
-run = api.run('<entity>/<project>/<run_id>')
-history = list(run.scan_history(keys=['train/loss', 'eval/loss', 'eval/ppl', 'train/lr'], page_size=50))
-print(json.dumps(history[-10:], indent=2))
-\""
-
-# Pull run summary (final metrics)
-ssh <server> "python3 -c \"
-import wandb, json
-api = wandb.Api()
-run = api.run('<entity>/<project>/<run_id>')
-print(json.dumps(dict(run.summary), indent=2, default=str))
-\""
-```
-
-**What to extract:**
-- **Training loss curve** — is it converging? diverging? plateauing?
-- **Eval metrics** — loss, PPL, accuracy at latest checkpoint
-- **Learning rate** — is the schedule behaving as expected?
-- **GPU memory** — any OOM risk?
-- **Run status** — running / finished / crashed?
-
-**W&B dashboard link** (include in summary for user):
-```
-https://wandb.ai/<entity>/<project>/runs/<run_id>
-```
-
-> This gives the review loop (`/research-review` Looped Mode) richer signal than just screen output — training dynamics, loss curves, and metric trends over time.
-
-### Step 4: Summarize Results
-
-Present results in a comparison table:
-```
-| Experiment | Metric | Delta vs Baseline | Status |
-|-----------|--------|-------------------|--------|
-| Baseline  | X.XX   | —                 | done   |
-| Method A  | X.XX   | +Y.Y              | done   |
-```
-
-After reading results, update or request an update to the top of `PIPELINE_STATE.md` / `EXPERIMENT_TRACKER.md` with:
-
-- completed/running/failed/unread status for each expected cell
-- exact result paths read
-- exact logs checked
-- invalidated or interrupted runs
-- single best next monitor or analysis action
-
-### Step 5: Interpret
-- Compare against known baselines
-- Flag unexpected results (negative delta, NaN, divergence)
-- Suggest next steps based on findings
-
-## Key Rules
-- Always show raw numbers before interpretation
-- Compare against the correct baseline (same config)
-- Note if experiments are still running (check progress bars, iteration counts)
-- If results look wrong, check training logs for errors before concluding
-- If a metric is exactly zero, empty, NaN, identical across implausible conditions, or missing for many cells, treat it as a possible code/eval bug first, not as a scientific result
-- Respect user-specified GPU allocation; if a job appears on the wrong GPU, flag it directly
-- Avoid repeated broad scans. Prefer one targeted command that reads persisted logs and expected result files
-- Do not draw scientific conclusions from session-only state. Conclusions require persisted logs/results or an explicit `interrupted/resume` record.
-- If a run finished under a different scale than registered (fewer steps, fewer seeds, smaller model, filtered data, lower max length, fallback method), label it `scope-limited` or `invalidated` before interpreting.
-- If the project tracks infrastructure cost locally, include it when available; otherwise do not invent cost estimates or cleanup actions tied to removed infrastructure helpers
-- **Sub-agent isolation** (from `shared-references/context-hygiene.md`): Use sub-agents for bulk monitoring. Main session receives only structured result summaries, not raw screen output.
+For multiple jobs, add a compact table and expand only failed or decision-relevant
+cases. Once valid results exist, hand them to `/firm:diagnose-result`; monitoring
+itself should not make the scientific claim.

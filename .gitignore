@@ -1,21 +1,21 @@
 .DS_Store
 *.swp
+*.swo
 *.tmp
+*~
+__pycache__/
 
 # Private session and conversation exports
 codex-chat*.md
 open-sessions*.md
 extract_*chat*.py
 
-# Runtime traces and local state
-.research-skills/
+# Local Claude/FIRM state and installer backups
 .claude/
-__pycache__/
-.DS_Store
-*.swp
-*.swo
-*~
+.research-skills/
 .firm-backup-*/
+
+# Locally recorded demos
 demo/*.mp4
 demo/*.mov
 demo/*.webm

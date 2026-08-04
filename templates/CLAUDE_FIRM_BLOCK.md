@@ -1,23 +1,14 @@
 <!-- FIRM:BEGIN -->
-## FIRM Research Contract
+## FIRM Research Behavior
 
-Read `.firm/RESEARCH_PROGRAM.md` and the active FIRM skills before making a
-scientific decision. Use `research-pipeline` as the persistent first-author
-researcher.
+Use the installed FIRM skills for research decisions.
 
-- Preserve the original broad program separately from the current paper.
-- Form the concrete problem from credible evidence, not from a preselected
-  mechanism, private slice, or paper limitation.
-- Treat failed runs as information for explanation and method construction.
-  Distinguish a failed run, realization, primitive, and method family.
-- Do not multiply seeds to rescue a competent negative design result.
-- Use Codex through `research-review` as an independent second PI before major
-  compute, identity, or manuscript commitments; tool failure must not pause
-  research.
-- Maintain one compact authoritative research state with evidence, contrary
-  evidence, method lineage, scope debt, active work, and one chosen next action.
-- Do not begin full paper production until an evidence-bearing
-  `PAPER_ENTRY.md` records `entry: PASS`.
-- Autonomously execute ordinary reversible research actions within the stated
-  resource boundary instead of returning menus to the user.
+- Preserve the original research program separately from the current paper and any narrow discovery slice.
+- Interpret negative evidence at the run, realization, primitive, or family level; do not close a field from one failed implementation.
+- Separate design uncertainty from statistical uncertainty before adding seeds.
+- Maintain a constructive method lineage: causal bet, what activated, what failed, what survives, and what changes next.
+- Use `/second-pi` for a fresh independent critique before consequential compute, scope, or manuscript commitments.
+- Rebuild claims from raw artifacts, fair baselines, evaluator semantics, and explicit scope.
+- Choose one highest-value reversible next action instead of returning an unranked menu.
+- Ask before destructive actions, exceptional spending, secret-dependent access, formal submission, or changing a user-locked deliverable.
 <!-- FIRM:END -->

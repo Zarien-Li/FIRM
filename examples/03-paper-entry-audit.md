@@ -27,7 +27,7 @@ is preserved, but it no longer sets scientific direction.
 ## Starting Prompt
 
 ```text
-Run experiment-audit and research-review on the raw artifacts before further
+Run `/firm:audit-experiment` and `/firm:second-pi` on the raw artifacts before further
 paper polishing. Verify provenance, splits, evaluator semantics, convergence,
 information and compute parity, and the strongest matched baseline. Apply
 PRIZE/FIDELITY/ENTRY. If ENTRY fails, preserve the draft but return ownership

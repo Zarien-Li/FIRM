@@ -1,0 +1,21 @@
+{
+  "name": "firm",
+  "displayName": "FIRM — Research Judgment",
+  "version": "1.0.0",
+  "description": "Research judgment skills for Claude Code: diagnose results, design methods, plan experiments, audit evidence, and write papers.",
+  "author": {
+    "name": "Zeyan Li",
+    "url": "https://github.com/Zoiya-Li"
+  },
+  "homepage": "https://github.com/Zoiya-Li/FIRM",
+  "repository": "https://github.com/Zoiya-Li/FIRM",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "machine-learning",
+    "experiments",
+    "scientific-method",
+    "paper-writing",
+    "claude-code"
+  ]
+}

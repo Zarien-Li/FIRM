@@ -1,0 +1,26 @@
+name: Bug report
+description: Report an installation, activation, safety, or workflow bug.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Include the skill name and the smallest reproducible case.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Claude Code version
+  - type: input
+    attributes:
+      label: FIRM commit or release
+  - type: textarea
+    attributes:
+      label: Relevant artifacts
+      description: Remove secrets, private paths, and unpublished content.

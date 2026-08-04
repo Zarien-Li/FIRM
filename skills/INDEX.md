@@ -1,82 +1,64 @@
-# Skills Index
+# FIRM Skills Index
 
-This repository contains one persistent research identity plus specialist tools. It is not a
-fixed stage machine.
+FIRM is a Claude Code plugin with 17 research skills. Plugin commands use the
+`/firm:` namespace. A project-local installation uses the same names without the
+namespace, for example `/diagnose-result`.
 
-## Persistent Researcher
+## Start here
 
-| Skill | Responsibility |
-|---|---|
-| `research-pipeline` | Owns the research program, value spine, evidence, method lineage, next action, continuity, and paper harvest. |
+| Skill | Use it for | Invocation |
+|---|---|---|
+| `research` | Start or resume a project with one persistent first-author perspective | `/firm:research [goal or project state]` |
+| `diagnose-result` | Interpret a completed, negative, mixed, or surprising result | `/firm:diagnose-result [result path]` |
+| `design-method` | Invent or repair the load-bearing method primitive | `/firm:design-method [evidence or failed component]` |
+| `plan-experiments` | Select decisive comparisons and adaptive next steps | `/firm:plan-experiments [method, claim, budget]` |
+| `second-pi` | Obtain a fresh independent critique of a consequential decision | `/firm:second-pi [decision or evidence packet]` |
+| `write-paper` | Plan, draft, compile, or verify a paper from validated evidence | `/firm:write-paper [paper directory or section]` |
 
-`research-pipeline` stays conceptually active throughout a project. The remaining skills are
-loaded only when their specialized capability is useful.
+## Discover and anchor
 
-## Field Contact
+| Skill | Responsibility | Activation |
+|---|---|---|
+| `discover-direction` | Find a consequential and feasible research program from the field surface | May activate when relevant |
+| `literature-review` | Search and synthesize papers, implementations, benchmarks, and close work for a live decision | May activate when relevant |
+| `baseline` | Select, reproduce, and behaviorally inspect strong field-standard anchors | May activate when relevant |
+| `research` | Preserve the original program, current paper, evidence, method lineage, scope debt, and next action | May activate when relevant |
 
-| Skill | Responsibility |
-|---|---|
-| `frontier-direction-discovery` | Forms consequential research programs without preselecting a tiny crack or mechanism. |
-| `research-lit` | Reads papers, implementations, benchmarks, and related work for a live decision. |
-| `baseline` | Reproduces serious empirical anchors and inspects their raw behavior. |
-| `signal-analysis` | Turns credible contrasts into competing explanations, design consequences, and bounded claims. |
+## Diagnose and design
 
-## Method And Experiment Tools
+| Skill | Responsibility | Activation |
+|---|---|---|
+| `diagnose-result` | Calibrate what a completed result establishes and choose the smallest discriminating next test | May activate when relevant |
+| `design-method` | Convert a causal thesis into a load-bearing architecture, objective, state, memory, routing, training, data, or systems primitive | May activate when relevant |
+| `plan-experiments` | Build a claim-aware, compute-efficient experiment plan | May activate when relevant |
+| `second-pi` | Review prize, fidelity, interpretation, alternatives, attacks, maturity, and decision in a fresh context | May activate when relevant; runs in a fork |
 
-| Skill | Responsibility |
-|---|---|
-| `method-primitive-synthesis` | Forms and repairs load-bearing method primitives through constructive ablation. |
-| `experiment-plan` | Designs efficient, claim-aware experiments and adaptive decision points. |
-| `research-contract` | Registers expensive or claim-defining runs without freezing the living research thesis. |
-| `run-experiment` | Launches local, SSH, or scheduler-backed experiments with durable provenance. |
-| `monitor-experiment` | Monitors owned jobs and collects logs, metrics, and result artifacts. |
+## Run and verify
 
-## Independent Review And Integrity
+| Skill | Responsibility | Activation |
+|---|---|---|
+| `register-experiment` | Freeze the purpose, exact configuration, forecast, and interpretation of a costly or decisive run | May activate when relevant |
+| `run-experiment` | Launch local, SSH, Slurm, queued, retry, or resume workflows with durable provenance | **Explicit invocation only** |
+| `monitor-experiment` | Inspect owned jobs, logs, metrics, and outputs without silently changing them | **Explicit invocation only** |
+| `audit-experiment` | Independently audit artifacts, evaluator semantics, provenance, fairness, and claim scope | **Explicit invocation only; fresh fork** |
+| `audit-research` | Audit continuity, scope drift, contribution maturity, and paper readiness at a real boundary | Fresh fork |
 
-| Skill | Responsibility |
-|---|---|
-| `research-review` | Uses an independent second PI for Prize/Fidelity/Entry, Interpret, Invent, Attack, maturity, and decision review. |
-| `experiment-audit` | Audits evaluation code, ground truth, normalization, result existence, and scope. |
-| `research-state-audit` | Audits provenance, scope debt, continuity, contribution maturity, and portfolio allocation at real boundaries. |
+## Write and finish
 
-## Writing And Submission
+| Skill | Responsibility | Activation |
+|---|---|---|
+| `write-paper` | Plan, draft, compile, and verify a manuscript against raw evidence | **Explicit invocation only** |
+| `improve-paper` | Run bounded fresh-review and revision rounds without inventing missing science | **Explicit invocation only** |
+| `audit-citations` | Verify source existence, metadata, and support for each consequential citation context | **Explicit invocation only; fresh fork** |
+| `make-figures` | Produce reproducible publication figures and LaTeX tables | **Explicit invocation only** |
 
-| Skill | Responsibility |
-|---|---|
-| `paper-writing` | Plans, drafts, compiles, audits, and finalizes a paper after an independent `PAPER_ENTRY.md: PASS`. |
-| `paper-figure` | Produces reproducible publication figures and LaTeX comparison tables. |
-| `citation-audit` | Verifies citation existence, metadata, and contextual support. |
-| `auto-paper-improvement-loop` | Runs bounded fresh-review, revision, and recompilation rounds without inventing missing science. |
+## Recommended combinations
 
-## Shared References
+- **A method lost:** `diagnose-result` → `design-method` → `plan-experiments`
+- **The project is drifting:** `research` → `second-pi` → `audit-research`
+- **A costly run is approaching:** `plan-experiments` → `register-experiment` → `run-experiment`
+- **A draft may be premature:** `audit-experiment` → `second-pi` → `write-paper`
+- **Submission cleanup:** `audit-citations` + `make-figures` + `improve-paper`
 
-`shared-references/` is a rule library, not a callable skill:
-
-- `assurance-contract.md`
-- `citation-discipline.md`
-- `context-hygiene.md`
-- `effort-contract.md`
-- `experiment-integrity.md`
-- `multi-model-roles.md`
-- `output-manifest.md`
-- `research-control-protocol.md`
-- `review-tracing.md`
-- `reviewer-independence.md`
-- `reviewer-routing.md`
-
-## How To Compose The Suite
-
-Start with `research-pipeline`. Load a specialist skill only for the immediate job. Return its
-scientific consequence to the existing project live state rather than producing a chain of
-stage artifacts.
-
-A common empirical path may involve baseline reproduction, signal analysis, method synthesis,
-experiment planning, execution, and review, but that order is descriptive rather than
-mandatory. Evidence can send the researcher backward, upward in abstraction, or directly into
-paper completion. Complete manuscript planning begins only after the current paper
-fingerprint receives independent Prize/Fidelity/Entry review and
-`PAPER_ENTRY.md: PASS`; before that, keep a compact `CANDIDATE_CLAIM.md`.
-
-At submission assurance, verify the experiment, claim, proof when applicable, and citation
-artifacts. The public suite defines a self-contained hash-and-verdict contract in
-`paper-writing`; it does not require a private verifier script.
+Specialists are tools, not required stages. Invoke the smallest skill that resolves
+the current uncertainty.

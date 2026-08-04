@@ -1,55 +1,62 @@
-# FIRM Agent Guide
+# Agent and Maintainer Guide
 
-This file is for AI coding and research agents helping a user adopt FIRM.
-Humans should start with the [README](../README.md) or the
-[getting-started guide](getting-started.md).
+FIRM is a Claude Code skills repository, not a standalone research platform. The
+product is the quality and composability of the 17 `SKILL.md` workflows.
 
-## Product Identity
+## Product identity
 
-FIRM is the PI layer for long-horizon agentic research. It is not a promise to
-produce a paper and not a rigid stage machine. Its job is to preserve a valuable
-research program while evidence changes the concrete problem, method, and paper
-identity.
+FIRM helps a capable coding agent make better scientific decisions after reading
+literature, inspecting evidence, running an experiment, or approaching a paper
+boundary. It should complement existing tools rather than recreate them.
 
-## Install Into A Project
+## Repository layout
 
-From the FIRM repository:
-
-```bash
-./firm init /absolute/path/to/research-project
-./firm doctor /absolute/path/to/research-project
+```text
+.claude-plugin/     plugin and marketplace manifests
+skills/             one directory per callable skill
+examples/           sanitized recurring failure patterns
+demo/fixture/       neutral result-diagnosis case
+templates/          optional project-local bootstrap files
+scripts/            validation and onboarding tests
 ```
 
-Do not overwrite user project files manually. The launcher:
+Each public skill directory must contain `SKILL.md`. Detailed material should live
+inside that skill's `references/` or `scripts/` directory so the main instruction
+remains concise.
 
-- installs project-local skills under `.claude/skills/`;
-- backs up same-named skill directories;
-- preserves an existing `CLAUDE.md` before appending a marked FIRM block;
-- creates `.firm/RESEARCH_PROGRAM.md`;
-- creates first-message templates for a new project and an existing-project
-  audit.
+## Skill design rules
 
-## Start The Researcher
+1. Give each skill one clear job and explicit non-goals.
+2. Write the description so Claude can distinguish it from neighboring skills.
+3. Keep the main `SKILL.md` below 500 lines.
+4. Use project-relative evidence paths and prefer raw artifacts over summaries.
+5. Set `disable-model-invocation: true` for workflows with compute, remote,
+   destructive, manuscript-wide, or submission-oriented side effects.
+6. Use `context: fork` for genuinely independent review.
+7. Never require a specific external model or MCP server for core behavior.
+8. Never include automatic `git push`, plaintext credentials, or unconfirmed
+   destructive commands.
 
-For a new program, use `.firm/FIRST_MESSAGE_NEW.md`.
+## Validation
 
-For an existing project, use `.firm/FIRST_MESSAGE_AUDIT.md` before launching
-more experiments. Reconstruct the original program, current evidence, contrary
-evidence, method lineage, scope debt, paper identity, active work, and one next
-action.
+Run:
 
-## Behavioral Invariants
+```bash
+make check
+```
 
-1. Keep the original broad program separate from the current paper.
-2. Let credible evidence form the concrete problem.
-3. Treat a competent negative method result as design evidence, not a reason
-   for ceremonial seed expansion.
-4. Preserve successful components and construct the next realization.
-5. Use an independent second PI before major compute, identity, or manuscript
-   commitments.
-6. Do not let unavailable review infrastructure pause lead-researcher work.
-7. Keep one compact authoritative project state.
-8. Do not begin full manuscript production before evidence-bearing paper entry.
+This validates frontmatter, skill count, line budgets, relative references,
+plugin JSON, installer behavior, and unsafe command patterns.
 
-Read `skills/research-pipeline/SKILL.md` for the persistent research role and
-`skills/INDEX.md` for specialist activation.
+## Evaluate a change
+
+Test a skill against at least:
+
+- a case where it should activate;
+- a neighboring case where another skill should activate;
+- a case where doing nothing or asking for missing evidence is correct;
+- the failure pattern the change is intended to repair;
+- the opposite failure the new instruction might create.
+
+For judgment changes, compare fresh sessions on the same neutral evidence packet.
+Do not leak the desired conclusion into the user prompt.

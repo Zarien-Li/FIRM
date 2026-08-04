@@ -1,0 +1,31 @@
+name: Research-agent failure case
+description: Propose a recurring failure pattern that FIRM should repair.
+title: "[Failure case] "
+labels: [research-failure]
+body:
+  - type: textarea
+    attributes:
+      label: Observable behavior
+      description: What did the research agent repeatedly do?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Scientific cost
+      description: What time, compute, evidence, or research value was lost?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Hidden confusion
+      description: Which inference or missing distinction caused the behavior?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Neutral reproduction
+      description: Provide a sanitized evidence packet and prompt without leaking the desired answer.
+  - type: textarea
+    attributes:
+      label: Opposite failure to avoid
+      description: How could an overly strong repair create a new mistake?

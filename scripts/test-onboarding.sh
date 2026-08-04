@@ -6,14 +6,11 @@ TEST_ROOT="$(mktemp -d)"
 trap 'rm -rf "${TEST_ROOT}"' EXIT
 
 PROJECT="${TEST_ROOT}/project"
-
 bash "${ROOT_DIR}/firm" init "${PROJECT}" >/dev/null
-bash "${ROOT_DIR}/scripts/verify-install.sh" \
-  "${PROJECT}/.claude/skills" >/dev/null
+bash "${ROOT_DIR}/scripts/verify-install.sh" "${PROJECT}/.claude/skills" >/dev/null
 
 required=(
   CLAUDE.md
-  CLAUDE-RESEARCH.md
   .firm/RESEARCH_PROGRAM.md
   .firm/FIRST_MESSAGE_NEW.md
   .firm/FIRST_MESSAGE_AUDIT.md
@@ -26,17 +23,21 @@ for path in "${required[@]}"; do
   fi
 done
 
-if ! cmp -s "${ROOT_DIR}/CLAUDE-RESEARCH.md" \
-  "${PROJECT}/CLAUDE-RESEARCH.md"; then
-  echo "Installed CLAUDE-RESEARCH.md does not match the public prompt." >&2
+before_hash="$(find "${PROJECT}/.claude/skills" -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)"
+bash "${ROOT_DIR}/firm" init "${PROJECT}" >/dev/null
+after_hash="$(find "${PROJECT}/.claude/skills" -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)"
+
+if [[ "${before_hash}" != "${after_hash}" ]]; then
+  echo "Second initialization changed an unchanged installation." >&2
   exit 1
 fi
 
-bash "${ROOT_DIR}/firm" init "${PROJECT}" >/dev/null
+if find "${PROJECT}/.claude/skills" -maxdepth 1 -type d -name '.firm-backup-*' | grep -q .; then
+  echo "Second initialization created an unnecessary backup." >&2
+  exit 1
+fi
 
-marker_count="$(
-  grep -Fc '<!-- FIRM:BEGIN -->' "${PROJECT}/CLAUDE.md"
-)"
+marker_count="$(grep -Fc '<!-- FIRM:BEGIN -->' "${PROJECT}/CLAUDE.md")"
 if [[ "${marker_count}" -ne 1 ]]; then
   echo "FIRM CLAUDE.md block is not idempotent." >&2
   exit 1
@@ -45,15 +46,11 @@ fi
 EXISTING_PROJECT="${TEST_ROOT}/existing-project"
 mkdir -p "${EXISTING_PROJECT}"
 printf '# Existing user instructions\n' > "${EXISTING_PROJECT}/CLAUDE.md"
-printf '# Existing research prompt\n' > "${EXISTING_PROJECT}/CLAUDE-RESEARCH.md"
 bash "${ROOT_DIR}/firm" init "${EXISTING_PROJECT}" >/dev/null
 
 grep -Fq '# Existing user instructions' "${EXISTING_PROJECT}/CLAUDE.md"
 grep -Fq '<!-- FIRM:BEGIN -->' "${EXISTING_PROJECT}/CLAUDE.md"
-grep -Fq '# Existing user instructions' \
-  "${EXISTING_PROJECT}/.firm/CLAUDE.md.before-firm"
-grep -Fq '# Existing research prompt' \
-  "${EXISTING_PROJECT}/CLAUDE-RESEARCH.md"
+grep -Fq '# Existing user instructions' "${EXISTING_PROJECT}/.firm/CLAUDE.md.before-firm"
 
 MISSING_PROJECT="${TEST_ROOT}/missing-project"
 if bash "${ROOT_DIR}/firm" doctor "${MISSING_PROJECT}" >/dev/null 2>&1; then
@@ -64,5 +61,7 @@ if [[ -e "${MISSING_PROJECT}" ]]; then
   echo "FIRM doctor created the missing project it was asked to inspect." >&2
   exit 1
 fi
+
+bash "${ROOT_DIR}/firm" doctor "${PROJECT}" >/dev/null
 
 echo "Onboarding test passed."
