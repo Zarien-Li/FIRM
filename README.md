@@ -101,8 +101,9 @@ Prize -> Fidelity -> Design -> Evidence -> Entry
 
 A fresh Claude context is the default independent second PI at consequential
 boundaries. Another model such as Codex may serve as an additional reviewer when
-available. The second PI helps reinterpret evidence, invent alternatives, and
-attack the strongest claim; it is not a stop-button oracle, and reviewer
+available. Each call has exactly one evidence-matched role: map the field and prize,
+compare supplied explanations, challenge lead-PI constructions, or review a fixed
+artifact. It is not a stop-button oracle or an always-on invention engine, and reviewer
 unavailability does not pause the lead researcher's work.
 
 ### The operational research loop

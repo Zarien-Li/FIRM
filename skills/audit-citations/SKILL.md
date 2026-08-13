@@ -15,6 +15,13 @@ reviewer perspective. A syntactically valid BibTeX entry is not enough: the work
 must exist, its metadata must be correct, and the surrounding sentence must not
 claim more than the source establishes.
 
+This skill owns citation identity, metadata, and contextual support only. Manuscript
+numbers belong to `write-paper`, experiment provenance to `audit-experiment`,
+scientific importance and paper identity to `second-pi`, and state maturity to
+`audit-research`. A citation finding repairs attribution or wording; it cannot create
+science or become another headline review. Reuse an audit when bibliography and
+citing-context hashes are unchanged.
+
 ## Inputs and modes
 
 Use the paper directory in `$ARGUMENTS`, or infer it from the current project.

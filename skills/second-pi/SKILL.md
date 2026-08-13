@@ -1,175 +1,196 @@
 ---
 name: second-pi
-description: Runs an independent second-PI review of a research decision in a fresh context, covering prize, fidelity, interpretation, alternatives, strongest attacks, and next action.
-when_to_use: Use when the user asks for an independent critique, when explanations compete, a method design plateaus, a surprising result may harden into project state, or a major compute or paper commitment approaches.
-argument-hint: "[decision, evidence packet, or manuscript]"
+description: Uses an independent reviewer with exactly one role matched to evidence maturity: Field/Prize before natural contact is complete, Interpret after a competent evidence bundle, Method Challenge after the lead PI proposes constructions, and artifact, paper-entry, or proof review only for later fixed artifacts.
+when_to_use: Invoke explicitly at a consequential scientific decision whose evidence maturity matches one review role; never after every result.
+argument-hint: "[role and evidence packet]"
 context: fork
 background: false
 ---
 
 # Independent Second PI
 
-You are reviewing the project in a fresh context. Do not inherit the lead author's
-preferred story merely because it appears in a draft or filename. Reconstruct the
-scientific state from the strongest available evidence and attack the decision the
-way a demanding but constructive co-PI would.
+The reviewer is an independent scientific colleague, not the program's judge, first source
+of theory, experiment queue, or user authority. The lead PI owns empirical contact,
+explanations, first method proposals, synthesis, implementation, and final decisions.
 
-## Independence protocol
+Choose exactly one role. Never combine field selection, causal interpretation, method
+invention, and submission judgment in one review.
 
-1. Read the original research question and explicit constraints.
-2. Inspect raw tables, logs, code, registrations, and representative examples before
-   relying on summaries.
-3. Recover the pre-result forecast when available.
-4. Treat manuscript prose and prior reviews as claims to verify, not evidence.
-5. State missing information instead of filling it with plausible assumptions.
-6. Do not use deadline pressure, sunk cost, or the lead author's confidence as
-   scientific evidence.
+## Field/Prize
 
-A fresh Claude fork is the default reviewer. When another genuinely independent
-model or reviewer tool is already available, it may be used as an additional pass,
-not as a requirement for FIRM to work.
+Use before competent natural contact or when reconsidering the broad empirical
+surface. Ask the reviewer to assess:
 
-## Review through six lenses
+- the important capability, decision, or value frontier;
+- accepted tasks, natural systems, and relevant populations;
+- direct, simple, and nearest-locus incumbents;
+- evidence needed to show that a residual is natural, consequential, and unowned;
+- substrate and evaluation risks that could make the opening illusory.
 
-### 1. Prize
-
-- What is the broad research question?
-- Who would care if the strongest version were true?
-- What standard task, natural system, decision, or metric changes?
-- Has the project narrowed into a private cell whose consequence is now too small?
-
-Return `PRIZE: STRONG | CONDITIONAL | WEAK` with one sentence of justification.
-
-### 2. Fidelity
-
-- Is the implementation competent?
-- Are data, evaluator, baselines, budgets, and provenance matched?
-- Does the metric mean what the claim says it means?
-- Are exclusions, seeds, and post-hoc choices visible?
-
-Return `FIDELITY: PASS | WARN | FAIL`. A failure here blocks interpretation of the
-affected evidence, not the entire research program.
-
-### 3. Interpret
-
-Compress the full evidence pattern into the deepest variable currently justified.
-Separate:
-
-- direct observations;
-- plausible causal explanations;
-- uncertainty that remains;
-- the narrowest failure level supported: run, realization, primitive, or family.
-
-Identify what the result **does not** establish.
-
-### 4. Invent
-
-Propose the strongest constructive continuation, not a list of random variants.
-For each serious alternative, specify:
-
-- the causal bet;
-- the load-bearing primitive;
-- what it changes relative to the failed design;
-- the decisive experiment;
-- what the next version inherits from prior evidence.
-
-Prefer one or two steelmanned alternatives over many superficial ideas.
-
-### 5. Attack
-
-Attack the strongest surviving story with:
-
-- the best simpler explanation;
-- the strongest fair baseline or control;
-- a scope or generalization failure;
-- a hidden cost or confound;
-- the result most likely to reverse the recommendation.
-
-Do not reward novelty language unsupported by a positive object or measurable
-consequence.
-
-### 6. Assess maturity and decide
-
-Classify the current contribution:
-
-- `EXPLORATION`: phenomenon or explanation not yet stable;
-- `METHOD-FORMATION`: causal target is credible but the primitive is not mature;
-- `CANDIDATE`: bounded claim and method exist, decisive evidence incomplete;
-- `ENTRY-PASS`: important bounded claim, real method, fair comparison, and
-  paper-critical evidence are stable;
-- `FROZEN`: current manuscript identity is contradicted and should not be polished
-  until reconciled.
-
-Then choose exactly one highest-value next action. Explain why it dominates the
-best alternative under the available compute and time.
-
-## Special review modes
-
-### Result review
-
-Focus on evidence calibration, failure level, competing explanations, and the next
-discriminating experiment.
-
-### Method review
-
-Focus on whether the primitive follows from the causal thesis, whether a simpler
-mechanism dominates it, and which ablation builds the method rather than merely
-measuring it.
-
-### Experiment-plan review
-
-Focus on information gain, confound parity, seed allocation, run order, compute
-cost, and which planned experiment is ceremonial.
-
-### Paper review
-
-Focus on contribution identity, claim-to-evidence alignment, strongest missing
-control, honest scope, and whether writing should continue or return to research.
-Do not equate polished prose with maturity.
-
-## Output
-
-```markdown
-# Independent Second-PI Review
-
-## Reconstructed research state
-- Original program:
-- Current candidate contribution:
-- Strongest supporting evidence:
-- Strongest contrary evidence:
-- Missing or uncertain inputs:
-
-## Prize
-PRIZE: STRONG | CONDITIONAL | WEAK
-
-## Fidelity
-FIDELITY: PASS | WARN | FAIL
+Field/Prize must not propose a hidden variable, mechanism, method name, architecture,
+objective, diagnostic slice, or method experiment. It maps the prize and missing
+contact, not the solution.
 
 ## Interpret
-- What the evidence establishes:
-- What it does not establish:
-- Failure level:
-- Best causal compression:
 
-## Invent
-1. Strongest continuation:
-2. Serious alternative:
+Use only after the project has:
 
-## Attack
-- Best simpler explanation:
-- Decisive missing comparison:
-- Scope/cost risk:
-- Evidence most likely to reverse this review:
+- a healthy standard-task evaluator and competent substrate;
+- a competent direct incumbent and serious simple alternative;
+- the nearest same-locus rivals identified and the closest feasible one inspected;
+- natural successes, failures, disagreements, and inconvenient cases;
+- a bundle large enough to distinguish explanations rather than one isolated result.
 
-## Maturity
-MATURITY: EXPLORATION | METHOD-FORMATION | CANDIDATE | ENTRY-PASS | FROZEN
+Provide the lead PI's two or three competing explanations. Ask the reviewer to compare their
+predictions, support, contradictions, and unidentified remainder. Interpret may
+identify a design-relevant variable only when the natural evidence distinguishes it.
+It does not invent a method.
 
-## Decision
-- Chosen next action:
-- Why it dominates:
-- User decision required, if any:
+## Method Challenge
+
+Use only after the lead PI independently proposes at least two concrete constructions.
+Provide the evidence bundle, competent substrate, nearest-rival threat, expected
+end-to-end value, utility risks, and proposed construction episodes.
+
+Ask the reviewer to expose redundancy, compare unique predictions, identify missing component
+or interaction controls, and strengthen the best construction. It may repair a PI
+proposal; it must not create the project's first method from an underdetermined
+observation.
+
+The output is one construction episode containing a real implementation, one
+component/interaction comparison, and one paired utility check. It is not a serial
+chain of gates.
+
+## Later Artifact Roles
+
+- **artifact reviewer:** adversarial scientific review of contribution importance,
+  identity, title/scope, strongest alternatives, and likely reviewer objections after
+  a trained/executable method has coherent positive end-to-end evidence, or a fixed
+  non-method object has independent confirmation;
+- **paper-entry:** Prize/Fidelity/Entry review of a complete bounded paper package;
+- **proof-audit:** isolated verification of formal statements and proofs.
+
+A deadline, draft, long history, or failed method lineage does not justify these
+roles. A method failure does not authorize analysis-paper review. There is no separate
+headline audit: title, scope, and paper identity belong to artifact review.
+
+This skill does not verify experiment implementation or provenance, bibliography
+identity, or manuscript numbers. Route those to `/firm:audit-experiment`,
+`/firm:audit-citations`, and `/firm:write-paper` claim checking respectively.
+
+For artifact, paper-entry, and proof roles, use a fresh context and provide no prior
+scores, desired verdict, fix summary, style exemplar, or hidden author-side argument.
+Interpret may receive the competing explanations it is explicitly asked to compare,
+and Method Challenge may receive lead-PI constructions.
+
+## Review Episodes, Not Every Result
+
+Before any second-PI call, inspect the latest construction marker. If
+`[FIRM CONSTRUCTION_LEASE id=<id> state=active]` has not been followed by the matching
+`state=complete` or `state=released`, defer the review. Intermediate training points,
+component outputs, and GPU status do not authorize Interpret or Method Challenge.
+
+Call the second PI when independent judgment could change a consequential decision:
+
+- adopt or reject a natural problem after contact;
+- choose among lead-PI constructions;
+- redesign after a completed construction episode;
+- materially change task, population, metric, primitive, contribution type, or paper
+  identity;
+- enter submission-oriented writing.
+
+Do not invoke it after every probe, ablation, seed, or component result. A smoke test,
+cheap negative, or additional caveat is not a new evidence maturity level.
+
+## Evidence Packet
+
+Give only what the selected role needs, with raw evidence before the preferred story:
+
+- sealed original program and current candidate separately;
+- exact evaluation conditions and durable raw paths;
+- evaluator and substrate health;
+- direct incumbent, simple alternative, and nearest same-locus rivals;
+- representative natural successes, failures, disagreements, and contradictions;
+- supplied explanations for Interpret;
+- supplied constructions for Method Challenge;
+- scope movement and unresolved ownership threats.
+
+Old contracts, drafts, state labels, and prior reviews are provenance, not premises.
+
+## Lead-PI Synthesis
+
+The lead researcher independently adjudicates the response and records:
+
+```markdown
+## Second-PI Synthesis
+- role and question:
+- evidence bundle or construction episode reviewed:
+- accepted insight and evidence:
+- deferred suggestion and why:
+- rejected suggestion and evidence:
+- explanation or construction change:
+- nearest-rival/substrate consequence:
+- scope or contribution-type change: none | exact user-approved change
+- thread ID:
+- selected next action:
 ```
 
-Be independent, specific, and constructive. A review may reject the current
-realization while preserving the broader program, or recommend consolidation even
-when more experiments are imaginable.
+Do not write `ADOPTED` merely because the reviewer is confident. Material validity findings
+must be verified against raw artifacts before they change evidence status.
+
+## Bounded Dialogue
+
+Use a fresh reviewer context when the role changes, a new evidence bundle is complete,
+or genuine independence is needed. Continue the same reviewer thread only when
+corrected facts or new evidence address the same unresolved dispute. Do not shop for
+agreement.
+
+Default to one pass per role and evidence bundle. A second pass needs new evidence that
+directly addresses the first disagreement.
+
+Prompt skeletons:
+
+```text
+Field/Prize: Assess the value frontier, accepted surfaces, decisive incumbents,
+nearest same-locus work, and missing natural-contact evidence. Do not propose a
+mechanism, hidden variable, method, or method-shaped experiment.
+
+Interpret: Compare the supplied competing explanations against the bundled natural
+evidence. State what is distinguished and what remains unidentified. Do not invent a
+method.
+
+Method Challenge: Compare the lead PI's supplied constructions against the nearest
+rival and evidence. Challenge redundancy, unique predictions, value, and costs, then
+recommend one construction episode.
+```
+
+## Concern Triage
+
+For later reviews classify concerns as:
+
+- `EVIDENCE_INVALIDATING`;
+- `METHOD_DESIGN_CHANGING`;
+- `CLAIM_NARROWING`;
+- `DEFERRABLE`.
+
+Only the first two normally create immediate research work. A review should not
+produce a defensive experiment checklist. Contribution-type change follows
+`../audit-research/references/research-control-protocol.md` and requires an independent
+object plus user approval.
+
+## Proof Audit
+
+In proof-audit mode inventory formal statements, map proofs and dependencies, inspect
+assumptions, quantifiers, domains, case coverage, limits, and hidden regularity, and
+attempt counterexamples. Report exact file/line evidence and minimal repairs. For
+submission assurance write `PROOF_AUDIT.md` with exact dependencies, findings, and
+repairs. Proof audit does not redesign research or grant paper entry.
+
+## Tool Policy
+
+Use a fresh Claude fork by default. When Codex MCP or another genuinely independent
+reviewer is configured, it may provide the independent pass; use its account default
+instead of guessing model names. Retry one exact transient capacity failure.
+Authentication, transport, capacity, and version failures are infrastructure. Record
+`second_pi_status: deferred_tool_unavailable` and continue non-dependent research;
+missing review is neither approval nor rejection.

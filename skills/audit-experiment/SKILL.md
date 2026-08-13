@@ -14,6 +14,13 @@ Audit the experiment as an independent reviewer. The purpose is to determine whi
 claims the existing artifacts can honestly support, not to search for reasons to
 block ordinary research.
 
+This skill owns experiment facts only. It may invalidate or qualify affected evidence,
+but it cannot close a method family, create a defensive experiment grid, judge the
+paper's importance, or decide contribution type. Those boundary decisions belong to
+`audit-research` and scientific interpretation to the lead PI or an appropriately
+timed `second-pi` role. Reuse an audit when its declared input hashes and evaluator
+semantics are unchanged.
+
 ## Scope
 
 Use this audit at a consequential boundary or when integrity is genuinely unclear.
@@ -73,6 +80,9 @@ claim consequence.
   settings, and evaluation conditions matched?
 - Is the strongest relevant baseline included or explicitly deferred?
 - Are baseline failures or tuning effort treated symmetrically?
+- Does the underlying substrate competently perform the standard task?
+- Were backbone capability, training data, and mechanism changed together and then
+  incorrectly attributed to the mechanism alone?
 
 ### E. Statistical and selection integrity
 
@@ -93,6 +103,10 @@ claim consequence.
 For each consequential claim, identify the exact supporting artifact and the
 transformation from raw data to reported number. If the chain cannot be reproduced,
 mark the claim `UNVERIFIED` rather than guessing.
+
+Record a stable evidence ID, exact artifact path, validity reason, dependent claims,
+tables, figures, and state entries, plus superseding clean evidence when available.
+Invalidation propagates to dependents; it does not silently rewrite them.
 
 ## Verdict policy
 

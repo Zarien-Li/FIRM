@@ -34,8 +34,10 @@ has:
 - an honest scope and known limitations.
 
 When these are absent, write only the requested exploratory artifact and label the
-missing evidence. Use `/firm:audit-research` when paper readiness is genuinely
-unclear.
+missing evidence. Full submission-oriented writing requires a fresh
+`/firm:second-pi` paper-entry review. Use `/firm:audit-research` only when value,
+scope, identity, or state continuity at that boundary is genuinely unclear; it does
+not grant paper entry itself.
 
 ## 2. Build the claims-to-evidence spine
 
@@ -98,9 +100,17 @@ For each section:
 - avoid invented citations, generic novelty language, and unsupported causal verbs;
 - preserve notation and terminology across sections.
 
-Reference papers may be studied for organization and rhetorical patterns, but never
-copied or used as evidence. Keep author-side style study separate from independent
-review.
+For high-stakes writing, select two to four genuinely excellent, venue-relevant full
+papers from authoritative sources. Match contribution type, not merely keywords, and
+prefer award, spotlight, field-defining, or otherwise strongly recognized work.
+
+Delegate each full-paper reading to a separate fresh subagent. Each returns only a
+compact structural report covering argument arc, section jobs, evidence ordering,
+figure rhetoric, related-work positioning, limitations, and prose cadence. A separate
+synthesis subagent consumes those reports and writes `writing_models/SYNTHESIS.md`.
+The main writer reads only the synthesis, never the bulk papers. Adapt patterns, not
+prose, examples, claims, or distinctive terminology. Keep all exemplar material away
+from independent reviewers and auditors.
 
 ## 5. Generate figures and tables from sources
 
@@ -127,20 +137,22 @@ Follow [references/latex-and-compilation.md](references/latex-and-compilation.md
 Fix the first real error, recompile, and repeat. Do not hide errors by deleting
 content or switching templates. Preserve a compile log and final PDF path.
 
-## 7. Run independent checks
+## 7. Audit each concern once
 
-For submission-oriented work, run these as separate fresh passes:
+Each check has one owner:
 
-1. **Claim audit:** verify manuscript claims and numbers against raw evidence using
-   [references/claim-audit.md](references/claim-audit.md).
-2. **Citation audit:** invoke `/firm:audit-citations`.
-3. **Scientific review:** invoke `/firm:second-pi` on the compiled paper and raw
-   evidence packet.
-4. **Experiment integrity:** invoke `/firm:audit-experiment` only when the relevant
-   evidence has not already been audited or provenance is uncertain.
+| Question | Owner |
+|---|---|
+| Did the implementation, evaluator, provenance, and comparison identify the quantity? | `/firm:audit-experiment` |
+| Do manuscript numbers and semantic qualifiers match valid raw evidence? | `write-paper` claim audit |
+| Do cited works exist and support their local contexts? | `/firm:audit-citations` |
+| Is the contribution important, coherent, scoped, and ready to enter? | `/firm:second-pi` artifact or paper-entry role |
+| Is value, identity, scope debt, or project state sound at a major boundary? | `/firm:audit-research` |
 
-Do not give an independent reviewer prior scores, fix summaries, desired outcomes,
-or style exemplars. Review the artifact, evidence, and explicit evaluation rubric.
+Run only checks whose inputs or semantics changed. Reuse a fresh green audit when its
+declared hashes remain valid. Do not create a parallel headline audit or run the whole
+stack after every edit. Independent reviewers receive no prior scores, desired
+outcomes, fix summaries, or style exemplars.
 
 ## 8. Apply fixes without claim drift
 

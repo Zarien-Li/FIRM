@@ -116,14 +116,18 @@ than paper improvement; return those items as future research or evidence gaps.
 
 After the final compile:
 
-- run `/firm:audit-citations` if citation integrity has not been checked;
-- verify claims and numbers against raw evidence;
+- run `/firm:audit-citations` only if citation contexts changed or no fresh audit exists;
+- verify only changed claims and numbers against raw evidence, reusing unchanged checks;
 - check venue, anonymity, page, and artifact constraints supplied by the user or
   current authoritative instructions;
 - inspect title, abstract, contribution bullets, figures, tables, limitations, and
   conclusion for a single consistent paper identity;
 - ensure no file outside the whitelist changed;
 - ensure no secret, private path, or temporary artifact entered the source archive.
+
+Do not invoke `/firm:audit-research` or a new second-PI scientific review after every
+round. If a proposed edit changes contribution identity or requires new science, end
+the writing loop and return that issue to the research state.
 
 ## 7. Improvement log
 

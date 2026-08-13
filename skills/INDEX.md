@@ -31,7 +31,7 @@ namespace, for example `/diagnose-result`.
 | `diagnose-result` | Calibrate what a completed result establishes and choose the smallest discriminating next test | May activate when relevant |
 | `design-method` | Convert a causal thesis into a load-bearing architecture, objective, state, memory, routing, training, data, or systems primitive | May activate when relevant |
 | `plan-experiments` | Build a claim-aware, compute-efficient experiment plan | May activate when relevant |
-| `second-pi` | Review prize, fidelity, interpretation, alternatives, attacks, maturity, and decision in a fresh context | May activate when relevant; runs in a fork |
+| `second-pi` | Run exactly one maturity-matched role: Field/Prize, Interpret, Method Challenge, artifact, paper-entry, or proof review | May activate when relevant; runs in a fork |
 
 ## Run and verify
 
@@ -41,7 +41,7 @@ namespace, for example `/diagnose-result`.
 | `run-experiment` | Launch local, SSH, Slurm, queued, retry, or resume workflows with durable provenance | **Explicit invocation only** |
 | `monitor-experiment` | Inspect owned jobs, logs, metrics, and outputs without silently changing them | **Explicit invocation only** |
 | `audit-experiment` | Independently audit artifacts, evaluator semantics, provenance, fairness, and claim scope | **Explicit invocation only; fresh fork** |
-| `audit-research` | Audit continuity, scope drift, contribution maturity, and paper readiness at a real boundary | Fresh fork |
+| `audit-research` | Audit continuity, value, scope debt, contribution identity, and paper readiness at a real boundary while consuming rather than repeating factual audits | Fresh fork |
 
 ## Write and finish
 
@@ -55,10 +55,10 @@ namespace, for example `/diagnose-result`.
 ## Recommended combinations
 
 - **A method lost:** `diagnose-result` → `design-method` → `plan-experiments`
-- **The project is drifting:** `research` → `second-pi` → `audit-research`
+- **The project is drifting:** `research` → `audit-research`; add one maturity-matched `second-pi` role only when independent judgment can change the decision
 - **A costly run is approaching:** `plan-experiments` → `register-experiment` → `run-experiment`
-- **A draft may be premature:** `audit-experiment` → `second-pi` → `write-paper`
-- **Submission cleanup:** `audit-citations` + `make-figures` + `improve-paper`
+- **A draft may be premature:** `audit-research` → `second-pi` paper-entry → `write-paper`
+- **Submission cleanup:** run only affected claim/citation checks + `make-figures` + `improve-paper`
 
 Specialists are tools, not required stages. Invoke the smallest skill that resolves
 the current uncertainty.
