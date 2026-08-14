@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0
+
+- Added Scientific Upside and one-sentence replacement-principle formation before
+  method naming.
+- Added Program Expansion review after the first credible positive realization.
+- Split probe budget from paper budget so large campaigns fund contribution growth,
+  not regime shopping or defensive table expansion.
+- Added the 80% deletion and ten-times-resource tests for reusable primitives.
+- Added connected contribution stacks for papers with one governing identity.
+- Changed result handling so observations update by default; explanations, methods,
+  and paper identity update only from discriminating evidence bundles.
+
 ## 1.0.0
 
 - Added official Claude Code plugin and marketplace manifests.

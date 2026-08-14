@@ -1,6 +1,6 @@
 ---
 name: second-pi
-description: Uses an independent reviewer with exactly one role matched to evidence maturity: Field/Prize before natural contact is complete, Interpret after a competent evidence bundle, Method Challenge after the lead PI proposes constructions, and artifact, paper-entry, or proof review only for later fixed artifacts.
+description: Uses an independent reviewer with exactly one role matched to evidence maturity: Field/Prize before natural contact is complete, Interpret after a competent evidence bundle, Method Challenge after the lead PI proposes constructions, Program Expansion after a credible positive realization, and artifact, paper-entry, or proof review only for later fixed artifacts.
 when_to_use: Invoke explicitly at a consequential scientific decision whose evidence maturity matches one review role; never after every result.
 argument-hint: "[role and evidence packet]"
 context: fork
@@ -61,6 +61,24 @@ The output is one construction episode containing a real implementation, one
 component/interaction comparison, and one paired utility check. It is not a serial
 chain of gates.
 
+## Program Expansion
+
+Use only after a credible positive realization has end-to-end value and a coherent
+governing principle. Supply that principle, the realization, decisive rival, utility
+surface, current scope, and expansion axes proposed by the lead PI.
+
+Ask the reviewer to identify the largest scientifically coherent form of the idea:
+
+- which expansion would strengthen the central principle rather than add table rows;
+- whether it can create reusable supervision, data, architecture, systems, or tooling;
+- which task/model/scale transfer is predicted rather than merely convenient;
+- what can be deleted to make the idea simpler and easier to adopt;
+- whether ten times the resources would deepen the contribution or only stabilize it.
+
+Do not begin with reviewer objections. This role allocates positive ambition and paper
+budget; it does not grant paper entry, prove causality through scale, or turn a failed
+method lineage into another contribution type.
+
 ## Later Artifact Roles
 
 - **artifact reviewer:** adversarial scientific review of contribution importance,
@@ -94,6 +112,7 @@ Call the second PI when independent judgment could change a consequential decisi
 
 - adopt or reject a natural problem after contact;
 - choose among lead-PI constructions;
+- allocate a paper-sized expansion program after a credible positive realization;
 - redesign after a completed construction episode;
 - materially change task, population, metric, primitive, contribution type, or paper
   identity;
@@ -113,6 +132,7 @@ Give only what the selected role needs, with raw evidence before the preferred s
 - representative natural successes, failures, disagreements, and contradictions;
 - supplied explanations for Interpret;
 - supplied constructions for Method Challenge;
+- supplied principle and expansion axes for Program Expansion;
 - scope movement and unresolved ownership threats.
 
 Old contracts, drafts, state labels, and prior reviews are provenance, not premises.
@@ -162,6 +182,11 @@ method.
 Method Challenge: Compare the lead PI's supplied constructions against the nearest
 rival and evidence. Challenge redundancy, unique predictions, value, and costs, then
 recommend one construction episode.
+
+Program Expansion: Given the credible positive realization and supplied principle,
+identify its largest coherent scientific form. Separate contribution-strengthening
+expansion from extra rows, test adoption and cross-generation value, apply the 80%
+deletion and ten-times-resource tests, and do not start with defensive objections.
 ```
 
 ## Concern Triage

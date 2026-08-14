@@ -74,6 +74,21 @@ Write `PAPER_PLAN.md` with:
 - figure/table plan;
 - limitations and non-claims.
 
+One identity does not mean one contribution bullet. A single governing principle may
+earn a connected contribution stack:
+
+- **Phenomenon:** an important recurring behavior or failure;
+- **Principle/primitive:** the simple new assumption or reusable concept;
+- **Realization:** the trainable or executable method that instantiates it;
+- **Generality finding:** predicted task, model, modality, or scale behavior;
+- **Resource/system:** a necessary data engine, tool, or infrastructure contribution.
+
+Include only layers independently supported by evidence and logically caused by the
+same principle. Do not turn three ablations into three contributions, and do not split
+one paper into unrelated methods to appear larger. The strongest paper can often be
+summarized as one difficult question, one simple principle, and several connected
+forms of proof.
+
 Use the detailed planning checklist in
 [references/planning.md](references/planning.md). If the contribution type,
 positive object, method primitive, primary metric, or claimed population changes,

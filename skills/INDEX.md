@@ -31,7 +31,7 @@ namespace, for example `/diagnose-result`.
 | `diagnose-result` | Calibrate what a completed result establishes and choose the smallest discriminating next test | May activate when relevant |
 | `design-method` | Convert a causal thesis into a load-bearing architecture, objective, state, memory, routing, training, data, or systems primitive | May activate when relevant |
 | `plan-experiments` | Build a claim-aware, compute-efficient experiment plan | May activate when relevant |
-| `second-pi` | Run exactly one maturity-matched role: Field/Prize, Interpret, Method Challenge, artifact, paper-entry, or proof review | May activate when relevant; runs in a fork |
+| `second-pi` | Run exactly one maturity-matched role: Field/Prize, Interpret, Method Challenge, Program Expansion, artifact, paper-entry, or proof review | May activate when relevant; runs in a fork |
 
 ## Run and verify
 

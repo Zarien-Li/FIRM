@@ -52,6 +52,21 @@ For each serious candidate, ask:
 - what value, general-capability, coverage, latency, or cost tradeoff it creates;
 - what the smallest real implementation would teach even if it loses.
 
+Also state its positive research form:
+
+```text
+Replacement principle:
+One-sentence method:
+Default assumption replaced:
+Research leverage:
+Adoption path:
+Expansion axes: architecture | supervision/data | scale | task/model | mechanism
+```
+
+These fields are not marketing copy. If they require the method name, benchmark, and
+several private qualifiers to sound important, the candidate has not yet escaped the
+discovery cell.
+
 Do not brainstorm from literature terminology alone. A candidate needs an empirical or formal reason to exist.
 
 ## Compare, Steelman, And Choose
@@ -75,6 +90,22 @@ Allow a component to disappear. If a simpler composition preserves the useful be
 Development ablations may select the design. They must retain honest forecasts and results, but they need not be treated as independent confirmation. After the method stabilizes, rerun the decisive necessity and interaction claims on appropriate fresh evidence when those claims carry the paper.
 
 Method stabilization is earned when the main components have identifiable jobs, the important interactions have been exercised, the intended computation is active, and remaining changes are mostly optimization or evidence completion. It is not earned merely because several variants have failed or one relation has become statistically stable.
+
+## Expand A Credible Primitive
+
+Once a realization has credible positive end-to-end value, test whether its governing
+principle deserves a larger research program. Seek connected contributions, not a bag
+of experiments: a reusable training or execution primitive, a natural data-production
+system, predicted cross-task or cross-model behavior, a scale law, or mechanism
+evidence that changes how the primitive should be used.
+
+Apply the 80% deletion test: remove most modules, names, and engineering details. If a
+strong new principle and adoption path remain, strengthen that core. If nothing
+remains except a benchmark-specific stack, do not spend a paper-sized budget making
+the stack harder to criticize.
+
+Expansion begins only after a credible realization. It must not rescue a failed method,
+replace missing natural evidence with more datasets, or treat scale as causal proof.
 
 ## Evolve A Method From Its Failure
 
@@ -215,6 +246,10 @@ Write `METHOD_PRIMITIVE.md` when the design needs a durable specification:
 ## Research Bet
 - best-case contribution if the method works:
 - standard-task or natural-system reintegration target:
+- replacement principle:
+- default assumption replaced:
+- research leverage and adoption path:
+- earned expansion axes:
 - unique prediction:
 - evidence that would weaken the causal explanation:
 - smallest informative implementation:

@@ -35,6 +35,22 @@ Before substantial method compute, make sure the plan is not resting on an avoid
 
 Do not choose a dataset, operator, architecture, or regime because the candidate method appears likely to win there. If a special setting is used diagnostically, label it as such and include the experiment whose outcomes decide whether the learned principle re-enters the original standard task or system.
 
+## Separate Probe Budget And Paper Budget
+
+Use **probe budget** to establish the natural problem, governing principle,
+nearest-rival opening, and one credible realization. Keep it concentrated enough that
+weak projects fail cheaply and informative negatives redesign the construction.
+
+Unlock **paper budget** only when the principle is simple and consequential, the
+nearest rival does not already own it, one competent realization has credible positive
+end-to-end value, and expansion can strengthen the contribution. Paper budget may fund
+predicted task/model transfer, a data or supervision engine, scale behavior, mechanism,
+and complete utility evidence. It must not fund regime shopping, indiscriminate seed
+grids, or breadth whose only purpose is a larger table.
+
+Before allocating paper budget, run one Program Expansion review. Record which axes are
+earned, deferred, or unsupported and what ten times the resources would change.
+
 ## Value Of Another Experiment
 
 An experiment deserves current priority when at least one plausible outcome would change the method design, the core paper claim, the decisive comparison, a major reviewer judgment, or the honest submission scope. If every outcome would merely make the story richer while leaving those decisions unchanged, defer it to later work.
@@ -190,6 +206,9 @@ Write or update `EXPERIMENT_PLAN.md` when several runs, claims, or dependencies 
 - scope debt and repayment evidence:
 - best-case contribution:
 - reintegration target:
+- budget class: probe | paper
+- principle and credible positive realization:
+- earned expansion axes and ten-times-resource consequence:
 
 ## Evidence Map
 | Question/claim | Experiment | Evidence type | Method or paper decision it changes |

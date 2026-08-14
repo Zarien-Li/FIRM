@@ -40,19 +40,54 @@ A narrower paper can be valid without silently replacing the original program.
 When the current work narrows, state what was learned, what remains unresolved,
 and how the paper still connects to the broader value.
 
-## Make five coupled updates
+## Update observation before theory
 
-Whenever meaningful evidence arrives, update all five rather than only the score:
+Every valid result updates the observation: exact conditions, outcome vector,
+uncertainty, cost, contrary cases, and durable artifact paths. It does **not** by
+default update the causal explanation, method, paper identity, scope, or contribution
+type.
 
-1. **Evidence:** what the artifacts directly establish.
-2. **Explanation:** which causal stories survive and what would distinguish them.
-3. **Design:** which method assumption or primitive should change.
-4. **Paper:** whether the claim, scope, contribution type, or maturity changed.
-5. **Action:** the next step with the highest expected information or consolidation
-   value under the actual compute and time constraints.
+Update competing explanations only when a bundled result distinguishes their
+predictions. Update the design only when the evidence directly changes the job of a
+specific component or supports a new construction. Update the paper only when the
+positive object or claim-bearing comparison changes. Then choose the next action with
+the highest scientific or consolidation value under the real budget.
 
-Do not report motion as progress. A search, run, plot, draft, or review is useful
-only through the scientific decision it changes.
+Do not report motion as progress. A search, run, plot, draft, or review matters only
+through the belief, construction, or paper decision it changes.
+
+## Form a principle with scientific upside
+
+After competent empirical contact and before naming a method, ask what consequential
+field assumption the evidence puts under pressure. Prefer a simple replacement
+principle over a private correction for the discovery slice.
+
+Judge upside by leverage, not novelty theater:
+
+- what downstream scientific or system decisions would change if the principle held;
+- whether others could adopt it without reproducing the whole model;
+- whether it predicts transfer across accepted tasks, systems, modalities, or model
+  generations;
+- whether it creates a reusable primitive or names a recurring phenomenon;
+- whether future work on the problem would be incomplete without engaging with it.
+
+The research process may be complex; the governing idea should be expressible in one
+sentence linking the important problem, the replaced assumption, and the new
+capability. These questions allocate ambition and resources; they are not publication
+gates and do not invalidate an honest bounded paper.
+
+## Expand a credible positive, not every pilot
+
+After the first credible positive realization, pause before routine stabilization and
+ask whether the result is an isolated improvement or the first instance of a broader
+principle. Consider only expansion axes predicted by that principle: architecture,
+supervision or data production, scale behavior, task/model transfer, mechanism, or
+systems adoption.
+
+Ask what ten times the resources would buy. If it would strengthen the central
+contribution, a paper-sized program may be warranted. If it would only add rows,
+seeds, or defensive controls, keep the work as a pilot or bounded paper and spend the
+budget elsewhere. Use `/firm:second-pi` Program Expansion review for this decision.
 
 ## Interpret failure at the right level
 
@@ -99,6 +134,7 @@ Rank candidate actions by their ability to change one of these:
 - which method primitive is necessary;
 - whether the method beats the strongest fair alternative;
 - whether the current paper has earned consolidation.
+- whether a credible positive can grow into a broader reusable research program.
 
 Prefer a small discriminating experiment over a broad ceremonial grid. Prefer
 consolidation over moving the standard again once the paper-critical evidence is

@@ -1,7 +1,7 @@
 {
   "name": "firm",
   "displayName": "FIRM — Research Judgment",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Research judgment skills for Claude Code: diagnose results, design methods, plan experiments, audit evidence, and write papers.",
   "author": {
     "name": "Zeyan Li",

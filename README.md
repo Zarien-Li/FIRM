@@ -88,23 +88,27 @@ claude
 ## How it works
 
 ```text
-Prize -> Fidelity -> Design -> Evidence -> Entry
-  ^          evidence can revise any earlier decision          |
-  +-------------------------------------------------------------+
+Prize -> Fidelity -> Principle -> Design -> Evidence -> Expansion -> Entry
+  ^                 evidence can revise any earlier decision                 |
+  +--------------------------------------------------------------------------+
 ```
 
 - **Prize:** Would the best-case result matter to the community?
 - **Fidelity:** Are the task, baseline, scorer, provenance, and costs real?
+- **Principle:** What consequential default assumption should the evidence replace?
 - **Design:** What load-bearing method primitive follows from the evidence?
 - **Evidence:** What did the run diagnose, and what remains alive?
+- **Expansion:** Can a credible positive become a reusable research program rather
+  than merely a larger result table?
 - **Entry:** Is the contribution mature enough for full paper writing?
 
 A fresh Claude context is the default independent second PI at consequential
 boundaries. Another model such as Codex may serve as an additional reviewer when
 available. Each call has exactly one evidence-matched role: map the field and prize,
-compare supplied explanations, challenge lead-PI constructions, or review a fixed
-artifact. It is not a stop-button oracle or an always-on invention engine, and reviewer
-unavailability does not pause the lead researcher's work.
+compare supplied explanations, challenge lead-PI constructions, expand a credible
+positive principle, or review a fixed artifact. It is not a stop-button oracle or an
+always-on invention engine, and reviewer unavailability does not pause the lead
+researcher's work.
 
 ### The operational research loop
 
@@ -132,7 +136,7 @@ collide with skills from other plugins.
 For a quick trial in the current repository:
 
 ```text
-/firm:research "Own this project as a persistent first author. Preserve the important problem, establish credible baselines, build and test methods, interpret every result, and write only when the evidence is ready."
+/firm:research "Own this project as a persistent first author. Preserve the important problem, establish credible baselines, record every result, update explanations only from discriminating evidence bundles, build reusable primitives, and write only when the evidence is ready."
 ```
 
 `research` is the persistent owner, not a macro that blindly runs all 17 skills.
@@ -260,6 +264,7 @@ matches.
 | A clean private slice becomes the “paper” | Track the original program, current paper, and accumulated scope debt separately |
 | Failed methods are retrofitted into an analysis story | Require an independently valuable positive object and honest paper entry |
 | Every result produces another menu of ideas | Choose one next action by expected information and research value |
+| A credible positive immediately becomes more seeds and datasets | Run Program Expansion: fund only extensions that strengthen the governing principle |
 | A polished draft starts steering the science | Rebuild claims from raw evidence, matched baselines, and explicit scope |
 
 FIRM is not a rigid stage machine. One persistent researcher owns the program;
@@ -276,6 +281,11 @@ activated, what failed, what survives, and what the next version must change.
 **Paper/program separation.** The broad research program, current paper claim,
 discovery slice, and scope debt remain separate objects. A narrow result cannot
 borrow importance from a broad field name.
+
+**Positive program expansion.** Once a real method works, FIRM asks whether its simple
+principle can become a reusable primitive, supervision or data engine, predicted
+cross-task finding, or systems capability. Probe budget tests openings; paper budget
+is concentrated only on ideas whose scientific upside grows with the investment.
 
 ## The 17 skills
 
