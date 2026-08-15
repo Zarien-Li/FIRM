@@ -24,6 +24,7 @@ required=(
   firm
   install.sh
   scripts/validate_skills.py
+  scripts/check-research-contract.py
   scripts/test-onboarding.sh
   templates/CLAUDE_FIRM_BLOCK.md
   demo/fixture/CLAUDE.md
@@ -43,6 +44,7 @@ bash -n "${ROOT_DIR}/install.sh"
 bash -n "${ROOT_DIR}/scripts/test-onboarding.sh"
 bash -n "${ROOT_DIR}/scripts/verify-install.sh"
 python3 "${ROOT_DIR}/scripts/validate_skills.py"
+python3 "${ROOT_DIR}/scripts/check-research-contract.py"
 bash "${ROOT_DIR}/scripts/test-onboarding.sh"
 
 if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY|REPOSITORY_URL|YOUR_ACCOUNT' \

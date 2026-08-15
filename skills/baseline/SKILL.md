@@ -23,6 +23,13 @@ Prefer:
 
 Do not choose a weak, obscure, or convenient baseline to manufacture a win. When code availability forces a substitute, state the difference and what uncertainty it leaves.
 
+Choose and record an accepted benchmark or natural workflow as the anchor for each
+central claim. Derived datasets, generated examples, synthetic corruptions, oracle
+slices, and project-defined subsets must be labeled `training` or `diagnostic` unless
+their claim-bearing status is independently justified. They may expose a mechanism or
+train a component, but faster feedback or larger gains do not let them silently replace
+the anchor.
+
 Literature and leaderboards help identify candidates. Actual selection should also consider implementation health, evaluation comparability, compute, and whether per-example outputs can be inspected.
 
 ## Reproduce With Semantic Fidelity

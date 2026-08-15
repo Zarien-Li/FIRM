@@ -40,6 +40,13 @@ A narrower paper can be valid without silently replacing the original program.
 When the current work narrows, state what was learned, what remains unresolved,
 and how the paper still connects to the broader value.
 
+Keep one accepted benchmark or natural workflow as the **benchmark anchor** for the
+current claim. Label every derived artifact as `claim-bearing`, `training`, or
+`diagnostic`. Synthetic data, generated examples, oracle slices, and project-defined
+subsets may train or diagnose a method, but they do not silently replace the anchor.
+Changing the anchor is a scientific scope decision: record why the new surface is
+accepted, what claim it supports, and what evidence is lost from the old one.
+
 ## Update observation before theory
 
 Every valid result updates the observation: exact conditions, outcome vector,
@@ -105,6 +112,14 @@ can justify redesign without justifying a seed sweep or closure of the field.
 Preserve negative evidence in the method lineage: what changed, what happened,
 what assumption failed, and what the next version inherits.
 
+After a competent negative, default to **consolidate or re-ground**, not automatic
+invention. Consolidate the observation and surviving design lessons; then revisit the
+natural premise, benchmark anchor, substrate competence, incumbent ownership, and
+paper prize. Continue the same construction lineage only when accepted-anchor evidence
+still supports a load-bearing prediction that has not been tested and the next episode
+can create a named paper asset. Do not impose a fixed number of failed episodes, but do
+not let unlimited reinterpretation substitute for benchmark movement.
+
 ## Route to specialist skills only when needed
 
 | Immediate need | Invoke |
@@ -141,6 +156,12 @@ consolidation over moving the standard again once the paper-critical evidence is
 stable. Prefer returning to the broad program over polishing a private cell that
 has become too small to matter.
 
+For any construction-scale action, name its **paper asset target**: for example a
+decisive anchor comparison, a realized primitive, a necessity result, a utility result,
+or predicted generalization. State the expected asset delta and the accepted-anchor
+evidence that justifies continued investment. More logs, variants, explanations, or
+private slices are not a paper asset by themselves.
+
 ## Maintain concise continuity
 
 After a consequential update, write only the state needed by the next session:
@@ -152,6 +173,8 @@ After a consequential update, write only the state needed by the next session:
 - exact active jobs and durable output paths;
 - paper maturity: `none | candidate | entry-pass | writing | frozen`;
 - one chosen next action and the evidence that would change it.
+- premise status, benchmark anchor, current paper-asset target and delta, last movement
+  on the anchor, and the evidence basis for continuing the active lineage.
 
 Keep exact measurements in raw artifacts, not duplicated prose. Keep auto-memory
 sparse. Never store a temporary verdict such as “exhausted” or “final” as a durable

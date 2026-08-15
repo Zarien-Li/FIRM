@@ -11,6 +11,12 @@
 - Added connected contribution stacks for papers with one governing identity.
 - Changed result handling so observations update by default; explanations, methods,
   and paper identity update only from discriminating evidence bundles.
+- Added accepted benchmark anchors and explicit claim-bearing, training, and
+  diagnostic artifact roles so derived data cannot silently become the paper target.
+- Added paper-asset targets and continuation evidence for construction-scale work.
+- Changed competent-negative handling to consolidate or re-ground before another
+  method episode, without imposing a mechanical episode limit.
+- Added a release-time semantic contract check for these research-yield principles.
 
 ## 1.0.0
 

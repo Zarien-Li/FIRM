@@ -9,6 +9,8 @@ Use this only when the project has no adequate scientific source of truth.
 - Question:
 - Why it matters:
 - Natural population or standard task:
+- Premise status: untested | supported | contradicted | reformulated
+- Benchmark anchor:
 - User constraints:
 
 ## Current paper
@@ -21,6 +23,9 @@ Use this only when the project has no adequate scientific source of truth.
 - Strongest support:
 - Strongest contrary evidence:
 - Provenance and raw paths:
+- Claim-bearing artifacts:
+- Training artifacts:
+- Diagnostic artifacts:
 
 ## Method lineage
 | Version | Causal bet | Change | Result | Diagnosis | Inherited next |
@@ -39,6 +44,9 @@ Use this only when the project has no adequate scientific source of truth.
 - Chosen next action:
 - Why now:
 - Evidence that would change the decision:
+- Paper asset target and expected delta:
+- Last benchmark-anchor movement:
+- Continuation basis for the active lineage:
 ```
 
 Update this file after consequential evidence or a contribution-identity change,

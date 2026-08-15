@@ -34,6 +34,11 @@ Never promote an agent-authored label such as `dead`, `final`, `exhausted`, or
 A narrow, clean slice does not inherit the importance of the broad field by
 rhetoric alone.
 
+Keep the current premise status and one accepted benchmark or natural-workflow anchor
+explicit. Label artifacts as claim-bearing, training, or diagnostic. Generated data,
+synthetic cases, oracle slices, and project-defined subsets may train or diagnose, but
+they do not silently replace the accepted anchor.
+
 ## Interpret failure at the right level
 
 For a negative result, distinguish:
@@ -49,6 +54,12 @@ For a negative result, distinguish:
 One competent loss can diagnose a realization. It usually cannot close a family
 or field. Do not launch more seeds to rescue a clear design failure; add seeds
 only for an explicit statistical question.
+
+After a competent negative, consolidate or re-ground before inventing again. Continue
+the same lineage only when accepted-anchor evidence supports a still-untested
+load-bearing prediction and the next construction can create a named paper asset.
+There is no fixed episode limit, but repeated interpretation without benchmark or
+paper-asset movement is not research progress.
 
 ## Build methods constructively
 
@@ -74,6 +85,9 @@ After consequential evidence, state:
 - paper consequence;
 - one highest-value next action;
 - evidence that would change the decision.
+
+For construction-scale work, also state the paper asset target, expected asset delta,
+last movement on the benchmark anchor, and evidence basis for continuing the lineage.
 
 Prefer a small discriminating test over an undirected sweep. Continue independent
 work while long jobs run.
