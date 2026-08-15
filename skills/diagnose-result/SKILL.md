@@ -26,6 +26,12 @@ If any answer is materially unresolved, label the result `run-uncertain` and
 recommend the smallest integrity or competence check. Do not manufacture a
 scientific diagnosis from a broken run.
 
+Also label the artifact's role: `claim-bearing`, `training`, or `diagnostic`.
+Generated data, synthetic perturbations, oracle subsets, and project-defined slices
+remain training or diagnostic evidence unless their natural importance and evaluation
+role have been independently established. A clean diagnostic pattern does not replace
+movement on the accepted benchmark anchor.
+
 Use `/firm:audit-experiment` when provenance or evaluator integrity is genuinely
 suspect; do not invoke a full audit for every ordinary result.
 
@@ -122,6 +128,13 @@ For the chosen experiment, state:
 Do not recommend a seed sweep unless stochastic uncertainty is the actual unresolved
 question.
 
+For a competent negative, the default next action is to consolidate or re-ground:
+record the observation, preserve useful design evidence, and reassess the natural
+premise, benchmark anchor, substrate, nearest rival, and paper prize. Recommend another
+same-lineage construction only when a still-untested load-bearing prediction is
+supported on the accepted anchor and the episode has a named paper-asset target. Do
+not invent a hidden variable merely to keep the lineage alive.
+
 ## 8. Update the method lineage and paper state
 
 Record:
@@ -177,6 +190,12 @@ lineage. Do not supply only a polished preferred interpretation.
 ## Design consequence
 
 ## Paper consequence
+
+## Research-yield consequence
+- Evidence role and benchmark anchor:
+- Paper asset gained or lost:
+- Last accepted-anchor movement:
+- Continue, consolidate, or re-ground, and evidence basis:
 
 ## Highest-value next action
 - Experiment or consolidation action:

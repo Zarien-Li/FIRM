@@ -91,6 +91,14 @@ Development ablations may select the design. They must retain honest forecasts a
 
 Method stabilization is earned when the main components have identifiable jobs, the important interactions have been exercised, the intended computation is active, and remaining changes are mostly optimization or evidence completion. It is not earned merely because several variants have failed or one relation has become statistically stable.
 
+Before each construction episode, name the paper asset it can create and its expected
+delta over the current evidence set. A valid target may be an executable realization,
+a decisive anchor comparison, a necessity result, a paired utility result, or a
+principle-predicted transfer. Continue the same lineage after a competent negative only
+when accepted-anchor evidence supports a still-untested load-bearing prediction. There
+is no fixed episode limit, but a new name, private slice, or richer explanation is not
+by itself a reason to spend another episode.
+
 ## Expand A Credible Primitive
 
 Once a realization has credible positive end-to-end value, test whether its governing
@@ -259,6 +267,9 @@ Write `METHOD_PRIMITIVE.md` when the design needs a durable specification:
 - component interactions or substitutions that matter:
 - contextual variables the method should represent or condition on:
 - what a negative result would teach:
+- benchmark anchor and artifact roles:
+- paper asset target and expected delta:
+- accepted-anchor evidence supporting lineage continuation:
 - next action and why:
 ```
 

@@ -48,7 +48,9 @@ It does not invent a method.
 
 ## Method Challenge
 
-Use only after the lead PI independently proposes at least two concrete constructions.
+Use only after the lead PI independently proposes a concrete candidate set with real
+alternatives at the level the evidence supports; do not require a fixed candidate
+count merely to unlock review.
 Provide the evidence bundle, competent substrate, nearest-rival threat, expected
 end-to-end value, utility risks, and proposed construction episodes.
 
@@ -56,6 +58,12 @@ Ask the reviewer to expose redundancy, compare unique predictions, identify miss
 or interaction controls, and strengthen the best construction. It may repair a PI
 proposal; it must not create the project's first method from an underdetermined
 observation.
+
+After a competent negative, Method Challenge must not automatically invent the next
+method or hidden variable. First assess whether the accepted benchmark still supports
+an untested load-bearing prediction and whether another episode would create a named
+paper asset. Otherwise recommend consolidation or re-grounding while preserving valid
+evidence; do not issue stop, freeze, or contribution-type verdicts.
 
 The output is one construction episode containing a real implementation, one
 component/interaction comparison, and one paired utility check. It is not a serial
@@ -134,6 +142,8 @@ Give only what the selected role needs, with raw evidence before the preferred s
 - supplied constructions for Method Challenge;
 - supplied principle and expansion axes for Program Expansion;
 - scope movement and unresolved ownership threats.
+- benchmark anchor, artifact roles, last anchor movement, paper-asset target and
+  expected delta, and evidence supporting continued investment in the lineage.
 
 Old contracts, drafts, state labels, and prior reviews are provenance, not premises.
 

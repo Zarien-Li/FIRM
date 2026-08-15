@@ -59,6 +59,13 @@ Do not impose a fixed experiment count or deadline as a substitute for judgment.
 
 Expected value includes the prize, not only information gain. A highly discriminating experiment can still be a poor allocation when both outcomes concern an increasingly private object. Prefer work that either forms the method or reconnects the learned principle to a natural standard surface.
 
+Every construction-scale run must target one named paper asset and state its expected
+delta over the current package. Repeating a lineage is justified only by a still-
+untested load-bearing prediction supported on the accepted benchmark anchor, not by a
+desire to explain another negative or accumulate method versions. Do not impose a
+fixed episode count; compare the next episode's likely paper leverage with
+consolidation, re-grounding, and other live projects.
+
 ## Put High-Information Experiments Early
 
 Early experiments should answer uncertainties that would change the method or major allocation of compute. Examples:
@@ -117,6 +124,7 @@ For every block, write:
 
 - research question;
 - claim or belief it informs;
+- paper asset target and expected delta;
 - evidence role: discovery | method formation | claim confirmation;
 - relation between the evaluated sample and the intended value-bearing population;
 - relation to the original program and whether this is discovery or reintegration evidence;
@@ -142,6 +150,12 @@ Use strong, correctly configured, semantically matched versions. Include current
 Match information, supervision, and evaluation immediately; match engineering maturity before making a primitive-level conclusion. A mature incumbent should still be reported against an early prototype, but that comparison answers current end-to-end readiness, not necessarily whether the new design can work after the intended mechanism is activated and competently optimized. State which conclusion the comparison earns.
 
 Benchmarks are evaluation anchors, not the paper contribution. Discovery slices may diagnose mechanisms, but main claims need accepted or naturally justified settings.
+
+Name the accepted benchmark or natural-workflow anchor for each central claim. Label
+derived and generated datasets as training or diagnostic unless independently
+validated as claim-bearing. They may reveal a mechanism or enable learning, but they
+must not become the evaluation destination merely because feedback is faster or the
+method looks better there.
 
 Choose breadth because it tests the thesis. Do not add unrelated datasets merely to enlarge a table, and do not claim generality from one convenient family.
 
@@ -202,6 +216,7 @@ Write or update `EXPERIMENT_PLAN.md` when several runs, claims, or dependencies 
 - method primitive:
 - strongest alternative:
 - target claims:
+- benchmark anchor and artifact roles:
 - value spine and intended population:
 - scope debt and repayment evidence:
 - best-case contribution:
