@@ -1,142 +1,156 @@
 ---
 name: baseline
-description: Establishes credible empirical anchors by selecting, reproducing, and behaviorally inspecting strong field-standard baselines.
-when_to_use: Use when a project needs benchmark fidelity, a trustworthy comparison, raw failure traces, or proof that an observed result is real enough to support method reasoning.
+description: Establishes competent empirical contact by reproducing strong field-standard systems and reading natural successes, failures, disagreements, substrate competence, and nearest-rival ownership.
+when_to_use: Use when a project needs benchmark fidelity, a trustworthy comparison, raw natural behavior, or proof that an opening is real enough to support explanation and construction.
 argument-hint: "[task, benchmark, or baseline]"
 ---
 
-# Baseline
+# Baseline And Empirical Contact
 
-Use baselines to make contact with the field, not to obtain permission for ideation.
+Build a trustworthy contact point with the field, then read what the best available
+systems actually do. A baseline establishes reality and ownership; it does not choose
+the paper identity or close the broader program.
 
-The objective is a trustworthy empirical anchor and enough behavioral evidence to ask a better research question. A reproduction is useful when you understand both its aggregate behavior and where it succeeds or fails.
+## Select The Evidence Surface
 
-## Choose Serious Anchors
+Name one accepted `benchmark_anchor`: a standard task, deployed workflow, or natural
+population on which the field recognizes progress. Label other artifacts as:
 
-Prefer:
+- `claim-bearing`: can support the intended scientific claim;
+- `training`: changes the learned system but is not itself evaluation evidence;
+- `diagnostic`: helps explain behavior but cannot establish field value alone.
 
-- benchmarks and protocols commonly used in recent relevant work;
-- the strongest reproducible SOTA that fits the project's resources;
-- strong simple alternatives a reviewer would immediately request;
-- implementations whose semantics can be inspected and extended;
-- settings where residual behavior is meaningful rather than pure ceiling noise.
+Synthetic cases, generated data, or project-defined slices may expose a mechanism.
+They do not replace an accepted anchor unless the derived population has independent
+field value and the broad program is deliberately re-grounded.
 
-Do not choose a weak, obscure, or convenient baseline to manufacture a win. When code availability forces a substitute, state the difference and what uncertainty it leaves.
+Choose, within realistic resources:
 
-Choose and record an accepted benchmark or natural workflow as the anchor for each
-central claim. Derived datasets, generated examples, synthetic corruptions, oracle
-slices, and project-defined subsets must be labeled `training` or `diagnostic` unless
-their claim-bearing status is independently justified. They may expose a mechanism or
-train a component, but faster feedback or larger gains do not let them silently replace
-the anchor.
+- a strong reproducible direct incumbent;
+- a serious simple, deterministic, or procedural alternative;
+- implementations whose semantics and raw outputs can be inspected.
 
-Literature and leaderboards help identify candidates. Actual selection should also consider implementation health, evaluation comparability, compute, and whether per-example outputs can be inspected.
+Do not create headroom with an obsolete, weak, or mismatched comparator. Record any
+resource-driven substitution and the uncertainty it leaves.
 
-## Reproduce With Semantic Fidelity
+## Resolve The Nearest Rival Early
 
-Before trusting a result, establish:
+Before naming or deeply implementing a method, identify the two or three closest
+same-locus approaches. Read the closest paper and implementation and state how that
+rival might already absorb the proposed principle.
 
-- the intended dataset, split, preprocessing, and candidate pool;
-- the actual checkpoint, prompt, decoding, stopping, and tool protocol;
-- the original decision rule, objective, thresholds, and filtering;
-- the evaluator, parser, metric definition, and metric direction;
-- the information, supervision, labels, tools, and external computation available to every compared system;
-- whether a direct deterministic, algorithmic, retrieval, or other simple procedure already performs the claimed operation;
-- the expected resource regime and any meaningful deviations.
+Exploration may begin while a difficult rival is being reproduced, but novelty and
+paper identity remain provisional. Before dependent refinement, compare against the
+claim-threatening rival under matched conditions, or establish from primary sources
+why it is not semantically comparable.
 
-Run a small end-to-end sanity case first. Include at least one known success and one known failure when possible. Check that the evaluator can distinguish them.
+The purpose is ownership clarity, not ceremonial baseline completion. Prioritize the
+rival most able to erase the contribution.
 
-Treat these as evidence-integrity failures, not scientific results:
+## Verify Substrate Competence
 
-- wrong data path or silent fallback data;
-- parser or token-position mistakes;
-- label leakage or circular gold construction;
-- metric direction or aggregation errors;
-- baseline behavior changed by local convenience edits;
-- truncation, filtering, or caps that alter the task;
-- endpoint or checkpoint mismatch;
-- suspiciously large deltas before raw-output inspection.
+Confirm that the underlying model, adapter, retriever, simulator, or execution system
+can competently perform the standard task without the proposed primitive. The base
+system must leave an interpretable residual.
 
-If an integrity issue is repaired after results exist, mark affected conclusions invalidated or requiring rerun. Do not silently carry them forward.
+If it cannot perform the task, mark the comparison `substrate-confounded` and repair
+the substrate first. Do not simultaneously change backbone ability, data treatment,
+and the proposed mechanism, then attribute the package difference to the mechanism.
 
-Perform this semantic check before a result becomes the premise of a substantial method contract or full paper draft. After the central semantics are established, do not repeatedly reaudit them without a concrete anomaly; move on to explanation and method development.
+## Reproduce Semantics
+
+Match the parts that can change the conclusion:
+
+- dataset, split, preprocessing, population, candidate pool, and exclusions;
+- checkpoint, prompt, decoding, stopping, tools, and mutable state;
+- objective, labels, supervision, external computation, and training treatment;
+- evaluator, parser, metric direction, aggregation, missing-data rule, and units;
+- compute or optimization differences material to fairness.
+
+Independently reconstruct representative headline metrics from raw outputs or
+sufficient statistics. Run a small known success and failure through the entire path
+when possible. A smoke test proves execution, not semantic equivalence.
+
+Wrong paths, fallback data, parser errors, leakage, circular targets, changed
+populations, checkpoint mismatch, and asymmetric protocols are integrity failures.
+Invalidate affected conclusions and propagate the invalidation through dependent
+claims. Use `../../shared-references/experiment-integrity.md` and
+`../../shared-references/evidence-lineage.md` for the detailed checks.
 
 ## Read Behavior, Not Only Scores
 
-Save and inspect representative examples:
+Inspect representative:
 
-- failures;
-- successes for contrast;
-- disagreements between baselines;
-- cases that contradict the leading story;
-- examples near decision boundaries;
-- artifacts, abstentions, crashes, and truncations.
+- natural failures and matched successes;
+- disagreements among serious systems;
+- cases that contradict the preferred explanation;
+- boundary cases, abstentions, crashes, truncations, tool traces, latency, and cost.
 
-Preserve task-relevant traces such as inputs, outputs, scores, retrievals, tool calls, intermediate states, latency, cost, and metadata needed for slicing.
+A headline reproduction is not empirical contact until the residual behavior is read.
+Look for failure structure that is natural, consequential, and shared across systems
+people use. Treat a clean rare slice as a microscope, not automatically as the
+research destination.
 
-Do not declare reproduction complete merely because one headline number matches. The research value often lies in the structure of the residual errors.
+## Add Coverage For A Question
 
-Read residuals with both explanatory and value lenses. Record whether a candidate failure cluster has natural support, meaningful severity, and presence across systems people actually use. Do not assume that a clean residual inherits the benchmark's overall importance. A rare residual may be a diagnostic microscope; look for the broader design assumption it reveals before making it the research destination.
+Add another model, dataset, regime, or seed only when it resolves a named uncertainty,
+for example:
 
-## Build Coverage Adaptively
+- shared phenomenon versus implementation artifact;
+- sufficiency of a simple alternative;
+- realistic transfer or scale behavior;
+- utility, coverage, latency, or cost tradeoff;
+- claim scope that exceeds current evidence.
 
-Do not impose a universal requirement to finish every conceivable baseline before thinking. Start with the anchor that gives the strongest information, inspect its behavior, and let live uncertainties determine the next comparison.
+A competent bad seed first triggers implementation, optimization, and hypothesis
+diagnosis. Do not launch a seed sweep to rescue a realization whose sign is already
+clear. Conversely, do not generalize one failed realization into closure of a method
+family or broad program.
 
-Add another baseline, dataset, model, seed, or regime when it answers a concrete question such as:
+## Record Provenance And Health
 
-- Is the phenomenon specific to one implementation?
-- Is the simple alternative already sufficient?
-- Does the effect survive a realistic scale or distribution change?
-- Is a claimed mechanism actually generic?
-- Does the apparent improvement trade away utility or coverage?
+Prefer official or mature implementations. Record source, version or commit,
+checkpoint, environment, local modifications, and why stronger alternatives were not
+usable. Classify a key anchor as:
 
-Continue until the evidence is adequate for the current decision. Record what remains unrun so later claims stay scoped.
+- `healthy`: intended path and trustworthy semantics;
+- `unresolved`: claim-threatening but not yet trustworthy enough to compare;
+- `fragile`: runnable with a material open risk;
+- `invalid`: corrupted, incomplete, or incomparable;
+- `comparison-weak`: too weak or semantically different;
+- `substrate-confounded`: base capability is inadequate.
 
-## Use Existing Evidence
+Only healthy anchors carry headline comparisons. Fragile runs may guide repair but do
+not support bottleneck claims or method maturity.
 
-When valid local results already exist, do not rerun them ceremonially. Audit their provenance, inspect raw outputs, and reuse them. Repair only the uncertain parts.
+## Durable Output
 
-When a baseline has been modified for instrumentation or compatibility, demonstrate that the modification preserves its semantics before treating it as the same baseline.
-
-## Output
-
-Maintain `BASELINE_REPRO.md` or the project's existing baseline record with:
+Update an existing baseline record or create `BASELINE_REPRO.md` when coordination
+needs one. Keep it compact:
 
 ```markdown
 # Baseline Evidence
 
-## Empirical Surface
-- task, benchmark, split, metrics:
-- why this surface is field-relevant:
-- information and supervision budget for each comparison:
-- strongest direct or deterministic alternative:
+## Accepted Surface
+- anchor, population, split, metrics, information and training treatment:
 
-## Anchors
-| System | Source/version | Intended protocol | Actual protocol | Health | Result path |
-|---|---|---|---|---|---|
+## Systems
+| System | Source/version | Actual protocol | Health | Result path |
 
-## Integrity Checks
-- data and split:
-- evaluator/parser:
-- baseline semantics:
-- leakage/artifact checks:
-- deviations and consequences:
+## Ownership And Competence
+- nearest rivals and closest matched evidence:
+- remaining ownership threat:
+- substrate competence result:
 
-## Behavioral Reading
-- representative failures:
-- successes for contrast:
-- disagreements and inconvenient cases:
-- provisional clusters:
-- natural support, severity, and affected systems for promising clusters:
+## Integrity
+- evaluator/metric reconstruction:
+- provenance, deviations, and invalidations:
 
-## Current Research Consequence
-- what is now credible:
-- what remains uncertain:
-- best next empirical question:
+## Behavioral Contact
+- natural failures, successes, disagreements, inconvenient cases:
+- observation bundle and unresolved uncertainty:
 ```
 
-Keep raw logs and results at durable paths. The report should interpret them without replacing them.
-
-## Continue The Same Researcher
-
-Use `diagnose-result` when raw behavior needs contrastive organization, artifact removal, or competing explanations. Return here whenever a later hypothesis exposes a missing anchor or integrity concern. This is not a stage handoff: the same researcher retains the thesis and reads only the additional evidence needed for the live question.
+Return validated observations to the current research episode. Interpretation belongs
+to `/firm:diagnose-result`; construction belongs to `/firm:design-method`; paper
+identity belongs to the later paper-formation stage.

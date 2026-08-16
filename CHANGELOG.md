@@ -1,5 +1,22 @@
 # Changelog
 
+## Unreleased
+
+- Replaced per-result gate logic with a flexible research-episode rhythm: competent
+  empirical contact, explanatory pause, one protected construction arc, credible
+  positive object, program expansion, paper formation, and stabilization.
+- Added a concise Program Compass and Current Research Episode as the canonical live
+  state, while demoting historical stop, paper-readiness, and continuation labels to
+  provenance rather than scientific authority.
+- Changed method development from serial candidate tests into constructive v1-to-vN
+  cultivation that preserves activated computation and design lessons.
+- Restored timely paper harvest: paper accounting begins after a credible positive
+  object, while Program Expansion determines whether a positive deserves paper-sized
+  resources.
+- Consolidated accumulated lessons into a maintenance principle registry and
+  regression-scenario suite so shorter daily skills do not discard hard-won failure
+  knowledge.
+
 ## 1.1.1
 
 - Added accepted benchmark anchors and explicit claim-bearing, training, and
