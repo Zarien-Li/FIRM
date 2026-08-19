@@ -118,7 +118,11 @@ co-invention, without a fixed response schema. Follow `/firm:second-pi` for the 
 Gemini model pin and invocation; do not silently accept Flash or another fallback.
 Gemini may challenge assumptions and propose bold primitives; its output is design
 material, not authority, literature fact, or experimental evidence. The lead PI
-selects, collision-checks, implements, and tests it.
+selects, collision-checks, implements, and tests it. When a mature failure map keeps
+producing nearby variants instead of a new editable computation, do not silently remain
+inside that frame: invite creative divergence or re-ground the broad program. After a
+Gemini call, synthesize one principle before Codex challenge or implementation; never
+turn the raw brainstorm into parallel work.
 Failure of either independent provider is infrastructure, not a reason to pause or a
 scientific verdict.
 

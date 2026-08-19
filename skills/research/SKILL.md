@@ -151,6 +151,28 @@ When a simple rule, solver, merge, cache, retrieval pipeline, or calibration win
 treat its computation and natural boundary as scientific evidence. A deeper learned
 method is justified only by a remaining non-redundant need.
 
+## Break A Locked Frame Before Another Arc
+
+A research frame is becoming locked when the failure map grows while the editable
+object does not: successive proposals vary layers, scales, doses, thresholds, local
+components, or private slices; explanations become more elaborate without exposing a
+new load-bearing computation; and the next construction still assumes the same answer
+form that competent evidence has repeatedly challenged.
+
+This is not an experiment counter or a response to one negative score. Diagnose it at
+a construction boundary from the whole natural and accepted-task bundle. When frame
+lock is present, do not open another nearby arc merely to remain active. Either
+re-ground in the broad program or invite Gemini to challenge the default assumption
+and co-invent a genuinely different primitive. The outside view must replace the
+design question or load-bearing computation, not manufacture a renamed v3 inside the
+same exhausted coordinates.
+
+After creative divergence, the lead PI synthesizes one candidate principle. Collision-
+check that candidate against the nearest literature and simple compositions, then ask
+Codex to challenge the selected construction before the smallest real realization.
+Do not give Codex the raw idea menu as a substitute for PI selection, and do not let
+any outside model place experiments directly into the queue.
+
 ## Re-ground Without Erasing The Program
 
 At a consequential episode boundary, return to the broad program when:
@@ -238,6 +260,11 @@ reusable primitive. These are high-leverage examples, not a mandatory sequence. 
 call it to compensate for missing contact, manufacture a method from an aggregate
 metric, or produce decorative idea menus.
 
+When the completed bundle shows frame lock, creative divergence or explicit program
+re-grounding is required before another construction; silently continuing the same
+search is not a scientific decision. This conditional obligation does not turn every
+negative result into a Gemini call.
+
 The PI writes the prompt dynamically from raw observations, contrary evidence,
 incumbents, implementation constraints, and the unresolved design question. Follow
 `/firm:second-pi` for the verified invocation and model pin; do not silently fall back
@@ -245,7 +272,9 @@ to Flash. Gemini can be bold, but its proposal is material for selection, collis
 checking, implementation, and experiment, not a fact or decision.
 
 The lead PI records only advice that changes the research and continues to own
-synthesis and action.
+synthesis and action. Preserve the full brainstorm in a separate creative note. Put
+only the PI-selected principle, unresolved assumptions, and reason for selection in
+authoritative live state.
 
 ## Keep State Small And Factual
 

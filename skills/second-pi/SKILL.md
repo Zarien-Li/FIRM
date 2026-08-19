@@ -55,6 +55,8 @@ construction. Typical high-leverage moments are:
 
 - competent natural contact has earned a design opportunity before the first v1;
 - an informative failed realization has revealed what a v2 primitive must replace;
+- a mature failure map shows frame lock: local variants and richer explanations keep
+  refining the same coordinates without exposing a new editable computation;
 - a credible positive realization may support a larger reusable primitive or research
   program.
 
@@ -74,6 +76,19 @@ Gemini's response is design material. It may open a surprising direction, but it
 not establish novelty, causal truth, feasibility, or evidence. The lead PI collision-
 checks the relevant literature and methods, selects or synthesizes one principle,
 implements it, and lets real experiments reshape it.
+
+Use creative divergence and critical convergence in that order:
+
+`PI evidence synthesis -> Gemini invention -> PI selection/synthesis -> nearest-rival
+collision check -> Codex Method Challenge -> smallest real realization`
+
+Do not ask Codex to pre-screen the invention prompt or review Gemini's raw menu; that
+prematurely narrows the outside view and delegates PI selection. For a materially
+unchanged evidence bundle, one creative call is normally enough. Archive the complete
+response outside authoritative live state, retain one selected or synthesized
+principle, and do not create tasks or experiments for the unused proposals. A new call
+requires new evidence or a genuinely changed design question, not dissatisfaction with
+the previous answer.
 
 ## Method Challenge
 
@@ -267,6 +282,10 @@ agy -p "<PI-authored prompt>" --model="gemini-3.1-pro-high" --disable-slash-comm
 The equals form of the model pin is intentional and has been locally verified. If the
 CLI reports or otherwise reveals a fallback, discard that response rather than silently
 accepting Flash. Do not use `--mode plan`: creative co-invention should not be biased
-into a planning template. Authentication, transport,
-capacity, version, or model-routing failures are infrastructure. Continue non-dependent
-research; missing collaboration is neither approval nor rejection.
+into a planning template. Prefer a self-contained evidence prompt from a clean neutral
+working directory; do not depend on Gemini reading or modifying the project tree. This
+avoids stale project conversation metadata and keeps the collaboration independent of
+the active atomic job. Save the response as a separate creative note and label its
+mechanism claims as hypotheses. Authentication, transport, capacity, version, or
+model-routing failures are infrastructure. Continue non-dependent research; missing
+collaboration is neither approval nor rejection.

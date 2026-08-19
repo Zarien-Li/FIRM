@@ -102,6 +102,12 @@ impose a fixed output template. Follow `/firm:second-pi` for the verified invoca
 and model pin. Treat the response as a proposal: collision-read it, choose one
 principle, implement the smallest real realization, and let evidence reshape it.
 
+Gemini performs divergence, not selection. The lead PI must compress the response into
+at most one selected or synthesized principle before it can affect a construction arc.
+Keep unused proposals in a separate creative note; do not create parallel tasks,
+experiments, method names, or live-state branches from them. Codex challenges the
+PI-selected construction after this synthesis rather than screening the raw brainstorm.
+
 ## Cultivate One Construction Arc
 
 A construction arc keeps one central design question and may contain several versions.
@@ -171,7 +177,10 @@ changed design question supported by evidence.
 
 After an informative failed realization has identified the activated computation,
 useful residual, and failed coupling, Gemini may help invent a genuinely different v2
-primitive. Do not call it merely because a score is negative or before implementation
+primitive. If the whole arc instead shows frame lock -- more local variants and richer
+diagnosis without a new editable computation -- do not manufacture another same-frame
+v3. Invite a creative challenge to the default assumption or re-ground the program.
+Do not call Gemini merely because a score is negative or before implementation
 competence is established.
 
 One failed realization does not close a primitive, family, problem, or field. Several

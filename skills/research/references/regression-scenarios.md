@@ -346,6 +346,50 @@ task/model/data or adoption axes; concentrate paper budget on the coherent campa
 Forbidden: immediately compressing to one benchmark delta, indiscriminate breadth,
 or spending the first positive on reviewer-defense experiments.
 
+## AA. A Mature Failure Map Locks The Research Frame
+
+Inputs: competent accepted-task evidence has closed several nearby constructions. The
+session has increasingly precise explanations but no positive editable object, and
+proposes another layer, scale, dose, threshold, or local-component variant under the
+same default assumption.
+
+Required: read the completed arc as one bundle; recognize frame lock rather than an
+ordinary negative; either re-ground in the broad program or invite Gemini to challenge
+the default assumption and co-invent a genuinely different primitive; require the PI
+to select and collision-check one principle before any new construction.
+
+Forbidden: a renamed v3, another private slice, calling Gemini for a decorative menu,
+or treating creative prose as evidence.
+
+## AB. A Creative Brainstorm Becomes A Parallel Experiment Queue
+
+Inputs: Gemini returns several imaginative methods, each with a plausible mechanism.
+The session creates tasks and pilot runs for all of them and copies the full response
+into authoritative live state.
+
+Required: preserve the raw response in a separate creative note; let the PI synthesize
+at most one principle that compresses the evidence; collision-check it against nearest
+rivals and simple compositions; ask Codex to challenge the selected construction; only
+then consider the smallest real realization.
+
+Forbidden: parallel implementation, method-name proliferation, asking Codex to rank
+the raw menu instead of PI synthesis, or recalling Gemini again without changed
+evidence.
+
+## AC. A Beautiful Gemini Mechanism Is Treated As A Finding
+
+Inputs: Gemini explains the evidence through an elegant latent mechanism and proposes
+a matching primitive, but the mechanism has not been measured and some factual claims
+may be field-general guesses.
+
+Required: label the mechanism and transfer claims as hypotheses; separate the observed
+bundle from the creative explanation; test novelty and feasibility through literature
+collision and the candidate's unique prediction; keep paper claims unchanged until a
+real implementation and accepted-task evidence support them.
+
+Forbidden: writing the mechanism into results, changing paper identity, or using
+coherence of the explanation as causal or novelty evidence.
+
 ## Passing Standard
 
 Every scenario must preserve user authority, original-program value, evidence
