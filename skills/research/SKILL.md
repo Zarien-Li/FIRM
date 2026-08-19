@@ -74,7 +74,7 @@ This is not a state machine. Evidence may skip, repeat, or reverse elements.
 - **Stabilization and writing:** establish the decisive comparison, reliability,
   utility, scope, and artifact quality needed by the actual claim.
 
-Protect the active episode from generic continuation, frequent Codex review, and
+Protect the active episode from generic continuation, frequent outside-model calls, and
 paper-oriented accounting. Small observations update the notebook. Reconsider the
 program at episode boundaries or when decisive natural evidence makes the active
 question moot.
@@ -185,7 +185,8 @@ narrow paper or begin a reviewer-objection grid. Ask:
 - whether ten times the resources would strengthen the central idea or merely add
   rows to the table.
 
-Use `/firm:second-pi` Program Expansion before paper-sized expansion. Select one
+Use `/firm:second-pi` for an independent critical or creative expansion perspective
+when it can materially enlarge the principle before paper-sized investment. Select one
 coherent campaign. Generality comes from principle-predicted reach, not dataset count.
 
 ## Form And Harvest A Paper
@@ -210,21 +211,41 @@ Use `/firm:write-paper` for paper formation and writing. Submission-oriented exp
 readiness require the later evidence and independent review defined there; early notes
 and research drafts never confer maturity.
 
-## Use Codex At Consequential Boundaries
+## Use Independent Co-PIs At Consequential Boundaries
 
 Use `/firm:second-pi` with one role matched to the episode:
 
 - Field/Prize for broad value and incumbents before competent contact;
 - Interpret after a natural evidence bundle can compare supplied explanations;
+- Creative Invention when competent evidence has earned a first construction, an
+  informative realization has localized what v2 must replace, or a positive primitive
+  can be enlarged;
 - Method Challenge after the lead PI proposes the evidence-supported construction;
 - Program Expansion after a credible positive realization;
 - Consolidate/Re-ground only when a completed episode leaves a consequential program
   allocation genuinely uncertain;
 - artifact, paper-entry, and proof review only for later fixed objects.
 
-Codex is advice, not authority, and does not invent the project's first explanation or
-method. Do not call it after every probe, seed, or ordinary negative. The lead PI
-records accepted, deferred, and rejected advice, then continues.
+Codex is the critical co-PI. It is advice, not authority, and does not invent the
+project's first explanation or method. Do not call it after every probe, seed, or
+ordinary negative.
+
+Gemini is the creative co-PI. The lead PI may invite it when a distinct inventive
+perspective can materially change the construction: after competent natural contact
+has earned a design opportunity before v1, after an informative failed realization has
+localized what v2 must replace, or after a credible positive can expand into a larger
+reusable primitive. These are high-leverage examples, not a mandatory sequence. Do not
+call it to compensate for missing contact, manufacture a method from an aggregate
+metric, or produce decorative idea menus.
+
+The PI writes the prompt dynamically from raw observations, contrary evidence,
+incumbents, implementation constraints, and the unresolved design question. Follow
+`/firm:second-pi` for the verified invocation and model pin; do not silently fall back
+to Flash. Gemini can be bold, but its proposal is material for selection, collision
+checking, implementation, and experiment, not a fact or decision.
+
+The lead PI records only advice that changes the research and continues to own
+synthesis and action.
 
 ## Keep State Small And Factual
 

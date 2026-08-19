@@ -50,7 +50,7 @@ it.
 
 | Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
-| The independent reviewer is called only when the project wants permission to stop | Review is treated as judgment instead of co-research | Fatal controls arrive late; invention never benefits from a second view | Use [`second-pi`](../skills/second-pi/SKILL.md) as a second PI: Prize and Fidelity, Interpret, Invent, Attack, Assess Maturity, Decide |
+| An independent model is called only when the project wants permission to stop | Collaboration is treated as judgment instead of co-research | Fatal controls arrive late and invention never benefits from a distinct creative view | Use [`second-pi`](../skills/second-pi/SKILL.md) selectively: Codex for critical review, Gemini for evidence-earned creative invention, with the lead PI retaining synthesis and action |
 | Reviewer criticism becomes a permanent prohibition | A model-authored verdict is mistaken for user authority | One review silently shrinks the research program | Treat reviewer output as evidence and argument, never as an irreversible gate |
 | Tool failure pauses the science | Reviewer availability is confused with research ownership | Infrastructure incidents become scientific conclusions | The primary researcher completes its own interpretation and continues non-blocked work |
 | A negative result receives a sophisticated label and is treated as understanding | Naming a failure is confused with explaining it | Vocabulary grows while causal knowledge does not | Require alternative explanations, discriminating evidence, and a design consequence |

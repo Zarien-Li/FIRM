@@ -134,8 +134,9 @@ mismatched protocol.
 
 ## Plan Expansion After A Positive Object
 
-After the first credible positive construction, use `/firm:second-pi` Program
-Expansion before a large campaign. Select only axes predicted by the same principle:
+After the first credible positive construction, use `/firm:second-pi` for an
+independent critical or creative Program Expansion view before a large campaign.
+Select only axes predicted by the same principle:
 
 - simplification or a lower-friction realization;
 - reusable supervision, data generation, curriculum, or system machinery;

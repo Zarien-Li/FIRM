@@ -12,7 +12,7 @@ namespace, for example `/diagnose-result`.
 | `diagnose-result` | Interpret a coherent evidence bundle or completed construction arc | `/firm:diagnose-result [result bundle]` |
 | `design-method` | Cultivate or repair one load-bearing primitive across versions | `/firm:design-method [evidence or failed component]` |
 | `plan-experiments` | Plan an evidence-bearing episode or paper campaign | `/firm:plan-experiments [method, claim, budget]` |
-| `second-pi` | Review one consequential episode boundary with a maturity-matched role | `/firm:second-pi [role and evidence packet]` |
+| `second-pi` | Use a critical or creative independent co-PI at one consequential episode boundary | `/firm:second-pi [role and evidence packet]` |
 | `write-paper` | Plan, draft, compile, or verify a paper from validated evidence | `/firm:write-paper [paper directory or section]` |
 
 ## Discover and anchor
@@ -31,7 +31,7 @@ namespace, for example `/diagnose-result`.
 | `diagnose-result` | Separate observation from inference and read evidence at bundle or episode scale | May activate when relevant |
 | `design-method` | Cultivate a load-bearing architecture, objective, state, memory, routing, training, data, or systems primitive | May activate when relevant |
 | `plan-experiments` | Build a coherent construction episode or positive-expansion campaign | May activate when relevant |
-| `second-pi` | Run exactly one maturity-matched role: Field/Prize, Interpret, Method Challenge, Program Expansion, Consolidate/Re-ground, artifact, paper-entry, or proof review | May activate when relevant; runs in a fork |
+| `second-pi` | Use Codex for maturity-matched critical review or Gemini for evidence-grounded creative invention/expansion | May activate when relevant; runs in a fork |
 
 ## Run and verify
 

@@ -1,20 +1,23 @@
 ---
 name: second-pi
-description: Uses an independent scientific colleague at consequential research-episode boundaries, with one maturity-matched role: Field/Prize, Interpret, Method Challenge, Program Expansion, Consolidate/Re-ground, or a later artifact review.
+description: Uses a critical Codex co-PI or creative Gemini co-PI at consequential research-episode boundaries for maturity-matched review, invention, expansion, re-grounding, or later artifact review.
 when_to_use: Invoke explicitly when independent judgment can change a consequential episode-level decision; never after every result or inside an active construction arc.
 argument-hint: "[role and evidence packet]"
 context: fork
 background: false
 ---
 
-# Research Review
+# Independent Research Collaboration
 
-Codex is an independent co-PI, not the program's judge, first source of theory,
-experiment queue, or user authority. The lead researcher owns field contact,
-explanations, first constructions, synthesis, implementation, and final decisions.
+Codex and Gemini are independent co-PIs with different comparative advantages, not the
+program's judges, experiment queue, or user authority. Codex supplies critical review.
+Gemini supplies creative invention when the evidence has earned it. The lead researcher
+owns field contact, explanations, selection, synthesis, implementation, and final
+decisions.
 
-Choose exactly one role matching the current research episode. Do not combine field
-selection, interpretation, method invention, expansion, and submission judgment.
+Choose one purpose matching the current research episode and the colleague suited to
+it. Do not combine field selection, interpretation, invention, expansion, and
+submission judgment into one omnibus call.
 
 ## Field And Prize
 
@@ -45,6 +48,33 @@ Ask Codex what the bundle distinguishes, what remains unidentified, and which
 uncertainty matters for design. It may identify a design-relevant variable only when
 the evidence separates it. It does not invent a method.
 
+## Creative Invention
+
+Use Gemini when a genuinely different creative perspective can materially change a
+construction. Typical high-leverage moments are:
+
+- competent natural contact has earned a design opportunity before the first v1;
+- an informative failed realization has revealed what a v2 primitive must replace;
+- a credible positive realization may support a larger reusable primitive or research
+  program.
+
+These are examples for scientific judgment, not mandatory stages, counters, or
+permissions. Do not invoke Gemini to compensate for missing baselines, invent a paper
+from aggregate metrics, produce an idea list after every negative result, or evade the
+lead PI's ownership.
+
+The lead PI writes the prompt for the actual episode. Supply raw observations and
+contrary cases, the accepted value surface, competent substrate, nearest rivals,
+implementation and resource constraints, inherited construction lessons, and the one
+unresolved design question. Invite bold changes to the default assumption or
+load-bearing computation. Do not prescribe a fixed response schema: Gemini is a
+co-inventor, not a form filler.
+
+Gemini's response is design material. It may open a surprising direction, but it does
+not establish novelty, causal truth, feasibility, or evidence. The lead PI collision-
+checks the relevant literature and methods, selects or synthesizes one principle,
+implements it, and lets real experiments reshape it.
+
 ## Method Challenge
 
 Use after the lead PI has proposed one or more evidence-supported constructions. Do
@@ -73,7 +103,8 @@ Use after a credible positive realization has survived a meaningful component
 comparison and relevant utility check, before paper-sized investment.
 
 Provide the one-sentence principle, default assumption changed, realization, accepted
-outcome, decisive rival, utility, and the lead PI's plausible expansion axes. Ask:
+outcome, decisive rival, utility, and the lead PI's plausible expansion axes. Codex can
+critically assess the expansion; Gemini can creatively enlarge the same principle. Ask:
 
 - which downstream design choices would change;
 - whether the primitive is reusable beyond one implementation;
@@ -123,10 +154,14 @@ citation identity, and manuscript-number checks belong to their dedicated audit 
 
 ## Review Episodes, Not Results
 
-Call Codex when independent judgment may change a consequential decision:
+Call an independent co-PI when its distinct judgment may change a consequential
+decision:
 
 - adopt a broad natural problem after contact;
 - compare supplied explanations after a distinguishing bundle;
+- co-invent a first construction after competent contact has earned the opportunity;
+- invent a materially different v2 after an informative realization localizes the
+  failed coupling;
 - challenge the PI's proposed construction arc;
 - reconsider direction after a completed premise-changing episode;
 - allocate a paper-sized expansion campaign;
@@ -138,8 +173,9 @@ Do not invoke it after every probe, seed, component output, negative result, GPU
 or ordinary input prompt. Do not interrupt a valid active construction arc. Operational
 repair and waiting are not review events.
 
-Default to one pass per role and evidence bundle. A second pass needs corrected facts
-or new evidence addressing the same unresolved disagreement. Do not shop for agreement.
+Default to one useful pass per purpose and evidence bundle. A second pass needs
+corrected facts, new evidence, or a genuinely different colleague contribution. Do not
+shop for agreement or invoke both providers ceremonially.
 
 ## Evidence Packet
 
@@ -150,6 +186,8 @@ Give only what the selected role needs, with raw evidence before the preferred s
 - accepted surface, evaluator, substrate, and rival health;
 - representative successes, failures, disagreements, and contradictions;
 - supplied explanations for Interpret;
+- local evidence, constraints, rivals, and unresolved design question for Creative
+  Invention;
 - supplied construction and inherited lessons for Method Challenge;
 - supplied principle and expansion axes for Program Expansion;
 - program movement and opportunity cost for Consolidate/Re-ground;
@@ -162,8 +200,8 @@ Old contracts, drafts, status labels, and prior reviews are provenance, not prem
 The lead researcher independently adjudicates advice and records only what changes:
 
 ```markdown
-## Codex Co-PI Synthesis
-- role and evidence bundle:
+## Independent Co-PI Synthesis
+- colleague, purpose, and evidence bundle:
 - accepted insight and evidence:
 - deferred or rejected suggestion and why:
 - effect on explanation, construction, expansion, or paper:
@@ -171,8 +209,8 @@ The lead researcher independently adjudicates advice and records only what chang
 - thread ID:
 ```
 
-Do not write `adopted` merely because Codex is confident. Verify factual validity
-findings against raw artifacts.
+Do not write `adopted` merely because an independent colleague is confident. Verify
+factual validity findings against raw artifacts.
 
 ## Prompt Skeletons
 
@@ -200,6 +238,10 @@ and re-grounding by scientific value and opportunity cost. Do not invent a new m
 deeper abstraction, or contribution type.
 ```
 
+These compact skeletons are for Codex's critical roles. For Gemini Creative Invention,
+the lead PI writes a natural prompt from the live evidence and question; do not force a
+fixed list of fields or a predetermined kind of method.
+
 ## Later Concern Triage And Proofs
 
 For artifact review classify concerns as `EVIDENCE_INVALIDATING`,
@@ -213,7 +255,18 @@ not redesign research or grant paper entry.
 
 ## Tool Policy
 
-Use the project's configured independent-review provider without guessing or forcing a
-model name. Retry one identical transient capacity failure. Authentication, transport,
-capacity, and version failures are infrastructure. Continue non-dependent research;
-missing review is neither approval nor rejection.
+For Codex, use the project's configured independent-review provider without guessing or
+forcing a model name. Retry one identical transient capacity failure.
+
+For Gemini creative collaboration, use the locally verified headless form:
+
+```bash
+agy -p "<PI-authored prompt>" --model="gemini-3.1-pro-high" --disable-slash-commands --print-timeout 5m
+```
+
+The equals form of the model pin is intentional and has been locally verified. If the
+CLI reports or otherwise reveals a fallback, discard that response rather than silently
+accepting Flash. Do not use `--mode plan`: creative co-invention should not be biased
+into a planning template. Authentication, transport,
+capacity, version, or model-routing failures are infrastructure. Continue non-dependent
+research; missing collaboration is neither approval nor rejection.
