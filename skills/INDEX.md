@@ -8,11 +8,11 @@ namespace, for example `/diagnose-result`.
 
 | Skill | Use it for | Invocation |
 |---|---|---|
-| `research` | Start or resume a project with one persistent first-author perspective | `/firm:research [goal or project state]` |
-| `diagnose-result` | Interpret a completed, negative, mixed, or surprising result | `/firm:diagnose-result [result path]` |
-| `design-method` | Invent or repair the load-bearing method primitive | `/firm:design-method [evidence or failed component]` |
-| `plan-experiments` | Select decisive comparisons and adaptive next steps | `/firm:plan-experiments [method, claim, budget]` |
-| `second-pi` | Obtain a fresh independent critique of a consequential decision | `/firm:second-pi [decision or evidence packet]` |
+| `research` | Own a program through contact, construction, expansion, and paper harvest | `/firm:research [goal or project state]` |
+| `diagnose-result` | Interpret a coherent evidence bundle or completed construction arc | `/firm:diagnose-result [result bundle]` |
+| `design-method` | Cultivate or repair one load-bearing primitive across versions | `/firm:design-method [evidence or failed component]` |
+| `plan-experiments` | Plan an evidence-bearing episode or paper campaign | `/firm:plan-experiments [method, claim, budget]` |
+| `second-pi` | Review one consequential episode boundary with a maturity-matched role | `/firm:second-pi [role and evidence packet]` |
 | `write-paper` | Plan, draft, compile, or verify a paper from validated evidence | `/firm:write-paper [paper directory or section]` |
 
 ## Discover and anchor
@@ -22,16 +22,16 @@ namespace, for example `/diagnose-result`.
 | `discover-direction` | Find a consequential and feasible research program from the field surface | May activate when relevant |
 | `literature-review` | Search and synthesize papers, implementations, benchmarks, and close work for a live decision | May activate when relevant |
 | `baseline` | Select, reproduce, and behaviorally inspect strong field-standard anchors | May activate when relevant |
-| `research` | Preserve the original program, current paper, evidence, method lineage, scope debt, and next action | May activate when relevant |
+| `research` | Preserve the Program Compass, current episode, positive object, paper spine, and next scientific action | May activate when relevant |
 
 ## Diagnose and design
 
 | Skill | Responsibility | Activation |
 |---|---|---|
-| `diagnose-result` | Calibrate what a completed result establishes and choose the smallest discriminating next test | May activate when relevant |
-| `design-method` | Convert a causal thesis into a load-bearing architecture, objective, state, memory, routing, training, data, or systems primitive | May activate when relevant |
-| `plan-experiments` | Build a claim-aware, compute-efficient experiment plan | May activate when relevant |
-| `second-pi` | Run exactly one maturity-matched role: Field/Prize, Interpret, Method Challenge, Program Expansion, artifact, paper-entry, or proof review | May activate when relevant; runs in a fork |
+| `diagnose-result` | Separate observation from inference and read evidence at bundle or episode scale | May activate when relevant |
+| `design-method` | Cultivate a load-bearing architecture, objective, state, memory, routing, training, data, or systems primitive | May activate when relevant |
+| `plan-experiments` | Build a coherent construction episode or positive-expansion campaign | May activate when relevant |
+| `second-pi` | Run exactly one maturity-matched role: Field/Prize, Interpret, Method Challenge, Program Expansion, Consolidate/Re-ground, artifact, paper-entry, or proof review | May activate when relevant; runs in a fork |
 
 ## Run and verify
 

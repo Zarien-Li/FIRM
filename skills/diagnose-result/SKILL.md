@@ -1,207 +1,167 @@
 ---
 name: diagnose-result
-description: Interprets a completed baseline or method result without confusing one failed run with failure of the broader research program.
-when_to_use: Use for surprising, contradictory, negative, or mixed results; simple-baseline inversions; artifact checks; causal diagnosis; and choosing the most informative next experiment. Do not use for launching jobs.
-argument-hint: "[result file or question]"
+description: Reads coherent evidence bundles and completed construction arcs, separating observation from inference and choosing the next scientific decision without inventing a new theory after every result.
+when_to_use: Use for surprising, contradictory, negative, or mixed evidence bundles; simple-baseline inversions; construction-arc diagnosis; and consequential re-grounding decisions. Do not use for launching jobs.
+argument-hint: "[result bundle or scientific question]"
 ---
 
-# Diagnose a Research Result
+# Evidence And Scientific Interpretation
 
-Turn a completed result into a calibrated scientific decision. Separate what the
-artifacts establish from the story the project hoped to tell.
+Interpret evidence to improve the ongoing research episode. A result is not required
+to produce a mechanism, method, paper asset, or project verdict.
 
-## 1. Establish the evidence first
+## Establish What Actually Happened
 
-Inspect the raw result, configuration, code version, evaluator, logs, and relevant
-baseline artifacts. Before interpreting, answer:
+Read the smallest sufficient set of raw predictions, references, traces, metrics,
+logs, and durable paths. Compare failures with matched successes, methods on the same
+examples, natural with diagnostic conditions, and target movement with utility costs.
 
-- Did the intended code path run?
-- Did training or optimization behave competently?
-- Are the compared systems matched in data, budget, preprocessing, and evaluator?
-- Is the primary metric semantically appropriate for the claim?
-- Are the sample, seeds, exclusions, and provenance explicit?
-- Is the observed difference large relative to known noise or uncertainty?
+Before scientific interpretation, remove plausible measurement explanations:
 
-If any answer is materially unresolved, label the result `run-uncertain` and
-recommend the smallest integrity or competence check. Do not manufacture a
-scientific diagnosis from a broken run.
+- wrong data, labels, positions, paths, checkpoints, or candidate pools;
+- parser, alignment, truncation, metric-direction, denominator, or fallback errors;
+- leakage, duplicates, circular targets, or population changes;
+- asymmetric prompts, supervision, information, optimization, or evaluation;
+- non-engagement, interruption, undertraining, infrastructure failure, or an
+  incompetent substrate.
 
-Also label the artifact's role: `claim-bearing`, `training`, or `diagnostic`.
-Generated data, synthetic perturbations, oracle subsets, and project-defined slices
-remain training or diagnostic evidence unless their natural importance and evaluation
-role have been independently established. A clean diagnostic pattern does not replace
-movement on the accepted benchmark anchor.
+Use `../../shared-references/experiment-integrity.md` when an observation is about to
+carry a consequential claim or when a concrete validity risk exists. Propagate verified
+invalidation through `../../shared-references/evidence-lineage.md`. An invalid run is
+not a scientific negative.
 
-Use `/firm:audit-experiment` when provenance or evaluator integrity is genuinely
-suspect; do not invoke a full audit for every ordinary result.
+Label evidence as:
 
-## 2. Build a contrast table
+- `claim-bearing`: accepted benchmark, natural workload, or independently justified
+  population;
+- `training`: data used to fit or select the system;
+- `diagnostic`: slice, probe, generated set, oracle, stress case, or proxy used to
+  debug or distinguish accounts.
 
-Compare systems and regimes on the target outcome and on the mechanism the method
-was intended to change.
+Diagnostic evidence may change a design. It does not establish prevalence,
+generality, practical value, or benchmark improvement through volume or repetition.
 
-```markdown
-| Condition | Target outcome | Mechanism/proxy | Cost | Important raw behavior |
-|---|---:|---:|---:|---|
-| Strong baseline | | | | |
-| Current method | | | | |
-| Relevant control | | | | |
-```
+## Observation Is The Default Update
 
-A proxy change without a target change is evidence about the design, not evidence
-that the target problem disappeared.
+State first, without mechanism language:
 
-## 3. Separate four layers
+- exact conditions and what changed;
+- where it did not change;
+- effect size, uncertainty, matched alternative, and cost;
+- representative support and inconvenient cases;
+- discovery slice, natural support, and raw paths.
 
-Write each layer explicitly:
+An ordinary result updates the research notebook and normally leaves explanation,
+method, scope, contribution type, and paper identity unchanged. Do not require a paper
+consequence from early contact.
 
-1. **Observation:** the literal empirical pattern.
-2. **Explanation:** competing causal accounts consistent with that pattern.
-3. **Design consequence:** which method assumption or primitive should change.
-4. **Paper consequence:** what claim, scope, or maturity changes now.
+One competent, materially bad paired development result shows that the current
+realization needs diagnosis or redesign. More seeds estimate unresolved stochastic
+uncertainty; they do not repair the design or search for a favorable mean.
 
-Never smuggle an explanation into the observation. “Routing entropy changed while
-action-state errors did not” is an observation. “Routing cannot solve the problem”
-is a much broader claim.
+## Update Explanations Only From A Bundle
 
-## 4. Diagnose failure at the narrowest justified level
+Maintain the smallest useful set, normally two or three, whose truth would imply
+different next constructions or experiments. For each record:
 
-Classify the result as one or more of:
+- supporting and contrary observations;
+- a prediction that differs from the alternatives;
+- what remains unidentified.
 
-- `implementation/run failure`;
-- `optimization/statistical uncertainty`;
-- `current realization failure`;
-- `load-bearing primitive failure`;
-- `method-family or program evidence`.
+Change this set only when accumulated evidence distinguishes those predictions. One
+probe, null, correlation, failed method, or clever post-hoc variable is insufficient.
+Refuting A does not prove B unless the alternatives are exhaustive.
 
-State why the evidence reaches that level and why it does not reach the next one.
-One competent negative realization can justify replacing its failed component. It
-does not automatically justify ten more seeds, a field pivot, or an analysis-paper
-relabeling.
+Seek an explanation that compresses both success and failure. Do not select a story
+because it yields a convenient method or make every outcome support a different paper.
 
-## 5. Generate competing explanations
+## Separate Predictive Signal From Editable Cause
 
-Produce at least two serious explanations when the mechanism is not directly
-identified. For each explanation, specify:
+A probe, AUC, attribution, embedding separation, oracle, or external solver may be
+diagnostically valuable without being a causal handle. Ask whether intervention on the
+signal preserves unrelated computation, changes the accepted task rather than a proxy,
+and beats serious simple alternatives without unacceptable capability or cost loss.
 
-- what it predicts in already observed cases;
-- what evidence contradicts it;
-- the smallest discriminating intervention;
-- the method change it would imply if true.
+Once the evidence has localized a plausible design variable, stop extending the atlas
+and enter a real construction arc. More slices are not a substitute for implementation.
 
-Prefer explanations that compress several regimes or anomalies under one variable.
-Distinguish a **predictive signal** from a **causal handle**: a feature may forecast
-failure yet remain useless to manipulate.
+## Read A Construction Arc Constructively
 
-## 6. Invert strong simple baselines
+Read versions and ablations as one evolving design when they share the same principle.
+For each realization locate the first broken link from primitive to value:
 
-When a simple baseline wins, treat it as evidence about a hidden coordinate. Ask:
+- intended computation did not activate;
+- optimization or integration was incompetent;
+- the component acted but solved the wrong proxy;
+- useful behavior was coupled to a regression;
+- a natural context variable was incorrectly fixed;
+- a simple or nearest-rival computation made the construction redundant.
 
-- What information or inductive bias does the simple baseline preserve?
-- What unnecessary burden does the proposed method introduce?
-- Does the baseline exploit a variable omitted from the current thesis?
-- Can the baseline be turned into a controlled intervention or positive design
-  object?
+Preserve the run verdict, then extract:
 
-Do not dismiss a strong simple baseline as “too simple.” It may be the cleanest
-causal clue in the project.
+- activated computation;
+- useful residual;
+- failed coupling or assumption;
+- the evidence-directed inheritance for the next version.
 
-## 7. Choose the next experiment by information gain
+Do not count failed variants as family coverage. A new method name does not create a
+new scientific lineage. Use `/firm:design-method` when the evidence changes the
+construction; otherwise continue or finish the current arc without ceremonial review.
 
-The next action should distinguish explanations or change the method, not merely
-add coverage. Prefer, in order:
+When a simple baseline wins, explain why, where it naturally fails, and whether a
+non-redundant learned or native need remains. The existence of an inelegant external
+solution does not guarantee that a deeper method is scientifically necessary.
 
-1. a competence or integrity check if the run is uncertain;
-2. a causal ablation that isolates the implicated component;
-3. a matched alternative that tests the strongest competing explanation;
-4. a natural or standard-surface test that repays scope debt;
-5. consolidation if the paper-critical claim is already stable.
+## Decide At The Right Scale
 
-For the chosen experiment, state:
+After an ordinary result ask only:
 
-- hypothesis and competing hypothesis;
-- intervention and control;
-- expected outcomes under each explanation;
-- result that would change the method;
-- cost and why this experiment dominates the alternatives.
+- Is the observation trustworthy?
+- Does it change the current episode's design question?
+- Does it make planned work redundant or invalid?
+- What is the smallest next action that meaningfully distinguishes the live options?
 
-Do not recommend a seed sweep unless stochastic uncertainty is the actual unresolved
-question.
+At a completed research-episode boundary also ask:
 
-For a competent negative, the default next action is to consolidate or re-ground:
-record the observation, preserve useful design evidence, and reassess the natural
-premise, benchmark anchor, substrate, nearest rival, and paper prize. Recommend another
-same-lineage construction only when a still-untested load-bearing prediction is
-supported on the accepted anchor and the episode has a named paper-asset target. Do
-not invent a hidden variable merely to keep the lineage alive.
+- Was the natural premise actually tested?
+- Did an accepted outcome or important scientific decision move?
+- Should the same construction arc continue, be redesigned, or return to the broad
+  program?
 
-## 8. Update the method lineage and paper state
+Only after a credible positive object or independently important confirmed phenomenon
+exists should the analysis update a Paper Spine, claims-evidence table, or paper scope.
+Failed methods cannot automatically select analysis, measurement, mechanism, theory,
+or systems identity; follow
+`../../shared-references/research-control-protocol.md`.
 
-Record:
+Use `/firm:second-pi` only when independent judgment can change a consequential
+episode-level decision. Do not call Codex merely because a result is negative.
 
-- what this version attempted;
-- what changed relative to the previous version;
-- what the result diagnosed;
-- what remains valid;
-- what the next version inherits;
-- whether the paper claim, scope, contribution type, or maturity changed.
+## Durable Output
 
-A failed method can still produce valuable design evidence. It has not automatically
-earned an analysis paper; the surviving positive object and community consequence
-must be stated.
-
-## 9. Use an independent review when ambiguity is consequential
-
-Invoke `/firm:second-pi` before a tentative explanation hardens when:
-
-- several causal stories remain plausible;
-- a simple baseline reverses the narrative;
-- the result would change method altitude or contribution identity;
-- the next step requires major compute;
-- the project may be entering or leaving paper-writing mode.
-
-Provide raw artifacts, the pre-result forecast, contrary evidence, and the method
-lineage. Do not supply only a polished preferred interpretation.
-
-## Output
+For an ordinary result, keep a compact entry in the existing notebook or state:
 
 ```markdown
-# Result Diagnosis
-
-## Evidence status
-- Competence/integrity:
-- Compared conditions:
-- Primary result:
-- Important uncertainty:
-
-## What the result establishes
-
-## What it does not establish
-
-## Failure level
-- Classification:
-- Why this level:
-- Why not the next level:
-
-## Competing explanations
-| Explanation | Supporting evidence | Contrary evidence | Discriminating test |
-|---|---|---|---|
-
-## Design consequence
-
-## Paper consequence
-
-## Research-yield consequence
-- Evidence role and benchmark anchor:
-- Paper asset gained or lost:
-- Last accepted-anchor movement:
-- Continue, consolidate, or re-ground, and evidence basis:
-
-## Highest-value next action
-- Experiment or consolidation action:
-- Expected information:
-- Evidence that would change the decision:
+## Observation
+- conditions, evidence role, result, uncertainty, cost, and paths:
+- support and contrary cases:
+- effect on current episode: unchanged | exact design consequence:
+- explanations: unchanged | exact bundle-supported update:
+- next action:
 ```
 
-Be decisive but calibrated. The output should leave the researcher knowing what
-changed, what remains alive, and exactly why the next action is worth doing.
+For a completed construction or explanatory episode, create or update
+`RESULT_TO_CLAIM.md` only when durable coordination helps:
+
+```markdown
+# Episode Interpretation
+## Validated Observations
+## Competing Explanations And What Was Distinguished
+## Construction Lessons: Activated / Residual / Failed Coupling / Inheritance
+## Accepted-Surface Consequence
+## Program Or Paper Consequence, If Earned
+## Next Research Episode
+```
+
+Preserve contrary evidence and exact paths. Paperwork never delays a clear reversible
+research action.
