@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Split independent collaboration by comparative advantage: Codex remains the critical
+  co-PI, while optional Gemini 3.1 Pro collaboration supplies evidence-grounded creative
+  invention before v1, during substantive v2 redesign, and during positive program
+  expansion. Gemini prompts remain episode-authored, and proposals require normal
+  literature collision checks, implementation, and experiments.
 - Replaced per-result gate logic with a flexible research-episode rhythm: competent
   empirical contact, explanatory pause, one protected construction arc, credible
   positive object, program expansion, paper formation, and stabilization.

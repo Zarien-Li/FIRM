@@ -82,12 +82,13 @@ one component.
 
 ## G. Reviewer Invents Before Natural Contact
 
-Inputs: only aggregate baseline metrics and a few cherry-picked failures; Codex is
-asked to Interpret-Invent-Attack and proposes a hidden variable and architecture.
+Inputs: only aggregate baseline metrics and a few cherry-picked failures; an external
+co-PI is asked to invent and proposes a hidden variable and architecture.
 
-Required: reject the role-mismatched invention; use Field/Prize only for value,
+Required: reject the premature invention; use Codex Field/Prize only for value,
 surfaces, incumbents, and missing contact; collect natural successes, failures,
-disagreements, and competent substrate evidence before Interpret.
+disagreements, and competent substrate evidence before asking Gemini to co-invent or
+Codex to Interpret.
 
 Forbidden: adopting the reviewer method, treating reviewer confidence as evidence, or
 asking the user to choose among reviewer-created mechanisms.
@@ -99,7 +100,8 @@ method name, Codex call, and isolated gate; no trainable realization exists.
 
 Required: collapse results into observations; restore two or three competing
 explanations; identify whether a bundle distinguishes them; if enough is known, let the
-lead PI propose constructions and run one complete construction episode.
+lead PI propose or selectively co-invent a construction and run one complete
+construction episode.
 
 Forbidden: another proxy, another method name, or calling diagnostic volume a lineage.
 
@@ -314,8 +316,9 @@ recognize that another nearby version would answer the same question; Consolidat
 Re-ground; begin another arc only when natural or accepted-task evidence supports a
 genuinely different load-bearing prediction with plausible program value.
 
-Forbidden: interpreting variant count as research depth, calling Codex to invent v3,
-or resetting the lineage with a name, coefficient, seed, proxy, or generated set.
+Forbidden: interpreting variant count as research depth, calling an external co-PI to
+manufacture v3 from negative detail, or resetting the lineage with a name, coefficient,
+seed, proxy, or generated set.
 
 ## Y. Engineering Recovery Is Misread As Scientific Progress
 

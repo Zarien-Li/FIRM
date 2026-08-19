@@ -62,9 +62,11 @@ substitute.
 
 ## Propose A Principle And A Construction
 
-The lead PI proposes the first construction from local evidence. Codex may challenge
-or repair it later; it must not generate the project's first method from an
-underdetermined observation.
+The lead PI owns the first construction and selects it from local evidence. After
+competent contact has earned a real design opportunity, the PI may use Gemini as a
+creative co-PI to challenge the default assumption and co-invent a load-bearing
+primitive. Codex may challenge or repair a supported construction later; it must not
+generate the project's first method from an underdetermined observation.
 
 For a serious candidate state:
 
@@ -92,6 +94,13 @@ irreducible principle with real value, not their surface form.
 
 Select one provisional construction rather than returning an unranked menu. Compare
 genuinely distinct candidates only when the evidence supports them.
+
+When a creative outside view can change the design rather than merely add variants,
+give Gemini the actual natural evidence, contrary cases, nearest rivals, constraints,
+and unresolved design question. Let the PI author the prompt for the episode; do not
+impose a fixed output template. Follow `/firm:second-pi` for the verified invocation
+and model pin. Treat the response as a proposal: collision-read it, choose one
+principle, implement the smallest real realization, and let evidence reshape it.
 
 ## Cultivate One Construction Arc
 
@@ -160,6 +169,11 @@ A verified correction normally earns one clean matched rerun. A continuing direc
 loss is not repaired by a new nickname or seed sweep. A further construction needs a
 changed design question supported by evidence.
 
+After an informative failed realization has identified the activated computation,
+useful residual, and failed coupling, Gemini may help invent a genuinely different v2
+primitive. Do not call it merely because a score is negative or before implementation
+competence is established.
+
 One failed realization does not close a primitive, family, problem, or field. Several
 failures do not automatically justify a higher abstraction. Before leaving the current
 arc, inspect substrate competence, problem value, nearest-rival ownership, and the
@@ -194,7 +208,9 @@ consider whether the principle supports:
 - a named phenomenon with independent definition and consequence;
 - a simpler or lower-friction realization.
 
-Use `/firm:second-pi` Program Expansion before paper-sized investment. Choose
+Use `/firm:second-pi` for an independent critical or creative Program Expansion view
+before paper-sized investment. Gemini may propose a larger scientific form of the same
+positive primitive; Codex may attack its value, ownership, and evidence. Choose
 extensions predicted by the principle, not favorable extra cells or table breadth.
 
 ## Durable Construction Note

@@ -96,9 +96,15 @@ Prize -> Fidelity -> Design -> Evidence -> Entry
 - **Expansion：** 一个可信正结果能否长成可复用的研究计划，而不只是更大的结果表？
 - **Entry：** 当前贡献是否成熟到可以进入完整论文写作？
 
-在关键边界，FIRM 默认使用一个全新的 Claude context 作为独立 second PI；如果已有其他
-独立模型，例如 Codex，也可以增加一轮评审。Second PI 用来重新解释证据、发明替代方案
-和攻击最强 claim，而不是充当停止按钮；评审工具不可用也不会暂停主研究者的工作。
+`second-pi` 在全新 context 中运行，并把两种外部视角分开。Codex 是批判型 co-PI，负责
+Prize、解释、方法挑战和后期 artifact review；Gemini 是可选的创造型 co-PI，在充分经验
+证据已经值得形成 v1、一次信息充分的失败需要真正不同的 v2 primitive，或可信正结果可以
+长成更大可复用思想时参与。主 PI 根据实时证据动态编写 Gemini prompt，再负责 collision
+read、选择、实现和实验。两者都不是停止按钮，工具不可用也不会暂停研究。
+
+Gemini 协作使用 Antigravity CLI（`agy`），属于可选能力。经过模型固定验证的标准调用只在
+[`second-pi`](skills/second-pi/SKILL.md) 中维护；没有安装 `agy` 时，Claude 主 PI 与 Codex
+审查流程仍然完整可用。
 
 ### 实际科研循环
 
@@ -210,7 +216,7 @@ claude --append-system-prompt-file ~/FIRM/CLAUDE-RESEARCH.md
 
 | Discover | Build | Finish |
 |---|---|---|
-| 复现强基线，检查自然成功、失败和矛盾案例 | 把负结果转化为构造性方法谱系，而不是过早关闭方向或随机扩 seeds | 用独立 second PI 审计 Prize、Fidelity、证据、范围和论文成熟度 |
+| 复现强基线，检查自然成功、失败和矛盾案例 | 把负结果转化为构造性方法谱系；可选调用 Gemini 共同发明证据已经挣得的 primitive | 用 Codex 作为批判型 co-PI 审视 Prize、解释、方法、范围和论文成熟度 |
 | 在项目演化中持续保留原始研究计划和社区价值 | 区分实现、设计、优化、统计和迁移不确定性 | 让最终 claim 与控制实验、成本、局限、引用和原始产物保持一致 |
 
 一个持续研究者负责整个研究计划。Specialist skills 是按需加载的工具，不是刚性阶段机。

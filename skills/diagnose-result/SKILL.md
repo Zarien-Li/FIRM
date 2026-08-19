@@ -135,7 +135,11 @@ or systems identity; follow
 `../../shared-references/research-control-protocol.md`.
 
 Use `/firm:second-pi` only when independent judgment can change a consequential
-episode-level decision. Do not call Codex merely because a result is negative.
+episode-level decision. Do not call Codex or Gemini merely because a result is
+negative. When an informative failed realization has localized a failed coupling and
+the next construction truly needs a different primitive, Gemini may provide a creative
+co-PI view; pass the evidence and unresolved design question to `/firm:design-method`
+rather than treating the suggestion as interpretation or fact.
 
 ## Durable Output
 

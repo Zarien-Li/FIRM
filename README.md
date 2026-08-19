@@ -102,13 +102,19 @@ Prize -> Fidelity -> Principle -> Design -> Evidence -> Expansion -> Entry
   than merely a larger result table?
 - **Entry:** Is the contribution mature enough for full paper writing?
 
-A fresh Claude context is the default independent second PI at consequential
-boundaries. Another model such as Codex may serve as an additional reviewer when
-available. Each call has exactly one evidence-matched role: map the field and prize,
-compare supplied explanations, challenge lead-PI constructions, expand a credible
-positive principle, or review a fixed artifact. It is not a stop-button oracle or an
-always-on invention engine, and reviewer unavailability does not pause the lead
-researcher's work.
+`second-pi` runs in a fresh context and separates two outside perspectives. Codex is
+the critical co-PI for prize, interpretation, method challenge, and later artifact
+review. Gemini is an optional creative co-PI when competent evidence has earned a v1,
+an informative failure needs a genuinely different v2 primitive, or a credible
+positive can grow into a larger reusable idea. The lead PI writes each Gemini prompt
+from the live evidence instead of filling a fixed schema, then collision-checks,
+implements, and tests the proposal. Neither model is a stop-button oracle, and provider
+unavailability does not pause the research.
+
+Gemini collaboration uses the Antigravity CLI (`agy`) and is optional. The canonical,
+model-pinned invocation is maintained in
+[`second-pi`](skills/second-pi/SKILL.md); installations without `agy` retain the full
+Claude lead-PI and Codex review workflow.
 
 ### The operational research loop
 
@@ -225,7 +231,7 @@ not silently spend compute, inspect remote jobs, or rewrite a manuscript.
 
 | Discover | Build | Finish |
 |---|---|---|
-| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn negative results into a constructive method lineage instead of premature closure or random seed expansion | Use an independent second PI to audit prize, fidelity, evidence, scope, and paper readiness |
+| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn negative results into a constructive method lineage; optionally use Gemini to co-invent evidence-earned primitives | Use Codex as a critical co-PI for prize, interpretation, method challenge, scope, and paper readiness |
 | Keep the original research program and community value visible as the project evolves | Distinguish implementation, design, optimization, statistical, and transfer uncertainty | Align the final claim with controls, costs, limitations, citations, and raw artifacts |
 
 One persistent researcher owns the program. Specialist skills are tools loaded
