@@ -44,6 +44,21 @@ consequential. Spend it on dimensions that strengthen the central contribution:
 accepted-task value, principle-predicted transfer, scale/model behavior, reusable data
 or supervision, mechanism, reliability, and adoption cost.
 
+Separate **submission sufficiency** from **large-scale expansion**. The active machine
+must still close every paper-critical link: the natural premise, competent realization,
+strong and nearest-rival comparisons, end-to-end utility, decisive components, honest
+tradeoffs, and enough accepted-surface/generalization evidence for the intended claim.
+Once that chain already establishes a credible SOTA-level paper, do not spend thousands
+of GPU-hours locally on exhaustive model, dataset, seed, or scale grids that only enlarge
+the table. Package those optional expansions for the designated high-compute machine.
+Run them locally only when their outcome can still change correctness, novelty, the
+central claim, or submission viability. This is not permission to stop at a pilot or omit
+owed evidence; it is a placement rule for work beyond the submission-sufficient core.
+A project with no credible positive object and no submission-sufficient paper is never
+`post_sufficiency_scale`. Failure of one construction family may close that family, but
+cannot use this compute policy to terminate or transfer the sealed broad program; re-ground
+the program and separate substrate, problem, incumbent, and construction failures first.
+
 Do not distribute paper budgets evenly, rescue low-leverage cells with large matrices,
 or confuse experiment volume with idea size. There is no fixed run or failure quota;
 compare marginal scientific value and opportunity cost.

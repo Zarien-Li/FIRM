@@ -16,6 +16,10 @@
 - Consolidated accumulated lessons into a maintenance principle registry and
   regression-scenario suite so shorter daily skills do not discard hard-won failure
   knowledge.
+- Separated submission-sufficient evidence from post-sufficiency scale expansion:
+  close every claim-critical link locally, but move table-enlarging thousand-GPU-hour
+  sweeps to designated high-compute infrastructure once they can no longer change the
+  paper's correctness, novelty, or viability.
 
 ## 1.1.1
 
