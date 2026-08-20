@@ -1,38 +1,40 @@
 # Install On Another Mac
 
-This archive contains the current research and paper-writing skills, shared
-research references, and the canonical `CLAUDE-RESEARCH.md` prompt. It does not
-contain Claude Code sessions, API keys, credentials, or machine-specific server
-configuration.
+This package contains the canonical managed research skills, shared references, and
+runtime research addendum. It excludes sessions, credentials, model/data caches,
+server configuration, and project artifacts.
 
 ## Install
 
-1. Extract the archive.
-2. Open Terminal in the extracted directory.
-3. Run:
+Extract the package and run:
 
 ```bash
 bash install.sh
 ```
 
-The installer backs up every same-named destination skill before replacing it.
-Unrelated skills in `~/.claude/skills` are left untouched.
+The installer:
 
-For each research project, copy `CLAUDE-RESEARCH.md` into the project root and
-start Claude Code with:
+- installs exactly the skill names in `managed-skills.txt`;
+- replaces the managed shared-reference tree atomically;
+- archives changed, retired, and known legacy research runtime files on the Desktop;
+- removes only previously managed or explicitly listed retired skills;
+- leaves unrelated user skills untouched;
+- installs `~/.claude/CLAUDE-RESEARCH.md`.
 
-```bash
-claude --append-system-prompt-file CLAUDE-RESEARCH.md
-```
-
-Use `--continue` only when that computer already has the corresponding Claude
-Code conversation. Skills do not require copying credentials or session files.
+For a research project, copy `CLAUDE-RESEARCH.md` into the project root and launch the
+model with that file as its appended system prompt. Continue an existing conversation
+only when its project state and raw artifacts are present on that computer.
 
 ## Verify
 
 ```bash
-find ~/.claude/skills -maxdepth 2 -name SKILL.md | sort
+python3 skills/research-pipeline/tests/check_semantic_contract.py
+python3 -m unittest skills/research-audit/tests/test_evidence_lineage.py -v
+diff -qr shared-references ~/.claude/skills/shared-references
+while read -r name; do
+  case "$name" in ""|\#*) continue ;; esac
+  diff -qr "skills/$name" "$HOME/.claude/skills/$name" || exit 1
+done < managed-skills.txt
 ```
 
-The package installs only the research-related skills included under `skills/`
-and the shared references under `shared-references/`.
+Run tests with `PYTHONDONTWRITEBYTECODE=1` when checking an immutable archive.

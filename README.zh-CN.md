@@ -266,7 +266,7 @@ FIRM 不是刚性阶段机。一个持续研究者负责整个研究计划，spe
 **论文与研究计划分离。** 原始研究计划、当前论文、发现切片和 scope debt 是四个不同
 对象。一个狭窄结果不能只靠宽泛领域名称借来重要性。
 
-**正向研究计划扩张。** 当一个真实方法首次成立后，FIRM 会判断其简单原则能否扩展成
+**正向研究计划扩张。** 当一个真实方法首次成立后，lead PI 会判断其简单原则能否扩展成
 可复用 primitive、监督或数据引擎、可预测的跨任务规律或系统能力。Probe budget 用来
 验证 opening；paper budget 只集中给那些投入越大、中心科学贡献越强的想法。
 
@@ -277,7 +277,7 @@ FIRM 不是刚性阶段机。一个持续研究者负责整个研究计划，spe
 - **实验与审计：** `research-contract`、`run-experiment`、`monitor-experiment`、`research-audit`、`research-state-audit`
 - **论文阶段：** `paper-writing`、`auto-paper-improvement-loop`、`resubmit-pipeline`
 
-完整职责边界和合并历史见 [改革映射](REFORM_MAP.md)。
+当前职责边界见 [Research Skills Ownership Map](REFORM_MAP.md)。
 
 ## 开发时间线
 
@@ -319,7 +319,7 @@ FIRM/
 ## 设计与文档
 
 - [入门指南](docs/getting-started.md)
-- [改革映射与职责边界](REFORM_MAP.md)
+- [Research Skills Ownership Map](REFORM_MAP.md)
 - [科研 Agent 失败地图](docs/failure-map.md)
 - [三个脱敏案例](examples/README.md)
 - [设计来源与演化](docs/origin-and-design.md)

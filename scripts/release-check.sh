@@ -16,7 +16,10 @@ required=(
   .claude-plugin/plugin.json
   .claude-plugin/marketplace.json
   REFORM_MAP.md
-  VALIDATION_REPORT.md
+  managed-skills.txt
+  managed-shared-references.txt
+  retired-skills.txt
+  legacy-runtime-paths.txt
   docs/getting-started.md
   assets/firm-decision-demo.png
   assets/social-preview.png
@@ -44,8 +47,10 @@ bash -n "${ROOT_DIR}/firm"
 bash -n "${ROOT_DIR}/install.sh"
 bash -n "${ROOT_DIR}/scripts/test-onboarding.sh"
 bash -n "${ROOT_DIR}/scripts/verify-install.sh"
-python3 "${ROOT_DIR}/scripts/validate_skills.py"
-python3 "${ROOT_DIR}/scripts/check-research-contract.py"
+PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/validate_skills.py"
+PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/check-research-contract.py"
+PYTHONDONTWRITEBYTECODE=1 python3 \
+  "${ROOT_DIR}/skills/research-audit/tests/test_evidence_lineage.py" -v
 bash "${ROOT_DIR}/scripts/test-onboarding.sh"
 
 if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY|REPOSITORY_URL|YOUR_ACCOUNT' \

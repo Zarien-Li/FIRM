@@ -30,7 +30,7 @@ numbers and semantic qualifiers against raw results.
   defensive experiment grids, change contribution type, or impose stop/freeze/retire.
 
 For submission assurance, emit the human report and machine-readable JSON described in
-the selected reference and `shared-references/assurance-contract.md`. Record reviewer
+the selected reference and `../shared-references/assurance-contract.md`. Record reviewer
 identity/thread, UTC time, verdict, reason code, declared input hashes, and trace path.
 
 ## Output Routing

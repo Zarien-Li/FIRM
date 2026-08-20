@@ -11,22 +11,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / "skills"
 EXPECTED = {
-    "auto-paper-improvement-loop",
-    "baseline",
-    "experiment-plan",
-    "frontier-direction-discovery",
-    "method-primitive-synthesis",
-    "monitor-experiment",
-    "paper-writing",
-    "research-audit",
-    "research-contract",
-    "research-lit",
-    "research-pipeline",
-    "research-review",
-    "research-state-audit",
-    "resubmit-pipeline",
-    "run-experiment",
-    "signal-analysis",
+    line.strip()
+    for line in (ROOT / "managed-skills.txt").read_text(encoding="utf-8").splitlines()
+    if line.strip() and not line.lstrip().startswith("#")
 }
 BANNED: dict[str, re.Pattern[str]] = {}
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")

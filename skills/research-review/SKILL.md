@@ -260,7 +260,7 @@ and re-grounding by scientific value and opportunity cost. Do not invent a new m
 deeper abstraction, or contribution type.
 ```
 
-These compact skeletons are for Codex's critical roles. For Gemini Creative Invention,
+These compact skeletons are for optional Codex verification roles. For Gemini Creative Invention,
 the lead PI writes a natural prompt from the live evidence and question; do not force a
 fixed list of fields or a predetermined kind of method.
 
@@ -271,7 +271,8 @@ For artifact review classify concerns as `EVIDENCE_INVALIDATING`,
 normally create immediate research work. Do not turn review into a defensive grid.
 
 In proof-audit mode inspect statements, assumptions, quantifiers, domains, dependencies,
-case coverage, and counterexamples. Follow `assurance-contract.md`. Proof review does
+case coverage, and counterexamples. Follow
+`../shared-references/assurance-contract.md`. Proof review does
 not redesign research or grant paper entry.
 
 ## Tool Policy

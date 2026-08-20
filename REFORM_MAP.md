@@ -1,46 +1,47 @@
-# Research Skills Reform Map
+# Research Skills Ownership Map
 
-This file is maintenance evidence, not ordinary project context. It records how the
-2026-08-16 rewrite preserves the accumulated research lessons while changing when
-they become active.
+This map documents the current runtime ownership boundaries. It is maintenance
+documentation, not a workflow and not ordinary project context.
 
-## Activation Layers
+| Concern | Canonical owner |
+|---|---|
+| Program continuity, research episodes, re-grounding, positive expansion, paper harvest | `research-pipeline` |
+| Accepted task, nearest rival, substrate, evaluator contact | `baseline` |
+| Literature identity and ownership | `research-lit` |
+| Observation bundles and competing explanations | `signal-analysis` |
+| Primitive formation, realization, construction arcs, repair | `method-primitive-synthesis` |
+| Probe versus paper budget and campaign design | `experiment-plan` |
+| Prospective registration of one consequential run | `research-contract` |
+| Local, SSH, scheduler, queue, GPU, retry, and resume mechanics | `run-experiment` |
+| Process/job reconciliation and completed-unread delivery | `monitor-experiment` |
+| Experiment and citation validity | `research-audit` |
+| Program/value/identity boundary synthesis | `research-state-audit` |
+| Gemini creative collaboration and optional sparse Codex verification | `research-review` |
+| Claims-evidence writing, figures, compilation, submission assembly | `paper-writing` |
+| Bounded manuscript improvement | `auto-paper-improvement-loop` |
+| Rebuttal and resubmission | `resubmit-pipeline` |
+| Authority, evidence invalidation, contribution firewall, paper entry | `shared-references/research-control-protocol.md` |
+| Claim-bearing evidence lineage | `shared-references/evidence-lineage.md` |
+| Evaluation and experiment validity | `shared-references/experiment-integrity.md` |
+| Context isolation and re-anchoring | `shared-references/context-hygiene.md` |
+| External artifact honesty | `shared-references/assurance-contract.md` |
 
-| Layer | Purpose | Canonical owners |
-|---|---|---|
-| Always-on | Lead-PI identity, program compass, research episodes, autonomy, timely harvest | `research-pipeline` |
-| Empirical contact | Accepted surfaces, raw behavior, nearest rivals, substrate competence, literature | `baseline`, `research-lit` |
-| Scientific formation | Observation bundles, competing explanations, construction arcs, method repair | `signal-analysis`, `method-primitive-synthesis` |
-| Execution | Episode/campaign planning, registration, launch, monitoring | `experiment-plan`, `research-contract`, `run-experiment`, `monitor-experiment` |
-| Sparse external review | Optional post-positive red team and near-final factual/proof audit | `research-review` |
-| Boundary assurance | Evidence validity, state/value continuity, contribution-type and paper-entry checks | `research-audit`, `research-state-audit`, `research-control-protocol.md` |
-| Harvest | Paper structure, claim fidelity, figures, compile, bounded improvement, resubmission | `paper-writing`, `auto-paper-improvement-loop`, `resubmit-pipeline` |
+## Runtime Invariants
 
-## Preserved Lesson Families
+- The active model is the autonomous lead PI for reversible scientific decisions.
+- The broad program, evolving program, and bounded paper candidate remain separate.
+- Accepted benchmarks or natural systems anchor value; private slices stay diagnostic.
+- A method result is an executable realization plus decisive comparison and paired
+  utility, read as one construction episode.
+- Gemini can widen design space. Codex defaults to zero calls before a credible
+  positive and is optional sparse verification afterward.
+- FIRM records operational facts and durable delivery; it does not direct research.
+- There is no construction lease, fixed review chain, sealed method identity, or
+  user gate for ordinary scientific judgment.
+- Destructive or irreversible operations, credentials, exceptional spending, formal
+  submission/public release, legal commitments, and explicitly locked scope remain
+  user-only boundaries.
 
-| Principle IDs | Preserved lesson | New activation |
-|---|---|---|
-| P01-P04 | Original program, authority, one live state, context hygiene | Always-on, concise |
-| P05-P10 | Natural value, scope, nearest rival, substrate and baseline integrity | Contact and consequential comparison |
-| P11-P14 | Observation first, competing explanations, probes are not causes | Evidence-bundle boundaries, not every result |
-| P15-P22 | Real method realization, constructive ablation, inheritance, simple baselines | One protected construction arc |
-| P23-P26 | Seed discipline, registration, invalidation, infrastructure separation | Execution and claim-bearing evidence |
-| P27-P33 | Sparse late-stage Codex, contribution firewall, harvest and PI-owned paper entry | Post-positive or near-final boundaries only |
-| P34-P37 | Exemplary-paper reading, claims-evidence writing, context and audit ownership | Writing only |
-| P38-P41 | Big problems, simple principles, expansion and contribution stack | Program selection and first credible positive object |
-| P42-P46 | Benchmark sovereignty, re-grounding, continuation discipline, negative consolidation | Program-level episode boundaries, not per-run gates |
-| P47-P51 | Program Compass, protected episodes, construction arcs, late paper accounting, operations/science separation | New research rhythm and activation boundaries |
-
-## Removed From The Daily Control Path
-
-- mandatory paper-asset accounting after every result;
-- a large machine-readable scientific constitution;
-- continuation forms that behave as permission gates;
-- Codex review after ordinary negative results;
-- one closed construction lease per small method version;
-- repeated contribution-type, nearest-rival, scope-debt, and seed rules in multiple skills;
-- paper-entry vocabulary before a credible positive object exists.
-
-The knowledge remains in canonical skills, the principle registry, the existing
-pipeline regression scenarios, and Git history. Removing it from the daily control
-path is not deleting the lesson.
+The detailed durable principles live in
+`shared-references/research-principles.md`. Regression scenarios preserve historical
+failure cases without turning them into daily workflow state.

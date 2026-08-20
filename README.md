@@ -285,7 +285,7 @@ activated, what failed, what survives, and what the next version must change.
 discovery slice, and scope debt remain separate objects. A narrow result cannot
 borrow importance from a broad field name.
 
-**Positive program expansion.** Once a real method works, FIRM asks whether its simple
+**Positive program expansion.** Once a real method works, the lead PI asks whether its simple
 principle can become a reusable primitive, supervision or data engine, predicted
 cross-task finding, or systems capability. Probe budget tests openings; paper budget
 is concentrated only on ideas whose scientific upside grows with the investment.
@@ -299,7 +299,7 @@ is concentrated only on ideas whose scientific upside grows with the investment.
 | [`research-lit`](skills/research-lit/SKILL.md) | [`experiment-plan`](skills/experiment-plan/SKILL.md) | [`monitor-experiment`](skills/monitor-experiment/SKILL.md) | [`paper-writing`](skills/paper-writing/SKILL.md) |
 | [`baseline`](skills/baseline/SKILL.md) | [`research-review`](skills/research-review/SKILL.md) | [`research-audit`](skills/research-audit/SKILL.md) | [`resubmit-pipeline`](skills/resubmit-pipeline/SKILL.md) |
 
-See the [reform map](REFORM_MAP.md) for ownership boundaries and consolidation history.
+See the [ownership map](REFORM_MAP.md) for the current runtime boundaries.
 
 ## Development timeline
 
@@ -344,7 +344,7 @@ scoped.
 ## Design and documentation
 
 - [Getting started](docs/getting-started.md)
-- [Reform map and ownership boundaries](REFORM_MAP.md)
+- [Research skills ownership map](REFORM_MAP.md)
 - [Failure map](docs/failure-map.md)
 - [Three sanitized cases](examples/README.md)
 - [Origin and design history](docs/origin-and-design.md)

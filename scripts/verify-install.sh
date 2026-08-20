@@ -2,38 +2,43 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SOURCE_DIR="${ROOT_DIR}/skills"
 TARGET_DIR="${1:-${FIRM_SKILLS_DIR:-${HOME}/.claude/skills}}"
+MANIFEST="${ROOT_DIR}/managed-skills.txt"
+failures=0
+count=0
 
-skill_dirs=()
-while IFS= read -r skill_dir; do
-  skill_dirs+=("${skill_dir}")
-done < <(
-  find "${SOURCE_DIR}" -mindepth 2 -maxdepth 2 -name SKILL.md -print \
-    | sed 's#/SKILL.md$##' \
-    | sort
-)
-
-missing=0
-for source_path in "${skill_dirs[@]}"; do
-  name="$(basename "${source_path}")"
-  target_path="${TARGET_DIR}/${name}/SKILL.md"
-  if [[ ! -s "${target_path}" ]]; then
-    echo "MISSING skill entry: ${target_path}" >&2
-    missing=$((missing + 1))
+while IFS= read -r name; do
+  [[ -n "${name}" && "${name}" != \#* ]] || continue
+  count=$((count + 1))
+  source_path="${ROOT_DIR}/skills/${name}"
+  target_path="${TARGET_DIR}/${name}"
+  if [[ ! -f "${target_path}/SKILL.md" ]]; then
+    echo "MISSING managed skill: ${target_path}" >&2
+    failures=$((failures + 1))
+  elif ! diff -qr "${source_path}" "${target_path}" >/dev/null; then
+    echo "MISMATCH managed skill: ${name}" >&2
+    failures=$((failures + 1))
   fi
-done
+done < "${MANIFEST}"
 
-if [[ ${#skill_dirs[@]} -ne 16 ]]; then
-  echo "Source validation failed: expected 16 skills, found ${#skill_dirs[@]}." >&2
-  missing=$((missing + 1))
+if [[ ! -d "${TARGET_DIR}/shared-references" ]]; then
+  echo "MISSING shared references: ${TARGET_DIR}/shared-references" >&2
+  failures=$((failures + 1))
+elif ! diff -qr "${ROOT_DIR}/shared-references"   "${TARGET_DIR}/shared-references" >/dev/null; then
+  echo "MISMATCH shared references" >&2
+  failures=$((failures + 1))
 fi
 
-if [[ ${missing} -ne 0 ]]; then
-  echo "Verification failed: ${missing} issue(s)." >&2
+if [[ "${count}" -ne 16 ]]; then
+  echo "Manifest validation failed: expected 16 skills, found ${count}." >&2
+  failures=$((failures + 1))
+fi
+
+if [[ "${failures}" -ne 0 ]]; then
+  echo "Verification failed: ${failures} issue(s)." >&2
   exit 1
 fi
 
 echo "Verification passed."
-echo "  skills: ${#skill_dirs[@]}"
+echo "  managed skills: ${count}"
 echo "  target: ${TARGET_DIR}"

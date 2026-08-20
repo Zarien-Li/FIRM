@@ -72,8 +72,8 @@ when possible. A smoke test proves execution, not semantic equivalence.
 Wrong paths, fallback data, parser errors, leakage, circular targets, changed
 populations, checkpoint mismatch, and asymmetric protocols are integrity failures.
 Invalidate affected conclusions and propagate the invalidation through dependent
-claims. Use `../../shared-references/experiment-integrity.md` and
-`../../shared-references/evidence-lineage.md` for the detailed checks.
+claims. Use `../shared-references/experiment-integrity.md` and
+`../shared-references/evidence-lineage.md` for the detailed checks.
 
 ## Read Behavior, Not Only Scores
 

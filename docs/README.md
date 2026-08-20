@@ -3,7 +3,7 @@
 | Document | Purpose |
 |---|---|
 | [Getting started](getting-started.md) | Install the Claude Code plugin or attach FIRM to one project. |
-| [Reform map](../REFORM_MAP.md) | Browse all 16 canonical skills and their ownership boundaries. |
+| [Research skills ownership map](../REFORM_MAP.md) | Browse all 16 canonical skills and their current ownership boundaries. |
 | [Failure map](failure-map.md) | Map recurring research-agent mistakes to corrective skills. |
 | [Agent guide](agent-guide.md) | Maintain and evaluate the skills safely. |
 | [Origin and design](origin-and-design.md) | Read the long-form rationale and upstream lineage. |

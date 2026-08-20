@@ -54,7 +54,7 @@ central claim, or submission viability. This is not permission to stop at a pilo
 owed evidence; it is a placement rule for work beyond the submission-sufficient core.
 A project with no credible positive object and no submission-sufficient paper is never
 `post_sufficiency_scale`. Failure of one construction family may close that family, but
-cannot use this compute policy to terminate or transfer the sealed broad program; re-ground
+cannot use this compute policy to terminate or transfer the broad program; re-ground
 the program and separate substrate, problem, incumbent, and construction failures first.
 
 Do not distribute paper budgets evenly, rescue low-leverage cells with large matrices,

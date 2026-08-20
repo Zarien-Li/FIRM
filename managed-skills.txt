@@ -1,0 +1,17 @@
+# Canonical research skills owned by this package
+auto-paper-improvement-loop
+baseline
+experiment-plan
+frontier-direction-discovery
+method-primitive-synthesis
+monitor-experiment
+paper-writing
+research-audit
+research-contract
+research-lit
+research-pipeline
+research-review
+research-state-audit
+resubmit-pipeline
+run-experiment
+signal-analysis

@@ -40,7 +40,7 @@ restating the rule.
 |---|---|---|
 | P15 | Method work may begin from an independently important known problem or from a natural reproduced failure; both owe value, fairness, and standard-task evidence. | `method-primitive-synthesis` |
 | P16 | A formula, name, architecture sketch, probe, CPU check, oracle, or smoke test is a candidate, not a method realization. | `method-primitive-synthesis` |
-| P17 | A realization requires a trainable/executable standard-task implementation, active intended computation, competent substrate, and matched decisive-incumbent comparison. | `method-primitive-synthesis` |
+| P17 | A realization requires a trainable/executable standard-task implementation, active intended computation, and competent substrate. A paper-bearing method result additionally requires a matched decisive-incumbent comparison and paired utility. | `method-primitive-synthesis` |
 | P18 | Form a method through construction episodes: real implementation, one component/interaction comparison, and one paired utility check read together. | `method-primitive-synthesis` |
 | P19 | Construction ablations invent the method by changing component jobs and interactions; failed variant count is not maturity. | `method-primitive-synthesis` |
 | P20 | Preserve the honest run verdict, useful residual, failed coupling, and next inherited change; distinguish correction, construction, and tuning. | `method-primitive-synthesis` |
@@ -64,7 +64,7 @@ restating the rule.
 | P28 | Default to zero Codex calls before a credible positive object; when feasible, run the smallest real realization before external criticism. | `research-review` |
 | P29 | Codex output is advice, not calibrated acceptance probability, evidence, a stop judgment, or a user constraint; it cannot veto exploratory principles, choose PARK, close broad programs, or change contribution identity. | `research-review` |
 | P30 | A failed method lineage cannot automatically become an analysis, measurement, mechanism, theory, or systems paper. | `research-control-protocol.md` |
-| P31 | A changed contribution type requires an independently valuable object, independently selected confirmation, fresh paper identity, and independent review; user approval is required only across an explicit locked boundary. | `research-control-protocol.md` |
+| P31 | A changed contribution type requires an independently valuable object, independently selected confirmation, scientific consequence, strongest-account comparison, and fresh paper identity; user approval is required only across an explicit locked boundary. | `research-control-protocol.md` |
 | P32 | Evidence stability is not contribution maturity; harvest when the positive object, decisive comparison, value, and paper-critical evidence are stable. | `research-pipeline` |
 | P33 | Submission readiness requires a lead-PI evidence-bearing paper entry; early research drafting may expose gaps, and an optional near-final independent audit verifies rather than creates maturity. | `paper-writing` |
 

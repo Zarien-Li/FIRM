@@ -74,14 +74,10 @@ Read the project `CLAUDE.md` and use its actual allocation model:
 Project rules override generic examples. If server information is absent, ask one
 focused operational question.
 
-Read `references/operations.md` only for the needed section:
-
-- `Step 1-6` for local/direct/Slurm launch and W&B;
-- `Batch Mode` for manifests, queue state, OOM retry, waves, stale screens, and resume;
-- `CLAUDE.md Example` for missing project configuration.
-
-The detailed reference preserves the original operational recipes. Its repeated
-scientific prose is historical; this core skill and current research skills win.
+Read `references/operations.md` only for the needed environment: local process,
+direct-GPU SSH, Slurm/managed scheduler, FIRM/batch queue, GPU sharing, tracking,
+storage, or failure/resume. The reference contains mechanics only and never overrides
+the scientific plan or project-specific environment rules.
 
 ## Durable Lifecycle
 

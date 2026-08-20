@@ -1,0 +1,7 @@
+# Canonical shared references owned by this package
+assurance-contract.md
+context-hygiene.md
+evidence-lineage.md
+experiment-integrity.md
+research-control-protocol.md
+research-principles.md

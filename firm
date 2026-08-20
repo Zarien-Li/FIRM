@@ -37,42 +37,10 @@ absolute_project() {
 
 install_project_skills() {
   local project="$1"
-  local target="${project}/.claude/skills"
   local backup="${project}/.firm/skill-backup-$(date +%Y%m%d-%H%M%S)"
-  local source_path target_path name changed=0
-
-  mkdir -p "${target}"
-  for source_path in "${ROOT_DIR}"/skills/*; do
-    [[ -d "${source_path}" && -f "${source_path}/SKILL.md" ]] || continue
-    name="$(basename "${source_path}")"
-    target_path="${target}/${name}"
-    if [[ -d "${target_path}" ]] && diff -qr "${source_path}" "${target_path}" >/dev/null 2>&1; then
-      continue
-    fi
-    if [[ -e "${target_path}" ]]; then
-      mkdir -p "${backup}"
-      mv "${target_path}" "${backup}/${name}"
-    fi
-    cp -R "${source_path}" "${target_path}"
-    changed=$((changed + 1))
-  done
-
-  target_path="${target}/shared-references"
-  if [[ ! -d "${target_path}" ]] || ! diff -qr "${ROOT_DIR}/shared-references" "${target_path}" >/dev/null 2>&1; then
-    if [[ -e "${target_path}" ]]; then
-      mkdir -p "${backup}"
-      mv "${target_path}" "${backup}/shared-references"
-    fi
-    mkdir -p "${target_path}"
-    cp -R "${ROOT_DIR}/shared-references/." "${target_path}/"
-    changed=$((changed + 1))
-  fi
-
-  if [[ ${changed} -eq 0 ]]; then
-    echo "Kept unchanged project-local research skills"
-  else
-    echo "Installed or updated ${changed} project-local research skill payload(s)"
-  fi
+  CLAUDE_HOME="${project}/.claude" \
+    RESEARCH_SKILLS_BACKUP_DIR="${backup}" \
+    bash "${ROOT_DIR}/install.sh"
 }
 
 init_project() {

@@ -56,10 +56,19 @@ def descendants(data: dict, roots: set[str]) -> set[str]:
     return impacted
 
 
-def scan_assets(data: dict, paths: list[Path]) -> list[dict]:
+def scan_assets(
+    data: dict, paths: list[Path], pending_invalidations: set[str] | None = None
+) -> list[dict]:
+    invalidated = {
+        evidence_id
+        for evidence_id, item in data["evidence"].items()
+        if item.get("status") == "invalidated"
+    }
+    invalidated.update(pending_invalidations or set())
+
     needles: dict[str, str] = {}
     for evidence_id, item in data["evidence"].items():
-        if item.get("status") != "invalidated":
+        if evidence_id not in invalidated:
             continue
         needles[evidence_id] = evidence_id
         for artifact in item.get("artifacts", []):
@@ -112,7 +121,9 @@ def main() -> int:
             item["reason"] = args.reason
         args.registry.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
 
-    findings = scan_assets(data, args.scan)
+    # Dry-run scans must use the computed invalidation closure. Otherwise the tool
+    # reports a false green until --write mutates the registry.
+    findings = scan_assets(data, args.scan, impacted)
     result = {
         "ok": not findings,
         "registry": str(args.registry),

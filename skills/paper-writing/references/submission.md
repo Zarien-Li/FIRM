@@ -1,90 +1,62 @@
-# Submission Assembly And Final Report
+# Submission Assembly
 
-Use only for `assurance: submission`. Draft and research-draft work do not require all
-submission artifacts.
+Use only when producing a submission package. Drafting, compilation, and ordinary
+paper revision do not require every final check.
 
-## Re-Derive The Boundary
+## Reconcile The Paper
 
-Before finalization, read current user instructions and `PAPER_ENTRY.md`; do not trust a
-stale state label. Confirm the contribution identity, claimed population, primary
-metric, decisive incumbent, and positive object still match the compiled paper and raw
-evidence.
+Read current user instructions, `PAPER_ENTRY.md`, the compiled manuscript, and raw
+claim-bearing evidence. Confirm that problem, contribution type, positive object,
+population, primary metric, decisive incumbent, and nearest rival still agree.
 
-If identity changed, stop submission finalization and obtain user approval plus a new
-paper-entry review. Do not repair identity drift through wording alone.
+If the identity materially changed, preserve the old draft and return the new paper
+candidate to provisional status. The lead PI may perform this reversible scientific
+reconciliation. User approval is needed only when the change crosses an explicit
+user-locked project, venue, deliverable, or portfolio boundary.
 
-## Required Independent Checks
+## Run Only Applicable Checks
 
-Run only checks whose owner and input surface apply:
+Required deterministic checks:
 
-1. `/research-audit mode: experiment` for unaudited or changed claim-bearing
-   experiment/evaluator/provenance;
-2. `paper-writing mode: claim-audit` for manuscript numbers and semantic qualifiers;
-3. `/research-audit mode: citation` for bibliography identity and citation context;
-4. `/research-review` proof audit when formal claims exist;
-5. `/research-review` artifact review for final scientific prize, identity, title,
-   scope, alternatives, and likely reviewer objections.
+- compile from a clean build path and inspect the rendered PDF;
+- verify every claim-bearing number and qualifier against raw evidence;
+- verify citation identity and local support from primary sources;
+- check current authoritative venue rules, anonymity, page limits, metadata, package
+  contents, accessibility, and disclosure requirements;
+- remove credentials, private paths, reviewer identities, temporary files, and hidden
+  author metadata.
 
-Do not give artifact reviewers prior scores, desired outcomes, fix summaries, style
-exemplars, or other audit verdicts. Give the paper and raw evidence packet needed to
-judge it.
+Use a dedicated experiment audit only for changed or unaudited claim-bearing code,
+evaluator, provenance, or fairness. A near-final Codex factual/claim/citation/proof
+audit is optional under the sparse-review policy; it is not a writing gate and cannot
+create or revoke the contribution by preference. Reuse unchanged evidence-bound
+checks instead of rerunning them ceremonially.
 
-Reuse an audit when its declared inputs, hashes, and semantics remain unchanged. Rerun
-only checks affected by later edits.
+Missing or stale verification blocks only the corresponding readiness claim. Repair
+the affected evidence or text; do not open unrelated experiments.
 
-## Validate Audit Artifacts
+## Package And Approval
 
-For every required JSON artifact verify:
+Build the smallest venue-compliant package from tracked sources. Verify that it opens
+independently and that figures, tables, references, supplements, and artifact links
+resolve. Do not upload, formally submit, release publicly, or make legal commitments
+without explicit user approval.
 
-- expected audit identity and schema;
-- verdict is not `FAIL`, `BLOCKED`, or `ERROR`;
-- declared input set covers the files/claims under review;
-- recomputed hashes match;
-- reviewer/thread/time and trace are present when required;
-- `WARN` qualifiers appear in the manuscript and final report.
-
-Missing, malformed, or stale artifacts block only the final readiness claim. A
-host-provided verifier may automate these checks, but the workflow must not depend on a
-private repository or script.
-
-## Venue And Package Check
-
-Using authoritative venue rules, verify:
-
-- anonymity and metadata;
-- page and supplementary limits;
-- fonts, margins, bibliography style, and required sections;
-- figure/table readability and accessibility;
-- artifact/data/code statements and ethics/limitations when applicable;
-- no credentials, private paths, review identities, temporary files, or hidden author
-  metadata in the submission package.
-
-Do not upload or formally submit without explicit user approval.
-
-## Final Report
-
-Write `PAPER_REPORT.md`:
+Write a compact `PAPER_REPORT.md`:
 
 ```markdown
 # Paper Report
-
-## Contribution identity
-- problem, positive object, contribution type, scope:
-- decisive evidence and paper-to-program bridge:
-
-## Deliverables
-- root source / PDF / figures / package:
-
-## Verification
-| Check | Artifact | Verdict | Freshness | Remaining qualifier |
-|---|---|---|---|---|
-
-## Compilation and venue compliance
-## Blocking / major / minor remaining issues
-## Honest non-claims and limitations
-## User approval still required
-## Single next action
+- contribution identity and honest scope:
+- decisive evidence and raw paths:
+- source, PDF, figures, supplement, and package:
+- compilation and venue compliance:
+- completed checks and their exact inputs:
+- blocking / major / minor remaining issues:
+- honest non-claims:
+- user-only action, if any:
+- single next action:
 ```
 
-Use `submission-ready: yes` only when paper entry, compilation, applicable audits,
-venue compliance, and disclosure are all green. A polished PDF alone is not readiness.
+Use `submission-ready: yes` only when paper entry, compilation, applicable evidence
+checks, venue compliance, and disclosures are complete. A polished PDF alone is not
+readiness.

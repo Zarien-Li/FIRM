@@ -297,6 +297,9 @@ After compaction, interruption, a major reframe, or a skill update, re-anchor in
 current session from project instructions, the concise state, relevant raw artifacts,
 and active jobs. Refresh only when measurable contamination remains.
 
+Load `../shared-references/context-hygiene.md` only when long logs, repeated
+compactions, subagent isolation, or session contamination is the current problem.
+
 ## Authority And Integrity
 
 Follow `../shared-references/research-control-protocol.md` for explicit user boundaries,

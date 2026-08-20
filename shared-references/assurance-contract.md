@@ -61,10 +61,11 @@ At submission assurance, emit the required JSON artifact even for `BLOCKED`,
 
 ## Reviewer Independence
 
-Independent artifact review follows `reviewer-independence.md`: pass primary files,
-role, objective, and venue constraints without executor interpretation or desired
-verdict. This restriction concerns audits and readiness review, not co-PI Interpret or
-Method Challenge defined in `research-review`.
+When an audit is explicitly independent, use a fresh context and pass primary files,
+the bounded role, objective, and venue constraints without a desired verdict, prior
+scores, or the executor's preferred interpretation. Record whether that condition was
+met. A reply may check resolution of its own findings but is not a fresh independent
+judgment. This restriction does not govern creative co-invention.
 
 ## Compact Report
 

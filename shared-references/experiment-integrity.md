@@ -113,9 +113,10 @@ contrary evidence.
 
 ## Independent Review And Lead-Researcher Synthesis
 
-A different model family should inspect claim-bearing evaluation code and artifacts
-when available. Independence protects against executor blind spots; it does not make
-the reviewer an authority over raw evidence.
+For high-blast-radius claim-bearing evaluation code, an independent model family may
+inspect the exact code and artifacts when this can expose executor blind spots. This
+is optional verification, not a universal gate, and does not make the reviewer an
+authority over raw evidence.
 
 The reviewer must report exact file and line evidence. The lead researcher then
 reproduces or directly verifies each material finding, classifies it as
