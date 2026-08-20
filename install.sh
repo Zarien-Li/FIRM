@@ -2,129 +2,35 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SOURCE_DIR="${ROOT_DIR}/skills"
-TARGET_DIR="${FIRM_SKILLS_DIR:-${HOME}/.claude/skills}"
-DRY_RUN=0
+TARGET_DIR="${CLAUDE_HOME:-${HOME}/.claude}/skills"
+STAMP="$(date +%Y%m%d-%H%M%S)"
+BACKUP_DIR="${HOME}/Desktop/research-skills-backup-${STAMP}"
 
-usage() {
-  cat <<'USAGE'
-Install FIRM skills directly for Claude Code.
+mkdir -p "${TARGET_DIR}" "${TARGET_DIR}/shared-references"
 
-The recommended installation path is the plugin marketplace. Use this script for
-legacy global installation or project-local copies.
-
-Usage:
-  bash install.sh [--target PATH | --project PATH] [--dry-run]
-
-Options:
-  --project PATH   Install into PATH/.claude/skills.
-  --target PATH    Install directly into a skills directory.
-  --dry-run        Show what would change without writing files.
-
-Unchanged skills are left untouched. A changed same-named directory is moved to a
-timestamped backup before the FIRM version is installed.
-USAGE
-}
-
-while [[ $# -gt 0 ]]; do
-  case "$1" in
-    --target)
-      [[ $# -ge 2 ]] || { echo "error: --target requires a path" >&2; exit 2; }
-      TARGET_DIR="$2"
-      shift 2
-      ;;
-    --project)
-      [[ $# -ge 2 ]] || { echo "error: --project requires a path" >&2; exit 2; }
-      [[ -d "$2" ]] || { echo "error: project directory not found: $2" >&2; exit 2; }
-      TARGET_DIR="$2/.claude/skills"
-      shift 2
-      ;;
-    --dry-run)
-      DRY_RUN=1
-      shift
-      ;;
-    -h|--help)
-      usage
-      exit 0
-      ;;
-    *)
-      echo "error: unknown argument: $1" >&2
-      usage >&2
-      exit 2
-      ;;
-  esac
-done
-
-[[ -d "${SOURCE_DIR}" ]] || {
-  echo "error: skills directory not found: ${SOURCE_DIR}" >&2
-  exit 1
-}
-
-skill_dirs=()
-while IFS= read -r skill_dir; do
-  skill_dirs+=("${skill_dir}")
-done < <(
-  find "${SOURCE_DIR}" -mindepth 2 -maxdepth 2 -name SKILL.md -print \
-    | sed 's#/SKILL.md$##' \
-    | sort
-)
-
-if [[ ${#skill_dirs[@]} -ne 17 ]]; then
-  echo "error: expected 17 source skills, found ${#skill_dirs[@]}" >&2
-  exit 1
-fi
-
-timestamp="$(date +%Y%m%d-%H%M%S)"
-backup_dir="${TARGET_DIR}/.firm-backup-${timestamp}"
-installed=0
-unchanged=0
-backed_up=0
-
-echo "FIRM installer"
-echo "  source: ${SOURCE_DIR}"
-echo "  target: ${TARGET_DIR}"
-
-if [[ ${DRY_RUN} -eq 0 ]]; then
-  mkdir -p "${TARGET_DIR}"
-fi
-
-for source_path in "${skill_dirs[@]}"; do
+changed=0
+for source_path in "${ROOT_DIR}"/skills/*; do
+  [[ -d "${source_path}" && -f "${source_path}/SKILL.md" ]] || continue
   name="$(basename "${source_path}")"
   target_path="${TARGET_DIR}/${name}"
-
-  if [[ -d "${target_path}" ]] && diff -qr "${source_path}" "${target_path}" >/dev/null 2>&1; then
-    echo "  unchanged: ${name}"
-    unchanged=$((unchanged + 1))
-    continue
-  fi
-
   if [[ -e "${target_path}" ]]; then
-    echo "  backup: ${name} -> ${backup_dir}/${name}"
-    if [[ ${DRY_RUN} -eq 0 ]]; then
-      mkdir -p "${backup_dir}"
-      mv "${target_path}" "${backup_dir}/${name}"
-    fi
-    backed_up=$((backed_up + 1))
+    mkdir -p "${BACKUP_DIR}/skills"
+    cp -R "${target_path}" "${BACKUP_DIR}/skills/${name}"
   fi
-
-  echo "  install: ${name}"
-  if [[ ${DRY_RUN} -eq 0 ]]; then
-    cp -R "${source_path}" "${target_path}"
-  fi
-  installed=$((installed + 1))
+  rm -rf "${target_path}"
+  cp -R "${source_path}" "${target_path}"
+  changed=$((changed + 1))
 done
 
-if [[ ${DRY_RUN} -eq 1 ]]; then
-  echo "Dry run complete: ${installed} install, ${unchanged} unchanged, ${backed_up} backup."
-  exit 0
+if [[ -d "${TARGET_DIR}/shared-references" ]]; then
+  mkdir -p "${BACKUP_DIR}"
+  cp -R "${TARGET_DIR}/shared-references" "${BACKUP_DIR}/shared-references"
 fi
+cp -R "${ROOT_DIR}/shared-references/." "${TARGET_DIR}/shared-references/"
 
-bash "${ROOT_DIR}/scripts/verify-install.sh" "${TARGET_DIR}"
+find "${TARGET_DIR}" -type d -name __pycache__ -prune -exec rm -rf {} +
+find "${TARGET_DIR}" -type f -name '*.pyc' -delete
 
-echo
-echo "Installed or updated ${installed} skill(s); ${unchanged} unchanged."
-if [[ ${backed_up} -gt 0 ]]; then
-  echo "Backed up ${backed_up} changed directory/directories to:"
-  echo "  ${backup_dir}"
-fi
-echo "Restart Claude Code or run /reload-plugins when applicable."
+echo "Installed ${changed} research skills into ${TARGET_DIR}."
+echo "Previous same-named content was backed up under ${BACKUP_DIR}."
+echo "Canonical project prompt: ${ROOT_DIR}/CLAUDE-RESEARCH.md"

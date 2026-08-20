@@ -6,7 +6,7 @@
 <h1 align="center">Field-tested, end-to-end CS research skills for AI agents.</h1>
 
 <p align="center">
-  Seventeen skills for problem discovery, method formation, experiments,<br>
+  Sixteen skills for problem discovery, method formation, experiments,<br>
   independent second-PI review, and evidence-grounded paper writing.
 </p>
 
@@ -20,7 +20,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat-square" alt="Claude Code plugin">
-  <img src="https://img.shields.io/badge/research_skills-17-285943?style=flat-square" alt="17 research skills">
+  <img src="https://img.shields.io/badge/research_skills-16-285943?style=flat-square" alt="16 research skills">
   <img src="https://img.shields.io/badge/second_PI-independent-4C78A8?style=flat-square" alt="Independent second PI">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f81f7?style=flat-square" alt="MIT License"></a>
 </p>
@@ -36,9 +36,9 @@ drafts. The harder problem is research judgment. FIRM helps an agent decide what
 is worth studying, what a result actually means, what to build next, and when the
 evidence has earned a paper.
 
-One persistent `research` skill owns that scientific through-line across
+One persistent `research-pipeline` skill owns that scientific through-line across
 literature, code, experiments, interpretation, method evolution, and paper
-decisions. Sixteen specialists enter only when their capability is useful.
+decisions. Fifteen specialists enter only when their capability is useful.
 
 End-to-end does not mean silent autonomous spending or a rigid sequence of gates.
 High-impact actions remain explicit, and completed evidence can send the project
@@ -67,7 +67,7 @@ evaluation. To run the neutral case with Claude Code:
 ```bash
 cd demo/fixture
 claude
-# then invoke: /firm:diagnose-result RESULT.md
+# then invoke: /firm:signal-analysis RESULT.md
 ```
 
 ## Contents
@@ -80,7 +80,7 @@ claude
 - [What FIRM does](#what-firm-does)
 - [Enter at any point](#enter-at-any-point)
 - [What makes FIRM different](#what-makes-firm-different)
-- [The 17 skills](#the-17-skills)
+- [The 16 skills](#the-16-skills)
 - [Development timeline](#development-timeline)
 - [Repository map](#repository-map)
 - [Design and documentation](#design-and-documentation)
@@ -102,9 +102,9 @@ Prize -> Fidelity -> Principle -> Design -> Evidence -> Expansion -> Entry
   than merely a larger result table?
 - **Entry:** Is the contribution mature enough for full paper writing?
 
-`second-pi` runs in a fresh context and separates two outside perspectives. Codex is
-the critical co-PI for prize, interpretation, method challenge, and later artifact
-review. Gemini is an optional creative co-PI when competent evidence has earned a v1,
+`research-review` separates two outside perspectives. Codex is a deliberately sparse
+late-stage red-team verifier, with zero calls by default before a credible positive.
+Gemini is an optional creative co-PI when competent evidence has earned a v1,
 an informative failure needs a genuinely different v2 primitive, or a credible
 positive can grow into a larger reusable idea. The lead PI writes each Gemini prompt
 from the live evidence instead of filling a fixed schema, then collision-checks,
@@ -113,8 +113,8 @@ unavailability does not pause the research.
 
 Gemini collaboration uses the Antigravity CLI (`agy`) and is optional. The canonical,
 model-pinned invocation is maintained in
-[`second-pi`](skills/second-pi/SKILL.md); installations without `agy` retain the full
-Claude lead-PI and Codex review workflow.
+[`research-review`](skills/research-review/SKILL.md); installations without `agy` retain the
+lead-PI workflow and use Codex only at evidence-earned late boundaries.
 
 ### The operational research loop
 
@@ -142,10 +142,10 @@ collide with skills from other plugins.
 For a quick trial in the current repository:
 
 ```text
-/firm:research "Own this project as a persistent first author. Preserve the important problem, establish credible baselines, record every result, update explanations only from discriminating evidence bundles, build reusable primitives, and write only when the evidence is ready."
+/firm:research-pipeline "Own this project as a persistent first author. Preserve the important problem, establish credible baselines, record every result, update explanations only from discriminating evidence bundles, build reusable primitives, and write only when the evidence is ready."
 ```
 
-`research` is the persistent owner, not a macro that blindly runs all 17 skills.
+`research-pipeline` is the persistent owner, not a macro that blindly runs all 16 skills.
 It reads the current project state, chooses one highest-value next action, and
 brings in a specialist only when the live uncertainty requires it.
 
@@ -174,7 +174,7 @@ The initializer preserves an existing `CLAUDE.md` and creates:
 ```text
 my-research-project/
 ├── CLAUDE.md
-├── .claude/skills/            # 17 project-local FIRM skills
+├── .claude/skills/            # 16 project-local FIRM skills
 └── .firm/
     ├── RESEARCH_PROGRAM.md
     ├── FIRST_MESSAGE_NEW.md
@@ -205,7 +205,7 @@ For a new program, use [`.firm/FIRST_MESSAGE_NEW.md`](templates/FIRST_MESSAGE_NE
 or invoke:
 
 ```text
-/research "Start from .firm/RESEARCH_PROGRAM.md, establish the strongest empirical contact point, and execute the highest-value reversible next action."
+/research-pipeline "Start from .firm/RESEARCH_PROGRAM.md, establish the strongest empirical contact point, and execute the highest-value reversible next action."
 ```
 
 For an existing project, use
@@ -231,7 +231,7 @@ not silently spend compute, inspect remote jobs, or rewrite a manuscript.
 
 | Discover | Build | Finish |
 |---|---|---|
-| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn negative results into a constructive method lineage; optionally use Gemini to co-invent evidence-earned primitives | Use Codex as a critical co-PI for prize, interpretation, method challenge, scope, and paper readiness |
+| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn negative results into a constructive method lineage; optionally use Gemini to co-invent evidence-earned primitives | Use sparse Codex red-team review only after credible positive evidence or for one named near-final risk |
 | Keep the original research program and community value visible as the project evolves | Distinguish implementation, design, optimization, statistical, and transfer uncertainty | Align the final claim with controls, costs, limitations, citations, and raw artifacts |
 
 One persistent researcher owns the program. Specialist skills are tools loaded
@@ -244,22 +244,19 @@ an active experiment, or a draft:
 
 | Current situation | Direct entry |
 |---|---|
-| Choose a consequential field and empirical surface | `/firm:discover-direction [field or constraints]` |
-| Start or resume a complete research program | `/firm:research [goal or project state]` |
+| Choose a consequential field and empirical surface | `/firm:frontier-direction-discovery [field or constraints]` |
+| Start or resume a complete research program | `/firm:research-pipeline [goal or project state]` |
 | Establish a field-standard empirical anchor | `/firm:baseline [task or benchmark]` |
-| Interpret a negative, mixed, or surprising result | `/firm:diagnose-result [result path]` |
-| Invent or repair the method primitive | `/firm:design-method [evidence or failed component]` |
-| Choose a decisive experiment campaign | `/firm:plan-experiments [method, claim, budget]` |
-| Launch a registered experiment | `/firm:register-experiment` then `/firm:run-experiment` |
-| Challenge a consequential decision independently | `/firm:second-pi [decision or evidence]` |
-| Audit paper readiness and produce the manuscript | `/firm:audit-research` then `/firm:write-paper [paper directory]` |
+| Interpret a negative, mixed, or surprising result | `/firm:signal-analysis [result path]` |
+| Invent or repair the method primitive | `/firm:method-primitive-synthesis [evidence or failed component]` |
+| Choose a decisive experiment campaign | `/firm:experiment-plan [method, claim, budget]` |
+| Launch a registered experiment | `/firm:research-contract` then `/firm:run-experiment` |
+| Challenge a consequential decision independently | `/firm:research-review [decision or evidence]` |
+| Audit paper readiness and produce the manuscript | `/firm:research-state-audit` then `/firm:paper-writing [paper directory]` |
 
-Most judgment skills may activate when relevant. Seven high-impact skills are
-**explicit-only**: `run-experiment`, `monitor-experiment`, `write-paper`,
-`improve-paper`, `make-figures`, `audit-experiment`, and `audit-citations`.
-Claude will not silently spend compute, inspect a remote system, rewrite a
-manuscript, or run an artifact-level submission audit just because a description
-matches.
+Skills with compute, remote, destructive, manuscript-wide, or submission side effects
+must still respect the surrounding tool permissions and project authority. Scientific
+relevance never grants permission for an irreversible action.
 
 ## What makes FIRM different
 
@@ -293,18 +290,16 @@ principle can become a reusable primitive, supervision or data engine, predicted
 cross-task finding, or systems capability. Probe budget tests openings; paper budget
 is concentrated only on ideas whose scientific upside grows with the investment.
 
-## The 17 skills
+## The 16 skills
 
 | Discover & anchor | Diagnose & design | Run & verify | Write & finish |
 |---|---|---|---|
-| [`research`](skills/research/SKILL.md) | [`diagnose-result`](skills/diagnose-result/SKILL.md) | [`register-experiment`](skills/register-experiment/SKILL.md) | [`write-paper`](skills/write-paper/SKILL.md) |
-| [`discover-direction`](skills/discover-direction/SKILL.md) | [`design-method`](skills/design-method/SKILL.md) | [`run-experiment`](skills/run-experiment/SKILL.md) | [`improve-paper`](skills/improve-paper/SKILL.md) |
-| [`literature-review`](skills/literature-review/SKILL.md) | [`plan-experiments`](skills/plan-experiments/SKILL.md) | [`monitor-experiment`](skills/monitor-experiment/SKILL.md) | [`audit-citations`](skills/audit-citations/SKILL.md) |
-| [`baseline`](skills/baseline/SKILL.md) | [`second-pi`](skills/second-pi/SKILL.md) | [`audit-experiment`](skills/audit-experiment/SKILL.md) | [`make-figures`](skills/make-figures/SKILL.md) |
-|  |  | [`audit-research`](skills/audit-research/SKILL.md) |  |
+| [`research-pipeline`](skills/research-pipeline/SKILL.md) | [`signal-analysis`](skills/signal-analysis/SKILL.md) | [`research-contract`](skills/research-contract/SKILL.md) | [`research-state-audit`](skills/research-state-audit/SKILL.md) |
+| [`frontier-direction-discovery`](skills/frontier-direction-discovery/SKILL.md) | [`method-primitive-synthesis`](skills/method-primitive-synthesis/SKILL.md) | [`run-experiment`](skills/run-experiment/SKILL.md) | [`auto-paper-improvement-loop`](skills/auto-paper-improvement-loop/SKILL.md) |
+| [`research-lit`](skills/research-lit/SKILL.md) | [`experiment-plan`](skills/experiment-plan/SKILL.md) | [`monitor-experiment`](skills/monitor-experiment/SKILL.md) | [`paper-writing`](skills/paper-writing/SKILL.md) |
+| [`baseline`](skills/baseline/SKILL.md) | [`research-review`](skills/research-review/SKILL.md) | [`research-audit`](skills/research-audit/SKILL.md) | [`resubmit-pipeline`](skills/resubmit-pipeline/SKILL.md) |
 
-See the [skills index](skills/INDEX.md) for trigger boundaries, arguments, and
-recommended combinations.
+See the [reform map](REFORM_MAP.md) for ownership boundaries and consolidation history.
 
 ## Development timeline
 
@@ -319,7 +314,7 @@ followed a recurring failure observed in live research.
 | 2026 Q1 | One failed realization closed whole method families, while broken designs triggered wasteful seed expansion | Separated run, realization, primitive, and family failure; made constructive redesign the default |
 | 2026 Q2 | Broad programs shrank into private cells, and failed methods were repackaged as analysis papers | Added scope debt, standard-task reintegration, positive-object tests, and independent paper entry |
 | 2026-06 | Three human-verified papers developed under successive versions entered external review | Nine official ACL ARR reviews returned mean overall assessments of 3.50, 3.33, and 3.17 |
-| 2026-07-27 | More than 100B model tokens across five model families exposed repeated agent failure modes and overlapping workflow rules | Consolidated the system into one persistent researcher and 17 focused skills |
+| 2026-07-27 | More than 100B model tokens across five model families exposed repeated agent failure modes and overlapping workflow rules | Consolidated the system into one persistent researcher and 16 focused skills |
 
 Only aggregate review scores are public to protect active double-blind work. They
 are not acceptance decisions or a controlled estimate of FIRM's causal effect.
@@ -331,7 +326,7 @@ submission.
 ```text
 FIRM/
 ├── .claude-plugin/   # Claude Code plugin and marketplace manifests
-├── skills/           # 17 callable research skills and scoped references
+├── skills/           # 16 callable research skills and scoped references
 ├── templates/        # optional project-local research bootstrap
 ├── examples/         # sanitized research-agent failure cases
 ├── demo/             # neutral result-diagnosis fixture and demo script
@@ -349,7 +344,7 @@ scoped.
 ## Design and documentation
 
 - [Getting started](docs/getting-started.md)
-- [Skills index and trigger boundaries](skills/INDEX.md)
+- [Reform map and ownership boundaries](REFORM_MAP.md)
 - [Failure map](docs/failure-map.md)
 - [Three sanitized cases](examples/README.md)
 - [Origin and design history](docs/origin-and-design.md)

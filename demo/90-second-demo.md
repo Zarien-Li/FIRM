@@ -27,7 +27,7 @@ Show `/help` with the `/firm:` namespace.
 Open `demo/fixture/RESULT.md`, then invoke:
 
 ```text
-/firm:diagnose-result RESULT.md
+/firm:signal-analysis RESULT.md
 ```
 
 The fixture prompt must remain neutral. Capture a real response and highlight only
@@ -46,9 +46,9 @@ Do not cut together sentences that change the model's meaning.
 Show the next commands rather than another generic loop:
 
 ```text
-/firm:design-method
-/firm:plan-experiments
-/firm:second-pi
+/firm:method-primitive-synthesis
+/firm:experiment-plan
+/firm:research-review
 ```
 
 Explain that each skill has a narrow job and that side-effectful workflows require

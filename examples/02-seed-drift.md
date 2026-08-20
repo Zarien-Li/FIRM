@@ -23,7 +23,7 @@ The researcher keeps three objects visible:
 - scope debt: what must be reconnected before the candidate can represent the
   program.
 
-A fresh `second-pi` review is called early for Prize/Fidelity:
+The lead PI re-establishes Prize/Fidelity from field evidence:
 
 - If every best-case result in the slice came true, would the paper matter?
 - Is the slice a microscope for a shared system defect or the final population?
@@ -33,7 +33,7 @@ A fresh `second-pi` review is called early for Prize/Fidelity:
 ## Starting Prompt
 
 ```text
-Use `/firm:second-pi` for an early Prize/Fidelity review. Compare the original
+Use `/firm:research-pipeline` to compare the original
 program with the current candidate claim and evidence population. Identify
 scope debt, perform the best-case prize test, and design the shortest
 reintegration path to a standard task or natural workflow. Do not discard a

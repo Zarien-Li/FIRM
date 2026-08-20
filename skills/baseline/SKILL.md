@@ -1,8 +1,6 @@
 ---
 name: baseline
-description: Establishes competent empirical contact by reproducing strong field-standard systems and reading natural successes, failures, disagreements, substrate competence, and nearest-rival ownership.
-when_to_use: Use when a project needs benchmark fidelity, a trustworthy comparison, raw natural behavior, or proof that an opening is real enough to support explanation and construction.
-argument-hint: "[task, benchmark, or baseline]"
+description: Establish trustworthy empirical contact with a field through accepted tasks, strong incumbents, simple alternatives, substrate checks, evaluator validation, and raw behavioral reading. Use when creating or repairing the evidence foundation for research.
 ---
 
 # Baseline And Empirical Contact
@@ -152,5 +150,5 @@ needs one. Keep it compact:
 ```
 
 Return validated observations to the current research episode. Interpretation belongs
-to `/firm:diagnose-result`; construction belongs to `/firm:design-method`; paper
+to `signal-analysis`; construction belongs to `method-primitive-synthesis`; paper
 identity belongs to the later paper-formation stage.

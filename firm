@@ -18,7 +18,7 @@ Usage:
   firm prompt new|audit
 
 Commands:
-  init     Install the 17 skills into PROJECT/.claude/skills and add a small
+  init     Install the 16 skills into PROJECT/.claude/skills and add a small
            research bootstrap. Existing project instructions are preserved.
   doctor   Validate a project-local installation without changing it.
   list     Print the available project-local skill commands.
@@ -35,12 +35,52 @@ absolute_project() {
   )
 }
 
+install_project_skills() {
+  local project="$1"
+  local target="${project}/.claude/skills"
+  local backup="${project}/.firm/skill-backup-$(date +%Y%m%d-%H%M%S)"
+  local source_path target_path name changed=0
+
+  mkdir -p "${target}"
+  for source_path in "${ROOT_DIR}"/skills/*; do
+    [[ -d "${source_path}" && -f "${source_path}/SKILL.md" ]] || continue
+    name="$(basename "${source_path}")"
+    target_path="${target}/${name}"
+    if [[ -d "${target_path}" ]] && diff -qr "${source_path}" "${target_path}" >/dev/null 2>&1; then
+      continue
+    fi
+    if [[ -e "${target_path}" ]]; then
+      mkdir -p "${backup}"
+      mv "${target_path}" "${backup}/${name}"
+    fi
+    cp -R "${source_path}" "${target_path}"
+    changed=$((changed + 1))
+  done
+
+  target_path="${target}/shared-references"
+  if [[ ! -d "${target_path}" ]] || ! diff -qr "${ROOT_DIR}/shared-references" "${target_path}" >/dev/null 2>&1; then
+    if [[ -e "${target_path}" ]]; then
+      mkdir -p "${backup}"
+      mv "${target_path}" "${backup}/shared-references"
+    fi
+    mkdir -p "${target_path}"
+    cp -R "${ROOT_DIR}/shared-references/." "${target_path}/"
+    changed=$((changed + 1))
+  fi
+
+  if [[ ${changed} -eq 0 ]]; then
+    echo "Kept unchanged project-local research skills"
+  else
+    echo "Installed or updated ${changed} project-local research skill payload(s)"
+  fi
+}
+
 init_project() {
   local project
   project="$(absolute_project "${1:-$PWD}")"
 
   mkdir -p "${project}/.firm"
-  bash "${ROOT_DIR}/install.sh" --project "${project}"
+  install_project_skills "${project}"
 
   if [[ ! -e "${project}/.firm/RESEARCH_PROGRAM.md" ]]; then
     cp "${ROOT_DIR}/templates/RESEARCH_PROGRAM.md" \
@@ -89,7 +129,7 @@ init_project() {
   echo "Next:"
   echo "  1. Review .firm/RESEARCH_PROGRAM.md"
   echo "  2. Run: cd \"${project}\" && claude"
-  echo "  3. Invoke /research, or use one of the first-message templates"
+  echo "  3. Invoke /research-pipeline, or use one of the first-message templates"
 }
 
 doctor_project() {

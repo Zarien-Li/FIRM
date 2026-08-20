@@ -55,7 +55,7 @@ work merely because interventions failed. A different contribution type requires
 - confirmation independent of the evidence that selected it;
 - a scientific or operational consequence;
 - comparison with the strongest existing account;
-- a fresh paper identity and independent review.
+- a fresh paper identity grounded in the new object's evidence.
 
 The lead PI may make this reversible scientific decision unless it changes an
 explicitly locked project or deliverable. Failed interventions may motivate the
@@ -66,8 +66,8 @@ question but cannot supply importance, confirmation, or impossibility by their c
 Before paper entry, use notes or a clearly marked research draft to organize a credible
 positive object. Early writing may expose gaps; it does not confer readiness.
 
-Submission-oriented expansion requires a fresh artifact review based on raw evidence.
-The compact `PAPER_ENTRY.md` should establish:
+Submission-oriented expansion requires a lead-PI synthesis based on raw evidence. The
+compact `PAPER_ENTRY.md` should establish:
 
 - important natural or accepted problem and program bridge;
 - exact contribution identity and positive object;
@@ -76,7 +76,9 @@ The compact `PAPER_ENTRY.md` should establish:
 - utility, capability, latency, and cost tradeoffs that matter;
 - provenance, strongest contrary evidence, scope debt, and honest non-claims.
 
-Return entry to hold if a decisive rival wins, population or primary metric changes,
+An optional near-final independent audit may verify the fixed object under the sparse
+Codex policy; it is not a prerequisite for writing and cannot create or revoke the
+contribution identity by preference alone. Return entry to hold if a decisive rival wins, population or primary metric changes,
 seed provenance is selective, a fair control reverses the claim, the advertised object
 was not implemented, only a private cell remains, contribution type changes, or
 central evidence is invalidated. Reconcile the science; do not build a defensive grid

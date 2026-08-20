@@ -1,9 +1,12 @@
 # Changelog
 
-## Unreleased
+## 1.2.0 - 2026-08-20
 
-- Split independent collaboration by comparative advantage: Codex remains the critical
-  co-PI, while optional Gemini 3.1 Pro collaboration supplies evidence-grounded creative
+- Replaced the public alias layer with the byte-identical local canonical skill
+  payload: 16 skills, shared references, `CLAUDE-RESEARCH.md`, and installer.
+
+- Split independent collaboration by comparative advantage: Codex is now a sparse
+  late-stage red-team verifier, while optional Gemini 3.1 Pro collaboration supplies evidence-grounded creative
   invention before v1, during substantive v2 redesign, and during positive program
   expansion. Gemini prompts remain episode-authored, and proposals require normal
   literature collision checks, implementation, and experiments.
@@ -50,10 +53,10 @@
 ## 1.0.0
 
 - Added official Claude Code plugin and marketplace manifests.
-- Reworked all 17 skill descriptions for clearer activation boundaries.
+- Reworked all 16 skill descriptions for clearer activation boundaries.
 - Added explicit-only safeguards for compute, remote, manuscript-wide, and
   artifact-level audit workflows.
-- Made `second-pi` provider-neutral and independent through a fresh context.
+- Made `research-review` provider-neutral and independent through a fresh context.
 - Rebuilt the flagship result-diagnosis, method-design, experiment, audit, and
   paper workflows with progressive disclosure.
 - Added a neutral demo fixture, concise documentation, validation CI, and an

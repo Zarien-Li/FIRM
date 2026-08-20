@@ -34,7 +34,7 @@ The researcher:
 ## Starting Prompt
 
 ```text
-Use `/firm:research` as the persistent first author. Read RESULT.md and the
+Use `/firm:research-pipeline` as the persistent first author. Read RESULT.md and the
 training artifacts. The new method loses clearly to the matched baseline on
 one competent development seed. Do not close the field and do not launch more
 seeds to search for a win. Diagnose implementation, optimization, actuation,

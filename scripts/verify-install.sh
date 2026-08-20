@@ -24,8 +24,8 @@ for source_path in "${skill_dirs[@]}"; do
   fi
 done
 
-if [[ ${#skill_dirs[@]} -ne 17 ]]; then
-  echo "Source validation failed: expected 17 skills, found ${#skill_dirs[@]}." >&2
+if [[ ${#skill_dirs[@]} -ne 16 ]]; then
+  echo "Source validation failed: expected 16 skills, found ${#skill_dirs[@]}." >&2
   missing=$((missing + 1))
 fi
 

@@ -1,6 +1,6 @@
 {
   "name": "firm-research",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Research judgment skills for Claude Code.",
   "owner": {
     "name": "Zeyan Li",
@@ -11,7 +11,7 @@
       "name": "firm",
       "displayName": "FIRM — Research Judgment",
       "source": "./",
-      "description": "17 research skills for choosing directions, diagnosing results, designing methods, running experiments, auditing evidence, and writing papers.",
+      "description": "16 canonical research skills for choosing directions, diagnosing results, designing methods, running experiments, auditing evidence, and writing papers.",
       "author": {
         "name": "Zeyan Li",
         "url": "https://github.com/Zoiya-Li"

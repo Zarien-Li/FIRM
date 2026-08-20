@@ -72,13 +72,12 @@ importance at its actual scope. FIRM separates:
 The purpose is not to force every paper to solve the whole field. It is to prevent a
 small private cell from borrowing significance from a broad field name.
 
-### Independent review enters before the last draft
+### Independent collaboration follows comparative advantage
 
-The `second-pi` skill runs in a fresh Claude context by default. Its job is to
-reconstruct the evidence, test the best-case prize, challenge fidelity to the
-original problem, invent alternatives, attack the strongest claim, and recommend a
-decision. Another model can serve as the reviewer, but no provider or MCP server is
-a core dependency.
+The `research-review` skill uses Gemini selectively for evidence-earned creative
+invention and Codex sparingly for late-stage red-team verification. The lead PI owns
+interpretation, implementation, continuation, and paper decisions. External model
+output is design or criticism material, never a project gate.
 
 ### Finishing is a scientific decision
 
@@ -126,11 +125,11 @@ public repository therefore emphasizes inspectable skills, neutral examples,
 explicit safety boundaries, and reproducible installation rather than a headline
 usage number.
 
-## Why only 17 skills
+## Why only 16 skills
 
 FIRM does not try to win by containing every research utility. Literature APIs,
 benchmark launchers, plotting libraries, LaTeX tools, and general coding agents
-already exist. The 17 skills cover the points where research judgment most often
+already exist. The 16 skills cover the points where research judgment most often
 changes the value of those tools:
 
 - choosing and preserving a consequential problem;

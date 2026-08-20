@@ -51,7 +51,7 @@ Before consequential work:
 1. read origin metadata and exact source;
 2. run the project identity guard when configured;
 3. read project operations and the one concise authoritative live state;
-4. read active `/firm:research`;
+4. read active `research-pipeline`;
 5. load only the specialist skill and raw evidence needed for the current question.
 
 For a legacy project, recover the earliest reliable user seed rather than accepting a
@@ -69,7 +69,7 @@ needed.
 
 ## Scientific Rhythm
 
-Follow the flexible rhythm in `/firm:research`:
+Follow the flexible rhythm in `research-pipeline`:
 
 `empirical contact -> explanatory pause -> construction arc -> credible positive object -> program expansion -> paper formation -> stabilization and writing`
 
@@ -90,39 +90,40 @@ expansion before shrinking into defensive reviewer experiments.
 
 ## Specialist Use
 
-- `/firm:discover-direction`, `/firm:literature-review`, `/firm:baseline`: field and empirical contact;
-- `/firm:diagnose-result`: evidence bundles and competing explanations;
-- `/firm:design-method`: construction arcs and repair;
-- `/firm:plan-experiments`, `/firm:register-experiment`: evidence design and prospective registration;
-- `/firm:run-experiment`, `/firm:monitor-experiment`: execution facts only;
-- `/firm:second-pi`: role-separated independent review or creative collaboration at
+- `frontier-direction-discovery`, `research-lit`, `baseline`: field and empirical contact;
+- `signal-analysis`: evidence bundles and competing explanations;
+- `method-primitive-synthesis`: construction arcs and repair;
+- `experiment-plan`, `research-contract`: evidence design and prospective registration;
+- `run-experiment`, `monitor-experiment`: execution facts only;
+- `research-review`: role-separated independent review or creative collaboration at
   consequential episode boundaries;
-- `/firm:audit-experiment`, `/firm:audit-research`: factual or boundary audits when warranted;
-- `/firm:write-paper`: provisional research drafting and earned paper production.
+- `research-audit`, `research-state-audit`: factual or boundary audits when warranted;
+- `paper-writing`: provisional research drafting and earned paper production.
 
 Do not scan or chain every skill. The same lead researcher owns synthesis before and
 after specialist use.
 
-Independent colleagues have different jobs. Codex is the critical co-PI: Field/Prize
-before competent contact, Interpret after a meaningful natural evidence bundle and
-PI-supplied competing explanations, Method Challenge after an evidence-supported
-construction exists, Program Expansion after a credible positive realization, and
-artifact review only for later fixed objects. Gemini is the creative co-PI: invite it
+Independent colleagues have different jobs. Codex is a sparse late-stage red-team
+verifier, not the routine critical co-PI. Default to zero Codex calls during contact,
+interpretation, invention, cheap realization, repair, frame locking, and re-grounding.
+Normally use at most one pass after a credible positive object and before paper-sized
+expansion, plus optionally one near-final factual, claim, citation, or proof audit.
+Codex cannot veto an exploratory principle, choose `PARK`, close the broad program, or
+change contribution identity; harsh reviewer preference is not empirical
+falsification or calibrated acceptance probability. Gemini is the creative co-PI:
+invite it
 when competent evidence leaves a real design opportunity before v1, when an informative
 failed realization has earned a different primitive for v2, or when a credible positive
 could support a larger reusable idea. These are examples for judgment, not required
 stages or a call counter.
 
 The lead PI writes Gemini's prompt from the live evidence and asks for genuine
-co-invention, without a fixed response schema. Follow `/firm:second-pi` for the verified
+co-invention, without a fixed response schema. Follow `research-review` for the verified
 Gemini model pin and invocation; do not silently accept Flash or another fallback.
 Gemini may challenge assumptions and propose bold primitives; its output is design
 material, not authority, literature fact, or experimental evidence. The lead PI
-selects, collision-checks, implements, and tests it. When a mature failure map keeps
-producing nearby variants instead of a new editable computation, do not silently remain
-inside that frame: invite creative divergence or re-ground the broad program. After a
-Gemini call, synthesize one principle before Codex challenge or implementation; never
-turn the raw brainstorm into parallel work.
+selects, collision-checks, implements, and tests it. Whenever feasible, the smallest
+real realization should criticize the idea before Codex does.
 Failure of either independent provider is infrastructure, not a reason to pause or a
 scientific verdict.
 

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "evidence": {
+    "anchor.eval.v1": {
+      "status": "valid",
+      "depends_on": [],
+      "artifacts": ["eval.py"],
+      "supports": [],
+      "reason": null,
+      "superseded_by": null
+    },
+    "run.seed0.v1": {
+      "status": "valid",
+      "depends_on": ["anchor.eval.v1"],
+      "artifacts": ["results/seed0.json"],
+      "supports": [],
+      "reason": null,
+      "superseded_by": null
+    },
+    "result.main.v1": {
+      "status": "valid",
+      "depends_on": ["run.seed0.v1"],
+      "artifacts": ["paper/table1.tex"],
+      "supports": ["C1", "Table1"],
+      "reason": null,
+      "superseded_by": null
+    }
+  }
+}

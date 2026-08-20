@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED = {
-    "skills/research/SKILL.md": (
+    "skills/research-pipeline/SKILL.md": (
         "## Keep A Program Compass",
         "## Work In Research Episodes",
         "## Expand Positive Science",
@@ -21,30 +21,33 @@ REQUIRED = {
         "`training`",
         "`diagnostic`",
     ),
-    "skills/diagnose-result/SKILL.md": (
+    "skills/signal-analysis/SKILL.md": (
         "## Observation Is The Default Update",
         "## Read A Construction Arc Constructively",
         "## Separate Predictive Signal From Editable Cause",
     ),
-    "skills/design-method/SKILL.md": (
+    "skills/method-primitive-synthesis/SKILL.md": (
         "candidate",
         "realization",
         "## Cultivate One Construction Arc",
         "80% deletion test",
     ),
-    "skills/plan-experiments/SKILL.md": (
+    "skills/experiment-plan/SKILL.md": (
         "## Use Two Resource Postures",
         "## Plan A Construction Arc",
         "one healthy paired development seed",
     ),
-    "skills/second-pi/SKILL.md": (
+    "skills/research-review/SKILL.md": (
+        "## Sparse Codex Policy",
+        "Default to **zero Codex calls**",
+        "reviewer preference",
         "## Field And Prize",
         "## Interpret",
         "## Method Challenge",
         "## Program Expansion",
     ),
     "shared-references/research-principles.md": ("P01", "P26", "P51"),
-    "skills/research/references/regression-scenarios.md": (
+    "skills/research-pipeline/tests/regression-scenarios.md": (
         "## A.",
         "## M.",
         "## Z.",
@@ -52,22 +55,27 @@ REQUIRED = {
 }
 
 FORBIDDEN = {
-    "skills/research/SKILL.md": (
+    "skills/research-pipeline/SKILL.md": (
         "Every construction episode targets a named paper asset",
         "After two failures",
         "Every result must produce",
     ),
-    "skills/diagnose-result/SKILL.md": (
+    "skills/signal-analysis/SKILL.md": (
         "paper_asset_delta",
         "benchmark_movement",
     ),
-    "skills/design-method/SKILL.md": (
+    "skills/method-primitive-synthesis/SKILL.md": (
         "continuation burden",
         "exit_to_reground:",
     ),
-    "skills/second-pi/SKILL.md": (
+    "skills/research-review/SKILL.md": (
         "Interpret -> Invent -> Attack",
         "Codex decides whether the project must stop",
+        "Codex is the critical co-PI",
+        "Codex may choose `PARK`",
+    ),
+    "skills/paper-writing/SKILL.md": (
+        "from a fresh `/research-review` artifact review",
     ),
 }
 

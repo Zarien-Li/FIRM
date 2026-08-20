@@ -60,13 +60,13 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P27 | Separate Codex's critical Field/Prize, Interpret, Method Challenge, and Program Expansion roles by evidence maturity; the lead PI owns synthesis and decisions. | `second-pi` |
-| P28 | Review completed evidence bundles or construction episodes, not every probe; the lead PI accepts, defers, or rejects advice against evidence. | `research-review` |
-| P29 | Independent-provider failure is infrastructure and independent co-PI output is advice, never evidence, a stop judgment, or a user constraint. | `second-pi` |
+| P27 | The lead PI and real evidence drive discovery, interpretation, construction, repair, and re-grounding; Gemini may widen principle space, while Codex is reserved for sparse late-stage red-team verification. | `research-review` |
+| P28 | Default to zero Codex calls before a credible positive object; when feasible, run the smallest real realization before external criticism. | `research-review` |
+| P29 | Codex output is advice, not calibrated acceptance probability, evidence, a stop judgment, or a user constraint; it cannot veto exploratory principles, choose PARK, close broad programs, or change contribution identity. | `research-review` |
 | P30 | A failed method lineage cannot automatically become an analysis, measurement, mechanism, theory, or systems paper. | `research-control-protocol.md` |
 | P31 | A changed contribution type requires an independently valuable object, independently selected confirmation, fresh paper identity, and independent review; user approval is required only across an explicit locked boundary. | `research-control-protocol.md` |
 | P32 | Evidence stability is not contribution maturity; harvest when the positive object, decisive comparison, value, and paper-critical evidence are stable. | `research-pipeline` |
-| P33 | Submission expansion and readiness require independent paper entry; early research drafting may expose gaps but cannot confer maturity. | `research-control-protocol.md` |
+| P33 | Submission readiness requires a lead-PI evidence-bearing paper entry; early research drafting may expose gaps, and an optional near-final independent audit verifies rather than creates maturity. | `paper-writing` |
 
 ## Writing And Context
 
@@ -82,7 +82,7 @@ restating the rule.
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P38 | Prefer consequential default assumptions and simple reusable replacement principles; discovery slices are entry points, not intellectual endpoints. | `research-pipeline` |
-| P39 | After a credible positive realization, assess program expansion and research leverage before narrowing to a paper or spending a paper-sized budget. | `research-pipeline` and `research-review` |
+| P39 | After a credible positive realization, the PI and optionally Gemini assess program expansion and research leverage; one sparse Codex pass may test a named fatal risk before paper-sized spend. | `research-pipeline` and `research-review` |
 | P40 | Allocate probe and paper budgets by evidence maturity and upside; do not distribute claim-scale compute evenly or use it to defend low-leverage private cells. | `experiment-plan` |
 | P41 | One governing contribution identity may earn a connected stack of phenomenon, primitive, realization, general finding, and reusable machinery; never force a quota. | `paper-writing` |
 
@@ -94,7 +94,7 @@ restating the rule.
 | P43 | When a natural premise is contradicted or survives only through narrower internal definitions, re-ground in the original program before starting another lineage. | `research-pipeline` |
 | P44 | A construction episode pursues one consequential design question and is read as a bundle; its early versions need not individually yield paper assets, but the arc must retain a plausible path to accepted-task or natural-system value. | `experiment-plan` and `method-primitive-synthesis` |
 | P45 | When a competent construction arc repeatedly answers the same design question without natural or accepted-task movement, re-ground before extending it; another arc needs new evidence for a genuinely different load-bearing prediction, not a renamed variant. | `method-primitive-synthesis` and `research-pipeline` |
-| P46 | Negative evidence defaults to observation and consolidation; no external co-PI automatically interprets a hidden variable or invents the next construction from an ordinary negative. | `second-pi` |
+| P46 | Negative evidence defaults to observation and consolidation; Codex does not automatically interpret a hidden variable or invent the next construction. | `research-review` |
 
 ## Research Rhythm And Activation
 
@@ -105,7 +105,6 @@ restating the rule.
 | P49 | Method formation is a construction arc that may contain several evidence-directed realizations and ablations under one principle; small versions are not separate paper identities. | `method-primitive-synthesis` |
 | P50 | Paper-asset and claims-evidence accounting belongs to expansion, stabilization, and harvest; ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
 | P51 | Operational systems expose process, job, resource, and liveness facts; they do not choose explanations, methods, contribution types, or research routes. | `run-experiment` and project operations |
-| P52 | Use Gemini selectively as a creative co-PI after competent evidence has earned invention or expansion; prompts are authored from the live episode, and proposals remain design material until collision-checked, implemented, and tested. | `second-pi` |
 
 ## Maintenance Rule
 

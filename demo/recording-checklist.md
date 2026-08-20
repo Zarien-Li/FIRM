@@ -5,7 +5,7 @@
 - Test the exact public marketplace install in a clean Claude Code session.
 - Run `make check` from a clean clone.
 - Use `demo/fixture/PROMPT.md` without adding the desired conclusion.
-- Capture a real `/firm:diagnose-result RESULT.md` response.
+- Capture a real `/firm:signal-analysis RESULT.md` response.
 - Preserve the raw response in the release notes or demo branch when practical.
 
 ## Capture

@@ -1,104 +1,100 @@
 ---
 name: monitor-experiment
-description: Checks running experiments, collects logs and result files, and summarizes progress without inventing missing outcomes.
-when_to_use: Invoke explicitly to inspect local, screen, Slurm, SSH, or W&B jobs and connect completed outputs back to the research state.
-argument-hint: "[job, server, or result path]"
-disable-model-invocation: true
+description: Reconcile registered local, CPU, GPU, SSH, scheduler, and other long-running research jobs with actual processes, logs, outputs, and completion state. Use for operational monitoring and exact result handoff, not scientific interpretation.
 ---
 
-# Monitor an Experiment
+# Monitor Experiment
 
-Inspect the requested jobs and return an evidence-linked status. Monitoring is
-read-oriented: do not restart, cancel, delete, or modify jobs unless the user
-explicitly requests that action after the diagnosis.
+Monitor the selected run faithfully. This skill owns operational truth, not scientific
+meaning, method choice, or continuation.
 
-## 1. Recover durable job identity
+## Start From Structured Identity
 
-Read the launch record, tracker, scheduler ID, PID/session name, host, working
-directory, log path, checkpoint path, and expected result path. On shared servers,
-attribute jobs by project path and command, not only by Linux username or container
-name.
+Read the project's configured FIRM Job Registry or scheduler record when one exists.
+Otherwise read the exact run record created by `run-experiment`. Resolve:
 
-If the requested job cannot be uniquely identified, show the plausible candidates
-and the evidence needed to distinguish them. Do not attach another researcher's
-process to the project.
+- stable run and project IDs;
+- execution environment, host, scheduler ID or process identity;
+- PID start token and command fingerprint for unmanaged processes;
+- config and launch command;
+- log, result, checkpoint, completion marker, and resume paths;
+- expected cells and dependencies;
+- evidence role and registered deviations.
 
-## 2. Inspect runtime status
+Do not infer ownership from a PID, terminal title, screen name, GPU memory, or Claude's
+last sentence alone. Reconcile structured identity with the real process and artifacts.
+If identity is absent or ambiguous, report `monitor_state_missing`; repair registration
+before attaching results to a project.
 
-Use the runtime that actually launched the job:
+## Reconcile Execution
 
-- local PID/process manager;
-- `tmux` or `screen` session;
-- Slurm queue and accounting;
-- remote process over an already authorized SSH connection;
-- W&B or another tracker configured by the project.
+Inspect only the mechanism actually used: local process, SSH process, scheduler,
+container, queue, or application service. Prefer targeted queries over broad repeated
+scans.
 
-Collect:
+Classify execution as:
 
-- current state and elapsed time;
-- latest meaningful log lines;
-- step/epoch/progress indicator;
-- recent loss or task metrics when available;
-- GPU memory/utilization and obvious stalls;
-- checkpoint creation and freshness;
-- errors, preemption, OOM, disk, or evaluator failures;
-- final result file existence and parseability.
+- `pending`: registered and waiting on a declared dependency or resource;
+- `running`: matching process/job is alive and making plausible progress;
+- `completed_unread`: expected output exists, parses, and terminal status is clean;
+- `failed`: terminal error with preserved logs;
+- `stuck`: identity is valid but progress has ceased beyond the run's own expectation;
+- `interrupted`: execution vanished without a valid terminal artifact;
+- `invalidated`: output exists but the registered protocol was not executed;
+- `cancelled`: explicitly cancelled.
 
-Do not dump large raw logs into the main response. Read enough context around the
-first causal error and preserve exact paths for deeper inspection.
+Process exit alone is not completion. A live PID alone is not progress. Validate log
+movement or scheduler progress, expected outputs, parseability, terminal markers, and
+the actual scale/config. Distinguish a healthy scientific wait from an operational
+stall.
 
-## 3. Classify the status
+## Verify Result Fidelity
 
-Use one of:
+Before handing off a completed run, check:
 
-- `RUNNING_HEALTHY`;
-- `RUNNING_SLOW_OR_UNCERTAIN`;
-- `STALLED`;
-- `FAILED_INFRASTRUCTURE`;
-- `FAILED_EXPERIMENT`;
-- `PREEMPTED_RESUMABLE`;
-- `COMPLETED_UNVERIFIED`;
-- `COMPLETED_VALID`;
-- `NOT_FOUND`;
-- `AMBIGUOUS_IDENTITY`.
+- output corresponds to the registered run, config, code, data, and checkpoint;
+- every expected cell is present or explicitly missing;
+- metrics parse and contain no unexplained NaN, empty population, constant output, or
+  impossible value;
+- actual model, data, steps, seeds, population, and evaluator match registration;
+- runtime, resource use, retries, and material deviations are recorded;
+- raw predictions or sufficient statistics needed for independent reading exist.
 
-A process exit with a file present is not automatically a valid completion. Check
-that the expected evaluator ran and the result corresponds to the requested config.
+Label a shortened or substituted run `scope-limited`; label a semantically different
+run `invalidated`. Never silently compare it as the intended experiment.
 
-## 4. Decide the operational next step
+## Hand Off One Evidence Bundle
 
-Recommend exactly one of:
-
-- continue monitoring;
-- inspect a named error or artifact;
-- resume from a verified checkpoint;
-- repair and relaunch under `/firm:run-experiment`;
-- collect completed outputs for `/firm:diagnose-result`;
-- ask the user before cancellation or another irreversible action.
-
-Do not change scientific parameters under the label “resume.” If a batch size,
-precision, seed, data, evaluator, or model changes, record it as a new run or an
-explicit deviation.
-
-## 5. Return a concise report
+For `completed_unread`, return a compact bundle to `signal-analysis`:
 
 ```markdown
-# Experiment Status
-
-- Experiment/job ID:
-- Project path:
-- Runtime and host:
-- Status:
-- Elapsed/progress:
-- Latest meaningful evidence:
-- GPU/resource state:
-- Checkpoint:
-- Result artifact:
-- Error or uncertainty:
-- Recommended next action:
-- Exact command or path for the next inspection:
+## Completed Run Bundle
+- run/project IDs and evidence role:
+- config, code, data, checkpoint, and evaluator identities:
+- matched comparison expected:
+- raw result and prediction paths:
+- log, checkpoint, and terminal marker paths:
+- completed/missing cells:
+- raw headline values, without interpretation:
+- deviations, warnings, retries, cost, and runtime:
 ```
 
-For multiple jobs, add a compact table and expand only failed or decision-relevant
-cases. Once valid results exist, hand them to `/firm:diagnose-result`; monitoring
-itself should not make the scientific claim.
+Mark `interpreting` while the bundle is being read and `interpreted` only after the
+scientific observation is recorded in the authoritative research state. Monitoring
+does not explain the result, invent a construction, call Codex, or decide whether to
+continue.
+
+## Notification Policy
+
+Keep healthy `pending` and `running` jobs quiet. Notify the research session only for:
+
+- valid `completed_unread` evidence;
+- `failed`, `stuck`, `interrupted`, or `invalidated` execution;
+- a preparation error the research session must repair;
+- a resource conflict that cannot be resolved inside current operational policy.
+
+Do not repeatedly deliver old completion events. Delivery must be acknowledged once
+by durable event identity, and historical events must not block new work.
+
+Long raw logs remain outside the main research context. Return exact paths, compact
+facts, and only the excerpt needed to diagnose an operational failure.

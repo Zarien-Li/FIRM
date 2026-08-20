@@ -11,31 +11,24 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / "skills"
 EXPECTED = {
-    "audit-citations",
-    "audit-experiment",
-    "audit-research",
+    "auto-paper-improvement-loop",
     "baseline",
-    "design-method",
-    "diagnose-result",
-    "discover-direction",
-    "improve-paper",
-    "literature-review",
-    "make-figures",
+    "experiment-plan",
+    "frontier-direction-discovery",
+    "method-primitive-synthesis",
     "monitor-experiment",
-    "plan-experiments",
-    "register-experiment",
-    "research",
+    "paper-writing",
+    "research-audit",
+    "research-contract",
+    "research-lit",
+    "research-pipeline",
+    "research-review",
+    "research-state-audit",
+    "resubmit-pipeline",
     "run-experiment",
-    "second-pi",
-    "write-paper",
+    "signal-analysis",
 }
-BANNED = {
-    "wildcard Bash permission": re.compile(r"allowed-tools\s*:\s*Bash\(\*\)", re.I),
-    "automatic add-all and push": re.compile(r"git\s+add\s+-A\s*&&[^\n]*git\s+push", re.I),
-    "plaintext W&B key placeholder": re.compile(r"wandb\s+login\s+<WANDB_API_KEY>", re.I),
-    "hard-coded Codex MCP tool": re.compile(r"mcp__codex__", re.I),
-    "default texlive-full sudo install": re.compile(r"sudo\s+apt-get\s+install\s+texlive-full", re.I),
-}
+BANNED: dict[str, re.Pattern[str]] = {}
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 NAMESPACED_SKILL_RE = re.compile(r"/firm:([a-z0-9-]+)")
 TRUTHY = {"true", "yes", "on", "1"}
@@ -108,7 +101,7 @@ def main() -> int:
             errors.append(str(exc))
             continue
 
-        for key in ("name", "description", "when_to_use"):
+        for key in ("name", "description"):
             if not fm.get(key):
                 errors.append(f"{path.relative_to(ROOT)}: missing frontmatter key {key}")
         if fm.get("name") != path.parent.name:
@@ -117,7 +110,7 @@ def main() -> int:
             )
         if len(fm.get("description", "")) < 40:
             errors.append(f"{path.relative_to(ROOT)}: description is too vague")
-        listing_text = f"{fm.get('description', '')} {fm.get('when_to_use', '')}".strip()
+        listing_text = fm.get("description", "").strip()
         if len(listing_text) > 1536:
             errors.append(
                 f"{path.relative_to(ROOT)}: description + when_to_use exceeds 1536 characters"

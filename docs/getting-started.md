@@ -27,37 +27,38 @@ Search for commands beginning with `/firm:`.
 For an existing research project:
 
 ```text
-/firm:research "Reconstruct the original program, current evidence, method lineage, scope debt, and one next action"
+/firm:research-pipeline "Reconstruct the original program, current evidence, method lineage, scope debt, and one next action"
 ```
 
 For a completed result:
 
 ```text
-/firm:diagnose-result path/to/result.json
+/firm:signal-analysis path/to/result.json
 ```
 
 For an independent critique:
 
 ```text
-/firm:second-pi "Review the current interpretation and method decision from raw evidence"
+/firm:research-review "Review the current interpretation and method decision from raw evidence"
 ```
 
 The skills inspect the current project and arguments you provide. Give durable
 paths to raw results, configs, logs, code, and drafts whenever possible.
 
-## Explicit-only skills
+## High-impact boundaries
 
 The following skills can cause material side effects or perform
-submission-oriented work, so Claude will not auto-invoke them:
+submission-oriented work. Invoke them deliberately and retain the surrounding
+tool-permission and project-authority checks:
 
 ```text
 /firm:run-experiment
 /firm:monitor-experiment
-/firm:audit-experiment
-/firm:write-paper
-/firm:improve-paper
-/firm:audit-citations
-/firm:make-figures
+/firm:research-audit
+/firm:paper-writing
+/firm:auto-paper-improvement-loop
+/firm:research-state-audit
+/firm:resubmit-pipeline
 ```
 
 Invoke them deliberately with the relevant path or command.
@@ -77,7 +78,7 @@ This creates:
 ```text
 project/
 ├── CLAUDE.md                 # existing content preserved; one marked FIRM block appended
-├── .claude/skills/           # the 17 project-local skills
+├── .claude/skills/           # the 16 project-local skills
 └── .firm/
     ├── RESEARCH_PROGRAM.md
     ├── FIRST_MESSAGE_NEW.md
@@ -91,8 +92,8 @@ cd /absolute/path/to/project
 claude
 ```
 
-Project-local commands are not plugin-namespaced, so use `/research`,
-`/diagnose-result`, and so on.
+Project-local commands are not plugin-namespaced, so use `/research-pipeline`,
+`/signal-analysis`, and so on.
 
 ## Start a new program
 
@@ -101,7 +102,7 @@ surface. Do not preselect the final failure or method. Then use
 `.firm/FIRST_MESSAGE_NEW.md` as the first request or run:
 
 ```text
-/research "Start from .firm/RESEARCH_PROGRAM.md and establish the best empirical contact point"
+/research-pipeline "Start from .firm/RESEARCH_PROGRAM.md and establish the best empirical contact point"
 ```
 
 ## Audit an existing project
@@ -109,7 +110,7 @@ surface. Do not preselect the final failure or method. Then use
 Attach FIRM, then run:
 
 ```text
-/research "Audit this existing project before more experiments: recover the original program, strongest evidence and contrary evidence, method lineage, scope debt, paper maturity, active jobs, and one recommended next action"
+/research-pipeline "Audit this existing project before more experiments: recover the original program, strongest evidence and contrary evidence, method lineage, scope debt, paper maturity, active jobs, and one recommended next action"
 ```
 
 Do not treat file count, experiment count, or draft polish as evidence of paper

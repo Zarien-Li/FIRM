@@ -1,170 +1,141 @@
 ---
 name: run-experiment
-description: Launches ML experiments locally or on remote GPU servers, including single jobs, Slurm runs, queued sweeps, retries, and resume workflows.
-when_to_use: Invoke explicitly only after the command, environment, output path, budget, and safety constraints are known. It can write files, use compute, and contact remote systems.
-argument-hint: "[command, manifest, or experiment plan]"
-disable-model-invocation: true
+description: Launch reliable local, direct-GPU SSH, Slurm, or queued research experiments with durable configs, logs, checkpoints, results, completion markers, budget tracking, and resume paths. Use after the scientific run is selected; load only the matching operations reference section.
 ---
 
-# Run an Experiment
+# Run Experiment
 
-Launch the requested experiment reproducibly and safely. This skill may consume
-compute, write project files, or contact remote systems, so act only within the
-explicitly established environment, budget, and access.
+Execute the selected experiment faithfully and durably. This skill owns deployment,
+not scientific problem selection. Use `experiment-plan` for why the run matters and
+`signal-analysis` after results complete.
 
-## 1. Recover the run contract
+## Scientific Preflight
 
-Read `$ARGUMENTS`, the experiment plan or registration, project instructions, and
-existing run scripts. Resolve:
+Read the authoritative live state and tracker. Before a consequential launch confirm:
 
-- scientific purpose and experiment ID;
-- exact command and working directory;
-- code revision and uncommitted changes;
-- dataset, checkpoint, config, and seed;
-- local, SSH, Slurm, or another declared scheduler;
-- environment or container;
-- GPU, CPU, memory, time, and monetary budget;
-- durable log, checkpoint, and result paths;
-- success/failure indicator and monitoring method;
-- retry and resume policy.
+- the run answers a current question and no unread result makes it wasteful;
+- its evidence role is `debug`, `pilot`, `method-formation`, or `claim-confirmation`;
+- method, comparator, population, treatment, evaluator, metric, scale, seed, stopping,
+  and forecast match the plan or registration;
+- a full method comparison includes a competent decisive incumbent and strongest
+  simple alternative under matched treatment;
+- the command writes parseable results, durable logs, completion/failure status, and
+  checkpoints/resume information when applicable;
+- expected compute fits the authorized operational budget.
 
-If a field required for safe launch is unknown, ask only for that field. Do not
-invent hostnames, credentials, paths, queues, or budgets.
+If active state, tasks, tracker, or manuscript disagree about method, evaluator,
+baseline, optimizer, run status, or next action, reconcile from code and raw artifacts
+before launch. A task label cannot revive a stale method or paper identity.
 
-For expensive or claim-defining runs, use `/firm:register-experiment` before launch.
+An exploratory run may proceed with a compact record. An expensive or claim-defining
+run needs a frozen forecast and exact provenance, normally through
+`research-contract` or the tracker.
 
-## 2. Preflight without changing the system
+## Protect Interpretability
 
-Check:
+Before a main run:
 
-- current git status and code revision;
-- required files and datasets exist;
-- command parses and configuration resolves;
-- environment is available;
-- disk space and output directories;
-- GPU visibility and free memory where applicable;
-- scheduler partition/account limits;
-- port and process conflicts for services;
-- an existing identical job is not already running;
-- resume checkpoint compatibility.
+- verify data/checkpoint paths, evaluator entrypoint, metric direction, and key
+  derived-metric computation;
+- record evaluation population and every material training-treatment difference;
+- verify intended component engagement and substrate competence;
+- run a small end-to-end execution and inspect raw output;
+- estimate memory and runtime from a real step;
+- confirm checkpoint, log, result, and final-marker writes.
 
-Run a small smoke test when it is cheap and scientifically representative. Do not
-interpret a smoke test as final evidence.
+A smoke test proves execution, not semantic equivalence or scientific effectiveness.
+If the evaluator is still being debugged, label the run `debug` or `pilot`.
 
-## 3. Handle code transfer safely
+When implementation repeatedly fails, record observed failure, verified root cause,
+files changed, why the repair addresses the cause, and which earlier runs are
+invalidated. If root cause remains unknown, the next run is debugging evidence.
 
-Prefer an already shared filesystem or a user-approved `rsync`/copy workflow. Show
-what will be transferred and exclude secrets, datasets, checkpoints, caches, build
-artifacts, and unrelated files.
+A verified implementation/optimizer/evaluator/integration defect normally earns one
+clean matched rerun. If its directional loss remains, do not launch another nearby
+variant without a changed load-bearing assumption and prediction.
 
-Do not automatically run `git add`, `git commit`, `git push`, change remotes, or
-rewrite history. When git synchronization is requested, inspect status and propose
-explicit commands or operate only after the user has authorized the affected files
-and remote.
+Before launching multiple seeds, verify their named role in `experiment-plan`. During
+method formation, normally complete and read one paired development seed first. Do
+not use a queue to search seeds for a favorable result; cancel repetitions made
+irrelevant by the first decisive result.
 
-Never place API keys or passwords in command arguments, logs, scripts, or chat.
-Use existing environment variables, credential helpers, secret stores, or an
-interactive login performed by the user.
+## Route By Environment
 
-## 4. Create a durable run directory
+Read the project `CLAUDE.md` and use its actual allocation model:
 
-Use a unique, human-readable path such as:
+- **local:** CUDA or MPS process under project rules;
+- **direct GPU over SSH:** inspect permitted device availability and bind only an
+  allowed free device;
+- **Slurm/scheduler:** submit through the configured scheduler and never pin physical
+  GPU IDs or train on the login node;
+- **batch queue:** use only for scientifically justified independent jobs, required
+  repetitions, or dependency waves.
 
-```text
-runs/<experiment-id>/<timestamp>-<seed>/
-```
+Project rules override generic examples. If server information is absent, ask one
+focused operational question.
 
-Record at minimum:
+Read `references/operations.md` only for the needed section:
 
-```text
-command.sh              exact launched command
-resolved-config.*       fully resolved configuration
-metadata.json           revision, host, environment, seed, timestamps
-stdout.log / stderr.log
-checkpoints/             when applicable
-result.*                 machine-readable final result
-STATUS                   PENDING | RUNNING | SUCCEEDED | FAILED | CANCELLED
-```
+- `Step 1-6` for local/direct/Slurm launch and W&B;
+- `Batch Mode` for manifests, queue state, OOM retry, waves, stale screens, and resume;
+- `CLAUDE.md Example` for missing project configuration.
 
-Do not overwrite a prior run. If the project has an established tracker, use it
-instead of creating a parallel one.
+The detailed reference preserves the original operational recipes. Its repeated
+scientific prose is historical; this core skill and current research skills win.
 
-## 5. Launch through the declared runtime
+## Durable Lifecycle
 
-### Local process
+Use the shared lifecycle:
 
-Use the project's normal command and a durable log. For a long job, use the user's
-approved process manager (`tmux`, `screen`, `nohup`, or a project runner). Capture
-the PID or session name.
+`planned -> queued -> running -> completed_unread -> interpreting -> interpreted`
 
-### SSH or direct remote GPU
+Exceptional execution states are `failed`, `interrupted`, `invalidated`, `stuck`, and
+`cancelled`. Launch code may write through `completed_unread`; only evidence reading
+may mark `interpreted`.
 
-Follow [references/remote-execution.md](references/remote-execution.md). Verify the
-remote working directory, environment, GPU assignment, log path, and process
-identity after launch.
+For every run retain:
 
-### Slurm
+- stable run ID and exact command/config;
+- environment, code revision, data/checkpoint identifiers;
+- log, result, checkpoint, completion marker, and resume paths;
+- expected and actual resource charge when measurable;
+- protocol deviation and resulting evidence scope.
 
-Use the project's existing batch template when available. Otherwise create a
-minimal script with explicit resources, output paths, and command. Submit once,
-record the job ID, and verify it appears in the queue.
+Register long-running local, CPU, GPU, SSH, scheduler, and container jobs in the
+configured FIRM Job Registry when available. Store environment-specific identity: a
+scheduler ID, or PID plus start token and command fingerprint for unmanaged processes.
+Registry writes must be atomic. Process or terminal absence is not completion; verify
+identity and expected output. Execution lifecycle ends at `completed_unread`; the
+research episode owns interpretation.
 
-Do not silently switch from the requested scheduler or host because another target
-looks convenient.
+## Launch And Verify
 
-## 6. Verify the launch
+Use the matching command from the operations reference, then verify registered job
+identity, GPU allocation when relevant, log creation, result path, and checkpoint or
+resume behavior. Keep long jobs detached or scheduler-managed according to project
+rules.
 
-A launch is not complete until evidence shows that the intended job started.
-Confirm:
+Report compactly:
 
-- process, session, or scheduler job exists;
-- log contains the resolved command/config and first meaningful step;
-- correct GPU/device is visible;
-- no immediate OOM, missing-file, import, permission, or authentication error;
-- checkpoint and result paths point to durable storage;
-- tracker contains the exact job identifier.
+- run ID and evidence role;
+- scheduler job or direct host/GPU/process;
+- command/config path;
+- log, result, checkpoint, marker, and resume paths;
+- expected runtime and operational-budget status.
 
-If launch fails, diagnose before retrying. Do not create duplicate jobs while the
-status is uncertain.
+Do not stream large logs into the main context. Use `monitor-experiment` for progress
+and result reconciliation. While a job runs, advance result-independent work rather
+than occupying compute or waiting passively.
 
-## 7. Retry and resume policy
+## Failure Handling
 
-Retry automatically only when the policy was established and the change does not
-alter the scientific condition. Examples:
+- OOM, preemption, SSH loss, stale screen, disk failure, and missing checkpoints are
+  operational states, not scientific results.
+- Retry only through the bounded project/queue policy and preserve attempt history.
+- If actual scale, steps, seeds, model, data, or method differ from registration, mark
+  the run `scope-limited` or `invalidated` before interpretation.
+- Reallocate inside the authorized budget and project GPU policy; ask before exceeding
+  them or changing a user-locked resource rule.
 
-- transient SSH or scheduler failure;
-- recoverable preemption with a compatible checkpoint;
-- a documented OOM fallback already in the plan.
-
-Record every retry and changed parameter. A batch-size, precision, sequence length,
-model, data, seed, or evaluator change may alter the experiment; do not hide it as
-an operational retry.
-
-Use [references/batch-orchestration.md](references/batch-orchestration.md) for
-sweeps, waves, and dependent jobs.
-
-## 8. Return a launch record
-
-```markdown
-# Experiment Launch
-
-- Experiment ID:
-- Scientific purpose:
-- Status: RUNNING | FAILED TO LAUNCH | COMPLETED QUICKLY
-- Runtime: local | ssh | slurm | other
-- Host/partition/device:
-- Job/PID/session ID:
-- Code revision and working-tree state:
-- Command:
-- Config and seed:
-- Log path:
-- Checkpoint path:
-- Result path:
-- Budget/time limit:
-- Retry/resume policy:
-- Monitoring command:
-- Any deviation from the registered plan:
-```
-
-Do not claim experimental success from a successful launch. Hand the durable job
-identity to `/firm:monitor-experiment`.
+After valid completion, hand exact result/config/log paths to `signal-analysis` and
+update the authoritative state or tracker. Do not pre-interpret the science here.

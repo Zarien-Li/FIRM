@@ -28,9 +28,9 @@ In a clean Claude Code session:
 Verify at least:
 
 ```text
-/firm:research
-/firm:diagnose-result demo/fixture/RESULT.md
-/firm:second-pi
+/firm:research-pipeline
+/firm:signal-analysis demo/fixture/RESULT.md
+/firm:research-review
 ```
 
 Also test project-local onboarding:

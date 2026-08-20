@@ -15,7 +15,8 @@ required=(
   NOTICE
   .claude-plugin/plugin.json
   .claude-plugin/marketplace.json
-  skills/INDEX.md
+  REFORM_MAP.md
+  VALIDATION_REPORT.md
   docs/getting-started.md
   assets/firm-decision-demo.png
   assets/social-preview.png
@@ -48,7 +49,7 @@ python3 "${ROOT_DIR}/scripts/check-research-contract.py"
 bash "${ROOT_DIR}/scripts/test-onboarding.sh"
 
 if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY|REPOSITORY_URL|YOUR_ACCOUNT' \
-  "${ROOT_DIR}" --exclude='release-check.sh' --exclude-dir='.git' >/tmp/firm-release-secrets.txt; then
+  "${ROOT_DIR}" --exclude='release-check.sh' --exclude='.git' --exclude-dir='.git' >/tmp/firm-release-secrets.txt; then
   echo "Possible private path, credential, or placeholder:" >&2
   cat /tmp/firm-release-secrets.txt >&2
   exit 1
