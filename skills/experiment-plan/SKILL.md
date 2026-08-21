@@ -16,7 +16,7 @@ Read the Program Compass and identify:
 - the current episode: contact, explanation, construction, expansion, stabilization,
   or harvest;
 - strongest evidence and inconvenient evidence;
-- current explanations or construction arc;
+- current problem model, competing explanations, or construction arc;
 - serious incumbent, simple alternative, nearest-rival threat, and substrate health;
 - relevant utility risks and operational constraints;
 - active and completed-unread work whose result may change the plan.
@@ -76,6 +76,22 @@ Prioritize an experiment when plausible outcomes would:
 Defer a run when every outcome merely adds detail, another favorable cell, a reviewer
 caveat, or a richer explanation without changing the research arc. A possible reviewer
 question alone is not a scientific reason.
+
+## Plan Explanatory Evidence As A Model Test
+
+When the problem is not yet understood deeply enough to design, experiment against the
+problem model rather than collecting more descriptors. Choose the smallest natural or
+controlled contrast that separates alternative accounts at their earliest divergent
+link. State how each plausible outcome changes the represented information, state
+transition, interaction, credit path, execution, or preserved capability in the
+proposed account.
+
+Prefer matched success/failure cases, controlled substitutions, trace alignment, code-
+path interventions, and incumbent component comparisons when they answer that question.
+Do not demand every modality at once or instrument the whole model for completeness.
+The explanatory episode ends when the remaining alternatives imply the same first
+construction or when one account has enough support to make component jobs and
+preservation constraints non-arbitrary.
 
 ## Plan A Construction Arc
 

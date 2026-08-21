@@ -74,7 +74,8 @@ compact `PAPER_ENTRY.md` should establish:
 - decisive fair incumbent and nearest-rival comparison;
 - reliability appropriate to the claim;
 - utility, capability, latency, and cost tradeoffs that matter;
-- provenance, strongest contrary evidence, scope debt, and honest non-claims.
+- provenance, strongest contrary evidence, scope debt, and boundaries that materially
+  change interpretation.
 
 An optional near-final independent audit may verify the fixed object under the sparse
 Codex policy; it is not a prerequisite for writing and cannot create or revoke the

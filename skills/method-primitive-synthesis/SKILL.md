@@ -29,7 +29,9 @@ Before serious construction, know:
 - the nearest two or three same-locus methods and the strongest ownership threat;
 - the discovery slice, intended reach, material scope debt, and return to the accepted
   surface;
-- live explanations and inconvenient evidence;
+- a problem model of the relevant incumbent computation, default assumption, earliest
+  success/failure divergence, intervention locus, and behavior to preserve;
+- live alternative explanations and inconvenient evidence;
 - lessons inherited from earlier realizations.
 
 The closest rival should be run or deeply inspected before novelty lock and dependent
@@ -38,6 +40,28 @@ keeps novelty and paper maturity provisional.
 
 A fashionable operator, formula, oracle, clean probe, or positive private cell is not
 enough. Do not choose a dataset or regime because it makes the candidate work.
+
+## Require A Design-Giving Problem Account
+
+A method should be a consequence of understanding the problem, not a decoration added
+after observing a failure. Before serious construction, the PI should be able to say in
+plain language:
+
+- how the incumbent normally succeeds and which design assumption enables that
+  success;
+- why the same assumption produces the important failure under natural conditions;
+- which load-bearing computation must change, and why a downstream patch is
+  insufficient;
+- what information or capability the new computation must preserve;
+- which behavioral contrast would distinguish the proposed principle from the nearest
+  rival and a strong simple alternative.
+
+This account may come from an established important problem or from newly reproduced
+evidence. It need not be a complete causal theory. It is deep enough when it rules out
+plausible but design-incompatible explanations and makes the first construction's
+component jobs and unique prediction non-arbitrary. If these statements cannot yet be
+made, return to `signal-analysis` or targeted empirical contact rather than naming a
+method.
 
 ## Candidate, Realization, And Paper-Bearing Method
 
@@ -71,6 +95,7 @@ an underdetermined observation.
 For a serious candidate state:
 
 - observations and contrary cases it compresses;
+- the problem model and counterfactual that could falsify it;
 - the consequential default assumption it changes;
 - the one-sentence replacement principle and method;
 - load-bearing component or interaction and unique behavioral prediction;
@@ -138,7 +163,7 @@ v1 -> v2 repairs under the same central principle; it must not turn each version
 a scientific gate. Release it when the arc's question is answered, invalidated, or
 made irrelevant.
 
-Do not require Method Challenge before implementation. Use the sparse Codex policy in
+Do not require a Decision-Focused Construction Check before implementation. Use the sparse Codex policy in
 `research-review` only after the arc yields a credible positive object or before
 exceptional paper-sized spend. Do not call it after every version or component output.
 
@@ -210,9 +235,10 @@ consider whether the principle supports:
 - a simpler or lower-friction realization.
 
 Use Gemini and the lead PI for a creative Program Expansion view. Before paper-sized
-investment, one sparse Codex pass may test a specific fatal validity or ownership risk;
-it does not decide whether the positive primitive deserves to exist. Choose extensions
-predicted by the principle, not favorable extra cells or table breadth.
+investment, a sparse Codex check may resolve one named validity or ownership
+uncertainty only when it could reverse that investment; it does not decide whether the
+positive primitive deserves to exist. Choose extensions predicted by the principle,
+not favorable extra cells or table breadth.
 
 ## Durable Construction Note
 
@@ -223,6 +249,9 @@ when the design needs durable multi-actor coordination:
 # Method Primitive
 ## Research Basis
 - natural problem, accepted surface, substrate, rivals, and contrary evidence:
+## Problem Model
+- incumbent computation, default assumption, earliest divergence, falsifier, and
+  preserved behavior:
 ## Principle
 - default assumption, one-sentence replacement, value, and adoption path:
 ## Construction Arc

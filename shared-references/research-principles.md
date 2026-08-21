@@ -30,9 +30,9 @@ restating the rule.
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P11 | A valid local result updates observation by default, not explanation, method, scope, contribution type, or paper identity. | `signal-analysis` |
-| P12 | Maintain two or three decision-relevant competing explanations; update them only with a bundle that distinguishes their predictions. | `signal-analysis` |
+| P12 | Before serious method commitment, build a compact problem model of the incumbent computation, useful default assumption, earliest success/failure divergence, contrary evidence, intervention locus, and behavior to preserve. | `signal-analysis` |
 | P13 | Decodability, prediction, oracle headroom, and association are not causal use or an editable handle. | `signal-analysis` |
-| P14 | Probes and slices serve a concrete decision; do not replace construction with a growing diagnostic atlas. | `signal-analysis` |
+| P14 | Compare only a few design-distinct problem models and use probes or slices to distinguish their predictions; do not replace understanding or construction with a growing diagnostic atlas. | `signal-analysis` |
 
 ## Method Formation
 
@@ -60,7 +60,7 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P27 | The lead PI and real evidence drive discovery, interpretation, construction, repair, and re-grounding; Gemini may widen principle space, while Codex is reserved for sparse late-stage red-team verification. | `research-review` |
+| P27 | The lead PI and real evidence drive discovery, interpretation, construction, repair, and re-grounding; Gemini may widen principle space, while Codex resolves only a sparse, named uncertainty that could change a current decision. | `research-review` |
 | P28 | Default to zero Codex calls before a credible positive object; when feasible, run the smallest real realization before external criticism. | `research-review` |
 | P29 | Codex output is advice, not calibrated acceptance probability, evidence, a stop judgment, or a user constraint; it cannot veto exploratory principles, choose PARK, close broad programs, or change contribution identity. | `research-review` |
 | P30 | A failed method lineage cannot automatically become an analysis, measurement, mechanism, theory, or systems paper. | `research-control-protocol.md` |
@@ -72,8 +72,8 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P34 | High-stakes writing studies two to four verified excellent full papers through isolated reading subagents and a separate synthesis subagent. | `paper-writing` |
-| P35 | Writing follows one claims-evidence spine and cannot repair missing science, lost significance, invalid evidence, or an unimplemented method. | `paper-writing` |
+| P34 | High-stakes writing assigns verified excellent full papers distinct rhetorical roles and lets one isolated author subagent read them with the author argument and evidence to draft directly; it does not average them into a template. | `paper-writing` |
+| P35 | Writing begins from a one-page human-facing author argument; claims-evidence mapping verifies the completed draft and never generates its prose or narrative order. | `paper-writing` |
 | P36 | Keep operational logs and bulk literature outside the main context while retaining contrary evidence and exact durable paths. | `context-hygiene.md` |
 | P37 | Each integrity question has one audit owner; reuse fresh evidence-bound audits and do not create parallel headline, claim, citation, experiment, or state gates. | `paper-writing`, `research-audit`, and `research-state-audit` |
 
@@ -82,7 +82,7 @@ restating the rule.
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P38 | Prefer consequential default assumptions and simple reusable replacement principles; discovery slices are entry points, not intellectual endpoints. | `research-pipeline` |
-| P39 | After a credible positive realization, the PI and optionally Gemini assess program expansion and research leverage; one sparse Codex pass may test a named fatal risk before paper-sized spend. | `research-pipeline` and `research-review` |
+| P39 | After a credible positive realization, the PI and optionally Gemini assess program expansion and research leverage; one sparse Codex check may resolve a named uncertainty only when it could reverse paper-sized spend. | `research-pipeline` and `research-review` |
 | P40 | Allocate probe and paper budgets by evidence maturity and upside; do not distribute claim-scale compute evenly or use it to defend low-leverage private cells. | `experiment-plan` |
 | P41 | One governing contribution identity may earn a connected stack of phenomenon, primitive, realization, general finding, and reusable machinery; never force a quota. | `paper-writing` |
 
@@ -100,10 +100,10 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P47 | Keep a stable program compass during discovery; create a paper spine only after a credible positive object or independently important confirmed phenomenon exists. | `research-pipeline` |
+| P47 | Keep a stable program compass during discovery; form a human-facing author argument only after a credible positive object or independently important confirmed phenomenon exists. | `research-pipeline` |
 | P48 | Work in protected research episodes. Review and program-level accounting occur at consequential episode boundaries, not after every result. | `research-pipeline` |
 | P49 | Method formation is a construction arc that may contain several evidence-directed realizations and ablations under one principle; small versions are not separate paper identities. | `method-primitive-synthesis` |
-| P50 | Paper-asset and claims-evidence accounting belongs to expansion, stabilization, and harvest; ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
+| P50 | Paper assets and author-argument formation belong to expansion, stabilization, and harvest; claims-evidence accounting begins after narrative drafting, while ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
 | P51 | Operational systems expose process, job, resource, and liveness facts; they do not choose explanations, methods, contribution types, or research routes. | `run-experiment` and project operations |
 
 ## Maintenance Rule

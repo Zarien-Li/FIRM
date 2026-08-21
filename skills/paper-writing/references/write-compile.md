@@ -2,15 +2,18 @@
 
 Load for `write` or `compile` mode.
 
-## Write From The Plan And Evidence Spine
+## Write From The Author Argument And Evidence
 
 Locate the root file, section includes, bibliography system, venue template, existing
-macros, and `PAPER_PLAN.md`/`CLAIMS_EVIDENCE.md`. Preserve established notation,
-labels, citations, and template conventions.
+macros, `AUTHOR_ARGUMENT.md`, and `PAPER_PLAN.md`. Preserve established notation,
+labels, citations, and template conventions. Use raw evidence while drafting. Create or
+refresh `CLAIMS_EVIDENCE.md` only after a narrative draft exists, then use it to repair
+unsupported claims rather than to generate paragraph order or prose.
 
-Draft evidence-bearing sections first. Every numerical value comes from a raw artifact
-or generated table. Every causal/mechanism/generalization word stays within the claim
-row supporting it. Do not add invented citations or results.
+Every numerical value comes from a raw artifact or generated table. Every
+causal/mechanism/generalization word must survive the post-draft claim check. Do not add
+invented citations or results. Preserve the author argument, field-natural language,
+and paragraph movement while repairing factual issues.
 
 For architecture illustrations, use a source-editable representation and record the
 scientific job of each visual element. Decorative complexity cannot replace an

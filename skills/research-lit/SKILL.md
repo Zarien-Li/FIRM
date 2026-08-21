@@ -69,6 +69,20 @@ For each important work, extract:
 
 Do not infer exact closure from abstract similarity.
 
+## Recover The Design Rationale
+
+For the incumbent and nearest rivals, do not stop at naming modules. Reconstruct why
+their central assumption was adopted: which earlier failure, data constraint,
+optimization difficulty, systems cost, or capability tradeoff it solves; where in the
+computation it acts; and what changing it may damage. Read methods, ablations, code,
+and predecessor work as needed.
+
+When the project's empirical evidence exposes a tension, look across adjacent fields
+for alternative problem representations, not merely similarly named operators. The
+goal is to understand the design genealogy and available compromises well enough that
+the current problem model explains both incumbent success and incumbent failure. This
+reading informs `signal-analysis`; it does not itself prove the project's explanation.
+
 ## Interpret Related Work
 
 Classify close work as:

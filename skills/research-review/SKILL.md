@@ -1,73 +1,69 @@
 ---
 name: research-review
-description: Use Gemini selectively as a creative co-PI and Codex sparingly as a late-stage red-team verifier. Let the lead PI and real evidence drive discovery, construction, repair, and re-grounding; never turn external criticism into a project gate.
+description: Use Gemini selectively as a creative co-PI and Codex sparingly to resolve one named, decision-relevant uncertainty. Let the lead PI and real evidence drive discovery, construction, repair, re-grounding, and paper judgment; never turn external criticism into a project gate or an unbounded objection search.
 ---
 
 # Independent Research Collaboration
 
 The lead researcher owns field contact, explanations, selection, synthesis,
 implementation, continuation, and paper decisions. Gemini is a selective creative
-co-PI. Codex is a deliberately sparse late-stage red-team verifier, not a recurring
-co-PI, scientific judge, experiment queue, or acceptance oracle.
+co-PI. Codex is a deliberately sparse independent verifier for a named uncertainty,
+not a recurring critic, scientific judge, experiment queue, or acceptance oracle.
 
 ## Sparse Codex Policy
 
 Default to **zero Codex calls** during empirical contact, explanation formation,
 creative invention, the smallest real realization, ordinary negative-result repair,
 frame locking, and program re-grounding. The PI should usually let accepted-task
-evidence answer a design question before inviting criticism. A harsh review is not a
-calibrated estimate of conference acceptance or scientific value.
+evidence answer a design question before requesting external verification. A long or
+harsh issue list is not a calibrated estimate of conference acceptance, scientific
+value, or useful work.
 
-Codex is normally useful at no more than two points in a paper lineage:
+Codex is useful only when the PI can name the uncertainty and the current decision it
+could reverse. Common high-value uses are:
 
-1. one critical pass after a credible positive object exists and before paper-sized
-   compute, broad claim hardening, or expensive expansion;
-2. optionally, one near-final factual, claim, citation, or proof audit.
+1. one decision-focused check after a credible positive object exists, but only when a
+   named ownership, validity, or design uncertainty could reverse paper-sized compute
+   or expensive expansion;
+2. a near-final factual, claim, citation, or proof audit with exact objects to verify.
 
-An additional pass requires materially new evidence resolving one named high-stakes
+A repeated pass requires materially new evidence resolving one named high-stakes
 dispute. Do not call Codex to obtain general reassurance, repeatedly prosecute a live
 idea, select among speculative principles, or review every repaired realization.
+Open-ended prompts such as `review this project`, `find all weaknesses`, or `what else
+should we run` are invalid because they reward objection volume rather than decision
+quality.
 
-Classify criticism before acting:
+Every Codex recommendation bears an action burden. It must identify the exact current
+decision that would change, the supplied evidence that creates the conflict, and why
+the expected information is worth displacing the planned scientific work. A plausible
+objection that changes no current decision creates no task. An experiment suggestion
+without a decision it could reverse is omitted. When the supplied evidence supports
+the current course and no named uncertainty changes it, the correct answer is a short
+`no material change`.
 
-- **empirically falsified:** contradicted by competent decisive evidence;
-- **verified ownership collision:** the claimed novelty is already owned by a direct
-  rival;
-- **unverified risk:** a paper-critical uncertainty that may deserve bounded evidence;
-- **reviewer preference:** taste about framing, breadth, elegance, or expected venue
-  reaction.
-
-Only the first two can block the affected claim or realization. An unverified risk
-changes work only when it is paper-critical and answerable. Reviewer preference is
-advice. Codex cannot veto an exploratory principle, choose `PARK`, close a broad
-program, change contribution identity, or erase a Gemini principle because one
-realization failed.
+Codex cannot veto an exploratory principle, choose `PARK`, close a broad program,
+change contribution identity, or erase a Gemini principle because one realization
+failed. Venue taste, hypothetical reviewer preference, and requests to make an already
+supported paper harder to criticize remain outside this role.
 
 Choose one purpose matching the current episode. Do not combine invention, expansion,
 and submission judgment into one omnibus call or invoke both providers ceremonially.
 
 ## Field And Prize
 
-The lead PI owns this role through literature and natural contact. A rare independent
-field check may be useful only when a high-cost program choice depends on unresolved
-ownership or accepted evaluation practice. Ask about:
-
-- the important capability, scientific question, or operational decision;
-- accepted tasks, systems, populations, and value metrics;
-- direct, simple, and nearest-locus incumbents;
-- evidence needed to show that a residual is natural, consequential, and unowned;
-- substrate and evaluation risks that could make the opening illusory;
-- the highest-upside broad questions feasible under the resource envelope.
-
-Name the rival most likely to absorb a successful contribution. Do not propose a
-hidden variable, mechanism, method, architecture, objective, diagnostic slice, or
-method-shaped experiment. This role maps the field and prize.
+The lead PI owns this role through literature and natural contact. Use the literature
+workflow for broad mapping. A rare Codex field check is limited to one named ownership
+or accepted-evaluation ambiguity whose answer changes a high-cost program choice. Ask
+for primary evidence resolving that ambiguity and its consequence for the stated
+choice. Do not ask Codex to score the whole field, generate hidden variables, or search
+for every reason the opening may fail.
 
 ## Interpret
 
 The lead PI interprets coherent natural evidence bundles. Do not call Codex merely
-because results disagree or a method failed. When a late-stage critical pass is
-warranted, provide:
+because results disagree or a method failed. When one paper-critical inference remains
+decision-relevant after a natural evidence bundle, provide:
 
 - a healthy evaluator and competent substrate;
 - direct incumbent, serious simple alternative, and nearest same-locus work;
@@ -105,41 +101,43 @@ not establish novelty, causal truth, feasibility, or evidence. The lead PI colli
 checks the relevant literature and methods, selects or synthesizes one principle,
 implements it, and lets real experiments reshape it.
 
-## Method Challenge
+## Decision-Focused Construction Check
 
-Do not use Method Challenge to pre-screen the PI's or Gemini's principle. Implement the
-smallest real realization first whenever feasible. Use this role only after a credible
-positive object exists or immediately before exceptional paper-sized spend. Do not
-manufacture a second candidate merely to satisfy a count. Provide the natural problem,
-competent substrate, nearest-rival threat, expected value, utility risks, realized
-behavior, and proposed construction arc.
+Do not use this check to pre-screen the PI's or Gemini's principle. Implement the
+smallest real realization first whenever feasible. Use it only after a credible
+positive object exists and a named uncertainty could reverse exceptional paper-sized
+spend. Provide the natural problem, competent substrate, nearest-rival threat, expected
+value, realized behavior, proposed construction arc, and the one decision at stake.
 
 Ask Codex to:
 
-- expose redundancy with the nearest rival or simple composition;
-- challenge the load-bearing component and unique prediction;
-- inspect whether information, supervision, capacity, and treatment identify it;
-- strengthen the construction arc and its decisive comparisons;
-- identify an early utility risk that could change the design.
+- first state the strongest evidence-supported version of the positive object;
+- answer only the named uncertainty against the nearest rival and raw evidence;
+- explain whether resolving it would actually reverse the current design, claim, or
+  resource decision;
+- when it would, identify the smallest discriminating evidence and its opportunity
+  cost;
+- otherwise return `no material change` without adding optional strengthening work.
 
-It may identify a fatal flaw in the realized object; it must not generate the project's
-first method, veto an untested principle, or turn speculative objections into required
-experiments. If value or novelty depends on an unresolved rival, keep the construction
-exploratory and prioritize the smallest decisive comparison; do not lock a paper
-identity.
+It must not generate the project's first method, veto an untested principle, broaden
+the review beyond the named uncertainty, or turn speculative objections into required
+experiments. If value or novelty genuinely depends on an unresolved rival, prioritize
+the smallest decisive comparison; do not build a defensive experiment suite.
 
-The output is one coherent construction arc, not a serial probe checklist.
+The output is a short decision memo, not an issue inventory or serial probe checklist.
 
 ## Program Expansion
 
 Use after a credible positive realization has survived a meaningful component
 comparison and relevant utility check. Gemini and the lead PI own creative expansion.
-Codex may receive one critical packet before paper-sized investment when it can test a
-specific ownership, validity, or evidence risk.
+Codex may receive one bounded packet before paper-sized investment when it can resolve
+a specific ownership, validity, or evidence uncertainty that would change that
+investment.
 
 Provide the one-sentence principle, default assumption changed, realization, accepted
-outcome, decisive rival, utility, and the lead PI's plausible expansion axes. Codex can
-critically assess the expansion; Gemini can creatively enlarge the same principle. Ask:
+outcome, decisive rival, utility, and the lead PI's plausible expansion axes. Codex may
+verify the one supplied uncertainty; Gemini can creatively enlarge the same principle.
+The PI and Gemini may ask:
 
 - which downstream design choices would change;
 - whether the primitive is reusable beyond one implementation;
@@ -175,8 +173,8 @@ not a new name or finer private cell. There is no fixed failure count.
 
 Use only after the corresponding scientific object exists:
 
-- **artifact review:** optional near-final verification of importance, coherence,
-  identity, title/scope, alternatives, and load-bearing claims for a positive object;
+- **artifact verification:** optional near-final checking of one named factual, claim,
+  citation, or formal risk in a fixed positive object;
 - **paper entry:** lead-PI evidence synthesis establishing whether a complete package
   supports submission-oriented writing; it does not require a fresh Codex verdict;
 - **proof audit:** isolated verification of formal statements and proofs.
@@ -188,8 +186,9 @@ citation identity, and manuscript-number checks belong to their dedicated audit 
 ## Collaboration Episodes, Not Gates
 
 Use Gemini when a distinct creative perspective can change a consequential design or
-expansion decision. Use Codex only under the sparse policy above. Neither call is a
-mandatory stage, maturity badge, or permission to continue.
+expansion decision. Use Codex only for a named decision-relevant uncertainty under the
+sparse policy above. Neither call is a mandatory stage, maturity badge, or permission
+to continue.
 
 Do not invoke either provider after every probe, seed, component output, negative
 result, GPU event, or ordinary input prompt. Do not interrupt a valid active
@@ -208,7 +207,8 @@ Give only what the selected role needs, with raw evidence before the preferred s
 - supplied explanations for a rare late-stage Interpret check;
 - local evidence, constraints, rivals, and unresolved design question for Creative
   Invention;
-- supplied construction and inherited lessons for Method Challenge;
+- supplied construction, inherited lessons, named uncertainty, and decision at stake
+  for a decision-focused construction check;
 - supplied principle and expansion axes for Program Expansion;
 - program movement and opportunity cost for PI/Gemini Consolidate/Re-ground;
 - material scope movement and ownership threats.
@@ -223,31 +223,32 @@ The lead researcher independently adjudicates advice and records only what chang
 ## Independent Co-PI Synthesis
 - colleague, purpose, and evidence bundle:
 - accepted insight and evidence:
-- deferred or rejected suggestion and why:
+- no-change, accepted, deferred, or rejected advice and why:
 - effect on explanation, construction, expansion, or paper:
 - selected next action:
 - thread ID:
 ```
 
 Do not write `adopted` merely because an independent colleague is confident. Verify
-factual validity findings against raw artifacts. Record whether each Codex objection
-is empirical falsification, verified ownership collision, unverified risk, or reviewer
-preference.
+factual findings against raw artifacts. Record the exact decision changed by accepted
+advice; when none changes, record `no material change` and create no follow-up task.
 
 ## Prompt Skeletons
 
 ```text
-Field/Prize: Map the important value frontier, accepted surfaces, decisive incumbents,
-nearest same-locus work, and missing natural-contact evidence. Do not propose a
-mechanism, hidden variable, method, or method experiment.
+Field/Prize: Resolve this one named ownership or accepted-evaluation ambiguity from
+primary evidence and state whether it changes the supplied high-cost program decision.
+Do not score the whole field, propose a mechanism or method, or search for additional
+risks.
 
 Interpret: Compare the supplied explanations against this bundled natural evidence.
 State what is distinguished and what remains unidentified. Do not invent a method.
 
-Method Challenge: Challenge the lead PI's supplied construction against the evidence,
-nearest rival, unique prediction, component logic, and utility risks. Strengthen one
-coherent construction arc. Do not invent the project's first method or return a probe
-checklist.
+Decision-Focused Construction Check: First state the strongest evidence-supported
+version of the supplied positive object. Resolve only this named uncertainty and say
+whether it changes the current design, claim, or resource decision. If it does, name
+the smallest decisive evidence and its opportunity cost. Otherwise reply `no material
+change`. Do not search for additional objections or optional strengthening work.
 
 Program Expansion: Given this credible positive realization, assess the largest
 scientific form of the same principle, its reuse and adoption, and which predicted
@@ -264,11 +265,12 @@ These compact skeletons are for optional Codex verification roles. For Gemini Cr
 the lead PI writes a natural prompt from the live evidence and question; do not force a
 fixed list of fields or a predetermined kind of method.
 
-## Later Concern Triage And Proofs
+## Decision Relevance And Proofs
 
-For artifact review classify concerns as `EVIDENCE_INVALIDATING`,
-`METHOD_DESIGN_CHANGING`, `CLAIM_NARROWING`, or `DEFERRABLE`. Only the first two
-normally create immediate research work. Do not turn review into a defensive grid.
+Do not classify a manuscript or method into a severity grid. A Codex concern creates
+work only when the supplied evidence supports it and it changes a current scientific
+decision. Optional strengthening, possible reviewer taste, and hypothetical objections
+are omitted rather than accumulated.
 
 In proof-audit mode inspect statements, assumptions, quantifiers, domains, dependencies,
 case coverage, and counterexamples. Follow

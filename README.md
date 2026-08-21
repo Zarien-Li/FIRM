@@ -102,8 +102,15 @@ Prize -> Fidelity -> Principle -> Design -> Evidence -> Expansion -> Entry
   than merely a larger result table?
 - **Entry:** Is the contribution mature enough for full paper writing?
 
+During the explanatory pause, FIRM builds a compact problem model before serious
+method commitment: how the incumbent normally succeeds, which useful assumption fails,
+where matched success and failure first diverge, what evidence contradicts that account,
+and what an intervention must change while preserving ordinary capability. This is
+deeper analysis, not a mandate for a larger probe atlas.
+
 `research-review` separates two outside perspectives. Codex is a deliberately sparse
-late-stage red-team verifier, with zero calls by default before a credible positive.
+decision-focused verifier for one named uncertainty, with zero calls by default before
+a credible positive.
 Gemini is an optional creative co-PI when competent evidence has earned a v1,
 an informative failure needs a genuinely different v2 primitive, or a credible
 positive can grow into a larger reusable idea. The lead PI writes each Gemini prompt
@@ -231,7 +238,7 @@ not silently spend compute, inspect remote jobs, or rewrite a manuscript.
 
 | Discover | Build | Finish |
 |---|---|---|
-| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn negative results into a constructive method lineage; optionally use Gemini to co-invent evidence-earned primitives | Use sparse Codex red-team review only after credible positive evidence or for one named near-final risk |
+| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn negative results into a constructive method lineage; optionally use Gemini to co-invent evidence-earned primitives | Use Codex only to resolve one named uncertainty that could change a current decision, or for one near-final factual check |
 | Keep the original research program and community value visible as the project evolves | Distinguish implementation, design, optimization, statistical, and transfer uncertainty | Align the final claim with controls, costs, limitations, citations, and raw artifacts |
 
 One persistent researcher owns the program. Specialist skills are tools loaded
