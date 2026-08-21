@@ -85,6 +85,21 @@ REQUIRED = {
         "After a normal ten-minute read",
         "Scientific taste is part of successful communication",
     ],
+    SKILLS / "run-experiment/references/operations.md": [
+        "If FIRM is unavailable or not configured",
+        "must not block an otherwise\n"
+        "authorized ordinary experiment",
+        "existing project-owned local process, direct\n"
+        "SSH launcher, or managed scheduler path",
+    ],
+    SHARED / "research-control-protocol.md": [
+        "Only explicit user instructions, safety constraints, and live operational limits are\n"
+        "binding.",
+        "A live `locked`, `forbidden`, `no re-entry`, or equivalent statement must\n"
+        "cite the exact user or safety source",
+        "changes to explicitly locked project, venue,\n"
+        "deliverable, or portfolio scope",
+    ],
     SHARED / "research-principles.md": ["P01", "P26", "P51"],
     RUNTIME_ADDENDUM: [
         "act as an autonomous PI",
@@ -113,6 +128,7 @@ FORBIDDEN = {
         "Never overlap screens",
         "queue_manager.py",
         "install_aris.sh",
+        "FIRM is required to launch experiments",
     ],
     SKILLS / "research-review/SKILL.md": [
         "Interpret -> Invent -> Attack",

@@ -80,8 +80,12 @@ On delivery:
 - submit dependent waves only after prerequisites are valid and read.
 
 Do not invent queue scripts, private ARIS commands, delivery schemas, or retry loops.
-If the configured interface is missing, report the missing operational dependency
-instead of replacing it with an ad hoc daemon.
+If FIRM is unavailable or not configured, its absence must not block an otherwise
+authorized ordinary experiment. Use an existing project-owned local process, direct
+SSH launcher, or managed scheduler path from the sections above, and preserve the
+same run record and durable local evidence. If no such safe authorized path exists,
+report the missing operational dependency instead of replacing it with an ad hoc
+daemon.
 
 ## GPU Sharing And Memory Safety
 
