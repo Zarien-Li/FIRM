@@ -51,8 +51,8 @@ Write a compact `PAPER_REPORT.md`:
 - source, PDF, figures, supplement, and package:
 - compilation and venue compliance:
 - completed checks and their exact inputs:
-- blocking / major / minor remaining issues:
-- honest non-claims:
+- unresolved factual or presentation issues:
+- boundaries that materially affect interpretation:
 - user-only action, if any:
 - single next action:
 ```

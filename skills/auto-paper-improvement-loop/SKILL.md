@@ -1,19 +1,21 @@
 ---
 name: auto-paper-improvement-loop
-description: Improve an existing research paper through bounded evidence-led editing, recompilation, and visual inspection. Use only after the contribution identity and evidence are stable; reserve external red-team review for an optional near-final pass.
+description: Improve an existing research paper through human-reader editing, evidence-led revision, recompilation, and visual inspection. Use only after the contribution identity and evidence are stable; reserve external red-team review for an optional near-final factual pass.
 allowed-tools: Bash(*), Read, Write, Edit, Grep, Glob, Agent, mcp__codex__codex, mcp__codex__codex-reply
 ---
 
-# Bounded Paper Improvement
+# Human-Reader Paper Improvement
 
-Improve clarity, structure, fidelity, and presentation without optimizing reviewer
-scores or silently changing the science.
+Improve authorial voice, field-natural language, paragraph movement, specificity,
+memorability, fidelity, and presentation without optimizing reviewer scores or silently
+changing the science.
 
 ## Preconditions And Boundary
 
-Read the paper, `CLAIMS_EVIDENCE.md`, `PAPER_PLAN.md`, current contribution identity,
-build command, venue constraints, and git status. Use this loop only when the positive
-object and evidence are stable enough that writing can resolve the remaining issues.
+Read the paper, `AUTHOR_ARGUMENT.md`, `PAPER_PLAN.md`, post-draft
+`CLAIMS_EVIDENCE.md` when available, current contribution identity, build command,
+venue constraints, and git status. Use this loop only when the positive object and
+evidence are stable enough that writing can resolve the remaining issues.
 
 If a requested fix requires a new result, broader population, stronger causal claim,
 new contribution type, or changed primary metric, record it as a research gap and stop
@@ -22,8 +24,8 @@ supporting prose.
 
 Defaults:
 
-- at most two self-edit rounds;
-- stop after Round 1 if no blocking or major artifact issue remains;
+- normally one or two human-reader edit rounds, with each round justified by a concrete
+  opportunity to improve meaning, voice, progression, specificity, or memorability;
 - no fresh Codex reviewer per round; use one optional near-final pass only when it can
   verify a named factual, claim, citation, or proof risk;
 - compile and visually inspect after each round;
@@ -66,29 +68,39 @@ Do not overwrite the only good artifact. Use `main_round1.pdf` and
 
 ## One Improvement Round
 
-### 1. Fresh artifact review
+### 1. Fresh human-reader edit
 
-Give a fresh reviewer the compiled paper, source files needed to locate issues, venue
-constraints, and a neutral rubric. Do not provide prior scores, desired verdict,
-previous review, fix summary, style exemplar, or project history.
+Give a fresh editor the compiled paper and only the context an intended human reader
+would reasonably have. The editor is not a reviewer and does not decide acceptance,
+request experiments, enumerate objections, or score the paper.
 
-Require findings with exact location, evidence, and minimal repair, classified as:
+After a normal ten-minute read, the editor first writes from memory, in prose:
 
-- `BLOCKING`: correctness, evidence fidelity, attribution, contribution identity, or
-  submission compliance;
-- `MAJOR`: missing explanation, fair comparison, limitation, structure, or serious
-  readability;
-- `MINOR`: local wording, notation, layout, and polish.
+- the problem the paper studies;
+- what the reader was expected to believe before the paper;
+- the surprising fact or principle;
+- why it matters;
+- the one idea likely to remain memorable.
 
-The reviewer may identify scientific gaps but may not turn them into invented text or
-automatic research tasks.
+The editor then gives a short editorial letter identifying where attention broke,
+where paragraph-to-paragraph movement was unclear, where language sounded generic
+rather than field-native, where concrete experience was replaced by jargon, and where
+the manuscript lost or recovered an authorial voice. Use exact locations when useful,
+but do not emit a severity taxonomy, checklist, reviewer simulation, or list of
+defensive controls.
 
-### 2. Lead-author adjudication
+### 2. Lead-author revision
 
-Verify every recommendation against source and evidence. Mark it `accept`, `modify`,
-`reject`, or `research-gap`. Apply blocking, then major, then worthwhile minor fixes.
-Reject suggestions that weaken related work, hide negative evidence, inflate scope, or
-change the contribution merely to improve a score.
+Compare the reader's retelling with `AUTHOR_ARGUMENT.md`. Revise the manuscript where
+the intended argument failed to survive reading. Prefer concrete scientific language,
+deliberate emphasis, and causal paragraph progression over generic transitions or
+additional qualifications. Preserve recommendations that reflect genuine reader
+confusion; reject edits that hide evidence, inflate scope, or turn prose into reviewer
+appeasement.
+
+Caveats stay local only when they materially change interpretation. Other real
+boundaries belong in a concise Limitations section. Internal non-claims and audit notes
+are not manuscript content.
 
 When a local edit changes notation, claim strength, or terminology, inspect abstract,
 introduction, method, results, captions, appendix, limitations, and conclusion for
@@ -112,9 +124,10 @@ Append to `PAPER_IMPROVEMENT_LOG.md`:
 ```markdown
 ## Round N
 - starting and ending PDF:
-- reviewer thread/model:
-- blocking / major / minor findings:
-- accepted, modified, rejected, and research-gap recommendations:
+- editor thread/model:
+- ten-minute reader retelling:
+- author-argument mismatches:
+- voice, field-language, progression, specificity, and memorability edits:
 - whitelist rejections:
 - files changed:
 - compile and visual status:
@@ -128,16 +141,24 @@ blocking issue cannot be repaired through writing.
 
 ## Round 2 And Convergence
 
-If Round 2 is warranted, use a new reviewer who sees only the current artifact and
-neutral rubric. Never say what Round 1 changed. Implement only remaining blocking and
-major issues plus clearly worthwhile minor repairs.
+If Round 2 is warranted, use a new human-reader editor who sees only the current
+artifact. Never say what Round 1 changed. Revise only where the intended argument still
+does not survive a natural read or where prose remains generic, discontinuous, vague,
+or forgettable.
 
 Stop when:
 
-- no writing-repairable blocking or major issue remains;
+- an intended reader can accurately retell the problem, changed belief, surprise,
+  significance, and takeaway;
+- the prose has a consistent authorial voice and uses field-natural, concrete language;
+- paragraphs advance the argument rather than announce checklist functions;
 - compilation and visual inspection pass;
 - affected claim/proof/citation checks are fresh;
-- another round would optimize taste or reviewer score rather than correctness.
+- another round would no longer improve meaning, voice, or reader understanding.
+
+Scientific taste is part of successful communication, not cosmetic score optimization.
+Do not stop merely because remaining problems concern emphasis, rhythm, specificity,
+or memorability.
 
 Do not add a third round automatically. A new scientific objection returns to research;
 a changed paper identity requires a fresh evidence-grounded paper entry, plus user
@@ -145,10 +166,11 @@ approval only when an explicitly locked boundary changes.
 
 ## Final Report
 
-Return the starting/final PDFs, files changed, accepted and rejected recommendations,
-compile status, affected audit status, remaining research gaps, whitelist compliance,
-and whether the manuscript is improved but still not submission-ready. Reviewer score
-movement is optional context, never the success criterion.
+Return the starting/final PDFs, files changed, reader retelling before and after,
+author-argument mismatches repaired, compile status, affected audit status, remaining
+research gaps, whitelist compliance, and whether the manuscript is improved but still
+not submission-ready. Reviewer score movement is optional context, never the success
+criterion.
 
 Store the optional independent review trace using the shared tracing convention when
 configured.

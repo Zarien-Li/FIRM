@@ -1,7 +1,8 @@
 # Reproducible Figures And Tables
 
-Use this reference only for paper figures and tables. The manuscript's
-`CLAIMS_EVIDENCE.md` defines what each visual is allowed to claim.
+Use this reference only for paper figures and tables. Design each visual from its
+scientific and narrative job. After the draft exists, use `CLAIMS_EVIDENCE.md` to
+verify that visual takeaways and captions remain supported.
 
 ## Select The Visual Job
 

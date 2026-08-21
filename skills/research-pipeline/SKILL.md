@@ -67,8 +67,9 @@ This is not a state machine. Evidence may skip, repeat, or reverse elements.
   phenomenon now changes an accepted outcome or scientific decision.
 - **Program expansion:** ask how the same principle can become a larger research
   program rather than immediately narrowing it into a defensive paper.
-- **Paper formation:** build a claims-evidence spine only after the positive object
-  exists.
+- **Paper formation:** once a positive object exists, form an author argument for a
+  particular human audience, draft its problem story, and later verify consequential
+  prose against a post-draft claims-evidence map.
 - **Stabilization and writing:** establish the decisive comparison, reliability,
   utility, scope, and artifact quality needed by the actual claim.
 

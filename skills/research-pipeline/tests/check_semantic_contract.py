@@ -64,9 +64,19 @@ REQUIRED = {
         "## Program Expansion",
     ],
     SKILLS / "paper-writing/SKILL.md": [
-        "Do not create a Paper Spine",
-        "Learn Writing From Excellent Papers Without Polluting The Main Context",
+        "## Establish The Author Argument Before The Outline",
+        "one-page `AUTHOR_ARGUMENT.md` in continuous prose",
+        "## Use Claims-Evidence As A Post-Draft Verification Tool",
+        "Do not create a synthesis of recurring patterns",
+        "Use one fresh author subagent for a coherent section or draft",
+        "## Draft The Problem Story Early, Then Rewrite It From Stable Evidence",
         "One identity means one governing scientific principle",
+    ],
+    SKILLS / "auto-paper-improvement-loop/SKILL.md": [
+        "## One Improvement Round",
+        "### 1. Fresh human-reader edit",
+        "After a normal ten-minute read",
+        "Scientific taste is part of successful communication",
     ],
     SHARED / "research-principles.md": ["P01", "P26", "P51"],
     RUNTIME_ADDENDUM: [
@@ -105,6 +115,14 @@ FORBIDDEN = {
     ],
     SKILLS / "paper-writing/SKILL.md": [
         "from a fresh `/research-review` artifact review",
+        "A separate synthesis subagent consumes",
+        "main writer reads only that synthesis",
+        "## Build One Claims-Evidence Spine",
+        "## Draft Evidence First",
+    ],
+    SKILLS / "auto-paper-improvement-loop/SKILL.md": [
+        "another round would optimize taste",
+        "### 1. Fresh artifact review",
     ],
 }
 

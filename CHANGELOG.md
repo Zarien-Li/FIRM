@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+
+- Rebuilt paper authorship around a one-page `AUTHOR_ARGUMENT.md` that identifies the
+  human reader, prior belief, belief-changing fact, significance, and intended change
+  in understanding before outlining begins.
+- Demoted claims-evidence tables to post-draft factual verification so evidence audits
+  repair unsupported prose without generating section order, transitions, or voice.
+- Replaced exemplar-report synthesis with a dedicated author subagent that reads full,
+  role-specific exemplary papers together with the paper's argument and evidence, then
+  directly drafts a coherent section.
+- Replaced reviewer-style prose optimization with human-reader editing based on
+  ten-minute recall, authorial voice, field-natural language, paragraph progression,
+  specificity, and memorability.
+- Moved non-consequential caveats to Limitations and allowed an early problem-story
+  Introduction that is rewritten after the central evidence stabilizes.
+
 ## 1.2.0 - 2026-08-20
 
 - Replaced the public alias layer with the byte-identical local canonical skill

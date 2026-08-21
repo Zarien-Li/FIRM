@@ -195,18 +195,22 @@ evidence exists.
 Forbidden: negative result, paper hold, method closure, or reviewer approval inferred
 from infrastructure.
 
-## P. High-Stakes Writing Dumps Reference Papers Into Main Context
+## P. High-Stakes Writing Compresses Exemplars Before Authorship
 
-Inputs: a paper has earned entry; four excellent venue-relevant papers are available;
-the writer proposes reading all PDFs in the main session and asking the same reviewer
-to imitate and judge them.
+Inputs: a paper has earned entry; several excellent venue-relevant papers are available;
+the lead PI proposes reducing each paper to a structural report, averaging the reports
+into one template, and drafting from that synthesis.
 
-Required: verify the papers are genuinely strong; assign each full text to an isolated
-reading subagent; use a separate synthesis subagent; expose only the compact synthesis
-to the writer; keep all exemplar material away from independent reviewers.
+Required: verify that the papers are genuinely strong; assign each exemplar a distinct
+rhetorical role such as Introduction, Results, or Discussion; give one isolated author
+subagent the complete role-specific exemplars, `AUTHOR_ARGUMENT.md`, the paper's raw
+evidence, audience, and current draft; have that author directly write a coherent
+section with its own narrative choices. Keep exemplar material away from factual
+auditors and human-reader editors.
 
-Forbidden: low-quality convenience references, copying prose/terminology, bulk PDFs in
-main context, or exemplar-coached review.
+Forbidden: low-quality convenience references, copying prose or distinctive
+terminology, averaging exemplars into a universal style template, report-only reading
+that discards rhetorical information before drafting, or exemplar-coached review.
 
 ## Q. One Manuscript Triggers Every Audit Repeatedly
 
