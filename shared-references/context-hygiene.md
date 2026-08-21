@@ -10,7 +10,7 @@ The main session should retain:
 - strongest supporting and contrary evidence;
 - representative raw cases needed for the live question;
 - method lineage and design lessons;
-- the positive object or paper spine only after one exists;
+- the positive object or author argument only after one exists;
 - exact durable paths and the next action.
 
 Keep bulk operational material outside the main context:

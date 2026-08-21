@@ -51,8 +51,8 @@ the lead PI and grounded directly in raw evidence. It must establish:
 - paper-to-program bridge and current contribution identity.
 
 Do not require a parallel matrix of maturity fields or a fresh Codex verdict. An
-optional near-final red-team audit may verify factual, claim, citation, or proof
-integrity after the paper object exists. If a load-bearing anchor is later downgraded,
+optional near-final independent check may verify one named factual, claim, citation, or
+proof uncertainty after the paper object exists. If a load-bearing anchor is later downgraded,
 submission-oriented writing returns to hold while independent text and artifacts
 remain preserved.
 
@@ -63,8 +63,8 @@ an immature candidate into submission-shaped prose.
 A method program cannot become an analysis paper because its methods failed. A changed
 contribution type requires an independently valuable object, independent confirmation,
 a scientific consequence, and a fresh paper identity before contribution-directed
-writing. A sparse late-stage review may challenge the resulting fixed object but does
-not select the identity. Ask the user only if an explicitly
+writing. A sparse late-stage verification may resolve a named uncertainty in the
+resulting fixed object but does not select the identity. Ask the user only if an explicitly
 locked project or deliverable boundary changes.
 
 ## Establish The Author Argument Before The Outline
@@ -228,7 +228,7 @@ Each check has one owner:
 | Did experiment/evaluator/provenance validly identify the quantity? | `/research-audit mode: experiment` |
 | Do manuscript numbers and semantic qualifiers match raw evidence? | `paper-writing mode: claim-audit` |
 | Do citations exist and support their local contexts? | `/research-audit mode: citation` |
-| Is the scientific contribution important, coherent, and defensible? | `/research-review` artifact review |
+| Is the scientific contribution important, coherent, and memorable? | lead PI plus human-reader editor |
 | Is project state/value/identity ready for a boundary decision? | `/research-state-audit` |
 | Are formal statements and proofs correct? | `/research-review` proof audit |
 

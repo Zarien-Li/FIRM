@@ -221,20 +221,21 @@ collaborations, not pipeline stations:
 - Creative Invention when competent evidence has earned a first construction, an
   informative realization has localized what v2 must replace, or a positive primitive
   can be enlarged;
-- Method Challenge only after a credible positive realization or before exceptional
-  paper-sized spend, not before the smallest real implementation;
+- Decision-Focused Construction Check only after a credible positive realization when
+  one named uncertainty could reverse exceptional paper-sized spend;
 - Program Expansion after a credible positive realization;
 - Consolidate/Re-ground is owned by the PI, optionally with Gemini, when a completed
   episode leaves program allocation genuinely uncertain;
-- optional artifact and proof review only for later fixed objects.
+- optional named factual and proof verification only for later fixed objects.
 
-Codex is a sparse late-stage red-team verifier, not the routine critical co-PI.
+Codex is a sparse decision-focused verifier, not the routine critical co-PI.
 Default to zero Codex calls during contact, interpretation, invention, cheap
 realization, repair, and re-grounding. Normally call it at most once after a credible
-positive object and before paper-sized expansion, plus optionally once near the final
-artifact. It cannot veto an exploratory principle, choose `PARK`, close the broad
-program, or change contribution identity. Harsh reviewer preference is not empirical
-falsification or calibrated acceptance probability.
+positive object only when one named uncertainty could reverse paper-sized expansion,
+plus optionally once near the final artifact for a named factual risk. It cannot veto
+an exploratory principle, choose `PARK`, close the broad program, or change
+contribution identity. It should return `no material change` rather than search for
+optional objections.
 
 Gemini is the creative co-PI. The lead PI may invite it when a distinct inventive
 perspective can materially change the construction: after competent natural contact
@@ -279,7 +280,7 @@ not after every metric.
 ## Positive Object And Paper
 - credible positive object: none | concise object and evidence:
 - expansion status: not-applicable | candidate | active | complete:
-- paper spine: none | provisional | stable:
+- author argument and manuscript: none | provisional | stable:
 - decisive unresolved issue, if any:
 
 ## History

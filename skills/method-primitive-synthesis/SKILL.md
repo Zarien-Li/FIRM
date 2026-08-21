@@ -138,7 +138,7 @@ v1 -> v2 repairs under the same central principle; it must not turn each version
 a scientific gate. Release it when the arc's question is answered, invalidated, or
 made irrelevant.
 
-Do not require Method Challenge before implementation. Use the sparse Codex policy in
+Do not require a Decision-Focused Construction Check before implementation. Use the sparse Codex policy in
 `research-review` only after the arc yields a credible positive object or before
 exceptional paper-sized spend. Do not call it after every version or component output.
 

@@ -1,6 +1,6 @@
 ---
 name: auto-paper-improvement-loop
-description: Improve an existing research paper through human-reader editing, evidence-led revision, recompilation, and visual inspection. Use only after the contribution identity and evidence are stable; reserve external red-team review for an optional near-final factual pass.
+description: Improve an existing research paper through human-reader editing, evidence-led revision, recompilation, and visual inspection. Use only after the contribution identity and evidence are stable; reserve external verification for an optional near-final named factual uncertainty.
 allowed-tools: Bash(*), Read, Write, Edit, Grep, Glob, Agent, mcp__codex__codex, mcp__codex__codex-reply
 ---
 

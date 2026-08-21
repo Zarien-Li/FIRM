@@ -82,7 +82,7 @@ synthetic data, oracles, and derived datasets may teach but cannot silently beco
 paper's importance. Re-ground at meaningful episode boundaries when work drifts into
 a private problem.
 
-Do not create a paper spine before a credible positive method or independently
+Do not create a submission-shaped manuscript before a credible positive method or independently
 important confirmed non-method object exists. Method failure never automatically
 licenses an analysis paper. After a credible positive, expand the positive program
 before shrinking into defensive reviewer experiments.
@@ -95,10 +95,11 @@ The lead PI owns routine interpretation, invention, repair, and continuation.
   a consequential construction or expansion decision. Its output is design material:
   collision-check, implement, and test it.
 - Codex is an optional sparse verifier. Default to zero calls before a credible
-  positive object. Normally use at most one named-risk red-team before exceptional
-  paper-sized expansion and optionally one near-final factual/claim/citation/proof
-  audit. It does not choose `PARK`, close a broad program, select the first method, or
-  change contribution identity.
+  positive object. Use it only to resolve one named uncertainty that could change a
+  current design, claim, or exceptional paper-sized resource decision, and optionally
+  for one near-final factual/claim/citation/proof audit. It does not search for general
+  objections, choose `PARK`, close a broad program, select the first method, or change
+  contribution identity. A plausible concern that changes no decision creates no task.
 - FIRM and registries report process, job, GPU, CPU, SSH, and delivery facts. They do
   not answer scientific questions or direct research.
 

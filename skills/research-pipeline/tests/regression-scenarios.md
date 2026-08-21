@@ -350,6 +350,22 @@ task/model/data or adoption axes; concentrate paper budget on the coherent campa
 Forbidden: immediately compressing to one benchmark delta, indiscriminate breadth,
 or spending the first positive on reviewer-defense experiments.
 
+## AA. Independent Verification Manufactures Defensive Work
+
+Inputs: a credible positive object and fair comparison already exist; Codex is asked
+for a general critical review and returns many plausible caveats, optional controls,
+and possible reviewer objections, none tied to a current design, claim, or resource
+decision.
+
+Required: discard the unbounded review; restate the one named uncertainty, current
+decision at stake, raw conflicting evidence, and opportunity cost; request a bounded
+decision-focused verification only if resolving that uncertainty could reverse the
+decision. Otherwise record `no material change` and continue the scientific plan.
+
+Forbidden: converting issue volume into required experiments, treating harshness as
+calibration, raising the evidence bar after every response, or optimizing the project
+to survive hypothetical objections.
+
 ## Passing Standard
 
 Every scenario must preserve user authority, original-program value, evidence

@@ -6,7 +6,7 @@
 <h1 align="center">经过真实科研检验的端到端 CS Research Skills。</h1>
 
 <p align="center">
-  16 个 skills，覆盖问题发现、方法形成、实验、独立 second-PI 评审<br>
+  16 个 skills，覆盖问题发现、方法形成、实验、独立验证与创意协作<br>
   和证据驱动的论文写作。
 </p>
 
@@ -96,7 +96,7 @@ Prize -> Fidelity -> Design -> Evidence -> Entry
 - **Expansion：** 一个可信正结果能否长成可复用的研究计划，而不只是更大的结果表？
 - **Entry：** 当前贡献是否成熟到可以进入完整论文写作？
 
-`research-review` 把两种外部视角分开。Codex 是稀疏的后期红队验证者；可信正结果之前
+`research-review` 把两种外部视角分开。Codex 只稀疏地验证一个会改变当前决定的明确不确定性；可信正结果之前
 默认零调用。Gemini 是可选的创造型 co-PI，在充分经验
 证据已经值得形成 v1、一次信息充分的失败需要真正不同的 v2 primitive，或可信正结果可以
 长成更大可复用思想时参与。主 PI 根据实时证据动态编写 Gemini prompt，再负责 collision
@@ -216,7 +216,7 @@ claude --append-system-prompt-file ~/FIRM/CLAUDE-RESEARCH.md
 
 | Discover | Build | Finish |
 |---|---|---|
-| 复现强基线，检查自然成功、失败和矛盾案例 | 把负结果转化为构造性方法谱系；可选调用 Gemini 共同发明证据已经挣得的 primitive | 仅在可信正证据后或近终稿的一个明确风险上使用稀疏 Codex 红队审查 |
+| 复现强基线，检查自然成功、失败和矛盾案例 | 把负结果转化为构造性方法谱系；可选调用 Gemini 共同发明证据已经挣得的 primitive | 仅让 Codex 解决一个会改变当前决定的明确不确定性，或做一次近终稿事实核验 |
 | 在项目演化中持续保留原始研究计划和社区价值 | 区分实现、设计、优化、统计和迁移不确定性 | 让最终 claim 与控制实验、成本、局限、引用和原始产物保持一致 |
 
 一个持续研究者负责整个研究计划。Specialist skills 是按需加载的工具，不是刚性阶段机。

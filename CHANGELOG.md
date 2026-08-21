@@ -15,6 +15,9 @@
   specificity, and memorability.
 - Moved non-consequential caveats to Limitations and allowed an early problem-story
   Introduction that is rewritten after the central evidence stabilizes.
+- Replaced open-ended Codex red-team review with decision-focused verification: one
+  named uncertainty, one current decision it could reverse, an explicit action burden
+  for every recommendation, and `no material change` when no intervention is justified.
 
 ## 1.2.0 - 2026-08-20
 

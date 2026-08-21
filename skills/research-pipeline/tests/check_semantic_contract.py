@@ -59,7 +59,10 @@ REQUIRED = {
     SKILLS / "research-review/SKILL.md": [
         "## Sparse Codex Policy",
         "Default to **zero Codex calls**",
-        "reviewer preference",
+        "Every Codex recommendation bears an action burden",
+        "`no material change`",
+        "## Decision-Focused Construction Check",
+        "Do not classify a manuscript or method into a severity grid",
         "## Creative Invention",
         "## Program Expansion",
     ],
@@ -112,6 +115,10 @@ FORBIDDEN = {
         "Codex decides whether the project must stop",
         "Codex is the critical co-PI",
         "Codex may choose `PARK`",
+        "red-team verifier",
+        "## Method Challenge",
+        "fatal flaw",
+        "Classify criticism before acting",
     ],
     SKILLS / "paper-writing/SKILL.md": [
         "from a fresh `/research-review` artifact review",

@@ -75,7 +75,7 @@ small private cell from borrowing significance from a broad field name.
 ### Independent collaboration follows comparative advantage
 
 The `research-review` skill uses Gemini selectively for evidence-earned creative
-invention and Codex sparingly for late-stage red-team verification. The lead PI owns
+invention and Codex sparingly for one named, decision-relevant verification. The lead PI owns
 interpretation, implementation, continuation, and paper decisions. External model
 output is design or criticism material, never a project gate.
 
