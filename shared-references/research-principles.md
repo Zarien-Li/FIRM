@@ -30,9 +30,9 @@ restating the rule.
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P11 | A valid local result updates observation by default, not explanation, method, scope, contribution type, or paper identity. | `signal-analysis` |
-| P12 | Maintain two or three decision-relevant competing explanations; update them only with a bundle that distinguishes their predictions. | `signal-analysis` |
+| P12 | Before serious method commitment, build a compact problem model of the incumbent computation, useful default assumption, earliest success/failure divergence, contrary evidence, intervention locus, and behavior to preserve. | `signal-analysis` |
 | P13 | Decodability, prediction, oracle headroom, and association are not causal use or an editable handle. | `signal-analysis` |
-| P14 | Probes and slices serve a concrete decision; do not replace construction with a growing diagnostic atlas. | `signal-analysis` |
+| P14 | Compare only a few design-distinct problem models and use probes or slices to distinguish their predictions; do not replace understanding or construction with a growing diagnostic atlas. | `signal-analysis` |
 
 ## Method Formation
 

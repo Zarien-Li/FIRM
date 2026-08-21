@@ -102,6 +102,12 @@ Prize -> Fidelity -> Principle -> Design -> Evidence -> Expansion -> Entry
   than merely a larger result table?
 - **Entry:** Is the contribution mature enough for full paper writing?
 
+During the explanatory pause, FIRM builds a compact problem model before serious
+method commitment: how the incumbent normally succeeds, which useful assumption fails,
+where matched success and failure first diverge, what evidence contradicts that account,
+and what an intervention must change while preserving ordinary capability. This is
+deeper analysis, not a mandate for a larger probe atlas.
+
 `research-review` separates two outside perspectives. Codex is a deliberately sparse
 decision-focused verifier for one named uncertainty, with zero calls by default before
 a credible positive.

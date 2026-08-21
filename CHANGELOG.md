@@ -18,6 +18,13 @@
 - Replaced open-ended Codex red-team review with decision-focused verification: one
   named uncertainty, one current decision it could reverse, an explicit action burden
   for every recommendation, and `no material change` when no intervention is justified.
+- Added a design-giving problem model between empirical contact and construction:
+  reconstruct incumbent computation and rationale, the useful default assumption,
+  earliest matched success/failure divergence, contrary evidence, intervention locus,
+  falsifying counterfactual, and behavior that a method must preserve.
+- Aligned literature reading and explanatory experiments with that problem model so
+  deeper analysis replaces correlation-to-method jumps without reviving exhaustive
+  probe atlases.
 
 ## 1.2.0 - 2026-08-20
 

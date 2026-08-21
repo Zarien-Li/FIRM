@@ -42,17 +42,21 @@ REQUIRED = {
     ],
     SKILLS / "signal-analysis/SKILL.md": [
         "## Observation Is The Default Update",
+        "## Build A Problem Model Before A Method",
+        "the earliest meaningful divergence between matched successes and failures",
         "## Read A Construction Arc Constructively",
         "## Separate Predictive Signal From Editable Cause",
     ],
     SKILLS / "method-primitive-synthesis/SKILL.md": [
         "candidate",
         "realization",
+        "## Require A Design-Giving Problem Account",
         "## Cultivate One Construction Arc",
         "80% deletion test",
     ],
     SKILLS / "experiment-plan/SKILL.md": [
         "## Use Two Resource Postures",
+        "## Plan Explanatory Evidence As A Model Test",
         "## Plan A Construction Arc",
         "one healthy paired development seed",
     ],

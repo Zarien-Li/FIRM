@@ -1,6 +1,6 @@
 ---
 name: signal-analysis
-description: Read raw empirical or method evidence as a researcher. Record observations first, compare a small set of competing explanations only when a bundle distinguishes them, and extract construction lessons without turning every result into a mechanism, paper, or new method.
+description: Read raw empirical or method evidence as a researcher. Record observations first, build a compact computational problem model from matched successes, failures, and contradictions, compare competing explanations with discriminating evidence, and extract construction lessons without turning every result into a mechanism, paper, or new method.
 ---
 
 # Evidence And Scientific Interpretation
@@ -56,10 +56,45 @@ One competent, materially bad paired development result shows that the current
 realization needs diagnosis or redesign. More seeds estimate unresolved stochastic
 uncertainty; they do not repair the design or search for a favorable mean.
 
+## Build A Problem Model Before A Method
+
+Deep analysis is not a larger failure atlas. It is a compact account of how the
+important behavior is produced and where the current system's assumptions become
+wrong. Before committing to a load-bearing method, reconstruct at the resolution the
+design needs:
+
+- the natural task event and accepted outcome that make the problem consequential;
+- the incumbent computation from available information through representation,
+  state or interaction, update or decision, execution, and measured utility;
+- where supervision, credit, retrieval, memory, tools, or external computation enter;
+- the default assumption made by current systems, why it was reasonable or useful,
+  and the natural condition under which it conflicts with the task;
+- the earliest meaningful divergence between matched successes and failures, rather
+  than the easiest downstream symptom to probe;
+- what a valid intervention must change and which ordinary behavior, information, or
+  cost it must preserve.
+
+The account should explain representative successes, failures, system disagreements,
+and at least one inconvenient case with the same small set of principles. State a
+counterfactual observation that would make the account wrong. A mechanism label that
+merely renames the slice, metric, or correlated feature is not a problem model.
+
+The model may be causal, algorithmic, optimization-based, representational, or
+systems-level. It need not identify every internal variable or prove a complete causal
+graph. Its resolution is sufficient when competing accounts imply different
+construction choices and one can state why changing the proposed locus should alter
+the accepted outcome while preserving the named invariants.
+
+Use code reading, traces, literature, matched cases, and controlled interventions only
+when they sharpen this account. If the account is still underdetermined, choose the
+smallest evidence that distinguishes a design-relevant link. Do not compensate with a
+method guess, a larger probe suite, or a more elaborate taxonomy.
+
 ## Update Explanations Only From A Bundle
 
-Maintain the smallest useful set, normally two or three, whose truth would imply
-different next constructions or experiments. For each record:
+Maintain the smallest useful set, normally two or three, of alternative problem
+models whose truth would imply different next constructions or experiments. For each
+record:
 
 - supporting and contrary observations;
 - a prediction that differs from the alternatives;
@@ -69,8 +104,9 @@ Change this set only when accumulated evidence distinguishes those predictions. 
 probe, null, correlation, failed method, or clever post-hoc variable is insufficient.
 Refuting A does not prove B unless the alternatives are exhaustive.
 
-Seek an explanation that compresses both success and failure. Do not select a story
-because it yields a convenient method or make every outcome support a different paper.
+Seek an explanation that compresses success, failure, disagreement, and inconvenient
+evidence while respecting the actual system computation. Do not select a story because
+it yields a convenient method or make every outcome support a different paper.
 
 ## Separate Predictive Signal From Editable Cause
 
@@ -126,7 +162,8 @@ At a completed research-episode boundary also ask:
   program?
 
 Only after a credible positive object or independently important confirmed phenomenon
-exists should the analysis update a Paper Spine, claims-evidence table, or paper scope.
+exists should the analysis update an author argument, post-draft claims-evidence map,
+or paper scope.
 Failed methods cannot automatically select analysis, measurement, mechanism, theory,
 or systems identity; follow `research-control-protocol.md`.
 
@@ -156,7 +193,8 @@ For a completed construction or explanatory episode, create or update
 ```markdown
 # Episode Interpretation
 ## Validated Observations
-## Competing Explanations And What Was Distinguished
+## Problem Model: System Computation, Default Assumption, Earliest Divergence, Invariants
+## Competing Problem Models And What Was Distinguished
 ## Construction Lessons: Activated / Residual / Failed Coupling / Inheritance
 ## Accepted-Surface Consequence
 ## Program Or Paper Consequence, If Earned

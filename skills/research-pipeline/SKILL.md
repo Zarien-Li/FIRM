@@ -58,8 +58,9 @@ This is not a state machine. Evidence may skip, repeat, or reverse elements.
 
 - **Empirical contact:** reproduce serious systems and read natural successes,
   failures, disagreements, and implementation behavior.
-- **Explanatory pause:** after a sufficient bundle, compare a few explanations and
-  choose the uncertainty that matters for design.
+- **Explanatory pause:** after a sufficient bundle, reconstruct how the task and
+  incumbent system produce both success and failure, compare a few genuinely distinct
+  problem models, and choose the unresolved link that matters for design.
 - **Construction arc:** cultivate one principle through real implementations and
   evidence-directed ablations, often v1 -> v2 -> v3, without restarting the research
   identity after each result.
@@ -121,6 +122,14 @@ new method, or higher abstraction after every probe.
 Probe decodability, AUC, attribution, oracle headroom, and correlations may localize a
 question. They are not causal use or an editable handle. Once evidence is sufficient
 to build, stop extending the atlas and construct.
+
+Before committing serious method compute, be able to explain the problem at the
+resolution of the intervention: the relevant information and computation path, the
+incumbent's useful default assumption, the earliest divergence between matched success
+and failure, a contrary case, the behavior that must be preserved, and a counterfactual
+that would defeat the account. This is a compact problem model, not a demand for a
+complete causal graph. Use `signal-analysis` to form it. If the method locus does not
+follow from this account, the project is still guessing.
 
 ## Cultivate A Construction
 
@@ -184,14 +193,16 @@ narrow paper or begin a reviewer-objection grid. Ask:
 - whether ten times the resources would strengthen the central idea or merely add
   rows to the table.
 
-Use `research-review` for an independent critical or creative expansion perspective
-when it can materially enlarge the principle before paper-sized investment. Select one
+Use `research-review` for a creative expansion perspective or one named
+decision-relevant verification when it can materially enlarge or protect the principle
+before paper-sized investment. Select one
 coherent campaign. Generality comes from principle-predicted reach, not dataset count.
 
 ## Form And Harvest A Paper
 
-Create a Paper Spine only after a credible positive method or an independently
-important, independently confirmed non-method object exists. One governing principle
+Form an author argument and submission-shaped manuscript only after a credible positive
+method or an independently important, independently confirmed non-method object exists.
+One governing principle
 may support connected layers: phenomenon, primitive, realization, predicted
 generality, and reusable machinery. Do not force a quota or combine unrelated work.
 

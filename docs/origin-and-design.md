@@ -72,6 +72,14 @@ importance at its actual scope. FIRM separates:
 The purpose is not to force every paper to solve the whole field. It is to prevent a
 small private cell from borrowing significance from a broad field name.
 
+### Explanation is a problem model, not a probe inventory
+
+Between empirical contact and construction, FIRM reconstructs the relevant incumbent
+computation and why its default assumption is useful, then explains the earliest
+matched success/failure divergence, contrary evidence, intervention locus, and behavior
+to preserve. The required depth is the depth needed to choose among genuinely different
+designs, not exhaustive causal identification of the entire model.
+
 ### Independent collaboration follows comparative advantage
 
 The `research-review` skill uses Gemini selectively for evidence-earned creative

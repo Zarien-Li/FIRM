@@ -366,6 +366,24 @@ Forbidden: converting issue volume into required experiments, treating harshness
 calibration, raising the evidence bar after every response, or optimizing the project
 to survive hypothetical objections.
 
+## AB. A Correlated Failure Slice Jumps Straight To A Method
+
+Inputs: a natural failure cluster and predictive feature are reproducible; the session
+names the feature as the mechanism and proposes a module that suppresses it. It has not
+explained why the incumbent normally succeeds, why its useful design assumption fails
+here, where matched success and failure first diverge, or what behavior the intervention
+must preserve.
+
+Required: build a compact problem model from the accepted task, incumbent computation,
+design rationale, matched successes, failures, disagreements, and inconvenient cases;
+state alternative accounts with different construction consequences and a
+counterfactual that defeats the preferred account; obtain only the smallest evidence
+needed to choose the intervention locus and preservation constraints; then construct.
+
+Forbidden: correlation as cause, downstream probe locus as design locus, taxonomy as
+understanding, an exhaustive diagnostic atlas, or a method whose component jobs do not
+follow from the problem account.
+
 ## Passing Standard
 
 Every scenario must preserve user authority, original-program value, evidence
