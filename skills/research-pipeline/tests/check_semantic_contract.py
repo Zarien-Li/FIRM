@@ -42,63 +42,43 @@ REQUIRED = {
     ],
     SKILLS / "signal-analysis/SKILL.md": [
         "## Observation Is The Default Update",
-        "## Build A Problem Model Before A Method",
-        "the earliest meaningful divergence between matched successes and failures",
         "## Read A Construction Arc Constructively",
         "## Separate Predictive Signal From Editable Cause",
     ],
     SKILLS / "method-primitive-synthesis/SKILL.md": [
         "candidate",
         "realization",
-        "## Require A Design-Giving Problem Account",
         "## Cultivate One Construction Arc",
         "80% deletion test",
+        "beats every decisive healthy baseline",
     ],
     SKILLS / "experiment-plan/SKILL.md": [
         "## Use Two Resource Postures",
-        "## Plan Explanatory Evidence As A Model Test",
         "## Plan A Construction Arc",
         "one healthy paired development seed",
+        "## Turn A Pre-SOTA Gemini Proposal Into Evidence",
     ],
     SKILLS / "research-review/SKILL.md": [
         "## Sparse Codex Policy",
         "Default to **zero Codex calls**",
-        "Every Codex recommendation bears an action burden",
-        "`no material change`",
-        "## Decision-Focused Construction Check",
-        "Do not classify a manuscript or method into a severity grid",
+        "reviewer preference",
         "## Creative Invention",
+        "### Effective But Not Yet SOTA",
         "## Program Expansion",
     ],
     SKILLS / "paper-writing/SKILL.md": [
-        "## Establish The Author Argument Before The Outline",
-        "one-page `AUTHOR_ARGUMENT.md` in continuous prose",
-        "## Use Claims-Evidence As A Post-Draft Verification Tool",
-        "Do not create a synthesis of recurring patterns",
-        "Use one fresh author subagent for a coherent section or draft",
-        "## Draft The Problem Story Early, Then Rewrite It From Stable Evidence",
+        "Do not create any paper-shaped draft until the hard paper-entry gate",
+        "Let A Dedicated Author Learn Directly From Excellent Papers",
+        "beats every such baseline",
         "One identity means one governing scientific principle",
     ],
-    SKILLS / "auto-paper-improvement-loop/SKILL.md": [
-        "## One Improvement Round",
-        "### 1. Fresh human-reader edit",
-        "After a normal ten-minute read",
-        "Scientific taste is part of successful communication",
+    SKILLS / "research-state-audit/SKILL.md": [
+        "complete decisive comparison table",
+        "M2 at most",
     ],
-    SKILLS / "run-experiment/references/operations.md": [
-        "If FIRM is unavailable or not configured",
-        "must not block an otherwise\n"
-        "authorized ordinary experiment",
-        "existing project-owned local process, direct\n"
-        "SSH launcher, or managed scheduler path",
-    ],
-    SHARED / "research-control-protocol.md": [
-        "Only explicit user instructions, safety constraints, and live operational limits are\n"
-        "binding.",
-        "A live `locked`, `forbidden`, `no re-entry`, or equivalent statement must\n"
-        "cite the exact user or safety source",
-        "changes to explicitly locked project, venue,\n"
-        "deliverable, or portfolio scope",
+    SKILLS / "monitor-experiment/SKILL.md": [
+        "## Recover After Host Power Loss Or Session Restart",
+        "Never duplicate a run merely because the laptop rebooted",
     ],
     SHARED / "research-principles.md": ["P01", "P26", "P51"],
     RUNTIME_ADDENDUM: [
@@ -128,28 +108,15 @@ FORBIDDEN = {
         "Never overlap screens",
         "queue_manager.py",
         "install_aris.sh",
-        "FIRM is required to launch experiments",
     ],
     SKILLS / "research-review/SKILL.md": [
         "Interpret -> Invent -> Attack",
         "Codex decides whether the project must stop",
         "Codex is the critical co-PI",
         "Codex may choose `PARK`",
-        "red-team verifier",
-        "## Method Challenge",
-        "fatal flaw",
-        "Classify criticism before acting",
     ],
     SKILLS / "paper-writing/SKILL.md": [
         "from a fresh `/research-review` artifact review",
-        "A separate synthesis subagent consumes",
-        "main writer reads only that synthesis",
-        "## Build One Claims-Evidence Spine",
-        "## Draft Evidence First",
-    ],
-    SKILLS / "auto-paper-improvement-loop/SKILL.md": [
-        "another round would optimize taste",
-        "### 1. Fresh artifact review",
     ],
 }
 

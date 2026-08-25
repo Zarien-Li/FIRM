@@ -55,9 +55,18 @@ Evidence stability is not paper maturity. A method paper requires:
 
 - important natural problem;
 - realized trainable/executable positive object on a competent standard task;
-- decisive fair incumbent comparison;
-- paired utility/cost evidence;
+- a frozen accepted benchmark, primary metric, evaluator, and matched resource budget;
+- a complete decisive comparison table containing every healthy claim-threatening
+  baseline, strongest incumbent, and serious simple alternative;
+- superiority over every entry in that table on the frozen primary metric;
+- passed paired utility/cost, retention, capability, and safety checks required by the
+  claim;
 - traceable provenance, contrary evidence, and honest scope.
+
+A credible positive that still ties or loses to any decisive baseline is M2 at most.
+It may license an evidence-conditioned Gemini improvement episode, but it does not
+license M3, paper entry, or manuscript writing. Gemini advice changes maturity only
+after the PI implements it and a frozen matched experiment validates the realization.
 
 A formula, architecture diagram, CPU probe, oracle ceiling, smoke test, or pre-check is
 a candidate, not a method realization.

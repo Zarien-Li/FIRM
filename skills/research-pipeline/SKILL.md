@@ -68,11 +68,11 @@ This is not a state machine. Evidence may skip, repeat, or reverse elements.
   phenomenon now changes an accepted outcome or scientific decision.
 - **Program expansion:** ask how the same principle can become a larger research
   program rather than immediately narrowing it into a defensive paper.
-- **Paper formation:** once a positive object exists, form an author argument for a
-  particular human audience, draft its problem story, and later verify consequential
-  prose against a post-draft claims-evidence map.
-- **Stabilization and writing:** establish the decisive comparison, reliability,
-  utility, scope, and artifact quality needed by the actual claim.
+- **Decisive hardening:** once a positive object exists, establish the complete frozen
+  comparison table, paired utility, reliability, scope, and artifact quality needed by
+  the actual claim. A positive object alone does not license manuscript writing.
+- **Paper formation and writing:** begin only after the hard paper-entry gate below is
+  fully satisfied.
 
 Protect the active episode from generic continuation, frequent outside-model calls, and
 paper-oriented accounting. Small observations update the notebook. Reconsider the
@@ -200,11 +200,28 @@ coherent campaign. Generality comes from principle-predicted reach, not dataset 
 
 ## Form And Harvest A Paper
 
-Form an author argument and submission-shaped manuscript only after a credible positive
-method or an independently important, independently confirmed non-method object exists.
-One governing principle
-may support connected layers: phenomenon, primitive, realization, predicted
-generality, and reusable machinery. Do not force a quota or combine unrelated work.
+For a method paper, a credible positive object is necessary but not sufficient. Keep
+`MANUSCRIPT_FORBIDDEN` until one executable end-to-end realization has, under a frozen
+accepted natural benchmark, primary metric, evaluator, and matched resource budget:
+
+- beaten every decisive, healthy, claim-threatening baseline in the frozen comparison
+  table, including the strongest incumbent and serious simple alternatives;
+- passed the paired utility, retention, latency/cost, safety, and capability checks
+  required by the intended claim;
+- closed claim-threatening provenance, evaluator, and scope defects; and
+- directly demonstrated every model, surface, realization, and generalization scope
+  used by the intended paper claim.
+
+Tie, non-inferiority, winning only some baselines, an unmatched-compute gain, a pilot,
+slice, oracle, diagnostic phenomenon, or promising candidate is not paper entry. It is
+M0-M2. M3 requires the complete claim-bearing package above.
+
+Before the gate passes, write only research artifacts: experiment contracts, raw
+tables, evaluator checks, implementation documentation, evidence ledgers, and failure
+analysis. Do not draft or expand a title, abstract, introduction, related work, method,
+results, conclusion, submission narrative, Paper Spine, or LaTeX manuscript, including
+placeholder or `research-draft` versions. One governing principle may support connected
+layers only after entry. Do not force a quota or combine unrelated work.
 
 A method paper ultimately needs an important natural problem, a competent positive
 intervention, a fair decisive comparison, end-to-end value, and an honest tradeoff
@@ -212,8 +229,8 @@ surface. Another contribution type needs an independently valuable object,
 independent confirmation, consequence, and distinction from the strongest account.
 Failed method residue cannot select that identity automatically.
 
-Once the bounded positive object, decisive comparison, and paper-critical evidence
-are stable, finishing the paper may outrank another experiment. Open new work only
+Once the hard paper-entry gate and paper-critical evidence are stable, finishing the
+paper may outrank another experiment. Open new work only
 when it can change correctness, importance, novelty, the object, scope, or a likely
 decision. The broader research program remains open after submission.
 
@@ -255,6 +272,14 @@ localized what v2 must replace, or after a credible positive can expand into a l
 reusable primitive. These are high-leverage examples, not a mandatory sequence. Do not
 call it to compensate for missing contact, manufacture a method from an aggregate
 metric, or produce decorative idea menus.
+
+When an end-to-end realization is credibly effective but still fails the complete
+frozen SOTA baseline gate, Gemini may propose one evidence-conditioned improvement
+aimed at the exact residual gap. This does not change maturity. The lead PI must select,
+implement, and run the smallest matched experiment under the frozen benchmark,
+evaluator, budget, decisive baselines, and paired-utility contract. A Gemini response
+without that project-owned realization is design material only and cannot license M3,
+paper formation, or a scientific claim.
 
 The PI writes the prompt dynamically from raw observations, contrary evidence,
 incumbents, implementation constraints, and the unresolved design question. Follow

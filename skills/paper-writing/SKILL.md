@@ -35,9 +35,10 @@ Read the authoritative research state, original program, raw decisive results, m
 specification, strongest fair comparisons, relevant audits, venue rules, and current
 manuscript. Treat drafts and prior reviews as claims to verify.
 
-Do not create a submission-shaped manuscript until research has produced a credible
-positive method or an independently valuable, independently confirmed non-method object. A
-`research-draft` may organize that object earlier without implying paper maturity.
+Do not create any paper-shaped draft until the hard paper-entry gate below passes. A
+credible positive method is necessary but not sufficient and does not license a title,
+abstract, introduction, related work, method, results, conclusion, submission narrative,
+Paper Spine, LaTeX manuscript, or placeholder `research-draft`.
 
 For submission-oriented writing, require an evidence-bearing `PAPER_ENTRY.md` owned by
 the lead PI and grounded directly in raw evidence. It must establish:
@@ -45,8 +46,15 @@ the lead PI and grounded directly in raw evidence. It must establish:
 - important natural or standard problem;
 - positive object and exact contribution type;
 - paper-bearing method, or independently confirmed non-method object;
-- decisive incumbent, the most claim-threatening rival, their health, and fair end-to-end comparison;
-- utility, capability, latency, or cost tradeoff;
+- a frozen accepted natural benchmark, population, primary metric, evaluator, and
+  matched resource budget;
+- every decisive healthy baseline in the frozen comparison table, including the
+  strongest incumbent, claim-threatening rival, and serious simple alternatives;
+- an end-to-end realized method that beats every such baseline on the frozen primary
+  metric rather than tying, losing to one, winning only a slice, or relying on
+  unmatched compute;
+- paired utility, retention, capability, safety, latency, and cost checks required by
+  the claim;
 - raw provenance, strongest contrary evidence, and scope debt;
 - paper-to-program bridge and current contribution identity.
 
@@ -56,8 +64,10 @@ proof uncertainty after the paper object exists. If a load-bearing anchor is lat
 submission-oriented writing returns to hold while independent text and artifacts
 remain preserved.
 
-If entry is absent or `HOLD`, `plan`, `research-draft`, narrow editing, and compilation
-may continue when useful, but label them `research draft - ENTRY HOLD`. Do not expand
+If entry is absent or `HOLD`, manuscript planning, drafting, editing, and compilation
+are forbidden. Preserve existing text without expansion and return to evidence
+acquisition. Only experiment contracts, raw tables, evaluator checks, implementation
+documentation, evidence ledgers, and failure analysis may continue. Do not expand
 an immature candidate into submission-shaped prose.
 
 A method program cannot become an analysis paper because its methods failed. A changed

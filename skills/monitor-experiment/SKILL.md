@@ -48,6 +48,24 @@ movement or scheduler progress, expected outputs, parseability, terminal markers
 the actual scale/config. Distinguish a healthy scientific wait from an operational
 stall.
 
+## Recover After Host Power Loss Or Session Restart
+
+Treat every local PID, TTY, endpoint, container, queue row, and run status as stale
+until rediscovered. Reconcile the current process set, project cwd, visible terminal
+tail, newest main-chain history, Registry row, canonical queue object, exact worker,
+and freshest artifact before taking action.
+
+A remote worker may survive loss of the local Claude session. If it is alive and owned
+by the registered run, restore monitoring and do not resubmit. If the worker is gone,
+classify the run from terminal artifacts and resume only from a validated checkpoint
+under the same frozen contract. Submit at most one replacement for an ordinary
+recoverable interruption, preserving the failed attempt and linking its provenance.
+Never duplicate a run merely because the laptop rebooted or an old terminal is absent.
+
+For a claimed wait, require both the exact Registry pending/running row and either its
+canonical pending/running queue object or an independently verified live worker. A
+Registry row, heartbeat, GPU allocation, or old terminal message alone is insufficient.
+
 ## Verify Result Fidelity
 
 Before handing off a completed run, check:

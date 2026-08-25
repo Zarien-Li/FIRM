@@ -101,6 +101,21 @@ not establish novelty, causal truth, feasibility, or evidence. The lead PI colli
 checks the relevant literature and methods, selects or synthesizes one principle,
 implements it, and lets real experiments reshape it.
 
+### Effective But Not Yet SOTA
+
+An end-to-end realization may be credibly effective on an accepted task while still
+tying or losing to one or more decisive healthy baselines. This is a high-value Gemini
+moment when the positive effect, remaining SOTA gap, paired utility, contrary cases,
+and nearest-rival behavior are all concrete. Ask for one consequential improvement to
+the load-bearing computation, not a menu of cosmetic variants or paper framing.
+
+Gemini does not execute or validate the proposal. The lead PI must collision-check it,
+select at most one evidence-licensed change, implement it in the project, and run the
+smallest frozen matched experiment that can decide whether it closes the named gap
+without breaking paired utility. Until that experiment succeeds against the complete
+decisive baseline set, the object remains M2 or lower, the suggestion is not evidence,
+and manuscript writing remains forbidden.
+
 ## Decision-Focused Construction Check
 
 Do not use this check to pre-screen the PI's or Gemini's principle. Implement the

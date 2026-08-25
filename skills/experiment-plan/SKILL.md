@@ -142,9 +142,28 @@ A claim-bearing comparison requires:
 - explicit unique prediction;
 - relevant capability, coverage, latency, memory, compute, or cost evidence.
 
+For method-paper entry, freeze the complete decisive baseline table before reading the
+result. The realized method must beat every healthy entry on the primary metric under
+matched resources and pass the paired utility contract. A tie, partial table win, or
+gain bought by an unmatched budget remains pre-paper evidence.
+
 Do not infer superiority or primitive failure from a weak reader, untrained bridge,
 compound backbone/data/mechanism change, sampled-only baseline, or semantically
 mismatched protocol.
+
+## Turn A Pre-SOTA Gemini Proposal Into Evidence
+
+When a realization is credibly effective but still loses or ties a decisive baseline,
+Gemini may help propose one load-bearing improvement. Planning resumes with the PI:
+
+- name the exact baseline gap, raw contrary cases, and utility that must be preserved;
+- select at most one evidence-licensed proposal after literature collision checking;
+- implement it in the project rather than treating the proposal as a result;
+- freeze the smallest matched comparison that can adjudicate the gap and utility;
+- update maturity only from completed raw artifacts.
+
+Do not batch a Gemini idea menu, alter the baseline protocol to favor the suggestion,
+or begin manuscript work while the complete SOTA gate remains open.
 
 ## Plan Expansion After A Positive Object
 

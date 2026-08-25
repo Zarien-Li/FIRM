@@ -30,9 +30,9 @@ restating the rule.
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P11 | A valid local result updates observation by default, not explanation, method, scope, contribution type, or paper identity. | `signal-analysis` |
-| P12 | Before serious method commitment, build a compact problem model of the incumbent computation, useful default assumption, earliest success/failure divergence, contrary evidence, intervention locus, and behavior to preserve. | `signal-analysis` |
+| P12 | Maintain two or three decision-relevant competing explanations; update them only with a bundle that distinguishes their predictions. | `signal-analysis` |
 | P13 | Decodability, prediction, oracle headroom, and association are not causal use or an editable handle. | `signal-analysis` |
-| P14 | Compare only a few design-distinct problem models and use probes or slices to distinguish their predictions; do not replace understanding or construction with a growing diagnostic atlas. | `signal-analysis` |
+| P14 | Probes and slices serve a concrete decision; do not replace construction with a growing diagnostic atlas. | `signal-analysis` |
 
 ## Method Formation
 
@@ -40,7 +40,7 @@ restating the rule.
 |---|---|---|
 | P15 | Method work may begin from an independently important known problem or from a natural reproduced failure; both owe value, fairness, and standard-task evidence. | `method-primitive-synthesis` |
 | P16 | A formula, name, architecture sketch, probe, CPU check, oracle, or smoke test is a candidate, not a method realization. | `method-primitive-synthesis` |
-| P17 | A realization requires a trainable/executable standard-task implementation, active intended computation, and competent substrate. A paper-bearing method result additionally requires a matched decisive-incumbent comparison and paired utility. | `method-primitive-synthesis` |
+| P17 | A realization requires a trainable/executable standard-task implementation, active intended computation, and competent substrate. A paper-bearing method additionally beats every decisive healthy baseline under a frozen accepted-task protocol and passes paired utility. | `method-primitive-synthesis` |
 | P18 | Form a method through construction episodes: real implementation, one component/interaction comparison, and one paired utility check read together. | `method-primitive-synthesis` |
 | P19 | Construction ablations invent the method by changing component jobs and interactions; failed variant count is not maturity. | `method-primitive-synthesis` |
 | P20 | Preserve the honest run verdict, useful residual, failed coupling, and next inherited change; distinguish correction, construction, and tuning. | `method-primitive-synthesis` |
@@ -60,20 +60,20 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P27 | The lead PI and real evidence drive discovery, interpretation, construction, repair, and re-grounding; Gemini may widen principle space, while Codex resolves only a sparse, named uncertainty that could change a current decision. | `research-review` |
+| P27 | The lead PI and real evidence drive discovery, interpretation, construction, repair, and re-grounding. Gemini may propose an evidence-conditioned improvement, but the PI must implement and experimentally validate it; Codex remains a sparse decision-focused verifier. | `research-review` |
 | P28 | Default to zero Codex calls before a credible positive object; when feasible, run the smallest real realization before external criticism. | `research-review` |
 | P29 | Codex output is advice, not calibrated acceptance probability, evidence, a stop judgment, or a user constraint; it cannot veto exploratory principles, choose PARK, close broad programs, or change contribution identity. | `research-review` |
 | P30 | A failed method lineage cannot automatically become an analysis, measurement, mechanism, theory, or systems paper. | `research-control-protocol.md` |
 | P31 | A changed contribution type requires an independently valuable object, independently selected confirmation, scientific consequence, strongest-account comparison, and fresh paper identity; user approval is required only across an explicit locked boundary. | `research-control-protocol.md` |
-| P32 | Evidence stability is not contribution maturity; harvest when the positive object, decisive comparison, value, and paper-critical evidence are stable. | `research-pipeline` |
-| P33 | Submission readiness requires a lead-PI evidence-bearing paper entry; early research drafting may expose gaps, and an optional near-final independent audit verifies rather than creates maturity. | `paper-writing` |
+| P32 | Evidence stability is not contribution maturity; M3 method-paper entry requires superiority over the complete frozen decisive baseline set, paired utility, and all claim-bearing evidence. | `research-pipeline` |
+| P33 | Submission readiness requires a lead-PI evidence-bearing paper entry after the hard SOTA gate; pre-entry manuscript drafting is forbidden, and optional near-final verification cannot create maturity. | `paper-writing` |
 
 ## Writing And Context
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P34 | High-stakes writing assigns verified excellent full papers distinct rhetorical roles and lets one isolated author subagent read them with the author argument and evidence to draft directly; it does not average them into a template. | `paper-writing` |
-| P35 | Writing begins from a one-page human-facing author argument; claims-evidence mapping verifies the completed draft and never generates its prose or narrative order. | `paper-writing` |
+| P34 | High-stakes writing studies two to four verified excellent full papers through isolated reading subagents and a separate synthesis subagent. | `paper-writing` |
+| P35 | Manuscript writing begins only after the hard paper-entry gate and cannot repair missing science, a baseline loss, lost significance, invalid evidence, or an unimplemented method. | `paper-writing` |
 | P36 | Keep operational logs and bulk literature outside the main context while retaining contrary evidence and exact durable paths. | `context-hygiene.md` |
 | P37 | Each integrity question has one audit owner; reuse fresh evidence-bound audits and do not create parallel headline, claim, citation, experiment, or state gates. | `paper-writing`, `research-audit`, and `research-state-audit` |
 
@@ -82,7 +82,7 @@ restating the rule.
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P38 | Prefer consequential default assumptions and simple reusable replacement principles; discovery slices are entry points, not intellectual endpoints. | `research-pipeline` |
-| P39 | After a credible positive realization, the PI and optionally Gemini assess program expansion and research leverage; one sparse Codex check may resolve a named uncertainty only when it could reverse paper-sized spend. | `research-pipeline` and `research-review` |
+| P39 | After a credible positive realization, especially one still below SOTA, Gemini may propose one evidence-conditioned improvement; the PI selects, implements, and runs the decisive matched experiment before any maturity update. | `research-pipeline` and `research-review` |
 | P40 | Allocate probe and paper budgets by evidence maturity and upside; do not distribute claim-scale compute evenly or use it to defend low-leverage private cells. | `experiment-plan` |
 | P41 | One governing contribution identity may earn a connected stack of phenomenon, primitive, realization, general finding, and reusable machinery; never force a quota. | `paper-writing` |
 
@@ -100,10 +100,10 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P47 | Keep a stable program compass during discovery; form a human-facing author argument only after a credible positive object or independently important confirmed phenomenon exists. | `research-pipeline` |
+| P47 | Keep a stable program compass during discovery; create a paper spine only after a credible positive object or independently important confirmed phenomenon exists. | `research-pipeline` |
 | P48 | Work in protected research episodes. Review and program-level accounting occur at consequential episode boundaries, not after every result. | `research-pipeline` |
 | P49 | Method formation is a construction arc that may contain several evidence-directed realizations and ablations under one principle; small versions are not separate paper identities. | `method-primitive-synthesis` |
-| P50 | Paper assets and author-argument formation belong to expansion, stabilization, and harvest; claims-evidence accounting begins after narrative drafting, while ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
+| P50 | Paper-asset and claims-evidence accounting belongs to expansion, stabilization, and harvest; ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
 | P51 | Operational systems expose process, job, resource, and liveness facts; they do not choose explanations, methods, contribution types, or research routes. | `run-experiment` and project operations |
 
 ## Maintenance Rule
