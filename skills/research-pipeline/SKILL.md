@@ -348,6 +348,12 @@ changes; evidence is invalidated; the blocker or next decisive action changes; o
 work enters paper harvest. Do not update it for routine reading, downloads, code edits,
 or training progress ticks.
 
+A mechanically migrated legacy report remains `migrationPending` and unverified even
+when its JSON is well formed. Only the project PI may clear that marker, after checking
+every retained scientific statement against authority, current artifacts, the live
+state, and active work and recording the reconciliation time. Never clear it merely to
+make a dashboard green.
+
 Keep only the latest three to five decisive experiment records there and retain full
 history in the live state and raw artifacts. Each decisive record states:
 
@@ -360,10 +366,10 @@ history in the live state and raw artifacts. Each decisive record states:
 - `artifacts`: paths and roles, plus only genuinely known row counts, minimum sizes, or
   completion markers.
 
-`STALE REPORT` and `UNVERIFIED CLAIM` are mechanical reconciliation flags, not research
-verdicts. The project PI fixes them. A control plane must not fill missing fields,
-promote infrastructure failure to scientific evidence, or choose a new route on the
-PI's behalf.
+`MIGRATION PENDING`, `STALE REPORT`, and `UNVERIFIED CLAIM` are mechanical
+reconciliation flags, not research verdicts. The project PI fixes them. A control plane
+must not fill missing fields, promote infrastructure failure to scientific evidence,
+or choose a new route on the PI's behalf.
 
 Tasks, memory, plans, reviews, drafts, and FIRM cards may point to the live state but
 may not carry a competing thesis. Historical stop, retire, exhausted, paper-ready, or

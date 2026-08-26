@@ -33,7 +33,8 @@ REQUIRED = {
         "## Form And Harvest A Paper",
         "construction arc",
         "PI is its only scientific author",
-        "`STALE REPORT` and `UNVERIFIED CLAIM`",
+        "`MIGRATION PENDING`, `STALE REPORT`, and `UNVERIFIED CLAIM`",
+        "Never clear it merely to",
     ],
     SKILLS / "baseline/SKILL.md": [
         "## Resolve The Nearest Rival Early",

@@ -105,7 +105,7 @@ restating the rule.
 | P49 | Method formation is a construction arc that may contain several evidence-directed realizations and ablations under one principle; small versions are not separate paper identities. | `method-primitive-synthesis` |
 | P50 | Paper assets and author-argument formation belong to expansion, stabilization, and harvest; claims-evidence mapping begins after narrative drafting, while ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
 | P51 | Operational systems expose process, job, resource, and liveness facts; they do not choose explanations, methods, contribution types, or research routes. | `run-experiment` and project operations |
-| P52 | A project PI uniquely authors its portfolio status after meaningful scientific transitions; dashboards and Codex may mechanically verify provenance, freshness, and seed fidelity but cannot write scientific interpretation or the next action. | `research-pipeline` |
+| P52 | A project PI uniquely authors its portfolio status after meaningful scientific transitions and personally reconciles any migrated report before it is trusted; dashboards and Codex may mechanically verify provenance, freshness, and seed fidelity but cannot write scientific interpretation or the next action. | `research-pipeline` |
 
 ## Maintenance Rule
 
