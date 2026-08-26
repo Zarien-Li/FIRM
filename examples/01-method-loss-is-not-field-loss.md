@@ -44,7 +44,7 @@ evidence-directed method version; then run one paired test.
 
 ## Expected Artifacts
 
-- `PIPELINE_STATE.md` separates program, candidate method, and paper maturity.
+- `PROJECT_STATE.md` separates program, candidate method, and paper maturity.
 - `METHOD_LINEAGE.md` records what v1 predicted, what failed, and what v2
   changes.
 - `EXPERIMENT_PLAN.md` contains one discriminating paired test.

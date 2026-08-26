@@ -330,32 +330,33 @@ not after every metric.
 - pointers only:
 ```
 
-When a project exposes `PROJECT_STATUS.json`, treat it as a concise PI-authored
-portfolio projection of this live state, not as a competing constitution. The project
+When a project exposes `PROJECT_STATE.md`, it is this one authoritative live state for
+the project PI, the user, and portfolio tooling. Do not maintain a second current-state
+summary in JSON, memory, tasks, identity metadata, reviews, or drafts. The project
 Research PI is its only scientific author. Dashboards may read and mechanically check
 freshness, declared artifact existence, declared row or completion markers, and local
 process existence. Codex may verify artifact support and fidelity to the authorized
 seed. Neither may infer or rewrite the question, result interpretation, method
 maturity, paper judgment, or next action.
 
-At session start, compare `PROJECT_STATUS.json` with current authority, the top live
-state, raw artifacts, and active work. Repair a stale or unsupported report before
-continuing; never copy an old session's self-summary merely because it is recent or
-detailed. Update the report after a meaningful scientific transition and before the
+At session start, compare `PROJECT_STATE.md` with current authority, raw artifacts, and
+active work. Repair stale or unsupported state before continuing; never copy an old
+session's self-summary merely because it is recent or detailed. Update the state after
+a meaningful scientific transition and before the
 next research action: a baseline or full run is interpreted; the natural problem or
 explanation changes; v1, attribution, or v2 changes the construction; the primitive
 changes; evidence is invalidated; the blocker or next decisive action changes; or the
 work enters paper harvest. Do not update it for routine reading, downloads, code edits,
 or training progress ticks.
 
-A mechanically migrated legacy report remains `migrationPending` and unverified even
-when its JSON is well formed. Only the project PI may clear that marker, after checking
+A mechanically migrated legacy state remains `migrationPending` and unverified even
+when its structured block is well formed. Only the project PI may clear that marker, after checking
 every retained scientific statement against authority, current artifacts, the live
 state, and active work and recording the reconciliation time. Never clear it merely to
 make a dashboard green.
 
 Keep only the latest three to five decisive experiment records there and retain full
-history in the live state and raw artifacts. Each decisive record states:
+history in raw artifacts and the read-only history archive. Each decisive record states:
 
 - `scientificQuestion`: what uncertainty the run addressed;
 - `comparison`: the matched systems or conditions actually compared;
@@ -366,13 +367,13 @@ history in the live state and raw artifacts. Each decisive record states:
 - `artifacts`: paths and roles, plus only genuinely known row counts, minimum sizes, or
   completion markers.
 
-`MIGRATION PENDING`, `STALE REPORT`, and `UNVERIFIED CLAIM` are mechanical
+`MIGRATION PENDING`, `STALE STATE`, and `UNVERIFIED CLAIM` are mechanical
 reconciliation flags, not research verdicts. The project PI fixes them. A control plane
 must not fill missing fields, promote infrastructure failure to scientific evidence,
 or choose a new route on the PI's behalf.
 
-Tasks, memory, plans, reviews, drafts, and FIRM cards may point to the live state but
-may not carry a competing thesis. Historical stop, retire, exhausted, paper-ready, or
+Tasks, memory, plans, reviews, drafts, and FIRM cards may point to `PROJECT_STATE.md`
+but may not carry a competing thesis. Historical stop, retire, exhausted, paper-ready, or
 forbidden language is provenance, not authority.
 
 After compaction, interruption, a major reframe, or a skill update, re-anchor in the

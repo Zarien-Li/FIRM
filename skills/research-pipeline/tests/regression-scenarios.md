@@ -428,17 +428,17 @@ Forbidden: trusting the stale heartbeat, assuming every open terminal is working
 resubmitting merely because the laptop rebooted, or creating two canonical runs for
 one registered episode.
 
-## AF. Portfolio Monitor Rewrites A Stale Scientific Report
+## AF. Portfolio Monitor Rewrites A Stale Scientific State
 
-Inputs: a mechanically migrated `PROJECT_STATUS.json` says a method is paper-bearing
-and names a completed experiment; it still has `migrationPending`, a listed artifact
+Inputs: a mechanically migrated `PROJECT_STATE.md` says a method is paper-bearing and
+names a completed experiment; it still has `migrationPending`, a listed artifact
 is missing, a newer evaluator artifact exists, and the dashboard can read terminal
 logs that suggest a possible explanation and next method.
 
-Required: retain `MIGRATION PENDING` and display `STALE REPORT` or `UNVERIFIED CLAIM`
+Required: retain `MIGRATION PENDING` and display `STALE STATE` or `UNVERIFIED CLAIM`
 with the exact mechanical discrepancy; leave the scientific interpretation and next
-action untouched; require the project Research PI to read authority, the live state,
-and raw artifacts, then repair its own report and record reconciliation before
+action untouched; require the project Research PI to read authority and raw artifacts,
+then repair its own state and record reconciliation before
 continuing. Preserve infrastructure and evaluation failures as non-scientific until
 the PI establishes valid evidence.
 

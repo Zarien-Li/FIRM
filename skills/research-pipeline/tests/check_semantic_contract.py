@@ -33,7 +33,8 @@ REQUIRED = {
         "## Form And Harvest A Paper",
         "construction arc",
         "PI is its only scientific author",
-        "`MIGRATION PENDING`, `STALE REPORT`, and `UNVERIFIED CLAIM`",
+        "`MIGRATION PENDING`, `STALE STATE`, and `UNVERIFIED CLAIM`",
+        "Do not maintain a second current-state",
         "Never clear it merely to",
     ],
     SKILLS / "baseline/SKILL.md": [
@@ -125,10 +126,11 @@ REQUIRED = {
         "## AC. A Decisive Baseline Loss Is Read Without The Value Contract",
         "## AD. Gemini Suggestion Is Mistaken For Experimental Progress",
         "## AE. Laptop Power Loss Creates A Duplicate Remote Run",
-        "## AF. Portfolio Monitor Rewrites A Stale Scientific Report",
+        "## AF. Portfolio Monitor Rewrites A Stale Scientific State",
     ],
     SHARED / "research-principles.md": [
         "P01",
+        "PROJECT_STATE.md",
         "P26",
         "P51",
         "P52",

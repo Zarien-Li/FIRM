@@ -42,7 +42,7 @@ real local result, but do not let a private slice silently become the seed.
 
 ## Expected Artifacts
 
-- `PIPELINE_STATE.md` names original program, candidate paper, and scope debt.
+- `PROJECT_STATE.md` names original program, candidate paper, and scope debt.
 - `PRIZE_FIDELITY_REVIEW.md` records the second-PI attack.
 - `REINTEGRATION_PLAN.md` connects the diagnostic to standard value.
 - Paper writing remains blocked until the positive object survives outside the

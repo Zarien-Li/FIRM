@@ -2,12 +2,13 @@
 
 ## Unreleased
 
-- Added a PI-owned `PROJECT_STATUS.json` contract: projects repair and update their
-  scientific portfolio report after meaningful transitions, while dashboards and
+- Added a PI-owned single `PROJECT_STATE.md` contract: projects repair and update one
+  shared scientific state after meaningful transitions, while dashboards and
   Codex are limited to mechanical provenance, freshness, process, and seed-fidelity
-  checks. Mechanically migrated reports remain explicitly pending and unverified until
-  the project PI reconciles their claims against current artifacts. Added regression
-  coverage against control-plane-authored research judgments.
+  checks. Competing pipeline/status files and identity-current fields are historical
+  provenance, not parallel authority. Mechanically migrated state remains explicitly
+  pending and unverified until the project PI reconciles its claims against current
+  artifacts. Added regression coverage against control-plane-authored research judgments.
 - Added restart-safe experiment recovery: rediscover remote workers and artifacts after
   host or session loss, avoid duplicate submissions, and allow authorized project-owned
   execution paths when FIRM is unavailable.
