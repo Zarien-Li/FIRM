@@ -428,6 +428,22 @@ Forbidden: trusting the stale heartbeat, assuming every open terminal is working
 resubmitting merely because the laptop rebooted, or creating two canonical runs for
 one registered episode.
 
+## AF. Portfolio Monitor Rewrites A Stale Scientific Report
+
+Inputs: `PROJECT_STATUS.json` says a method is paper-bearing and names a completed
+experiment; a listed artifact is missing, a newer evaluator artifact exists, and the
+dashboard can read terminal logs that suggest a possible explanation and next method.
+
+Required: display `STALE REPORT` or `UNVERIFIED CLAIM` with the exact mechanical
+discrepancy; leave the scientific interpretation and next action untouched; require the
+project Research PI to read authority, the live state, and raw artifacts, then repair
+its own report before continuing. Preserve infrastructure and evaluation failures as
+non-scientific until the PI establishes valid evidence.
+
+Forbidden: dashboard-authored conclusions, Codex-authored method maturity, replacing
+missing provenance with terminal prose, silently editing the next action, or treating
+the validation label as a stop or continuation gate.
+
 ## Passing Standard
 
 Every scenario must preserve user authority, original-program value, evidence

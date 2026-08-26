@@ -32,6 +32,8 @@ REQUIRED = {
         "## Expand Positive Science",
         "## Form And Harvest A Paper",
         "construction arc",
+        "PI is its only scientific author",
+        "`STALE REPORT` and `UNVERIFIED CLAIM`",
     ],
     SKILLS / "baseline/SKILL.md": [
         "## Resolve The Nearest Rival Early",
@@ -122,11 +124,13 @@ REQUIRED = {
         "## AC. A Decisive Baseline Loss Is Read Without The Value Contract",
         "## AD. Gemini Suggestion Is Mistaken For Experimental Progress",
         "## AE. Laptop Power Loss Creates A Duplicate Remote Run",
+        "## AF. Portfolio Monitor Rewrites A Stale Scientific Report",
     ],
     SHARED / "research-principles.md": [
         "P01",
         "P26",
         "P51",
+        "P52",
         "meaningful claim-dependent advantage",
         "one isolated author subagent",
         "claims-evidence mapping begins after narrative drafting",

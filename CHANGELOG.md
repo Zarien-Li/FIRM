@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Added a PI-owned `PROJECT_STATUS.json` contract: projects repair and update their
+  scientific portfolio report after meaningful transitions, while dashboards and
+  Codex are limited to mechanical provenance, freshness, process, and seed-fidelity
+  checks. Added regression coverage against control-plane-authored research judgments.
 - Added restart-safe experiment recovery: rediscover remote workers and artifacts after
   host or session loss, avoid duplicate submissions, and allow authorized project-owned
   execution paths when FIRM is unavailable.

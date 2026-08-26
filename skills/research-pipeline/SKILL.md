@@ -330,9 +330,40 @@ not after every metric.
 - pointers only:
 ```
 
-Existing machine-status blocks may remain for display compatibility, but project
-tooling derives them from the concise state. The researcher does not maintain a second
-scientific schema or create missing fields to justify the next experiment.
+When a project exposes `PROJECT_STATUS.json`, treat it as a concise PI-authored
+portfolio projection of this live state, not as a competing constitution. The project
+Research PI is its only scientific author. Dashboards may read and mechanically check
+freshness, declared artifact existence, declared row or completion markers, and local
+process existence. Codex may verify artifact support and fidelity to the authorized
+seed. Neither may infer or rewrite the question, result interpretation, method
+maturity, paper judgment, or next action.
+
+At session start, compare `PROJECT_STATUS.json` with current authority, the top live
+state, raw artifacts, and active work. Repair a stale or unsupported report before
+continuing; never copy an old session's self-summary merely because it is recent or
+detailed. Update the report after a meaningful scientific transition and before the
+next research action: a baseline or full run is interpreted; the natural problem or
+explanation changes; v1, attribution, or v2 changes the construction; the primitive
+changes; evidence is invalidated; the blocker or next decisive action changes; or the
+work enters paper harvest. Do not update it for routine reading, downloads, code edits,
+or training progress ticks.
+
+Keep only the latest three to five decisive experiment records there and retain full
+history in the live state and raw artifacts. Each decisive record states:
+
+- `scientificQuestion`: what uncertainty the run addressed;
+- `comparison`: the matched systems or conditions actually compared;
+- `execution`: mechanical state and provenance, separating infrastructure,
+  implementation, evaluation, and scientific failure;
+- `result`: the observed outcome without interpretation inflation;
+- `interpretation`: the PI's evidence-bounded update;
+- `artifacts`: paths and roles, plus only genuinely known row counts, minimum sizes, or
+  completion markers.
+
+`STALE REPORT` and `UNVERIFIED CLAIM` are mechanical reconciliation flags, not research
+verdicts. The project PI fixes them. A control plane must not fill missing fields,
+promote infrastructure failure to scientific evidence, or choose a new route on the
+PI's behalf.
 
 Tasks, memory, plans, reviews, drafts, and FIRM cards may point to the live state but
 may not carry a competing thesis. Historical stop, retire, exhausted, paper-ready, or
