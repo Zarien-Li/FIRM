@@ -101,20 +101,21 @@ not establish novelty, causal truth, feasibility, or evidence. The lead PI colli
 checks the relevant literature and methods, selects or synthesizes one principle,
 implements it, and lets real experiments reshape it.
 
-### Effective But Not Yet SOTA
+### Effective But Still Behind A Decisive Rival
 
 An end-to-end realization may be credibly effective on an accepted task while still
-tying or losing to one or more decisive healthy baselines. This is a high-value Gemini
-moment when the positive effect, remaining SOTA gap, paired utility, contrary cases,
-and nearest-rival behavior are all concrete. Ask for one consequential improvement to
-the load-bearing computation, not a menu of cosmetic variants or paper framing.
+missing its pre-specified value target against a decisive healthy rival. This is a
+high-value Gemini moment when the positive effect, remaining gap, paired utility,
+contrary cases, and nearest-rival behavior are all concrete. Ask for one consequential
+improvement to the load-bearing computation, not a menu of cosmetic variants or paper
+framing.
 
 Gemini does not execute or validate the proposal. The lead PI must collision-check it,
 select at most one evidence-licensed change, implement it in the project, and run the
 smallest frozen matched experiment that can decide whether it closes the named gap
-without breaking paired utility. Until that experiment succeeds against the complete
-decisive baseline set, the object remains M2 or lower, the suggestion is not evidence,
-and manuscript writing remains forbidden.
+without breaking paired utility. Until that experiment establishes the intended
+claim-dependent advantage, the suggestion is design material rather than evidence and
+does not change paper maturity.
 
 ## Decision-Focused Construction Check
 

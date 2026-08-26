@@ -55,18 +55,23 @@ Evidence stability is not paper maturity. A method paper requires:
 
 - important natural problem;
 - realized trainable/executable positive object on a competent standard task;
-- a frozen accepted benchmark, primary metric, evaluator, and matched resource budget;
-- a complete decisive comparison table containing every healthy claim-threatening
-  baseline, strongest incumbent, and serious simple alternative;
-- superiority over every entry in that table on the frozen primary metric;
+- a frozen accepted benchmark, claim-relevant value surface, evaluator, and matched
+  resource budget;
+- a frozen, bounded claim-sufficient comparison set containing the strongest
+  incumbent, directly claim-threatening rival, and serious simple alternatives known
+  at freeze time;
+- a meaningful pre-specified advantage on the claim-relevant value surface, whether
+  primary-metric superiority or a defensible Pareto gain in capability, quality,
+  robustness, coverage, latency, memory, compute, supervision, or adoption cost;
 - passed paired utility/cost, retention, capability, and safety checks required by the
   claim;
 - traceable provenance, contrary evidence, and honest scope.
 
-A credible positive that still ties or loses to any decisive baseline is M2 at most.
-It may license an evidence-conditioned Gemini improvement episode, but it does not
-license M3, paper entry, or manuscript writing. Gemini advice changes maturity only
-after the PI implements it and a frozen matched experiment validates the realization.
+A credible positive that misses its intended value target remains pre-entry evidence.
+It may license an evidence-conditioned Gemini improvement episode, but Gemini advice
+changes maturity only after the PI implements it and a frozen matched experiment
+validates the realization. A loss on an unrelated metric is interpreted through the
+declared tradeoff surface rather than treated as an automatic paper veto.
 
 A formula, architecture diagram, CPU probe, oracle ceiling, smoke test, or pre-check is
 a candidate, not a method realization.

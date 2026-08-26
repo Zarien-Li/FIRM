@@ -142,19 +142,25 @@ A claim-bearing comparison requires:
 - explicit unique prediction;
 - relevant capability, coverage, latency, memory, compute, or cost evidence.
 
-For method-paper entry, freeze the complete decisive baseline table before reading the
-result. The realized method must beat every healthy entry on the primary metric under
-matched resources and pass the paired utility contract. A tie, partial table win, or
-gain bought by an unmatched budget remains pre-paper evidence.
+For method-paper entry, freeze the claim-sufficient decisive comparison set and value
+contract before reading the result. Include the bounded set of field-recognized and
+directly claim-threatening healthy baselines known at freeze time. Define in advance
+whether success means primary-metric
+superiority or a meaningful Pareto gain in capability, quality, robustness, coverage,
+latency, memory, compute, supervision, or adoption cost. The realized method must earn
+that advantage under matched treatment and pass paired utility. A partial table win,
+post-hoc metric switch, or gain bought only by an unmatched budget remains pre-paper
+evidence; a baseline loss blocks entry only when it defeats the actual intended claim.
 
 Do not infer superiority or primitive failure from a weak reader, untrained bridge,
 compound backbone/data/mechanism change, sampled-only baseline, or semantically
 mismatched protocol.
 
-## Turn A Pre-SOTA Gemini Proposal Into Evidence
+## Turn A Pre-Target Gemini Proposal Into Evidence
 
-When a realization is credibly effective but still loses or ties a decisive baseline,
-Gemini may help propose one load-bearing improvement. Planning resumes with the PI:
+When a realization is credibly effective but still misses its pre-specified value
+target against a decisive baseline, Gemini may help propose one load-bearing
+improvement. Planning resumes with the PI:
 
 - name the exact baseline gap, raw contrary cases, and utility that must be preserved;
 - select at most one evidence-licensed proposal after literature collision checking;
@@ -162,8 +168,8 @@ Gemini may help propose one load-bearing improvement. Planning resumes with the 
 - freeze the smallest matched comparison that can adjudicate the gap and utility;
 - update maturity only from completed raw artifacts.
 
-Do not batch a Gemini idea menu, alter the baseline protocol to favor the suggestion,
-or begin manuscript work while the complete SOTA gate remains open.
+Do not batch a Gemini idea menu, alter the comparison protocol to favor the suggestion,
+or mistake the proposal for experimental progress.
 
 ## Plan Expansion After A Positive Object
 

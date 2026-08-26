@@ -75,12 +75,15 @@ A **realization** exists when:
 - the substrate is competent enough to interpret the result;
 - end-to-end behavior is compared under a meaningful matched treatment.
 
-A **paper-bearing method** additionally beats every decisive healthy baseline in a
-frozen accepted-task comparison, including the strongest incumbent,
-claim-threatening rival, and serious simple alternatives. It also has an understood
-load-bearing component or interaction, passed paired utility and tradeoff checks, and
-a stable bounded claim. A realization that is effective but ties or loses to any
-decisive baseline is a credible positive object at most, not a paper-bearing method.
+A **paper-bearing method** additionally establishes a meaningful advantage on the
+claim-relevant value surface against a frozen, claim-sufficient set of healthy
+comparisons, including the strongest incumbent, directly claim-threatening rival, and
+serious simple alternatives. The advantage may be primary-metric superiority or a
+defensible Pareto improvement in capability, quality, robustness, coverage, latency, memory,
+compute, supervision, or adoption cost. It also has an understood load-bearing
+component or interaction, passed paired utility and tradeoff checks, and a stable
+bounded claim. A loss matters when it defeats the intended claim; it is not a universal
+paper veto when the method establishes a different pre-specified, consequential value.
 
 Do not use a method name, diagram, code path, pilot, or coherent story as a maturity
 substitute.
@@ -130,11 +133,12 @@ impose a fixed output template. Follow `research-review` for the verified invoca
 and model pin. Treat the response as a proposal: collision-read it, choose one
 principle, implement the smallest real realization, and let evidence reshape it.
 
-If the current realization is credibly effective but not yet SOTA, name the exact
-baseline gap and paired-utility constraint in the Gemini packet. The PI selects at
-most one proposed load-bearing change, implements it locally, and executes a frozen
-matched comparison. Do not record Gemini's proposal as a new realization, method
-version, positive result, or paper asset before that experiment completes.
+If the current realization is credibly effective but still behind a decisive rival on
+the intended value surface, name the exact gap and paired-utility constraint in the
+Gemini packet. The PI selects at most one proposed load-bearing change, implements it
+locally, and executes a frozen matched comparison. Do not record Gemini's proposal as
+a new realization, method version, positive result, or paper asset before that
+experiment completes.
 
 ## Cultivate One Construction Arc
 

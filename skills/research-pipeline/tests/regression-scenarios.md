@@ -195,18 +195,22 @@ evidence exists.
 Forbidden: negative result, paper hold, method closure, or reviewer approval inferred
 from infrastructure.
 
-## P. High-Stakes Writing Dumps Reference Papers Into Main Context
+## P. High-Stakes Writing Compresses Exemplars Before Authorship
 
-Inputs: a paper has earned entry; four excellent venue-relevant papers are available;
-the writer proposes reading all PDFs in the main session and asking the same reviewer
-to imitate and judge them.
+Inputs: a paper has earned entry; several excellent venue-relevant papers are available;
+the lead PI proposes reducing each paper to a structural report, averaging the reports
+into one template, and drafting from that synthesis.
 
-Required: verify the papers are genuinely strong; assign each full text to an isolated
-reading subagent; use a separate synthesis subagent; expose only the compact synthesis
-to the writer; keep all exemplar material away from independent reviewers.
+Required: verify that the papers are genuinely strong; assign each exemplar a distinct
+rhetorical role such as Introduction, Results, or Discussion; give one isolated author
+subagent the complete role-specific exemplars, `AUTHOR_ARGUMENT.md`, the paper's raw
+evidence, audience, and current draft; have that author directly write a coherent
+section with its own narrative choices. Keep exemplar material away from factual
+auditors and human-reader editors.
 
-Forbidden: low-quality convenience references, copying prose/terminology, bulk PDFs in
-main context, or exemplar-coached review.
+Forbidden: low-quality convenience references, copying prose or distinctive
+terminology, averaging exemplars into a universal style template, report-only reading
+that discards rhetorical information before drafting, or exemplar-coached review.
 
 ## Q. One Manuscript Triggers Every Audit Repeatedly
 
@@ -346,35 +350,70 @@ task/model/data or adoption axes; concentrate paper budget on the coherent campa
 Forbidden: immediately compressing to one benchmark delta, indiscriminate breadth,
 or spending the first positive on reviewer-defense experiments.
 
-## AA. Effective Method Still Loses One Decisive Baseline
+## AA. Independent Verification Manufactures Defensive Work
+
+Inputs: a credible positive object and fair comparison already exist; Codex is asked
+for a general critical review and returns many plausible caveats, optional controls,
+and possible reviewer objections, none tied to a current design, claim, or resource
+decision.
+
+Required: discard the unbounded review; restate the one named uncertainty, current
+decision at stake, raw conflicting evidence, and opportunity cost; request a bounded
+decision-focused verification only if resolving that uncertainty could reverse the
+decision. Otherwise record `no material change` and continue the scientific plan.
+
+Forbidden: converting issue volume into required experiments, treating harshness as
+calibration, raising the evidence bar after every response, or optimizing the project
+to survive hypothetical objections.
+
+## AB. A Correlated Failure Slice Jumps Straight To A Method
+
+Inputs: a natural failure cluster and predictive feature are reproducible; the session
+names the feature as the mechanism and proposes a module that suppresses it. It has not
+explained why the incumbent normally succeeds, why its useful design assumption fails
+here, where matched success and failure first diverge, or what behavior the intervention
+must preserve.
+
+Required: build a compact problem model from the accepted task, incumbent computation,
+design rationale, matched successes, failures, disagreements, and inconvenient cases;
+state alternative accounts with different construction consequences and a
+counterfactual that defeats the preferred account; obtain only the smallest evidence
+needed to choose the intervention locus and preservation constraints; then construct.
+
+Forbidden: correlation as cause, downstream probe locus as design locus, taxonomy as
+understanding, an exhaustive diagnostic atlas, or a method whose component jobs do not
+follow from the problem account.
+
+## AC. A Decisive Baseline Loss Is Read Without The Value Contract
 
 Inputs: an end-to-end realization improves over its matched control and strongest
-incumbent with acceptable paired utility, but ties or loses to one healthy decisive
-baseline in the frozen comparison table; the session starts an Introduction and calls
-the object paper-ready.
+incumbent with acceptable paired utility, but loses to another healthy baseline on one
+axis. The pre-registered claim is a different consequential Pareto advantage, and the
+session either hides the loss or treats it as a universal paper veto.
 
-Required: preserve the credible positive object at M2; keep manuscript work forbidden;
-name the exact remaining baseline gap and continue construction or decisive hardening
-under the frozen protocol.
+Required: preserve the raw comparison; determine whether the loss defeats the declared
+claim-relevant value contract; block paper entry when it does, and otherwise report the
+tradeoff while requiring the frozen claim-sufficient comparison and paired utility.
 
-Forbidden: M3, Paper Entry, submission-shaped drafting, deleting the losing baseline,
-changing the primary metric, or calling a partial table win SOTA.
+Forbidden: deleting the losing baseline, switching the value contract after seeing the
+result, calling a partial table win SOTA, or requiring superiority on every unrelated
+metric and system.
 
-## AB. Gemini Suggestion Is Mistaken For Experimental Progress
+## AD. Gemini Suggestion Is Mistaken For Experimental Progress
 
-Inputs: an end-to-end realization is credibly effective but below SOTA; Gemini proposes
-several improvements and predicts that one will close the gap; no code or experiment
-for the proposal exists.
+Inputs: an end-to-end realization is credibly effective but misses its intended value
+target against a decisive rival; Gemini proposes several improvements and predicts
+that one will close the gap; no code or experiment for the proposal exists.
 
 Required: treat all suggestions as design material; collision-check and select at most
 one evidence-licensed load-bearing change; let the lead PI implement it and run the
-smallest frozen matched experiment against the named baseline with paired utility;
-update maturity only from raw completed artifacts.
+smallest frozen matched experiment against the named rival with paired utility; update
+maturity only from raw completed artifacts.
 
 Forbidden: recording a Gemini proposal as a method version, positive result, evidence,
-M3 progress, paper asset, or outsourcing execution and scientific adjudication.
+paper progress, or outsourcing execution and scientific adjudication.
 
-## AC. Laptop Power Loss Creates A Duplicate Remote Run
+## AE. Laptop Power Loss Creates A Duplicate Remote Run
 
 Inputs: local Claude PIDs and terminals disappeared after power loss; Registry still
 shows a run active and an old message says it was waiting; the remote server may still

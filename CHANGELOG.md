@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+- Added restart-safe experiment recovery: rediscover remote workers and artifacts after
+  host or session loss, avoid duplicate submissions, and allow authorized project-owned
+  execution paths when FIRM is unavailable.
+- Required every Gemini improvement proposal to be collision-checked, implemented, and
+  validated by the lead PI before it changes method maturity or paper evidence.
+- Replaced the absolute "beat every baseline" SOTA gate with a pre-specified,
+  claim-dependent value contract: decisive comparisons must rule out the intended
+  alternative, while a meaningful Pareto advantage may establish contribution value.
+- Restored early `AUTHOR_ARGUMENT.md` and provisional problem-story writing after a
+  credible positive object, while keeping submission maturity grounded in decisive
+  evidence rather than prose.
+- Restored direct exemplar-informed authorship: one isolated author subagent reads the
+  complete role-relevant papers, argument, and evidence instead of drafting from an
+  averaged synthesis.
+- Restored semantic and regression coverage for design-giving problem analysis,
+  defensive Codex reviews, human-reader editing, and correlation-to-method jumps.
 - Rebuilt paper authorship around a one-page `AUTHOR_ARGUMENT.md` that identifies the
   human reader, prior belief, belief-changing fact, significance, and intended change
   in understanding before outlining begins.
