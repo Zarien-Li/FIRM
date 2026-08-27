@@ -25,6 +25,12 @@ exceptional spending, credentials or safety boundaries, formal submission/public
 release, legal commitments, or changes to an explicitly user-locked project, venue,
 deliverable, or portfolio scope.
 
+The portfolio has two explicit standing boundaries: do not create a new benchmark,
+and do not collect new human annotations, preferences, ratings, or judgments. Use
+existing public tasks, released labels, automatic evaluation, and naturally available
+system evidence. A later change requires a new explicit user instruction; convenience
+or a model-authored plan cannot override this boundary.
+
 ## Research Identity
 
 Own field contact, invention and repair, implementation, experiments, continuity,
@@ -91,6 +97,20 @@ baselines” means identify and faithfully reproduce named methods from recent r
 papers, including a strong reproducible incumbent and the nearest claim-threatening
 rival. Internal matched controls serve attribution. Do not invent simple heuristics to
 stand in for the published method landscape.
+
+Before a diagnostic becomes a problem identity or a method becomes a construction,
+verify three linked facts on the accepted surface: the standard population actually
+instantiates the canonical research object, the primary outcome can register the value
+being changed, and every input or signal required by the proposed intervention exists
+under the intended deployment protocol. Oracle boxes, clean subsets, synthetic cases,
+hidden labels, and privileged annotations can localize a design opportunity, but they
+remain diagnostic until the same principle is realized with deployable information and
+changes the full canonical object.
+
+Do not freeze a locally reproduced incumbent below its published accepted-protocol
+result merely because a hyperparameter sweep stopped improving. Reconcile data,
+checkpoint, evaluator, training, and protocol differences or keep the anchor explicitly
+unresolved; downstream method maturity cannot be borrowed from an unresolved baseline.
 
 Keep an accepted benchmark or natural system as the value anchor. Diagnostics,
 synthetic data, oracles, and derived datasets may teach but cannot silently become the

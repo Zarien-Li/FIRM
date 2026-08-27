@@ -156,6 +156,26 @@ For a quick trial in the current repository:
 It reads the current project state, chooses one highest-value next action, and
 brings in a specialist only when the live uncertainty requires it.
 
+## Generate projects from a short portfolio brief
+
+You do not need to hand-author every seed. Give Codex only the target venue, broad
+direction, project-count ceiling, compute envelope, exclusions, and existing portfolio
+path. Ask it to read
+[`frontier-direction-discovery/PROJECT_GENERATION.md`](skills/frontier-direction-discovery/PROJECT_GENERATION.md),
+research the current official scope and primary-paper frontier, and produce a manifest
+matching the bundled schema. Inspect the concise ranked candidates, then render the
+accepted set:
+
+```bash
+node ~/FIRM/scripts/generate_seed_project_folders.mjs manifest.json /path/to/new-projects
+```
+
+The renderer creates `PROGRAM_ORIGIN.md`, `SEED.md`, `PROJECT_IDENTITY.json`,
+`PROJECT_STATE.md`, `CLAUDE.md`, and `prompt.txt` for each project. It refuses to
+overwrite existing roots, fill missing science, duplicate an existing project ID, create
+a new benchmark, or require new human annotation. Codex chooses the consequential arena;
+the project Research PI discovers the concrete failure and method from empirical contact.
+
 ## Start your own end-to-end project
 
 For a serious long-running project, use the project-local setup so the research

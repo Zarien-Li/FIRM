@@ -141,6 +141,23 @@ Codex 只在证据已经挣得的后期边界使用。
 `research-pipeline` 是持续研究负责人，不是一次性串行运行全部 16 个 skills 的宏。它先读取当前
 项目状态，选择一个最高价值动作，再只加载解决当前不确定性所需的 specialist。
 
+## 用一句组合需求生成项目
+
+不需要手写每一份 Seed。只需向 Codex 提供目标刊物、大概方向、项目数量上限、算力范围、
+特殊排除项和现有项目路径，并让它读取
+[`frontier-direction-discovery/PROJECT_GENERATION.md`](skills/frontier-direction-discovery/PROJECT_GENERATION.md)，
+调查当前官方 scope、近期完整论文和公开实现，再输出符合内置 schema 的 manifest。快速检查
+排序后的候选后，渲染接受的项目：
+
+```bash
+node ~/FIRM/scripts/generate_seed_project_folders.mjs manifest.json /path/to/new-projects
+```
+
+生成器会为每个项目创建 `PROGRAM_ORIGIN.md`、`SEED.md`、`PROJECT_IDENTITY.json`、
+`PROJECT_STATE.md`、`CLAUDE.md` 和 `prompt.txt`。它拒绝覆盖已有目录、脑补缺失科学字段、
+复用已有项目编号、新建 benchmark 或要求新增人工标注。Codex 只选择值得进入的研究场域；
+具体自然问题和方法由项目 Research PI 在真实经验接触后形成。
+
 ## 启动自己的端到端科研项目
 
 对于长期严肃科研项目，推荐使用项目级安装，让 Research Program、首轮 Prompt 和 skills

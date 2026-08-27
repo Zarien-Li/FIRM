@@ -110,6 +110,19 @@ rival, under matched accepted-task semantics. Internal ablations are attribution
 controls, not field baselines. Do not invent simple heuristics as substitutes for the
 published method landscape.
 
+Before narrowing around an observed crack, establish that the accepted standard
+population really contains the canonical object and that the primary value metric can
+see improvement in it. Before constructing, establish that the proposed computation
+can obtain its required signals at the intended decision time. Oracle, synthetic,
+clean-subset, privileged-label, or short-form evidence can reveal a mechanism, but it
+remains diagnostic until a deployable realization returns to the full canonical
+object. Do not let an easy proxy silently redefine the research program.
+
+A reproduced published method is unresolved when its local result remains materially
+below the paper's accepted-protocol result and the discrepancy is unexplained. Local
+hyperparameter exhaustion does not freeze that weaker number as the incumbent. Repair
+or explain the semantic gap before using it to mature a construction or paper claim.
+
 Do not select a substrate because it gives a favored method headroom. Diagnostic
 settings may teach; contribution settings must matter independently.
 

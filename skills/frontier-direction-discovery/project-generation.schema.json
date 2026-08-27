@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FIRM Project Generation Manifest",
+  "type": "object",
+  "required": ["schemaVersion", "request", "researchSources", "projects"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "request": {
+      "type": "object",
+      "required": ["userBrief", "targetVenues", "broadDirections", "maximumProjects", "computeEnvelope", "exclusions", "venueScopeSources", "existingPortfolioRoot"],
+      "properties": {
+        "userBrief": { "type": "string", "minLength": 1 },
+        "targetVenues": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "broadDirections": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "maximumProjects": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "computeEnvelope": { "type": "string", "minLength": 1 },
+        "exclusions": { "type": "array", "items": { "type": "string" } },
+        "venueScopeSources": { "type": "array", "minItems": 1, "items": { "type": "string", "format": "uri" } },
+        "existingPortfolioRoot": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "researchSources": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["kind", "title", "url", "relevance"],
+        "properties": {
+          "kind": { "enum": ["official-venue", "paper", "code", "benchmark", "model"] },
+          "title": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "relevance": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "projects": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/project" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "publishedMethod": {
+      "type": "object",
+      "required": ["name", "paperUrl", "protocol", "whyDecisive"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "paperUrl": { "type": "string", "format": "uri" },
+        "codeUrl": { "type": ["string", "null"], "format": "uri" },
+        "protocol": { "type": "string", "minLength": 1 },
+        "whyDecisive": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "project": {
+      "type": "object",
+      "required": ["id", "title", "targetVenue", "researchArena", "canonicalObject", "primaryOutcome", "standardEvidenceSurface", "publishedMethodBaselines", "substrateControls", "whyNow", "communityPrize", "citationSurface", "nonBindingLens", "deploymentBoundary", "computeEnvelope", "outsideScope", "firstEmpiricalContact", "selectionSources"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]{1,20}$" },
+        "title": { "type": "string", "minLength": 1 },
+        "targetVenue": { "type": "string", "minLength": 1 },
+        "researchArena": { "type": "string", "minLength": 1 },
+        "canonicalObject": { "type": "string", "minLength": 1 },
+        "primaryOutcome": { "type": "string", "minLength": 1 },
+        "standardEvidenceSurface": {
+          "type": "object",
+          "required": ["name", "protocol", "whyCanonical", "sources"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "protocol": { "type": "string", "minLength": 1 },
+            "whyCanonical": { "type": "string", "minLength": 1 },
+            "sources": { "type": "array", "minItems": 1, "items": { "type": "string", "format": "uri" } }
+          },
+          "additionalProperties": false
+        },
+        "publishedMethodBaselines": {
+          "type": "object",
+          "required": ["strongIncumbent", "nearestRival", "additional"],
+          "properties": {
+            "strongIncumbent": { "$ref": "#/$defs/publishedMethod" },
+            "nearestRival": { "$ref": "#/$defs/publishedMethod" },
+            "additional": { "type": "array", "items": { "$ref": "#/$defs/publishedMethod" } }
+          },
+          "additionalProperties": false
+        },
+        "substrateControls": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "whyNow": { "type": "string", "minLength": 1 },
+        "communityPrize": { "type": "string", "minLength": 1 },
+        "citationSurface": { "type": "string", "minLength": 1 },
+        "nonBindingLens": { "type": "string", "minLength": 1 },
+        "deploymentBoundary": { "type": "string", "minLength": 1 },
+        "computeEnvelope": { "type": "string", "minLength": 1 },
+        "outsideScope": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "firstEmpiricalContact": { "type": "string", "minLength": 1 },
+        "selectionSources": { "type": "array", "minItems": 2, "items": { "type": "string", "format": "uri" } }
+      },
+      "additionalProperties": false
+    }
+  }
+}

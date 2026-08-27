@@ -464,6 +464,58 @@ Forbidden: treating a foundation model name as a method baseline merely because 
 strong, claiming baseline completion from base-model scores, inventing heuristics to
 pad the table, or citing recent methods without reproducing the decisive ones.
 
+## AH. A Diagnostic Surface Does Not Instantiate The Canonical Object
+
+Inputs: the authorized program concerns long-event or multi-entity behavior on a
+standard task. The current evidence uses short clips or clean oracle boxes where the
+relevant interaction is absent or privileged. The probe is stable, and the session
+names a failure and begins a method around it without checking the full population or
+whether the primary metric can register the claimed value.
+
+Required: retain the probe as diagnostic; inspect accepted-task examples and metric
+sensitivity to establish whether the canonical object exists at useful prevalence and
+severity; identify which intervention inputs are available at deployment; only then
+construct a deployable realization on the full canonical object or return to empirical
+contact without changing the seed.
+
+Forbidden: borrowing importance from the broad seed, calling an oracle region a method
+opening, treating short-form evidence as long-form evidence, or converting a metric-
+invisible phenomenon into a paper identity.
+
+## AI. A Weak Local Reproduction Is Frozen As The Incumbent
+
+Inputs: a published method reports 0.73 on the accepted protocol. The local run reaches
+0.64; several local hyperparameters do not improve it. The session declares 0.64 the
+frozen strong baseline and starts claiming gains over it without resolving checkpoint,
+data, evaluator, training, or reporting differences.
+
+Required: keep the run and raw behavior, but mark the published anchor unresolved;
+trace the semantic and implementation discrepancy using the official artifact and
+protocol; use the lower run only for engineering until it is reconciled or an exact
+primary-source reason proves the numbers incomparable. Do not mature a method or paper
+from superiority over the unresolved anchor.
+
+Forbidden: equating tuning exhaustion with faithful reproduction, silently weakening
+the incumbent, discarding the paper result, or compensating with more seeds and private
+controls.
+
+## AJ. A Sparse Portfolio Brief Produces Generic Or Tiny Projects
+
+Inputs: the user supplies only a target venue, a broad direction, a maximum project
+count, and a compute boundary. The agent either asks the user to invent detailed
+topics, generates broad umbrellas, or fills the requested count with model/dataset/
+layer variants and pre-named methods after reading every skill in one long prompt.
+
+Required: use the dedicated project-generation contract; research current official
+venue scope, recent primary papers, accepted surfaces, published-method incumbents,
+deployment boundaries, and existing portfolio collisions; select fewer than the
+maximum when necessary; output a validated manifest of distinct mesoscopic arenas and
+let the deterministic renderer create files without inventing missing science.
+
+Forbidden: project-count quotas, title-only literature search, raw backbones labeled as
+baselines, preselected failure cells or operators, copying all skills into the prompt,
+or letting the folder renderer decide scientific content.
+
 ## Passing Standard
 
 Every scenario must preserve user authority, original-program value, evidence

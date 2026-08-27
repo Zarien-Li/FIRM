@@ -26,6 +26,12 @@ else:
     SHARED_MANIFEST = SKILLS / ".research-shared-references-managed"
 
 REQUIRED = {
+    SKILLS / "frontier-direction-discovery/SKILL.md": [
+        "## Generate Projects From A Sparse Portfolio Brief",
+        "PROJECT_GENERATION.md",
+        "no new benchmark construction",
+        "no new human annotation",
+    ],
     SKILLS / "research-pipeline/SKILL.md": [
         "## Keep A Program Compass",
         "## Work In Research Episodes",
@@ -127,6 +133,10 @@ REQUIRED = {
         "## AD. Gemini Suggestion Is Mistaken For Experimental Progress",
         "## AE. Laptop Power Loss Creates A Duplicate Remote Run",
         "## AF. Portfolio Monitor Rewrites A Stale Scientific State",
+        "## AG. A Foundation Checkpoint Is Mistaken For The Field Baseline",
+        "## AH. A Diagnostic Surface Does Not Instantiate The Canonical Object",
+        "## AI. A Weak Local Reproduction Is Frozen As The Incumbent",
+        "## AJ. A Sparse Portfolio Brief Produces Generic Or Tiny Projects",
     ],
     SHARED / "research-principles.md": [
         "P01",
@@ -134,6 +144,10 @@ REQUIRED = {
         "P26",
         "P51",
         "P52",
+        "P53",
+        "P54",
+        "P55",
+        "P56",
         "meaningful claim-dependent advantage",
         "one isolated author subagent",
         "claims-evidence mapping begins after narrative drafting",
@@ -142,6 +156,8 @@ REQUIRED = {
         "act as an autonomous PI",
         "Default to zero calls before a credible",
         "FIRM and registries report process",
+        "do not create a new benchmark",
+        "do not collect new human annotations",
     ],
 }
 

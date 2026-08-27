@@ -51,6 +51,36 @@ Use the template in `research-pipeline/SEED_TEMPLATE.md`. Name:
 
 The lens can guide what traces to save or comparisons to inspect. It cannot dictate the final mechanism or stopping condition.
 
+## Generate Projects From A Sparse Portfolio Brief
+
+When the user supplies only target venue, broad direction, project count, and resource
+or contribution exclusions, do not ask them to invent the projects and do not load the
+entire research skill library into one prompt. Read
+[`PROJECT_GENERATION.md`](PROJECT_GENERATION.md) and perform one bounded project-
+generation action:
+
+1. verify the current official venue scope;
+2. map the recent primary-paper and implementation frontier inside the requested broad
+   direction;
+3. inspect existing project identities for collision;
+4. choose a small set of mesoscopic arenas whose canonical objects, accepted evidence
+   surfaces, published-method baselines, deployment boundaries, and compute envelopes
+   are concrete; and
+5. write the validated project manifest consumed by the deterministic renderer.
+
+The requested count is a ceiling, not a quota. Return fewer projects when the research
+does not support enough distinct high-value, feasible bets. Do not produce near-
+duplicate projects merely to fill IDs.
+
+Project generation selects a consequential arena and empirical entry point. It does
+not preselect the natural failure, causal explanation, method, result, or paper story.
+Keep raw backbones and simple controls separate from named published-method baselines.
+Require that the standard population actually instantiates the canonical object, the
+primary outcome can see its value, and likely intervention signals exist at deployment.
+Apply the standing portfolio exclusions automatically: no new benchmark construction
+and no new human annotation, preference, rating, or judgment collection. The user need
+not repeat them in each sparse brief.
+
 ## Judge Feasibility Without Shrinking Ambition
 
 Check whether the project can obtain meaningful empirical contact under its resources. Distinguish:

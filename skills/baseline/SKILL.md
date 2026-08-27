@@ -52,6 +52,22 @@ Synthetic cases, generated data, or project-defined slices may expose a mechanis
 They do not replace an accepted anchor unless the derived population has independent
 field value and the broad program is deliberately re-grounded.
 
+Confirm **surface fidelity** before drawing a problem conclusion: representative
+examples in the accepted population must actually instantiate the canonical object,
+and the primary outcome must be capable of changing when that object improves. A short
+clip cannot establish a long-event problem; an aggregate score insensitive to the
+target behavior cannot carry its value; a hand-selected clean region cannot stand in
+for the full deployment population. Such evidence is still useful, but label it
+diagnostic and return to an accepted surface before method identity or paper entry.
+
+Confirm **deployment availability** at the same time. List the information used by an
+incumbent, diagnostic, and proposed intervention, and ask whether each signal exists at
+the moment the deployed system must act. Oracle regions, gold boundaries, hidden
+labels, future context, privileged annotations, and clean subsets may locate headroom;
+they do not establish a deployable opening. Before method formation, either realize the
+principle from available inputs on the canonical object or keep it as an unresolved
+diagnostic opportunity.
+
 Choose, within realistic resources:
 
 - a strong reproducible published method incumbent from recent relevant literature;
@@ -72,6 +88,12 @@ Exploration may begin while a difficult rival is being reproduced, but novelty a
 paper identity remain provisional. Before dependent refinement, compare against the
 claim-threatening rival under matched conditions, or establish from primary sources
 why it is not semantically comparable.
+
+If the local reproduction remains materially below the paper's result under the same
+accepted protocol, do not declare the lower number a frozen incumbent after a local
+sweep. Reconcile checkpoint, data, evaluator, optimization, and reporting semantics or
+mark the anchor unresolved. An unresolved anchor can guide engineering, but it cannot
+establish method superiority or mature the paper.
 
 The purpose is ownership clarity, not ceremonial baseline completion. Prioritize the
 rival most able to erase the contribution.

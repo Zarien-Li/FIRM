@@ -45,6 +45,27 @@ For an independent critique:
 The skills inspect the current project and arguments you provide. Give durable
 paths to raw results, configs, logs, code, and drafts whenever possible.
 
+## Generate a portfolio from a sparse brief
+
+For several new projects, ask Codex to read
+`skills/frontier-direction-discovery/PROJECT_GENERATION.md` and create a JSON manifest
+from only the target venue, broad direction, maximum project count, compute envelope,
+additional exclusions, and existing portfolio path. Codex performs current primary-
+source research and selects mesoscopic arenas; it does not preselect the failure or
+method.
+
+After inspecting the concise ranked candidates, render the accepted manifest:
+
+```bash
+node ~/FIRM/scripts/generate_seed_project_folders.mjs manifest.json /absolute/path/to/new-projects
+```
+
+The output is immediately usable by Claude Code after FIRM is installed. Add private
+machine facts in a project-local `LOCAL_INFRASTRUCTURE.md` when needed; do not put hosts,
+credentials, mount paths, or transient worker IDs in the public manifest. Every generated
+project inherits the standing prohibition on new benchmark construction and new human
+annotation, preference, rating, or judgment collection.
+
 ## High-impact boundaries
 
 The following skills can cause material side effects or perform

@@ -1,4 +1,4 @@
-.PHONY: install verify validate onboarding-test check demo
+.PHONY: install verify validate onboarding-test project-generator-test check demo
 
 install:
 	bash install.sh
@@ -11,6 +11,9 @@ validate:
 
 onboarding-test:
 	bash scripts/test-onboarding.sh
+
+project-generator-test:
+	node scripts/test_project_generator.mjs
 
 check:
 	bash scripts/release-check.sh

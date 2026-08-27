@@ -30,6 +30,9 @@ required=(
   scripts/validate_skills.py
   scripts/check-research-contract.py
   scripts/test-onboarding.sh
+  scripts/generate_seed_project_folders.mjs
+  scripts/lib/project-contract.mjs
+  scripts/test_project_generator.mjs
   templates/CLAUDE_FIRM_BLOCK.md
   demo/fixture/CLAUDE.md
   demo/fixture/RESULT.md
@@ -47,11 +50,14 @@ bash -n "${ROOT_DIR}/firm"
 bash -n "${ROOT_DIR}/install.sh"
 bash -n "${ROOT_DIR}/scripts/test-onboarding.sh"
 bash -n "${ROOT_DIR}/scripts/verify-install.sh"
+node --check "${ROOT_DIR}/scripts/generate_seed_project_folders.mjs"
+node --check "${ROOT_DIR}/scripts/lib/project-contract.mjs"
 PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/validate_skills.py"
 PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/check-research-contract.py"
 PYTHONDONTWRITEBYTECODE=1 python3 \
   "${ROOT_DIR}/skills/research-audit/tests/test_evidence_lineage.py" -v
 bash "${ROOT_DIR}/scripts/test-onboarding.sh"
+node "${ROOT_DIR}/scripts/test_project_generator.mjs"
 
 if grep -R -n -E '/Users/[^ /]+|BEGIN (RSA|OPENSSH) PRIVATE KEY|REPOSITORY_URL|YOUR_ACCOUNT' \
   "${ROOT_DIR}" --exclude='release-check.sh' --exclude='.git' --exclude-dir='.git' >/tmp/firm-release-secrets.txt; then

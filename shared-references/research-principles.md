@@ -24,6 +24,10 @@ restating the rule.
 | P08 | Close literature raises the baseline and differentiation bar; it closes an opening only through a matched same-failure comparison. | `research-lit` |
 | P09 | A baseline is a named method from relevant literature, not a raw foundation checkpoint or project-invented heuristic. Before method commitment, reproduce a strong recent incumbent, identify the nearest same-locus published rival, and separately establish a competent standard-task substrate. | `baseline` |
 | P10 | Baseline and evaluator semantics, information/treatment parity, raw cases, and metric reconstruction precede claim-bearing interpretation. | `baseline` and `experiment-integrity.md` |
+| P53 | Before problem or method identity narrows, verify that the accepted population instantiates the canonical object, the primary outcome can see it, and the intervention's required information exists at deployment; oracle or proxy evidence remains diagnostic until reintegrated. | `baseline` |
+| P54 | A local reproduction materially below a published accepted-protocol result remains unresolved until the semantic or implementation gap is reconciled; local tuning exhaustion cannot freeze a weaker incumbent. | `baseline` |
+| P55 | Generate new projects from a sparse user portfolio brief through current primary-source field research and a validated manifest; select mesoscopic high-value arenas without preselecting failures or methods, and keep deterministic folder rendering separate from scientific selection. | `frontier-direction-discovery` |
+| P56 | The portfolio does not create new benchmarks or collect new human annotations, preferences, ratings, or judgments; project selection must use existing public tasks, released labels, automatic evaluation, or natural system evidence. | `CLAUDE-RESEARCH.md` and `frontier-direction-discovery` |
 
 ## Observation And Explanation
 
