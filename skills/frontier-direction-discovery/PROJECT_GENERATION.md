@@ -89,6 +89,16 @@ The manifest records the interpretation behind selection, but its lens remains
 non-binding. The deterministic renderer creates authority, state, contract, and start
 prompt files; it must not invent missing scientific fields.
 
+The start prompt is a project-specific research commission, not a generic slogan and
+not an executable research plan. It should explain this project's community prize,
+canonical object, deployment boundary, current published-method map, non-binding lens,
+and suggested empirical contact in enough detail for the PI to understand why the
+project exists. Those details must be framed as a researched launch map that the PI may
+reorder or revise when new evidence warrants it. Do not turn the named surface,
+incumbents, first contact, `v1 -> v2`, contribution type, or paper route into mandatory
+steps. The prompt transfers scientific ownership; the skills supply capabilities; the
+project PI decides the research route.
+
 ## Compact Invocation
 
 The normal user-facing prompt should stay short:

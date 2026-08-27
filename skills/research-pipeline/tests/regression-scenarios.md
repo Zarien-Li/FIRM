@@ -516,6 +516,28 @@ Forbidden: project-count quotas, title-only literature search, raw backbones lab
 baselines, preselected failure cells or operators, copying all skills into the prompt,
 or letting the folder renderer decide scientific content.
 
+## AK. A Detailed Project Prompt Becomes A Research Script
+
+Inputs: project generation has produced a valuable arena, canonical object, accepted
+surface, named published-method frontier, deployment boundary, non-binding lens, and a
+suggested first empirical contact. The start prompt converts these researched launch
+assumptions into a mandatory order: reproduce exactly two methods on the full
+population, discover a failure, build a primitive through `v1 -> v2 -> v3`, and finish
+as a method paper.
+
+Required: write a project-specific research commission rich enough to explain why the
+project matters, the community prize, current literature map, practical boundary, and
+available starting evidence. Explicitly distinguish durable user authority from the
+generator's revisable map. The project PI may reorder or replace the surface,
+comparison, empirical entry, explanation, realization, and contribution form when
+evidence supports the change, while remaining accountable to the authorized arena and
+value.
+
+Forbidden: a generic one-paragraph prompt shared by every project, a fixed experiment
+sequence, treating the generator's first contact as permission or obligation, forcing
+every project into the same primitive lineage, or making preventive prohibitions the
+dominant content of the commission.
+
 ## Passing Standard
 
 Every scenario must preserve user authority, original-program value, evidence
