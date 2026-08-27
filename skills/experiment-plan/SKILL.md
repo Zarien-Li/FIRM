@@ -17,7 +17,7 @@ Read the Program Compass and identify:
   or harvest;
 - strongest evidence and inconvenient evidence;
 - current problem model, competing explanations, or construction arc;
-- serious incumbent, simple alternative, nearest-rival threat, and substrate health;
+- strong recent published incumbent, nearest-rival threat, and substrate health;
 - relevant utility risks and operational constraints;
 - active and completed-unread work whose result may change the plan.
 
@@ -101,7 +101,8 @@ iterations it should establish:
 1. a trainable or executable implementation on the accepted task;
 2. component substitutions or interactions that teach what the method should become;
 3. a paired utility check at the point where that cost matters for design;
-4. the strong simple and nearest-rival comparisons needed before a paper claim.
+4. the decisive published-incumbent and nearest-rival comparisons needed before a
+   paper claim.
 
 Early versions need not run every final comparison. They must be competent for the
 question they are asked. State what each outcome would add, remove, replace, separate,
@@ -138,7 +139,7 @@ A claim-bearing comparison requires:
 - credible evaluator and intended natural population;
 - competent substrate and direct incumbent;
 - fair information, supervision, capacity, optimization, and evaluation treatment;
-- strongest simple alternative and claim-threatening rival;
+- strongest relevant published incumbent and claim-threatening rival;
 - explicit unique prediction;
 - relevant capability, coverage, latency, memory, compute, or cost evidence.
 

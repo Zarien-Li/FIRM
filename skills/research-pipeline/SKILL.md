@@ -102,6 +102,14 @@ benchmark or natural system as the anchor. Label generated, synthetic, oracle, p
 and private-slice evidence as training or diagnostic unless it has an independently
 justified natural population.
 
+Do not call field contact complete after testing only unmodified foundation models.
+Qwen, Llama, CLIP, diffusion backbones, and analogous base systems are substrate
+controls. “Reproduce the baseline” means reproduce named methods from recent relevant
+papers, especially a strong reproducible incumbent and the nearest claim-threatening
+rival, under matched accepted-task semantics. Internal ablations are attribution
+controls, not field baselines. Do not invent simple heuristics as substitutes for the
+published method landscape.
+
 Do not select a substrate because it gives a favored method headroom. Diagnostic
 settings may teach; contribution settings must matter independently.
 
@@ -206,9 +214,8 @@ For a method paper, a credible positive object is necessary but not sufficient. 
 frozen accepted natural benchmark, evaluator, matched resource budget, and
 pre-specified value contract, require:
 
-- a bounded, claim-sufficient set of healthy comparisons containing the strongest
-  incumbent, directly claim-threatening rival, and serious simple alternatives known
-  at freeze time;
+- a bounded, claim-sufficient set of healthy published-method comparisons containing
+  the strongest incumbent and directly claim-threatening rival known at freeze time;
 - a meaningful advantage on the claim-relevant value surface, expressed either as
   primary-metric superiority or a defensible Pareto gain in capability, quality,
   robustness, coverage, latency, memory, compute, supervision, or adoption cost;

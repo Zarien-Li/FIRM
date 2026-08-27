@@ -59,8 +59,9 @@ consequential claim, or when concrete evidence raises a validity concern.
 - A compound contrast may measure a deployment package, but it cannot identify one
   component without a matched control, factorial contrast, or appropriately narrow
   claim.
-- Compare serious incumbents and strong direct or deterministic alternatives under
-  semantically matched conditions.
+- Compare the decisive published incumbents and claim-threatening methods under
+  semantically matched conditions. Use internal matched controls for attribution;
+  do not invent heuristics merely to enlarge the table.
 
 ### 6. Execution Competence And Engagement
 

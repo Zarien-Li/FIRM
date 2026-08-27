@@ -28,7 +28,7 @@ A good entry card gives the researcher a consequential field, credible empirical
 4. Check that solving the failure changes something users or scientists value.
 5. Match the empirical scale to the phenomenon; absence at a toy scale limits the test, not necessarily the field.
 6. Treat active related work as a positive importance prior and stronger baseline material, while checking that the activity reflects real value rather than leaderboard fashion.
-7. When a simple baseline wins, explain its hidden variable and natural failure boundary before changing fields.
+7. When an established published comparator wins, explain its principle and natural failure boundary before changing fields; do not invent heuristics as easier targets.
 
 ## Quality Test
 

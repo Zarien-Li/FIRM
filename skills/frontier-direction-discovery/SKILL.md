@@ -45,7 +45,7 @@ Use the template in `research-pipeline/SEED_TEMPLATE.md`. Name:
 
 - field and value;
 - empirical surface;
-- SOTA and simple baselines;
+- recent published baselines and strongest incumbents;
 - non-binding lens;
 - resource and contribution constraints.
 
@@ -79,7 +79,7 @@ Recommend one direction and explain the bet. Once selected, create the program c
 
 Return the selection to `research-pipeline` by updating the existing authoritative
 state with primary-source evidence, the original program/value target, canonical
-tasks and metrics, accepted SOTA/simple baselines, resource boundaries, non-binding
+tasks and metrics, accepted recent published baselines, resource boundaries, non-binding
 lens, first empirical contact, planned lifecycle, and one next action. Use a
 mergeable `research_state_patch` only when a structured handoff is useful; it is not
 mandatory. Neither form creates a locked paper identity or user constraint:

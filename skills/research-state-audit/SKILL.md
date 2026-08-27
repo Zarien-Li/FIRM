@@ -57,9 +57,8 @@ Evidence stability is not paper maturity. A method paper requires:
 - realized trainable/executable positive object on a competent standard task;
 - a frozen accepted benchmark, claim-relevant value surface, evaluator, and matched
   resource budget;
-- a frozen, bounded claim-sufficient comparison set containing the strongest
-  incumbent, directly claim-threatening rival, and serious simple alternatives known
-  at freeze time;
+- a frozen, bounded claim-sufficient comparison set of published methods containing
+  the strongest incumbent and directly claim-threatening rival known at freeze time;
 - a meaningful pre-specified advantage on the claim-relevant value surface, whether
   primary-metric superiority or a defensible Pareto gain in capability, quality,
   robustness, coverage, latency, memory, compute, supervision, or adoption cost;

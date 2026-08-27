@@ -66,7 +66,8 @@ because results disagree or a method failed. When one paper-critical inference r
 decision-relevant after a natural evidence bundle, provide:
 
 - a healthy evaluator and competent substrate;
-- direct incumbent, serious simple alternative, and nearest same-locus work;
+- strong recent published incumbent and nearest same-locus published work, kept
+  separate from backbone and internal controls;
 - natural successes, failures, disagreements, and inconvenient cases;
 - the lead PI's two or three competing explanations and their distinct predictions.
 

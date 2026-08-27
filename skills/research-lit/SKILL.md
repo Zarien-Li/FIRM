@@ -20,6 +20,15 @@ Search for a concrete need such as:
 
 Avoid broad search as a substitute for running or reading local evidence.
 
+For baseline discovery, distinguish foundation backbones from methods proposed by
+papers. Qwen, Llama, CLIP, diffusion backbones, and analogous base systems are normally
+substrates, not the answer to “what are this field's baselines?” Search recent primary
+literature and the field's still-dominant older work for named methods, then record the
+paper, venue/year, method primitive, official or mature implementation, accepted task,
+and decisive tradeoff. Promote the strongest reproducible incumbent and nearest
+same-locus rival to `baseline`. Do not replace this step with raw checkpoint evaluation
+or project-invented heuristics.
+
 ## Source Policy
 
 Prefer primary sources:
@@ -118,7 +127,8 @@ Write a literature report only when it will guide later work:
 
 ## Field Surface
 - accepted tasks/benchmarks:
-- recurring SOTA and simple baselines:
+- recent published method baselines and still-dominant incumbents:
+- backbone/substrate controls required for competence:
 - implementation anchors:
 
 ## Closest Work

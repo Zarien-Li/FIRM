@@ -85,6 +85,13 @@ change, and what ordinary behavior it must preserve. This is deep analysis, not 
 larger diagnostic atlas. It is sufficient when alternative accounts imply different
 designs; it need not identify every internal variable.
 
+Keep comparison roles explicit. Raw Qwen, Llama, CLIP, diffusion, or analogous
+foundation checkpoints are substrate controls, not field-method baselines. “Run the
+baselines” means identify and faithfully reproduce named methods from recent relevant
+papers, including a strong reproducible incumbent and the nearest claim-threatening
+rival. Internal matched controls serve attribution. Do not invent simple heuristics to
+stand in for the published method landscape.
+
 Keep an accepted benchmark or natural system as the value anchor. Diagnostics,
 synthetic data, oracles, and derived datasets may teach but cannot silently become the
 paper's importance. Re-ground at meaningful episode boundaries when work drifts into

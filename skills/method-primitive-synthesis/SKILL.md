@@ -25,8 +25,9 @@ Before serious construction, know:
 
 - the value-bearing natural population and accepted outcome;
 - a competent substrate on the standard task;
-- a serious incumbent and strong simple alternative;
-- the nearest two or three same-locus methods and the strongest ownership threat;
+- a strong recent published incumbent;
+- the nearest two or three same-locus published methods and the strongest ownership
+  threat;
 - the discovery slice, intended reach, material scope debt, and return to the accepted
   surface;
 - a problem model of the relevant incumbent computation, default assumption, earliest
@@ -54,7 +55,7 @@ plain language:
   insufficient;
 - what information or capability the new computation must preserve;
 - which behavioral contrast would distinguish the proposed principle from the nearest
-  rival and a strong simple alternative.
+  published rival.
 
 This account may come from an established important problem or from newly reproduced
 evidence. It need not be a complete causal theory. It is deep enough when it rules out
@@ -78,7 +79,7 @@ A **realization** exists when:
 A **paper-bearing method** additionally establishes a meaningful advantage on the
 claim-relevant value surface against a frozen, claim-sufficient set of healthy
 comparisons, including the strongest incumbent, directly claim-threatening rival, and
-serious simple alternatives. The advantage may be primary-metric superiority or a
+other claim-decisive published methods. The advantage may be primary-metric superiority or a
 defensible Pareto improvement in capability, quality, robustness, coverage, latency, memory,
 compute, supervision, or adoption cost. It also has an understood load-bearing
 component or interaction, passed paired utility and tradeoff checks, and a stable
@@ -153,8 +154,8 @@ The arc should eventually establish:
    rerouted, or factorized so that the next design is learned from the contrast;
 3. **paired utility:** capability, coverage, latency, memory, compute, or another cost
    relevant to the intended value;
-4. **decisive comparison:** the strongest simple alternative and claim-threatening
-   rival when the method is ready to support a claim.
+4. **decisive comparison:** the strongest published incumbent and claim-threatening
+   published rival when the method is ready to support a claim.
 
 These are the arc's scientific obligations, not a demand that every early version run
 the full paper table. Check utility early when it is a central design risk; otherwise
@@ -224,17 +225,17 @@ when another version would merely repeat an answered prediction, elaborate a pri
 cell, or preserve activity without plausible accepted-task consequence. There is no
 fixed failure count.
 
-## Learn From Heterogeneity And Simple Baselines
+## Learn From Heterogeneity And Established Comparators
 
 When effects vary by model, dataset, scale, query, or system state, ask whether a
 load-bearing context variable should be represented. An adaptive method is justified
-only when the variable predicts variation beyond dataset names and beats strong fixed
-or simple conditional alternatives.
+only when the variable predicts variation beyond dataset names and improves over the
+decisive published fixed or adaptive methods.
 
-When a simple rule, solver, retrieval system, cache, merge, or calibration wins,
-explain the computation, natural boundary, and cost. A native, learned, differentiable,
-efficient, or robust construction is worthwhile only when it addresses a remaining
-non-redundant need.
+When an established published method wins, explain its computation, natural boundary,
+and cost. A new construction is worthwhile only when it addresses a remaining
+non-redundant need. Do not invent project-specific heuristic baselines as easier targets
+or as substitutes for recent literature methods.
 
 ## Expand A Credible Primitive
 

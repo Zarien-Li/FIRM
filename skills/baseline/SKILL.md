@@ -1,6 +1,6 @@
 ---
 name: baseline
-description: Establish trustworthy empirical contact with a field through accepted tasks, strong incumbents, simple alternatives, substrate checks, evaluator validation, and raw behavioral reading. Use when creating or repairing the evidence foundation for research.
+description: Establish trustworthy empirical contact with a field through accepted tasks, recent published methods, strong incumbents, substrate checks, evaluator validation, and raw behavioral reading. Use when creating or repairing the evidence foundation for research.
 ---
 
 # Baseline And Empirical Contact
@@ -8,6 +8,36 @@ description: Establish trustworthy empirical contact with a field through accept
 Build a trustworthy contact point with the field, then read what the best available
 systems actually do. A baseline establishes reality and ownership; it does not choose
 the paper identity or close the broader program.
+
+## Baseline Means A Published Field Method
+
+Use comparison names precisely:
+
+- A **backbone or substrate control** is an unmodified Qwen, Llama, CLIP, diffusion
+  model, retriever, simulator, or other foundation system. It establishes that the
+  underlying system can perform the task and leaves interpretable residual headroom.
+  It is not a field-method baseline unless the research claim is specifically about
+  choosing foundation models.
+- A **matched control or ablation** isolates the project's treatment, component, or
+  training change. It supports attribution. It is not a field-method baseline.
+- A **baseline** is a named method or system proposed in the relevant research
+  literature, with its paper, venue/year, method semantics, implementation, and
+  evaluation protocol identified. The decisive set includes a strong reproducible
+  recent incumbent and the nearest same-locus or claim-threatening published method.
+
+When the user asks to “run the baseline,” interpret this as reproducing methods from
+recent field papers, not merely evaluating raw Qwen/Llama checkpoints. Recent means
+the current frontier and relevant preceding publication cycles, while retaining an
+older method when it remains a recognized incumbent. Select by claim and field use,
+not by a fixed paper count.
+
+Do not invent project-specific heuristics to pad the comparison table. A simple method
+belongs only when it is already a recognized published or field-standard comparator
+for the accepted protocol. Empirical contact is not complete when only backbones,
+prompts, or internal controls have run. Before reporting `baseline reproduced` or
+optimizing a proposed method, reproduce at least one strong recent published method
+and identify the nearest serious published rival, or record the concrete reproduction
+blocker and keep method claims provisional.
 
 ## Select The Evidence Surface
 
@@ -24,8 +54,9 @@ field value and the broad program is deliberately re-grounded.
 
 Choose, within realistic resources:
 
-- a strong reproducible direct incumbent;
-- a serious simple, deterministic, or procedural alternative;
+- a strong reproducible published method incumbent from recent relevant literature;
+- the nearest same-locus or directly claim-threatening published method;
+- the backbone/substrate control needed to establish base competence;
 - implementations whose semantics and raw outputs can be inspected.
 
 Do not create headroom with an obsolete, weak, or mismatched comparator. Record any
@@ -54,6 +85,7 @@ system must leave an interpretable residual.
 If it cannot perform the task, mark the comparison `substrate-confounded` and repair
 the substrate first. Do not simultaneously change backbone ability, data treatment,
 and the proposed mechanism, then attribute the package difference to the mechanism.
+Passing this check establishes substrate competence, not baseline reproduction.
 
 ## Reproduce Semantics
 
@@ -95,7 +127,7 @@ Add another model, dataset, regime, or seed only when it resolves a named uncert
 for example:
 
 - shared phenomenon versus implementation artifact;
-- sufficiency of a simple alternative;
+- whether a recognized published comparator already explains the effect;
 - realistic transfer or scale behavior;
 - utility, coverage, latency, or cost tradeoff;
 - claim scope that exceeds current evidence.
@@ -133,7 +165,7 @@ needs one. Keep it compact:
 - anchor, population, split, metrics, information and training treatment:
 
 ## Systems
-| System | Source/version | Actual protocol | Health | Result path |
+| System | Role | Paper/venue/year | Source/version | Actual protocol | Health | Result path |
 
 ## Ownership And Competence
 - nearest rivals and closest matched evidence:

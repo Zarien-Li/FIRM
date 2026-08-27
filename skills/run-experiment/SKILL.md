@@ -17,8 +17,8 @@ Read the authoritative live state and tracker. Before a consequential launch con
 - its evidence role is `debug`, `pilot`, `method-formation`, or `claim-confirmation`;
 - method, comparator, population, treatment, evaluator, metric, scale, seed, stopping,
   and forecast match the plan or registration;
-- a full method comparison includes a competent decisive incumbent and strongest
-  simple alternative under matched treatment;
+- a full method comparison includes the decisive published incumbent and nearest
+  claim-threatening published method under matched treatment;
 - the command writes parseable results, durable logs, completion/failure status, and
   checkpoints/resume information when applicable;
 - expected compute fits the authorized operational budget.

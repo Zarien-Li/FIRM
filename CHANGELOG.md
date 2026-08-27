@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Defined research baselines as named methods from recent relevant papers rather than
+  raw foundation checkpoints or project-invented heuristics. Backbone runs now establish
+  substrate competence, matched controls serve attribution, and field contact requires
+  a strong reproducible published incumbent plus the nearest claim-threatening method.
 - Added a PI-owned single `PROJECT_STATE.md` contract: projects repair and update one
   shared scientific state after meaningful transitions, while dashboards and
   Codex are limited to mechanical provenance, freshness, process, and seed-fidelity

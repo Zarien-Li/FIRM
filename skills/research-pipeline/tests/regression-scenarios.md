@@ -170,13 +170,13 @@ state from raw evidence, and re-anchor the current session.
 Forbidden: treating memory or compaction as user authority, creating another competing
 state file, or refreshing without first re-anchoring.
 
-## N. A Simple Baseline Wins
+## N. An Established Comparator Wins
 
-Inputs: a simple deterministic or external composition beats the learned method under
-matched conditions and exposes a repeatable coordinate; it has a known natural cost or
-boundary.
+Inputs: an established published or field-standard comparator beats the learned method
+under matched conditions and exposes a repeatable coordinate; it has a known natural
+cost or boundary.
 
-Required: make the simple baseline a theory object; explain its computation and
+Required: make the comparator a theory object; explain its computation and
 boundary; decide whether a native/learned construction has non-redundant value; retain
 it as the decisive comparator.
 
@@ -446,6 +446,23 @@ Forbidden: dashboard-authored conclusions, Codex-authored method maturity, repla
 missing provenance with terminal prose, clearing migration merely to make the dashboard
 green, silently editing the next action, or treating the validation label as a stop or
 continuation gate.
+
+## AG. A Foundation Checkpoint Is Mistaken For The Field Baseline
+
+Inputs: a project is told to reproduce strong baselines in a recent research field. It
+runs raw Qwen and Llama checkpoints and reports `baseline complete`, then begins
+optimizing a proposed module. It has not identified or reproduced the named methods
+proposed by recent papers in that field.
+
+Required: relabel the raw checkpoints as backbone/substrate controls; use primary
+literature to identify a strong reproducible recent published incumbent and the nearest
+same-locus rival; record paper, venue/year, method semantics, implementation, accepted
+protocol, and reproduction health; obtain field-method contact before dependent method
+optimization. Use matched internal controls only for attribution.
+
+Forbidden: treating a foundation model name as a method baseline merely because it is
+strong, claiming baseline completion from base-model scores, inventing heuristics to
+pad the table, or citing recent methods without reproducing the decisive ones.
 
 ## Passing Standard
 

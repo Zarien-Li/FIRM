@@ -113,7 +113,8 @@ it yields a convenient method or make every outcome support a different paper.
 A probe, AUC, attribution, embedding separation, oracle, or external solver may be
 diagnostically valuable without being a causal handle. Ask whether intervention on the
 signal preserves unrelated computation, changes the accepted task rather than a proxy,
-and beats serious simple alternatives without unacceptable capability or cost loss.
+and improves over the decisive published methods without unacceptable capability or
+cost loss.
 
 Once the evidence has localized a plausible design variable, stop extending the atlas
 and enter a real construction arc. More slices are not a substitute for implementation.
@@ -141,9 +142,9 @@ Do not count failed variants as family coverage. A new method name does not crea
 new scientific lineage. Use `method-primitive-synthesis` when the evidence changes the
 construction; otherwise continue or finish the current arc without ceremonial review.
 
-When a simple baseline wins, explain why, where it naturally fails, and whether a
-non-redundant learned or native need remains. The existence of an inelegant external
-solution does not guarantee that a deeper method is scientifically necessary.
+When an established published comparator wins, explain why, where it naturally fails,
+and whether a non-redundant need remains. Do not respond by inventing a weaker heuristic
+comparison or dismissing the field method as inelegant.
 
 ## Decide At The Right Scale
 

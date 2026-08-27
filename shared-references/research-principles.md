@@ -22,7 +22,7 @@ restating the rule.
 | P06 | Keep discovery slice, value-bearing natural class, and claimed population distinct; track scope debt and a paper-to-seed bridge. | `research-pipeline` |
 | P07 | A narrow or rare problem must earn importance at its exact scope through prevalence, severity, shared design reach, theory, safety, or operational consequence. | `research-pipeline` |
 | P08 | Close literature raises the baseline and differentiation bar; it closes an opening only through a matched same-failure comparison. | `research-lit` |
-| P09 | Before method commitment, identify the nearest same-locus rivals and establish a competent standard-task substrate. | `baseline` |
+| P09 | A baseline is a named method from relevant literature, not a raw foundation checkpoint or project-invented heuristic. Before method commitment, reproduce a strong recent incumbent, identify the nearest same-locus published rival, and separately establish a competent standard-task substrate. | `baseline` |
 | P10 | Baseline and evaluator semantics, information/treatment parity, raw cases, and metric reconstruction precede claim-bearing interpretation. | `baseline` and `experiment-integrity.md` |
 
 ## Observation And Explanation
@@ -44,7 +44,7 @@ restating the rule.
 | P18 | Form a method through construction episodes: real implementation, one component/interaction comparison, and one paired utility check read together. | `method-primitive-synthesis` |
 | P19 | Construction ablations invent the method by changing component jobs and interactions; failed variant count is not maturity. | `method-primitive-synthesis` |
 | P20 | Preserve the honest run verdict, useful residual, failed coupling, and next inherited change; distinguish correction, construction, and tuning. | `method-primitive-synthesis` |
-| P21 | A winning simple baseline is a theory object: explain its principle and natural boundary before proposing a non-redundant construction. | `method-primitive-synthesis` |
+| P21 | When an established published comparator wins, explain its principle and natural boundary before proposing a non-redundant construction. | `method-primitive-synthesis` |
 | P22 | Repeated local failures trigger diagnosis of substrate, problem value, rival ownership, and method assumption; they do not automatically justify abstraction escalation. | `method-primitive-synthesis` |
 
 ## Experiment And Evidence

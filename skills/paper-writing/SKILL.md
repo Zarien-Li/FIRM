@@ -50,9 +50,9 @@ the lead PI and grounded directly in raw evidence. It must establish:
 - paper-bearing method, or independently confirmed non-method object;
 - a frozen accepted natural benchmark, population, claim-relevant value surface,
   evaluator, and matched resource budget;
-- a bounded, claim-sufficient set of decisive healthy comparisons, including the
-  strongest incumbent, directly claim-threatening rival, and serious simple
-  alternatives known at freeze time;
+- a bounded, claim-sufficient set of decisive healthy published-method comparisons,
+  including the strongest incumbent and directly claim-threatening rival known at
+  freeze time;
 - an end-to-end realized method with a meaningful pre-specified advantage: either
   primary-metric superiority or a defensible Pareto gain in capability, quality,
   robustness, coverage, latency, memory, compute, supervision, or adoption cost;
