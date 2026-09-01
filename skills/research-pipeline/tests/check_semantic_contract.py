@@ -42,6 +42,9 @@ REQUIRED = {
         "`MIGRATION PENDING`, `STALE STATE`, and `UNVERIFIED CLAIM`",
         "Do not maintain a second current-state",
         "Never clear it merely to",
+        "identity transition",
+        "strongest functional rival",
+        "Artifact volume never substitutes",
     ],
     SKILLS / "baseline/SKILL.md": [
         "## Resolve The Nearest Rival Early",
@@ -49,6 +52,14 @@ REQUIRED = {
         "`claim-bearing`",
         "`training`",
         "`diagnostic`",
+        "same operational job",
+        "functional rival and nearest mechanistic rival",
+    ],
+    SKILLS / "research-lit/SKILL.md": [
+        "## Reset Search When The Scientific Identity Changes",
+        "same operational job",
+        "keep novelty and\n"
+        "paper maturity provisional",
     ],
     SKILLS / "signal-analysis/SKILL.md": [
         "## Observation Is The Default Update",
@@ -94,6 +105,8 @@ REQUIRED = {
         "## Draft The Problem Story Early, Then Rewrite It From Stable Evidence",
         "meaningful pre-specified advantage",
         "One identity means one governing scientific principle",
+        "prior paper maturity does not transfer",
+        "Claim narrowing cannot delete a stronger",
     ],
     SKILLS / "auto-paper-improvement-loop/SKILL.md": [
         "## One Improvement Round",
@@ -137,6 +150,11 @@ REQUIRED = {
         "## AH. A Diagnostic Surface Does Not Instantiate The Canonical Object",
         "## AI. A Weak Local Reproduction Is Frozen As The Incumbent",
         "## AJ. A Sparse Portfolio Brief Produces Generic Or Tiny Projects",
+        "## AK. A Detailed Project Prompt Becomes A Research Script",
+        "## AL. A Useful Side Result Inherits A Failed Program's Paper Maturity",
+        "## AM. Claim Narrowing Removes The Method That Solves The Same Job",
+        "## AN. Selective Routing Makes Zero Regression Tautological",
+        "## AO. Evaluator Repair Leaves A Smaller Positive And The Same Paper",
     ],
     SHARED / "research-principles.md": [
         "P01",
@@ -148,6 +166,11 @@ REQUIRED = {
         "P54",
         "P55",
         "P56",
+        "P57",
+        "P58",
+        "P59",
+        "P60",
+        "P61",
         "meaningful claim-dependent advantage",
         "one isolated author subagent",
         "claims-evidence mapping begins after narrative drafting",
@@ -158,6 +181,8 @@ REQUIRED = {
         "FIRM and registries report process",
         "do not create a new benchmark",
         "do not collect new human annotations",
+        "Freedom to evolve does not let a convenient side result inherit",
+        "zero-regression property guaranteed by routing",
     ],
 }
 

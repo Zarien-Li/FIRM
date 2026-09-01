@@ -28,6 +28,8 @@ restating the rule.
 | P54 | A local reproduction materially below a published accepted-protocol result remains unresolved until the semantic or implementation gap is reconciled; local tuning exhaustion cannot freeze a weaker incumbent. | `baseline` |
 | P55 | Generate new projects from a sparse user portfolio brief through current primary-source field research and a validated manifest; select mesoscopic high-value arenas without preselecting failures or methods, and keep deterministic folder rendering separate from scientific selection. | `frontier-direction-discovery` |
 | P56 | The portfolio does not create new benchmarks or collect new human annotations, preferences, ratings, or judgments; project selection must use existing public tasks, released labels, automatic evaluation, or natural system evidence. | `CLAUDE-RESEARCH.md` and `frontier-direction-discovery` |
+| P57 | A material change in operational effect, intervention locus, intended adopter, accepted value surface, or contribution type preserves evidence but resets paper maturity; a side result must independently earn its program bridge, prize, evaluator, and ownership. | `research-pipeline` |
+| P58 | Decisive comparisons are selected by actual operational function, deployment contract, value surface, and mechanism; claim wording cannot exclude a stronger functional rival. | `baseline` and `research-lit` |
 
 ## Observation And Explanation
 
@@ -59,6 +61,7 @@ restating the rule.
 | P24 | Registration freezes one consequential run's configuration, forecast, and verdict, not the living thesis or future design. | `research-contract` |
 | P25 | Invalid evidence is removed from active claims and invalidation propagates transitively through dependent analyses, artifacts, state, and drafts. | `evidence-lineage.md` |
 | P26 | Infrastructure failure, interruption, non-engagement, and undertraining are not scientific negatives. | `experiment-integrity.md` |
+| P59 | A retention or zero-regression property guaranteed by selective routing or construction is a design contract, not empirical advantage; evaluate the affected and full populations with end-to-end cost. | `research-pipeline` |
 
 ## Review And Contribution
 
@@ -71,6 +74,8 @@ restating the rule.
 | P31 | A changed contribution type requires an independently valuable object, independently selected confirmation, scientific consequence, strongest-account comparison, and fresh paper identity; user approval is required only across an explicit locked boundary. | `research-control-protocol.md` |
 | P32 | Evidence stability is not contribution maturity; method-paper entry requires a meaningful claim-dependent advantage on the frozen value surface, fair decisive comparisons, paired utility, and stable claim-bearing evidence. | `research-pipeline` |
 | P33 | Submission readiness requires a lead-PI evidence-bearing paper entry. Earlier author-argument and provisional problem-story writing may expose scientific gaps but cannot create maturity; optional near-final verification also cannot create it. | `paper-writing` |
+| P60 | Experiment, script, audit, draft, PDF, and release-package counts do not advance scientific maturity; evaluator or population invalidation resets every dependent paper-entry claim. | `paper-writing` and `research-pipeline` |
+| P61 | When a credible positive materially changes paper identity, one bounded independent check may verify program fidelity, exact-scope prize, and nearest ownership; it cannot create the identity or a defensive experiment list. | `research-review` |
 
 ## Writing And Context
 

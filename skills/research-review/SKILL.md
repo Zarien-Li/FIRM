@@ -27,6 +27,14 @@ could reverse. Common high-value uses are:
    or expensive expansion;
 2. a near-final factual, claim, citation, or proof audit with exact objects to verify.
 
+A material paper-identity transition is one special version of the first use. After a
+credible side result exists and before it inherits paper-sized investment, a single
+bounded check may ask only: does the new object still serve the authorized program,
+what independent community prize exists at its exact scope, and which functional or
+mechanistic prior work most threatens ownership? The packet must include the fresh
+literature decision and raw evidence. The answer cannot invent the identity, demand a
+defensive suite, or turn artifact volume into maturity.
+
 A repeated pass requires materially new evidence resolving one named high-stakes
 dispute. Do not call Codex to obtain general reassurance, repeatedly prosecute a live
 idea, select among speculative principles, or review every repaired realization.

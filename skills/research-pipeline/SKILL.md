@@ -28,6 +28,14 @@ Keep three objects separate:
 - **current paper:** a bounded contribution after one is scientifically earned, or
   `none`.
 
+The current paper may narrow the program, but it cannot borrow importance or maturity
+from work it no longer serves. A material change in operational effect, intervention
+locus, intended adopter, accepted value surface, or contribution type is a scientific
+identity transition. Preserve reusable evidence, reset the current paper and its
+submission maturity to provisional, and re-establish the paper-to-program bridge,
+field ownership, evaluator, and value before continuing paper-shaped work. Ordinary
+v1 -> v2 repair under one replacement principle is not such a transition.
+
 During discovery maintain a **Program Compass**, not a premature paper story:
 
 - important capability, scientific question, or operational decision;
@@ -236,11 +244,24 @@ pre-specified value contract, require:
   claim; and
 - stable provenance, evaluator validity, and directly supported scope.
 
+Determine the decisive comparison set from the system's actual operational effect,
+deployment contract, accepted value surface, and load-bearing mechanism, not from the
+paper's chosen vocabulary. Include both the strongest functional rival that solves the
+same user-facing problem and the closest mechanistic rival when they differ. Narrowing
+a claim may reduce generality; it cannot make a stronger functional alternative
+irrelevant by definition.
+
 A partial table win, unmatched-compute gain, pilot, slice, oracle, diagnostic
 phenomenon, or promising candidate does not by itself establish paper entry. A loss
 blocks the paper when it defeats the declared claim, not merely because one baseline
 wins on an unrelated axis. Do not change the primary value contract after seeing the
 result to manufacture entry.
+
+Likewise, a property guaranteed by construction is not an empirical win. If a router
+leaves completed or easy cases untouched, zero regression on those cases is a contract,
+not evidence that the selector or repair method is valuable. Report performance on the
+eligible or affected population and the full population, together with total inference,
+training, token, latency, memory, and coverage cost required by the actual deployment.
 
 After a credible positive object exists, form `AUTHOR_ARGUMENT.md` and a provisional
 problem story early enough to clarify the reader, prior belief, surprise, stakes, and
@@ -254,6 +275,29 @@ intervention, a fair decisive comparison, end-to-end value, and an honest tradeo
 surface. Another contribution type needs an independently valuable object,
 independent confirmation, consequence, and distinction from the strongest account.
 Failed method residue cannot select that identity automatically.
+
+When a positive object is materially different from the active program or construction
+lineage, treat it first as a side result. Before promoting it to the current paper:
+
+- run a fresh literature decision centered on what the new system actually does, not
+  the original seed's terms;
+- compare its exact function and deployment contract with prior systems, even when
+  their mechanism or community vocabulary differs;
+- revalidate the claim-bearing evaluator and population for the new object;
+- state the independent community prize and the honest bridge back to the program; and
+- use one bounded independent identity check only to test prize, fidelity, and nearest
+  ownership, without generating an objection list or experiment menu.
+
+If this check fails, keep the artifact as a side result and return to the original
+program, incubate it as a new project, or ask the user only when an explicitly locked
+portfolio boundary must change. Do not inherit paper maturity from the parent lineage.
+
+Artifact volume never substitutes for these anchors. Run directories, scripts,
+ablations, audits, drafts, compiled PDFs, and release packages are outputs of work, not
+votes for scientific maturity. A late evaluator invalidation or materially changed
+population removes every dependent paper-entry claim and triggers identity and prize
+re-evaluation on the repaired surface; a surviving local positive is not automatically
+the same paper.
 
 Once the bounded positive object, claim-dependent decisive comparison, and
 paper-critical evidence are stable, finishing the paper may outrank another experiment.

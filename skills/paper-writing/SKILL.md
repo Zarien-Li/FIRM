@@ -61,6 +61,23 @@ the lead PI and grounded directly in raw evidence. It must establish:
 - raw provenance, strongest contrary evidence, and scope debt;
 - paper-to-program bridge and current contribution identity.
 
+If the current contribution materially differs from the original program or preceding
+construction lineage in operational effect, intervention locus, intended adopter,
+accepted value surface, or contribution type, prior paper maturity does not transfer.
+The entry must cite a fresh literature decision for the new identity, including the
+strongest functional rival and nearest mechanistic rival, and record one bounded
+independent check of prize, program fidelity, and ownership. That check may return
+`no material change`; it must not produce a general review, experiment menu, or higher
+evidence bar.
+
+Comparison membership is determined by what systems actually do under their deployment
+contracts, not by the manuscript's nouns. Claim narrowing cannot delete a stronger
+functional alternative. A zero-regression or retention result guaranteed by selective
+routing is a design property, not an empirical advantage; the entry must instead show
+utility on the affected population, end-to-end population value, coverage, and total
+cost. Counts of experiments, scripts, audits, pages, PDFs, or release artifacts provide
+no paper-entry evidence.
+
 Do not require a parallel matrix of maturity fields or a fresh Codex verdict. An
 optional near-final independent check may verify one named factual, claim, citation, or
 proof uncertainty after the paper object exists. If a load-bearing anchor is later downgraded,
@@ -79,6 +96,12 @@ a scientific consequence, and a fresh paper identity before contribution-directe
 writing. A sparse late-stage verification may resolve a named uncertainty in the
 resulting fixed object but does not select the identity. Ask the user only if an explicitly
 locked project or deliverable boundary changes.
+
+When evaluator repair, population repair, or provenance invalidation removes a
+load-bearing result, preserve independent prose and artifacts but reset submission
+entry. Rebuild the scientific object on the repaired surface and reconsider its prize
+and nearest rivals; do not treat a surviving subset gain as automatic continuity of
+the same paper.
 
 ## Establish The Author Argument Before The Outline
 

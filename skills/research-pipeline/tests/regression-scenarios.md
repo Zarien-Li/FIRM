@@ -538,6 +538,78 @@ sequence, treating the generator's first contact as permission or obligation, fo
 every project into the same primitive lineage, or making preventive prohibitions the
 dominant content of the commission.
 
+## AL. A Useful Side Result Inherits A Failed Program's Paper Maturity
+
+Inputs: a program targets a learned internal computation on an accepted task. Several
+matched interventions show that computation does not carry the claimed value. A later
+textual or post-processing repair improves a small affected subset, and the project
+immediately renames the paper, keeps the old literature map, counts its existing runs
+and draft as maturity, and declares the original project completed.
+
+Required: preserve both the negative construction evidence and useful side result;
+recognize the material change in operational effect and intervention locus; reset the
+current paper to provisional; run a fresh literature decision around what the repair
+actually does; revalidate evaluator, functional and mechanistic rivals, exact-scope
+prize, and paper-to-program bridge; then either earn a new paper identity, incubate the
+side result separately, or return to the original program.
+
+Forbidden: borrowing the original field's importance, inheriting maturity from the
+failed lineage, treating a renamed draft as continuity, or calling completion because
+the project now has many scripts, audits, runs, pages, or release artifacts.
+
+## AM. Claim Narrowing Removes The Method That Solves The Same Job
+
+Inputs: a proposed system performs a concrete deployment-time repair. A published
+system with different terminology or mechanism performs the same user-facing job under
+a comparable information and cost contract. The project narrows its wording to an
+internal mechanism claim and therefore drops that published system from decisive
+comparison.
+
+Required: select comparisons from operational effect, deployment contract, accepted
+value surface, and mechanism; retain the strongest functional rival and the nearest
+mechanistic rival; allow claim narrowing to reduce scope but not to erase the practical
+alternative; use primary-source semantics and matched evidence to decide whether value
+or novelty remains.
+
+Forbidden: keyword-only related work, defining ownership through manuscript nouns,
+calling a functional rival out of scope because its architecture differs, or shrinking
+the claim after results solely to manufacture paper entry.
+
+## AN. Selective Routing Makes Zero Regression Tautological
+
+Inputs: a router changes only examples already judged incomplete or failed and leaves
+all completed outputs untouched. The project reports zero regression on untouched
+examples as evidence that the learned selector is safe and uses it as a principal
+paper advantage, while omitting eligible-subset utility, coverage, invocation cost,
+and total compute.
+
+Required: record untouched-case retention as a construction guarantee; evaluate the
+selector and repair on the eligible or affected population and the full population;
+report coverage, false routing, total training and inference cost, tokens, latency, and
+memory under the intended deployment; compare with functional alternatives under the
+same contract.
+
+Forbidden: treating a tautological retention property as empirical selectivity,
+reporting only end-to-end accuracy when very few cases are touched, or hiding the
+second-pass cost outside the matched budget.
+
+## AO. Evaluator Repair Leaves A Smaller Positive And The Same Paper
+
+Inputs: a late audit finds that the evaluator or parser invalidated a material fraction
+of the paper's benchmark. A repaired subset still shows a local positive. The project
+keeps the title, contribution identity, paper-entry status, and literature set because
+some gain survived, then adds an audit appendix and continues polishing.
+
+Required: propagate invalidation through every dependent claim; preserve independent
+artifacts; reset submission entry; reconstruct the object, population, value, cost,
+nearest rivals, and community prize on the repaired accepted surface; decide anew
+whether this is still the same paper rather than inferring continuity from a surviving
+number.
+
+Forbidden: using an audit appendix as scientific repair, treating clean-subset survival
+as automatic paper survival, counting reruns as restored maturity, or postponing
+evaluator validity until after contribution identity is fixed.
+
 ## Passing Standard
 
 Every scenario must preserve user authority, original-program value, evidence

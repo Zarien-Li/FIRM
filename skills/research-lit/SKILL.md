@@ -26,8 +26,25 @@ substrates, not the answer to “what are this field's baselines?” Search rece
 literature and the field's still-dominant older work for named methods, then record the
 paper, venue/year, method primitive, official or mature implementation, accepted task,
 and decisive tradeoff. Promote the strongest reproducible incumbent and nearest
-same-locus rival to `baseline`. Do not replace this step with raw checkpoint evaluation
-or project-invented heuristics.
+functional rival to `baseline`, and retain the nearest mechanistic or same-locus rival
+when it differs. Do not replace this step with raw checkpoint evaluation or
+project-invented heuristics.
+
+## Reset Search When The Scientific Identity Changes
+
+Literature contact does not transfer automatically from the seed to a materially new
+method. Repeat a focused decision search whenever the proposed contribution changes
+its operational effect, intervention locus, deployment contract, intended adopter,
+accepted value surface, or contribution type. Search using the new system's input,
+output, intervention time, user-facing job, and cost contract as well as its mechanism
+name. Different terminology, model family, or community does not make a method remote
+when it performs the same operational job.
+
+The reset asks three questions: what already solves this exact practical problem, what
+implements the closest load-bearing computation, and what independent prize remains.
+Until primary-source reading answers them, preserve the result but keep novelty and
+paper maturity provisional. Do not use the original lineage's related-work report to
+certify a side result.
 
 ## Source Policy
 
@@ -102,7 +119,11 @@ Classify close work as:
 - adjacent analogy;
 - broad contextual work.
 
-A paper blocks the current method claim only when it implements the same load-bearing idea and matched evidence shows it already closes the same failure without the claimed advantage. Otherwise it raises the differentiation bar and improves the project.
+A paper blocks the current novelty or value claim when it already implements the same
+load-bearing idea, or when it performs the same operational job under a comparable
+deployment contract without the claimed advantage. Exact closure still requires
+semantic and empirical comparison rather than title similarity. Otherwise it raises
+the differentiation bar and improves the project.
 
 ## Implementation Landscape
 

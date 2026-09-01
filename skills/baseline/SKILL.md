@@ -23,7 +23,9 @@ Use comparison names precisely:
 - A **baseline** is a named method or system proposed in the relevant research
   literature, with its paper, venue/year, method semantics, implementation, and
   evaluation protocol identified. The decisive set includes a strong reproducible
-  recent incumbent and the nearest same-locus or claim-threatening published method.
+  recent incumbent, the strongest published method performing the same operational job
+  under a comparable deployment contract, and the nearest mechanistic or same-locus
+  rival when it differs.
 
 When the user asks to “run the baseline,” interpret this as reproducing methods from
 recent field papers, not merely evaluating raw Qwen/Llama checkpoints. Recent means
@@ -71,7 +73,7 @@ diagnostic opportunity.
 Choose, within realistic resources:
 
 - a strong reproducible published method incumbent from recent relevant literature;
-- the nearest same-locus or directly claim-threatening published method;
+- the strongest functional rival and nearest mechanistic rival required by the claim;
 - the backbone/substrate control needed to establish base competence;
 - implementations whose semantics and raw outputs can be inspected.
 
@@ -81,8 +83,11 @@ resource-driven substitution and the uncertainty it leaves.
 ## Resolve The Nearest Rival Early
 
 Before naming or deeply implementing a method, identify the two or three closest
-same-locus approaches. Read the closest paper and implementation and state how that
-rival might already absorb the proposed principle.
+approaches by operational effect and by mechanism. Read the closest papers and
+implementations and state how either rival might already absorb the proposed principle
+or erase its practical value. Repeat this step when the method's actual job or
+deployment contract materially changes; seed-era neighbors do not certify a new
+scientific identity.
 
 Exploration may begin while a difficult rival is being reproduced, but novelty and
 paper identity remain provisional. Before dependent refinement, compare against the
