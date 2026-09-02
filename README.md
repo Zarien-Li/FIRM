@@ -36,11 +36,10 @@ drafts. The harder problem is research judgment. FIRM helps an agent decide what
 is worth studying, what a result actually means, what to build next, and when the
 evidence has earned a paper.
 
-The existing `research-pipeline` skill is the persistent GPT scientific owner across
-literature, experiments, interpretation, method evolution, and submission. Its five
-focused references load only for the current uncertainty. Fifteen specialist workflows
-remain available for bounded Claude implementation and explicit advanced operations;
-they are not parallel PIs and are not all loaded into GPT.
+The `research-pipeline` skill is the persistent GPT scientific owner across literature,
+experiments, interpretation, method evolution, and submission. Five specialist skills
+load only for the current uncertainty. Claude and Gemini can contribute bounded work;
+they do not become parallel PIs.
 
 End-to-end does not mean silent autonomous spending or a rigid sequence of gates.
 High-impact actions remain explicit, and completed evidence can send the project
@@ -123,7 +122,7 @@ unavailability does not pause the research.
 
 Gemini collaboration uses the Antigravity CLI (`agy`) and is optional. The canonical,
 model-pinned invocation is maintained in
-[`research-review`](skills/research-review/SKILL.md); installations without `agy` retain the
+[`collaboration.md`](skills/research-pipeline/references/collaboration.md); installations without `agy` retain the
 lead-PI workflow and use independent Codex review only at evidence-earned boundaries.
 
 ### The operational research loop
@@ -139,14 +138,20 @@ not collaborator prose, carry continuity.
 
 ## Install in 30 seconds
 
-For a persistent GPT PI in Trae Work, use the lightweight runtime adapter. It installs
-only `research-pipeline` and its focused references into the GPT skill directory:
+For a persistent GPT PI in Trae, install the six FIRM skills directly
+and use [`TRAE-RESEARCH.md`](TRAE-RESEARCH.md) as the model instructions file. The GPT PI
+then owns the full project while invoking Gemini for evidence-earned invention, Claude
+Code for bounded implementation, and Codex for sparse independent verification:
 
 ```bash
 git clone https://github.com/Zarien-Li/FIRM.git ~/FIRM
-git clone https://github.com/Zarien-Li/research-skills-trae.git ~/research-skills-trae
-cd ~/research-skills-trae && ./install.sh ~/FIRM
+cd ~/FIRM
+FIRM_HOST=trae ./install.sh
 ```
+
+Point Trae's `model_instructions_file` to `~/.trae/CLAUDE-RESEARCH.md`. Keep the
+Codex MCP configured and install `agy` and `claude` only when those collaborators are
+available; the PI continues without them if a provider is unavailable.
 
 For bounded Claude Code implementation and specialist workflows, add this repository
 as a plugin marketplace:

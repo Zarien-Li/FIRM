@@ -21,6 +21,20 @@ Claude may repair local code and adjust the realization when evidence requires i
 must not silently rename the paper, close the program, choose a new broad seed, or write
 a competing scientific state. The GPT PI inspects the work and integrates it.
 
+For a bounded headless episode, invoke Claude from the trusted project directory with a
+PI-authored transfer packet and only the permissions needed by the task:
+
+```bash
+claude -p "<PI-authored transfer packet>" \
+  --append-system-prompt-file ~/.claude/CLAUDE-RESEARCH.md \
+  --permission-mode acceptEdits
+```
+
+Use a fresh invocation by default. Resume only when the exact implementation episode
+needs continuity and no active writer owns it. If a required command is not permitted,
+the PI may grant that bounded command explicitly; do not solve permission friction with
+an unrestricted standing bypass.
+
 ## Gemini: Creative Co-Invention
 
 Invite Gemini when the project has enough reality for a new perspective to be useful:

@@ -110,7 +110,7 @@ Claude 交付有界的实现与实验任务。独立 Codex 审查只稀疏地验
 read、选择、实现和实验。两者都不是停止按钮，工具不可用也不会暂停研究。
 
 Gemini 协作使用 Antigravity CLI（`agy`），属于可选能力。经过模型固定验证的标准调用只在
-[`research-review`](skills/research-review/SKILL.md) 中维护；没有安装 `agy` 时，主 PI 仍继续推进，
+[`collaboration.md`](skills/research-pipeline/references/collaboration.md) 中维护；没有安装 `agy` 时，主 PI 仍继续推进，
 独立 Codex 审查只在证据已经挣得的边界使用。
 
 ### 实际科研循环
@@ -125,14 +125,18 @@ Gemini 提供有界协作，连续性由 artifacts 而不是协作者叙述承�
 
 ## 30 秒安装
 
-要在 Trae Work 中使用持续 GPT PI，安装轻量 runtime adapter。它只把
-`research-pipeline` 及其 focused references 放入 GPT 的 skill 目录：
+要在 Trae 中使用持续 GPT PI，直接安装六个 FIRM skills，并把
+[`TRAE-RESEARCH.md`](TRAE-RESEARCH.md) 作为模型指令。GPT PI 持续拥有完整项目，
+在证据支持的发明节点调用 Gemini，把有界实现工作交给 Claude Code，并稀疏使用 Codex 独立核验：
 
 ```bash
 git clone https://github.com/Zarien-Li/FIRM.git ~/FIRM
-git clone https://github.com/Zarien-Li/research-skills-trae.git ~/research-skills-trae
-cd ~/research-skills-trae && ./install.sh ~/FIRM
+cd ~/FIRM
+FIRM_HOST=trae ./install.sh
 ```
+
+把 Trae 的 `model_instructions_file` 指向 `~/.trae/CLAUDE-RESEARCH.md`。Codex MCP、
+`agy` 和 `claude` 是可选协作者；任一 provider 暂时不可用都不应暂停主 PI。
 
 要在 Claude Code 中使用有界实现和 specialist workflows，执行：
 

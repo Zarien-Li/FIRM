@@ -12,6 +12,12 @@ Extract the package and run:
 bash install.sh
 ```
 
+For a persistent GPT PI in Trae instead, run:
+
+```bash
+FIRM_HOST=trae bash install.sh
+```
+
 The installer:
 
 - installs exactly the skill names in `managed-skills.txt`;
@@ -19,7 +25,8 @@ The installer:
 - archives changed, retired, and known legacy research runtime files on the Desktop;
 - removes only previously managed or explicitly listed retired skills;
 - leaves unrelated user skills untouched;
-- installs `~/.claude/CLAUDE-RESEARCH.md`.
+- installs the six skills and the host-appropriate prompt under `~/.claude` or
+  `~/.trae`.
 
 For a research project, copy `CLAUDE-RESEARCH.md` into the project root and launch the
 model with that file as its appended system prompt. Continue an existing conversation

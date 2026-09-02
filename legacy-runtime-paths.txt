@@ -1,4 +1,4 @@
-# Paths relative to CLAUDE_HOME archived during migration
+# Paths relative to the selected runtime root archived during migration
 commands/anomaly-inventory.md
 templates/EXPERIMENT_LOG_TEMPLATE.md
 templates/EXPERIMENT_PLAN_TEMPLATE.md

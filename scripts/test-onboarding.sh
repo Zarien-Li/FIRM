@@ -9,6 +9,20 @@ PROJECT="${TEST_ROOT}/project"
 bash "${ROOT_DIR}/firm" init "${PROJECT}" >/dev/null
 bash "${ROOT_DIR}/scripts/verify-install.sh" "${PROJECT}/.claude/skills" >/dev/null
 
+for host in claude trae; do
+  runtime_home="${TEST_ROOT}/home-${host}"
+  HOME="${runtime_home}" FIRM_HOST="${host}" \
+    RESEARCH_SKILLS_BACKUP_DIR="${TEST_ROOT}/backup-${host}" \
+    bash "${ROOT_DIR}/install.sh" >/dev/null
+  bash "${ROOT_DIR}/scripts/verify-install.sh" \
+    "${runtime_home}/.${host}/skills" >/dev/null
+done
+
+cmp "${ROOT_DIR}/CLAUDE-RESEARCH.md" \
+  "${TEST_ROOT}/home-claude/.claude/CLAUDE-RESEARCH.md"
+cmp "${ROOT_DIR}/TRAE-RESEARCH.md" \
+  "${TEST_ROOT}/home-trae/.trae/CLAUDE-RESEARCH.md"
+
 required=(
   CLAUDE.md
   .firm/RESEARCH_PROGRAM.md

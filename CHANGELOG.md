@@ -10,11 +10,15 @@
   top-level `shared-references` installation surface.
 - Made the existing `research-pipeline` the sole persistent GPT PI surface. Its entry
   point now routes to five focused references for empirical foundations, collaboration,
-  method maturation, execution truth, and submission; Trae installs only this skill,
-  while Claude receives a compact bounded-collaborator prompt and specialist workflows.
+  method maturation, execution truth, and submission. Trae receives the same six-skill
+  package plus a persistent GPT PI prompt, while Claude receives a compact bounded-
+  collaborator prompt and the same specialist workflows.
   Replaced phrase-matching semantic tests with packaging and progressive-disclosure
   checks, while keeping historical scientific regressions as test scenarios rather than
   runtime rules.
+- Added reproducible dual-host installation with `FIRM_HOST=trae`, a canonical
+  `TRAE-RESEARCH.md`, verified Gemini 3.1 Pro invocation, and bounded headless Claude
+  delegation. Added installation regression coverage so host prompts cannot be swapped.
 - Reorganized multi-model responsibility around one persistent GPT PI, bounded Claude
   implementation/experiment episodes, invited Gemini invention, and sparse independent
   Codex verification. Added artifact-grounded candidate judgment without scientific

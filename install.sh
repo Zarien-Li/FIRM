@@ -2,8 +2,22 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CLAUDE_ROOT="${CLAUDE_HOME:-${HOME}/.claude}"
-TARGET_DIR="${CLAUDE_ROOT}/skills"
+FIRM_HOST="${FIRM_HOST:-claude}"
+case "${FIRM_HOST}" in
+  claude)
+    RUNTIME_ROOT="${CLAUDE_HOME:-${HOME}/.claude}"
+    RUNTIME_PROMPT="${ROOT_DIR}/CLAUDE-RESEARCH.md"
+    ;;
+  trae)
+    RUNTIME_ROOT="${TRAE_HOME:-${HOME}/.trae}"
+    RUNTIME_PROMPT="${ROOT_DIR}/TRAE-RESEARCH.md"
+    ;;
+  *)
+    echo "Unsupported FIRM_HOST: ${FIRM_HOST} (expected claude or trae)" >&2
+    exit 2
+    ;;
+esac
+TARGET_DIR="${RUNTIME_ROOT}/skills"
 SOURCE_MANIFEST="${ROOT_DIR}/managed-skills.txt"
 TARGET_MANIFEST="${TARGET_DIR}/.research-skills-managed"
 STAMP="$(date +%Y%m%d-%H%M%S)"
@@ -75,14 +89,14 @@ if [[ -f "${TARGET_DIR}/.research-shared-references-managed" ]]; then
   rm -f "${TARGET_DIR}/.research-shared-references-managed"
 fi
 
-cp "${ROOT_DIR}/CLAUDE-RESEARCH.md" "${CLAUDE_ROOT}/CLAUDE-RESEARCH.md"
+cp "${RUNTIME_PROMPT}" "${RUNTIME_ROOT}/CLAUDE-RESEARCH.md"
 cp "${SOURCE_MANIFEST}" "${TARGET_MANIFEST}"
 
 # Archive known pre-migration runtime files. Unknown user material is untouched.
 if [[ -f "${ROOT_DIR}/legacy-runtime-paths.txt" ]]; then
   while IFS= read -r rel; do
     [[ -n "${rel}" && "${rel}" != \#* ]] || continue
-    path="${CLAUDE_ROOT}/${rel}"
+    path="${RUNTIME_ROOT}/${rel}"
     if [[ -e "${path}" ]]; then
       backup_path "${path}" "legacy-runtime/${rel}"
       rm -rf "${path}"
@@ -99,4 +113,5 @@ if [[ -d "${BACKUP_DIR}" ]]; then
 else
   echo "No changed or retired runtime content required backup."
 fi
-echo "Runtime addendum: ${CLAUDE_ROOT}/CLAUDE-RESEARCH.md"
+echo "Runtime host: ${FIRM_HOST}"
+echo "Runtime addendum: ${RUNTIME_ROOT}/CLAUDE-RESEARCH.md"
