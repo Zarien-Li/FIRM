@@ -29,9 +29,10 @@ numbers and semantic qualifiers against raw results.
 - Audits qualify, remove, or repair evidence; they do not invent methods, launch
   defensive experiment grids, change contribution type, or impose stop/freeze/retire.
 
-For submission assurance, emit the human report and machine-readable JSON described in
-the selected reference and `../../research-pipeline/references/shared/assurance-contract.md`. Record reviewer
-identity/thread, UTC time, verdict, reason code, declared input hashes, and trace path.
+For submission assurance, use the selected mode's human and machine-readable output
+together with the External Artifact Assurance requirements in the parent
+`research-review` skill. Record reviewer identity/thread, UTC time, declared input
+hashes, trace path, and any status fields required by the external format.
 
 ## Output Routing
 

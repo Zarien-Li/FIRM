@@ -14,9 +14,9 @@ documentation, not a workflow and not ordinary project context.
 | Claims-evidence writing, figures, compilation, bounded improvement, submission, rebuttal, and resubmission | `paper-writing` |
 | Authority, evidence invalidation, contribution firewall, paper entry | `research-pipeline/references/shared/research-control-protocol.md` |
 | Claim-bearing evidence lineage | `research-pipeline/references/shared/evidence-lineage.md` |
-| Evaluation and experiment validity | `research-pipeline/references/shared/experiment-integrity.md` |
-| Context isolation and re-anchoring | `research-pipeline/references/shared/context-hygiene.md` |
-| External artifact honesty | `research-pipeline/references/shared/assurance-contract.md` |
+| Evaluation and experiment validity | `research-foundation/references/experiment-integrity.md` |
+| Context isolation and re-anchoring | `research-pipeline/references/collaboration.md` |
+| External artifact honesty | `research-review` |
 
 ## Runtime Invariants
 

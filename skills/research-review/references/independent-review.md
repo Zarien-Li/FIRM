@@ -330,9 +330,9 @@ decision. Optional strengthening, possible reviewer taste, and hypothetical obje
 are omitted rather than accumulated.
 
 In proof-audit mode inspect statements, assumptions, quantifiers, domains, dependencies,
-case coverage, and counterexamples. Follow
-`../../research-pipeline/references/shared/assurance-contract.md`. Proof review does
-not redesign research or grant paper entry.
+case coverage, and counterexamples. Apply the External Artifact Assurance requirements
+in the parent `research-review` skill. Proof review does not redesign research or grant
+paper entry.
 
 ## Tool Policy
 

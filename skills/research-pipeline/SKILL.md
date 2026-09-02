@@ -90,12 +90,13 @@ delegation or an external-model call.
   final human sign-off.
 
 Load retained deep protocols only for their named problem: information-flow validity in
-[experiment-integrity.md](references/shared/experiment-integrity.md), invalidation
-propagation in [evidence-lineage.md](references/shared/evidence-lineage.md), external
-factual assurance in [assurance-contract.md](references/shared/assurance-contract.md),
-and authority or context contamination in
-[research-control-protocol.md](references/shared/research-control-protocol.md) and
-[context-hygiene.md](references/shared/context-hygiene.md). The full
+[experiment-integrity.md](../research-foundation/references/experiment-integrity.md),
+invalidation propagation in
+[evidence-lineage.md](references/shared/evidence-lineage.md), authority contamination in
+[research-control-protocol.md](references/shared/research-control-protocol.md), and
+context isolation or episode refresh in
+[collaboration.md](references/collaboration.md). External artifact assurance belongs to
+`research-review`. The full
 [research-principles.md](references/shared/research-principles.md) registry supports
 maintenance; never load it as a daily research checklist.
 

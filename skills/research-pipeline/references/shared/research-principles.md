@@ -12,7 +12,7 @@ restating the rule.
 | P01 | Preserve the user-defined original program separately from the current paper candidate. | `research-pipeline` |
 | P02 | Only explicit user instructions, safety rules, and live operational limits create binding constraints; agent and reviewer language remains interpretation. | `research-control-protocol.md` |
 | P03 | Keep one concise authoritative `PROJECT_STATE.md`; project-status sidecars, identity current fields, tasks, memory, drafts, and reviews cannot become competing constitutions. | `research-pipeline` |
-| P04 | Re-anchor from current instructions and raw artifacts before replacing a session; compaction and old stop language are not evidence. | `context-hygiene.md` |
+| P04 | Re-anchor from current instructions and raw artifacts before replacing a session; compaction and old stop language are not evidence. | `collaboration.md` |
 
 ## Value And Empirical Contact
 
@@ -23,7 +23,7 @@ restating the rule.
 | P07 | A narrow or rare problem must earn importance at its exact scope through prevalence, severity, shared design reach, theory, safety, or operational consequence. | `research-pipeline` |
 | P08 | Close literature raises the baseline and differentiation bar; it closes an opening only through a matched same-failure comparison. | `research-foundation` |
 | P09 | A baseline is a named method from relevant literature, not a raw foundation checkpoint or project-invented heuristic. Before method commitment, reproduce a strong recent incumbent, identify the nearest same-locus published rival, and separately establish a competent standard-task substrate. | `research-foundation` |
-| P10 | Baseline and evaluator semantics, information/treatment parity, raw cases, and metric reconstruction precede claim-bearing interpretation. | `research-foundation` and `experiment-integrity.md` |
+| P10 | Baseline and evaluator semantics, information/treatment parity, raw cases, and metric reconstruction precede claim-bearing interpretation. | `research-foundation/experiment-integrity.md` |
 | P53 | Before problem or method identity narrows, verify that the accepted population instantiates the canonical object, the primary outcome can see it, and the intervention's required information exists at deployment; oracle or proxy evidence remains diagnostic until reintegrated. | `research-foundation` |
 | P54 | A local reproduction materially below a published accepted-protocol result remains unresolved until the semantic or implementation gap is reconciled; local tuning exhaustion cannot freeze a weaker incumbent. | `research-foundation` |
 | P55 | Generate new projects from a sparse user portfolio brief through current primary-source field research and a validated manifest; select mesoscopic high-value arenas without preselecting failures or methods, and keep deterministic folder rendering separate from scientific selection. | `research-foundation` |
@@ -60,7 +60,7 @@ restating the rule.
 | P23 | One competent, materially bad paired development seed diagnoses the current realization; extra seeds estimate uncertainty and must not search for a favorable run. | `method-development` |
 | P24 | Registration freezes one consequential run's configuration, forecast, and verdict, not the living thesis or future design. | `experiment-operations` |
 | P25 | Invalid evidence is removed from active claims and invalidation propagates transitively through dependent analyses, artifacts, state, and drafts. | `evidence-lineage.md` |
-| P26 | Infrastructure failure, interruption, non-engagement, and undertraining are not scientific negatives. | `experiment-integrity.md` |
+| P26 | Infrastructure failure, interruption, non-engagement, and undertraining are not scientific negatives. | `research-foundation/experiment-integrity.md` |
 | P59 | A retention or zero-regression property guaranteed by selective routing or construction is a design contract, not empirical advantage; evaluate the affected and full populations with end-to-end cost. | `research-pipeline` |
 
 ## Review And Contribution
@@ -83,7 +83,7 @@ restating the rule.
 |---|---|---|
 | P34 | High-stakes writing assigns verified excellent full papers distinct rhetorical roles and lets one isolated author subagent read the complete role-relevant exemplars with the author argument and evidence to draft directly; it does not average them into a template. | `paper-writing` |
 | P35 | Writing begins from a one-page human-facing author argument; provisional problem-story writing can guide research after an artifact-grounded candidate or independently important finding exists, while claims-evidence mapping verifies completed prose and never generates its narrative. | `paper-writing` |
-| P36 | Keep operational noise outside the main context; ordinary interruption re-anchors, while central invalidation, primitive or paper-identity change, GPT/Claude transfer, submission maturation, or repeated compaction creates a natural fresh scientific episode. | `context-hygiene.md` |
+| P36 | Keep operational noise outside the main context; ordinary interruption re-anchors, while central invalidation, primitive or paper-identity change, GPT/Claude transfer, submission maturation, or repeated compaction creates a natural fresh scientific episode. | `collaboration.md` |
 | P37 | Each integrity question has one audit owner; reuse fresh evidence-bound audits and do not create parallel headline, claim, citation, experiment, or state gates. | `paper-writing` and `research-review` |
 
 ## Scientific Upside And Expansion
@@ -125,7 +125,7 @@ restating the rule.
 | P69 | Design uncertainty is repaired through explanation and construction; random seeds are reserved for genuine stochastic uncertainty and positive-result reliability. | `method-development` |
 | P70 | Accelerator admission uses measured real-path peaks plus margin; a GPU wait neither blocks science nor licenses repeated audit artifacts or alternate method packets. | `experiment-operations` |
 | P71 | A first complete draft is a scientific integration test, not project completion. The same lead PI closes manuscript-revealed claim-bearing gaps and delivers a venue-compliant package ready for final human sign-off, while refusing optional defensive breadth. | `research-pipeline` and `paper-writing` |
-| P72 | Before method-guiding evidence, map partition use, selection, temporal availability, mutable state, caches, targets, external signals, and evaluator flow; baselines then serve distinct contact, candidate-judgment, and submission-envelope responsibilities. | `experiment-integrity.md` and `research-foundation` |
+| P72 | Before method-guiding evidence, map partition use, selection, temporal availability, mutable state, caches, targets, external signals, and evaluator flow; baselines then serve distinct contact, candidate-judgment, and submission-envelope responsibilities. | `research-foundation/experiment-integrity.md` |
 | P73 | Track the decisive-rival gap and the realized method bill of materials together; a component earns its place only through an evidence-linked residual and discriminating prediction, and an early contrastive surface tests whether the primitive survives beyond one substrate. | `method-development` |
 | P74 | A multi-run campaign uses one mechanical manifest with atomic claims, unique fingerprints, attempt-specific outputs, validated completion markers, and optimizer-aware resume; it reports execution completeness but never scientific interpretation. | `experiment-operations` |
 

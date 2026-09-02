@@ -51,9 +51,9 @@ scientific reason.
 
 Before evidence first chooses or reshapes a method, map partition use, selection
 variables, temporal availability, mutable state, caches, targets, external signals, and
-the evaluator path. Use the detailed experiment-integrity reference when a concrete
-validity risk exists. This information boundary defines the experiment; it is not a late
-paper audit.
+the evaluator path. Use
+`research-foundation/references/experiment-integrity.md` when a concrete validity risk
+exists. This information boundary defines the experiment; it is not a late paper audit.
 
 ## Match The Design To The Question
 

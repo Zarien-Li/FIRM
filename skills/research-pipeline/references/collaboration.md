@@ -61,3 +61,41 @@ entire conversation:
 
 Do not transfer old menus, reviewer rhetoric, failed candidate names, or a historical
 chronology unless they are necessary to avoid repeating a known error.
+
+## Protect The Main Context
+
+Keep the original program, live question, strongest supporting and contrary evidence,
+representative raw cases, method lineage, current positive object when one exists,
+durable artifact paths, and next scientific action in the main context. Keep downloads,
+dependency logs, long training output, full-paper extraction, compilation traces, and
+large queryable tables in durable files or bounded delegated work. Return compact
+metrics, execution truth, verified paths, and only the excerpts needed for the current
+decision; context compression must not erase contrary evidence.
+
+## Isolate Context-Heavy Work
+
+Use a subagent for self-contained work whose volume would displace the live thesis,
+such as reading full papers, environment setup, log triage, independent audit, or
+repeated visual inspection. Give it the minimum task-local evidence and require a
+compact, evidence-linked return. The persistent PI retains synthesis, the evolving
+thesis, and final method choice. When independence matters, withhold the author's
+preferred framing; when creative interpretation matters, include the real
+contradictions and constraints.
+
+## Refresh A Scientific Episode
+
+Ordinary interruption or compaction calls for re-anchoring from current authority,
+concise state, relevant raw artifacts, and active execution facts. Start a fresh
+scientific episode when the old narrative has become a worse evidence index than a new
+one: central evidence or the evaluator was invalidated; the governing primitive,
+operational effect, or paper identity materially changed; ownership transfers between
+the GPT PI and a Claude implementation episode; the work enters submission maturation;
+or repeated compaction, invented paths, duplicate actions, or forgotten contrary
+evidence has made continuity unreliable.
+
+Before that boundary, update the sole project state from artifacts and preserve active
+process identities. The receiving context rereads authority and evidence without
+inheriting certainty, closure language, or maturity from conversation history. Running
+sessions do not absorb changed skills automatically: after the current atomic action,
+explicitly reread any changed canonical skill that affects the work. Do not interrupt a
+valid experiment merely to refresh its surrounding context.

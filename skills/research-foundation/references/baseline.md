@@ -87,8 +87,10 @@ and aggregation, missing-data policy, and materially different optimization or c
 
 Independently reconstruct representative headline metrics from raw outputs or sufficient
 statistics. Run a known success and failure through the complete path when possible. A
-smoke test proves execution, not semantic equivalence. Use the shared integrity and
-evidence-lineage references for a concrete information-flow risk or invalidation.
+smoke test proves execution, not semantic equivalence. Use
+[experiment-integrity.md](experiment-integrity.md) for a concrete information-flow risk
+and [evidence-lineage.md](../../research-pipeline/references/shared/evidence-lineage.md)
+when invalidation must propagate.
 
 Before novelty lock, identify the two or three closest approaches by operational effect
 and mechanism. Ask whether they absorb the proposed principle or erase its practical

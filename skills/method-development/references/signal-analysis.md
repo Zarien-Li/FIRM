@@ -32,7 +32,7 @@ practical value, or benchmark improvement merely by being clean or numerous.
 
 When leakage, population drift, cache state, temporal availability, evaluator meaning,
 or implementation competence is genuinely in doubt, use
-`research-pipeline/references/shared/experiment-integrity.md`. An invalid or interrupted
+`research-foundation/references/experiment-integrity.md`. An invalid or interrupted
 run is an execution fact, not a scientific negative. Propagate consequential
 invalidation through `evidence-lineage.md`.
 

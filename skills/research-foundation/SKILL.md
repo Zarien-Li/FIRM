@@ -22,6 +22,10 @@ reproduction.
 - For accepted-task contact, published-method reproduction, evaluator validity,
   substrate competence, or raw success/failure reading, read
   [baseline.md](references/baseline.md).
+- When method-guiding or claim-bearing evidence requires an explicit information
+  boundary, matched treatment, statistical-unit check, competence check, or artifact
+  reconstruction, read
+  [experiment-integrity.md](references/experiment-integrity.md).
 
 These references retain the full pre-consolidation instructions. They are complementary
 views of one foundation, not sequential gates. Synthesize their output into the single
