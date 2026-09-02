@@ -47,7 +47,7 @@ for convenience.
 
 ## Record A Program, Not A Predetermined Method
 
-Use `research-pipeline/SEED_TEMPLATE.md` to record:
+Record the selected program in the project's research-program authority:
 
 - the field and why it matters;
 - the accepted empirical surface and primary outcome;
