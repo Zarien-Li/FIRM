@@ -96,9 +96,8 @@ factual assurance in [assurance-contract.md](references/shared/assurance-contrac
 and authority or context contamination in
 [research-control-protocol.md](references/shared/research-control-protocol.md) and
 [context-hygiene.md](references/shared/context-hygiene.md). The full
-[research-principles.md](references/shared/research-principles.md) registry and
-[regression scenarios](tests/regression-scenarios.md) support maintenance; never load
-them as daily research checklists.
+[research-principles.md](references/shared/research-principles.md) registry supports
+maintenance; never load it as a daily research checklist.
 
 ## User Boundary
 
