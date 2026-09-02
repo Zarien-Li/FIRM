@@ -39,7 +39,7 @@ pause 5
 slide "Run the flagship diagnosis skill"
 printf 'cd demo/fixture\n'
 printf 'claude\n\n'
-printf '\033[1;32m/firm:signal-analysis RESULT.md\033[0m\n'
+printf '\033[1;32m/firm:method-development "Interpret RESULT.md"\033[0m\n'
 pause 4
 
 slide "What a strong response should separate"
@@ -50,7 +50,7 @@ printf '  • which next experiment distinguishes the leading explanations\n'
 pause 5
 
 slide "Then continue the research loop"
-printf '/firm:method-primitive-synthesis\n'
-printf '/firm:experiment-plan\n'
+printf '/firm:method-development "Develop the primitive from this evidence"\n'
+printf '/firm:method-development "Plan the decisive construction experiment"\n'
 printf '/firm:research-review\n\n'
 printf 'A failed method is evidence—not a verdict on the field.\n'

@@ -1,92 +1,47 @@
 # Manuscript Claim Audit
 
-Use for paper-to-evidence fidelity: do manuscript numbers, configurations, populations,
-and semantic qualifiers match completed raw artifacts? This is distinct from
-experiment validity (`/research-audit mode: experiment`) and citation support
-(`/research-audit mode: citation`).
+Use after a narrative draft exists to check whether manuscript numbers,
+configurations, populations, and qualifiers match raw artifacts. Experiment validity
+and citation support belong to `research-review`.
 
-## Independence
+## Audit Independently
 
-Use a fresh reviewer/context with only:
+Give a fresh context the compiled manuscript, source files, exact raw result/config
+artifacts, and metric definitions. Do not provide author explanations, prior verdicts,
+desired outcomes, or fix summaries. The executor declares the complete input set.
 
-- the compiled manuscript and source files;
-- exact raw result/config artifacts declared for the audit;
-- metric definitions needed to reconstruct values.
+Inventory consequential claims in the title, abstract, contributions, body, captions,
+tables, appendix, limitations, and conclusion, including:
 
-Do not provide narrative reports, prior audits, desired verdicts, fix summaries, or
-author explanations. The executor declares the complete input set; the reviewer cannot
-silently narrow it.
+- values, deltas, ranges, counts, samples, seeds, and costs;
+- model, data, configuration, evaluator, rank, and consistency statements;
+- causal, natural, general, robust, deployable, efficient, or SOTA qualifiers;
+- population and scope claims;
+- any promotion of diagnostic, oracle, proxy, or selected evidence.
 
-## Extract Claims
+For each claim, locate exact records; reconstruct filtering, aggregation, uncertainty,
+and rounding; verify the model, data, seed, sample, configuration, and evaluator; and
+check every repeated occurrence. Distinguish induced from natural, association from
+cause, diagnostic from deployed, selected from independent confirmation, and a cell
+from its claimed population.
 
-Inventory consequential claims from title, abstract, contributions, body, captions,
-tables, appendix, limitations, and conclusion:
+Use `PASS`, `WARN`, `FAIL`, `BLOCKED`, `NOT_APPLICABLE`, or `ERROR`. A numerically
+correct claim still fails when its semantics exceed the evidence.
 
-- numbers, percentages, deltas, ranges, counts, sample sizes, seeds, costs;
-- model/data/config/evaluator statements;
-- best/worst/tie/rank and consistency claims;
-- natural, general, robust, causal, deployable, efficient, SOTA, and similar qualifiers;
-- population and scope statements;
-- claims that diagnostic/oracle/proxy evidence is a method or end-to-end result.
+## Record And Repair
 
-## Reconstruct From Raw Evidence
-
-For each claim:
-
-1. locate the raw artifact and exact records;
-2. reproduce filtering, grouping, aggregation, uncertainty, and rounding;
-3. verify configuration, seed, sample, model, dataset, and evaluator;
-4. check that development/selected evidence is not presented as independent
-   confirmation;
-5. check semantic status: induced vs natural, diagnostic vs deployed, one cell vs
-   population, association vs cause, scale sensitivity vs generality;
-6. inspect every repeated occurrence for consistent wording.
-
-Standard rounding to displayed precision is allowed. Direction-changing, threshold-
-crossing, or materially scope-changing rounding is not.
-
-## Verdicts
-
-Per claim:
-
-- `PASS`: value and semantics match;
-- `WARN`: defensible only with a named qualifier or minor rounding repair;
-- `FAIL`: wrong value/config/direction/population or unsupported semantic promotion;
-- `BLOCKED`: numeric/semantic claim exists but raw evidence is absent;
-- `NOT_APPLICABLE`: no consequential empirical claim;
-- `ERROR`: audit failed.
-
-A numerically correct sentence can still fail when it promotes synthetic evidence to
-natural prevalence, a proxy to a method result, or an association to a mechanism.
-
-## Output
-
-Write `PAPER_CLAIM_AUDIT.md`:
+Write `PAPER_CLAIM_AUDIT.md` with inputs and reviewer identity, then one row per claim:
 
 ```markdown
-# Paper Claim Audit
-- verdict / reviewer / time:
-- manuscript files and raw inputs:
-
 | ID | Location | Manuscript claim | Reconstructed evidence | Verdict | Repair |
 |---|---|---|---|---|---|
-
-## Cross-location inconsistencies
-## Missing raw evidence
-## Required repairs
-## Claims verified unchanged
 ```
 
-At submission assurance always write `PAPER_CLAIM_AUDIT.json`, including:
+Include cross-location inconsistencies, missing raw evidence, and required repairs. At
+submission assurance also write `PAPER_CLAIM_AUDIT.json` with the audit skill, verdict,
+reason, reviewer/thread/time, trace path, hashes for every input, and per-claim evidence,
+semantics, verdict, and repair. Recompute hashes at final validation; changed inputs
+make the corresponding result stale.
 
-- `audit_skill: paper-claim-audit`;
-- verdict, reason code, summary, reviewer/thread/time, trace path;
-- hashes for every declared manuscript and raw input;
-- per-claim evidence path, reconstructed value/semantics, verdict, and repair.
-
-Use paper-relative paths for in-paper files and absolute paths for external raw
-artifacts. Recompute hashes during submission validation; any mismatch makes the audit
-stale.
-
-The audit emits findings. Apply repairs through `paper-writing mode: write`, then rerun
-only affected claims. It cannot modify raw evidence or strengthen a claim beyond it.
+Apply repairs through `paper-writing mode: write`, then rerun only affected claims. The
+audit may correct or qualify prose; it cannot modify evidence or strengthen a claim.

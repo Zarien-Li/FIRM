@@ -33,7 +33,7 @@ For an existing research project:
 For a completed result:
 
 ```text
-/firm:signal-analysis path/to/result.json
+/firm:method-development "Interpret path/to/result.json before choosing the next construction"
 ```
 
 For an independent critique:
@@ -48,7 +48,7 @@ paths to raw results, configs, logs, code, and drafts whenever possible.
 ## Generate a portfolio from a sparse brief
 
 For several new projects, ask Codex to read
-`skills/frontier-direction-discovery/PROJECT_GENERATION.md` and create a JSON manifest
+`skills/research-foundation/references/project-generation.md` and create a JSON manifest
 from only the target venue, broad direction, maximum project count, compute envelope,
 additional exclusions, and existing portfolio path. Codex performs current primary-
 source research and selects mesoscopic arenas; it does not preselect the failure or
@@ -73,13 +73,9 @@ submission-oriented work. Invoke them deliberately and retain the surrounding
 tool-permission and project-authority checks:
 
 ```text
-/firm:run-experiment
-/firm:monitor-experiment
-/firm:research-audit
+/firm:experiment-operations
+/firm:research-review
 /firm:paper-writing
-/firm:auto-paper-improvement-loop
-/firm:research-state-audit
-/firm:resubmit-pipeline
 ```
 
 Invoke them deliberately with the relevant path or command.
@@ -99,7 +95,7 @@ This creates:
 ```text
 project/
 ├── CLAUDE.md                 # existing content preserved; one marked FIRM block appended
-├── .claude/skills/           # the 16 project-local skills
+├── .claude/skills/           # the 6 project-local skills
 └── .firm/
     ├── RESEARCH_PROGRAM.md
     ├── FIRST_MESSAGE_NEW.md
@@ -114,7 +110,7 @@ claude
 ```
 
 Project-local commands are not plugin-namespaced, so use `/research-pipeline`,
-`/signal-analysis`, and so on.
+`/method-development`, and so on.
 
 ## Start a new program
 

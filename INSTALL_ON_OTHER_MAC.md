@@ -29,8 +29,7 @@ only when its project state and raw artifacts are present on that computer.
 
 ```bash
 python3 skills/research-pipeline/tests/check_semantic_contract.py
-python3 -m unittest skills/research-audit/tests/test_evidence_lineage.py -v
-diff -qr shared-references ~/.claude/skills/shared-references
+python3 -m unittest skills/research-review/tests/test_evidence_lineage.py -v
 while read -r name; do
   case "$name" in ""|\#*) continue ;; esac
   diff -qr "skills/$name" "$HOME/.claude/skills/$name" || exit 1

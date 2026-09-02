@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Consolidated sixteen callable research skills into six entrypoints: one persistent
+  `research-pipeline` PI and five on-demand tools for foundation, method development,
+  experiment operations, review, and paper writing. Moved retained protocols, scripts,
+  tests, and shared principles under their owning skill, then removed overlapping
+  instructions that repeated another skill's responsibility. Removed the separate
+  top-level `shared-references` installation surface.
 - Made the existing `research-pipeline` the sole persistent GPT PI surface. Its entry
   point now routes to five focused references for empirical foundations, collaboration,
   method maturation, execution truth, and submission; Trae installs only this skill,

@@ -1,7 +1,7 @@
 # Agent and Maintainer Guide
 
 FIRM is a Claude Code skills repository, not a standalone research platform. The
-product is the quality and composability of the 16 canonical `SKILL.md` workflows.
+product is the quality and composability of the 6 canonical `SKILL.md` workflows.
 
 ## Product identity
 

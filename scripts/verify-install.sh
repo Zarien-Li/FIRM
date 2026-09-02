@@ -21,16 +21,8 @@ while IFS= read -r name; do
   fi
 done < "${MANIFEST}"
 
-if [[ ! -d "${TARGET_DIR}/shared-references" ]]; then
-  echo "MISSING shared references: ${TARGET_DIR}/shared-references" >&2
-  failures=$((failures + 1))
-elif ! diff -qr "${ROOT_DIR}/shared-references"   "${TARGET_DIR}/shared-references" >/dev/null; then
-  echo "MISMATCH shared references" >&2
-  failures=$((failures + 1))
-fi
-
-if [[ "${count}" -ne 16 ]]; then
-  echo "Manifest validation failed: expected 16 skills, found ${count}." >&2
+if [[ "${count}" -ne 6 ]]; then
+  echo "Manifest validation failed: expected 6 skills, found ${count}." >&2
   failures=$((failures + 1))
 fi
 

@@ -968,5 +968,5 @@ construction-oriented method formation, and timely harvest. The first consequent
 action must address the correct uncertainty rather than produce more paperwork.
 
 When a regression fails, fix the smallest canonical owner listed in
-`shared-references/research-principles.md`. Do not add the scenario's surface details
+`references/shared/research-principles.md`. Do not add the scenario's surface details
 to persistent prompts or duplicate the same rule across skills.

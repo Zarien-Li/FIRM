@@ -29,7 +29,7 @@ Verify at least:
 
 ```text
 /firm:research-pipeline
-/firm:signal-analysis demo/fixture/RESULT.md
+/firm:method-development "Interpret demo/fixture/RESULT.md"
 /firm:research-review
 ```
 

@@ -82,7 +82,7 @@ resources and owned processes. Expose progress, use attempt-specific output path
 write durable logs, raw results, checkpoints, and terminal markers.
 
 For multi-run work, use the project's mechanical campaign manifest or the
-`run-experiment` campaign helper. Mechanical dispositions coordinate workers and prove
+`experiment-operations` campaign helper. Mechanical dispositions coordinate workers and prove
 which expected cells have valid outputs. They never determine scientific success or
 paper maturity.
 

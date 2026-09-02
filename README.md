@@ -6,7 +6,7 @@
 <h1 align="center">Field-tested, end-to-end CS research skills for AI agents.</h1>
 
 <p align="center">
-  One persistent GPT Research PI, with fifteen bounded specialist workflows<br>
+  One persistent GPT Research PI, with five bounded specialist tools<br>
   for implementation, experiments, verification, and paper production.
 </p>
 
@@ -20,7 +20,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat-square" alt="Claude Code plugin">
-  <img src="https://img.shields.io/badge/research_skills-16-285943?style=flat-square" alt="16 research skills">
+  <img src="https://img.shields.io/badge/research_skills-6-285943?style=flat-square" alt="6 research skills">
   <img src="https://img.shields.io/badge/second_PI-independent-4C78A8?style=flat-square" alt="Independent second PI">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f81f7?style=flat-square" alt="MIT License"></a>
 </p>
@@ -69,7 +69,7 @@ evaluation. To run the neutral case with Claude Code:
 ```bash
 cd demo/fixture
 claude
-# then invoke: /firm:signal-analysis RESULT.md
+# then invoke: /firm:method-development "Interpret RESULT.md before choosing the next construction"
 ```
 
 ## Contents
@@ -82,7 +82,7 @@ claude
 - [What FIRM does](#what-firm-does)
 - [Enter at any point](#enter-at-any-point)
 - [What makes FIRM different](#what-makes-firm-different)
-- [One PI skill, fifteen specialist workflows](#one-pi-skill-fifteen-specialist-workflows)
+- [One PI skill, five specialist tools](#one-pi-skill-five-specialist-tools)
 - [Development timeline](#development-timeline)
 - [Repository map](#repository-map)
 - [Design and documentation](#design-and-documentation)
@@ -175,7 +175,7 @@ collaboration, and submission. A specialist workflow is invoked only for bounded
 You do not need to hand-author every seed. Give Codex only the target venue, broad
 direction, project-count ceiling, compute envelope, exclusions, and existing portfolio
 path. Ask it to read
-[`frontier-direction-discovery/PROJECT_GENERATION.md`](skills/frontier-direction-discovery/PROJECT_GENERATION.md),
+[`research-foundation/project-generation.md`](skills/research-foundation/references/project-generation.md),
 research the current official scope and primary-paper frontier, and produce a manifest
 matching the bundled schema. Inspect the concise ranked candidates, then render the
 accepted set:
@@ -215,7 +215,7 @@ The initializer preserves an existing `CLAUDE.md` and creates:
 ```text
 my-research-project/
 ├── CLAUDE.md
-├── .claude/skills/            # 16 project-local FIRM skills
+├── .claude/skills/            # 6 project-local FIRM skills
 └── .firm/
     ├── RESEARCH_PROGRAM.md
     ├── FIRST_MESSAGE_NEW.md
@@ -289,15 +289,13 @@ an active experiment, or a draft:
 
 | Current situation | Direct entry |
 |---|---|
-| Choose a consequential field and empirical surface | `/firm:frontier-direction-discovery [field or constraints]` |
+| Choose a consequential field and empirical surface | `/firm:research-foundation [field or constraints]` |
 | Start or resume a complete research program | `/firm:research-pipeline [goal or project state]` |
-| Establish a field-standard empirical anchor | `/firm:baseline [task or benchmark]` |
-| Interpret a negative, mixed, or surprising result | `/firm:signal-analysis [result path]` |
-| Invent or repair the method primitive | `/firm:method-primitive-synthesis [evidence or failed component]` |
-| Choose a decisive experiment campaign | `/firm:experiment-plan [method, claim, budget]` |
-| Launch a registered experiment | `/firm:research-contract` then `/firm:run-experiment` |
+| Establish a field-standard empirical anchor | `/firm:research-foundation [task or benchmark]` |
+| Interpret a result, invent or repair a primitive, or plan a decisive campaign | `/firm:method-development [evidence, method, or live question]` |
+| Register, launch, resume, or monitor an experiment | `/firm:experiment-operations [run or campaign]` |
 | Challenge a consequential decision independently | `/firm:research-review [decision or evidence]` |
-| Audit paper readiness and produce the manuscript | `/firm:research-state-audit` then `/firm:paper-writing [paper directory]` |
+| Audit paper readiness, write, improve, or resubmit the manuscript | `/firm:research-review` then `/firm:paper-writing [paper directory]` |
 
 Skills with compute, remote, destructive, manuscript-wide, or submission side effects
 must still respect the surrounding tool permissions and project authority. Scientific
@@ -335,17 +333,15 @@ principle can become a reusable primitive, supervision or data engine, predicted
 cross-task finding, or systems capability. Probe budget tests openings; paper budget
 is concentrated only on ideas whose scientific upside grows with the investment.
 
-## One PI skill, fifteen specialist workflows
+## One PI skill, five specialist tools
 
-`research-pipeline` is the only persistent GPT PI surface. The other workflows remain
-callable for bounded Claude execution, detailed audits, and specialized paper work.
+`research-pipeline` is the only persistent GPT PI surface. Five consolidated tools remain
+callable for bounded field contact, method work, execution, review, and authorship. The
+full pre-consolidation guidance remains available inside their on-demand references.
 
-| Discover & anchor | Diagnose & design | Run & verify | Write & finish |
-|---|---|---|---|
-| [`research-pipeline`](skills/research-pipeline/SKILL.md) | [`signal-analysis`](skills/signal-analysis/SKILL.md) | [`research-contract`](skills/research-contract/SKILL.md) | [`research-state-audit`](skills/research-state-audit/SKILL.md) |
-| [`frontier-direction-discovery`](skills/frontier-direction-discovery/SKILL.md) | [`method-primitive-synthesis`](skills/method-primitive-synthesis/SKILL.md) | [`run-experiment`](skills/run-experiment/SKILL.md) | [`auto-paper-improvement-loop`](skills/auto-paper-improvement-loop/SKILL.md) |
-| [`research-lit`](skills/research-lit/SKILL.md) | [`experiment-plan`](skills/experiment-plan/SKILL.md) | [`monitor-experiment`](skills/monitor-experiment/SKILL.md) | [`paper-writing`](skills/paper-writing/SKILL.md) |
-| [`baseline`](skills/baseline/SKILL.md) | [`research-review`](skills/research-review/SKILL.md) | [`research-audit`](skills/research-audit/SKILL.md) | [`resubmit-pipeline`](skills/resubmit-pipeline/SKILL.md) |
+| Persistent owner | Field contact | Method work | Execution | Assurance | Authorship |
+|---|---|---|---|---|---|
+| [`research-pipeline`](skills/research-pipeline/SKILL.md) | [`research-foundation`](skills/research-foundation/SKILL.md) | [`method-development`](skills/method-development/SKILL.md) | [`experiment-operations`](skills/experiment-operations/SKILL.md) | [`research-review`](skills/research-review/SKILL.md) | [`paper-writing`](skills/paper-writing/SKILL.md) |
 
 See the [ownership map](REFORM_MAP.md) for the current runtime boundaries.
 

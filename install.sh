@@ -5,7 +5,6 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CLAUDE_ROOT="${CLAUDE_HOME:-${HOME}/.claude}"
 TARGET_DIR="${CLAUDE_ROOT}/skills"
 SOURCE_MANIFEST="${ROOT_DIR}/managed-skills.txt"
-SHARED_MANIFEST="${ROOT_DIR}/managed-shared-references.txt"
 TARGET_MANIFEST="${TARGET_DIR}/.research-skills-managed"
 STAMP="$(date +%Y%m%d-%H%M%S)"
 BACKUP_DIR="${RESEARCH_SKILLS_BACKUP_DIR:-${HOME}/Desktop/research-skills-backup-${STAMP}}"
@@ -28,11 +27,6 @@ backup_path() {
   echo "Missing managed skill manifest: ${SOURCE_MANIFEST}" >&2
   exit 2
 }
-[[ -f "${SHARED_MANIFEST}" ]] || {
-  echo "Missing shared-reference manifest: ${SHARED_MANIFEST}" >&2
-  exit 2
-}
-
 mkdir -p "${TARGET_DIR}"
 
 # Remove only skills previously owned by this package or explicitly retired by it.
@@ -73,32 +67,16 @@ while IFS= read -r name; do
   installed=$((installed + 1))
 done < "${SOURCE_MANIFEST}"
 
-while IFS= read -r name; do
-  [[ -n "${name}" && "${name}" != \#* ]] || continue
-  [[ -f "${ROOT_DIR}/shared-references/${name}" ]] || {
-    echo "Shared manifest entry is missing: ${name}" >&2
-    exit 2
-  }
-done < "${SHARED_MANIFEST}"
-
-for source_path in "${ROOT_DIR}"/shared-references/*; do
-  [[ -f "${source_path}" ]] || continue
-  name="$(basename "${source_path}")"
-  contains_line "${name}" "${SHARED_MANIFEST}" || {
-    echo "Unmanaged shared reference present: ${name}" >&2
-    exit 2
-  }
-done
-
-if [[ -d "${TARGET_DIR}/shared-references" ]] && ! diff -qr "${ROOT_DIR}/shared-references" "${TARGET_DIR}/shared-references" >/dev/null; then
-  backup_path "${TARGET_DIR}/shared-references" "shared-references"
+# Releases before the six-skill consolidation installed a top-level reference folder.
+# Retire only a copy carrying this package's ownership marker; preserve it in backup.
+if [[ -f "${TARGET_DIR}/.research-shared-references-managed" ]]; then
+  backup_path "${TARGET_DIR}/shared-references" "retired-shared-references"
+  rm -rf "${TARGET_DIR}/shared-references"
+  rm -f "${TARGET_DIR}/.research-shared-references-managed"
 fi
-rm -rf "${TARGET_DIR}/shared-references"
-cp -R "${ROOT_DIR}/shared-references" "${TARGET_DIR}/shared-references"
 
 cp "${ROOT_DIR}/CLAUDE-RESEARCH.md" "${CLAUDE_ROOT}/CLAUDE-RESEARCH.md"
 cp "${SOURCE_MANIFEST}" "${TARGET_MANIFEST}"
-cp "${SHARED_MANIFEST}" "${TARGET_DIR}/.research-shared-references-managed"
 
 # Archive known pre-migration runtime files. Unknown user material is untouched.
 if [[ -f "${ROOT_DIR}/legacy-runtime-paths.txt" ]]; then

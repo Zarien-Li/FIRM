@@ -18,7 +18,7 @@ Usage:
   firm prompt new|audit
 
 Commands:
-  init     Install the 16 skills into PROJECT/.claude/skills and add a small
+  init     Install the 6 skills into PROJECT/.claude/skills and add a small
            research bootstrap. Existing project instructions are preserved.
   doctor   Validate a project-local installation without changing it.
   list     Print the available project-local skill commands.

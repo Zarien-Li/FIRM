@@ -6,25 +6,17 @@ documentation, not a workflow and not ordinary project context.
 | Concern | Canonical owner |
 |---|---|
 | GPT-owned program continuity, synthesis, method maturation, positive expansion, and submission harvest | `research-pipeline` |
-| Accepted task, nearest rival, substrate, evaluator contact | `baseline` |
-| Literature identity and ownership | `research-lit` |
-| Observation bundles and competing explanations | `signal-analysis` |
-| Primitive formation, realization, construction arcs, repair | `method-primitive-synthesis` |
-| Probe versus paper budget and campaign design | `experiment-plan` |
-| Prospective registration of one consequential run | `research-contract` |
-| Local, SSH, scheduler, queue, GPU, retry, and resume mechanics | `run-experiment` |
-| Process/job reconciliation and completed-unread delivery | `monitor-experiment` |
-| Experiment and citation validity | `research-audit` |
-| Program/value/identity boundary synthesis | `research-state-audit` |
+| Direction selection, literature identity, accepted task, nearest rival, substrate, and evaluator contact | `research-foundation` |
+| Observation bundles, competing explanations, primitive formation, construction arcs, repair, and experiment design | `method-development` |
+| Prospective registration, local/SSH/scheduler/GPU execution, retry, resume, monitoring, and completed-run delivery | `experiment-operations` |
+| Experiment and citation validity plus program/value/identity boundary synthesis | `research-review` |
 | Gemini creative collaboration and optional sparse Codex verification | `research-review` |
-| Claims-evidence writing, figures, compilation, submission assembly | `paper-writing` |
-| Bounded manuscript improvement | `auto-paper-improvement-loop` |
-| Rebuttal and resubmission | `resubmit-pipeline` |
-| Authority, evidence invalidation, contribution firewall, paper entry | `shared-references/research-control-protocol.md` |
-| Claim-bearing evidence lineage | `shared-references/evidence-lineage.md` |
-| Evaluation and experiment validity | `shared-references/experiment-integrity.md` |
-| Context isolation and re-anchoring | `shared-references/context-hygiene.md` |
-| External artifact honesty | `shared-references/assurance-contract.md` |
+| Claims-evidence writing, figures, compilation, bounded improvement, submission, rebuttal, and resubmission | `paper-writing` |
+| Authority, evidence invalidation, contribution firewall, paper entry | `research-pipeline/references/shared/research-control-protocol.md` |
+| Claim-bearing evidence lineage | `research-pipeline/references/shared/evidence-lineage.md` |
+| Evaluation and experiment validity | `research-pipeline/references/shared/experiment-integrity.md` |
+| Context isolation and re-anchoring | `research-pipeline/references/shared/context-hygiene.md` |
+| External artifact honesty | `research-pipeline/references/shared/assurance-contract.md` |
 
 ## Runtime Invariants
 
@@ -43,5 +35,5 @@ documentation, not a workflow and not ordinary project context.
   user-only boundaries.
 
 The detailed durable principles live in
-`shared-references/research-principles.md`. Regression scenarios preserve historical
+`skills/research-pipeline/references/shared/research-principles.md`. Regression scenarios preserve historical
 failure cases without turning them into daily workflow state.

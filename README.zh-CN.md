@@ -20,7 +20,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat-square" alt="Claude Code plugin">
-  <img src="https://img.shields.io/badge/research_skills-16-285943?style=flat-square" alt="16 research skills">
+  <img src="https://img.shields.io/badge/research_skills-6-285943?style=flat-square" alt="6 research skills">
   <img src="https://img.shields.io/badge/second_PI-independent-4C78A8?style=flat-square" alt="Independent second PI">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f81f7?style=flat-square" alt="MIT License"></a>
 </p>
@@ -36,7 +36,7 @@ AI Agent 很擅长制造“在推进”的感觉：搜索、代码、实验、�
 以及证据何时真正足以支撑一篇论文。
 
 现有的 `research-pipeline` skill 是 GPT 唯一持续科学负责人，覆盖文献、实验、解释、方法演化和
-投稿；它的五份 focused references 只在当前不确定性需要时加载。其余 15 个 specialist workflows
+投稿；它的五份 focused references 只在当前不确定性需要时加载。其余 5 个 specialist tools
 用于有界 Claude 实现和显式高级操作，不是并列 PI，也不会一次性装入 GPT 上下文。
 
 端到端不等于静默消耗算力，也不等于按固定阶段一路推进。高影响操作仍然必须显式调用；
@@ -63,7 +63,7 @@ make demo
 ```bash
 cd demo/fixture
 claude
-# 然后调用：/firm:signal-analysis RESULT.md
+# 然后调用：/firm:method-development "解释 RESULT.md，再选择下一项构造"
 ```
 
 ## 目录
@@ -76,7 +76,7 @@ claude
 - [FIRM 能做什么](#firm-能做什么)
 - [从任意节点进入](#从任意节点进入)
 - [FIRM 解决的不是“不会做”，而是“判断错”](#firm-解决的不是不会做而是判断错)
-- [一个 PI skill 与十五个 specialist workflows](#一个-pi-skill-与十五个-specialist-workflows)
+- [一个 PI skill 与五个按需工具](#一个-pi-skill-与五个按需工具)
 - [开发时间线](#开发时间线)
 - [仓库结构](#仓库结构)
 - [设计与文档](#设计与文档)
@@ -157,7 +157,7 @@ cd ~/research-skills-trae && ./install.sh ~/FIRM
 
 不需要手写每一份 Seed。只需向 Codex 提供目标刊物、大概方向、项目数量上限、算力范围、
 特殊排除项和现有项目路径，并让它读取
-[`frontier-direction-discovery/PROJECT_GENERATION.md`](skills/frontier-direction-discovery/PROJECT_GENERATION.md)，
+[`research-foundation/project-generation.md`](skills/research-foundation/references/project-generation.md)，
 调查当前官方 scope、近期完整论文和公开实现，再输出符合内置 schema 的 manifest。快速检查
 排序后的候选后，渲染接受的项目：
 
@@ -195,7 +195,7 @@ cd my-research-project
 ```text
 my-research-project/
 ├── CLAUDE.md
-├── .claude/skills/            # 16 个项目级 FIRM skills
+├── .claude/skills/            # 6 个项目级 FIRM skills
 └── .firm/
     ├── RESEARCH_PROGRAM.md
     ├── FIRST_MESSAGE_NEW.md
@@ -261,15 +261,13 @@ FIRM 可以从一个新方向、已有仓库、完成的结果、活动实验或
 
 | 当前情况 | 直接入口 |
 |---|---|
-| 选择一个重要且可进入的研究领域 | `/firm:frontier-direction-discovery [领域或约束]` |
+| 选择一个重要且可进入的研究领域 | `/firm:research-foundation [领域或约束]` |
 | 启动或恢复完整研究计划 | `/firm:research-pipeline [目标或项目状态]` |
-| 建立领域标准的可信基线 | `/firm:baseline [任务或 benchmark]` |
-| 解释负面、混合或意外结果 | `/firm:signal-analysis [结果路径]` |
-| 发明或修复方法 primitive | `/firm:method-primitive-synthesis [证据或失效组件]` |
-| 选择最能改变判断的实验 | `/firm:experiment-plan [方法、claim、预算]` |
-| 启动一个已注册的实验 | `/firm:research-contract`，然后 `/firm:run-experiment` |
+| 建立领域标准的可信基线 | `/firm:research-foundation [任务或 benchmark]` |
+| 解释结果、发明或修复 primitive、规划决定性实验 | `/firm:method-development [证据、方法或当前问题]` |
+| 注册、启动、恢复或监控实验 | `/firm:experiment-operations [run 或 campaign]` |
 | 独立攻击一个关键科研决策 | `/firm:research-review [决策或证据包]` |
-| 审计论文入口并生成稿件 | `/firm:research-state-audit`，然后 `/firm:paper-writing [论文目录]` |
+| 审计论文入口、写作、改进或转投 | `/firm:research-review`，然后 `/firm:paper-writing [论文目录]` |
 
 涉及算力、远程系统、破坏性操作、整篇稿件或正式提交的能力，仍必须服从工具权限与项目
 授权。科学上相关不等于获得不可逆操作权限。
@@ -304,14 +302,16 @@ FIRM 不是刚性阶段机。一个持续研究者负责整个研究计划，spe
 可复用 primitive、监督或数据引擎、可预测的跨任务规律或系统能力。Probe budget 用来
 验证 opening；paper budget 只集中给那些投入越大、中心科学贡献越强的想法。
 
-## 一个 PI skill 与十五个 specialist workflows
+## 一个 PI skill 与五个按需工具
 
-`research-pipeline` 是 GPT 唯一持续 PI 入口；其余 workflows 用于有界 Claude 执行、严格核验和专业论文操作。
+`research-pipeline` 是 GPT 唯一持续 PI 入口；五个合并后的工具分别负责领域接触、方法形成、实验执行、独立核验和论文写作。合并前的完整细则仍保存在各工具按需加载的 references 中。
 
-- **研究入口：** `research-pipeline`、`frontier-direction-discovery`、`research-lit`、`baseline`
-- **诊断与方法：** `signal-analysis`、`method-primitive-synthesis`、`experiment-plan`、`research-review`
-- **实验与审计：** `research-contract`、`run-experiment`、`monitor-experiment`、`research-audit`、`research-state-audit`
-- **论文阶段：** `paper-writing`、`auto-paper-improvement-loop`、`resubmit-pipeline`
+- **持续 PI：** `research-pipeline`
+- **领域与证据基础：** `research-foundation`
+- **解释、方法与实验设计：** `method-development`
+- **实验注册、运行与监控：** `experiment-operations`
+- **协作与核验：** `research-review`
+- **写作、改进与转投：** `paper-writing`
 
 当前职责边界见 [Research Skills Ownership Map](REFORM_MAP.md)。
 

@@ -1,69 +1,43 @@
 # Submission Assembly
 
-Use only when producing a submission package. Drafting, compilation, and ordinary
-paper revision do not require every final check.
+Use only for the final package. Read current user instructions, the paper portion of
+`PROJECT_STATE.md`, compiled manuscript, and raw claim-bearing evidence. Reconcile the
+problem, contribution type, positive object, population, metric, decisive incumbent,
+and nearest rival. A material identity change returns the paper to the ordinary writing
+boundary while preserving the old draft.
 
-## Reconcile The Paper
+## Verify The Package
 
-Read current user instructions, the paper portion of `PROJECT_STATE.md`, the compiled
-manuscript, and raw claim-bearing evidence. Confirm that problem, contribution type, positive object,
-population, primary metric, decisive incumbent, and nearest rival still agree.
-
-If the identity materially changed, preserve the old draft and return the new paper
-candidate to provisional status. The lead PI may perform this reversible scientific
-reconciliation. User approval is needed only when the change crosses an explicit
-user-locked project, venue, deliverable, or portfolio boundary.
-
-## Run Only Applicable Checks
-
-Required deterministic checks:
-
-- compile from a clean build path and inspect the rendered PDF;
-- verify every claim-bearing number and qualifier against raw evidence;
+- compile cleanly and inspect the rendered PDF;
+- verify claim-bearing numbers and qualifiers against raw evidence;
 - verify citation identity and local support from primary sources;
-- check current authoritative venue rules, anonymity, page limits, metadata, package
-  contents, accessibility, and disclosure requirements;
+- check current authoritative venue rules, anonymity, page limits, metadata,
+  accessibility, disclosures, and package contents;
 - remove credentials, private paths, reviewer identities, temporary files, and hidden
   author metadata.
 
-Use a dedicated experiment audit only for changed or unaudited claim-bearing code,
-evaluator, provenance, or fairness. A near-final Codex factual/claim/citation/proof
-audit is optional under the sparse-review policy; it is not a writing gate and cannot
-create or revoke the contribution by preference. Reuse unchanged evidence-bound
-checks instead of rerunning them ceremonially.
+Use experiment audit only for changed or unaudited claim-bearing code, evaluators,
+provenance, or comparison fairness. Missing or stale verification limits the
+corresponding readiness claim; it does not justify unrelated experiments. Reuse checks
+whose inputs and semantics are unchanged.
 
-Missing or stale verification blocks only the corresponding readiness claim. Repair
-the affected evidence or text; do not open unrelated experiments.
+Build the smallest venue-compliant package from tracked sources and verify that it
+opens independently with figures, tables, references, supplements, and artifact links
+intact. Do not upload, submit, publish, or make legal commitments without explicit user
+approval.
 
-## Package And Approval
+Write a compact `PAPER_REPORT.md` containing:
 
-Build the smallest venue-compliant package from tracked sources. Verify that it opens
-independently and that figures, tables, references, supplements, and artifact links
-resolve. Do not upload, formally submit, release publicly, or make legal commitments
-without explicit user approval.
+- contribution identity and honest scope;
+- decisive evidence and raw paths;
+- source, PDF, figures, supplement, and package paths;
+- compilation, venue, anonymity, and disclosure status;
+- completed checks and exact inputs;
+- unresolved factual or presentation issues;
+- boundaries that materially affect interpretation;
+- the remaining user-owned action and single next action.
 
-Write a compact `PAPER_REPORT.md`:
-
-```markdown
-# Paper Report
-- contribution identity and honest scope:
-- decisive evidence and raw paths:
-- source, PDF, figures, supplement, and package:
-- compilation and venue compliance:
-- completed checks and their exact inputs:
-- unresolved factual or presentation issues:
-- boundaries that materially affect interpretation:
-- user-only action, if any:
-- single next action:
-```
-
-State readiness in evidence-grounded prose rather than a machine status. The package is
-ready only when the PI's candidate argument, compilation, applicable evidence checks,
-venue compliance, and disclosures are complete. A polished PDF, first complete draft,
-page-limited manuscript, or successful build is not the terminal project result by itself.
-
-If the package is not ready, do not merely return a gap list to the user. Separate user-owned
-actions from reversible project work. The lead PI continues the latter through the
-owning research or writing skill, updates all dependent manuscript content, and
-reassembles the package. Ask the user only for final factual and authorship sign-off,
-formal upload, or another explicitly user-owned decision.
+The package is ready when its argument, evidence checks, rendering, and venue compliance
+are complete and only final human factual, authorship, legal, or upload approval
+remains. If reversible scientific or writing work remains, the lead PI completes it
+through its owning skill and reassembles the package rather than returning a menu.

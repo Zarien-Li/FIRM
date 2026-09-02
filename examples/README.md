@@ -14,9 +14,9 @@ Each case contains:
 
 | Case | Failure pattern | Skills in the foreground |
 |---|---|---|
-| [1. A method loses once](01-method-loss-is-not-field-loss.md) | Premature closure versus wasteful seed expansion | `research`, `method-primitive-synthesis`, `experiment-plan` |
-| [2. The paper drifts from the seed](02-seed-drift.md) | A clean private cell replaces an important program | `research`, `research-review`, `research-state-audit` |
-| [3. A draft starts before the method is ready](03-paper-entry-audit.md) | Experimental volume is mistaken for paper maturity | `research-audit`, `research-review`, `paper-writing` |
+| [1. A method loses once](01-method-loss-is-not-field-loss.md) | Premature closure versus wasteful seed expansion | `research-pipeline`, `method-development` |
+| [2. The paper drifts from the seed](02-seed-drift.md) | A clean private cell replaces an important program | `research-pipeline`, `research-review` |
+| [3. A draft starts before the method is ready](03-paper-entry-audit.md) | Experimental volume is mistaken for paper maturity | `research-review`, `paper-writing` |
 
 For the 90-second release demo, use Case 1 with the fixture in
 [`../demo/fixture`](../demo/fixture).

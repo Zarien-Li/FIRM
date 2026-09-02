@@ -27,7 +27,7 @@ Show `/help` with the `/firm:` namespace.
 Open `demo/fixture/RESULT.md`, then invoke:
 
 ```text
-/firm:signal-analysis RESULT.md
+/firm:method-development "Interpret RESULT.md"
 ```
 
 The fixture prompt must remain neutral. Capture a real response and highlight only
@@ -46,8 +46,8 @@ Do not cut together sentences that change the model's meaning.
 Show the next commands rather than another generic loop:
 
 ```text
-/firm:method-primitive-synthesis
-/firm:experiment-plan
+/firm:method-development "Develop the primitive from this evidence"
+/firm:method-development "Plan the decisive construction experiment"
 /firm:research-review
 ```
 

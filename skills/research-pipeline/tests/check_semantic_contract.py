@@ -14,24 +14,16 @@ PACKAGED = (PACKAGE_ROOT / "managed-skills.txt").is_file()
 if PACKAGED:
     ROOT = PACKAGE_ROOT
     SKILLS = ROOT / "skills"
-    SHARED = ROOT / "shared-references"
     SKILL_MANIFEST = ROOT / "managed-skills.txt"
-    SHARED_MANIFEST = ROOT / "managed-shared-references.txt"
 else:
     SKILLS = HERE.parents[2]
     ROOT = SKILLS.parent
-    SHARED = SKILLS / "shared-references"
     SKILL_MANIFEST = SKILLS / ".research-skills-managed"
-    SHARED_MANIFEST = SKILLS / ".research-shared-references-managed"
 
 PI = SKILLS / "research-pipeline"
 PI_ENTRY = PI / "SKILL.md"
 PI_REFERENCES = {
     "collaboration.md",
-    "empirical-foundation.md",
-    "execution-and-campaigns.md",
-    "method-maturation.md",
-    "submission-maturation.md",
 }
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 
@@ -119,16 +111,7 @@ def main() -> int:
     if PACKAGED and actual != manifest:
         failures.append(f"unmanaged packaged skills present: {sorted(actual - manifest)}")
 
-    shared_manifest = manifest_entries(SHARED_MANIFEST)
-    actual_shared = {path.name for path in SHARED.iterdir() if path.is_file()}
-    if shared_manifest != actual_shared:
-        failures.append(
-            "shared reference manifest mismatch: "
-            f"missing={sorted(shared_manifest - actual_shared)}, "
-            f"extra={sorted(actual_shared - shared_manifest)}"
-        )
-
-    residue_roots = [SHARED] + [SKILLS / name for name in manifest]
+    residue_roots = [SKILLS / name for name in manifest]
     residue = [
         str(path.relative_to(ROOT))
         for base in residue_roots
@@ -146,7 +129,7 @@ def main() -> int:
 
     print(
         "Research packaging contract passed "
-        f"({len(manifest)} specialist-capable skills; one GPT PI entrypoint)."
+        f"({len(manifest)} skills; one GPT PI plus five on-demand tools)."
     )
     return 0
 
