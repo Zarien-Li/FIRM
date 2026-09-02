@@ -43,35 +43,17 @@ candidate operator.
 
 ## Select Mesoscopic Research Arenas
 
-A selected project should be recognizable to an active research community without
-being either an entire field or a private cell. Prefer a canonical input-to-output or
-training object such as instruction-guided image editing, latent reasoning, KV-cache
-compression, or synthetic-data selection. Reject umbrellas that jointly contain
-several independent systems or outcomes, and reject projects already defined by a
-specific proposed module.
+Apply [frontier-direction-discovery.md](frontier-direction-discovery.md) rather than
+duplicating its value and scale criteria. For generation, additionally reject portfolio
+duplicates and require enough primary evidence to name the canonical object and outcome,
+accepted public task or natural workflow, recent published-method incumbent, nearest
+claim-threatening rival, deployment information boundary, realistic compute envelope,
+neighboring exclusions, and a first contact that reads natural behavior without
+presupposing the failure or solution.
 
-Choose projects whose best-case result could change a community decision, replace a
-consequential default assumption with a simple reusable primitive, and remain useful
-across model generations. Citation reach, timeliness, feasibility, and differentiation
-are reasons for selection, not numerical gates.
-
-For every selected arena establish from sources:
-
-- one canonical object and one primary outcome;
-- an accepted natural benchmark or workflow whose population actually instantiates
-  that object and whose metric can register its value;
-- one named strong recent published-method incumbent and the nearest claim-threatening
-  published rival, separately from raw backbones and attribution controls;
-- the information available when a deployed method must act;
-- a first empirical contact that reproduces methods and reads raw natural behavior,
-  without presupposing the failure or solution;
-- a realistic compute and data envelope; and
-- explicit neighboring work that is outside this project.
-
-All projects must use existing public tasks, released labels, automatic evaluation,
-or naturally available system evidence. Do not select a direction whose central
-contribution or valid evaluation requires building a new benchmark or collecting new
-human judgments.
+Every selected project uses existing public tasks, released labels, automatic
+evaluation, or naturally available system evidence. Do not select an arena whose
+central contribution requires a new benchmark or new human judgments.
 
 If a published method lacks usable code, record the concrete feasibility risk instead
 of replacing it with a weak heuristic. If the canonical behavior is not visible at the

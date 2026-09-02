@@ -51,9 +51,9 @@ scientific reason.
 
 Before evidence first chooses or reshapes a method, map partition use, selection
 variables, temporal availability, mutable state, caches, targets, external signals, and
-the evaluator path. Use
-`research-foundation/references/experiment-integrity.md` when a concrete validity risk
-exists. This information boundary defines the experiment; it is not a late paper audit.
+the evaluator path. The complete validity requirements live in
+`research-foundation/references/experiment-integrity.md`; do not recreate them in the
+campaign plan.
 
 ## Match The Design To The Question
 
@@ -81,21 +81,13 @@ treatments only when confirming a claim.
 
 ## Use Baselines At The Needed Resolution
 
-A prototype may test plumbing, engagement, optimization, or one component job. A
-claim-bearing comparison additionally needs a credible evaluator, accepted population,
-competent substrate, matched information and optimization, the strongest relevant
-published incumbent, the claim-threatening rival, the unique prediction, and the
-utility or cost implicated by the claim.
-
-Match the substrate as well as the metric. A weak reader, untrained bridge, compound
-backbone/data/mechanism change, sampled-only comparator, or semantically mismatched
-protocol cannot adjudicate the main method claim.
-
-Before a realization enters paper-sized confirmation, freeze the bounded decisive
-comparison set and value contract known at that time. Define whether success means
-primary-metric superiority or a meaningful Pareto gain in quality, robustness,
-coverage, latency, memory, compute, supervision, or adoption cost. A partial table win,
-post-hoc metric switch, or unmatched budget remains development evidence.
+A prototype may test plumbing, engagement, or one component job. A claim-bearing
+comparison uses the healthy accepted surface and role-appropriate published methods
+established by `research-foundation`, plus matched attribution and the utility or cost
+implicated by the claim. Before paper-sized confirmation, freeze the bounded decisive
+comparison set and whether success means primary-metric superiority or a meaningful
+Pareto gain. A partial table win, post-hoc metric switch, or unmatched substrate remains
+development evidence.
 
 ## Allocate Seeds For Uncertainty, Not Rescue
 
@@ -134,10 +126,10 @@ principle predict a meaningfully different outcome. Use the smallest faithful co
 that can separate a reusable primitive from a friendly-setting trick. A negative result
 may narrow or repair the principle; it does not justify serial dataset search.
 
-Gemini can offer one load-bearing improvement when a credible method has a named gap to
-a decisive rival. Give it the exact gap, contrary cases, and utility to preserve. The PI
-selects one evidence-licensed proposal, collision-checks it, implements it, and freezes a
-matched comparison. A proposal is not an experiment result.
+Creative collaboration for a concrete gap follows
+`research-pipeline/references/collaboration.md`; the experiment plan records only the
+selected implementation and discriminating comparison, never an untested proposal as
+evidence.
 
 ## Register And Execute At The Right Resolution
 

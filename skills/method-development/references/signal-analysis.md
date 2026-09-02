@@ -79,20 +79,12 @@ design variable is localized, stop extending the atlas and enter a real construc
 
 ## Read Method Results As Construction Evidence
 
-Interpret related versions and ablations as one construction arc when they share the
-same principle. Locate the earliest broken link:
-
-- intended computation did not activate;
-- optimization or integration was not competent;
-- the component acted on the wrong proxy;
-- useful behavior was coupled to a regression;
-- a natural context variable was incorrectly fixed;
-- a simple or published rival made the construction redundant.
-
-Preserve the run verdict, then extract the activated computation, useful residual,
-failed coupling or assumption, and the evidence-directed inheritance for the next
-realization. Failed variants do not add up to family coverage, and a new acronym does
-not create a new scientific lineage. When a published comparator wins, explain its
+Interpret versions and ablations as one arc when they share a principle. Locate the
+earliest broken link among engagement, competence, proxy, coupling to regression,
+context, or redundancy with a decisive alternative. Preserve what ran and extract the
+useful residual, failed assumption, and design consequence. Failed variants do not add
+up to family coverage; [method-primitive-synthesis.md](method-primitive-synthesis.md)
+owns successor inheritance and repair. When a published comparator wins, explain its
 computation, boundary, and cost before deciding whether a non-redundant need remains.
 
 ## Decide At The Scale Of The Evidence

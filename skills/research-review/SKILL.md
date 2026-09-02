@@ -1,6 +1,6 @@
 ---
 name: research-review
-description: "Perform sparse, decision-relevant research collaboration and assurance: independent interpretation or invention, factual experiment or citation audit, proof checking, and consequential project-state review. Use only for a named uncertainty or genuine boundary, never as a standing gate or parallel thesis owner."
+description: "Perform sparse, decision-relevant independent review and assurance: resolve one consequential uncertainty, audit experiment or citation facts, check proofs, or review a major project-state boundary. Use as verification, never as a standing gate, invention engine, or parallel thesis owner."
 allowed-tools: Bash(*), Read, Write, Edit, Grep, Glob, Agent, WebSearch, WebFetch, mcp__codex__codex, mcp__codex__codex-reply
 ---
 
@@ -12,17 +12,20 @@ raise the bar, invent mandatory work, or take ownership from `research-pipeline`
 
 ## Route The Work
 
-- For GPT/Claude/Gemini/Codex collaboration roles, independent interpretation,
-  invention, construction checks, expansion, consolidation, proof review, evidence
-  packets, or tool policy, read
+- For an independent Codex decision check, proof review, evidence packet, or Codex tool
+  policy, read
   [independent-review.md](references/independent-review.md).
-- For an experiment-integrity or citation-support audit, read
-  [research-audit.md](references/research-audit.md), then load exactly one of
-  [experiment-mode.md](references/audit/experiment-mode.md) or
-  [citation-mode.md](references/audit/citation-mode.md).
+- For independent experiment-integrity verification, read
+  [experiment-mode.md](references/audit/experiment-mode.md). For citation identity and
+  local support, read [citation-mode.md](references/audit/citation-mode.md). Load only
+  the mode needed by the named factual uncertainty.
 - For a consequential audit of value continuity, scope debt, contribution identity,
   paper entry, unusual compute, resume reconciliation, or portfolio pause, read
   [research-state-audit.md](references/research-state-audit.md).
+
+Claude implementation and Gemini co-invention belong to
+[collaboration.md](../research-pipeline/references/collaboration.md), not to independent
+review.
 
 Reuse fresh evidence-bound findings. Findings qualify the affected evidence or decision;
 they do not automatically terminate a method, paper, field, or research program.

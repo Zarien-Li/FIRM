@@ -13,20 +13,11 @@ simplification under one evolving principle.
 
 Serious construction needs either an independently important known problem with a
 consequential incumbent compromise or a reproduced natural failure that implicates a
-changeable design assumption. Before committing, know:
-
-- the accepted task, value-bearing population, outcome, and competent substrate;
-- a strong recent published incumbent, the nearest same-locus rivals, and the strongest
-  ownership threat;
-- the incumbent computation, useful default assumption, earliest success/failure
-  divergence, intervention locus, and behavior to preserve;
-- the discovery surface, intended reach, scope debt, contrary evidence, and route back
-  to the accepted task.
-
-The closest rival should be run or deeply inspected before novelty lock and dependent
-optimization. An unresolved rival allows exploratory construction but keeps novelty and
-paper maturity provisional. A fashionable operator, formula, oracle, probe, or positive
-private cell is not a design opportunity by itself.
+changeable design assumption. Enter from the accepted surface, competent substrate, and
+published rivals established by `research-foundation`, plus the design-giving account
+from [signal-analysis.md](signal-analysis.md). An unresolved closest rival permits
+exploration but keeps novelty provisional. A fashionable operator, formula, oracle,
+probe, or positive private cell is not a design opportunity by itself.
 
 The problem account is sufficient when it explains why the incumbent normally succeeds,
 why the same assumption produces the important failure, what load-bearing computation
@@ -123,11 +114,10 @@ and `experiment-operations` rather than turning every version into a review cere
 
 ## Repair From Evidence
 
-When a realization misses its target, preserve the verdict and locate the earliest
-unsupported link: non-engagement, implementation or optimization failure, wrong proxy,
-useful behavior coupled to regression, incorrectly fixed context, or redundancy with a
-decisive alternative. Record the activated computation, useful residual, failed
-coupling, and inherited prediction for the next version.
+When a realization misses its target, use the construction reading from
+[signal-analysis.md](signal-analysis.md): preserve what ran, locate the earliest broken
+link, and inherit the activated computation, useful residual, failed coupling, and next
+discriminating prediction.
 
 Classify the proposed change by what it does:
 
@@ -144,27 +134,17 @@ when nondeterminism or optimization variance makes the sign genuinely unresolved
 
 One failed realization does not close a primitive, family, problem, or field. Continue
 while evidence teaches a new component job or interaction and the natural problem
-remains valuable. Return to the broad program when another version would repeat an
-answered prediction, elaborate a private cell, or preserve activity without plausible
-accepted-task consequence. There is no fixed failure count.
+remains valuable; return to the broad program when another version would repeat an
+answered prediction or elaborate a private cell. There is no fixed failure count.
 
 ## Use Co-Invention At A Real Invention Point
 
-The lead PI owns the construction. Once empirical contact yields a real design
-opportunity, Gemini may challenge the default assumption or propose a genuinely
-different primitive. Give it the natural evidence, contrary cases, nearest rivals,
-constraints, and unresolved design question; treat its response as a proposal, not a
-result. Collision-read the idea, select at most one load-bearing change, implement the
-smallest real realization, and let evidence reshape it.
-
-Use Gemini again after an informative failure only when the failed coupling is known and
-the next realization needs a different principle, or when a credible method still has a
-named gap to a decisive rival. Do not invoke it merely because a score is negative or
-record its proposal as method progress before implementation.
-
-Independent Codex review belongs to `research-review`. It should examine an
-artifact-grounded candidate or an exceptional paper-sized commitment, not invent or veto
-the first method from an underdetermined observation.
+The lead PI owns construction. Use Gemini through
+`research-pipeline/references/collaboration.md` when a real design opportunity,
+informative failed coupling, or concrete rival gap makes a different principle useful.
+Its proposal changes the method only after collision reading, implementation, and a
+matched experiment. Independent verification belongs to `research-review`, not first-
+method invention.
 
 ## Expand Only What The Principle Predicts
 

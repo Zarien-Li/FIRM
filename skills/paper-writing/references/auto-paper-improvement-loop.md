@@ -7,14 +7,10 @@ change the science silently.
 
 ## Prepare The Round
 
-Read the paper, `AUTHOR_ARGUMENT.md`, `PAPER_PLAN.md`, available post-draft
-`CLAIMS_EVIDENCE.md`, build command, venue constraints, and git status. Compile once,
-preserve the known-good PDF, and note its page count and current errors. Preserve the
-contribution identity and the files already changed.
-
-If an edit needs a new result, broader population, stronger causal claim, different
-primary metric, or new contribution type, return that precise gap to
-`research-pipeline`. Do not write around it.
+Read the paper, author argument, plan, available post-draft claim map, build command,
+venue constraints, and current changes. Compile once and preserve the known-good PDF.
+An edit that requires new science or a changed contribution returns that precise gap to
+`research-pipeline`; do not write around it.
 
 Normally use one or two rounds. Each round must have a concrete opportunity to improve
 meaning or reader understanding. Use an optional near-final independent check only for
@@ -50,11 +46,10 @@ movement became unclear, language stopped sounding field-natural, jargon displac
 concrete experience, or authorial voice disappeared. Exact locations are useful;
 checklists are not.
 
-Compare this retelling with `AUTHOR_ARGUMENT.md`. Revise where the intended argument
-did not survive reading. Prefer concrete scientific language, deliberate emphasis, and
-causal paragraph progression. Keep a caveat local only when it changes interpretation;
-place other real boundaries in Limitations. Propagate changes in notation, terminology,
-or claim strength across every affected section, caption, and appendix.
+Compare this retelling with `AUTHOR_ARGUMENT.md` and revise where the intended argument
+did not survive reading. Propagate changes in notation, terminology, or claim strength
+across every affected section, caption, and appendix; the main writing reference owns
+caveat placement and prose principles.
 
 Compile and inspect through `paper-writing mode: compile`. Rerun claim, citation, or
 proof checks only where edits changed their inputs or semantics.

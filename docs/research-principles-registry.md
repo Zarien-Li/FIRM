@@ -1,9 +1,8 @@
 # Research Principles Registry
 
-This registry preserves the durable lessons behind the active research skills. It is
-an audit map, not a workflow and not a file to load during ordinary research. Each
-principle has one canonical owner. Other skills should link to that owner instead of
-restating the rule.
+This maintainer registry preserves the durable lessons behind the active research
+skills. It is not runtime model context or a research workflow. Each principle points
+to its canonical skill owner; runtime skills should not restate this registry.
 
 ## Program And Authority
 

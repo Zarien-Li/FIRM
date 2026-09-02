@@ -103,7 +103,7 @@ Write `CITATION_AUDIT.md`:
 ## Remaining manual checks
 ```
 
-At submission assurance also write `CITATION_AUDIT.json` using the shared assurance
+At submission assurance also write `CITATION_AUDIT.json` using the external assurance
 schema with declared input hashes and per-context details. Keep concise source
 locations; do not reproduce copyrighted text beyond what verification requires.
 

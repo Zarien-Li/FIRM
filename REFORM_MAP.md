@@ -34,6 +34,5 @@ documentation, not a workflow and not ordinary project context.
   submission/public release, legal commitments, and explicitly locked scope remain
   user-only boundaries.
 
-The detailed durable principles live in
-`skills/research-pipeline/references/shared/research-principles.md`. Regression scenarios preserve historical
-failure cases without turning them into daily workflow state.
+The maintainer-only durable principles live in
+`docs/research-principles-registry.md`; they are not runtime skill context.

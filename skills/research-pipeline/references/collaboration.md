@@ -36,16 +36,23 @@ discriminating realization before changing project belief.
 Gemini is a source of constructions, not evidence. A striking proposal earns an
 implementation, not a state transition.
 
+Use the verified headless invocation:
+
+```bash
+agy -p "<PI-authored prompt>" --model="gemini-3.1-pro-high" --disable-slash-commands --print-timeout 5m
+```
+
+The equals-form model pin is intentional. Discard a response if the CLI reveals a
+fallback. Do not use `--mode plan`, which biases creative co-invention toward a planning
+template. Authentication, capacity, transport, version, or routing failure is
+infrastructure; continue non-dependent research.
+
 ## Independent Codex Review
 
-Use a separate review only when one named uncertainty could change a consequential
-decision, such as evaluator validity, nearest-rival equivalence, causal overstatement,
-or a near-final factual claim. Give the reviewer raw artifacts and the bounded question,
-not the desired verdict or a request to find as many objections as possible.
-
-The review returns a reasoned view and supporting evidence. It cannot create a permanent
-gate, objection backlog, field-closure verdict, or user permission requirement. The
-persistent GPT PI decides what changes and whether the expected value justifies it.
+For a separate Codex judgment, use
+`research-review/references/independent-review.md`. This collaboration reference owns
+only the shared transfer and context boundaries; the review reference owns when a call
+is justified and how its advice is synthesized.
 
 ## Transfer Packet
 

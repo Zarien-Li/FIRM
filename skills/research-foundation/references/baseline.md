@@ -80,17 +80,12 @@ project without its own accepted value and rivals.
 
 ## Reproduce Semantics And Resolve Rivals
 
-Match the protocol elements capable of changing the conclusion: data and split,
-population and candidate pool, checkpoint and decoding, tools and mutable state,
-objective and supervision, external computation, evaluator and parser, metric direction
-and aggregation, missing-data policy, and materially different optimization or compute.
-
-Independently reconstruct representative headline metrics from raw outputs or sufficient
-statistics. Run a known success and failure through the complete path when possible. A
-smoke test proves execution, not semantic equivalence. Use
-[experiment-integrity.md](experiment-integrity.md) for a concrete information-flow risk
-and [evidence-lineage.md](../../research-pipeline/references/shared/evidence-lineage.md)
-when invalidation must propagate.
+Match every protocol element capable of changing the comparison and reconstruct a known
+case and representative metric from raw outputs. A smoke test proves execution, not
+semantic equivalence. [experiment-integrity.md](experiment-integrity.md) owns the full
+information, treatment, statistical-unit, competence, and reconstruction requirements;
+use [evidence-lineage.md](../../research-pipeline/references/shared/evidence-lineage.md)
+when verified invalidation must propagate.
 
 Before novelty lock, identify the two or three closest approaches by operational effect
 and mechanism. Ask whether they absorb the proposed principle or erase its practical
@@ -115,17 +110,9 @@ does not close the method family or broad program.
 ## Record Provenance And Health
 
 Record source, version or commit, checkpoint, environment, local changes, and why a
-stronger implementation was unavailable. Use factual health labels when helpful:
-
-- `healthy`: intended path and trustworthy semantics;
-- `unresolved`: important but not yet comparable;
-- `fragile`: runnable with a material open risk;
-- `invalid`: corrupted, incomplete, or incomparable;
-- `comparison-weak`: too weak or semantically different;
-- `substrate-confounded`: base capability is inadequate.
-
-These labels describe evidence; they do not make scientific decisions. Only healthy
-anchors carry headline comparisons.
+stronger implementation was unavailable. State any concrete defect or unresolved
+semantic difference and the claims it prevents. Evidence health describes the
+comparison; it does not decide the method, paper, or program.
 
 ## Durable Output
 

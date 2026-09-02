@@ -39,17 +39,11 @@ attempt. A stale heartbeat or registry row alone is insufficient evidence.
 
 ## Validate And Deliver Once
 
-Before handoff, verify correspondence with registered code, data, checkpoint,
-population, seed, steps, treatment, and evaluator; expected and missing cells; parsed
-metrics without unexplained NaNs, empty populations, constants, or impossible values;
-resource use and retries; and raw predictions or sufficient statistics needed for
-independent reading.
-
-Describe every substitution, shortening, or deviation and which comparisons it cannot
-support. Then deliver one compact evidence bundle containing canonical run/attempt
-identity, config and provenance, raw result and prediction paths, logs/checkpoints/
-markers, completed and missing cells, uninterpreted headline values, deviations,
-warnings, retries, runtime, and cost.
+Validate the registered identity and completion requirements in
+[run-experiment.md](run-experiment.md), including expected and missing cells, parsed
+metrics, deviations, retries, runtime, cost, and raw outputs needed for independent
+reading. Deliver one compact evidence bundle with those facts and durable paths; do not
+repeat long logs or add scientific interpretation.
 
 Notify the research session when validated results are ready, execution needs repair,
 or an unresolved resource conflict requires action. Keep healthy progress quiet. Record

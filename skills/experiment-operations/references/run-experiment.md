@@ -23,20 +23,16 @@ from prose reconstructed from memory.
 
 Before a consequential launch:
 
-1. Read current authority and unread results; confirm that the run still answers a
-   live scientific question.
-2. Reconcile disagreements among state, tracker, code, tasks, and manuscript from raw
-   artifacts.
-3. Verify the intended method and matched comparator, accepted population, treatment,
-   metric direction, evaluator entrypoint, scale, seed, stopping, and forecast.
-4. Confirm that every method-visible input is available at decision time. Test, future,
-   target, cache, and external information must respect the declared boundary.
-5. For a claim-bearing method comparison, include the decisive published incumbent
-   and claim-threatening published rival required by the claim.
-6. Run one small real-path canary. Inspect raw output, component engagement, substrate
+1. Resolve the selected experiment plan and current authority; do not launch stale work.
+2. Verify that run identity, implementation, comparison, data, evaluator, seed, stopping,
+   forecast, and output paths match that plan.
+3. Apply [experiment-integrity](../../research-foundation/references/experiment-integrity.md)
+   to any information, treatment, statistical, competence, or reconstruction question
+   touched by this run rather than duplicating its scientific checks here.
+4. Run one small real-path canary. Inspect raw output, component engagement, substrate
    competence, derived metrics, log and result creation, checkpoint/resume behavior,
    runtime, and peak memory.
-7. Confirm durable parseable outputs, attempt-specific paths, capacity, and authorized
+5. Confirm durable parseable outputs, attempt-specific paths, capacity, and authorized
    compute.
 
 A smoke test proves execution only. If evaluator or implementation repair is still in
@@ -80,18 +76,18 @@ config match; otherwise create a labeled new attempt.
 A verified implementation, optimizer, evaluator, integration, or placement defect
 normally earns one clean matched retry. If the same directional or operational failure
 remains, do not launch an identical or nearby attempt without a changed cause or
-load-bearing prediction. Never reinterpret failure-to-run as a scientific result.
+load-bearing prediction supplied by the PI. Never reinterpret failure-to-run as a
+scientific result.
 
 Reallocate within authorized project policy. Ask only before exceeding a user-locked
 budget, permission, or resource boundary.
 
 ## Validate And Hand Off
 
-Before declaring execution complete, verify terminal evidence, expected cells,
-parseable artifacts, provenance, actual scale/configuration, and material deviations.
-Then provide the PI with the run record plus raw result paths and headline values,
-without scientific interpretation. Update authoritative research state only after the
-PI reads the evidence.
+Before declaring execution complete, verify the registered identity, terminal evidence,
+expected cells, parseable artifacts, actual configuration, and deviations. Deliver the
+run record, raw paths, and uninterpreted headline values to the PI; only the PI updates
+scientific state after reading them.
 
 While a long job runs, advance genuinely useful result-independent work. When nothing
 useful remains, a quiet wait is healthier than generating launch paperwork or extra

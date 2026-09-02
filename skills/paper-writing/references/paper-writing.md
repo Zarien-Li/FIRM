@@ -4,55 +4,20 @@ Write the strongest honest paper supported by the project for a human audience. 
 same lead PI owns the argument, manuscript-revealed scientific repairs, and final
 assembly; specialized references provide mechanics without becoming separate owners.
 
-## Modes And Specialized References
-
-- `plan`: form `AUTHOR_ARGUMENT.md`, contribution identity, narrative architecture,
-  and figure jobs.
-- `write`: draft or revise sections from the author argument and raw evidence.
-- `research-draft`: use an early problem story to clarify research without implying
-  submission maturity.
-- `full`: carry one bounded paper through drafting, scientific repair, verification,
-  and assembly until only a user-owned sign-off or external action remains.
-- `figures`: read [figures.md](figures.md).
-- `compile`: read [write-compile.md](write-compile.md).
-- `claim-audit`: read [claim-audit.md](claim-audit.md).
-- `improvement`: read
-  [auto-paper-improvement-loop.md](auto-paper-improvement-loop.md).
-- `submission`: read [submission.md](submission.md).
-- `resubmit`: read [resubmit-pipeline.md](resubmit-pipeline.md).
-
-Load only the reference required by the current mode. Do not recursively invoke this
-skill merely to change modes.
-
 ## Establish The Writing Boundary
 
-Read the authoritative research state, original program, raw decisive results, method
-specification, strongest fair comparisons, relevant audits, venue rules, and current
-manuscript. Treat drafts and prior reviews as claims to verify.
+Read the authoritative state, original program, decisive raw evidence, realized method,
+fair published comparisons, relevant audits, venue rules, and current manuscript.
+Treat drafts and prior reviews as claims to verify. Focused writing needs the evidence-
+grounded object defined by the PI; paper entry, contribution-type change, identity
+movement, and user boundaries remain governed by
+[research-control-protocol.md](../../research-pipeline/references/shared/research-control-protocol.md).
 
-Focused paper work requires an artifact-grounded method candidate or an independently
-valuable and confirmed non-method object. The paper portion of `PROJECT_STATE.md`
-should state, in ordinary prose, the natural problem, positive object, contribution
-type, accepted population and evaluator, decisive published-method comparisons,
-meaningful primary or Pareto advantage, required utility/cost checks, contrary evidence,
-scope debt, and the bridge back to the original program. Counts of experiments, audits,
-pages, or PDFs are not evidence of maturity.
-
-Judge comparisons by what systems actually do, not by names used in the draft. Include
-the strongest functional alternative and mechanistic rival required by the claim. A
-design-guaranteed retention property is not itself empirical utility; report value on
-the affected and end-to-end populations, coverage, and total cost where relevant.
-
-Early planning and a `research-draft` may clarify the reader, prior belief, surprise,
-stakes, and missing evidence. They do not establish submission readiness. Likewise,
-failed methods do not automatically create an analysis paper: a changed contribution
-type needs its own important object, consequence, evidence, audience, and literature
-position.
-
-If evaluator, population, provenance, or contribution identity materially changes,
-revisit every dependent claim and comparison. Preserve valid prose and artifacts, but
-do not transfer maturity from the old object. Ask the user only when an explicit
-project, venue, deliverable, or other user-owned boundary changes.
+Judge comparisons by operational function rather than manuscript names, and report the
+claim-relevant value, utility, and cost. An early `research-draft` may clarify reader,
+prior belief, surprise, stakes, and missing evidence without implying maturity. If
+evaluator, population, provenance, or identity changes materially, revisit dependent
+claims instead of transferring readiness from the old object.
 
 ## Establish The Author Argument Before The Outline
 
@@ -170,6 +135,5 @@ and revise. Do not open work for optional breadth or speculative reviewer prefer
 
 After contribution identity and evidence stabilize, use
 [auto-paper-improvement-loop.md](auto-paper-improvement-loop.md) for human-reader
-editing. Finish with [submission.md](submission.md). Completion means a coherent,
-verified, venue-compliant package awaiting only final human factual, authorship, legal,
-or upload approval, not merely a full draft or compiled PDF.
+editing and [submission.md](submission.md) for final assembly. A full draft or compiled
+PDF is not completion.
