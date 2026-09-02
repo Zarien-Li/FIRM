@@ -27,13 +27,35 @@ PI-authored transfer packet and only the permissions needed by the task:
 ```bash
 claude -p "<PI-authored transfer packet>" \
   --append-system-prompt-file ~/.claude/CLAUDE-RESEARCH.md \
-  --permission-mode acceptEdits
+  --permission-mode acceptEdits \
+  --output-format json
 ```
 
 Use a fresh invocation by default. Resume only when the exact implementation episode
 needs continuity and no active writer owns it. If a required command is not permitted,
 the PI may grant that bounded command explicitly; do not solve permission friction with
 an unrestricted standing bypass.
+
+## Complete The Collaboration Loop
+
+Gemini and bounded Claude calls run in the foreground. A delegation is complete only
+when the child process exits, its final output returns to the GPT PI, and the PI has
+inspected the cited artifacts. The child model cannot reliably wake a Trae session after
+the parent turn has ended, so never rely on an unsolicited callback or treat “launched”
+as a completed handoff.
+
+Keep claim-bearing long experiments under the persistent PI. Claude may implement,
+debug, canary, and return a launch-ready package; the PI then uses
+`experiment-operations` to register, launch, monitor, recover, and read the run. If a
+delegated child unexpectedly detaches work, record its durable process or scheduler
+identity and artifact paths, take monitoring ownership immediately, and do not create a
+duplicate run. Continue useful independent research while it runs, or wait quietly for
+validated completion rather than ending the episode at submission time.
+
+When collaborator output returns, separate proposals from observed facts, verify code
+and provenance, integrate only supported conclusions into the sole scientific state,
+and continue the research. A collaborator response is an input to the next PI decision,
+not the endpoint of the project.
 
 ## Gemini: Creative Co-Invention
 

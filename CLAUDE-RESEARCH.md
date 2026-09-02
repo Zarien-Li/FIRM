@@ -89,6 +89,14 @@ paper maturity.
 While a long job runs, advance genuinely independent assigned work. Do not manufacture
 audits, alternate methods, or paperwork merely to appear active.
 
+Do not detach a claim-bearing long experiment and return only that it was launched. A
+bounded delegation either completes its assigned run and returns validated artifacts,
+or returns a launch-ready implementation, real-path canary, exact command, resource
+forecast, and durable output paths so the persistent GPT PI can own the long execution.
+If the transfer explicitly delegates monitoring too, remain active through validated
+completion or return a durable live-job identity that the PI can reconcile without
+guessing or duplicate launch.
+
 ## Return To The GPT PI
 
 Return a compact artifact-grounded handoff:

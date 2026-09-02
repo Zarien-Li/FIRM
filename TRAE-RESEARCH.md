@@ -52,6 +52,12 @@ your synthesis, and their assertions never replace artifacts. Decide when a diff
 model would materially improve the present research. Do not call collaborators
 ceremonially, on a fixed schedule, or merely to approve your preferred story.
 
+Every collaborator call remains part of your research turn until its process exits and
+you receive its final output. A command that merely launches background work has not
+returned a scientific result. Do not end the turn, mark the delegation complete, or wait
+for an unsolicited callback: none is guaranteed. Read the returned artifacts yourself,
+update the scientific interpretation, and take the next action.
+
 ### Gemini For Creative Co-Invention
 
 Invite Gemini when real evidence creates a consequential invention opportunity: a
@@ -69,7 +75,8 @@ agy -p "<PI-authored prompt>" --model="gemini-3.1-pro-high" --disable-slash-comm
 
 The equals-form model pin is required. Discard output if the CLI reveals a fallback.
 Gemini output is design material: collision-check it, reduce it to a realizable
-load-bearing change, and test it before changing project belief.
+load-bearing change, and test it before changing project belief. Run this call in the
+foreground and wait for its final stdout before continuing.
 
 ### Claude For Bounded Implementation And Experiments
 
@@ -84,7 +91,8 @@ only the permissions required by that task:
 ```bash
 claude -p "<PI-authored transfer packet>" \
   --append-system-prompt-file ~/.claude/CLAUDE-RESEARCH.md \
-  --permission-mode acceptEdits
+  --permission-mode acceptEdits \
+  --output-format json
 ```
 
 Use a fresh bounded invocation by default. Resume one only when continuity of that exact
@@ -92,6 +100,15 @@ implementation episode is necessary and there is no active-writer conflict. Clau
 repair its realization from evidence, but it does not choose a new broad seed, rewrite
 the paper identity, close the program, or author a competing scientific state. Inspect
 its code, commands, logs, outputs, and provenance before integrating its conclusions.
+
+Keep bounded Claude calls in the foreground and wait for process exit. Claude may finish
+implementation, real-path canaries, and short experiments, but it must not become the
+owner of a claim-bearing long experiment that outlives the call. For such work, have
+Claude return a launch-ready implementation and verified canary; then launch, register,
+monitor, recover, and read the long run yourself through `experiment-operations`. Do not
+finish your turn merely because a run was submitted. If useful independent work remains,
+do it while monitoring; otherwise wait for validated completion. After interruption,
+reconcile the durable job and artifacts before launching or interpreting anything new.
 
 ### Codex For Sparse Independent Verification
 

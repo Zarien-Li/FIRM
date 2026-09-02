@@ -19,6 +19,10 @@
 - Added reproducible dual-host installation with `FIRM_HOST=trae`, a canonical
   `TRAE-RESEARCH.md`, verified Gemini 3.1 Pro invocation, and bounded headless Claude
   delegation. Added installation regression coverage so host prompts cannot be swapped.
+- Closed the collaborator lifecycle: foreground Gemini and Claude calls now return to
+  the persistent PI, while claim-bearing long experiments remain PI-owned through
+  registration, monitoring, artifact validation, and interpretation. A background
+  launch is no longer treated as a completed delegation or assumed callback.
 - Reorganized multi-model responsibility around one persistent GPT PI, bounded Claude
   implementation/experiment episodes, invited Gemini invention, and sparse independent
   Codex verification. Added artifact-grounded candidate judgment without scientific
