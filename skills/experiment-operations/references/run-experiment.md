@@ -79,8 +79,11 @@ remains, do not launch an identical or nearby attempt without a changed cause or
 load-bearing prediction supplied by the PI. Never reinterpret failure-to-run as a
 scientific result.
 
-Reallocate within authorized project policy. Ask only before exceeding a user-locked
-budget, permission, or resource boundary.
+Reallocate within authorized project policy. When the selected, preflighted experiment
+cannot fit that envelope, return an evidence-grounded resource request to the persistent
+PI rather than shrinking the comparison or repeatedly probing unavailable hardware.
+The PI asks before exceeding a user-locked budget, permission, or resource boundary.
+Pending resources are operational facts, not evidence about the method.
 
 ## Validate And Hand Off
 

@@ -110,6 +110,12 @@ Return a compact artifact-grounded handoff:
 - the design consequence, including evidence against the delegated premise;
 - the most consequential unresolved question exposed by the work.
 
+If the accepted experiment cannot fit the delegated resource envelope, return the
+smallest adequate accelerator memory/count and duration, why the current allocation is
+insufficient, and the completed preflight evidence to the persistent GPT PI. Do not ask
+the user directly, silently reduce the scientific comparison, or interpret unavailable
+compute as a method result.
+
 Do not return an A/B menu for routine research choices. Do not claim that a draft,
 method name, result count, or partial campaign is paper maturity.
 

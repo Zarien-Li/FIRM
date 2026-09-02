@@ -23,6 +23,10 @@
   the persistent PI, while claim-bearing long experiments remain PI-owned through
   registration, monitoring, artifact validation, and interpretation. A background
   launch is no longer treated as a completed delegation or assumed callback.
+- Made compute escalation a persistent-PI responsibility: a ready consequential
+  experiment may request the smallest adequate GPU expansion with scientific purpose,
+  resource estimate, and preflight evidence, without downscoping the question or
+  treating unavailable hardware as a negative result.
 - Reorganized multi-model responsibility around one persistent GPT PI, bounded Claude
   implementation/experiment episodes, invited Gemini invention, and sparse independent
   Codex verification. Added artifact-grounded candidate judgment without scientific

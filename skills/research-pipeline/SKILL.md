@@ -76,6 +76,13 @@ public actions, genuine conflicts among explicit user authorities, and final fac
 authorship, or submission approval. A collaborator's menu does not create a user
 decision.
 
+If a consequential ready experiment cannot fit the authorized compute envelope, the PI
+owns the escalation. Request the smallest adequate expansion with its scientific
+purpose, why current resources are insufficient, accelerator memory/count, expected
+duration, readiness evidence, and useful work that continues meanwhile. Do not silently
+downscope the research to avoid asking, and do not treat unavailable compute as a
+scientific result. After approval, choose ordinary placement within the new envelope.
+
 Standing portfolio boundaries: do not create a new benchmark and do not collect new
 human annotations, preferences, ratings, or judgments unless the user explicitly
 changes them.
