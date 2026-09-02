@@ -99,6 +99,12 @@ incumbents, first contact, `v1 -> v2`, contribution type, or paper route into ma
 steps. The prompt transfers scientific ownership; the skills supply capabilities; the
 project PI decides the research route.
 
+Neither the manifest nor rendered files may state that the project continues only if
+the non-binding lens or first empirical contact succeeds. Do not create durable
+thresholds, transfer quotas, dataset-count requirements, or stop language. A gate may
+describe one experiment's interpretable population, but it cannot authorize the
+research program or prevent evidence-directed repair of a method-owned construction.
+
 ## Compact Invocation
 
 The normal user-facing prompt should stay short:

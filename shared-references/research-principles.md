@@ -115,6 +115,15 @@ restating the rule.
 | P50 | Paper assets and author-argument formation belong to expansion, stabilization, and harvest; claims-evidence mapping begins after narrative drafting, while ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
 | P51 | Operational systems expose process, job, resource, and liveness facts; they do not choose explanations, methods, contribution types, or research routes. | `run-experiment` and project operations |
 | P52 | A project PI uniquely authors the single project state after meaningful scientific transitions and personally reconciles any migration before it is trusted; dashboards and Codex may mechanically verify provenance, freshness, and seed fidelity but cannot write scientific interpretation or the next action. | `research-pipeline` |
+| P62 | State authority is typed: verified evidence is factual, while agent-authored gates, route choices, forecasts, holds, and next actions remain revisable interpretations unless an exact user or safety source makes them binding. | `research-control-protocol.md` and `research-pipeline` |
+| P63 | A failed method-owned precondition before the primary outcome is a treatment-formation result, not a method-transfer verdict or project prohibition; formative research may repair the construction and register a new run. | `experiment-plan` and `research-pipeline` |
+| P64 | After a credible positive object, keep one active paper candidate and one principle-predicted expansion campaign; serially choosing friendlier datasets does not establish generality. | `research-pipeline` and `experiment-plan` |
+| P65 | Conflicting live method, state, and paper identities are reconciled before new breadth; stale drafts retain provenance but cannot alternate as current theses. | `research-pipeline` |
+| P66 | Maintain one active research episode as a question, principle, locus, rivals, prediction, evidence update, and next construction; it is not a fixed stage code. | `research-pipeline` |
+| P67 | Claim-bearing work preserves the seed's task, scale, training, information, and deployment substrate; a proxy cannot carry the paper when the incumbent phenomenon is absent there. | `baseline` and `research-pipeline` |
+| P68 | A successor realization inherits maturity only by preserving the same principle and naming the failed prediction, evidence-implicated component change, preserved behavior, and new discriminating prediction. | `method-primitive-synthesis` |
+| P69 | Design uncertainty is repaired through explanation and construction; random seeds are reserved for genuine stochastic uncertainty and positive-result reliability. | `method-primitive-synthesis` and `experiment-plan` |
+| P70 | Accelerator admission uses measured real-path peaks plus margin; a GPU wait neither blocks science nor licenses repeated audit artifacts or alternate method packets. | `run-experiment` |
 
 ## Maintenance Rule
 

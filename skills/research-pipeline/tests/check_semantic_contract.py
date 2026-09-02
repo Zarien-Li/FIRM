@@ -45,6 +45,12 @@ REQUIRED = {
         "identity transition",
         "strongest functional rival",
         "Artifact volume never substitutes",
+        "one active positive object and one governing",
+        "The file's authority is typed",
+        "Maintain exactly one **active research episode**",
+        "substrate fidelity contract",
+        "Call a change `v2` or `v3` only when",
+        "The state must also be internally coherent",
     ],
     SKILLS / "baseline/SKILL.md": [
         "## Resolve The Nearest Rival Early",
@@ -54,6 +60,7 @@ REQUIRED = {
         "`diagnostic`",
         "same operational job",
         "functional rival and nearest mechanistic rival",
+        "## Preserve Seed-Regime Fidelity",
     ],
     SKILLS / "research-lit/SKILL.md": [
         "## Reset Search When The Scientific Identity Changes",
@@ -76,13 +83,18 @@ REQUIRED = {
         "80% deletion test",
         "meaningful advantage on the",
         "claim-relevant value surface",
+        "Each successor realization must make its inheritance explicit",
+        "Distinguish **design uncertainty** from **statistical uncertainty**",
     ],
     SKILLS / "experiment-plan/SKILL.md": [
         "## Use Two Resource Postures",
+        "## Use Gates To Interpret Runs, Not Authorize Research",
         "## Plan Explanatory Evidence As A Model Test",
         "## Plan A Construction Arc",
         "one healthy paired development seed",
         "## Turn A Pre-Target Gemini Proposal Into Evidence",
+        "put one inheritance sentence in the plan",
+        "Match the substrate as well as the metric",
     ],
     SKILLS / "research-review/SKILL.md": [
         "## Sparse Codex Policy",
@@ -94,6 +106,7 @@ REQUIRED = {
         "### Effective But Still Behind A Decisive Rival",
         "## Decision-Focused Construction Check",
         "## Program Expansion",
+        "Prize / Fidelity / Trajectory",
     ],
     SKILLS / "paper-writing/SKILL.md": [
         "## Establish The Author Argument Before The Outline",
@@ -130,6 +143,10 @@ REQUIRED = {
         "existing project-owned local process, direct\n"
         "SSH launcher, or managed scheduler path",
     ],
+    SKILLS / "run-experiment/SKILL.md": [
+        "Size accelerator admission from the real-path canary",
+        "GPU wait is an operational fact, not a scientific pause",
+    ],
     SHARED / "research-control-protocol.md": [
         "Only explicit user instructions, safety constraints, and live operational limits are\n"
         "binding.",
@@ -137,6 +154,8 @@ REQUIRED = {
         "cite the exact user or safety source",
         "changes to explicitly locked project, venue,\n"
         "deliverable, or portfolio scope",
+        "Writing an interpretation into the authoritative state does not promote it into a\n"
+        "constraint",
     ],
     SKILLS / "research-pipeline/tests/regression-scenarios.md": [
         "## P. High-Stakes Writing Compresses Exemplars Before Authorship",
@@ -155,6 +174,15 @@ REQUIRED = {
         "## AM. Claim Narrowing Removes The Method That Solves The Same Job",
         "## AN. Selective Routing Makes Zero Regression Tautological",
         "## AO. Evaluator Repair Leaves A Smaller Positive And The Same Paper",
+        "## AP. A Self-Authored Gate Becomes Project Law",
+        "## AQ. A Positive Method Starts A Serial Dataset Search",
+        "## AR. Claim-Confirmation Freezing Is Applied During Method Formation",
+        "## AS. Two Positive Objects Compete As The Current Paper",
+        "## AT. New Acronyms Replace Construction Inheritance",
+        "## AU. A Small Proxy Creates The Problem It Claims To Solve",
+        "## AV. Project Methods Precede The Published Field Baseline",
+        "## AW. GPU Waiting Produces An Audit Factory",
+        "## AX. The Sole State Contradicts Itself",
     ],
     SHARED / "research-principles.md": [
         "P01",
@@ -171,6 +199,15 @@ REQUIRED = {
         "P59",
         "P60",
         "P61",
+        "P62",
+        "P63",
+        "P64",
+        "P65",
+        "P66",
+        "P67",
+        "P68",
+        "P69",
+        "P70",
         "meaningful claim-dependent advantage",
         "one isolated author subagent",
         "claims-evidence mapping begins after narrative drafting",
@@ -183,6 +220,8 @@ REQUIRED = {
         "do not collect new human annotations",
         "Freedom to evolve does not let a convenient side result inherit",
         "zero-regression property guaranteed by routing",
+        "The current episode is not a stage label",
+        "Keep claim-bearing work faithful to the seed's task",
     ],
 }
 

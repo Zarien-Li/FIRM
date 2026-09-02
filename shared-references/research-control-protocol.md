@@ -14,12 +14,25 @@ Tag consequential state as `[USER]`, `[EVIDENCE]`, `[INTERPRETATION]`, `[REVIEW]
 `[HISTORY]`. A live `locked`, `forbidden`, `no re-entry`, or equivalent statement must
 cite the exact user or safety source; otherwise it is interpretation or history.
 
+Writing an interpretation into the authoritative state does not promote it into a
+constraint. The state is authoritative about the project's current evidence and the
+PI's current working synthesis; only the first is factual, and the second remains
+revisable by later evidence or better reasoning. A self-authored gate, threshold,
+forecast, route choice, paper hold, or experiment registration governs the exact run
+or claim for which it was created. It cannot prohibit future method formation, repair,
+or paper harvest unless an explicit user or safety boundary says so.
+
 The AI researcher autonomously chooses reversible scientific actions inside explicit
 scope and authorized resources. User confirmation is reserved for destructive or
 irreversible operations, exceptional spending, credentials or safety, formal
 submission/public release, and changes to explicitly locked project, venue,
 deliverable, or portfolio scope. A short `continue` authorizes the described action,
 not every causal story or restriction surrounding it.
+
+When a temporary decision has served its evidentiary purpose, revise or remove it from
+the live synthesis. Preserve its provenance with the run rather than accumulating it
+as a permanent restriction. Facts survive replacement-style state updates; obsolete
+strategies do not.
 
 ## Evidence Invalidation
 

@@ -77,6 +77,20 @@ Defer a run when every outcome merely adds detail, another favorable cell, a rev
 caveat, or a richer explanation without changing the research arc. A possible reviewer
 question alone is not a scientific reason.
 
+## Use Gates To Interpret Runs, Not Authorize Research
+
+A support, eligibility, quality, convergence, or feasibility gate states what one
+frozen run is competent to test. If it fails before the primary outcome, record the
+implementation or treatment-formation failure honestly; do not report a method
+transfer result that never occurred. The gate expires with that run and cannot become
+a project-wide ban on redesign.
+
+During method formation, adapt the method-owned construction when the failure reveals
+what must change. This may mean repairing generation, replacing a brittle evaluator,
+using a matched feasible treatment budget, or changing component interaction while
+preserving the accepted task and value contract. Such evidence-directed adaptation is
+research, not result shopping. Freeze exact treatments only for claim-confirmation.
+
 ## Plan Explanatory Evidence As A Model Test
 
 When the problem is not yet understood deeply enough to design, experiment against the
@@ -108,6 +122,11 @@ Early versions need not run every final comparison. They must be competent for t
 question they are asked. State what each outcome would add, remove, replace, separate,
 or retain in the next implementation. Use paired or compact factorial comparisons
 when components compensate or gate one another.
+
+For every successor realization, put one inheritance sentence in the plan: `because
+the previous run falsified prediction X while preserving Y, change component Z; the new
+realization uniquely predicts W`. If no such sentence is supported, do not spend the
+run as `v2`; return to explanation or open a new episode without inherited maturity.
 
 Smoke tests, CPU checks, oracle probes, and activation audits may precede a real run.
 They prove plumbing or engagement, not a method, and should not create new method names
@@ -142,6 +161,11 @@ A claim-bearing comparison requires:
 - strongest relevant published incumbent and claim-threatening rival;
 - explicit unique prediction;
 - relevant capability, coverage, latency, memory, compute, or cost evidence.
+
+Match the substrate as well as the metric. State the seed-authorized model scale,
+training treatment, task population, information boundary, and actual run regime. A
+proxy run may answer an implementation question, but it cannot carry the main method
+claim when the incumbent effect or rival ordering has not been reproduced there.
 
 For method-paper entry, freeze the claim-sufficient decisive comparison set and value
 contract before reading the result. Include the bounded set of field-recognized and
@@ -184,6 +208,12 @@ axes predicted by the same principle:
 - accepted tasks, modalities, natural systems, model families, generations, or scale;
 - mechanism evidence separating the principle from the nearest rival;
 - utility and adoption.
+
+Commit to one campaign-level prediction and read its failure into the construction.
+Do not replace a failed precondition or transfer with a succession of datasets chosen
+because they are more likely to satisfy the same frozen protocol. Another surface is
+justified only when it distinguishes a new principle-level prediction unavailable on
+the accepted evidence already in hand.
 
 Write one campaign-level question. Another benchmark with no new prediction and a
 larger version of the same table are breadth, not scientific expansion.

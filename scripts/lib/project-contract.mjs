@@ -52,6 +52,12 @@ Prepare a bounded real-path canary and a complete launch command that execute th
 model, data, evaluator, and output path; neither may download dependencies or allocate
 resources while accelerators are occupied.
 
+Estimate accelerator memory and placement from a real-path canary or a closely matched
+completed run, including transient peaks and a meaningful margin. Do not create fixed
+project-wide free-memory or utilization gates. When capacity is temporarily unavailable,
+finish useful independent preparation but do not manufacture repeated audits, hashes,
+checklists, or alternate method packets as substitutes for the selected experiment.
+
 Use only explicitly authorized devices and inspect real occupancy immediately before
 launch. Run only owned processes, expose objective progress, write durable logs and
 completion markers, and validate artifacts after termination. Infrastructure failure is
@@ -67,6 +73,20 @@ compass, strongest evidence and contrary evidence, current construction or empir
 contact episode, credible positive object if any, latest decisive experiments, and the
 next scientific action.
 
+Keep one active episode as a scientific argument rather than a stage code: natural
+problem, provisional principle, load-bearing locus, strongest published functional and
+mechanistic rivals, discriminating prediction, substrate fidelity, latest evidence,
+and next construction. A successor realization inherits maturity only when it preserves
+the same principle and states the failed prediction, evidence-implicated component
+change, preserved useful behavior, and new discriminating prediction.
+
+Its authority is typed. Verified observations are evidence; explanations, gates,
+thresholds, route choices, paper holds, and next actions are revisable PI
+interpretations. Writing one of those choices into the state does not turn it into a
+user constraint. A binding \`forbidden\`, \`locked\`, \`terminal\`, or equivalent rule
+must cite the exact user or safety source and the object it governs. A registration
+freezes one run, not future construction or the broader program.
+
 At session start, compare \`PROJECT_STATE.md\` against authority, current artifacts, and
 active work rather than copying an old session summary. Update it after a meaningful
 scientific transition and before the next research action: a baseline or full experiment
@@ -81,5 +101,16 @@ provenance. Every retained experiment record must state \`scientificQuestion\`,
 \`comparison\`, \`execution\`, \`result\`, \`interpretation\`, and \`artifacts\`.
 Distinguish infrastructure, implementation, evaluation, and scientific failures; never
 mark infrastructure failure as scientific evidence.
+
+Keep claim-bearing work faithful to the task, model scale, training regime, information
+boundary, and compute envelope in the seed. A cheaper proxy is diagnostic until the
+incumbent phenomenon and rival ordering are shown to survive there. Do not build a new
+method around an effect created only by shrinking or otherwise changing the substrate.
+
+After a credible positive object forms, maintain one active paper candidate and one
+principle-predicted expansion campaign. Reconcile stale drafts or alternate method
+identities before new breadth. If a method-owned precondition fails before the primary
+outcome, diagnose or repair the construction on an existing accepted surface when
+possible; do not count it as transfer failure or serially search for an easier dataset.
 `;
 }

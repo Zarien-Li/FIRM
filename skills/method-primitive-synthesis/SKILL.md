@@ -147,6 +147,19 @@ A construction arc keeps one central design question and may contain several ver
 Do not rename each local change as a new method or send every result through a new
 review cycle.
 
+Each successor realization must make its inheritance explicit:
+
+- the same one-sentence replacement principle;
+- the previous prediction that failed or remained unresolved;
+- the evidence-implicated component or interaction being changed;
+- the useful computation and paired utility being preserved;
+- the new discriminating prediction.
+
+If these cannot be stated, the proposal is not a successor version. It is either
+tuning, an unrelated candidate, or a new research episode whose empirical contact and
+maturity must be re-earned. Do not let a sequence of acronyms conceal a sequence of
+unconnected hypotheses.
+
 The arc should eventually establish:
 
 1. **real implementation:** the intended computation runs on the accepted task;
@@ -208,6 +221,12 @@ Classify the next change:
 A verified correction normally earns one clean matched rerun. A continuing directional
 loss is not repaired by a new nickname or seed sweep. A further construction needs a
 changed design question supported by evidence.
+
+Distinguish **design uncertainty** from **statistical uncertainty**. When a healthy
+paired run gives a stable wrong sign or fails the construction's unique prediction,
+more random seeds do not repair the design. When variance, nondeterminism, or an
+unstable optimizer makes the sign genuinely unresolved, additional seeds may estimate
+that uncertainty. Record which uncertainty exists before spending the runs.
 
 After an informative failed realization has identified the activated computation,
 useful residual, and failed coupling, Gemini may help invent a genuinely different v2
@@ -271,7 +290,9 @@ when the design needs durable multi-actor coordination:
 ## Construction Arc
 - central design question and unique prediction:
 - current realization and component jobs:
-- versions: activated computation | useful residual | failed coupling | inheritance:
+- versions: activated computation | useful residual | failed prediction | changed
+  component | new discriminating prediction:
+- intended substrate and evidence that the incumbent phenomenon exists there:
 - utility risk and decisive comparison:
 ## Expansion
 - earned and unsupported axes:

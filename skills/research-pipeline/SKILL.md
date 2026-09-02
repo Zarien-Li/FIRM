@@ -89,6 +89,12 @@ paper-oriented accounting. Small observations update the notebook. Reconsider th
 program at episode boundaries or when decisive natural evidence makes the active
 question moot.
 
+Maintain exactly one **active research episode** as a scientific argument: natural
+problem, provisional principle, load-bearing computation, strongest published
+functional and mechanistic rivals, discriminating prediction, latest evidence, and
+next construction. Do not assign a fixed state code or infer progress from experiment
+count. Coherence comes from the question and inheritance, not a stage name.
+
 ## Enter Through Competent Contact
 
 A method may grow from either:
@@ -134,6 +140,12 @@ or explain the semantic gap before using it to mature a construction or paper cl
 Do not select a substrate because it gives a favored method headroom. Diagnostic
 settings may teach; contribution settings must matter independently.
 
+Treat the seed's task, model class, scale, training, information boundary, and compute
+as a **substrate fidelity contract**. Before building around a local failure, reproduce
+the incumbent behavior there or directly show that a cheaper proxy preserves the same
+phenomenon and design ranking. If the motivating effect is absent only on the proxy,
+return to a faithful regime instead of inventing a repair for the proxy artifact.
+
 ## Let Evidence Accumulate Before Theory
 
 The default result update is an observation:
@@ -176,6 +188,10 @@ Method formation is a long, constructive ablation process. Preserve across versi
 - the coupling or assumption that failed;
 - what the next implementation changes and predicts.
 
+Call a change `v2` or `v3` only when it inherits the same principle and records the
+failed prediction, evidence-implicated component change, preserved behavior, and new
+prediction. Otherwise it starts a new episode without inherited maturity.
+
 One loss does not close a method, family, problem, or field. Several losses do not
 automatically imply a higher abstraction. First inspect substrate, problem selection,
 nearest-rival ownership, implementation competence, and the current method assumption.
@@ -185,6 +201,14 @@ private cells.
 A clear bad result on one competent paired development seed normally calls for design
 diagnosis, not more seeds. Additional seeds estimate genuine stochastic uncertainty
 or stabilize a coherent positive method; they do not search for success.
+
+Distinguish failure to instantiate a treatment from failure of its scientific
+principle. If generation, eligibility, support, routing, optimization, or another
+method-owned precondition fails before the primary outcome is measured, the transfer
+question remains unanswered. Diagnose and repair the construction or measurement on
+an existing accepted surface when possible. Do not count the episode as a method
+transfer, turn its gate into a permanent prohibition, or seek a friendlier dataset to
+avoid learning how the construction must change.
 
 When a simple rule, solver, merge, cache, retrieval pipeline, or calibration wins,
 treat its computation and natural boundary as scientific evidence. A deeper learned
@@ -228,6 +252,14 @@ Use `research-review` for a creative expansion perspective or one named
 decision-relevant verification when it can materially enlarge or protect the principle
 before paper-sized investment. Select one
 coherent campaign. Generality comes from principle-predicted reach, not dataset count.
+
+Once a credible positive exists, name one active positive object and one governing
+paper candidate. Other positive side results remain explicitly secondary until an
+evidence-driven identity transition replaces the active candidate. Choose one bounded
+expansion campaign whose axis is predicted by the principle. A failed expansion should
+teach how the principle or realization changes; it does not automatically authorize a
+serial search for another benchmark with easier preconditions. New surfaces are useful
+only when they test a distinct prediction that the existing evidence cannot answer.
 
 ## Form And Harvest A Paper
 
@@ -275,6 +307,12 @@ intervention, a fair decisive comparison, end-to-end value, and an honest tradeo
 surface. Another contribution type needs an independently valuable object,
 independent confirmation, consequence, and distinction from the strongest account.
 Failed method residue cannot select that identity automatically.
+
+Before further paper-shaped experiments, reconcile every active method, paper-entry,
+draft, and state summary to the same current positive object. Stale drafts are history,
+not alternate live theses. If two files imply different contribution identities,
+pause new breadth and choose the evidence-supported active object; do not let the next
+session alternate between them.
 
 When a positive object is materially different from the active program or construction
 lineage, treat it first as a side result. Before promoting it to the current paper:
@@ -370,28 +408,20 @@ not after every metric.
 
 ```markdown
 ## Program Compass
-- original program, value, accepted surfaces, and explicit boundaries:
-- current broad question and why it matters:
-- strongest evidence and strongest contrary evidence:
-- competing explanations, or `not-yet-earned`:
-- nearest rival and substrate status:
+- original program, value, accepted surface, boundaries, and current broad question:
+- strongest evidence, contrary evidence, explanations, rivals, and substrate status:
 
 ## Current Research Episode
-- type: contact | explanation | construction | expansion | stabilization | harvest
-- question or principle being cultivated:
-- construction arc and inherited design lessons, when applicable:
-- accepted anchor and diagnostic/training evidence in use:
-- active/unread jobs and durable paths:
-- next action and what scientific decision it can change:
+- natural problem, principle, load-bearing locus, and functional/mechanistic rivals:
+- prediction and inheritance: failed prediction | preserved behavior | changed component:
+- substrate fidelity: intended regime | actual regime | incumbent effect reproduced:
+- latest/contrary evidence, accepted anchor, and diagnostic evidence in use:
+- next construction, redirect condition, and active job/artifact paths:
 
 ## Positive Object And Paper
-- credible positive object: none | concise object and evidence:
-- expansion status: not-applicable | candidate | active | complete:
-- author argument and manuscript: none | provisional | stable:
-- decisive unresolved issue, if any:
+- positive object, evidence, expansion, paper status, and decisive unresolved issue:
 
-## History
-- pointers only:
+## History: pointers only
 ```
 
 When a project exposes `PROJECT_STATE.md`, it is this one authoritative live state for
@@ -403,6 +433,20 @@ process existence. Codex may verify artifact support and fidelity to the authori
 seed. Neither may infer or rewrite the question, result interpretation, method
 maturity, paper judgment, or next action.
 
+The file's authority is typed: `[USER]` and safety sources define binding boundaries;
+`[EVIDENCE]` records verified observations; `[INTERPRETATION]` and next actions are the
+PI's revisable synthesis. Merely placing strategy in the state does not make it a user
+constraint. Current restrictive language without an exact user or safety source must
+be rewritten as an evidence-bounded interpretation, not obeyed as a prohibition.
+
+The state must also be internally coherent. Its current episode, method, positive
+object, paper, next action, and operational facts must describe the same present. A GPU
+launch cannot coexist with `gpu needed: false`; a paper-bearing method cannot coexist
+with `positive object: none`; a new principle cannot silently reuse the previous
+episode's maturity. Mechanical tooling may flag such contradictions, but the project PI
+must repair the scientific synthesis from artifacts rather than making the validator
+green by changing labels.
+
 At session start, compare `PROJECT_STATE.md` with current authority, raw artifacts, and
 active work. Repair stale or unsupported state before continuing; never copy an old
 session's self-summary merely because it is recent or detailed. Update the state after
@@ -413,23 +457,14 @@ changes; evidence is invalidated; the blocker or next decisive action changes; o
 work enters paper harvest. Do not update it for routine reading, downloads, code edits,
 or training progress ticks.
 
-A mechanically migrated legacy state remains `migrationPending` and unverified even
-when its structured block is well formed. Only the project PI may clear that marker, after checking
-every retained scientific statement against authority, current artifacts, the live
-state, and active work and recording the reconciliation time. Never clear it merely to
+A mechanically migrated state remains `migrationPending` until the project PI checks
+retained claims against authority, artifacts, and active work. Never clear it merely to
 make a dashboard green.
 
-Keep only the latest three to five decisive experiment records there and retain full
-history in raw artifacts and the read-only history archive. Each decisive record states:
-
-- `scientificQuestion`: what uncertainty the run addressed;
-- `comparison`: the matched systems or conditions actually compared;
-- `execution`: mechanical state and provenance, separating infrastructure,
-  implementation, evaluation, and scientific failure;
-- `result`: the observed outcome without interpretation inflation;
-- `interpretation`: the PI's evidence-bounded update;
-- `artifacts`: paths and roles, plus only genuinely known row counts, minimum sizes, or
-  completion markers.
+Keep three to five decisive records and link full raw history. Each states
+`scientificQuestion`, matched `comparison`, factual `execution`, observed `result`, PI
+`interpretation`, and `artifacts`; separate infrastructure, implementation, evaluation,
+and scientific failure.
 
 `MIGRATION PENDING`, `STALE STATE`, and `UNVERIFIED CLAIM` are mechanical
 reconciliation flags, not research verdicts. The project PI fixes them. A control plane

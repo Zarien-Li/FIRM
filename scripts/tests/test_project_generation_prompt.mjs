@@ -84,6 +84,12 @@ assert.match(prompt, /Published Incumbent/);
 assert.match(prompt, /Nearest Rival/);
 assert.match(prompt, /起始地图，不是已经成立的 failure/);
 assert.match(prompt, /可以自行改变当前路线/);
+assert.match(prompt, /gate、阈值、hold、路线和 next action 仍是可修正的解释/);
+assert.match(prompt, /一个 active paper candidate/);
+assert.match(prompt, /不要连续寻找更容易满足同一协议的数据集/);
+assert.match(prompt, /当前研究 episode 的维护方式/);
+assert.match(prompt, /v2\/v3 只有在继承同一原理/);
+assert.match(prompt, /等待 GPU 是运行事实/);
 assert.doesNotMatch(prompt, /第一轮在 .*完整标准 population 上/);
 assert.doesNotMatch(prompt, /建设性 v1→v2\/v3/);
 

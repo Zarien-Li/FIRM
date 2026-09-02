@@ -17,6 +17,7 @@ A good entry card gives the researcher a consequential field, credible empirical
 - a paper's limitation as though it were independently established;
 - a method operator before local evidence exists;
 - a premise probe as the project's stopping rule;
+- language such as “the project advances only if” tied to the first lens or experiment;
 - a benchmark or dataset paper when the intended contribution is a method;
 - a strawman baseline or an obscure slice chosen to manufacture daylight.
 
@@ -33,6 +34,10 @@ A good entry card gives the researcher a consequential field, credible empirical
 ## Quality Test
 
 The card is ready when another researcher could enter the field, reproduce meaningful systems, and discover a different valid problem than the author initially imagined.
+
+The first contact may have a frozen forecast, but the seed must remain meaningful if
+that forecast is false. Otherwise the card has encoded a one-shot hypothesis test, not
+a research program.
 
 It is too narrow when one null result would make the entire card meaningless. It is too broad when it does not identify credible empirical contact or a value-bearing outcome.
 

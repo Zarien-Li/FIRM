@@ -43,6 +43,12 @@ Use this for a fresh project. It opens a serious field of inquiry; it does not p
 
 Do not add a stop condition, pre-named mechanism, required method shape, or cheap-probe verdict to the initial card.
 
+Do not make the project's continuation conditional on the first lens, predictor,
+probe, dataset, or realization succeeding. A first empirical contact may reject its
+hypothesis while leaving the authorized field and value fully alive. Conditions may
+define what one experiment can establish; they may not define whether research is
+allowed to continue.
+
 A lead may come from theory, an operational failure, users, domain expertise, or a paper's limitation. Record that provenance without treating its framing as established fact. The empirical or formal work must be able to replace the lead with a different problem and explanation.
 
 Constraints describe the current experimental surface; they are not scientific claims about the field. In particular, `<=8B`, one benchmark family, or one available model cannot justify concluding that a phenomenon or method opportunity does not exist outside that observability range. If the important behavior is not visible, record the limitation and decide whether to escalate, use a faithful surrogate, or choose a naturally visible problem.

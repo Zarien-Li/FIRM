@@ -166,3 +166,16 @@ Do not duplicate the thesis across tasks, memory, reviews, drafts, templates, an
 cards. Invalid evidence loses every dependent claim but does not automatically close
 the program. Repair, rerun, or redesign from clean provenance. Paper claims never
 exceed completed, read, appropriately scoped evidence.
+
+The current episode is not a stage label. Keep one natural problem, provisional
+principle, load-bearing locus, functional and mechanistic published rivals,
+discriminating prediction, latest evidence, and next construction. A v2 or v3 must
+state what failed, what evidence-directed component changed, what useful behavior is
+preserved, and what new prediction distinguishes it. Otherwise begin a new episode and
+do not inherit method or paper maturity.
+
+Keep claim-bearing work faithful to the seed's task, model scale, training regime,
+information boundary, and compute envelope. A cheaper proxy remains diagnostic unless
+the incumbent phenomenon and rival ordering are shown to survive there. If the
+motivating incumbent effect disappears only because the model or task was shrunk, do
+not build the paper around repairing that proxy artifact.

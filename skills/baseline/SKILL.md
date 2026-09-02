@@ -114,6 +114,21 @@ the substrate first. Do not simultaneously change backbone ability, data treatme
 and the proposed mechanism, then attribute the package difference to the mechanism.
 Passing this check establishes substrate competence, not baseline reproduction.
 
+## Preserve Seed-Regime Fidelity
+
+Substrate competence is not enough when the seed targets a particular model scale,
+context length, training regime, modality, data distribution, or deployment boundary.
+For claim-bearing discovery, record the intended regime and the regime actually run.
+Reproduce the incumbent's motivating positive behavior on the intended regime before
+building a method around its residual failure. A cheap proxy is useful only when direct
+evidence shows that it preserves the phenomenon, rival ordering, and intervention
+opportunity.
+
+If a published method helps at the seed's scale but loses on a much smaller local model,
+the local loss is a proxy-regime result. It does not license a project devoted to fixing
+that small-model artifact. Either return to the intended substrate or first establish a
+scientifically valuable small-regime problem with its own accepted surface and rivals.
+
 ## Reproduce Semantics
 
 Match the parts that can change the conclusion:
@@ -198,6 +213,7 @@ needs one. Keep it compact:
 - nearest rivals and closest matched evidence:
 - remaining ownership threat:
 - substrate competence result:
+- intended seed regime, actual regime, and incumbent-effect fidelity:
 
 ## Integrity
 - evaluator/metric reconstruction:

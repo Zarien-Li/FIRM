@@ -58,6 +58,14 @@ supported paper harder to criticize remain outside this role.
 Choose one purpose matching the current episode. Do not combine invention, expansion,
 and submission judgment into one omnibus call or invoke both providers ceremonially.
 
+At a consequential episode boundary, the only broad Codex view is a bounded
+**Prize / Fidelity / Trajectory** check: whether the best-case result still changes an
+accepted community outcome, whether current evidence remains faithful to the original
+program and intended substrate, and whether the proposed next construction inherits a
+real principle rather than restarting under a new name. It should return the smallest
+course correction that changes the current decision, or `no material change`. It must
+not enumerate objections, demand a defensive suite, or invent a replacement method.
+
 ## Field And Prize
 
 The lead PI owns this role through literature and natural contact. Use the literature

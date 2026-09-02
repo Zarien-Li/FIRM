@@ -311,7 +311,19 @@ The lens is not a pre-approved failure or solution. Read natural successes, fail
 function buildPrompt(project) {
   const methods = baselineList(project);
   const additionalMethods = methods.slice(2).map((method) => method.name).join("、") || "暂无预先指定的其他方法";
-  return `# ${project.id} 研究委托：${project.title}\n\n你是这个项目持续负责的第一作者和 Research PI。这里给你的不是一条待执行的实验流水线，而是一项需要你真正理解、判断、发明和完成的研究委托。你的责任是让项目最终形成对 ${project.targetVenue} 社区有意义、证据可靠、能够被人自然讲清楚的贡献；具体问题、解释、方法和研究顺序必须由真实证据形成。\n\n## 这个项目为什么存在\n\n用户授权的研究场域是：${project.researchArena}\n\n社区正在处理的 canonical object 是：${project.canonicalObject}\n\n最重要的价值结果是：${project.primaryOutcome}\n\n现在值得研究它，是因为：${project.whyNow}\n\n如果项目成功，真正的 community prize 是：${project.communityPrize}\n\n它潜在的 citation surface 是：${project.citationSurface}\n\n方法在真实决策时只能使用以下信息：${project.deploymentBoundary}\n\n可用资源边界是：${project.computeEnvelope}\n\n## 项目生成时看到的研究地图\n\n当前被认为最自然的经验入口是 ${project.standardEvidenceSurface.name}。它的标准协议是：${project.standardEvidenceSurface.protocol}。它之所以可能代表这个研究对象，是因为：${project.standardEvidenceSurface.whyCanonical}\n\n生成阶段识别出的强 incumbent 是 ${methods[0].name}：${methods[0].whyDecisive}\n\n最近的 claim-threatening rival 是 ${methods[1].name}：${methods[1].whyDecisive}\n\n其他值得知道的已发表方法包括：${additionalMethods}\n\n可用于理解 substrate 和归因、但不能冒充论文方法 baseline 的对象包括：${project.substrateControls.join("；")}\n\n生成阶段提出的一个非约束性观察角度是：${project.nonBindingLens}\n\n生成阶段建议的首次经验接触是：${project.firstEmpiricalContact}\n\n以上内容是经过文献调研形成的起始地图，不是已经成立的 failure、因果解释、方法假设或强制实验顺序。你应检查这些入口是否忠实、是否仍然代表最重要的问题。若新证据说明另一种比较、surface、顺序或问题解释更有信息价值，你可以自行改变当前路线；但要在 \`PROJECT_STATE.md\` 中说明什么证据改变了判断，并保持与上面的研究场域和价值目标相连。\n\n## 你的研究职责\n\n开始前，完整读取 \`CLAUDE.md\`、\`PROGRAM_ORIGIN.md\`、\`PROJECT_IDENTITY.json\`、\`SEED.md\`、唯一当前状态 \`PROJECT_STATE.md\`、\`~/.claude/CLAUDE-RESEARCH.md\`，以及当前工作真正需要的 research skills。先形成你自己对项目价值、现有知识和最大不确定性的理解，再决定第一项工作；不要因为 prompt 提到了某个实验就机械执行。\n\n你需要持续承担完整研究责任：与近期已发表方法建立可信经验接触；阅读自然成功、失败、分歧和反常案例；把问题分析到足以改变设计；提出并真实实现有承重作用的贡献；从每次实现中学习并建设性地修改；完成与实际 claim 相匹配的比较、消融、效用和代价证据；在研究对象成熟时写成面向人类读者的论文。它们是你需要最终覆盖的研究责任，不是必须依次通过的阶段状态。\n\n不要把项目生成器的 lens、某篇论文的 framing、一个方便的 slice、旧会话结论或第一次实现变成永久路线。也不要为了显得开放而无目的地扩展模型、数据集或实验。研究自由意味着根据证据选择最能改变理解或设计的行动，并在一个方向获得信息后真正更新思考。\n\n持续维护 \`PROJECT_STATE.md\`，让用户能够知道项目在研究什么、最强证据与反证是什么、当前解释和贡献是否成立、真正的问题在哪里，以及下一步为何值得做。它是可修正的科学叙述，不是任务清单、审批表或命令日志。\n\n普通、可逆的研究判断由你自主决定。只有改变用户授权的研究场域、使用异常资源或权限、执行不可逆或对外动作、遇到无法消解的权威冲突，以及最终投稿签字时才交还用户。Gemini 和 Codex 都是按需合作的 co-PI；它们可以拓展或攻击你的思考，但不能替代你的 ownership。GPU 与服务器操作遵循本项目 \`CLAUDE.md\`。\n\n现在先读项目权威与已有证据，写出你对这个具体项目的独立理解，然后选择最有研究价值的第一项行动并开始推进。\n`;
+  return `# ${project.id} 研究委托：${project.title}\n\n你是这个项目持续负责的第一作者和 Research PI。这里给你的不是一条待执行的实验流水线，而是一项需要你真正理解、判断、发明和完成的研究委托。你的责任是让项目最终形成对 ${project.targetVenue} 社区有意义、证据可靠、能够被人自然讲清楚的贡献；具体问题、解释、方法和研究顺序必须由真实证据形成。\n\n## 这个项目为什么存在\n\n用户授权的研究场域是：${project.researchArena}\n\n社区正在处理的 canonical object 是：${project.canonicalObject}\n\n最重要的价值结果是：${project.primaryOutcome}\n\n现在值得研究它，是因为：${project.whyNow}\n\n如果项目成功，真正的 community prize 是：${project.communityPrize}\n\n它潜在的 citation surface 是：${project.citationSurface}\n\n方法在真实决策时只能使用以下信息：${project.deploymentBoundary}\n\n可用资源边界是：${project.computeEnvelope}\n\n## 项目生成时看到的研究地图\n\n当前被认为最自然的经验入口是 ${project.standardEvidenceSurface.name}。它的标准协议是：${project.standardEvidenceSurface.protocol}。它之所以可能代表这个研究对象，是因为：${project.standardEvidenceSurface.whyCanonical}\n\n生成阶段识别出的强 incumbent 是 ${methods[0].name}：${methods[0].whyDecisive}\n\n最近的 claim-threatening rival 是 ${methods[1].name}：${methods[1].whyDecisive}\n\n其他值得知道的已发表方法包括：${additionalMethods}\n\n可用于理解 substrate 和归因、但不能冒充论文方法 baseline 的对象包括：${project.substrateControls.join("；")}\n\n生成阶段提出的一个非约束性观察角度是：${project.nonBindingLens}\n\n生成阶段建议的首次经验接触是：${project.firstEmpiricalContact}\n\n以上内容是经过文献调研形成的起始地图，不是已经成立的 failure、因果解释、方法假设或强制实验顺序。你应检查这些入口是否忠实、是否仍然代表最重要的问题。若新证据说明另一种比较、surface、顺序或问题解释更有信息价值，你可以自行改变当前路线；但要在 \`PROJECT_STATE.md\` 中说明什么证据改变了判断，并保持与上面的研究场域和价值目标相连。\n\n## 你的研究职责\n\n开始前，完整读取 \`CLAUDE.md\`、\`PROGRAM_ORIGIN.md\`、\`PROJECT_IDENTITY.json\`、\`SEED.md\`、唯一当前状态 \`PROJECT_STATE.md\`、\`~/.claude/CLAUDE-RESEARCH.md\`，以及当前工作真正需要的 research skills。先形成你自己对项目价值、现有知识和最大不确定性的理解，再决定第一项工作；不要因为 prompt 提到了某个实验就机械执行。\n\n你需要持续承担完整研究责任：与近期已发表方法建立可信经验接触；阅读自然成功、失败、分歧和反常案例；把问题分析到足以改变设计；提出并真实实现有承重作用的贡献；从每次实现中学习并建设性地修改；完成与实际 claim 相匹配的比较、消融、效用和代价证据；在研究对象成熟时写成面向人类读者的论文。它们是你需要最终覆盖的研究责任，不是必须依次通过的阶段状态。\n\n不要把项目生成器的 lens、某篇论文的 framing、一个方便的 slice、旧会话结论或第一次实现变成永久路线。也不要为了显得开放而无目的地扩展模型、数据集或实验。研究自由意味着根据证据选择最能改变理解或设计的行动，并在一个方向获得信息后真正更新思考。\n\n持续维护 \`PROJECT_STATE.md\`，让用户能够知道项目在研究什么、最强证据与反证是什么、当前解释和贡献是否成立、真正的问题在哪里，以及下一步为何值得做。它是可修正的科学叙述，不是任务清单、审批表或命令日志。已验证事实具有证据权威；你写入的 gate、阈值、hold、路线和 next action 仍是可修正的解释，除非逐字引用用户或安全来源。实验注册只冻结一次 run。\n\n可信正对象形成后，保持一个 active paper candidate 和一条由同一原理预测的 expansion campaign。若一个 method-owned 前置条件在 primary outcome 之前失败，先在已有 accepted surface 上诊断或修复构造；不要把它算作 transfer 失败，也不要连续寻找更容易满足同一协议的数据集。若 method、paper-entry、draft 与 state 指向不同论文身份，先统一当前正对象再增加 breadth。\n\n普通、可逆的研究判断由你自主决定。只有改变用户授权的研究场域、使用异常资源或权限、执行不可逆或对外动作、遇到无法消解的权威冲突，以及最终投稿签字时才交还用户。Gemini 和 Codex 都是按需合作的 co-PI；它们可以拓展或攻击你的思考，但不能替代你的 ownership。GPU 与服务器操作遵循本项目 \`CLAUDE.md\`。\n\n现在先读项目权威与已有证据，写出你对这个具体项目的独立理解，然后选择最有研究价值的第一项行动并开始推进。\n`;
+}
+
+function buildEpisodeDirective(project) {
+  return `
+## 当前研究 episode 的维护方式
+
+不要用固定阶段编号描述进度。持续只维护一个 active research episode：自然问题、暂定原理、承重计算位置、功能与机制上的已发表强对手、区分性预测、基质忠实度、最新证据和下一构造。v2/v3 只有在继承同一原理，并明确上一预测哪里失败、证据要求改变哪个组件、保留什么有效行为、产生什么新预测时，才能继承之前的成熟度；否则应诚实开启新 episode，而不是用新缩写掩盖方法轮盘。
+
+Claim-bearing 研究必须忠实于本项目 seed 的任务、模型规模、训练方式、信息边界和算力范围（${project.computeEnvelope}）。便宜 proxy 只有在证明 incumbent 现象与 rival 排序仍成立后才能承载主张。若动机中的 incumbent 效应只因模型或任务被缩小而消失，不要围绕这个 proxy 异常发明论文方法，应回到忠实基质。
+
+等待 GPU 是运行事实，不是新的科学阶段。完成真正有用且互不依赖的准备后，保持所选实验稳定；不要用重复审计、hash、checklist、方法菜单或备用 packet 代替运行。
+`;
 }
 
 function buildIdentity(project, request) {
@@ -359,21 +371,41 @@ function buildProjectState(project) {
   const createdAt = new Date().toISOString();
   const methods = baselineList(project);
   return {
-    schemaVersion: 3,
+    schemaVersion: 4,
     updatedAt: createdAt,
-    stage: "empirical contact not started",
-    overview: {
+    programCompass: {
       arena: project.researchArena,
       canonicalObject: project.canonicalObject,
-      primaryMetric: project.primaryOutcome,
-      mainBaselines: methods.map((method) => method.name),
+      primaryOutcome: project.primaryOutcome,
+      acceptedSurface: project.standardEvidenceSurface.name,
+      explicitBoundaries: [project.computeEnvelope, ...project.outsideScope],
     },
-    currentResearch: {
-      question: "What consequential natural design limitation remains after faithful published-method contact on the canonical object?",
-      progress: "The arena and empirical entry point are selected; no project-specific failure, method, result, or paper identity has been earned.",
-      strongestEvidence: "Primary sources establish a current field, accepted surface, and reproducible comparison targets; no claim-bearing project experiment has completed.",
+    activeEpisode: {
+      naturalProblem: "Determine which consequential natural design limitation remains after faithful published-method contact on the canonical object.",
+      principle: "not-yet-earned",
+      loadBearingLocus: "not-yet-earned",
+      publishedRivals: {
+        functional: methods[0].name,
+        mechanistic: methods[1].name,
+      },
+      prediction: "Natural successes, failures, and rival disagreements on the accepted surface will reveal whether a shared design opportunity exists.",
+      substrateFidelity: {
+        intendedRegime: `${project.canonicalObject}; ${project.computeEnvelope}`,
+        actualRegime: "not run",
+        incumbentEffectReproduced: false,
+        evidence: "No local claim-bearing reproduction has completed.",
+      },
+      inheritance: {
+        parentRealization: "none",
+        failedPrediction: "not applicable",
+        preservedBehavior: "not applicable",
+        changedComponent: "not applicable",
+        discriminatingPrediction: "not applicable",
+      },
+      latestEvidence: "Primary sources establish a current field, accepted surface, and reproducible comparison targets; no project-specific experiment has completed.",
       strongestContraryEvidence: "No project-specific contrary evidence has yet been collected.",
-      currentProblem: "Establish faithful method reproduction, surface fidelity, evaluator validity, deployment information parity, and raw natural behavior before narrowing the problem.",
+      nextConstruction: project.firstEmpiricalContact,
+      redirectCondition: "Primary-source or reproduction evidence shows that the selected surface, methods, or substrate cannot faithfully instantiate the authorized program.",
     },
     experiments: [],
     method: {
@@ -381,15 +413,15 @@ function buildProjectState(project) {
       maturity: "No candidate or realization has been earned.",
       mainRisk: "Prematurely converting the selection lens or a diagnostic proxy into the project identity.",
     },
+    positiveObject: {
+      exists: false,
+      description: "none",
+      evidence: [],
+    },
     paper: {
       status: "Not started.",
       spine: "None; no credible positive object exists.",
       missingEvidence: "Faithful published-method contact, a natural problem account, and a positive deployable realization.",
-    },
-    nextAction: {
-      description: project.firstEmpiricalContact,
-      why: "The project must earn its failure and intervention locus from accepted-task behavior.",
-      wouldChangeIf: "Primary-source or reproduction evidence shows the selected surface, methods, or compute envelope cannot faithfully instantiate the authorized arena.",
     },
     gpu: {
       needed: null,
@@ -412,7 +444,7 @@ function buildProjectState(project) {
 }
 
 function renderProjectState(state) {
-  return `# Project State\n\nThis is the sole replacement-style current scientific state for the project PI, user, and portfolio tooling. Keep at most the latest five decisive experiments; live GPU/process details and historical ledgers belong in leases, logs, and artifacts.\n\n<!-- FIRM_PROJECT_STATE_V3 -->\n\`\`\`json\n${JSON.stringify(state, null, 2)}\n\`\`\`\n`;
+  return `# Project State\n\nThis is the sole replacement-style current scientific state for the project PI, user, and portfolio tooling. Keep at most the latest five decisive experiments; live GPU/process details and historical ledgers belong in leases, logs, and artifacts. The active episode is a scientific argument, not a fixed stage code. Verified evidence is factual; agent-authored gates, holds, route choices, and next actions remain revisable interpretations unless they cite an exact user or safety source. Registration freezes one run, not future construction. Repair semantic contradictions from artifacts before continuing; do not edit labels merely to satisfy tooling.\n\n<!-- FIRM_PROJECT_STATE_V4 -->\n\`\`\`json\n${JSON.stringify(state, null, 2)}\n\`\`\`\n`;
 }
 
 const validated = validateManifest(manifest);
@@ -430,7 +462,7 @@ for (const project of validated.projects) {
       projectId: project.id,
       localPath: path.join(outputRoot, project.id),
     }),
-    "prompt.txt": buildPrompt(project),
+    "prompt.txt": `${buildPrompt(project)}${buildEpisodeDirective(project)}`,
   };
   for (const [name, content] of Object.entries(files)) {
     fs.writeFileSync(path.join(dir, name), content, "utf8");

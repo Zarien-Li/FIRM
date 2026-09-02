@@ -31,6 +31,11 @@ An exploratory run may proceed with a compact record. An expensive or claim-defi
 run needs a frozen forecast and exact provenance, normally through
 `research-contract` or the tracker.
 
+A registration, tracker gate, or state forecast governs the named run and its verdict;
+it does not prohibit a later formative redesign. If current evidence changes the
+method-owned treatment before claim confirmation, register the new run explicitly
+rather than treating the old protocol as permanent project authority.
+
 ## Protect Interpretability
 
 Before a main run:
@@ -42,6 +47,13 @@ Before a main run:
 - run a small end-to-end execution and inspect raw output;
 - estimate memory and runtime from a real step;
 - confirm checkpoint, log, result, and final-marker writes.
+
+Size accelerator admission from the real-path canary or a closely matched completed
+run: measured peak allocation, expected transient peaks, current ownership, and a
+meaningful margin. Do not invent universal utilization or free-memory thresholds. A
+GPU wait is an operational fact, not a scientific pause: finish only genuinely useful
+result-independent preparation, then stop generating audits, hashes, launch checklists,
+or alternate method packets merely to appear active.
 
 A smoke test proves execution, not semantic equivalence or scientific effectiveness.
 If the evaluator is still being debugged, label the run `debug` or `pilot`.
