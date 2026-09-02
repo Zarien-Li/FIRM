@@ -6,8 +6,8 @@
 <h1 align="center">经过真实科研检验的端到端 CS Research Skills。</h1>
 
 <p align="center">
-  16 个 skills，覆盖问题发现、方法形成、实验、独立验证与创意协作<br>
-  和证据驱动的论文写作。
+  一个持续 GPT Research PI，加十五个有界 specialist workflows，<br>
+  覆盖实现、实验、核验与论文生产。
 </p>
 
 <p align="center">
@@ -35,8 +35,9 @@ AI Agent 很擅长制造“在推进”的感觉：搜索、代码、实验、�
 判断。FIRM 帮助 Agent 判断什么值得研究、一个结果究竟意味着什么、下一版该构造什么，
 以及证据何时真正足以支撑一篇论文。
 
-一个持续运行的 `research-pipeline` skill 负责维护这条科学主线，覆盖文献、代码、实验、解释、
-方法演化和论文决策；其余 15 个 specialists 只在其能力真正有用时进入。
+现有的 `research-pipeline` skill 是 GPT 唯一持续科学负责人，覆盖文献、实验、解释、方法演化和
+投稿；它的五份 focused references 只在当前不确定性需要时加载。其余 15 个 specialist workflows
+用于有界 Claude 实现和显式高级操作，不是并列 PI，也不会一次性装入 GPT 上下文。
 
 端到端不等于静默消耗算力，也不等于按固定阶段一路推进。高影响操作仍然必须显式调用；
 新证据可以让项目回到问题、基线或方法，而不是被流程强行推向论文。
@@ -75,7 +76,7 @@ claude
 - [FIRM 能做什么](#firm-能做什么)
 - [从任意节点进入](#从任意节点进入)
 - [FIRM 解决的不是“不会做”，而是“判断错”](#firm-解决的不是不会做而是判断错)
-- [16 个 skills](#16-个-skills)
+- [一个 PI skill 与十五个 specialist workflows](#一个-pi-skill-与十五个-specialist-workflows)
 - [开发时间线](#开发时间线)
 - [仓库结构](#仓库结构)
 - [设计与文档](#设计与文档)
@@ -93,7 +94,7 @@ Prize -> Fidelity -> Design -> Evidence -> Entry
 - **Principle：** 证据支持替换领域中的哪个关键默认假设？
 - **Design：** 哪个 load-bearing method primitive 真正从证据中推出？
 - **Evidence：** 这次运行诊断了什么，哪些解释和方法仍然存活？
-- **Expansion：** 一个可信正结果能否长成可复用的研究计划，而不只是更大的结果表？
+- **Expansion：** 一个由 artifacts 支撑的候选是否能长成可复用的研究计划，而不只是更大的结果表？
 - **Entry：** 当前贡献是否成熟到可以进入完整论文写作？
 
 在 explanatory pause 中，FIRM 会在正式投入方法前形成一个紧凑的问题模型：incumbent
@@ -101,15 +102,16 @@ Prize -> Fidelity -> Design -> Evidence -> Entry
 什么证据与该解释矛盾，以及干预应改变什么并保留哪些普通能力。这是更深入的分析，不是
 要求继续扩大 probe atlas。
 
-`research-review` 把两种外部视角分开。Codex 只稀疏地验证一个会改变当前决定的明确不确定性；可信正结果之前
-默认零调用。Gemini 是可选的创造型 co-PI，在充分经验
-证据已经值得形成 v1、一次信息充分的失败需要真正不同的 v2 primitive，或可信正结果可以
-长成更大可复用思想时参与。主 PI 根据实时证据动态编写 Gemini prompt，再负责 collision
+`research-pipeline` 把持续掌舵和有界协作分开。GPT PI 持续负责综合、方法选择和投稿，
+Claude 交付有界的实现与实验任务。独立 Codex 审查只稀疏地验证一个会改变当前决定的明确不确定性；
+这不限制 GPT PI 自己持续推理。Gemini 是可选的创造型 co-PI，在充分经验
+证据已经值得形成 v1、一次信息充分的失败需要真正不同的 v2 primitive，或一个由 artifacts
+支撑的候选能够长成更大可复用思想时参与。主 PI 根据实时证据动态编写 Gemini prompt，再负责 collision
 read、选择、实现和实验。两者都不是停止按钮，工具不可用也不会暂停研究。
 
 Gemini 协作使用 Antigravity CLI（`agy`），属于可选能力。经过模型固定验证的标准调用只在
 [`research-review`](skills/research-review/SKILL.md) 中维护；没有安装 `agy` 时，主 PI 仍继续推进，
-Codex 只在证据已经挣得的后期边界使用。
+独立 Codex 审查只在证据已经挣得的边界使用。
 
 ### 实际科研循环
 
@@ -117,12 +119,22 @@ Codex 只在证据已经挣得的后期边界使用。
   <img src="assets/operational-research-loop.svg" width="100%" alt="FIRM 实际科研循环：Prize、Fidelity、Design、Experiment、Evidence 和 Entry，以及由证据驱动的反馈">
 </p>
 
-这是一个持续更新的科研循环，不是强制阶段机。同一个研究者始终维护原始研究计划、当前
-论文、发现切片、方法谱系、scope debt、活动任务和下一步动作之间的一致性。
+这是一个持续更新的科研循环，不是强制阶段机。一个持续 PI 始终维护原始研究计划、当前
+论文、发现切片、方法谱系、scope debt、活动任务和下一步动作之间的一致性；Claude 与
+Gemini 提供有界协作，连续性由 artifacts 而不是协作者叙述承载。
 
 ## 30 秒安装
 
-在 Claude Code 中执行：
+要在 Trae Work 中使用持续 GPT PI，安装轻量 runtime adapter。它只把
+`research-pipeline` 及其 focused references 放入 GPT 的 skill 目录：
+
+```bash
+git clone https://github.com/Zarien-Li/FIRM.git ~/FIRM
+git clone https://github.com/Zarien-Li/research-skills-trae.git ~/research-skills-trae
+cd ~/research-skills-trae && ./install.sh ~/FIRM
+```
+
+要在 Claude Code 中使用有界实现和 specialist workflows，执行：
 
 ```text
 /plugin marketplace add Zarien-Li/FIRM
@@ -132,14 +144,14 @@ Codex 只在证据已经挣得的后期边界使用。
 
 安装后所有命令都位于 `/firm:` 命名空间，不会与其他插件的 skills 冲突。
 
-要在当前仓库中快速体验：
+要在支持 skills 的 GPT runtime 中快速体验：
 
 ```text
 /firm:research-pipeline "作为持续的一作接管这个项目：保留重要问题，建立可信基线，记录每个结果，只在证据包能区分解释时更新理论，构造可复用 primitive，只在证据成熟时进入论文。"
 ```
 
-`research-pipeline` 是持续研究负责人，不是一次性串行运行全部 16 个 skills 的宏。它先读取当前
-项目状态，选择一个最高价值动作，再只加载解决当前不确定性所需的 specialist。
+`research-pipeline` 是持续 GPT 研究负责人，不是运行整套 skill 库的宏。它自己的 focused references
+覆盖经验基础、方法成熟、执行、协作和投稿；specialist 只承担有界任务。
 
 ## 用一句组合需求生成项目
 
@@ -238,10 +250,10 @@ claude --append-system-prompt-file ~/FIRM/CLAUDE-RESEARCH.md
 
 | Discover | Build | Finish |
 |---|---|---|
-| 复现强基线，检查自然成功、失败和矛盾案例 | 把负结果转化为构造性方法谱系；可选调用 Gemini 共同发明证据已经挣得的 primitive | 仅让 Codex 解决一个会改变当前决定的明确不确定性，或做一次近终稿事实核验 |
+| 复现强基线，检查自然成功、失败和矛盾案例 | 把负结果转化为构造性方法谱系；让 Claude 有界实现、Gemini 受邀发明 | 由持续 GPT PI 把研究成熟到投稿；独立 Codex 只解决一个明确不确定性或近终稿事实核验 |
 | 在项目演化中持续保留原始研究计划和社区价值 | 区分实现、设计、优化、统计和迁移不确定性 | 让最终 claim 与控制实验、成本、局限、引用和原始产物保持一致 |
 
-一个持续研究者负责整个研究计划。Specialist skills 是按需加载的工具，不是刚性阶段机。
+一个持续 GPT PI 负责整个研究计划。Specialist workflows 与协作模型是有界工具，不是刚性阶段机或额外科学负责人。
 
 ## 从任意节点进入
 
@@ -292,7 +304,9 @@ FIRM 不是刚性阶段机。一个持续研究者负责整个研究计划，spe
 可复用 primitive、监督或数据引擎、可预测的跨任务规律或系统能力。Probe budget 用来
 验证 opening；paper budget 只集中给那些投入越大、中心科学贡献越强的想法。
 
-## 16 个 skills
+## 一个 PI skill 与十五个 specialist workflows
+
+`research-pipeline` 是 GPT 唯一持续 PI 入口；其余 workflows 用于有界 Claude 执行、严格核验和专业论文操作。
 
 - **研究入口：** `research-pipeline`、`frontier-direction-discovery`、`research-lit`、`baseline`
 - **诊断与方法：** `signal-analysis`、`method-primitive-synthesis`、`experiment-plan`、`research-review`
@@ -314,7 +328,8 @@ Agent 失败模式。
 | 2026 Q1 | 一个 realization 失败会关闭整个方法家族，坏设计又会触发浪费性的 seed expansion | 区分 run、realization、primitive 和 family failure，把构造性重设计设为默认 |
 | 2026 Q2 | 宽泛研究计划不断收缩成私有小切片，失败方法被重新包装成 analysis paper | 增加 scope debt、标准任务重新接入、positive-object test 和独立 paper entry |
 | 2026-06 | 在连续版本下开发的三篇经人工核验论文进入外部评审 | 9 份 ACL ARR 官方评审给出的 mean overall assessment 分别为 3.50、3.33 和 3.17 |
-| 2026-07-27 | 五个模型家族累计超过 100B model tokens，暴露出重复 Agent 失败与工作流重叠 | 将系统收敛为一个持续研究者和 16 个聚焦 skills |
+| 2026-07-27 | 五个模型家族累计超过 100B model tokens，暴露出重复 Agent 失败与工作流重叠 | 将系统收敛为一个持续研究者和聚焦 specialist workflows |
+| 2026-09 | 长上下文仍让多份“各自正确”的 skills 争夺科研所有权 | 将现有 `research-pipeline` 设为 GPT 唯一 PI 入口，把细节移到按需 references，并把 run 状态限制为纯机械事实 |
 
 为了保护仍处于双盲流程中的工作，这里只公开聚合评审分数。它们不是录用决定，也不是
 FIRM 因果效果的受控估计。所有计入的论文都经过人类作者阅读、核验和批准后才投稿。
@@ -324,7 +339,7 @@ FIRM 因果效果的受控估计。所有计入的论文都经过人类作者阅
 ```text
 FIRM/
 ├── .claude-plugin/   # Claude Code 插件与 marketplace 清单
-├── skills/           # 16 个可调用科研 skills 及其局部 references
+├── skills/           # 一个 GPT PI skill 与有界 specialist workflows
 ├── templates/        # 可选的项目级科研初始化模板
 ├── examples/         # 脱敏后的科研 Agent 失败案例
 ├── demo/             # 中性结果诊断 fixture 与演示脚本

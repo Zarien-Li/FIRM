@@ -82,10 +82,11 @@ designs, not exhaustive causal identification of the entire model.
 
 ### Independent collaboration follows comparative advantage
 
-The `research-review` skill uses Gemini selectively for evidence-earned creative
-invention and Codex sparingly for one named, decision-relevant verification. The lead PI owns
-interpretation, implementation, continuation, and paper decisions. External model
-output is design or criticism material, never a project gate.
+The `research-review` skill keeps one persistent GPT PI for synthesis, continuity, and
+submission; Claude supplies bounded implementation and experiment episodes, Gemini is
+invited for evidence-earned creative invention, and an independent Codex episode
+sparingly verifies one named decision-relevant uncertainty. External-model prose never
+becomes project authority; artifacts cross collaborator boundaries.
 
 ### Finishing is a scientific decision
 
@@ -133,12 +134,13 @@ public repository therefore emphasizes inspectable skills, neutral examples,
 explicit safety boundaries, and reproducible installation rather than a headline
 usage number.
 
-## Why only 16 skills
+## Why one GPT PI skill and bounded specialists
 
 FIRM does not try to win by containing every research utility. Literature APIs,
 benchmark launchers, plotting libraries, LaTeX tools, and general coding agents
-already exist. The 16 skills cover the points where research judgment most often
-changes the value of those tools:
+already exist. The existing `research-pipeline` is the one persistent GPT PI surface.
+Its focused references carry only the details needed by the current uncertainty;
+specialist skills remain bounded workflows for implementation and explicit operations:
 
 - choosing and preserving a consequential problem;
 - establishing credible empirical contact;

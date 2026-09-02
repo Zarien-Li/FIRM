@@ -2,7 +2,7 @@
   "name": "firm",
   "displayName": "FIRM — Research Judgment",
   "version": "1.2.0",
-  "description": "Research judgment skills for Claude Code: diagnose results, design methods, plan experiments, audit evidence, and write papers.",
+  "description": "One persistent GPT research-PI skill plus bounded Claude workflows for implementation, experiments, evidence, and papers.",
   "author": {
     "name": "Zeyan Li",
     "url": "https://github.com/Zoiya-Li"
@@ -16,6 +16,7 @@
     "experiments",
     "scientific-method",
     "paper-writing",
-    "claude-code"
+    "claude-code",
+    "gpt"
   ]
 }

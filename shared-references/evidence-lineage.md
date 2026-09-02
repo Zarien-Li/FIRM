@@ -40,7 +40,7 @@ When one item becomes invalid:
 2. compute the transitive set of dependent items;
 3. mark every dependent item `invalidated` unless it has an independent valid path;
 4. remove affected claims from the live claim set;
-5. mark central manuscripts `ENTRY HOLD` and update the authoritative state;
+5. remove or qualify dependent manuscript claims and update the authoritative state;
 6. scan tables, figures, drafts, handoffs, and summaries for stale references;
 7. preserve historical files, but label them invalidated rather than deleting them;
 8. restore a claim only through a new clean evidence item and explicit supersession.

@@ -7,9 +7,32 @@ requires. This is a validity review, not a fraud hunt and not a daily permission
 gate. Honest bugs, ambiguous estimands, weak treatment contrasts, and provenance
 mistakes are handled by repairing evidence, not by assigning intent.
 
-Use this protocol when an evaluator or baseline first becomes a claim-bearing
-anchor, when its semantics or code change, when a result is about to carry a
-consequential claim, or when concrete evidence raises a validity concern.
+Use the information-boundary part before the first result is allowed to guide method
+selection. Use the remaining dimensions when an evaluator or baseline first anchors a
+consequential decision, when semantics or code change, or when concrete evidence raises
+a validity concern. This is one early design responsibility plus targeted later checks,
+not a recurring audit ceremony.
+
+## Map Information Before Method-Guiding Evidence
+
+In the experiment plan or registration, trace the actual data and control flow from raw
+example to reported metric:
+
+- which records, labels, references, generated outputs, caches, and external models are
+  created from train, development, and test data;
+- which evidence chooses checkpoints, epochs, stopping, prompts, thresholds, slices,
+  readers, mechanisms, hyperparameters, and headline statistics;
+- for temporal, online, editing, retrieval, interactive, or stateful systems, what is
+  available at each decision time and when mutable state is updated;
+- whether precomputed embeddings, retrieval banks, demonstrations, targets, teacher
+  outputs, or baseline predictions contain evaluation or future information;
+- which population and evaluator transform raw outputs into the optimization and
+  reported quantities.
+
+The first method-guiding result cannot be interpreted until this map is explicit and a
+known case traverses the same path. Exploration may use development evidence, but label
+it as such and keep confirmatory evidence independent from every choice it evaluates.
+If the map changes, invalidate dependent results rather than adding a caveat.
 
 ## Eight Validity Dimensions
 

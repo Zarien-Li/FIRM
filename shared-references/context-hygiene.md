@@ -52,17 +52,34 @@ Training and remote jobs should write configs, logs, checkpoints, metrics, and e
 
 Prefer detached or scheduler-managed remote execution when appropriate to the project's server rules. Do not impose one universal `screen`, `tmux`, Slurm, Docker, or provider pattern over project-specific instructions.
 
-## Re-Anchor Before Refreshing A Session
+## Re-Anchor Operations, Refresh Scientific Identity
 
-Do not start a new session automatically at a supposed research stage boundary. Refresh only when context quality has measurably degraded or isolation would clearly improve work, for example repeated loops, invented paths, forgotten established evidence, duplicated actions, or overwhelming raw logs.
+For an ordinary interruption, skill update, or one-off compaction, re-anchor from current
+project authority, the concise state, exact raw artifacts needed for the live question,
+and active jobs. Do not restart merely because a command failed or a phase label changed.
 
-After compaction, interruption, a major reframe, or a skill update, **re-anchor first in the active session**: reread current project instructions, the concise authoritative state, the exact raw artifacts needed for the live question, active-job records, and the next action. Correct stale summaries in place. If this restores reliable orientation, continue without changing sessions.
+Prefer a fresh scientific episode and context when continuity of the old narrative is
+more dangerous than its convenience:
 
-Refresh only if re-anchoring does not cure measurable context contamination or if a genuinely independent review requires isolation. Before refreshing, update the existing authoritative research state with current belief, contrary evidence, method lineage, active jobs, durable paths, and next action. The new session repeats the same re-anchor. Validated evidence survives; stale procedural labels and old stop language do not.
+- central evidence or evaluator is invalidated;
+- the governing primitive, operational effect, or paper identity materially changes;
+- the PI's artifact-grounded candidate judgment changes the work from construction to
+  submission maturation;
+- project ownership passes between the GPT PI and a Claude implementation episode;
+- repeated compaction, invented paths, duplicated actions, or forgotten contrary
+  evidence makes the old context an unreliable evidence index.
+
+Do not ask the same model to prove that its own framing is contaminated. Before the
+boundary, update the sole state from artifacts, preserve active process identities, and
+name the exact live question. The receiving context rereads authority and raw evidence;
+it does not inherit method certainty, stop language, or maturity from conversation
+history. Do not interrupt a valid run merely to refresh its surrounding conversation.
 
 Running sessions do not automatically absorb skill changes from disk. After the current atomic action, explicitly ask an active session to reread the changed canonical skills when the update affects its behavior. Do not interrupt a valid experiment to do so.
 
-Structured handoff artifacts, specialist reports, and state patches are optional. Use them when several actors, runs, or claims need durable coordination; otherwise write the compact evidence-linked update directly into the existing authoritative state. Do not create paperwork merely to permit continuation.
+Structured handoff artifacts remain optional. For GPT/Claude transfer, the sole state,
+bounded delegation question, code diff, raw artifacts, and execution truth are the
+handoff; neither model writes a competing thesis file.
 
 ## Judgment Over Quotas
 

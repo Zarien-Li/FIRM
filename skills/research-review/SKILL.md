@@ -1,18 +1,41 @@
 ---
 name: research-review
-description: Use Gemini selectively as a creative co-PI and Codex sparingly to resolve one named, decision-relevant uncertainty. Let the lead PI and real evidence drive discovery, construction, repair, re-grounding, and paper judgment; never turn external criticism into a project gate or an unbounded objection search.
+description: Coordinate a persistent GPT research PI, bounded Claude implementation/experiment episodes, selective Gemini invention, and sparse independent Codex verification without creating parallel thesis owners or review gates.
 ---
 
 # Independent Research Collaboration
 
-The lead researcher owns field contact, explanations, selection, synthesis,
-implementation, continuation, and paper decisions. Gemini is a selective creative
-co-PI. Codex is a deliberately sparse independent verifier for a named uncertainty,
-not a recurring critic, scientific judge, experiment queue, or acceptance oracle.
+The persistent GPT researcher owns field contact, explanations, construction selection,
+synthesis, continuity, candidate judgment, and paper decisions. Claude supplies
+bounded implementation and experiment episodes. Gemini is a selective creative co-PI.
+An independent Codex call is a sparse verifier for a named uncertainty, not a recurring
+critic, scientific judge, experiment queue, or acceptance oracle.
+
+Do not confuse the persistent GPT PI with an independent Codex review. The PI reasons
+throughout the project and may directly inspect evidence, revise methods, or delegate
+work. The sparse policy below applies only when the PI creates a separate reviewer
+episode whose purpose is independent criticism or verification.
+
+## Delegate Implementation Without Delegating The Thesis
+
+Give Claude one bounded scientific question with the accepted task and information
+contract, relevant code and evidence, decisive comparator, success and invalidity
+conditions, writable paths, and expected durable artifacts. Claude may diagnose and
+repair implementation, optimizer, evaluator, or integration failures and may report
+that the assigned premise is contradicted. It returns raw paths, factual outcomes,
+contrary cases, and the design consequence; it does not silently choose a new broad
+problem, governing primitive, paper identity, or submission judgment.
+
+The GPT PI reads Claude's artifacts rather than trusting its prose summary, integrates
+the result into the sole scientific state, and decides the next research question.
+Avoid long-running parallel Claude PI sessions, competing state files, or delegation
+packets that prescribe the desired result. A new Claude episode is preferred when the
+scientific question materially changes; validated artifacts, not conversation history,
+carry continuity.
 
 ## Sparse Codex Policy
 
-Default to **zero Codex calls** during empirical contact, explanation formation,
+Default to **zero independent Codex review calls** during empirical contact, explanation formation,
 creative invention, the smallest real realization, ordinary negative-result repair,
 frame locking, and program re-grounding. The PI should usually let accepted-task
 evidence answer a design question before requesting external verification. A long or
@@ -22,13 +45,13 @@ value, or useful work.
 Codex is useful only when the PI can name the uncertainty and the current decision it
 could reverse. Common high-value uses are:
 
-1. one decision-focused check after a credible positive object exists, but only when a
+1. one decision-focused check after an artifact-grounded candidate judgment, but only when a
    named ownership, validity, or design uncertainty could reverse paper-sized compute
    or expensive expansion;
 2. a near-final factual, claim, citation, or proof audit with exact objects to verify.
 
 A material paper-identity transition is one special version of the first use. After a
-credible side result exists and before it inherits paper-sized investment, a single
+artifact-backed side result exists and before it inherits paper-sized investment, a single
 bounded check may ask only: does the new object still serve the authorized program,
 what independent community prize exists at its exact scope, and which functional or
 mechanistic prior work most threatens ownership? The packet must include the fresh
@@ -98,7 +121,7 @@ construction. Typical high-leverage moments are:
 
 - competent natural contact has earned a design opportunity before the first v1;
 - an informative failed realization has revealed what a v2 primitive must replace;
-- a credible positive realization may support a larger reusable primitive or research
+- an artifact-grounded candidate may support a larger reusable primitive or research
   program.
 
 These are examples for scientific judgment, not mandatory stages, counters, or
@@ -137,9 +160,9 @@ does not change paper maturity.
 ## Decision-Focused Construction Check
 
 Do not use this check to pre-screen the PI's or Gemini's principle. Implement the
-smallest real realization first whenever feasible. Use it only after a credible
-positive object exists and a named uncertainty could reverse exceptional paper-sized
-spend. Provide the natural problem, competent substrate, nearest-rival threat, expected
+smallest real realization first whenever feasible. Use it only after the PI has an
+artifact-grounded candidate argument and a named uncertainty could reverse exceptional
+paper-sized spend. Provide the natural problem, competent substrate, nearest-rival threat, expected
 value, realized behavior, proposed construction arc, and the one decision at stake.
 
 Ask Codex to:
@@ -161,8 +184,9 @@ The output is a short decision memo, not an issue inventory or serial probe chec
 
 ## Program Expansion
 
-Use after a credible positive realization has survived a meaningful component
-comparison and relevant utility check. Gemini and the lead PI own creative expansion.
+Use when the PI judges from artifacts that a candidate merits expansion after a
+meaningful component comparison and relevant utility check. This is a scientific
+judgment, not a fixed status transition. Gemini and the lead PI own creative expansion.
 Codex may receive one bounded packet before paper-sized investment when it can resolve
 a specific ownership, validity, or evidence uncertainty that would change that
 investment.
@@ -283,7 +307,7 @@ whether it changes the current design, claim, or resource decision. If it does, 
 the smallest decisive evidence and its opportunity cost. Otherwise reply `no material
 change`. Do not search for additional objections or optional strengthening work.
 
-Program Expansion: Given this credible positive realization, assess the largest
+Program Expansion: Given this artifact-grounded candidate argument, assess the largest
 scientific form of the same principle, its reuse and adoption, and which predicted
 expansions strengthen the contribution. Distinguish expansion from table breadth and
 submission defense.

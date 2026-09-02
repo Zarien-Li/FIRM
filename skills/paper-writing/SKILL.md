@@ -1,6 +1,6 @@
 ---
 name: paper-writing
-description: Plan, draft, compile, and verify a research paper from validated evidence. Use for paper structure, section writing, reproducible figures, LaTeX compilation, numeric claim checking, or a full evidence-to-PDF workflow. It owns authorship and orchestration, while independent scientific, experiment, and citation audits remain in their dedicated skills.
+description: Form, draft, mature, compile, and verify a research paper from validated evidence through a submission-ready package. Use for paper structure, section writing, reproducible figures, LaTeX compilation, manuscript-driven scientific gap discovery, numeric claim checking, or a full evidence-to-submission workflow. It owns authorship and orchestration, while independent scientific, experiment, and citation audits remain in their dedicated skills.
 ---
 
 # Paper Writing
@@ -17,7 +17,8 @@ Resolve the request before loading details:
 - `figures`: generate reproducible figures and tables;
 - `compile`: build and visually inspect the PDF;
 - `claim-audit`: verify manuscript claims and numbers against raw evidence;
-- `full`: run the applicable modes in order;
+- `full`: iterate research, authorship, verification, and assembly until the bounded
+  paper is submission-ready or one explicit user-owned action remains;
 - `research-draft`: organize a provisional positive object without implying paper entry.
 
 Load only the needed reference:
@@ -29,21 +30,28 @@ Load only the needed reference:
 
 Do not recursively invoke `paper-writing` from its own modes.
 
+`full` does not mean "produce one complete draft." The first coherent draft is an
+integration test. If it exposes a missing claim-bearing result, unresolved decisive
+rival, invalid evaluator, changed method identity, or material cost/scope gap, return
+that exact issue to the owning research skill, then revise the manuscript from the new
+evidence. Continue until the package satisfies the submission boundary below. Do not
+manufacture completeness through prose or open unrelated experiments.
+
 ## Establish The Writing Boundary
 
 Read the authoritative research state, original program, raw decisive results, method
 specification, strongest fair comparisons, relevant audits, venue rules, and current
 manuscript. Treat drafts and prior reviews as claims to verify.
 
-Do not create a submission-shaped manuscript until research has produced a credible
-positive method or an independently valuable, independently confirmed non-method
-object. Earlier writing may clarify the reader, prior belief, surprise, stakes, and
-missing evidence, but it cannot turn an immature object into a paper. A
-`research-draft` may organize a provisional positive object without implying paper
-maturity.
+Do not treat a submission-shaped manuscript as mature until the PI can defend an
+artifact-grounded method candidate or independently valuable, independently confirmed
+non-method object. Earlier writing may clarify the reader, prior belief, surprise,
+stakes, and missing evidence, but it cannot turn an immature object into a paper. A
+`research-draft` may organize a provisional positive object without implying maturity.
 
-For submission-oriented writing, require an evidence-bearing `PAPER_ENTRY.md` owned by
-the lead PI and grounded directly in raw evidence. It must establish:
+Do not create a paper-entry status file or automated maturity gate. The lead PI writes
+one claim-dependent candidate argument in the paper portion of `PROJECT_STATE.md`,
+grounded directly in raw evidence. It should make clear:
 
 - important natural or standard problem;
 - positive object and exact contribution type;
@@ -52,7 +60,7 @@ the lead PI and grounded directly in raw evidence. It must establish:
   evaluator, and matched resource budget;
 - a bounded, claim-sufficient set of decisive healthy published-method comparisons,
   including the strongest incumbent and directly claim-threatening rival known at
-  freeze time;
+  the time of the judgment;
 - an end-to-end realized method with a meaningful pre-specified advantage: either
   primary-metric superiority or a defensible Pareto gain in capability, quality,
   robustness, coverage, latency, memory, compute, supervision, or adoption cost;
@@ -64,7 +72,7 @@ the lead PI and grounded directly in raw evidence. It must establish:
 If the current contribution materially differs from the original program or preceding
 construction lineage in operational effect, intervention locus, intended adopter,
 accepted value surface, or contribution type, prior paper maturity does not transfer.
-The entry must cite a fresh literature decision for the new identity, including the
+The PI's argument must cite a fresh literature decision for the new identity, including the
 strongest functional rival and nearest mechanistic rival, and record one bounded
 independent check of prize, program fidelity, and ownership. That check may return
 `no material change`; it must not produce a general review, experiment menu, or higher
@@ -73,22 +81,18 @@ evidence bar.
 Comparison membership is determined by what systems actually do under their deployment
 contracts, not by the manuscript's nouns. Claim narrowing cannot delete a stronger
 functional alternative. A zero-regression or retention result guaranteed by selective
-routing is a design property, not an empirical advantage; the entry must instead show
+routing is a design property, not an empirical advantage; the argument must instead show
 utility on the affected population, end-to-end population value, coverage, and total
 cost. Counts of experiments, scripts, audits, pages, PDFs, or release artifacts provide
 no paper-entry evidence.
 
 Do not require a parallel matrix of maturity fields or a fresh Codex verdict. An
 optional near-final independent check may verify one named factual, claim, citation, or
-proof uncertainty after the paper object exists. If a load-bearing anchor is later downgraded,
-submission-oriented writing returns to hold while independent text and artifacts
-remain preserved.
-
-If entry is absent or `HOLD`, `plan`, `research-draft`, narrow editing, and compilation
-may continue when they clarify the positive object or expose a scientific gap, but
-label them `research draft - ENTRY HOLD`. Do not write submission-ready claims, polish
-an immature candidate into apparent maturity, or let prose displace evidence
-acquisition.
+proof uncertainty after the paper object exists. If a load-bearing anchor is later
+downgraded, revise the candidate argument and every dependent claim while preserving
+independent text and artifacts. Planning, provisional drafting, narrow editing, and
+compilation may still expose scientific gaps; do not polish an immature candidate into
+apparent maturity or let prose displace evidence acquisition.
 
 A method program cannot become an analysis paper because its methods failed. A changed
 contribution type requires an independently valuable object, independent confirmation,
@@ -281,6 +285,14 @@ Once an important bounded contribution, positive object, decisive comparison, an
 paper-critical evidence are stable, open new experiments only when they could change
 correctness, importance, novelty, the object itself, or a likely reviewer decision.
 Otherwise finish the paper. Research can remain open after submission.
+
+Do not report project completion at the first full draft, first compiled PDF, or first
+passing prose edit. Completion means `references/submission.md` can truthfully explain
+that the bounded package is ready apart from the user's final factual, authorship, and
+upload decisions. If it cannot, name the smallest evidence-grounded maturation agenda, assign
+each item to its scientific or writing owner, execute the reversible items, and return
+to assembly. A missing optional breadth experiment or speculative reviewer preference
+does not belong on that agenda.
 
 For final output, follow `references/submission.md` and report deliverable paths,
 compilation status, audit freshness, unresolved factual or presentation issues,

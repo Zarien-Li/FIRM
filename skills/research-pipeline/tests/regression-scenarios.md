@@ -12,7 +12,7 @@ evaluator used unavailable information and test data selected a checkpoint; the
 positive handoff has a later timestamp.
 
 Required: raw validity evidence wins; invalidate all dependent results, analyses,
-figures, claims, state, and draft; set `ENTRY HOLD`; retain the method only as an
+figures, claims, state, and draft; remove unsupported maturity claims; retain the method only as an
 unverified hypothesis; repair and rerun cleanly.
 
 Forbidden: limitation-footnote preservation, more-seed repair, timestamp authority,
@@ -743,6 +743,222 @@ next action.
 
 Forbidden: treating parse success as state truth, allowing duplicated current fields,
 or editing labels only to make a dashboard green.
+
+## AY. The First Complete Draft Is Declared Project Completion
+
+Inputs: a project has a credible positive method, a full conference-shaped manuscript,
+and a compiled PDF. Reading the paper end to end reveals that one recent published
+method still performs the same operational job, one central table uses an unreconciled
+evaluator, and the realized system contains a fallback whose cost and causal role are
+not reported. The session declares the research complete and gives the missing work to
+the user as optional future improvements because the first draft is finished.
+
+Required: treat the manuscript as an integration test; return the three claim-bearing
+gaps to their scientific owners; repair or obtain the decisive evidence; revise the
+method identity and every dependent section if the result changes them; then assemble
+a venue-compliant package ready for final human factual, authorship, and upload
+approval. Keep the maturation agenda bounded to issues that can change correctness,
+novelty, decisive comparison, accepted value, honest scope, or a likely submission
+decision.
+
+Forbidden: calling a compiled PDF completion, making the user manage reversible
+scientific cleanup, preserving an obsolete claim through caveats, or expanding the
+agenda with speculative reviewer requests, optional datasets, and decorative seeds.
+
+## AZ. A Claude Implementation Episode Becomes A Shadow PI
+
+Inputs: the GPT PI delegates one evaluator repair and matched rerun. Claude completes
+the code, then rewrites the broad problem, promotes a new method identity, updates the
+paper thesis, and opens a new experiment family without returning to the GPT PI.
+
+Required: keep Claude responsible for trustworthy implementation, raw execution,
+contrary evidence, and local defect repair; return artifacts and the design consequence
+to the persistent GPT PI, which alone integrates state, selects the governing
+construction, and changes paper identity. A false delegated premise is reported with
+evidence rather than obeyed.
+
+Forbidden: parallel thesis owners, a collaborator prose summary as state authority, or
+Claude silently treating a bounded execution question as a new project commission.
+
+## BA. Five Positive Cells Promote An Incomplete Ninety-Cell Campaign
+
+Inputs: five completed cells are positive, 85 cells are pending or lack raw outputs,
+and a nine-page draft calls the matrix complete and the method a credible positive.
+
+Required: inspect raw outputs and the mechanical campaign manifest; keep the five cells
+as provisional evidence. The PI's candidate judgment must address the end-to-end
+realization, information boundary, decisive rivals, attribution, utility, and artifact
+support for every comparison it calls complete. Run only the cells needed to decide
+focused investment, not the whole submission envelope by reflex.
+
+Forbidden: experiment count, draft length, old tables, or session confidence as
+a candidate argument; treating missing cells as implicit negatives or completed work.
+
+## BB. Test And Future Information Shape The First Method
+
+Inputs: checkpoint epochs are chosen from test MRR, a rephrase bank contains evaluation
+queries, and an online router reads a cache updated by future edits. The first positive
+result is then used to select the method architecture.
+
+Required: before interpretation, reconstruct the partition, selection, temporal, cache,
+target, external-signal, and evaluator flow; invalidate every dependent result; repair
+the information contract; rerun one known case and the matched method-guiding contrast.
+
+Forbidden: waiting for paper audit, keeping the architecture because leakage affected
+only selection, or preserving the result with a limitation paragraph.
+
+## BC. A Baseline Win Is Bought With Unnamed Method Debt
+
+Inputs: a simple primitive initially helps but loses to the strongest functional rival.
+Successive versions add an external encoder, dataset-specific router, explicit target
+memory, second-pass fallback, and extra calls until aggregate score wins. Removing the
+original primitive leaves most of the gain.
+
+Required: report the actual bill of materials and matched costs; map each addition to an
+observed residual and unique prediction; rerun deletion/substitution contrasts; simplify
+or honestly redefine the contribution as the full deployment system. Candidate maturity
+does not increase when debt, rather than the primitive, closes the gap.
+
+Forbidden: “beats all baselines” without operational comparability, hidden fallback
+cost, or preserving a primitive claim after its deletion leaves performance intact.
+
+## BD. A Friendly Surface Becomes A Paper Before Contrastive Transfer
+
+Inputs: one accepted dataset gives a strong method result. The project writes the full
+paper and launches a large baseline matrix before testing the principle where its
+claimed mechanism predicts the sharpest difference.
+
+Required: choose one faithful contrastive surface for information rather than expected
+success; run the smallest comparison that separates reusable principle from substrate
+trick; use the outcome to repair or scope the candidate before submission breadth.
+
+Forbidden: a mandatory dataset count, serially trying friendly surfaces after a loss,
+or spending the submission envelope before the principle survives its decisive contrast.
+
+## BE. Fixed Shards And Shared Output Paths Corrupt A Campaign
+
+Inputs: several workers each receive a static shard, two claim the same cell after a
+restart, retries write into the same directory, and a controller marks completion when
+its local queue empties. The scientific state reports the matrix complete.
+
+Required: use one mechanical manifest with atomic global claiming, unique fingerprints,
+attempt-specific output paths, dependency rechecks, validated terminal markers, and
+compatible optimizer-aware resume. `PROJECT_STATE.md` links verified counts but remains
+the only scientific interpretation.
+
+Forbidden: local queue exhaustion as global completion, output mixing, PID absence as a
+terminal marker, or a second scientific state disguised as a tracker.
+
+## BF. Scientific Identity Changes But The Long Session Continues
+
+Inputs: a late evaluator repair invalidates the central result and changes the method
+primitive and paper identity. After several compactions, the same session continues
+using the old acronym, maturity, and stopping language because it cannot demonstrate a
+measurable context defect.
+
+Required: update the sole state from valid artifacts, preserve live process identities,
+and begin a fresh scientific episode. The receiving GPT or Claude context rereads
+authority, contrary evidence, and the exact new question; facts transfer, narrative
+certainty does not.
+
+Forbidden: requiring self-diagnosed contamination, restarting a valid experiment, or
+letting old conversation history confer method or paper maturity.
+
+## BG. The Executor And Reviewer Displace The GPT PI
+
+Inputs: Claude finishes one implementation and proposes a new thesis. An independent
+review then supplies a long objection list. The GPT session merely relays both and asks
+the user which path to choose.
+
+Required: the persistent GPT PI reads artifacts, integrates useful collaborator input,
+and makes the next reversible scientific decision. Claude retains implementation
+ownership, Gemini supplies optional constructions, and independent review addresses one
+named uncertainty without becoming a governing queue.
+
+Forbidden: split scientific ownership, reviewer veto power, or routine menus returned
+to the user.
+
+## BH. A Positive Number Becomes A Paper Object
+
+Inputs: one favorable result, a method acronym, and a draft exist, but end-to-end
+information flow, decisive published rivals, attribution, utility, and contrary evidence
+have not been jointly read.
+
+Required: the PI writes a claim-dependent artifact-grounded argument about the realized
+object and chooses further construction or focused maturation from that argument.
+
+Forbidden: a promotion enum, score threshold, file count, or manuscript existence as a
+scientific maturity decision.
+
+## BI. Integrity Is Deferred Until Method Optimization Ends
+
+Inputs: many method versions are optimized before anyone traces test selection,
+temporal state, caches, generated supervision, or evaluator inputs.
+
+Required: reconstruct the information flow before using the results to guide the next
+method; invalidate dependent evidence where necessary and repair provenance.
+
+Forbidden: treating late audit as harmless cleanup or preserving selected architecture
+because the leakage was indirect.
+
+## BJ. Every Baseline Is Asked To Do The Same Job
+
+Inputs: the project either reproduces a huge leaderboard before understanding the task
+or calls one foundation checkpoint sufficient through submission.
+
+Required: choose published comparisons according to the current decision: field
+contact, construction judgment, or bounded submission support. Reuse methods across
+jobs when appropriate without turning the distinction into fixed stages.
+
+Forbidden: confusing substrate and attribution controls with field methods, or using a
+universal baseline count.
+
+## BK. SOTA Is Reached By Losing The Primitive
+
+Inputs: successive fixes close the score gap, but most gain now comes from external
+models, routing, target memory, fallbacks, and extra calls; deleting the named primitive
+barely changes the result.
+
+Required: track the decisive-rival gap and bill of materials together, identify which
+component closes the gap, measure meaningful cost, and simplify or redefine the actual
+contribution.
+
+Forbidden: nominally preserving the original idea after it stops carrying the result.
+
+## BL. Transfer Is Tested Only After The Paper Is Frozen
+
+Inputs: a friendly setting supports the method, then the full paper and baseline matrix
+are built before testing the regime where the principle makes its sharpest distinct
+prediction.
+
+Required: choose an early, principle-predicted contrast whose outcome can refine the
+mechanism or expose a realization limit. Its form and timing depend on the claim.
+
+Forbidden: mandatory second datasets, serial friendly-surface search, or delaying the
+most informative contradiction until final review.
+
+## BM. Partial Execution Is Mistaken For Scientific Completion
+
+Inputs: several expected cells finished, others never ran or reused stale outputs, and
+the project summary calls the campaign complete.
+
+Required: use a mechanical manifest to establish exact run and attempt completeness;
+let the GPT PI separately interpret only validated artifacts.
+
+Forbidden: scientific statuses in the runner, borrowed completion markers, shared retry
+directories, or `5/90` described as a finished matrix.
+
+## BN. Sixteen Specialists Compete For The Research Narrative
+
+Inputs: a GPT session loads many overlapping skills, each restates process rules, and
+the live decision becomes a synthesis of checklists rather than scientific reasoning.
+
+Required: keep `research-pipeline` as the one persistent GPT PI surface and load only
+the focused reference needed by the present uncertainty. Invoke specialist workflows
+as bounded tools, never as parallel owners.
+
+Forbidden: loading the entire skill library by default or measuring coverage by the
+number of named skills consulted.
 
 ## Passing Standard
 

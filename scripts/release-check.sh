@@ -34,6 +34,9 @@ required=(
   scripts/validate_project_state.mjs
   scripts/lib/project-contract.mjs
   scripts/test_project_generator.mjs
+  skills/run-experiment/references/campaigns.md
+  skills/run-experiment/scripts/campaign_manifest.py
+  skills/run-experiment/tests/test_campaign_manifest.py
   templates/CLAUDE_FIRM_BLOCK.md
   demo/fixture/CLAUDE.md
   demo/fixture/RESULT.md
@@ -58,6 +61,8 @@ PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/validate_skills.py"
 PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/check-research-contract.py"
 PYTHONDONTWRITEBYTECODE=1 python3 \
   "${ROOT_DIR}/skills/research-audit/tests/test_evidence_lineage.py" -v
+PYTHONDONTWRITEBYTECODE=1 python3 \
+  "${ROOT_DIR}/skills/run-experiment/tests/test_campaign_manifest.py" -v
 bash "${ROOT_DIR}/scripts/test-onboarding.sh"
 node "${ROOT_DIR}/scripts/test_project_generator.mjs"
 node "${ROOT_DIR}/scripts/tests/test_project_generation_prompt.mjs"

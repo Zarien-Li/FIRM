@@ -323,6 +323,8 @@ function buildEpisodeDirective(project) {
 Claim-bearing 研究必须忠实于本项目 seed 的任务、模型规模、训练方式、信息边界和算力范围（${project.computeEnvelope}）。便宜 proxy 只有在证明 incumbent 现象与 rival 排序仍成立后才能承载主张。若动机中的 incumbent 效应只因模型或任务被缩小而消失，不要围绕这个 proxy 异常发明论文方法，应回到忠实基质。
 
 等待 GPU 是运行事实，不是新的科学阶段。完成真正有用且互不依赖的准备后，保持所选实验稳定；不要用重复审计、hash、checklist、方法菜单或备用 packet 代替运行。
+
+项目的完成目标是等待用户最终事实、作者和上传确认的投稿包，不是第一版完整稿或第一次编译成功。把第一版稿当作科学集成测试：若它暴露承重 baseline、evaluator、method identity、transfer、utility 或 cost 缺口，继续完成对应研究并重写依赖内容；若新增工作只会形成防御性 breadth 或装饰表格，则及时收口。
 `;
 }
 
@@ -414,13 +416,14 @@ function buildProjectState(project) {
       mainRisk: "Prematurely converting the selection lens or a diagnostic proxy into the project identity.",
     },
     positiveObject: {
-      exists: false,
+      assessment: "The PI has not yet established a paper-sized research candidate from current artifacts.",
       description: "none",
       evidence: [],
     },
+    campaignManifest: null,
     paper: {
       status: "Not started.",
-      spine: "None; no credible positive object exists.",
+      spine: "None; the PI has not established a paper-sized candidate from current artifacts.",
       missingEvidence: "Faithful published-method contact, a natural problem account, and a positive deployable realization.",
     },
     gpu: {

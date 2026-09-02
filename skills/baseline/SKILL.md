@@ -41,6 +41,26 @@ optimizing a proposed method, reproduce at least one strong recent published met
 and identify the nearest serious published rival, or record the concrete reproduction
 blocker and keep method claims provisional.
 
+## Give Baselines Three Different Jobs
+
+Do not wait for one giant comparison matrix, and do not let one early incumbent stand
+for the eventual paper. Maintain three claim-dependent envelopes:
+
+- **Empirical contact set:** before locking the problem or method, reproduce a competent
+  recent incumbent on the accepted surface, inspect raw behavior, and identify the
+  closest operational and mechanistic neighbors.
+- **Candidate-judgment set:** before paper-sized optimization, fairly compare the
+  realized method with the strongest functional rival and nearest mechanistic rival
+  that could erase its value or novelty, plus the matched attribution control.
+- **Submission envelope:** for a candidate worth focused maturation, cover the published methods,
+  accepted surfaces, model regimes, reliability, and efficiency evidence expected by
+  the actual bounded claim and target community.
+
+These are responsibilities, not fixed paper counts or stages. A method may be explored
+while an expensive comparator is being repaired, but the PI's candidate argument must
+acknowledge incomplete or semantically weak rival evidence. Do not run the submission
+envelope before an informative candidate exists merely to manufacture apparent maturity.
+
 ## Select The Evidence Surface
 
 Name one accepted `benchmark_anchor`: a standard task, deployed workflow, or natural
@@ -69,6 +89,10 @@ labels, future context, privileged annotations, and clean subsets may locate hea
 they do not establish a deployable opening. Before method formation, either realize the
 principle from available inputs on the canonical object or keep it as an unresolved
 diagnostic opportunity.
+
+Before the first result guides method choice, use
+`../shared-references/experiment-integrity.md` to record the train/development/test,
+temporal, cache, target, external-signal, and checkpoint-selection flow in the run plan.
 
 Choose, within realistic resources:
 

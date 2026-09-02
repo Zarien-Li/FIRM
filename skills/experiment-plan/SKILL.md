@@ -23,12 +23,18 @@ Read the Program Compass and identify:
 
 Plan at the resolution of the episode. Early empirical contact may legitimately learn
 about natural behavior without naming a paper contribution. A construction arc should
-have one central design question across versions. Paper-oriented campaigns begin only
-after a credible positive object exists.
+have one central design question across versions. Paper-oriented campaigns are useful
+when the PI's artifact-grounded candidate argument makes their scientific return clear.
 
 Before substantial compute, state the best scientific consequence if the episode
 succeeds. If perfect success only fixes a private cell with no independent value or
 accepted-surface return, revise the question before scaling.
+
+Before the first result is allowed to choose or reshape a method, read
+`../shared-references/experiment-integrity.md` and put the information-boundary map in
+the run record: partition use, selection variables, temporal availability, mutable
+state, caches, targets, external signals, and evaluator path. This is part of defining
+the experiment, not a late paper audit.
 
 ## Use Two Resource Postures
 
@@ -36,9 +42,9 @@ Use a **research/probe budget** to obtain competent contact, distinguish explana
 activate a construction, and learn component jobs. Cheapness is not the goal; enough
 contact to make a sound design decision is.
 
-Use a **paper/expansion budget** only after a credible positive object exists and the
-principle is important, not absorbed by the nearest rival, and plausibly reusable or
-consequential. Spend it on dimensions that strengthen the central contribution:
+Use a **paper/expansion budget** when direct artifact reading supports focused
+maturation and the principle appears important, not absorbed by the nearest rival, and
+plausibly reusable or consequential. Spend it on dimensions that strengthen the central contribution:
 accepted-task value, principle-predicted transfer, scale/model behavior, reusable data
 or supervision, mechanism, reliability, and adoption cost.
 
@@ -52,8 +58,8 @@ the table. Package those optional expansions for the designated high-compute mac
 Run them locally only when their outcome can still change correctness, novelty, the
 central claim, or submission viability. This is not permission to stop at a pilot or omit
 owed evidence; it is a placement rule for work beyond the submission-sufficient core.
-A project with no credible positive object and no submission-sufficient paper is never
-`post_sufficiency_scale`. Failure of one construction family may close that family, but
+A project without an artifact-grounded candidate argument and submission-sufficient paper
+cannot justify optional post-sufficiency scale by its own label. Failure of one construction family may close that family, but
 cannot use this compute policy to terminate or transfer the broad program; re-ground
 the program and separate substrate, problem, incumbent, and construction failures first.
 
@@ -198,7 +204,7 @@ or mistake the proposal for experimental progress.
 
 ## Plan Expansion After A Positive Object
 
-After the first credible positive construction, let the lead PI and optionally Gemini
+When a candidate merits focused maturation, let the lead PI and optionally Gemini
 form the Program Expansion view. Before a large campaign, one sparse Codex pass may
 test a named fatal validity or ownership risk; it is not a mandatory gate. Select only
 axes predicted by the same principle:
@@ -208,6 +214,15 @@ axes predicted by the same principle:
 - accepted tasks, modalities, natural systems, model families, generations, or scale;
 - mechanism evidence separating the principle from the nearest rival;
 - utility and adoption.
+
+Before writing the full submission matrix, choose one accepted **contrastive surface**
+whose mechanism, data geometry, temporal structure, model family, or operating regime
+makes the governing principle predict a meaningfully different outcome. Run the
+smallest faithful comparison that can distinguish a reusable primitive from a
+single-substrate trick. Select it for information, not friendliness. A negative result
+may narrow, repair, or replace the principle before large breadth; it does not demand a
+serial dataset search. When the intended claim is inherently single-surface or no
+faithful contrast exists, state that scope instead of manufacturing a second dataset.
 
 Commit to one campaign-level prediction and read its failure into the construction.
 Do not replace a failed precondition or transfer with a succession of datasets chosen

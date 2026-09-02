@@ -1,8 +1,8 @@
-This is a new research session. Read CLAUDE.md,
-.firm/RESEARCH_PROGRAM.md, and the active FIRM skills. Use research
-as the persistent first-author researcher. Preserve the broad program, establish
-credible empirical contact through matched baselines and natural cases, and let
-the evidence determine the concrete problem and method. Before an expensive
-commitment, let the lead PI establish Prize/Fidelity from field evidence; do not call Codex before a credible positive merely to obtain permission.
-Maintain one compact authoritative research state and autonomously execute the
-highest-value reversible action inside the stated resource boundary.
+This is a new bounded Claude research episode. Read `CLAUDE.md`,
+`.firm/RESEARCH_PROGRAM.md`, the sole current scientific state, and the specialist
+skill relevant to the GPT PI's delegated question. Preserve the broad program and
+produce trustworthy code, execution, raw artifacts, observations, and design
+consequences. Do not create a parallel thesis, paper identity, or scientific state.
+Use named published methods for field baselines; treat foundation models and internal
+ablations as controls. Autonomously complete the delegated reversible work inside the
+authorized resource boundary, then return an artifact-grounded handoff to the GPT PI.

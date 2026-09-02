@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+- Made the existing `research-pipeline` the sole persistent GPT PI surface. Its entry
+  point now routes to five focused references for empirical foundations, collaboration,
+  method maturation, execution truth, and submission; Trae installs only this skill,
+  while Claude receives a compact bounded-collaborator prompt and specialist workflows.
+  Replaced phrase-matching semantic tests with packaging and progressive-disclosure
+  checks, while keeping historical scientific regressions as test scenarios rather than
+  runtime rules.
+- Reorganized multi-model responsibility around one persistent GPT PI, bounded Claude
+  implementation/experiment episodes, invited Gemini invention, and sparse independent
+  Codex verification. Added artifact-grounded candidate judgment without scientific
+  status enums or maturity classifiers; early information-flow mapping; three distinct
+  baseline responsibilities; method debt and contrastive-surface reasoning; fresh
+  scientific-episode boundaries; and a mechanical, atomic campaign-manifest helper.
 - Defined research baselines as named methods from recent relevant papers rather than
   raw foundation checkpoints or project-invented heuristics. Backbone runs now establish
   substrate competence, matched controls serve attribution, and field contact requires

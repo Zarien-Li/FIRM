@@ -1,7 +1,7 @@
 {
   "name": "firm-research",
   "version": "1.2.0",
-  "description": "Research judgment skills for Claude Code.",
+  "description": "Persistent GPT research ownership with bounded specialist workflows.",
   "owner": {
     "name": "Zeyan Li",
     "url": "https://github.com/Zoiya-Li"
@@ -11,7 +11,7 @@
       "name": "firm",
       "displayName": "FIRM — Research Judgment",
       "source": "./",
-      "description": "16 canonical research skills for choosing directions, diagnosing results, designing methods, running experiments, auditing evidence, and writing papers.",
+      "description": "One persistent GPT research-PI skill with bounded Claude workflows for implementation, experiments, auditing, and paper production.",
       "author": {
         "name": "Zeyan Li",
         "url": "https://github.com/Zoiya-Li"

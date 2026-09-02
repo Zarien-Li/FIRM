@@ -21,6 +21,12 @@ forecast and matched comparison. Never launch from prose reconstructed from memo
 Make the command idempotent where practical. A retry must either resume a verified
 checkpoint or write to an attempt-specific path. Never silently mix partial outputs.
 
+For multi-worker or claim-bearing matrices, use `campaigns.md` rather than ad hoc fixed
+shards. A worker must atomically claim a cell, own an attempt-specific output directory,
+and publish completion only after outputs and marker validate. Recheck the shared
+manifest after every attempt; never infer global completeness from one controller's
+local queue.
+
 ## Local Process
 
 Use the project's existing environment and launcher. Verify a real step, log creation,
@@ -132,7 +138,7 @@ remove.
 
 ## Failure And Resume
 
-Classify the observed failure before acting:
+Record the observed failure mechanism before acting. Relevant examples include:
 
 - configuration/code/data/evaluator defect;
 - OOM or resource placement;
@@ -151,8 +157,8 @@ and config match. Otherwise start a labeled new attempt.
 
 ## Completion Handoff
 
-A run is `completed_unread` only when terminal state, expected outputs, parseability,
-and provenance are verified. Report:
+Hand off a run only when terminal evidence, expected outputs, parseability, and
+provenance are verified. Report:
 
 - run and attempt IDs;
 - actual host/device or scheduler identity;
@@ -161,5 +167,5 @@ and provenance are verified. Report:
 - actual resource use and deviations;
 - failures/retries and their causes.
 
-Then hand the artifacts to `signal-analysis`. Execution code does not mark a result
-`interpreted` and does not decide the scientific route.
+Then hand the artifacts to `signal-analysis`. Execution code does not claim scientific
+interpretation and does not decide the research route.

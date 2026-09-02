@@ -1,6 +1,6 @@
 ---
 name: monitor-experiment
-description: Reconcile registered local, CPU, GPU, SSH, scheduler, and other long-running research jobs with actual processes, logs, outputs, and completion state. Use for operational monitoring and exact result handoff, not scientific interpretation.
+description: Reconcile registered local, CPU, GPU, SSH, scheduler, and other long-running research jobs with actual processes, logs, outputs, and termination evidence. Use for operational monitoring and exact result handoff, not scientific interpretation.
 ---
 
 # Monitor Experiment
@@ -19,12 +19,12 @@ Otherwise read the exact run record created by `run-experiment`. Resolve:
 - config and launch command;
 - log, result, checkpoint, completion marker, and resume paths;
 - expected cells and dependencies;
-- evidence role and registered deviations.
+- intended evidentiary use and registered deviations.
 
 Do not infer ownership from a PID, terminal title, screen name, GPU memory, or Claude's
 last sentence alone. Reconcile structured identity with the real process and artifacts.
-If identity is absent or ambiguous, report `monitor_state_missing`; repair registration
-before attaching results to a project.
+If identity is absent or ambiguous, report the missing identity facts directly and
+repair registration before attaching results to a project.
 
 ## Reconcile Execution
 
@@ -32,16 +32,13 @@ Inspect only the mechanism actually used: local process, SSH process, scheduler,
 container, queue, or application service. Prefer targeted queries over broad repeated
 scans.
 
-Classify execution as:
-
-- `pending`: registered and waiting on a declared dependency or resource;
-- `running`: matching process/job is alive and making plausible progress;
-- `completed_unread`: expected output exists, parses, and terminal status is clean;
-- `failed`: terminal error with preserved logs;
-- `stuck`: identity is valid but progress has ceased beyond the run's own expectation;
-- `interrupted`: execution vanished without a valid terminal artifact;
-- `invalidated`: output exists but the registered protocol was not executed;
-- `cancelled`: explicitly cancelled.
+Build one timestamped factual account: whether the declared dependency or resource is
+still unresolved; whether the matching process or scheduler job exists and progresses;
+whether it terminated; whether expected outputs parse and terminal evidence is clean;
+whether progress ceased beyond the run's own expectation; whether execution vanished;
+whether the registered protocol actually ran; and whether someone explicitly
+cancelled it. Do not map these observations onto a fixed status taxonomy or let a
+status choose the scientific response.
 
 Process exit alone is not completion. A live PID alone is not progress. Validate log
 movement or scheduler progress, expected outputs, parseability, terminal markers, and
@@ -57,7 +54,7 @@ and freshest artifact before taking action.
 
 A remote worker may survive loss of the local Claude session. If it is alive and owned
 by the registered run, restore monitoring and do not resubmit. If the worker is gone,
-classify the run from terminal artifacts and resume only from a validated checkpoint
+reconstruct what happened from terminal artifacts and resume only from a validated checkpoint
 under the same frozen contract. Submit at most one replacement for an ordinary
 recoverable interruption, preserving the failed attempt and linking its provenance.
 Never duplicate a run merely because the laptop rebooted or an old terminal is absent.
@@ -78,12 +75,13 @@ Before handing off a completed run, check:
 - runtime, resource use, retries, and material deviations are recorded;
 - raw predictions or sufficient statistics needed for independent reading exist.
 
-Label a shortened or substituted run `scope-limited`; label a semantically different
-run `invalidated`. Never silently compare it as the intended experiment.
+Describe shortened, substituted, or semantically different execution exactly and list
+which intended comparisons it cannot support. Never silently compare it as the intended experiment.
 
 ## Hand Off One Evidence Bundle
 
-For `completed_unread`, return a compact bundle to `signal-analysis`:
+When execution and expected outputs have been mechanically validated, return a compact
+bundle to `signal-analysis`:
 
 ```markdown
 ## Completed Run Bundle
@@ -97,19 +95,17 @@ For `completed_unread`, return a compact bundle to `signal-analysis`:
 - deviations, warnings, retries, cost, and runtime:
 ```
 
-Mark `interpreting` while the bundle is being read and `interpreted` only after the
-scientific observation is recorded in the authoritative research state. Monitoring
-does not explain the result, invent a construction, call Codex, or decide whether to
-continue.
+Record delivery with a durable event identity. Scientific interpretation exists only
+in the authoritative research state after the PI reads the bundle. Monitoring does not
+explain the result, invent a construction, call Codex, or decide whether to continue.
 
 ## Notification Policy
 
-Keep healthy `pending` and `running` jobs quiet. Notify the research session only for:
-
-- valid `completed_unread` evidence;
-- `failed`, `stuck`, `interrupted`, or `invalidated` execution;
-- a preparation error the research session must repair;
-- a resource conflict that cannot be resolved inside current operational policy.
+Keep healthy waiting or progressing jobs quiet. Notify the research session when
+validated outputs are ready to read, when factual execution evidence requires repair
+or an explicit retry decision, when preparation failed, or when a resource conflict
+cannot be resolved inside current operational policy. Describe the observed facts and
+artifact paths rather than sending a state label.
 
 Do not repeatedly deliver old completion events. Delivery must be acknowledged once
 by durable event identity, and historical events must not block new work.

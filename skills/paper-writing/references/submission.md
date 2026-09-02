@@ -5,8 +5,8 @@ paper revision do not require every final check.
 
 ## Reconcile The Paper
 
-Read current user instructions, `PAPER_ENTRY.md`, the compiled manuscript, and raw
-claim-bearing evidence. Confirm that problem, contribution type, positive object,
+Read current user instructions, the paper portion of `PROJECT_STATE.md`, the compiled
+manuscript, and raw claim-bearing evidence. Confirm that problem, contribution type, positive object,
 population, primary metric, decisive incumbent, and nearest rival still agree.
 
 If the identity materially changed, preserve the old draft and return the new paper
@@ -57,6 +57,13 @@ Write a compact `PAPER_REPORT.md`:
 - single next action:
 ```
 
-Use `submission-ready: yes` only when paper entry, compilation, applicable evidence
-checks, venue compliance, and disclosures are complete. A polished PDF alone is not
-readiness.
+State readiness in evidence-grounded prose rather than a machine status. The package is
+ready only when the PI's candidate argument, compilation, applicable evidence checks,
+venue compliance, and disclosures are complete. A polished PDF, first complete draft,
+page-limited manuscript, or successful build is not the terminal project result by itself.
+
+If the package is not ready, do not merely return a gap list to the user. Separate user-owned
+actions from reversible project work. The lead PI continues the latter through the
+owning research or writing skill, updates all dependent manuscript content, and
+reassembles the package. Ask the user only for final factual and authorship sign-off,
+formal upload, or another explicitly user-owned decision.

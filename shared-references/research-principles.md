@@ -67,23 +67,23 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P27 | The lead PI and real evidence drive discovery, interpretation, construction, repair, and re-grounding. Gemini may widen principle space or propose an evidence-conditioned improvement, but its proposal becomes evidence only after PI-owned implementation and experiment; Codex remains a sparse decision-focused verifier. | `research-review` |
-| P28 | Default to zero Codex calls before a credible positive object; when feasible, run the smallest real realization before external criticism. | `research-review` |
+| P27 | One persistent GPT PI owns synthesis, construction choice, candidate judgment, and submission; Claude delivers bounded implementation and experiment episodes, while Gemini supplies invited invention. Artifacts, not collaborator prose, cross role boundaries. | `research-review` |
+| P28 | Sparse-review limits apply to independent Codex reviewer episodes, not to the persistent GPT PI's ongoing scientific reasoning; let real realizations precede external criticism when feasible. | `research-review` |
 | P29 | Codex output is advice, not calibrated acceptance probability, evidence, a stop judgment, or a user constraint; it cannot veto exploratory principles, choose PARK, close broad programs, or change contribution identity. | `research-review` |
 | P30 | A failed method lineage cannot automatically become an analysis, measurement, mechanism, theory, or systems paper. | `research-control-protocol.md` |
 | P31 | A changed contribution type requires an independently valuable object, independently selected confirmation, scientific consequence, strongest-account comparison, and fresh paper identity; user approval is required only across an explicit locked boundary. | `research-control-protocol.md` |
-| P32 | Evidence stability is not contribution maturity; method-paper entry requires a meaningful claim-dependent advantage on the frozen value surface, fair decisive comparisons, paired utility, and stable claim-bearing evidence. | `research-pipeline` |
+| P32 | Research-candidate worth is a claim-dependent PI argument grounded in end-to-end artifacts, information validity, comparative meaning, attribution or independent confirmation, utility/cost, contrary evidence, and actual comparison completeness; it is never an enum, threshold, validator result, curve, draft, acronym, or self-label. | `research-pipeline` |
 | P33 | Submission readiness requires a lead-PI evidence-bearing paper entry. Earlier author-argument and provisional problem-story writing may expose scientific gaps but cannot create maturity; optional near-final verification also cannot create it. | `paper-writing` |
 | P60 | Experiment, script, audit, draft, PDF, and release-package counts do not advance scientific maturity; evaluator or population invalidation resets every dependent paper-entry claim. | `paper-writing` and `research-pipeline` |
-| P61 | When a credible positive materially changes paper identity, one bounded independent check may verify program fidelity, exact-scope prize, and nearest ownership; it cannot create the identity or a defensive experiment list. | `research-review` |
+| P61 | When an artifact-grounded candidate materially changes paper identity, one bounded independent check may verify program fidelity, exact-scope prize, and nearest ownership; it cannot create the identity or a defensive experiment list. | `research-review` |
 
 ## Writing And Context
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P34 | High-stakes writing assigns verified excellent full papers distinct rhetorical roles and lets one isolated author subagent read the complete role-relevant exemplars with the author argument and evidence to draft directly; it does not average them into a template. | `paper-writing` |
-| P35 | Writing begins from a one-page human-facing author argument; provisional problem-story writing can guide research after a credible positive object exists, while claims-evidence mapping verifies completed prose and never generates its narrative. | `paper-writing` |
-| P36 | Keep operational logs and bulk literature outside the main context while retaining contrary evidence and exact durable paths. | `context-hygiene.md` |
+| P35 | Writing begins from a one-page human-facing author argument; provisional problem-story writing can guide research after an artifact-grounded candidate or independently important finding exists, while claims-evidence mapping verifies completed prose and never generates its narrative. | `paper-writing` |
+| P36 | Keep operational noise outside the main context; ordinary interruption re-anchors, while central invalidation, primitive or paper-identity change, GPT/Claude transfer, submission maturation, or repeated compaction creates a natural fresh scientific episode. | `context-hygiene.md` |
 | P37 | Each integrity question has one audit owner; reuse fresh evidence-bound audits and do not create parallel headline, claim, citation, experiment, or state gates. | `paper-writing`, `research-audit`, and `research-state-audit` |
 
 ## Scientific Upside And Expansion
@@ -91,7 +91,7 @@ restating the rule.
 | ID | Durable principle | Canonical owner |
 |---|---|---|
 | P38 | Prefer consequential default assumptions and simple reusable replacement principles; discovery slices are entry points, not intellectual endpoints. | `research-pipeline` |
-| P39 | After a credible positive realization, especially one still behind a decisive rival on the intended value surface, Gemini may propose one evidence-conditioned improvement; the PI selects, implements, and runs a matched experiment before any maturity update. | `research-pipeline` and `research-review` |
+| P39 | After an artifact-grounded positive realization, especially one still behind a decisive rival on the intended value surface, Gemini may propose one evidence-conditioned improvement; the PI selects, implements, and runs a matched experiment before any maturity update. | `research-pipeline` and `research-review` |
 | P40 | Allocate probe and paper budgets by evidence maturity and upside; do not distribute claim-scale compute evenly or use it to defend low-leverage private cells. | `experiment-plan` |
 | P41 | One governing contribution identity may earn a connected stack of phenomenon, primitive, realization, general finding, and reusable machinery; never force a quota. | `paper-writing` |
 
@@ -109,7 +109,7 @@ restating the rule.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P47 | Keep a stable program compass during discovery; form a human-facing author argument only after a credible positive object or independently important confirmed phenomenon exists. | `research-pipeline` |
+| P47 | Keep a stable program compass during discovery; form a human-facing author argument when the PI can ground a candidate or independently important confirmed phenomenon in artifacts. | `research-pipeline` |
 | P48 | Work in protected research episodes. Review and program-level accounting occur at consequential episode boundaries, not after every result. | `research-pipeline` |
 | P49 | Method formation is a construction arc that may contain several evidence-directed realizations and ablations under one principle; small versions are not separate paper identities. | `method-primitive-synthesis` |
 | P50 | Paper assets and author-argument formation belong to expansion, stabilization, and harvest; claims-evidence mapping begins after narrative drafting, while ordinary empirical contact is judged by what it teaches about the program and next research question. | `research-pipeline` and `paper-writing` |
@@ -117,13 +117,17 @@ restating the rule.
 | P52 | A project PI uniquely authors the single project state after meaningful scientific transitions and personally reconciles any migration before it is trusted; dashboards and Codex may mechanically verify provenance, freshness, and seed fidelity but cannot write scientific interpretation or the next action. | `research-pipeline` |
 | P62 | State authority is typed: verified evidence is factual, while agent-authored gates, route choices, forecasts, holds, and next actions remain revisable interpretations unless an exact user or safety source makes them binding. | `research-control-protocol.md` and `research-pipeline` |
 | P63 | A failed method-owned precondition before the primary outcome is a treatment-formation result, not a method-transfer verdict or project prohibition; formative research may repair the construction and register a new run. | `experiment-plan` and `research-pipeline` |
-| P64 | After a credible positive object, keep one active paper candidate and one principle-predicted expansion campaign; serially choosing friendlier datasets does not establish generality. | `research-pipeline` and `experiment-plan` |
+| P64 | When a candidate merits focused maturation, keep one active paper candidate and one principle-predicted expansion campaign; serially choosing friendlier datasets does not establish generality. | `research-pipeline` and `experiment-plan` |
 | P65 | Conflicting live method, state, and paper identities are reconciled before new breadth; stale drafts retain provenance but cannot alternate as current theses. | `research-pipeline` |
 | P66 | Maintain one active research episode as a question, principle, locus, rivals, prediction, evidence update, and next construction; it is not a fixed stage code. | `research-pipeline` |
 | P67 | Claim-bearing work preserves the seed's task, scale, training, information, and deployment substrate; a proxy cannot carry the paper when the incumbent phenomenon is absent there. | `baseline` and `research-pipeline` |
 | P68 | A successor realization inherits maturity only by preserving the same principle and naming the failed prediction, evidence-implicated component change, preserved behavior, and new discriminating prediction. | `method-primitive-synthesis` |
 | P69 | Design uncertainty is repaired through explanation and construction; random seeds are reserved for genuine stochastic uncertainty and positive-result reliability. | `method-primitive-synthesis` and `experiment-plan` |
 | P70 | Accelerator admission uses measured real-path peaks plus margin; a GPU wait neither blocks science nor licenses repeated audit artifacts or alternate method packets. | `run-experiment` |
+| P71 | A first complete draft is a scientific integration test, not project completion. The same lead PI closes manuscript-revealed claim-bearing gaps and delivers a venue-compliant package ready for final human sign-off, while refusing optional defensive breadth. | `research-pipeline` and `paper-writing` |
+| P72 | Before method-guiding evidence, map partition use, selection, temporal availability, mutable state, caches, targets, external signals, and evaluator flow; baselines then serve distinct contact, candidate-judgment, and submission-envelope responsibilities. | `experiment-integrity.md` and `baseline` |
+| P73 | Track the decisive-rival gap and the realized method bill of materials together; a component earns its place only through an evidence-linked residual and discriminating prediction, and an early contrastive surface tests whether the primitive survives beyond one substrate. | `method-primitive-synthesis` and `experiment-plan` |
+| P74 | A multi-run campaign uses one mechanical manifest with atomic claims, unique fingerprints, attempt-specific outputs, validated completion markers, and optimizer-aware resume; it reports execution completeness but never scientific interpretation. | `run-experiment` |
 
 ## Maintenance Rule
 

@@ -17,9 +17,10 @@ draft, archive, or identity \`current\` field may compete with it.
 
 \`prompt.txt\`, archives, prior session prose, candidate methods, failure taxonomies,
 paper identities, and stop or retire language are provenance or evidence only. They
-cannot redefine the program merely because they are detailed or recent. Within the
-sealed arena, the Research PI owns ordinary problem formulation, method construction,
-experiments, diagnosis, iteration, claim calibration, and drafting. Human intervention
+cannot redefine the program merely because they are detailed or recent. The one
+persistent Research PI owns problem formulation, synthesis, candidate judgment, and
+submission. A bounded Claude episode may implement, execute, diagnose, and return
+evidence without silently changing program or paper identity. Human intervention
 is reserved for changing the original program, exceptional resources or permissions,
 irreversible or outward actions, genuine authority conflicts, and final submission
 sign-off.
@@ -44,8 +45,8 @@ details in project-generation manifests.
 
 ## Compute Execution
 
-The project session owns scientific design, code, preparation, execution, monitoring,
-result validation, and interpretation within the currently authorized resource envelope.
+The persistent PI owns scientific design and interpretation; it may delegate bounded
+code, preparation, execution, monitoring, and validation within the authorized envelope.
 Before occupying accelerators, finish downloads, dependency setup, ordinary preprocessing,
 evaluator construction, configuration, and a meaningful CPU smoke test wherever possible.
 Prepare a bounded real-path canary and a complete launch command that execute the real
@@ -70,7 +71,7 @@ This project's Research PI is the only author of the scientific interpretation i
 \`PROJECT_STATE.md\`. It is the sole current research state, not a state machine or
 permission gate. Maintain it as a replacement-style current synthesis: the program
 compass, strongest evidence and contrary evidence, current construction or empirical-
-contact episode, credible positive object if any, latest decisive experiments, and the
+contact episode, current candidate judgment if any, latest decisive experiments, and the
 next scientific action.
 
 Keep one active episode as a scientific argument rather than a stage code: natural
@@ -102,13 +103,19 @@ provenance. Every retained experiment record must state \`scientificQuestion\`,
 Distinguish infrastructure, implementation, evaluation, and scientific failures; never
 mark infrastructure failure as scientific evidence.
 
+Before the first result guides method choice, record the train/development/test,
+selection, temporal, cache, target, external-signal, and evaluator information flow in
+the run plan. For a multi-run comparison envelope, link one mechanical
+\`CAMPAIGN_MANIFEST.json\`; it owns cell/run/attempt/artifact completion, while this file
+remains the only scientific interpretation.
+
 Keep claim-bearing work faithful to the task, model scale, training regime, information
 boundary, and compute envelope in the seed. A cheaper proxy is diagnostic until the
 incumbent phenomenon and rival ordering are shown to survive there. Do not build a new
 method around an effect created only by shrinking or otherwise changing the substrate.
 
-After a credible positive object forms, maintain one active paper candidate and one
-principle-predicted expansion campaign. Reconcile stale drafts or alternate method
+When the PI's artifact-grounded judgment supports focused maturation, maintain one
+active paper candidate and one principle-predicted expansion campaign. Reconcile stale drafts or alternate method
 identities before new breadth. If a method-owned precondition fails before the primary
 outcome, diagnose or repair the construction on an existing accepted surface when
 possible; do not count it as transfer failure or serially search for an easier dataset.

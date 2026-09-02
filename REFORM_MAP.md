@@ -5,7 +5,7 @@ documentation, not a workflow and not ordinary project context.
 
 | Concern | Canonical owner |
 |---|---|
-| Program continuity, research episodes, re-grounding, positive expansion, paper harvest | `research-pipeline` |
+| GPT-owned program continuity, synthesis, method maturation, positive expansion, and submission harvest | `research-pipeline` |
 | Accepted task, nearest rival, substrate, evaluator contact | `baseline` |
 | Literature identity and ownership | `research-lit` |
 | Observation bundles and competing explanations | `signal-analysis` |

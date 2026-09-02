@@ -74,42 +74,28 @@ if (!Array.isArray(state.experiments)) {
   errors.push("experiments must retain at most five decisive records");
 }
 
-if (!state.positiveObject || typeof state.positiveObject.exists !== "boolean") {
-  errors.push("positiveObject.exists must be boolean");
+if (!state.positiveObject || typeof state.positiveObject !== "object") {
+  errors.push("positiveObject must be an object");
+} else {
+  requireText("positiveObject.assessment");
+  if (!Array.isArray(state.positiveObject.evidence)) {
+    errors.push("positiveObject.evidence must be an array");
+  }
 }
 
 const inheritance = state.activeEpisode?.inheritance;
 if (!inheritance || typeof inheritance !== "object") {
   errors.push("activeEpisode.inheritance must be present");
 } else {
-  requireText("activeEpisode.inheritance.parentRealization");
-  const parent = String(inheritance.parentRealization || "").trim().toLowerCase();
-  if (parent && !["none", "not applicable"].includes(parent)) {
-    for (const key of [
-      "failedPrediction",
-      "preservedBehavior",
-      "changedComponent",
-      "discriminatingPrediction",
-    ]) {
-      const value = String(inheritance[key] || "").trim().toLowerCase();
-      if (!value || ["none", "not applicable", "n/a", "unknown"].includes(value)) {
-        errors.push(`activeEpisode.inheritance.${key} is required for a successor realization`);
-      }
-    }
+  for (const key of [
+    "parentRealization",
+    "failedPrediction",
+    "preservedBehavior",
+    "changedComponent",
+    "discriminatingPrediction",
+  ]) {
+    requireText(`activeEpisode.inheritance.${key}`);
   }
-}
-
-const nextConstruction = String(state.activeEpisode?.nextConstruction || "");
-const gpuNeeded = state.gpu?.needed;
-if (gpuNeeded === false && /\b(gpu|accelerator|worker)\b|启动.{0,8}(训练|实验)|提交.{0,8}(训练|实验)/i.test(nextConstruction)) {
-  errors.push("gpu.needed is false but activeEpisode.nextConstruction describes accelerator execution");
-}
-
-const positiveExists = state.positiveObject?.exists === true;
-const paperStatus = String(state.paper?.status || "");
-const methodMaturity = String(state.method?.maturity || "");
-if (!positiveExists && /(submission[- ]?ready|paper[- ]?bearing|claim[- ]?ready|stable manuscript)/i.test(`${paperStatus} ${methodMaturity}`)) {
-  errors.push("paper or method maturity claims a paper-bearing object while positiveObject.exists is false");
 }
 
 if (errors.length > 0) {

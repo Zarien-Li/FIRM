@@ -100,12 +100,14 @@ try {
   assert.match(claude, /below 1 GB/);
   assert.match(claude, /replacement-style current synthesis/);
   assert.match(claude, /Writing one of those choices into the state does not turn it into a/);
-  assert.match(claude, /one active paper candidate and one/);
+  assert.match(claude, /active paper candidate and one/);
   assert.match(claude, /active episode as a scientific argument rather than a stage code/);
   assert.match(prompt, /当前研究 episode 的维护方式/);
   assert.match(prompt, /proxy 异常/);
   assert.match(stateText, /FIRM_PROJECT_STATE_V4/);
   assert.match(stateText, /"activeEpisode"/);
+  assert.match(stateText, /"assessment"/);
+  assert.doesNotMatch(stateText, /"promotion"/);
   assert.doesNotMatch(stateText, /"stage"/);
 
   const validState = spawnSync(process.execPath, [stateValidator, statePath], { encoding: "utf8" });
@@ -114,13 +116,12 @@ try {
   const stateJsonMatch = stateText.match(/<!-- FIRM_PROJECT_STATE_V4 -->[\s\S]*?```json\s*([\s\S]*?)\s*```/);
   assert.ok(stateJsonMatch);
   const contradictoryState = JSON.parse(stateJsonMatch[1]);
-  contradictoryState.gpu.needed = false;
-  contradictoryState.activeEpisode.nextConstruction = "Launch GPU training on the accepted task.";
+  contradictoryState.activeEpisode.inheritance.failedPrediction = "";
   const contradictoryPath = path.join(projectRoot, "PROJECT_STATE_CONTRADICTORY.md");
   fs.writeFileSync(contradictoryPath, `<!-- FIRM_PROJECT_STATE_V4 -->\n\`\`\`json\n${JSON.stringify(contradictoryState, null, 2)}\n\`\`\`\n`);
   const invalidState = spawnSync(process.execPath, [stateValidator, contradictoryPath], { encoding: "utf8" });
   assert.equal(invalidState.status, 1);
-  assert.match(invalidState.stderr, /gpu\.needed is false/);
+  assert.match(invalidState.stderr, /inheritance\.failedPrediction/);
 
   const duplicateBaseline = structuredClone(manifest);
   duplicateBaseline.projects[0].publishedMethodBaselines.nearestRival.name = "Published Editor A";

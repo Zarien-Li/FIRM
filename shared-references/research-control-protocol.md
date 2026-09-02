@@ -76,11 +76,12 @@ question but cannot supply importance, confirmation, or impossibility by their c
 
 ## Paper Entry
 
-Before paper entry, use notes or a clearly marked research draft to organize a credible
-positive object. Early writing may expose gaps; it does not confer readiness.
+Use notes or a clearly marked research draft to organize an emerging object. Early
+writing may expose gaps; it does not confer readiness. Do not create a separate paper-
+entry status file or automated gate. The lead PI records one direct, claim-dependent
+argument in the sole scientific state and reads the underlying artifacts.
 
-Submission-oriented expansion requires a lead-PI synthesis based on raw evidence. The
-compact `PAPER_ENTRY.md` should establish:
+For submission-oriented expansion, that argument should explain:
 
 - important natural or accepted problem and program bridge;
 - exact contribution identity and positive object;
@@ -92,17 +93,20 @@ compact `PAPER_ENTRY.md` should establish:
 
 An optional near-final independent audit may verify the fixed object under the sparse
 Codex policy; it is not a prerequisite for writing and cannot create or revoke the
-contribution identity by preference alone. Return entry to hold if a decisive rival wins, population or primary metric changes,
-seed provenance is selective, a fair control reverses the claim, the advertised object
-was not implemented, only a private cell remains, contribution type changes, or
-central evidence is invalidated. Reconcile the science; do not build a defensive grid
-to preserve a title.
+contribution identity by preference alone. When direct evidence changes the decisive
+rival, population, metric, provenance, realized object, contribution type, or central
+validity, the PI reopens the relevant science and explains the consequence. These are
+examples for judgment, not branches in a maturity classifier. Do not build a defensive
+grid merely to preserve a title.
 
 ## Completion And Portfolio Allocation
 
-Once unresolved issues can no longer change correctness, importance, novelty, the
-positive object, scope, or a likely reviewer decision, finish the bounded paper.
-Research may remain open afterward.
+The project target is a bounded, venue-compliant submission package ready for final
+human factual, authorship, and upload approval, not a first draft or compiled PDF. Use
+the first coherent manuscript to expose integration gaps, then continue reversible
+research and rewriting until unresolved issues can no longer change correctness,
+importance, novelty, the positive object, decisive comparison, honest scope, or a
+likely submission decision. Research may remain open afterward.
 
 Pause or reallocate a program by comparing marginal scientific and paper value across
 the portfolio: natural importance, fidelity to the original program, positive-object

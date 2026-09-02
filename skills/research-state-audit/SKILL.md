@@ -66,7 +66,8 @@ Evidence stability is not paper maturity. A method paper requires:
   claim;
 - traceable provenance, contrary evidence, and honest scope.
 
-A credible positive that misses its intended value target remains pre-entry evidence.
+A positive realization that still misses its intended value target is evidence for
+further construction, not a maturity badge.
 It may license an evidence-conditioned Gemini improvement episode, but Gemini advice
 changes maturity only after the PI implements it and a frozen matched experiment
 validates the realization. A loss on an unrelated metric is interpreted through the
@@ -86,7 +87,8 @@ and fresh evidence-grounded paper identity before contribution-directed experime
 writing. The lead PI may enact a reversible reframe unless an explicitly locked project
 or deliverable boundary changes.
 
-For complete submission-oriented writing, assemble `PAPER_ENTRY.md` from raw evidence.
+For complete submission-oriented writing, inspect the lead PI's candidate argument in
+the paper portion of `PROJECT_STATE.md` directly against raw evidence.
 An optional near-final `/research-review` artifact audit may challenge a fixed object
 under the sparse Codex policy; it is neither an entry gate nor an acceptance oracle.
 

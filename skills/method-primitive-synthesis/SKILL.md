@@ -66,6 +66,8 @@ method.
 
 ## Candidate, Realization, And Paper-Bearing Method
 
+These are reasoning distinctions, not machine states, gates, or an ordered taxonomy.
+
 A **candidate** may be a formula, name, sketch, objective, probe, CPU audit, oracle,
 smoke test, or pre-check. It is not yet a method.
 
@@ -95,7 +97,7 @@ The lead PI owns the first construction and selects it from local evidence. Afte
 competent contact has earned a real design opportunity, the PI may use Gemini as a
 creative co-PI to challenge the default assumption and co-invent a load-bearing
 primitive. Implement the smallest real realization before seeking Codex criticism
-whenever feasible. Codex is reserved for a credible positive object or exceptional
+whenever feasible. Independent Codex review is reserved for an artifact-grounded candidate judgment or exceptional
 paper-sized commitment; it must not generate or veto the project's first method from
 an underdetermined observation.
 
@@ -119,6 +121,30 @@ Apply the **80% deletion test** throughout construction: remove auxiliary module
 dataset-specific vocabulary, scaffolding, and defensive additions. Identify the
 irreducible new rule or computation. Do not remove components that evidence shows are
 causally necessary.
+
+## Track Rival Gap And Method Debt Together
+
+Before a realization receives paper-sized comparison or optimization, record its actual bill
+of materials in the live state or `METHOD_PRIMITIVE.md`:
+
+- backbone and trainable parameters;
+- external encoders, embedders, retrievers, rerankers, tools, or teacher models;
+- routers, explicit memory, stored targets, fallback paths, and extra supervision;
+- training and inference calls, tokens, latency, memory, storage, and preprocessing;
+- components or policies specialized to one dataset, model family, or evaluator.
+
+Maintain the exact gap to the strongest functional rival on the predeclared value and
+cost surface. For each component added to close that gap, state which observed residual
+requires it, the unique prediction it creates, and whether removing the original
+primitive erases the gain. A component that only rescues one cell, duplicates a rival,
+or leaves performance unchanged without the primitive is method debt, not maturation.
+
+The PI's candidate argument should account for whether a meaningful advantage remains
+after the bill of materials and whether construction contrasts still implicate the
+governing primitive. A larger system may be a legitimate systems contribution, but it must be
+named and compared as that deployment object rather than presented as a simple model
+primitive. Prefer simplifying or replacing debt over accumulating enough machinery to
+cross every baseline separately.
 
 Prompts, thresholds, calibration, certificates, probes, verifiers, abstention, and
 wrappers may be baselines, components, or contributions. Judge whether they embody an
@@ -191,7 +217,7 @@ a scientific gate. Release it when the arc's question is answered, invalidated, 
 made irrelevant.
 
 Do not require a Decision-Focused Construction Check before implementation. Use the sparse Codex policy in
-`research-review` only after the arc yields a credible positive object or before
+`research-review` only after the arc yields an artifact-grounded candidate argument or before
 exceptional paper-sized spend. Do not call it after every version or component output.
 
 ## Repair From Evidence
@@ -293,7 +319,10 @@ when the design needs durable multi-actor coordination:
 - versions: activated computation | useful residual | failed prediction | changed
   component | new discriminating prediction:
 - intended substrate and evidence that the incumbent phenomenon exists there:
-- utility risk and decisive comparison:
+- decisive-rival gap and utility contract:
+- bill of materials: backbone | external models | router/memory/targets/fallback |
+  supervision | calls | latency/memory/storage | dataset-specific machinery:
+- method debt: component | residual it addresses | unique prediction | deletion result:
 ## Expansion
 - earned and unsupported axes:
 ## Next Action

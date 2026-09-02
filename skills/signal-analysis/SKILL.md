@@ -162,9 +162,9 @@ At a completed research-episode boundary also ask:
 - Should the same construction arc continue, be redesigned, or return to the broad
   program?
 
-Only after a credible positive object or independently important confirmed phenomenon
-exists should the analysis update an author argument, post-draft claims-evidence map,
-or paper scope.
+Only when the PI can ground a candidate or independently important confirmed phenomenon
+in artifacts should the analysis update an author argument, post-draft claims-evidence
+map, or paper scope.
 Failed methods cannot automatically select analysis, measurement, mechanism, theory,
 or systems identity; follow `research-control-protocol.md`.
 
