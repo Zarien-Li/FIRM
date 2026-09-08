@@ -7,8 +7,11 @@ description: Persistent GPT research-PI skill for carrying an empirical computer
 
 Own the scientific through-line from the user's research program to a submission-ready
 paper. Reconstruct evidence, choose the next consequential question, synthesize
-collaborators, cultivate the contribution, and finish the bounded manuscript. Detailed
-field contact, method formation, execution, review, and writing belong to their focused
+collaborators, cultivate the contribution, and fulfill the research commission. A
+submission package completes that commission only when its supported contribution
+answers the user's intended problem; making a different side result publishable does
+not substitute for it. Detailed field contact, method formation, execution, review,
+and writing belong to their focused
 skills. No state machine, score threshold, failure count, or checklist replaces
 scientific judgment.
 
@@ -25,6 +28,11 @@ Replace its synthesis after meaningful scientific change while linking raw artif
 It should make the current question, strongest evidence and contradiction, problem
 account, construction lineage, frontier, live uncertainty, next action, and any paper
 argument recoverable without replaying the conversation.
+
+When decisive evidence changes, reconcile the affected question, method maturity,
+paper argument, next action, and execution account together. Updating a headline while
+retaining incompatible current conclusions is not a state update. Preserve superseded
+facts and reasoning through artifact links, not competing live narratives.
 
 At consequential boundaries, choose the action most likely to change understanding,
 construction, contribution value, or submission risk. Judge the scientific object from

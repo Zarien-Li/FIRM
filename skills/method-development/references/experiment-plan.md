@@ -63,16 +63,15 @@ alignment, code-path interventions, and incumbent component comparisons. Stop wh
 remaining accounts imply the same first construction; do not instrument the whole model
 for completeness.
 
-A construction campaign follows one central design question. For each successor
-realization, state one inheritance sentence:
-
-`Because the previous run contradicted X while preserving Y, change component Z; the
-new realization uniquely predicts W.`
-
-Without that sentence, the run is tuning, an unrelated candidate, or a new episode.
-Use paired or compact factorial comparisons when components compensate or gate one
-another. Check utility when it can change the design, and always before the method is
-treated as positive and scalable.
+A construction campaign follows a consequential design question. Explain how the next
+attempt uses previous observations, what remains uncertain, and what its plausible
+outcomes could teach. A precise prediction is useful when available, but an informative
+attempt need not fit an inheritance sentence or preserve the first principle. Use paired
+or compact factorial comparisons when components compensate or gate one another. Check
+utility when it can change the design, and before treating the method as positive and
+scalable. Identify the ordinary treatment that could explain the gain without the new
+principle and schedule that attribution contrast with the first informative realization,
+not as optional paper cleanup after scale or writing.
 
 Support or feasibility conditions describe what one frozen run is competent to test.
 If treatment formation fails, record that implementation fact; do not report method

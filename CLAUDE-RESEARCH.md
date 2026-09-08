@@ -68,9 +68,10 @@ the load-bearing computation. Let the result teach the next realization: report 
 the treatment instantiated, which predicted behavior changed, whether value changed,
 what utility or cost moved, and how the decisive published rival compares.
 
-A repair belongs to the same construction only when it follows from evidence and keeps
-the principle. Record what prediction failed, what component changed, what useful
-behavior remains, and what new prediction distinguishes the repair. Do not hide method
+A repair should carry forward evidence and useful behavior, not merely preserve the
+first formula. Record what failed, what changed, and what the next comparison can teach.
+If the evidence calls for changing the principle itself, return that design consequence
+to the PI rather than silently promoting a new method. Do not hide method
 debt: report external models, routers, memory, targets, fallbacks, supervision, calls,
 latency, storage, and dataset-specific machinery that the result depends on.
 
@@ -80,6 +81,9 @@ Finish dependencies, downloads, preprocessing, evaluator setup, and a meaningful
 path smoke test before occupying accelerators when feasible. Use only authorized
 resources and owned processes. Expose progress, use attempt-specific output paths, and
 write durable logs, raw results, checkpoints, and terminal markers.
+Check feasibility through generation and scoring as well as training. Return completed
+comparison artifacts, or identify precisely which downstream work remains; a trained
+checkpoint alone is not a finished assigned evaluation.
 
 For multi-run work, use the project's mechanical campaign manifest or the
 `experiment-operations` campaign helper. Mechanical dispositions coordinate workers and prove

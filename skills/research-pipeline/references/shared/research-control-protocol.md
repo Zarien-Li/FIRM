@@ -58,6 +58,14 @@ transfer; maturity does not.
 
 Identity reconciliation happens at meaningful boundaries, not after every experiment.
 
+Narrowing what evidence supports is different from changing what the project was
+commissioned to solve. Preserve a useful side result and draft it when worthwhile, but
+do not declare the original assignment complete merely because the side result has an
+honest bounded claim. Compare the delivered behavior with the user's intended problem,
+not just shared terminology. If they no longer match, keep the original obligation
+visible and ask for authorization before replacing an explicitly assigned objective.
+Methods and explanations may evolve substantially while still answering that objective.
+
 ## Contribution-Type Firewall
 
 A method project cannot become analysis, measurement, mechanism, theory, or systems
@@ -104,9 +112,12 @@ grid merely to preserve a title.
 The project target is a bounded, venue-compliant submission package ready for final
 human factual, authorship, and upload approval, not a first draft or compiled PDF. Use
 the first coherent manuscript to expose integration gaps, then continue reversible
-research and rewriting until unresolved issues can no longer change correctness,
-importance, novelty, the positive object, decisive comparison, honest scope, or a
-likely submission decision. Research may remain open afterward.
+research and rewriting to resolve known consequential issues in correctness,
+importance, novelty, the positive object, decisive comparison, and honest scope.
+Completion does not require eliminating every possible objection or scientific
+uncertainty. Explain why the supported contribution fulfills the assignment and why
+remaining uncertainty does not invalidate its submission claims. Research may remain
+open afterward; an honest decision to pause an unsuccessful program is not completion.
 
 Pause or reallocate a program by comparing marginal scientific and paper value across
 the portfolio: natural importance, fidelity to the original program, positive-object

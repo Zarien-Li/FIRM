@@ -43,8 +43,11 @@ its signal is clean.
 Enumerate the differences between compared systems: data exposure, labels,
 supervision, tools, objective, curriculum, adaptation, optimization, compute, stopping,
 candidate pool, and evaluator. A compound contrast may estimate a deployed package,
-but it cannot attribute the result to one component. Use matched controls, a factorial
-contrast, or a narrower claim for attribution.
+but it cannot attribute the result to one component. Use matched controls or a relevant
+factorial contrast to identify the component's contribution. A narrower package-level
+claim may honestly describe the observed effect, but does not resolve the original
+attribution question or establish the proposed principle. Carry that distinction into
+method and paper decisions, not only into limitations text.
 
 Compare the decisive published incumbents under semantically matched conditions.
 Internal controls explain a mechanism; they do not replace strong published baselines

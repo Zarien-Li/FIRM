@@ -52,15 +52,16 @@ computation to explain the important behavior and guide a different construction
   must preserve.
 
 The account may be causal, algorithmic, optimization-based, representational, or
-systems-level. It is deep enough when a small set of principles explains successes,
-failures, disagreements, and at least one inconvenient case; plausible alternatives
-imply different constructions; and a counterfactual observation could make the account
-wrong. A label that merely renames a slice, score, or correlated feature is not a
-problem model.
+systems-level. Develop it toward an explanation of successes, failures, disagreements,
+and inconvenient cases, with alternatives that imply different constructions. This is
+an evolving research product, not a prerequisite to train. A partial account can justify
+an informative implementation whose outcomes reveal missing structure. A label that
+merely renames a slice, score, or correlated feature is not a problem model.
 
 Use code reading, matched cases, traces, literature, or controlled interventions only
 when they resolve a design-relevant link. If alternatives remain underdetermined, choose
-the smallest evidence that separates their construction consequences. Do not compensate
+evidence that can meaningfully separate their construction consequences, including a
+real training experiment when small probes cannot do so. Do not compensate
 with a larger probe suite, more taxonomy, or a premature method name.
 
 ## Maintain Competing Explanations Sparingly

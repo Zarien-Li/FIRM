@@ -7,6 +7,9 @@ description: Register, launch, resume, monitor, reconcile, and hand off local or
 
 Own execution truth, not scientific direction. Every registration, launch, retry,
 monitoring event, and handoff for a run shares one identity and artifact chain.
+Own the assigned comparison end to end: training, generation, scoring, and usable
+comparison artifacts. A completed checkpoint or prediction dump is an intermediate
+deliverable when the scientific question still depends on unfinished evaluation.
 
 ## Route The Work
 

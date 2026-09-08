@@ -33,9 +33,11 @@ queue identity, exact worker, and freshest artifact.
 
 A remote worker may outlive its local session. If the registered process still runs,
 restore monitoring without resubmitting. If it vanished, reconstruct the cause and
-resume only from a checkpoint compatible with the frozen run. Create at most one
-replacement for an ordinary recoverable interruption, preserving and linking the old
-attempt. A stale heartbeat or registry row alone is insufficient evidence.
+resume only from a checkpoint compatible with the frozen run. Before a replacement,
+exclude a duplicate live execution, establish what makes recovery viable, and preserve
+and link the old attempt. Repeated interruptions call for diagnosis and a cost-aware
+recovery decision, not an arbitrary retry cap. A stale heartbeat or registry row alone
+is insufficient evidence.
 
 ## Validate And Deliver Once
 

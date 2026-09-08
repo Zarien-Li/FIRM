@@ -9,6 +9,12 @@ Develop one coherent scientific construction under the continuing ownership of
 `research-pipeline`. Analysis, invention, and experiment design are coupled activities;
 they are not separate approval stages.
 
+Construction is also a way to discover the explanation. Begin with a consequential
+question and enough evidence to make an informative attempt; the final mechanism need
+not be known in advance. Preserve continuity of the problem and accumulated lessons,
+not allegiance to the first formula. Judge optimization by what it can teach or repair,
+not by whether the changed variable is called a rank, schedule, threshold, or module.
+
 ## Route The Work
 
 - To read raw results, distinguish observations from explanations, compare problem

@@ -37,6 +37,11 @@ Before a consequential launch:
 
 A smoke test proves execution only. If evaluator or implementation repair is still in
 progress, label the run as debugging evidence.
+Include generation and scoring in the feasibility check, not only training. Establish
+their memory, runtime, storage, dependencies, and output semantics before committing
+to a campaign whose results depend on them. Reuse completed intermediate artifacts
+only after verifying compatibility with the current protocol; an existing failure file
+is not a completed cell and must not silently suppress recovery.
 
 Size accelerator placement from the real-path canary or a closely matched completed
 run, current ownership, transient peaks, and a meaningful margin. Do not invent a
@@ -73,11 +78,12 @@ operational evidence. Record the observed cause and preserve attempt history. Re
 only when checkpoint run identity, model, optimizer, scaler, step, data order, and
 config match; otherwise create a labeled new attempt.
 
-A verified implementation, optimizer, evaluator, integration, or placement defect
-normally earns one clean matched retry. If the same directional or operational failure
-remains, do not launch an identical or nearby attempt without a changed cause or
-load-bearing prediction supplied by the PI. Never reinterpret failure-to-run as a
-scientific result.
+Repair verified implementation, optimizer, evaluator, integration, or placement defects
+and validate the repair on the affected path. Retry according to the changed cause,
+recoverable work, and authorized cost, not a fixed attempt allowance. Repeating an
+unchanged failing command is not recovery. When repairs accumulate, return the actual
+cost and remaining obstacle to the PI for an execution decision rather than silently
+changing the comparison. Never reinterpret failure-to-run as a scientific result.
 
 Reallocate within authorized project policy. When the selected, preflighted experiment
 cannot fit that envelope, return an evidence-grounded resource request to the persistent

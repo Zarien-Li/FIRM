@@ -46,6 +46,13 @@ Exploratory construction may proceed while an expensive comparator is being repa
 but the PI must keep ownership and maturity provisional. Do not run a full submission
 matrix before an informative candidate exists merely to manufacture progress.
 
+Design the most consequential attribution comparison alongside the first informative
+realization. Ask what ordinary training, added data, supervision, compute, or inference
+procedure could explain its gain without the proposed principle. Resolve that contrast
+before interpreting the principle as effective or scaling on that interpretation.
+This is not a demand for the entire submission table: choose the comparison that
+actually separates the live explanations, using a smaller faithful experiment when useful.
+
 ## Establish An Accepted And Deployable Surface
 
 Name one `benchmark_anchor`: a standard task, deployed workflow, or natural population
@@ -93,6 +100,12 @@ value. Repeat when the method's actual job or deployment contract changes. If a 
 reproduction remains materially below the paper under the same protocol, reconcile the
 checkpoint, data, evaluator, optimization, and reporting semantics or keep the anchor
 unresolved; do not freeze the weaker number as the incumbent.
+
+During prolonged reproduction repair, reassess whether the current implementation is
+still the best route to trustworthy field contact. Consider a compatible pinned
+environment, another faithful implementation, or a relevant runnable incumbent, while
+retaining unresolved comparison obligations. Document semantic changes to training
+loci or evaluators rather than calling a mechanically runnable substitute faithful.
 
 ## Read Behavior, Not Only Scores
 

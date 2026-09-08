@@ -19,11 +19,12 @@ from [signal-analysis.md](signal-analysis.md). An unresolved closest rival permi
 exploration but keeps novelty provisional. A fashionable operator, formula, oracle,
 probe, or positive private cell is not a design opportunity by itself.
 
-The problem account is sufficient when it explains why the incumbent normally succeeds,
-why the same assumption produces the important failure, what load-bearing computation
-must change, what must be preserved, and what behavioral contrast distinguishes the new
-principle from the nearest rival. If those statements remain arbitrary, return to
-`signal-analysis` rather than naming a method.
+A working account should connect the observed behavior to a change worth implementing
+and identify what remains unknown. It need not already explain the full mechanism.
+Construct and train when doing so is the best way to learn why the incumbent succeeds,
+where it fails, or which computation should change. Let surprising outcomes revise the
+account rather than requiring a complete causal story before implementation. A method
+name remains provisional; it is not a substitute for that learning.
 
 ## Distinguish Sketch, Realization, And Paper Object
 
@@ -89,17 +90,13 @@ baseline.
 
 ## Cultivate One Construction Arc
 
-Keep one central design question across versions. A successor realization must identify:
-
-- the same replacement principle;
-- the previous prediction that failed or remained unresolved;
-- the evidence-implicated component or interaction being changed;
-- the useful computation and paired utility being preserved;
-- the new discriminating prediction.
-
-Without that inheritance, the change is tuning, an unrelated candidate, or a new
-episode whose maturity must be earned independently. Do not let a sequence of acronyms
-hide a sequence of disconnected hypotheses.
+Keep the consequential problem and accumulated lessons connected across versions.
+Explain what the previous realization taught, what changes now, what useful behavior
+is retained, and what this attempt can reveal. The governing principle may be refined
+or replaced when evidence warrants it; loyalty to the first formulation is not research
+continuity. A genuinely different method does not inherit its predecessor's proven
+maturity, but it can inherit code, valid evidence, and understanding. Do not let a
+sequence of acronyms hide disconnected attempts.
 
 Across the arc, establish the real implementation, informative component substitutions
 or interactions, paired utility at the point it matters, and eventually the decisive
@@ -119,18 +116,17 @@ When a realization misses its target, use the construction reading from
 link, and inherit the activated computation, useful residual, failed coupling, and next
 discriminating prediction.
 
-Classify the proposed change by what it does:
+Judge an adjustment by its purpose and evidence, not its surface form. Rank, loss weight,
+training duration, or schedule can test whether capacity, signal strength, or optimization
+lets the intended computation develop. A new module can be equally uninformative when
+it merely searches for a favorable score. Choose bounded comparisons that can resolve
+the suspected cause, and keep development choices separate from confirmation.
 
-- **correction:** repairs a verified implementation, evaluator, optimizer, or
-  integration defect;
-- **construction:** changes a load-bearing component or interaction and creates a new
-  prediction;
-- **tuning:** changes only seed, coefficient, threshold, schedule, dose, or a nearby
-  treatment.
-
-A verified correction normally earns one clean matched rerun. A healthy, materially bad
-paired development result calls for diagnosis or redesign, not a seed sweep. Repeat only
-when nondeterminism or optimization variance makes the sign genuinely unresolved.
+A competent negative run establishes how that realization performed. Before extending
+the conclusion to its principle, ask whether the implementation expressed it adequately
+and whether the comparison tested its prediction. Repair verified defects and evaluate
+the corrected realization under matched conditions. Repeated seeds are for stochastic
+uncertainty, not a substitute for evidence-directed optimization or a search for a win.
 
 One failed realization does not close a primitive, family, problem, or field. Continue
 while evidence teaches a new component job or interaction and the natural problem
@@ -148,12 +144,12 @@ method invention.
 
 ## Expand Only What The Principle Predicts
 
-After the realization survives its component and utility comparisons, consider another
-accepted task, model family, modality, scale, natural system, reusable supervision or
-training semantic, or a simpler realization only when the same principle predicts the
-outcome. Choose an informative contrastive surface, not a favorable extra cell. When no
-faithful contrast exists or the claim is intentionally narrow, state that scope instead
-of manufacturing breadth.
+A contrastive task or regime may inform formation itself when it distinguishes a real
+principle from a friendly-setting artifact; it need not wait for a fully mature method.
+For broader claims, choose accepted tasks, model families, modalities, or regimes where
+the working account predicts a meaningful contrast. Unexpected results may revise the
+principle. Do not search surfaces for a favorable cell, and do not manufacture breadth
+when no faithful contrast exists. Honest scope still has to serve the original problem.
 
 ## Durable Construction Note
 

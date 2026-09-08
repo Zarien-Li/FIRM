@@ -15,7 +15,7 @@ label the run as debugging or repair rather than claim evidence.
 
 Record in the project tracker or `docs/research_contract.md`:
 
-- question and unique prediction;
+- question, competing expectations, and what the comparison can distinguish;
 - current construction and semantically matched alternatives;
 - model, data, population, split, treatment, evaluator, metrics, seeds, stopping, and
   authorized budget;
