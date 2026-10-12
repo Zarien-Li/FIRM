@@ -8,6 +8,36 @@ description: Plan empirical-contact, explanatory, construction, expansion, and c
 Plan evidence that can change understanding or construction. Do not maximize run count,
 fill a generic paper table, or replace a real method with cheap probes.
 
+## Plan A Commissioned Foundation Campaign
+
+A baseline-first commission can select a complete field-comparison campaign before
+method invention. Use the source-backed matrix from `research-foundation`: preserve
+its selected published methods, benchmark protocols, backbone families, adaptations,
+and table obligations. Complete the authorized non-method cells rather than using the
+absence of a candidate to cancel them. Read the resulting raw behavior for design
+opportunities. Do not pre-specify a new-method ablation or invent results merely because
+the future table contains a method row.
+
+Translate the meaningful matrix into semantic cells and dependencies, not an unchecked
+Cartesian product. Reuse compatible checkpoints, features, predictions, and scoring
+without double-counting work; incompatible or deferred cells need an explanation, not
+silent removal. The full-split policy and distinction between canaries and formal
+comparisons live in `research-foundation/references/baseline.md`.
+
+Estimate the whole campaign from representative measured paths: setup and shared asset
+availability, training, generation, scoring, writes, peak memory, storage, retries, and
+dependencies. Explain both GPU-hours and wall time; identify serial bottlenecks and
+the critical path. For example, sixteen GPUs for seven days offer 2688 theoretical
+GPU-hours, not a promise of 2688 useful hours. State the effective capacity assumptions
+and uncertainty rather than fitting an optimistic forecast to the user's deadline.
+
+The PI owns a feasible allocation within the supplied envelope. If the selected full
+comparisons cannot fit, explain the measured shortfall and recommend a change in
+placement, execution, time, or authorized resources. Do not silently sample data, weaken
+methods, omit difficult cells, or substitute a different research question. Explicit
+user coverage or deadline changes belong in their existing authority owner; ordinary
+execution choices remain autonomous.
+
 ## Plan From The Live Scientific Question
 
 Read the program origin, current scientific state, strongest and inconvenient evidence,
@@ -88,6 +118,13 @@ comparison set and whether success means primary-metric superiority or a meaning
 Pareto gain. A partial table win, post-hoc metric switch, or unmatched substrate remains
 development evidence.
 
+For a commissioned performance target, inherit the comparison population and success
+meaning from [method-primitive-synthesis.md](method-primitive-synthesis.md). Choose the
+next formative run to explain or close a material gap to a healthy rival, not to increase
+a win fraction by adding friendly cells. Distinguish development selection from full
+confirmation of the frozen candidate. Keep unrun obligations visible and revise coverage
+only for a scientific or authority-backed reason, never because their scores are poor.
+
 ## Allocate Seeds For Uncertainty, Not Rescue
 
 During formation, normally run and read one healthy paired development seed. A clear,
@@ -103,10 +140,12 @@ clean matched rerun; it does not erase the original execution record.
 ## Separate Core Evidence From Optional Scale
 
 Use research compute to establish competent contact, distinguish explanations, and
-learn component jobs. Use paper-sized compute only after direct artifacts support a
-credible candidate and its scientific return is clear.
+learn component jobs. Use paper-sized method-confirmation compute only after direct
+artifacts support a credible candidate and its scientific return is clear. A commissioned
+foundation campaign has its own field-contact return and does not require that candidate
+first.
 
-The active campaign must close every paper-critical link: natural premise, competent
+For method submission, the evidence must close every paper-critical link: natural premise, competent
 realization, decisive comparisons, end-to-end utility, load-bearing attribution, honest
 tradeoffs, and the accepted-surface evidence required by the intended claim. Once that
 chain is sufficient, large grids that only enlarge the table belong on the designated

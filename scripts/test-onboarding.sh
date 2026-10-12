@@ -20,8 +20,16 @@ done
 
 cmp "${ROOT_DIR}/CLAUDE-RESEARCH.md" \
   "${TEST_ROOT}/home-claude/.claude/CLAUDE-RESEARCH.md"
-cmp "${ROOT_DIR}/TRAE-RESEARCH.md" \
+cmp "${ROOT_DIR}/CLAUDE-RESEARCH.md" \
   "${TEST_ROOT}/home-trae/.trae/CLAUDE-RESEARCH.md"
+cmp "${TEST_ROOT}/home-claude/.claude/CLAUDE-RESEARCH.md" \
+  "${TEST_ROOT}/home-trae/.trae/CLAUDE-RESEARCH.md"
+[[ -L "${ROOT_DIR}/TRAE-RESEARCH.md" ]]
+[[ "$(readlink "${ROOT_DIR}/TRAE-RESEARCH.md")" == "CLAUDE-RESEARCH.md" ]]
+for host in claude trae; do
+  cmp "${ROOT_DIR}/skills/research-pipeline/references/delegated-task.md" \
+    "${TEST_ROOT}/home-${host}/.${host}/skills/research-pipeline/references/delegated-task.md"
+done
 
 required=(
   CLAUDE.md
@@ -77,5 +85,15 @@ if [[ -e "${MISSING_PROJECT}" ]]; then
 fi
 
 bash "${ROOT_DIR}/firm" doctor "${PROJECT}" >/dev/null
+
+HOST_ISOLATION_PROJECT="${TEST_ROOT}/host-isolation-project"
+FIRM_HOST=trae TRAE_HOME="${TEST_ROOT}/must-not-install-global-trae" \
+  bash "${ROOT_DIR}/firm" init "${HOST_ISOLATION_PROJECT}" >/dev/null
+cmp "${ROOT_DIR}/CLAUDE-RESEARCH.md" \
+  "${HOST_ISOLATION_PROJECT}/.claude/CLAUDE-RESEARCH.md"
+if [[ -e "${TEST_ROOT}/must-not-install-global-trae" ]]; then
+  echo "Claude project-local init unexpectedly modified the Trae runtime." >&2
+  exit 1
+fi
 
 echo "Onboarding test passed."

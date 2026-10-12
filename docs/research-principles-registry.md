@@ -66,8 +66,8 @@ to its canonical skill owner; runtime skills should not restate this registry.
 
 | ID | Durable principle | Canonical owner |
 |---|---|---|
-| P27 | One persistent GPT PI owns synthesis, construction choice, candidate judgment, and submission; Claude delivers bounded implementation and experiment episodes, while Gemini supplies invited invention. Artifacts, not collaborator prose, cross role boundaries. | `research-review` |
-| P28 | Sparse-review limits apply to independent Codex reviewer episodes, not to the persistent GPT PI's ongoing scientific reasoning; let real realizations precede external criticism when feasible. | `research-review` |
+| P27 | One commissioned main PI owns invention, implementation, synthesis, candidate judgment, and submission readiness, whether Claude or GPT. Collaborator roles follow explicit tasks, not model names; artifacts, not prose, carry evidence across them. | `research-pipeline` |
+| P28 | Sparse-review limits apply to independent reviewing tasks, not to a Claude or GPT PI's ongoing reasoning; let real realizations precede external criticism when feasible. | `research-review` |
 | P29 | Codex output is advice, not calibrated acceptance probability, evidence, a stop judgment, or a user constraint; it cannot veto exploratory principles, choose PARK, close broad programs, or change contribution identity. | `research-review` |
 | P30 | A failed method lineage cannot automatically become an analysis, measurement, mechanism, theory, or systems paper. | `research-control-protocol.md` |
 | P31 | A changed contribution type requires an independently valuable object, independently selected confirmation, scientific consequence, strongest-account comparison, and fresh paper identity; user approval is required only across an explicit locked boundary. | `research-control-protocol.md` |
@@ -82,7 +82,7 @@ to its canonical skill owner; runtime skills should not restate this registry.
 |---|---|---|
 | P34 | High-stakes writing assigns verified excellent full papers distinct rhetorical roles and lets one isolated author subagent read the complete role-relevant exemplars with the author argument and evidence to draft directly; it does not average them into a template. | `paper-writing` |
 | P35 | Writing begins from a one-page human-facing author argument; provisional problem-story writing can guide research after an artifact-grounded candidate or independently important finding exists, while claims-evidence mapping verifies completed prose and never generates its narrative. | `paper-writing` |
-| P36 | Keep operational noise outside the main context; ordinary interruption re-anchors, while central invalidation, primitive or paper-identity change, GPT/Claude transfer, submission maturation, or repeated compaction creates a natural fresh scientific episode. | `collaboration.md` |
+| P36 | Keep operational noise outside the main context; ordinary interruption re-anchors, while central invalidation, primitive or paper-identity change, explicit leadership handover, submission maturation, or unreliable compaction can justify a fresh scientific episode. A child return is not a leadership transfer. | `collaboration.md` |
 | P37 | Each integrity question has one audit owner; reuse fresh evidence-bound audits and do not create parallel headline, claim, citation, experiment, or state gates. | `paper-writing` and `research-review` |
 
 ## Scientific Upside And Expansion

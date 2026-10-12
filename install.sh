@@ -3,14 +3,13 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FIRM_HOST="${FIRM_HOST:-claude}"
+RUNTIME_PROMPT="${ROOT_DIR}/CLAUDE-RESEARCH.md"
 case "${FIRM_HOST}" in
   claude)
     RUNTIME_ROOT="${CLAUDE_HOME:-${HOME}/.claude}"
-    RUNTIME_PROMPT="${ROOT_DIR}/CLAUDE-RESEARCH.md"
     ;;
   trae)
     RUNTIME_ROOT="${TRAE_HOME:-${HOME}/.trae}"
-    RUNTIME_PROMPT="${ROOT_DIR}/TRAE-RESEARCH.md"
     ;;
   *)
     echo "Unsupported FIRM_HOST: ${FIRM_HOST} (expected claude or trae)" >&2
@@ -89,6 +88,10 @@ if [[ -f "${TARGET_DIR}/.research-shared-references-managed" ]]; then
   rm -f "${TARGET_DIR}/.research-shared-references-managed"
 fi
 
+if [[ -e "${RUNTIME_ROOT}/CLAUDE-RESEARCH.md" ]] && \
+    ! cmp -s "${RUNTIME_PROMPT}" "${RUNTIME_ROOT}/CLAUDE-RESEARCH.md"; then
+  backup_path "${RUNTIME_ROOT}/CLAUDE-RESEARCH.md" "changed-prompts/CLAUDE-RESEARCH.md"
+fi
 cp "${RUNTIME_PROMPT}" "${RUNTIME_ROOT}/CLAUDE-RESEARCH.md"
 cp "${SOURCE_MANIFEST}" "${TARGET_MANIFEST}"
 

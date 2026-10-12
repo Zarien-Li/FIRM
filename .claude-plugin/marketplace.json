@@ -1,7 +1,7 @@
 {
   "name": "firm-research",
-  "version": "1.3.0",
-  "description": "Persistent GPT research ownership with bounded specialist workflows.",
+  "version": "1.4.0",
+  "description": "Persistent research ownership for Claude and GPT with one shared workflow.",
   "owner": {
     "name": "Zeyan Li",
     "url": "https://github.com/Zarien-Li"
@@ -11,7 +11,7 @@
       "name": "firm",
       "displayName": "FIRM — Research Judgment",
       "source": "./",
-      "description": "One persistent GPT research-PI skill with bounded Claude workflows for implementation, experiments, auditing, and paper production.",
+      "description": "One model-neutral research PI and five focused skills for research, experiments, verification, and submission-ready papers.",
       "author": {
         "name": "Zeyan Li",
         "url": "https://github.com/Zarien-Li"

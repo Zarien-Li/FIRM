@@ -7,6 +7,8 @@ required=(
   README.md
   README.zh-CN.md
   CLAUDE-RESEARCH.md
+  TRAE-RESEARCH.md
+  skills/research-pipeline/references/delegated-task.md
   CONTRIBUTING.md
   SECURITY.md
   CHANGELOG.md

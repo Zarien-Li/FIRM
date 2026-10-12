@@ -11,6 +11,17 @@ Own the assigned comparison end to end: training, generation, scoring, and usabl
 comparison artifacts. A completed checkpoint or prediction dump is an intermediate
 deliverable when the scientific question still depends on unfinished evaluation.
 
+For a commissioned comparison matrix, deliver a reproducible campaign entrypoint,
+coverage of its distinct real execution paths, measured resource forecast, and durable
+concurrent execution through scoring. Use the selected scientific matrix, not a new
+method or a smaller dataset invented by the launcher. The detailed campaign mechanics
+belong to `run-experiment/campaigns.md`.
+
+For long work, own a real path from job completion or failure to PI receipt and
+reconciliation. Read `monitor-experiment.md` when establishing that path, not only
+after the user reports silence. A monitor being launched does not establish delivery,
+and parsed outputs still require scientific validity before the PI relies on them.
+
 ## Route The Work
 
 - For prospective registration of a consequential or expensive run, read

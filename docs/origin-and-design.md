@@ -82,11 +82,11 @@ designs, not exhaustive causal identification of the entire model.
 
 ### Independent collaboration follows comparative advantage
 
-The `research-review` skill keeps one persistent GPT PI for synthesis, continuity, and
-submission; Claude supplies bounded implementation and experiment episodes, Gemini is
-invited for evidence-earned creative invention, and an independent Codex episode
-sparingly verifies one named decision-relevant uncertainty. External-model prose never
-becomes project authority; artifacts cross collaborator boundaries.
+`research-pipeline` keeps one commissioned PI for invention, implementation, synthesis,
+continuity, and submission readiness. Claude and GPT can each own that full role; any
+available collaborator may contribute a bounded task. Gemini remains an optional
+co-invention entry, and independent review sparingly resolves a named uncertainty.
+External-model prose never becomes project authority; artifacts cross task boundaries.
 
 ### Finishing is a scientific decision
 
@@ -134,13 +134,13 @@ public repository therefore emphasizes inspectable skills, neutral examples,
 explicit safety boundaries, and reproducible installation rather than a headline
 usage number.
 
-## Why one GPT PI skill and bounded specialists
+## Why one shared PI skill and focused tools
 
 FIRM does not try to win by containing every research utility. Literature APIs,
 benchmark launchers, plotting libraries, LaTeX tools, and general coding agents
-already exist. The existing `research-pipeline` is the one persistent GPT PI surface.
+already exist. The existing `research-pipeline` is the model-neutral persistent PI surface.
 Its focused references carry only the details needed by the current uncertainty;
-specialist skills remain bounded workflows for implementation and explicit operations:
+specialist skills remain focused workflows supporting the PI's current responsibility:
 
 - choosing and preserving a consequential problem;
 - establishing credible empirical contact;

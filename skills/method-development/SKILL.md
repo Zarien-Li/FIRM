@@ -15,6 +15,24 @@ not be known in advance. Preserve continuity of the problem and accumulated less
 not allegiance to the first formula. Judge optimization by what it can teach or repair,
 not by whether the changed variable is called a rank, schedule, threshold, or module.
 
+The target is a principled, economical method, not an ad hoc heuristic package. Keep
+diagnostic shortcuts distinct from the contribution. When choosing or revising a
+candidate, use the principle-and-simplification guidance in
+[method-primitive-synthesis.md](references/method-primitive-synthesis.md); elegance
+must survive implementation and comparison, not just the method's description.
+
+Read an informative result as a construction lesson before proposing its successor.
+Use `signal-analysis.md` when the cause is unclear, and
+`method-primitive-synthesis.md` when choosing a repair or replacement. A new name,
+benchmark, or component does not discharge the unresolved question from the last run.
+
+Own improvement beyond v1: connect real experiments, model/code analysis, relevant
+primary literature, and published competitors' behavior to the next implemented change.
+Continue toward the commissioned performance target and a simple, supported submission
+within authorized resources. The synthesis reference owns target interpretation,
+comparison coverage, and simplification; neither a first positive result nor a first
+draft completes this responsibility.
+
 ## Route The Work
 
 - To read raw results, distinguish observations from explanations, compare problem

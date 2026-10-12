@@ -1,6 +1,26 @@
 # Changelog
 
-## Unreleased
+## 1.4.0 - 2026-10-12
+
+- Unified Claude and GPT project leadership under the same six skills and one shared
+  PI prompt. Both can own invention, implementation, experiments, authorship, and
+  revision through submission readiness; model names no longer assign research ranks.
+- Separated explicit bounded task identity from project leadership. Updated child
+  entry points, installation, project generation, and onboarding; the Trae prompt name
+  is now a compatibility symlink rather than a separately maintained workflow.
+- Moved Gemini collaboration from Antigravity to model-pinned non-interactive Trae CLI,
+  with a per-call bounded-role override and verified receipt requirements.
+- Strengthened PI-owned result interpretation, manuscript reconciliation, durable
+  handoffs, meaningful progress reporting, and actual monitoring/recovery responsibility
+  without adding a research state machine or automatic review gates.
+- Expanded faithful published-method mapping, comparable full-data matrices, execution
+  competence, and measured concurrent campaign delivery. Kept canaries distinct from
+  completed formal comparisons and infrastructure failure from scientific evidence.
+- Strengthened evidence-led improvement beyond v1, principled simplicity, and
+  human-reader manuscript revision. Preserved final human sign-off and documented
+  runtime limits instead of promising unattended continuation or guaranteed outcomes.
+
+## Earlier Development Notes
 
 - Consolidated sixteen callable research skills into six entrypoints: one persistent
   `research-pipeline` PI and five on-demand tools for foundation, method development,

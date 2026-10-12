@@ -88,6 +88,22 @@ up to family coverage; [method-primitive-synthesis.md](method-primitive-synthesi
 owns successor inheritance and repair. When a published comparator wins, explain its
 computation, boundary, and cost before deciding whether a non-redundant need remains.
 
+For a consequential loss, compare the current method and a healthy published rival on
+the same development examples, including cases each gets right and wrong. Trace the
+actual inputs, intermediate states, objective/gradients or decision rule, and output
+where needed to locate the earliest design-relevant disagreement. Relate it to the
+rival's full paper and implementation, not a guessed explanation from its name. Ask
+whether the difference comes from information, representation, optimization, inference,
+or scoring; inspect only the paths whose answer changes the next construction.
+
+Make the diagnosis executable: identify the computation to change, the behavior that
+should move, the contrary outcome that would challenge the account, and the useful
+behavior to preserve. Labels such as "insufficient representation" or "weak coupling"
+are not enough without this connection. Construction can supply the missing evidence;
+do not turn deep analysis into a prerequisite for an exhaustive instrumented model.
+Use training/development evidence for design choices. Test-set failure analysis is
+exploratory and cannot also serve as untouched confirmation of the resulting revision.
+
 ## Decide At The Scale Of The Evidence
 
 For an ordinary result, decide whether the observation is trustworthy, whether it

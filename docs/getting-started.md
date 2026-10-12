@@ -22,6 +22,24 @@ Confirm the install:
 
 Search for commands beginning with `/firm:`.
 
+## Choose A Main PI
+
+Claude Code and GPT in Trae can each lead the entire project through submission
+readiness using the same six skills and one shared PI contract. For a direct install:
+
+```bash
+FIRM_HOST=claude ./install.sh
+# Or, from the same checkout:
+FIRM_HOST=trae ./install.sh
+```
+
+Start Claude with `claude --append-system-prompt-file ~/.claude/CLAUDE-RESEARCH.md`.
+For Trae, set `model_instructions_file` to `~/.trae/CLAUDE-RESEARCH.md` and select the
+desired GPT model. `TRAE-RESEARCH.md` is a compatibility symlink, not another workflow.
+Keep one main PI per project; choose collaborators by the current task. Bounded child
+calls use the role context and entry points in
+[collaboration.md](../skills/research-pipeline/references/collaboration.md).
+
 ## First useful calls
 
 For an existing research project:

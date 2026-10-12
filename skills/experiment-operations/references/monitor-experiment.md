@@ -25,6 +25,28 @@ scheduler facts, output parsing, completion markers, and actual configuration to
 distinguish healthy waiting from an operational stall. These observations do not choose
 a scientific response by status label.
 
+## Establish Observation And Receipt
+
+Choose the observation mechanism from the actual runtime. Prefer scheduler completion
+events, a durable local watcher, or a supported task notification. A watcher that writes
+a file cannot by itself wake a model session. Identify the receiving session and how it
+will notice the event, and verify delivery on the real path before relying on it. Reuse
+one monitor per job or campaign instead of starting a new one on each conversation turn.
+
+When no event channel exists, use bounded status checks spaced according to expected
+progress, costs, and platform limits. Keep the parent active through the supported wait
+mechanism when possible. If the session cannot wait or resume automatically, preserve
+the completion location and exact recovery action and report that limitation. Do not
+promise background follow-up, invent a timer, or spin a long SSH/sleep loop as a wakeup
+mechanism. Do not create recurring automation without the user's authorization.
+
+Monitor both useful job progress and observation health. If expected evidence stops
+arriving or the observer disconnects, reconnect and reconcile before declaring the job
+stalled or completed. A timeout should reflect this job's expected next observable
+progress, including legitimate loading or phases that only write at completion; it
+does not authorize killing an unknown process. Refresh forecasts when measured
+throughput or the bottleneck changes materially.
+
 ## Recover After Interruption
 
 After host power loss or session restart, treat local process and queue facts as stale
@@ -39,6 +61,14 @@ and link the old attempt. Repeated interruptions call for diagnosis and a cost-a
 recovery decision, not an arbitrary retry cap. A stale heartbeat or registry row alone
 is insufficient evidence.
 
+For provider quota exhaustion, authentication loss, or a suspended parent session,
+preserve the next action and any surviving job separately from the conversation state.
+Use a documented reset time or supported retry mechanism when available. Do not open
+replacement sessions against the same exhausted quota or assume that all remote jobs
+died with the parent. On return, first consume completed results and reconcile partial
+attempts before allocating more work. Report an unavailable wakeup or credential as an
+operational dependency with a concrete recovery path.
+
 ## Validate And Deliver Once
 
 Validate the registered identity and completion requirements in
@@ -48,6 +78,9 @@ reading. Deliver one compact evidence bundle with those facts and durable paths;
 repeat long logs or add scientific interpretation.
 
 Notify the research session when validated results are ready, execution needs repair,
-or an unresolved resource conflict requires action. Keep healthy progress quiet. Record
-delivery with a durable event ID and never redeliver the same completion event. The PI
-reads and interprets the bundle; long logs remain at their paths.
+or an unresolved resource conflict requires action. Record the event identity and its
+receipt in the existing run record or supported delivery system. Distinguish an event
+written, notification sent, and receipt confirmed; a failed or unacknowledged delivery
+is retried idempotently or reconciled on resume, not marked handled and forgotten. The
+PI reads and interprets the bundle and owns concise user-facing progress. Keep unchanged
+monitoring chatter out of the conversation; long logs remain at their paths.

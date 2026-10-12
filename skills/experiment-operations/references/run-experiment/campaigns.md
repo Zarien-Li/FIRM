@@ -20,6 +20,34 @@ no scientific authority.
 
 ## Concurrency Invariants
 
+For a selected field matrix, provide one documented command that can run or resume
+the campaign from its manifest, using the existing project environment and authorized
+workers. Worker IDs and resource envelopes come from current project authority, not
+examples in this skill. The command should perform missing work and report unresolved
+cells; neither a successful launcher exit nor partial outputs mean the matrix completed.
+
+On a limited authorized canary allocation, exercise every distinct method, backbone,
+data/evaluator, and launch path whose differences could cause a cell to fail. Reuse
+coverage where the execution path is genuinely shared and explain its boundary. Check
+actual component engagement, predictions, scoring, output identity, and resumability;
+one generic forward pass cannot certify every baseline. Canary outputs remain separate
+from full-protocol comparison results. A canary reduces risk, not a guarantee of no bugs.
+
+Schedule independent ready cells concurrently using measured memory peaks and end-to-end
+throughput. Multiple processes on one device are appropriate only when authorized and
+their combined transient peaks, CPU/RAM, I/O, and scoring demands fit; measure whether
+co-location improves useful throughput rather than merely increasing process count.
+Keep semantically dependent work ordered. Do not occupy the full allocation while
+downloads, installations, or shared preprocessing that can run elsewhere remain undone.
+
+Validate concurrency on the actual workers: distinct claimed cells must be making real
+progress, not only have live PIDs. Measure sustained throughput after startup and inspect
+serial model loading, tokenization, data access, synchronization, and scoring bottlenecks.
+Optimize these before scaling. A requested high GPU-utilization target motivates tuning,
+but neither a universal 90% floor nor a sampled peak establishes execution quality.
+Preserve numerical and protocol equivalence through performance changes and refresh
+forecasts from measured progress.
+
 - Claim a cell atomically through the helper or scheduler/database transaction.
 - Fingerprint every comparison-changing input. Reject duplicate fingerprints unless
   cells are declared repetitions with distinct seeds.

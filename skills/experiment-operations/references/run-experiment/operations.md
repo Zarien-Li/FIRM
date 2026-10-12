@@ -56,6 +56,16 @@ After launch, verify actual memory and first-step stability. Treat OOM from plac
 or transient collision as an operational cause and change that cause before retrying.
 Serialize or move jobs when safe headroom cannot be established.
 
+Reconcile resource-pool files and leases with the latest explicit authorization and
+live worker/process identity. Configuration records do not grant permission to use a
+released worker, and stale reservations do not prove occupied capacity. Repair or release
+only reservations verified to belong to this project and no longer needed, through the
+authorized coordinator. A broken lease lock is an execution defect: repair its ownership
+or path, or use an explicitly authorized alternative. Do not silently bypass required
+coordination or turn its failure into an indefinite scientific stop. Report actual
+contention and available authorized alternatives without imposing blanket sibling
+priority or requesting permission again for resources already approved.
+
 ## Tracking And Credentials
 
 Use existing tracking when it improves diagnosis or reproduction. Local machine-readable
@@ -71,6 +81,14 @@ or configured provider.
 Check expected output size and destination capacity. Preserve claim-bearing raw
 outputs, configs, evaluator identity, summaries, and checkpoints needed for recovery or
 verification.
+
+Resolve the project's canonical shared model, dataset, environment, and cache paths
+before downloading or rebuilding. Keep project-generated runs under its assigned
+artifact root. Include temporary files, offload, caches, logs, and concurrent outputs
+in storage forecasts; inspect actual growth when it departs from the forecast. Honor
+the local workspace size bound through placement and reuse rather than waiting for a
+full disk. Avoid repeatedly transferring unchanged assets or complete logs when an
+incremental transfer or compact evidence bundle suffices.
 
 Before destructive cache, model, dataset, checkpoint, or remote-artifact cleanup,
 produce a size/provenance inventory and obtain explicit user approval. Prefer

@@ -43,15 +43,91 @@ The comparison set grows with the decision, not with a fixed paper count:
   reliability, and efficiency evidence owed by the actual claim.
 
 Exploratory construction may proceed while an expensive comparator is being repaired,
-but the PI must keep ownership and maturity provisional. Do not run a full submission
-matrix before an informative candidate exists merely to manufacture progress.
+but the PI must keep ownership and maturity provisional. A user-commissioned baseline-
+first matrix may precede method formation: complete its meaningful non-method comparisons
+and use their behavior to inform invention. Do not invoke candidate maturity as a reason
+to ignore that commission. Otherwise expand comparisons for the live scientific decision,
+not merely to manufacture progress or fill a submission table.
+
+Before committing to a reproduction, identify the decision it serves, the actual
+implementation and intended protocol, any departures from the published method, and
+the work needed for an interpretable comparison. Reuse the run record or baseline
+note. A faithful adaptation can belong in a main table when its semantics and matched
+conditions justify the comparison; a proxy, incomplete hook, or substituted operator
+must not inherit the published method's name and evidential standing. Label departures
+where readers encounter the result, and return unresolved fidelity to the PI before
+that result determines method selection or a paper claim.
 
 Design the most consequential attribution comparison alongside the first informative
 realization. Ask what ordinary training, added data, supervision, compute, or inference
 procedure could explain its gain without the proposed principle. Resolve that contrast
 before interpreting the principle as effective or scaling on that interpretation.
 This is not a demand for the entire submission table: choose the comparison that
-actually separates the live explanations, using a smaller faithful experiment when useful.
+actually separates the live explanations. A cheaper faithful configuration can be useful;
+formal comparisons still obey the complete-data protocol below.
+
+## Build A Comparable Field Matrix
+
+Synthesize the full-paper method map from `research-lit.md` into chosen benchmarks,
+backbone regimes, published methods, and protocols. Explain why they share the same
+canonical task and operational comparison. Choose the main surfaces from recurring
+accepted protocols and the project's intended value, not whichever dataset is easiest.
+Requested method and benchmark counts guide coverage; they cannot make an incompatible
+comparison valid.
+
+Distinguish native reproduction from a common-backbone comparison. The former checks
+the original method in its documented regime; the latter applies methods to matched
+backbones, data, supervision, training and inference budgets, and evaluators where their
+semantics permit. When the user requests modern checkpoints such as Qwen3, honor that
+choice in the common-backbone matrix without pretending it was the paper's original
+configuration. Verify each adaptation's essential computation and competence. A method
+bound to a tokenizer, architecture, modality, or released checkpoint may not transfer;
+explain the incompatibility rather than substituting an incomplete operator.
+
+Multiple backbone families belong in the main comparison when commissioned or needed
+by the claim, not only in a separate cross-family appendix. Do not claim cross-family
+generality by evaluating the proposed method on several families while its decisive
+rivals appear on only one. Nor must every method run on every backbone and benchmark:
+select semantically meaningful cells and explain exclusions. Published scores may be
+context, but must not masquerade as locally reproduced cells under changed conditions.
+
+Preview the actual intended tables before substantial execution. Keep the method rows,
+benchmark/backbone columns, metric direction, protocol, evidence role, and costs legible.
+Use `-` for unrun numbers, including the proposed method; state separately whether a
+cell is planned, incompatible, blocked, or failed so a dash cannot hide an obligation.
+These are comparison plans, not a fabricated manuscript or evidence of paper maturity.
+Keep native and adapted protocols visibly distinct. Populate results from validated
+artifacts through the existing table entrypoint, not manual transcription.
+
+Use `BASELINE_REPRO.md` as the comparison source when a durable map is needed. Connect
+table cells to stable campaign/run identities and record source-backed selection,
+adaptations, incompatibilities, and unresolved details there; do not create another
+independent live project state. Plan forecast and execution through `experiment-plan`
+and `experiment-operations`. Completion includes scoring, coverage, and raw behavioral
+reading, not only a launch or a set of checkpoints.
+
+## Use Complete Official Data Protocols
+
+For this portfolio, formal baseline, attribution, and method comparisons use the full
+specified dataset splits, not a convenient sampled subset. Honor each official protocol's
+train/development/test separation, prescribed folds, temporal boundaries, and eligible
+population. Full data does not mean pooling splits or altering the task. A method's
+intrinsic selection rule must remain faithful and disclosed; it is different from
+sampling the experiment away to reduce cost.
+
+A small real-path canary may verify execution, engagement, memory, and throughput. Label
+it as such and do not place its score in a completed comparison cell or use it to replace
+full-split evidence. If the full protocol exceeds authorized resources, forecast and
+escalate the actual gap rather than silently sampling. This data requirement does not
+mandate every conceivable dataset, seed, or matrix cross-product.
+
+In a baseline-first program, choose the data used for behavioral reading and invention
+explicitly. Use training/development cases to select explanations, prompts, architecture,
+or hyperparameters; keep confirmatory test cases and per-example outputs separate from
+that work. Completing a baseline's full official evaluation does not authorize using its
+test failures to tune the proposed method. Published or recorded aggregate test scores
+can describe the field, but do not turn test-guided construction into independent
+confirmation. Preserve any prior exposure and its consequence for the claim.
 
 ## Establish An Accepted And Deployable Surface
 
@@ -107,6 +183,13 @@ environment, another faithful implementation, or a relevant runnable incumbent, 
 retaining unresolved comparison obligations. Document semantic changes to training
 loci or evaluators rather than calling a mechanically runnable substitute faithful.
 
+Revisit that choice when actual repair cost diverges from the forecast or reproduction
+starts displacing the live construction question. Explain what this comparison can
+still change and whether another faithful route provides the needed evidence. Keep a
+necessary decisive rival even when expensive; defer comparators that add coverage but
+cannot affect the current decision. Neither a fixed paper quota nor a universal
+GPU-hour cutoff decides this tradeoff.
+
 ## Read Behavior, Not Only Scores
 
 Inspect natural failures and matched successes, disagreements among serious systems,
@@ -135,8 +218,10 @@ Create or update `BASELINE_REPRO.md` only when coordination needs it:
 # Baseline Evidence
 ## Accepted Surface
 - anchor, population, split, metrics, information and training treatment:
-## Systems
-| System | Role | Paper | Source/version | Actual protocol | Health | Result path |
+## Method Map And Comparability
+| Method | Role | Paper/year/primary sources | Native benchmark/backbone | Chosen protocol and adaptation | Competence/deviation | Run/result identity |
+## Planned Comparison Tables
+- meaningful cells, full split/coverage, metrics, costs, unrun placeholders, exclusions:
 ## Ownership And Competence
 - closest rivals, substrate result, intended and actual regime:
 ## Integrity

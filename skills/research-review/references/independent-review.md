@@ -2,17 +2,23 @@
 
 Use an independent Codex episode to resolve one consequential uncertainty, not to
 shadow the persistent PI or generate an objection backlog. The collaboration rules for
-Claude implementation, Gemini co-invention, evidence transfer, and context isolation
+bounded implementation, co-invention, evidence transfer, and context isolation
 live in `research-pipeline/references/collaboration.md`.
+
+These limits govern an independent reviewing assignment, not a provider. A Claude or
+GPT main PI retains full invention and research ownership; requesting a separate Codex
+episode does not require transferring leadership or obtaining its permission.
 
 ## Earn The Call
 
-Default to no independent review during initial empirical contact, underdetermined
-explanation, first-method invention, ordinary repair, or routine negative results. Let
-accepted-task evidence answer the design question whenever it can.
+Choose a call by the expected value of resolving a concrete uncertainty, not by a
+permitted research stage. An early check of a consequential implementation, mathematical
+assumption, evaluator, or nearest-rival overlap can prevent expensive work on a false
+premise. Ordinary negative results and repairs do not require independent permission;
+use accepted-task evidence directly when it can answer the question.
 
-Review becomes useful when the PI can name both an uncertainty and the current decision
-it could reverse. Examples include:
+Review is useful when the PI can name both an uncertainty and the current decision
+its resolution could change. Examples include:
 
 - whether a close published method already performs the same operational job;
 - whether an evaluator, information path, or causal inference supports a consequential
@@ -22,7 +28,7 @@ it could reverse. Examples include:
 - whether a fixed near-final claim, citation, proof, or reported number is correct.
 
 A deadline, disagreement, draft, large artifact directory, or failed method lineage
-does not by itself earn review. Do not ask Codex to select among speculative first
+does not by itself earn review. Do not ask an independent reviewer to select among speculative first
 principles, invent the next method, score acceptance probability, or search for every
 possible weakness. A repeated call needs materially new evidence or a different
 decision-relevant question.

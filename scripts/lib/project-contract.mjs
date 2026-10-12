@@ -2,9 +2,9 @@ export function buildProjectContract({ projectId, localPath }) {
   return `# ${projectId} Project Contract
 
 This file contains durable project-local authority and portable execution rules only.
-Research behavior comes from \`~/.claude/CLAUDE-RESEARCH.md\` and the active research
-skills in \`~/.claude/skills\`; do not duplicate their stages, checklists, or reviewer
-rules here.
+Research behavior comes from the shared \`CLAUDE-RESEARCH.md\` and active research
+skills installed for the current host (\`~/.claude\` or \`~/.trae\`). Both hosts use
+the same PI contract; do not duplicate its research workflow or reviewer rules here.
 
 ## Research Authority
 
@@ -19,8 +19,9 @@ draft, archive, or identity \`current\` field may compete with it.
 paper identities, and stop or retire language are provenance or evidence only. They
 cannot redefine the program merely because they are detailed or recent. The one
 persistent Research PI owns problem formulation, synthesis, candidate judgment, and
-submission. A bounded Claude episode may implement, execute, diagnose, and return
-evidence without silently changing program or paper identity. Human intervention
+submission readiness, whether the main session uses Claude or GPT. A bounded collaborator
+may invent, implement, execute, diagnose, or write within its assigned task, returning
+evidence without silently taking ownership or changing program or paper identity. Human intervention
 is reserved for changing the original program, exceptional resources or permissions,
 irreversible or outward actions, genuine authority conflicts, and final submission
 sign-off.
@@ -42,6 +43,12 @@ project-local \`LOCAL_INFRASTRUCTURE.md\` exists, read it before infrastructure 
 may add operational facts but cannot change the scientific program. Do not infer missing
 infrastructure, copy stale worker IDs into this contract, or publish private machine
 details in project-generation manifests.
+
+Persist explicit durable user protocol changes in their existing owner here or in the
+referenced infrastructure source, recording scope and provenance and replacing superseded
+instructions. Keep temporary scientific choices in the live state. A handoff must carry
+these protocols without copying stale resource IDs or turning local preferences into
+global rules. Current artifacts and live process facts resolve execution claims.
 
 ## Compute Execution
 
@@ -96,6 +103,12 @@ or v2 changes the construction; the primitive changes; evidence is invalidated b
 implementation or evaluator defect; the blocker or next decisive action changes; or the
 work enters paper harvest. Do not update it for routine reads, downloads, edits, or
 training progress ticks.
+
+Follow the active skills for result interpretation, meaningful progress reporting,
+verified monitoring and recovery, and reconciliation with an existing manuscript.
+Before dependent work, consume completed but unread results and resolve affected stale
+state or paper claims. Use the same state to record any unresolved dependency and its
+next action; do not create a second synchronization queue or report file.
 
 Keep only the latest three to five decisive experiment records and link older raw
 provenance. Every retained experiment record must state \`scientificQuestion\`,

@@ -6,7 +6,7 @@
 <h1 align="center">Field-tested, end-to-end CS research skills for AI agents.</h1>
 
 <p align="center">
-  One persistent GPT Research PI, with five bounded specialist tools<br>
+  One persistent Research PI, led by Claude or GPT, with five focused tools<br>
   for implementation, experiments, verification, and paper production.
 </p>
 
@@ -36,10 +36,10 @@ drafts. The harder problem is research judgment. FIRM helps an agent decide what
 is worth studying, what a result actually means, what to build next, and when the
 evidence has earned a paper.
 
-The `research-pipeline` skill is the persistent GPT scientific owner across literature,
+The `research-pipeline` skill supports persistent scientific ownership across literature,
 experiments, interpretation, method evolution, and submission. Five specialist skills
-load only for the current uncertainty. Claude and Gemini can contribute bounded work;
-they do not become parallel PIs.
+load only for the current uncertainty. Claude and GPT can each lead the whole project;
+collaborator calls contribute bounded work without becoming parallel PIs.
 
 End-to-end does not mean silent autonomous spending or a rigid sequence of gates.
 High-impact actions remain explicit, and completed evidence can send the project
@@ -109,20 +109,18 @@ where matched success and failure first diverge, what evidence contradicts that 
 and what an intervention must change while preserving ordinary capability. This is
 deeper analysis, not a mandate for a larger probe atlas.
 
-`research-pipeline` separates persistent leadership from bounded collaboration. A GPT
-PI continuously owns synthesis and submission while Claude delivers implementation
-and experiment episodes. Independent Codex review is a deliberately sparse verifier
-for one named uncertainty, not a limit on the persistent PI's reasoning.
-Gemini is an optional creative co-PI when competent evidence has earned a v1,
-an informative failure needs a genuinely different v2 primitive, or an artifact-
-grounded candidate can grow into a larger reusable idea. The lead PI writes each Gemini prompt
-from the live evidence instead of filling a fixed schema, then collision-checks,
-implements, and tests the proposal. Neither model is a stop-button oracle, and provider
-unavailability does not pause the research.
+`research-pipeline` separates persistent leadership from bounded collaboration, not
+Claude from GPT. The commissioned main session owns invention, implementation, synthesis,
+and submission readiness. It may work directly or invite another model for the current
+question; no provider is permanently a thinker, coder, or reviewer. Independent review
+is sparse verification of a named uncertainty, not a limit on PI reasoning. Gemini is
+an optional co-invention entry. The PI writes each task from live evidence, evaluates
+proposals, and validates them in real implementations. Provider unavailability does not
+pause non-dependent research.
 
-Gemini collaboration uses the Antigravity CLI (`agy`) and is optional. The canonical,
+Gemini collaboration uses non-interactive `traecli exec` and is optional. The canonical,
 model-pinned invocation is maintained in
-[`collaboration.md`](skills/research-pipeline/references/collaboration.md); installations without `agy` retain the
+[`collaboration.md`](skills/research-pipeline/references/collaboration.md); installations without an available Gemini provider in Trae retain the
 lead-PI workflow and use independent Codex review only at evidence-earned boundaries.
 
 ### The operational research loop
@@ -133,27 +131,31 @@ lead-PI workflow and use independent Codex review only at evidence-earned bounda
 
 This is a living loop, not a mandatory stage machine. One persistent PI keeps the
 original program, current paper, discovery slice, method lineage, scope debt, active
-jobs, and next action coherent. Claude and Gemini contribute bounded work; artifacts,
+jobs, and next action coherent. Collaborators contribute bounded work; artifacts,
 not collaborator prose, carry continuity.
 
 ## Install in 30 seconds
 
-For a persistent GPT PI in Trae, install the six FIRM skills directly
-and use [`TRAE-RESEARCH.md`](TRAE-RESEARCH.md) as the model instructions file. The GPT PI
-then owns the full project while invoking Gemini for evidence-earned invention, Claude
-Code for bounded implementation, and Codex for sparse independent verification:
+Both hosts install the same six skills and the same
+[`CLAUDE-RESEARCH.md`](CLAUDE-RESEARCH.md) PI contract. Choose the host, not a different
+research workflow:
 
 ```bash
 git clone https://github.com/Zarien-Li/FIRM.git ~/FIRM
 cd ~/FIRM
+# Claude Code as the full project PI:
+FIRM_HOST=claude ./install.sh
+# Or GPT in Trae as the full project PI:
 FIRM_HOST=trae ./install.sh
 ```
 
-Point Trae's `model_instructions_file` to `~/.trae/CLAUDE-RESEARCH.md`. Keep the
-Codex MCP configured and install `agy` and `claude` only when those collaborators are
-available; the PI continues without them if a provider is unavailable.
+Start Claude with `claude --append-system-prompt-file ~/.claude/CLAUDE-RESEARCH.md`.
+For Trae, point `model_instructions_file` to `~/.trae/CLAUDE-RESEARCH.md` and select the
+desired GPT model. `TRAE-RESEARCH.md` is a compatibility symlink to the shared source,
+not a second maintained prompt. Gemini access, Claude child calls, and Codex MCP are
+optional collaboration capabilities, not prerequisites for either PI mode.
 
-For bounded Claude Code implementation and specialist workflows, add this repository
+For the namespaced Claude Code plugin, add this repository
 as a plugin marketplace:
 
 ```text
@@ -165,13 +167,13 @@ as a plugin marketplace:
 FIRM skills are then available under the `/firm:` namespace, so they do not
 collide with skills from other plugins.
 
-For a quick PI trial in a GPT-capable skill host:
+For a quick PI trial in Claude Code with the plugin:
 
 ```text
 /firm:research-pipeline "Own this project as a persistent first author. Preserve the important problem, establish credible baselines, record every result, update explanations only from discriminating evidence bundles, build reusable primitives, and write only when the evidence is ready."
 ```
 
-`research-pipeline` is the persistent GPT owner, not a macro that runs the whole library.
+`research-pipeline` supports the persistent PI, not a macro that runs the whole library.
 Its own focused references cover empirical foundations, method maturation, execution,
 collaboration, and submission. A specialist workflow is invoked only for bounded work.
 
@@ -247,9 +249,14 @@ research program; evidence determines the concrete problem and design.
 claude --append-system-prompt-file ~/FIRM/CLAUDE-RESEARCH.md
 ```
 
-In a standalone Claude project, Claude may hold the persistent PI role. In a
-multi-model project, keep one GPT/Trae PI and use Claude for bounded implementation and
-experiment episodes rather than opening a parallel thesis owner.
+Claude or GPT may lead a standalone or multi-model project through submission readiness.
+Keep one commissioned main PI; a collaborator's model does not decide its authority.
+For bounded child calls, use the shared
+[`delegated-task.md`](skills/research-pipeline/references/delegated-task.md) context and
+the transport examples in
+[`collaboration.md`](skills/research-pipeline/references/collaboration.md), not the main
+PI prompt alone. A GPT-led PI can delegate to Claude, and a Claude-led PI can delegate
+to GPT or Gemini without yielding project leadership.
 
 For a new program, use [`.firm/FIRST_MESSAGE_NEW.md`](templates/FIRST_MESSAGE_NEW.md)
 or invoke:
@@ -281,10 +288,10 @@ not silently spend compute, inspect remote jobs, or rewrite a manuscript.
 
 | Discover | Build | Finish |
 |---|---|---|
-| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn negative results into a constructive method lineage; use Claude for bounded implementation and Gemini for invited invention | Let the persistent GPT PI mature the work to submission; use independent Codex only for one named uncertainty or near-final factual check |
+| Reproduce strong baselines and inspect natural successes, failures, and contradictions | Turn evidence into a constructive method lineage; choose collaborators for the actual task | Let the Claude or GPT PI mature the work to submission readiness; use independent review for a named consequential uncertainty |
 | Keep the original research program and community value visible as the project evolves | Distinguish implementation, design, optimization, statistical, and transfer uncertainty | Align the final claim with controls, costs, limitations, citations, and raw artifacts |
 
-One persistent GPT PI owns the program. Specialist workflows and collaborator models
+One persistent PI owns the program. Specialist workflows and collaborator models
 are bounded tools, not a rigid stage machine or additional scientific owners.
 
 ## Enter at any point
@@ -340,7 +347,7 @@ is concentrated only on ideas whose scientific upside grows with the investment.
 
 ## One PI skill, five specialist tools
 
-`research-pipeline` is the only persistent GPT PI surface. Five consolidated tools remain
+`research-pipeline` is the persistent model-neutral PI surface. Five consolidated tools remain
 callable for bounded field contact, method work, execution, review, and authorship. The
 full pre-consolidation guidance remains available inside their on-demand references.
 
@@ -365,6 +372,7 @@ followed a recurring failure observed in live research.
 | 2026-06 | Three human-verified papers developed under successive versions entered external review | Nine official ACL ARR reviews returned mean overall assessments of 3.50, 3.33, and 3.17 |
 | 2026-07-27 | More than 100B model tokens across five model families exposed repeated agent failure modes and overlapping workflow rules | Consolidated the system into one persistent researcher and focused specialist workflows |
 | 2026-09 | Long contexts still fragmented ownership across many correct but competing skills | Made the existing `research-pipeline` the sole GPT PI surface, moved detail behind focused references, and kept run state purely mechanical |
+| 2026-10-12 | Provider-specific roles prevented Claude from owning the full research commission | Unified Claude and GPT leadership under one PI contract; bounded delegation now follows the task, not the model |
 
 Only aggregate review scores are public to protect active double-blind work. They
 are not acceptance decisions or a controlled estimate of FIRM's causal effect.
@@ -376,7 +384,7 @@ submission.
 ```text
 FIRM/
 ├── .claude-plugin/   # Claude Code plugin and marketplace manifests
-├── skills/           # one GPT PI skill plus bounded specialist workflows
+├── skills/           # one model-neutral PI skill plus five focused workflows
 ├── templates/        # optional project-local research bootstrap
 ├── examples/         # sanitized research-agent failure cases
 ├── demo/             # neutral result-diagnosis fixture and demo script

@@ -24,6 +24,7 @@ PI = SKILLS / "research-pipeline"
 PI_ENTRY = PI / "SKILL.md"
 PI_REFERENCES = {
     "collaboration.md",
+    "delegated-task.md",
 }
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 
@@ -129,7 +130,7 @@ def main() -> int:
 
     print(
         "Research packaging contract passed "
-        f"({len(manifest)} skills; one GPT PI plus five on-demand tools)."
+        f"({len(manifest)} skills; one model-neutral PI plus five on-demand tools)."
     )
     return 0
 

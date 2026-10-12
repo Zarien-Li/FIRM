@@ -10,6 +10,17 @@ Review exists to improve a consequential scientific decision, verify a claim-bea
 fact, or provide an independent intellectual perspective. It does not continuously
 raise the bar, invent mandatory work, or take ownership from `research-pipeline`.
 
+Sparse independent review does not mean sparse PI reasoning or delayed validity checks.
+The PI investigates consequential contradictions during normal work. Bring a verified
+defect back to the affected implementation, evidence, and manuscript, then inspect the
+repair; an accurate critique left in a review file has not resolved the issue.
+
+When method quality is the named uncertainty, assess the implemented principle and its
+evidenced component jobs using `method-development`, not elegance of prose or personal
+taste. Identify arbitrary exceptions, redundant machinery, or gains carried by a patch
+rather than the claimed primitive. Preserve justified approximations and necessary
+interactions; do not demand a theorem, universal transfer, or simplicity at any cost.
+
 ## Route The Work
 
 - For an independent Codex decision check, proof review, evidence packet, or Codex tool
@@ -23,7 +34,7 @@ raise the bar, invent mandatory work, or take ownership from `research-pipeline`
   paper entry, unusual compute, resume reconciliation, or portfolio pause, read
   [research-state-audit.md](references/research-state-audit.md).
 
-Claude implementation and Gemini co-invention belong to
+Delegated implementation and creative co-invention, with any available model, belong to
 [collaboration.md](../research-pipeline/references/collaboration.md), not to independent
 review.
 

@@ -38,7 +38,7 @@ absolute_project() {
 install_project_skills() {
   local project="$1"
   local backup="${project}/.firm/skill-backup-$(date +%Y%m%d-%H%M%S)"
-  CLAUDE_HOME="${project}/.claude" \
+  FIRM_HOST=claude CLAUDE_HOME="${project}/.claude" \
     RESEARCH_SKILLS_BACKUP_DIR="${backup}" \
     bash "${ROOT_DIR}/install.sh"
 }

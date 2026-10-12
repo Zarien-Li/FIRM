@@ -5,13 +5,14 @@ documentation, not a workflow and not ordinary project context.
 
 | Concern | Canonical owner |
 |---|---|
-| GPT-owned program continuity, synthesis, method maturation, positive expansion, and submission harvest | `research-pipeline` |
+| Main-PI program continuity, synthesis, method maturation, positive expansion, and submission readiness in Claude or GPT | `research-pipeline` |
 | Direction selection, literature identity, accepted task, nearest rival, substrate, and evaluator contact | `research-foundation` |
 | Observation bundles, competing explanations, primitive formation, construction arcs, repair, and experiment design | `method-development` |
 | Prospective registration, local/SSH/scheduler/GPU execution, retry, resume, monitoring, and completed-run delivery | `experiment-operations` |
 | Experiment and citation validity plus program/value/identity boundary synthesis | `research-review` |
-| Gemini creative collaboration and optional sparse Codex verification | `research-review` |
-| Claims-evidence writing, figures, compilation, bounded improvement, submission, rebuttal, and resubmission | `paper-writing` |
+| Bounded collaboration, provider entry points, and optional creative co-invention | `research-pipeline/references/collaboration.md` |
+| Optional independent verification | `research-review` |
+| Human-reader authorship, post-writing evidence verification, figures, revision, submission preparation, rebuttal, and resubmission | `paper-writing` |
 | Authority, evidence invalidation, contribution firewall, paper entry | `research-pipeline/references/shared/research-control-protocol.md` |
 | Claim-bearing evidence lineage | `research-pipeline/references/shared/evidence-lineage.md` |
 | Evaluation and experiment validity | `research-foundation/references/experiment-integrity.md` |
@@ -20,13 +21,14 @@ documentation, not a workflow and not ordinary project context.
 
 ## Runtime Invariants
 
-- The active model is the autonomous lead PI for reversible scientific decisions.
+- The commissioned main session is the autonomous lead PI for reversible scientific
+  decisions, whether Claude or GPT; explicit child tasks do not acquire leadership.
 - The broad program, evolving program, and bounded paper candidate remain separate.
 - Accepted benchmarks or natural systems anchor value; private slices stay diagnostic.
 - A method result is an executable realization plus decisive comparison and paired
   utility, read as one construction episode.
-- Gemini can widen design space. Codex defaults to zero calls before a credible
-  positive and is optional sparse verification afterward.
+- Select collaborators by the scientific question, not permanent model duties.
+  Independent review resolves a named consequential uncertainty, never approves the PI.
 - FIRM records operational facts and durable delivery; it does not direct research.
 - There is no construction lease, fixed review chain, sealed method identity, or
   user gate for ordinary scientific judgment.

@@ -12,8 +12,8 @@ venue constraints, and current changes. Compile once and preserve the known-good
 An edit that requires new science or a changed contribution returns that precise gap to
 `research-pipeline`; do not write around it.
 
-Normally use one or two rounds. Each round must have a concrete opportunity to improve
-meaning or reader understanding. Use an optional near-final independent check only for
+Each round must have a concrete opportunity to improve meaning or reader understanding.
+Use an optional near-final independent check only for
 a named factual, claim, citation, or proof uncertainty, not as a reviewer ritual.
 
 ## Respect An Optional Edit Boundary
@@ -41,6 +41,11 @@ After a natural ten-minute read, the editor writes from memory:
 - why it matters;
 - the idea most likely to remain memorable.
 
+For a method paper, the editor should also explain, in its own words, how the central
+computation works and what changes between training and inference. Use a reader with
+the intended technical background; missing exposition is an editing problem, not a
+request for extra experiments or a substitute for code/evidence verification.
+
 It then writes a short editorial letter locating where attention broke, paragraph
 movement became unclear, language stopped sounding field-natural, jargon displaced
 concrete experience, or authorial voice disappeared. Exact locations are useful;
@@ -61,13 +66,13 @@ round has a concrete purpose.
 
 ## Converge
 
-If a second round is useful, use a new editor who sees only the current artifact and
-does not know Round 1's changes. Stop when an intended reader can accurately retell the
+For another useful round, use a new editor who sees only the current artifact and
+does not know prior edits. Stop when an intended reader can accurately retell the
 problem, changed belief, surprise, significance, and takeaway; the prose has a coherent
-voice; paragraphs advance the argument; and the affected production and evidence checks
-pass.
+voice; the central method can be explained accurately; paragraphs advance the argument;
+and the affected production and evidence checks pass.
 
-Do not add a third round automatically. Continue only when another pass can improve
+Do not add another round automatically. Continue only when another pass can improve
 meaning, voice, specificity, or memorability. A new scientific gap returns to research;
 a changed paper identity returns to the writing boundary.
 

@@ -19,6 +19,13 @@ prior belief, surprise, stakes, and missing evidence without implying maturity. 
 evaluator, population, provenance, or identity changes materially, revisit dependent
 claims instead of transferring readiness from the old object.
 
+Planned comparison tables can precede focused manuscript writing. `research-foundation`
+owns their baseline, benchmark, backbone, and protocol selection; keep them with the
+existing comparison record, with `-` for unrun values and cell dispositions recorded
+separately. A proposed-method placeholder is not an implemented contribution. When
+writing begins, use these same validated result sources rather than creating a second
+matrix or turning the provisional table layout into the paper's argument.
+
 ## Establish The Author Argument Before The Outline
 
 Before outlining sections, write a one-page `AUTHOR_ARGUMENT.md` in continuous prose.
@@ -106,6 +113,52 @@ section. Internal scope notes and rejected claims are not manuscript prose.
 Preserve this paper's particular argument instead of filling fixed rhetorical slots.
 Calibrate causal, mechanism, generality, robustness, deployment, and SOTA language
 against the post-draft evidence check.
+
+## Explain The Actual Computation
+
+An engaging problem story is not enough if a reader cannot understand the algorithm.
+Make the implemented principle concrete: what enters it, what state or representation
+changes, how the objective/update or decision rule works, what differs in training and
+inference, and how an output is produced. Introduce notation where the computation needs
+it. A method figure should reveal this path, not decorate a collection of named modules.
+Let the relevant attribution result explain why an essential computation belongs there.
+
+Read the method prose, equations, algorithm, and diagram against the code/configuration
+that produced the reported results. Repair any mismatch in information access, component
+jobs, optimization, or execution order. A technical reader should be able to trace a
+representative example and identify the novel operation and reproduction-critical
+choices without guessing from an acronym. Keep this exposition in field-natural prose;
+the implementation mapping is a factual check, not a template for the section.
+
+## Keep The Manuscript Current
+
+When the PI adopts a result, changes the implemented method, or invalidates evidence,
+reconcile the affected manuscript before treating its next build or handoff as current.
+Use the same run/configuration identities for equations, method descriptions, tables,
+figures, captions, and abstract-level conclusions. Do not mix the formula from one
+version with the results of another. Research versions may remain in the scientific
+history or a justified ablation; the main narrative should identify the actual method.
+
+Regenerate quantitative assets from their canonical result source through the existing
+figure/table entrypoint. Inspect the rendered change and explain its consequence for
+the argument; automatic number insertion does not authorize a scientific claim. If an
+unfinished comparison prevents an update, mark the affected material provisional and
+keep that dependency in the sole project state until resolved. Do not postpone already
+supported updates because optional experiments remain or a final sweep is unfinished.
+
+Propose title, abstract, terminology, principal figures, evidence selection, and the
+remaining submission agenda proactively. Retain material losses, costs, and comparison
+deviations. A request for brevity, visual polish, or a stronger story cannot justify
+presenting a proxy as faithful or hiding evidence that changes the conclusion; explain
+the conflict and offer an accurate presentation. Evidence selection serves the argument
+and declared scope, not the sign of the result.
+
+Preserve accepted editorial choices in the existing author argument or paper plan:
+the reader-facing language, notation, concrete before/after passage or figure reference,
+and the reason a correction improved comprehension. Apply the underlying lesson across
+affected sections and later drafts, and recheck the rendered paper after substantial
+rewrites. Do not turn one local preference into a global ban or ask the user to reteach
+the same correction. A fresh reader's retelling tests whether the lesson survived.
 
 ## Verify After The Narrative Exists
 

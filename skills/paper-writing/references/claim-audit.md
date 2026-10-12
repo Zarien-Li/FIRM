@@ -25,8 +25,10 @@ check every repeated occurrence. Distinguish induced from natural, association f
 cause, diagnostic from deployed, selected from independent confirmation, and a cell
 from its claimed population.
 
-Use `PASS`, `WARN`, `FAIL`, `BLOCKED`, `NOT_APPLICABLE`, or `ERROR`. A numerically
-correct claim still fails when its semantics exceed the evidence.
+Describe whether the evidence supports the claim, needs qualification or correction,
+or remains unverified, with the reason and affected locations. Use status labels only
+when an actual downstream format requires them. Numerical agreement cannot establish a
+claim whose semantics exceed the evidence.
 
 ## Record And Repair
 

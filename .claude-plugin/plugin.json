@@ -1,8 +1,8 @@
 {
   "name": "firm",
   "displayName": "FIRM — Research Judgment",
-  "version": "1.3.0",
-  "description": "One persistent GPT research-PI skill plus bounded Claude workflows for implementation, experiments, evidence, and papers.",
+  "version": "1.4.0",
+  "description": "One model-neutral research PI and five focused skills for end-to-end research through submission readiness in Claude or GPT-led projects.",
   "author": {
     "name": "Zeyan Li",
     "url": "https://github.com/Zarien-Li"

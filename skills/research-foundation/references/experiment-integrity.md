@@ -38,6 +38,11 @@ estimand. Label synthetic, generated, proxy, simulated, sampled, and human-evalu
 targets for what they are; none inherits the scope of the natural task merely because
 its signal is clean.
 
+For formal portfolio comparisons, apply the full official split policy in `baseline.md`.
+Reconcile intended coverage with raw example identities, missing outputs, and the actual
+denominator before accepting a completed cell. A matched subset can still violate the
+commissioned full protocol; a full row count can still contain duplicates or leakage.
+
 ## Matched Treatment
 
 Enumerate the differences between compared systems: data exposure, labels,
@@ -59,6 +64,24 @@ Verify that the intended code path ran, the advertised component was active, and
 model, baseline, optimizer, attacker, or relearner reached the competence needed for the
 comparison. Check convergence and engagement using behavior appropriate to the system,
 not merely process survival.
+
+For learned methods, inspect the intended trainable parameters, nonzero updates where
+expected, loss/gradient behavior, checkpoint selection, and convergence at the prescribed
+training budget. Compare data exposure, optimization and selection effort, and inference
+budget, not just GPU count or epochs. Competent reproduction may require a method's native
+recipe rather than identical hyperparameters for every method. Explain differences that
+matter to the claim. Do not undertrain a strong rival, use its base checkpoint in place
+of its method, or declare our design ineffective before verifying that it was learned
+and used. A working forward pass is not this evidence.
+
+Establish that engagement evidence before relying on the first result from a path, and
+recheck what changed after a consequential implementation or protocol edit. Inspect a
+representative input, intermediate change, raw prediction, and score together. Where
+appropriate, use a known scoring example or intentional intervention to establish that
+the evaluator can register a change. All-zero scores, zero parameter updates, identical
+outputs, implausibly fast runs, or surprising scale are reasons to trace the path, not
+automatic verdicts. Explain valid extremes rather than suppressing them. A completion
+marker, row count, or passing infrastructure test cannot establish semantic validity.
 
 Keep implementation defects, non-engagement, undertraining, interruption, and
 infrastructure failure separate from scientific failure. A smoke test establishes that

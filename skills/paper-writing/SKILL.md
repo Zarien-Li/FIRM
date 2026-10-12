@@ -10,6 +10,10 @@ Own the manuscript from an early problem story through a submission-ready packag
 Writing integrates the science for a human reader; it neither substitutes for missing
 evidence nor turns review into an objection checklist.
 
+Use this skill for consequential updates to an existing manuscript as well as first
+drafting. The PI owns reconciliation of adopted results and method changes, the paper's
+authorial choices, and retention of accepted reader/editor feedback across revisions.
+
 ## Route The Work
 
 - `plan`, `write`, `full`, or `research-draft`: read

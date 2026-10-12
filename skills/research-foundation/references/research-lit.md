@@ -46,6 +46,29 @@ damage. Methods, ablations, code, and predecessor work often carry this rational
 
 ## Distinguish Literature Roles
 
+For a field-comparison commission, build a dated method map rather than stopping at
+the first few plausible papers. Search the requested publication years, including the
+current year, and distinguish accepted/published papers from preprints and release
+versions. Preserve influential older incumbents where relevant. A requested count or
+year distribution is a coverage target, not permission to import unrelated tasks or
+count a backbone, ablation, or renamed version as another published method. Explain
+missing coverage from the sources; do not manufacture it.
+
+Read each selected baseline's full paper, relevant appendix, and released implementation
+far enough to reconstruct its evaluation contract. Record publication identity and
+primary URLs, method computation, datasets and official splits, metrics, backbone and
+checkpoint revisions, training/evaluation settings, information and supervision,
+resource requirements, and architecture dependencies. Distinguish what the paper says,
+what released code actually supports, and what the project proposes to adapt. Search
+snippets and another model's summary cannot establish those facts.
+
+Use bounded readers for independent papers or tightly related method families; retain
+source sections and code locations in the comparison record. The PI reads the returned
+contracts together and resolves conflicts that affect the matrix. Discover benchmarks
+and backbone regimes from this shared task evidence, not their popularity or agreement
+among reader summaries. Missing full text, code, or critical protocol detail remains an
+explicit gap, never an invented value.
+
 Classify close work as a published baseline to reproduce, a component or idea to inherit,
 an empirical threat requiring matched comparison, an adjacent analogy, or broad context.
 A paper blocks the current novelty or value claim only when it implements the same

@@ -15,6 +15,12 @@ For every run retain:
 - attempt-specific log, result, checkpoint, completion/failure marker, and resume paths;
 - actual resource use, protocol deviations, and conclusions those deviations exclude.
 
+For a formal dataset comparison, also retain the official split/eligible-population
+identity, expected coverage, actual record identities/counts, and missing or failed
+outputs. Apply the full-data policy in `research-foundation/references/baseline.md`:
+canaries and partial attempts cannot complete a full-protocol cell. Do not improve a
+reported metric by silently dropping failures or changing its denominator.
+
 A debug run may use a compact record. An expensive or claim-defining run also needs the
 prospective registration in [research-contract.md](research-contract.md). Never launch
 from prose reconstructed from memory.
@@ -43,11 +49,26 @@ to a campaign whose results depend on them. Reuse completed intermediate artifac
 only after verifying compatibility with the current protocol; an existing failure file
 is not a completed cell and must not silently suppress recovery.
 
+Carry the method-specific competence evidence from experiment integrity into the run:
+the actual adapted/updated parameters, optimization progress and convergence, selected
+checkpoint, and the inference computation used for scoring. Check enough of the native
+recipe and affected path to distinguish a design loss from incomplete learning or an
+unused treatment. Return an unresolved competence problem for repair, not a leaderboard
+number presented as a healthy comparison.
+
 Size accelerator placement from the real-path canary or a closely matched completed
 run, current ownership, transient peaks, and a meaningful margin. Do not invent a
 universal utilization or free-memory threshold. During method formation, normally run
 and read one paired development seed before launching repetitions; never search seeds
 for a favorable sign.
+
+Measure useful end-to-end throughput after startup, including data access, generation,
+scoring, and output writes. Forecast time to the next interpretable result from that
+measurement, not accelerator count. Inspect an unexpectedly slow path for redundant
+model loading, serial work, CPU/I/O waits, or synchronization before scaling. Batch,
+shard, or overlap independent work when it preserves the comparison; verify the actual
+concurrency and throughput after launch. Loading and short CPU phases can be legitimate;
+utilization alone neither proves progress nor authorizes terminating a job.
 
 ## Launch In The Actual Environment
 
@@ -70,6 +91,11 @@ checkpoint behavior after launch.
 Register long-running jobs in the configured registry when one exists, using scheduler
 ID or PID plus start token and command fingerprint. PID, terminal, queue row, or GPU
 allocation alone does not prove progress or completion.
+
+Establish the monitor, its recipient, and the resumption mechanism before leaving a
+long run unattended, following [monitor-experiment.md](monitor-experiment.md). Account
+for shared provider quotas and host capacity when starting concurrent model sessions
+as well as experiments; more concurrent agents need not increase research throughput.
 
 ## Recover Without Changing The Experiment
 
@@ -95,8 +121,15 @@ Pending resources are operational facts, not evidence about the method.
 
 Before declaring execution complete, verify the registered identity, terminal evidence,
 expected cells, parseable artifacts, actual configuration, and deviations. Deliver the
-run record, raw paths, and uninterpreted headline values to the PI; only the PI updates
-scientific state after reading them.
+run record, raw paths, engagement and evaluator evidence, headline values, and unresolved
+anomalies to the PI. Distinguish execution completion from evidence validity and PI
+interpretation; do not mark unscored or unvalidated work ready for comparison. Only the
+PI updates scientific state after reading the evidence.
+
+For a matrix, reconcile completed, partial, incompatible, and unresolved cells with the
+chosen comparison plan and its table sources. Explain coverage gaps and preserve the
+planned obligation until it is resolved or explicitly revised. A successful run on one
+method, backbone, or benchmark cannot stand in for the rest.
 
 While a long job runs, advance genuinely useful result-independent work. When nothing
 useful remains, a quiet wait is healthier than generating launch paperwork or extra

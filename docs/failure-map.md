@@ -1,7 +1,7 @@
 # The FIRM Failure Map
 
-> AI research agents rarely fail by doing nothing. They fail by doing plausible work in the
-> wrong scientific direction.
+> AI research agents can stall without an owner for the next decision, or keep doing
+> plausible work in the wrong scientific direction.
 
 This map records recurring failure patterns observed across long-horizon research work.
 It is not a taxonomy invented before use: each category exists because projects repeatedly
@@ -11,12 +11,16 @@ The map is deliberately compact. It describes recognizable behavior, the mistake
 behind it, the cost to the research program, and the FIRM capability intended to repair
 it.
 
+The September session review also exposed execution, continuity, and writing failures.
+See the [research responsibility update](research-responsibility-update.md) for all
+thirteen reported issues, their maintained owners, and the limits of a skills-only repair.
+
 ## 1. Value And Scope Failures
 
 | Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
 | A broad seed such as image editing or knowledge editing becomes a paper about one project-defined cell | A reproducible phenomenon is assumed to be important merely because it is specific | The work becomes rigorous but irrelevant | Keep the original program, current paper, value spine, scope debt, and reintegration path visible in [`research`](../skills/research-pipeline/SKILL.md) |
-| The agent keeps drilling inward after each result | Mechanistic depth is confused with community value | Months of work optimize an abstraction few researchers care about | Re-run Prize and Fidelity review before major method, compute, and paper-identity commitments |
+| The agent keeps drilling inward after each result | Mechanistic depth is confused with community value | Months of work optimize an abstraction few researchers care about | The PI revisits community value and fidelity at consequential commitments; independent review is selective, not an automatic gate |
 | A crowded field triggers an automatic pivot | Similar terminology is treated as proof that the opening is closed | The agent abandons important, benchmarked problems without matched evidence | Promote nearby work to strong baselines and ask whether it closes the same natural failure in [`research-foundation`](../skills/research-foundation/SKILL.md) |
 
 ## 2. Method-Formation Failures
@@ -41,7 +45,7 @@ it.
 
 | Observable behavior | Hidden confusion | Scientific cost | FIRM response |
 |---|---|---|---|
-| The main claim is drafted before scorer, masking, provenance, or padding is audited | A plausible number is treated as a trustworthy measurement | Late audit can invalidate the paper identity | Audit evaluation boundaries before expensive scaling and again before submission with [`research-review`](../skills/research-review/SKILL.md) |
+| A claim relies on results before scorer, masking, provenance, or padding is understood | A plausible number is treated as a trustworthy measurement | Late audit can invalidate the paper identity | Establish evaluation boundaries and component engagement before reliance through [`research-foundation`](../skills/research-foundation/SKILL.md); use independent review for consequential unresolved uncertainty |
 | A strong baseline is compared under mismatched data, cost, or training | A familiar name is mistaken for a fair incumbent | Claimed progress disappears under matched conditions | Reproduce the actual incumbent and lock comparison semantics |
 | Training output exists, so optimization is assumed successful | Completion is confused with convergence | Scientific conclusions are drawn from unhealthy runs | Inspect curves, failures, checkpoints, and effective budget before interpreting results |
 | A claim survives repeated retelling but loses contact with raw evidence | Narrative consistency is confused with evidential support | Unsupported causal language enters the paper | Reconstruct claims from artifacts and verify citations through [`research-review`](../skills/research-review/SKILL.md) |
@@ -62,7 +66,7 @@ it.
 | Several failed methods are repackaged as an analysis paper | Difficulty of intervention is confused with an independent positive object | The paper has history but no contribution readers need | Apply the deletion test: if the analysis collapses when failed methods are removed, it is not yet an analysis contribution |
 | Correct abstention or certification failure is presented as method success | Conservative behavior is confused with positive capability | The paper overstates what was achieved | Map results to bounded claims and real value metrics |
 | Every new limitation triggers another experiment | Completeness is confused with publishability | Mature work never reaches submission | Decide whether the next result changes the bounded claim or merely broadens future work |
-| A draft is started because a deadline exists | Text production is confused with contribution maturity | Writing hardens a weak or incoherent paper identity | Enter [`paper-writing`](../skills/paper-writing/SKILL.md) only when the positive object, decisive comparison, evidence, and scope are stable |
+| A deadline-driven draft is treated as a mature contribution | Text production is confused with contribution maturity | Writing hardens a weak or incoherent paper identity | Early problem stories and provisional drafts can aid thought; [`paper-writing`](../skills/paper-writing/SKILL.md) keeps readiness claims grounded in the actual object, comparisons, evidence, and scope |
 
 ## How To Use This Map
 
