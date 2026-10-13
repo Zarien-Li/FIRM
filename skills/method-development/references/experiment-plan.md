@@ -19,7 +19,10 @@ opportunities. Do not pre-specify a new-method ablation or invent results merely
 the future table contains a method row.
 
 Translate the meaningful matrix into semantic cells and dependencies, not an unchecked
-Cartesian product. Reuse compatible checkpoints, features, predictions, and scoring
+Cartesian product. Carry each main-table cell's comparison meaning from the existing
+baseline record into the selected config, including the freedoms allowed to each method.
+Adopting a paper's native script must not silently replace those conditions. Reuse
+compatible checkpoints, features, predictions, and scoring
 without double-counting work; incompatible or deferred cells need an explanation, not
 silent removal. The full-split policy and distinction between canaries and formal
 comparisons live in `research-foundation/references/baseline.md`.
@@ -74,6 +77,13 @@ Prioritize a run when plausible outcomes would:
 - change the decisive published comparison or accepted-task consequence;
 - resolve uncertainty large enough to reverse the current decision;
 - test a principle-predicted transfer after a positive object exists.
+
+For a diagnostic or native-regime experiment outside the main-table conditions, identify
+what it will teach and the intended route back to a claim-relevant matched comparison.
+This is a design decision in the existing plan, not a mandatory second run or approval.
+Prefer learning that can improve the method at its intended operating condition; do
+not postpone discovering that the resulting configuration cannot answer the main table
+until a broad campaign or manuscript has already formed around it.
 
 Defer work whose outcomes merely add a favorable cell, another caveat, or descriptive
 detail without changing the arc. A possible reviewer question is not by itself a

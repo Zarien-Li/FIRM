@@ -26,6 +26,23 @@ is reserved for changing the original program, exceptional resources or permissi
 irreversible or outward actions, genuine authority conflicts, and final submission
 sign-off.
 
+## Comparison Ownership
+
+Carry the intended main-table comparison into development and handoffs, not just its
+score vector. Recover its meaning from explicit user instructions, official protocols,
+and baseline artifacts; retain source-linked conditions, permitted freedoms, and unknown
+provenance in the existing comparison record. Consult the active research-foundation
+baseline reference when changing conditions or deciding which results belong in a table.
+
+The PI may optimize architecture, loss, training, and implementation within those
+freedoms. A diagnostic or native-recipe comparison cannot silently replace the
+commissioned comparison or inherit its win count. A justified new regime needs its own
+matched comparison; reuse existing results where their meaning still matches. Neither
+identical training recipes nor universal baseline reruns are required. Agent-authored
+plans remain revisable without routine approval; explicit user-locked conditions remain
+binding. Missing provenance leaves the affected comparison unresolved, not all research
+blocked.
+
 ## Portable Workspace Rules
 
 - Project directory: \`${localPath}\`.
@@ -107,7 +124,10 @@ training progress ticks.
 Follow the active skills for result interpretation, meaningful progress reporting,
 verified monitoring and recovery, and reconciliation with an existing manuscript.
 Before dependent work, consume completed but unread results and resolve affected stale
-state or paper claims. Use the same state to record any unresolved dependency and its
+state or paper claims, then execute the prepared, authorized next action without asking
+for routine approval. Distinguish observations from diagnostic explanations and overall
+method gains from evidence for the claimed primitive. A title or draft is not evidence.
+Use the same state to record any unresolved dependency and its
 next action; do not create a second synchronization queue or report file.
 
 Keep only the latest three to five decisive experiment records and link older raw

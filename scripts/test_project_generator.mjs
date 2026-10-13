@@ -6,6 +6,7 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { buildProjectContract } from "./lib/project-contract.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(here, "..");
@@ -89,6 +90,13 @@ try {
   const seed = fs.readFileSync(path.join(projectRoot, "SEED.md"), "utf8");
   const prompt = fs.readFileSync(path.join(projectRoot, "prompt.txt"), "utf8");
   const claude = fs.readFileSync(path.join(projectRoot, "CLAUDE.md"), "utf8");
+  assert.equal(claude, buildProjectContract({ projectId: "T01", localPath: projectRoot }));
+  const identity = JSON.parse(fs.readFileSync(path.join(projectRoot, "PROJECT_IDENTITY.json"), "utf8"));
+  assert.deepEqual(identity.origin.evidence_surface, manifest.projects[0].standardEvidenceSurface);
+  assert.deepEqual(identity.origin.published_method_baselines, [
+    manifest.projects[0].publishedMethodBaselines.strongIncumbent,
+    manifest.projects[0].publishedMethodBaselines.nearestRival,
+  ]);
   const statePath = path.join(projectRoot, "PROJECT_STATE.md");
   const stateText = fs.readFileSync(statePath, "utf8");
   assert.match(seed, /Strong published-method incumbent/);
@@ -122,6 +130,24 @@ try {
   const invalidState = spawnSync(process.execPath, [stateValidator, contradictoryPath], { encoding: "utf8" });
   assert.equal(invalidState.status, 1);
   assert.match(invalidState.stderr, /inheritance\.failedPrediction/);
+
+  // Generation preserves source protocol freedoms; it does not decide comparability.
+  const nativeRecipes = structuredClone(manifest);
+  const nativeProtocol = "Full released test split and original-unit evaluator; method-specific input resolutions and optimizer schedules permitted by the official protocol.";
+  nativeRecipes.projects[0].standardEvidenceSurface.protocol = nativeProtocol;
+  nativeRecipes.projects[0].publishedMethodBaselines.strongIncumbent.protocol = "Native resolution 512; official split and original-unit evaluator.";
+  nativeRecipes.projects[0].publishedMethodBaselines.nearestRival.protocol = "Native resolution 1024; official split and original-unit evaluator.";
+  const native = run(nativeRecipes, "native-recipes");
+  const nativeRoot = path.join(native.outputRoot, "T01");
+  const nativeIdentity = JSON.parse(fs.readFileSync(path.join(nativeRoot, "PROJECT_IDENTITY.json"), "utf8"));
+  assert.deepEqual(nativeIdentity.origin.evidence_surface, nativeRecipes.projects[0].standardEvidenceSurface);
+  assert.deepEqual(nativeIdentity.origin.published_method_baselines, [
+    nativeRecipes.projects[0].publishedMethodBaselines.strongIncumbent,
+    nativeRecipes.projects[0].publishedMethodBaselines.nearestRival,
+  ]);
+  for (const name of ["PROGRAM_ORIGIN.md", "SEED.md", "prompt.txt"]) {
+    assert.ok(fs.readFileSync(path.join(nativeRoot, name), "utf8").includes(nativeProtocol));
+  }
 
   const duplicateBaseline = structuredClone(manifest);
   duplicateBaseline.projects[0].publishedMethodBaselines.nearestRival.name = "Published Editor A";

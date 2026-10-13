@@ -116,6 +116,13 @@ Maintain the exact gap to the strongest functional rival on the intended value a
 surface. Prefer replacing or simplifying debt over adding a separate patch for each
 baseline.
 
+Separate the package's improvement from evidence for its governing principle. A gain
+after changing context, representation, normalization, objective and recurrence together
+can motivate that construction; it does not experimentally isolate any one cause.
+Use a contrast that can change the live design decision when attribution matters, or
+keep the explanation provisional while learning. A title, inherited method name or
+elegant narrative cannot turn the package result into proof of its preferred principle.
+
 ## Improve Toward The Commissioned Target
 
 Own the arc beyond the first working method. Connect implementation and real experiments
@@ -141,6 +148,13 @@ losses and costs rather than hiding them behind the aggregate fraction.
 Use development results to optimize, then confirm the selected realization on the full
 agreed evaluation without selecting versions on the test score. A local comparison win
 supports SOTA language only when the comparable current published frontier is covered.
+State progress against the named methods and conditions that actually ran. Wins against
+an internal solver, shorter-context reference, native-protocol comparator or validation
+screen do not arithmetically add to the main-table win count. A strong diagnostic margin
+may motivate the next matched experiment; it cannot guarantee a win under another
+protocol or substitute for an unmeasured rival gap. Apply the comparison-preservation
+guidance in `research-foundation/references/baseline.md` as the construction evolves,
+not only when preparing its final evaluation.
 The 80% goal is neither a universal threshold for other projects nor an automatic
 paper-readiness gate: meeting it does not replace attribution, meaningful utility,
 simplicity, or honest limits. Conversely, do not rename a missed performance target as

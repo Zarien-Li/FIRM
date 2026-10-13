@@ -99,12 +99,65 @@ These are comparison plans, not a fabricated manuscript or evidence of paper mat
 Keep native and adapted protocols visibly distinct. Populate results from validated
 artifacts through the existing table entrypoint, not manual transcription.
 
-Use `BASELINE_REPRO.md` as the comparison source when a durable map is needed. Connect
-table cells to stable campaign/run identities and record source-backed selection,
-adaptations, incompatibilities, and unresolved details there; do not create another
-independent live project state. Plan forecast and execution through `experiment-plan`
-and `experiment-operations`. Completion includes scoring, coverage, and raw behavioral
+Use the existing baseline/comparison record, or `BASELINE_REPRO.md` when one is needed,
+as the source for both numbers and their evaluation meaning. Connect table cells to
+stable campaign/run identities and record source-backed selection, adaptations,
+incompatibilities, and unresolved details there; do not create another independent
+live project state. Plan forecast and execution through `experiment-plan` and
+`experiment-operations`. Completion includes scoring, coverage, and raw behavioral
 reading, not only a launch or a set of checkpoints.
+
+## Preserve The Main Comparison While Improving The Method
+
+Recover the intended main-table comparison from explicit user instructions, the accepted
+benchmark protocol, and the baseline artifacts. A frozen CSV or score vector alone is
+not an evaluation contract. Keep enough source-linked meaning in the existing comparison
+record to know what each cell measures: input information/context and model regime;
+data revision, preprocessing, split and eligible population; task/target/horizon;
+evaluator, metric units, aggregation and failure handling; checkpoint/variant selection
+and any agreed resource or tuning conditions. Record what remains unknown instead of
+assuming that matching dataset names and output lengths makes scores comparable.
+
+Develop the proposed method for that comparison, not under an easier or richer condition
+whose relationship to the main table will be considered only at writing time. The PI
+owns method, architecture, loss, optimization and implementation choices within the
+comparison's permitted freedoms. Fairness need not mean identical learning rates,
+optimizers or epoch counts; establish competent method-specific training and disclose
+selection effort. Conversely, calling context, normalization, data cleaning or model
+selection a "protocol variable" does not establish that a change is permitted or that
+old comparator scores remain usable.
+
+An accepted protocol may allow method-specific context lengths or native recipes;
+establish that freedom from its actual sources rather than imposing universal equality.
+Likewise, model-internal normalization can be part of the method when available inputs
+and the scored target/units remain unchanged. Distinguish such design choices from
+changing the evaluated information, target scaling or metric. Judge the actual effect,
+not the configuration field's name.
+
+Native reproduction and off-condition diagnosis can be useful without replacing the
+main comparison. Before building on such a result, explain what it can teach and how
+the resulting construction will answer the intended comparison. Do not count its wins,
+margin or extra seeds as progress already achieved against the main-table methods.
+If the method requires different input information, preprocessing, target, selection or
+scoring semantics, report that difference and its comparison consequence. Neither
+"native recipe" nor faithful implementation licenses silently changing our column
+while retaining the other columns' old scores.
+
+A scientifically justified new regime can support a separately identified matched
+comparison. Preserve the original commissioned obligation and reuse earlier artifacts
+only where their semantics still match; recompute only genuinely affected evidence.
+Do not rerun every baseline merely because software or hardware differs. Trace whether
+the difference changes the measured behavior, numerical result, or cost claim. Exact
+artifact identifiers aid reconstruction; neither matching hashes nor different hashes
+alone decide scientific comparability.
+
+These are PI judgments, not a permission gate. Run useful diagnostic work and ordinary
+authorized optimization autonomously. Explain a proposed revision of the comparison
+and its evidence consequences in the existing record; a user-locked condition remains
+binding unless the user changes it. Do not treat revising an agent-authored plan as a
+new human approval requirement, nor silently replace a commissioned main comparison
+with the diagnostic one. Missing protocol provenance leaves the affected comparison
+unresolved, not the whole research program blocked or all completed evidence invalid.
 
 ## Use Complete Official Data Protocols
 
@@ -222,6 +275,9 @@ Create or update `BASELINE_REPRO.md` only when coordination needs it:
 | Method | Role | Paper/year/primary sources | Native benchmark/backbone | Chosen protocol and adaptation | Competence/deviation | Run/result identity |
 ## Planned Comparison Tables
 - meaningful cells, full split/coverage, metrics, costs, unrun placeholders, exclusions:
+## Main Comparison Meaning
+- source-backed evaluation conditions, permitted method freedoms, unresolved provenance:
+- native/diagnostic departures and which comparisons their artifacts can actually answer:
 ## Ownership And Competence
 - closest rivals, substrate result, intended and actual regime:
 ## Integrity

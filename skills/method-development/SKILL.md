@@ -21,6 +21,10 @@ candidate, use the principle-and-simplification guidance in
 [method-primitive-synthesis.md](references/method-primitive-synthesis.md); elegance
 must survive implementation and comparison, not just the method's description.
 
+Improve the method within the intended main comparison, not by silently changing its
+evaluation conditions. A useful native or diagnostic result guides construction;
+`research-foundation/references/baseline.md` owns whether it can enter the main table.
+
 Read an informative result as a construction lesson before proposing its successor.
 Use `signal-analysis.md` when the cause is unclear, and
 `method-primitive-synthesis.md` when choosing a repair or replacement. A new name,

@@ -15,6 +15,14 @@ For every run retain:
 - attempt-specific log, result, checkpoint, completion/failure marker, and resume paths;
 - actual resource use, protocol deviations, and conclusions those deviations exclude.
 
+Link a main-table run to its existing comparison specification and record the effective
+settings, including defaults inherited from loaders, native scripts and evaluators.
+Verify the mapping on the real path when it changes. A run can faithfully execute its
+own spec and still be outside the main table's conditions; label and deliver that fact
+rather than treating a successful exit as authority to fill the cell. The comparison
+meaning and permitted method freedoms belong to `research-foundation/references/baseline.md`,
+not an automatic allow/deny classifier in the launcher.
+
 For a formal dataset comparison, also retain the official split/eligible-population
 identity, expected coverage, actual record identities/counts, and missing or failed
 outputs. Apply the full-data policy in `research-foundation/references/baseline.md`:
@@ -130,6 +138,8 @@ For a matrix, reconcile completed, partial, incompatible, and unresolved cells w
 chosen comparison plan and its table sources. Explain coverage gaps and preserve the
 planned obligation until it is resolved or explicitly revised. A successful run on one
 method, backbone, or benchmark cannot stand in for the rest.
+If the persistent PI is also the executor, perform this evidence handoff yourself and
+continue interpretation; do not wait for a user message to receive your own results.
 
 While a long job runs, advance genuinely useful result-independent work. When nothing
 useful remains, a quiet wait is healthier than generating launch paperwork or extra

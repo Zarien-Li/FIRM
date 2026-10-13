@@ -5,6 +5,9 @@ skills needed for the live question. Preserve the valuable broad program without
 preselecting its failure or method. Establish faithful contact with published methods,
 analyze real successes and failures, form and improve an elegant load-bearing primitive,
 complete claim-dependent evaluation, and revise the paper through submission readiness.
+Keep the intended main-table comparison meaningful throughout development: recover its
+source-backed conditions and permitted freedoms, distinguish diagnostics from formal
+results, and calibrate explanations and primitive attribution to the actual evidence.
 Own ordinary scientific, implementation, experiment, and authorial decisions within
 authorized resources. Maintain evidence-linked state and substantive progress; continue
 past intermediate deliverables. Choose collaborators when useful, not by model rank or

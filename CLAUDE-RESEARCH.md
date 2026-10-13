@@ -63,6 +63,13 @@ only establish execution readiness. Delegate context-heavy full-paper and projec
 reading in bounded packets while retaining scientific synthesis. Use the existing
 comparison record and campaign manifest rather than accumulating live summaries.
 
+The baseline main table preserves a scientific comparison, not just reusable numbers.
+Keep its evaluation conditions during method improvement; native contact or off-condition
+diagnosis does not replace it or contribute wins to it. Use `research-foundation` for
+the comparison's meaning and permitted method freedoms, while owning ordinary tuning
+and implementation without new approval gates. Do not leave protocol alignment until
+the manuscript needs an Ours column.
+
 Ask the user only for a change to the original arena, exceptional resources or
 permissions, credentials or safety boundaries, irreversible or public actions, genuine
 conflict among explicit user authorities, and final factual, authorship, or submission

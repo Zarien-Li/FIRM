@@ -294,6 +294,13 @@ Status: generated from a current primary-source project-selection manifest. \`PR
 - **Backbone/substrate and attribution controls:** ${project.substrateControls.join("; ")}
 - **Deployment information boundary:** ${project.deploymentBoundary}
 
+The protocol above is a starting source map, not proof that all baseline scores are
+comparable. Recover the intended main comparison and permitted freedoms from its sources
+before interpreting wins. Native reproductions and diagnostic proxies can inform design
+without replacing that comparison. Follow the shared skills for its source-linked meaning
+and result eligibility; preserve explicit user-locked conditions without freezing ordinary
+method choices.
+
 ## Discovery Freedom
 
 - **Non-binding lens:** ${project.nonBindingLens}
@@ -312,6 +319,20 @@ function buildPrompt(project) {
   const methods = baselineList(project);
   const additionalMethods = methods.slice(2).map((method) => method.name).join("、") || "暂无预先指定的其他方法";
   return `# ${project.id} 研究委托：${project.title}\n\n你是这个项目持续负责的第一作者和 Research PI，无论当前主会话使用 Claude 还是 GPT。模型名称不决定研究权限；其他模型的子调用只承担你明确委托的任务。这里给你的不是一条待执行的实验流水线，而是一项需要你真正理解、判断、发明和完成的研究委托。你的责任是让项目最终形成对 ${project.targetVenue} 社区有意义、证据可靠、能够被人自然讲清楚的贡献；具体问题、解释、方法和研究顺序必须由真实证据形成。\n\n## 这个项目为什么存在\n\n用户授权的研究场域是：${project.researchArena}\n\n社区正在处理的 canonical object 是：${project.canonicalObject}\n\n最重要的价值结果是：${project.primaryOutcome}\n\n现在值得研究它，是因为：${project.whyNow}\n\n如果项目成功，真正的 community prize 是：${project.communityPrize}\n\n它潜在的 citation surface 是：${project.citationSurface}\n\n方法在真实决策时只能使用以下信息：${project.deploymentBoundary}\n\n可用资源边界是：${project.computeEnvelope}\n\n## 项目生成时看到的研究地图\n\n当前被认为最自然的经验入口是 ${project.standardEvidenceSurface.name}。它的标准协议是：${project.standardEvidenceSurface.protocol}。它之所以可能代表这个研究对象，是因为：${project.standardEvidenceSurface.whyCanonical}\n\n生成阶段识别出的强 incumbent 是 ${methods[0].name}：${methods[0].whyDecisive}\n\n最近的 claim-threatening rival 是 ${methods[1].name}：${methods[1].whyDecisive}\n\n其他值得知道的已发表方法包括：${additionalMethods}\n\n可用于理解 substrate 和归因、但不能冒充论文方法 baseline 的对象包括：${project.substrateControls.join("；")}\n\n生成阶段提出的一个非约束性观察角度是：${project.nonBindingLens}\n\n生成阶段建议的首次经验接触是：${project.firstEmpiricalContact}\n\n以上内容是经过文献调研形成的起始地图，不是已经成立的 failure、因果解释、方法假设或强制实验顺序。你应检查这些入口是否忠实、是否仍然代表最重要的问题。若新证据说明另一种比较、surface、顺序或问题解释更有信息价值，你可以自行改变当前路线；但要在 \`PROJECT_STATE.md\` 中说明什么证据改变了判断，并保持与上面的研究场域和价值目标相连。\n\n## 你的研究职责\n\n开始前，完整读取 \`CLAUDE.md\`、\`PROGRAM_ORIGIN.md\`、\`PROJECT_IDENTITY.json\`、\`SEED.md\`、唯一当前状态 \`PROJECT_STATE.md\`、\`当前 host 的共享 PI 提示词（~/.claude/CLAUDE-RESEARCH.md 或 ~/.trae/CLAUDE-RESEARCH.md）\`，以及当前工作真正需要的 research skills。先形成你自己对项目价值、现有知识和最大不确定性的理解，再决定第一项工作；不要因为 prompt 提到了某个实验就机械执行。\n\n你需要持续承担完整研究责任：与近期已发表方法建立可信经验接触；阅读自然成功、失败、分歧和反常案例；把问题分析到足以改变设计；提出并真实实现有承重作用的贡献；从每次实现中学习并建设性地修改；完成与实际 claim 相匹配的比较、消融、效用和代价证据；在研究对象成熟时写成面向人类读者的论文。它们是你需要最终覆盖的研究责任，不是必须依次通过的阶段状态。\n\n不要把项目生成器的 lens、某篇论文的 framing、一个方便的 slice、旧会话结论或第一次实现变成永久路线。也不要为了显得开放而无目的地扩展模型、数据集或实验。研究自由意味着根据证据选择最能改变理解或设计的行动，并在一个方向获得信息后真正更新思考。\n\n持续维护 \`PROJECT_STATE.md\`，让用户能够知道项目在研究什么、最强证据与反证是什么、当前解释和贡献是否成立、真正的问题在哪里，以及下一步为何值得做。它是可修正的科学叙述，不是任务清单、审批表或命令日志。已验证事实具有证据权威；你写入的 gate、阈值、hold、路线和 next action 仍是可修正的解释，除非逐字引用用户或安全来源。实验注册只冻结一次 run。\n\n可信正对象形成后，保持一个 active paper candidate 和一条由同一原理预测的 expansion campaign。若一个 method-owned 前置条件在 primary outcome 之前失败，先在已有 accepted surface 上诊断或修复构造；不要把它算作 transfer 失败，也不要连续寻找更容易满足同一协议的数据集。若 method、paper-entry、draft 与 state 指向不同论文身份，先统一当前正对象再增加 breadth。\n\n普通、可逆的研究判断由你自主决定。只有改变用户授权的研究场域、使用异常资源或权限、执行不可逆或对外动作、遇到无法消解的权威冲突，以及最终投稿签字时才交还用户。Gemini 和 Codex 都是按需合作的 co-PI；它们可以拓展或攻击你的思考，但不能替代你的 ownership。GPU 与服务器操作遵循本项目 \`CLAUDE.md\`。\n\n现在先读项目权威与已有证据，写出你对这个具体项目的独立理解，然后选择最有研究价值的第一项行动并开始推进。\n`;
+}
+
+function buildComparisonDirective(project) {
+  return `
+## 比较、解释与执行责任
+
+本项目的初始经验协议是：${project.standardEvidenceSurface.protocol}
+
+它不是一份已经核实完整的主表合同。按照 research-foundation 的 baseline reference，从用户明确要求、官方协议和 baseline artifacts 恢复主表每格的实际含义，在已有比较记录中说明来源、允许的设计自由和仍未知的条件。改变探索路线不等于改变已承诺的比较：可以自主优化架构、损失和训练，也可以运行 native recipe 或诊断，但不能把不同比较的胜场换算为主表进度，或只改变自己的评测条件却沿用旧对手分数。合理的新条件应有单独标明的 matched comparison；只重算真正受影响的证据，不要求所有方法超参数相同，也不因硬件或环境不同就重跑全部 baseline。明确由用户锁定的条件保持有效；你自己的计划可以依据证据自主修正。未知来源只使相关比较待澄清，不应阻塞整个研究。
+
+保持观察、解释和归因的区别。组合收益不能自动证明某个 primitive 承重，训练曲线等线索不能独自证明或反证一个解释。可以早写问题故事和 AUTHOR_ARGUMENT，但标题和稿件不能反过来授权结论。按 method-development 和 paper-writing 的当前规则，让解释随证据更新。
+
+实验完成或会话恢复时，按 experiment-operations 和 research-pipeline 收取未读回执、检查有效性、解释结果并同步受影响的状态与稿件。已准备好的普通授权下一步由你执行，不再向用户询问是否启动。后台任务必须有真实可用的监控或恢复路径，不能把启动当成自动回调的保证。
+`;
 }
 
 function buildEpisodeDirective(project) {
@@ -465,7 +486,7 @@ for (const project of validated.projects) {
       projectId: project.id,
       localPath: path.join(outputRoot, project.id),
     }),
-    "prompt.txt": `${buildPrompt(project)}${buildEpisodeDirective(project)}`,
+    "prompt.txt": `${buildPrompt(project)}${buildComparisonDirective(project)}${buildEpisodeDirective(project)}`,
   };
   for (const [name, content] of Object.entries(files)) {
     fs.writeFileSync(path.join(dir, name), content, "utf8");

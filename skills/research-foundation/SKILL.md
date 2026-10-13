@@ -31,6 +31,11 @@ with one checkpoint test or silently reduce it to a small pilot. Explain incompa
 cells or a measured budget conflict instead of manufacturing coverage. Without that
 commission, choose the foundation depth that serves the current scientific question.
 
+An existing baseline main table anchors a comparison, not just a list of scores.
+Preserve its evaluation conditions while developing the method; read `baseline.md`
+when adopting a native recipe, changing an input or evaluator, or deciding which table
+can use a result. Diagnostic freedom does not silently redefine that comparison.
+
 ## Keep The Research Decision In Context
 
 For a request to inspect the whole project, first map its authority, source, experiments,

@@ -72,6 +72,15 @@ distinct prediction, and what remains unidentified. Update the bundle only when
 accumulated evidence distinguishes those predictions. Refuting A does not prove B unless
 the alternatives are exhaustive.
 
+Distinguish an observed signature, a useful working explanation, and an explanation
+actually separated from its alternatives. State what observation contradicts the
+specific prediction before calling an account refuted; otherwise explain why its
+priority changed and what remains unresolved. Low training error relative to validation
+can implicate generalization without proving optimization adequate. An early best epoch
+or early stop alone does not establish underfitting. These are examples of ambiguous
+signatures, not a fixed diagnostic taxonomy. Choose an informative construction from
+the best current account without requiring a finished causal proof before proceeding.
+
 A probe, AUC, attribution, embedding separation, oracle, or external solver can be
 predictive without being editable. Before treating a signal as a causal handle, ask
 whether intervening on it changes the accepted outcome, preserves unrelated

@@ -84,3 +84,10 @@ written, notification sent, and receipt confirmed; a failed or unacknowledged de
 is retried idempotently or reconciled on resume, not marked handled and forgotten. The
 PI reads and interprets the bundle and owns concise user-facing progress. Keep unchanged
 monitoring chatter out of the conversation; long logs remain at their paths.
+
+When the parent PI is the recipient, notice whether it actually consumed the terminal
+result, not just whether a watcher printed an event. On a resumed turn reconcile any
+completed but unread run from its artifacts; a user's progress question must not be
+the only recovery path. Use the supported delivery or wait mechanism and state its
+limits rather than implementing a fixed polling cadence or claiming that a skill can
+wake a stopped process. The next scientific action belongs to the PI, not the monitor.

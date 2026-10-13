@@ -1,7 +1,7 @@
 {
   "name": "firm",
   "displayName": "FIRM — Research Judgment",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "One model-neutral research PI and five focused skills for end-to-end research through submission readiness in Claude or GPT-led projects.",
   "author": {
     "name": "Zeyan Li",

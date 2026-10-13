@@ -1,6 +1,6 @@
 {
   "name": "firm-research",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Persistent research ownership for Claude and GPT with one shared workflow.",
   "owner": {
     "name": "Zeyan Li",

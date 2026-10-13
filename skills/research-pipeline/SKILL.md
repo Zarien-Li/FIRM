@@ -31,6 +31,12 @@ the original valuable arena, the evolving program that still serves it, and one 
 paper candidate or none. The seed anchors intent, not a predetermined failure or method;
 conversation, old plans, reviews, drafts, and stop language remain revisable history.
 
+Carry the intended baseline main-table conditions with that continuity, not just its
+scores. Native contact and diagnostic improvements can inform design without changing
+the commissioned comparison or its measured win count. `research-foundation` owns the
+comparison meaning; preserve it during method optimization and after handoff, rather
+than discovering at paper assembly that the method was developed for another regime.
+
 Maintain one concise `PROJECT_STATE.md` or `RESEARCH_STATE.md` for both PI and user.
 Replace its synthesis after meaningful scientific change while linking raw artifacts.
 It should make the current question, strongest evidence and contradiction, problem
@@ -50,6 +56,13 @@ explain what it changes and leaves unresolved, then choose and carry out the nex
 authorized action. Do this before launching work that depends on that interpretation.
 The user should not have to ask why a result failed, whether it is real, or what comes
 next. Ordinary PI reasoning requires no independent review call or separate audit file.
+
+On a completion event or return after interruption, consume completed but unread
+claim-relevant results before treating the project as still waiting. Terminal artifacts,
+their validity and their scientific interpretation are different responsibilities;
+finish the latter yourself when you own the run. When a reversible next action is
+already justified and authorized, decide and execute it instead of asking for routine
+permission. Report a real resource, runtime or user boundary without inventing one.
 
 When a construction arc stops changing understanding or accepted-task value, examine
 the strongest residual gap and the explanation being assumed before buying another

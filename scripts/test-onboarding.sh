@@ -45,6 +45,9 @@ for path in "${required[@]}"; do
   fi
 done
 
+cmp <(sed -n '/<!-- FIRM:BEGIN -->/,/<!-- FIRM:END -->/p' "${PROJECT}/CLAUDE.md") \
+  "${ROOT_DIR}/templates/CLAUDE_FIRM_BLOCK.md"
+
 before_hash="$(find "${PROJECT}/.claude/skills" -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)"
 bash "${ROOT_DIR}/firm" init "${PROJECT}" >/dev/null
 after_hash="$(find "${PROJECT}/.claude/skills" -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum)"
@@ -73,6 +76,8 @@ bash "${ROOT_DIR}/firm" init "${EXISTING_PROJECT}" >/dev/null
 grep -Fq '# Existing user instructions' "${EXISTING_PROJECT}/CLAUDE.md"
 grep -Fq '<!-- FIRM:BEGIN -->' "${EXISTING_PROJECT}/CLAUDE.md"
 grep -Fq '# Existing user instructions' "${EXISTING_PROJECT}/.firm/CLAUDE.md.before-firm"
+cmp <(sed -n '/<!-- FIRM:BEGIN -->/,/<!-- FIRM:END -->/p' "${EXISTING_PROJECT}/CLAUDE.md") \
+  "${ROOT_DIR}/templates/CLAUDE_FIRM_BLOCK.md"
 
 MISSING_PROJECT="${TEST_ROOT}/missing-project"
 if bash "${ROOT_DIR}/firm" doctor "${MISSING_PROJECT}" >/dev/null 2>&1; then

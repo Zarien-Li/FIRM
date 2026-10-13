@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.4.1 - 2026-10-13
+
+- Preserve each baseline main table's evaluation meaning throughout method development,
+  not only its scores. Native reproduction and diagnostics remain available without
+  silently replacing the commissioned comparison or inheriting its win count.
+- Clarify permitted method-specific tuning, affected-evidence reuse, provisional
+  explanations and primitive attribution. Carry comparison meaning into effective run
+  configurations and manuscript claims without adding approval gates or policy code.
+- Make completed-but-unread result consumption and authorized next-action ownership
+  explicit; retain honest limits on runtime wakeup and notification mechanisms.
+- Align generated seeds, project contracts, startup prompts, and project-local onboarding
+  templates with those responsibilities. Keep scientific choices with the PI rather than
+  adding evaluation policy code, new report files, or approval steps.
+- Test source-protocol preservation through generation and exact template delivery through
+  onboarding, including protocols that permit different native method recipes.
+
 ## 1.4.0 - 2026-10-12
 
 - Unified Claude and GPT project leadership under the same six skills and one shared

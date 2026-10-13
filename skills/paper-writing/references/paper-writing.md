@@ -26,6 +26,12 @@ separately. A proposed-method placeholder is not an implemented contribution. Wh
 writing begins, use these same validated result sources rather than creating a second
 matrix or turning the provisional table layout into the paper's argument.
 
+Use a result in the main table only with the comparison meaning that produced it,
+following `research-foundation/references/baseline.md`. A native, diagnostic or changed-
+condition score belongs with that comparison, not relabeled into an older table by a
+caption. The author argument and conclusions must reflect the actual published rivals
+and conditions tested; a proxy margin cannot predict an unmeasured main-table victory.
+
 ## Establish The Author Argument Before The Outline
 
 Before outlining sections, write a one-page `AUTHOR_ARGUMENT.md` in continuous prose.
@@ -40,6 +46,12 @@ It answers:
 Do not use tables, inventories, contribution bullets, reviewer objections, or non-claim
 lists. This is an authorial explanation, not an evidence ledger. It should sound
 natural aloud and make the paper's intellectual movement clear without section labels.
+
+The argument is a revisable interpretation, not authority over the evidence. Separate
+the result that actually changes the reader's belief from the proposed explanation of
+that result. A combined system's gain cannot be recast as experimentally isolating the
+named primitive merely because the title or original motivation emphasizes it. Keep
+unsupported attribution provisional without postponing useful drafting or construction.
 
 Trace seed-to-paper ancestry separately:
 
