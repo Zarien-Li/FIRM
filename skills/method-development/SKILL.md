@@ -34,24 +34,29 @@ to a limitation of the existing representation, interface, or computation. This 
 order of preference, not a sequence of required runs. Follow the evidence directly when
 it already locates the problem, including in inference rather than training.
 
-Explain both where the strong rival succeeds and where it fails on comparable
-development cases. Trace the failure far enough to distinguish a missing training
-signal, a signal the training rule does not use, and a limit of the computation itself.
-Trace what the model can observe, what actually drives its updates or decisions,
-and, when it generates its own training data, how those updates change the next
-round of examples. Verify the behavior learned, not just the loss or code path.
-Use `signal-analysis.md` to connect those facts to the next change, and
-`method-primitive-synthesis.md` to judge whether that change can deliver a worthwhile
-net gain on the original task. Reuse existing evidence before adding a run.
+Start with the foundation's comparable successes, failures, and disagreements, not
+with a module to justify. Identify what the model needs to learn or do differently
+while keeping the behavior that already works. Trace the actual inputs, updates or
+decisions, and any feedback into the next round of training data as far as needed
+to choose an intervention. Alternatives matter when they lead to different changes;
+read existing cases or traces first, and construct when that is the informative way
+to distinguish them.
+
+Make the explanation constrain the implementation: check what the proposed change
+actually alters and what it leaves intact. If it cannot express the claimed
+intervention, redesign it or treat it as a distinct diagnostic, not as an
+implementation of the original idea. Use `signal-analysis.md` to connect behavior
+to the change and `method-primitive-synthesis.md` to judge its net value on the
+original task. Verify what the model learned, not just that the code ran.
 
 Keep implementation and log-heavy diagnosis in bounded host subagents when separable;
-the PI reads the evidence that changes the design. When a real result exposes a rival
-gap or an assumption worth replacing, consider a fresh co-inventor before committing
-to the next construction, including Gemini through noninteractive Trae CLI. Give it
-the original problem, strong rival, paired development evidence and real constraints,
-not the preferred answer. Use the returned design to inform the next implementation,
-not to approve it. See [collaboration.md](../research-pipeline/references/collaboration.md)
-and [co-invention guidance](references/method-primitive-synthesis.md#use-co-invention-at-a-real-invention-point).
+the PI reads the evidence that changes the design. When the evidence leaves open
+competing explanations or principles that would lead to materially different
+implementations, use an [independent design race](../research-pipeline/references/collaboration.md#independent-design-race)
+to test those choices before committing. Ask what each design would change on the
+original task, and which observation would make the PI choose differently. A fresh
+co-inventor can also open a design space that has not yet produced a credible
+alternative; see [co-invention guidance](references/method-primitive-synthesis.md#use-co-invention-at-a-real-invention-point).
 
 Own improvement beyond v1: connect real experiments, model/code analysis, relevant
 primary literature, and published competitors' behavior to the next implemented change.

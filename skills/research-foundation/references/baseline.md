@@ -272,11 +272,15 @@ GPU-hour cutoff decides this tradeoff.
 
 ## Read Behavior, Not Only Scores
 
-Inspect natural failures and matched successes, disagreements among serious systems,
-cases contradicting the preferred explanation, boundary behavior, abstentions, crashes,
-truncation, tool traces, latency, and cost. A headline metric is not empirical contact
-until its residual behavior has been read. Treat a clean rare slice as a microscope, not
-automatically as the research destination.
+Read aligned outputs from competent methods on natural development cases. Use
+comparable successes to see what the incumbent already does well, and failures and
+rival disagreements to locate what might need to change. Keep contrary cases that
+distinguish different design responses. Separate measurement or execution failures
+from model behavior. Give the PI the observations and artifact locations that
+matter, not just another metric or a large case dump. Use an existing development
+split or independently admissible evidence for design; do not turn the held-out
+claim split into a development set. A rare slice can clarify a mechanism without
+becoming the research destination.
 
 Add another model, dataset, regime, or seed only to resolve a named uncertainty about
 shared behavior, implementation artifacts, recognized comparators, transfer, scale,
@@ -313,5 +317,5 @@ Create or update `BASELINE_REPRO.md` only when coordination needs it:
 - failures, successes, disagreements, contrary cases, and unresolved uncertainty:
 ```
 
-Return validated observations to the current project state. `method-development` owns
-their interpretation and any subsequent construction.
+Return the validated observations and the design-relevant uncertainty to the PI.
+`method-development` owns explaining that behavior and deciding what to build.

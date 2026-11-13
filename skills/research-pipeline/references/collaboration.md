@@ -94,6 +94,32 @@ and provenance, integrate only supported conclusions into the sole scientific st
 and continue the research. A collaborator response is an input to the next PI decision,
 not the endpoint of the project.
 
+## Independent Design Race
+
+Run two bounded collaborators in parallel with separate fresh contexts, using the
+host's subagents or fresh headless calls. Give both the same research question,
+accepted comparison, strongest rival, relevant successes and failures, and real
+constraints. Withhold each other's proposal and the PI's preferred answer until
+each has independently offered an explanation, a concrete design, and an observable
+consequence. Both are authors who can revise their designs, not reviewers assigned
+to defend or attack a predetermined side.
+
+Exchange the core mechanisms and predictions, not the full conversations. Ask
+each author to use the evidence to challenge both proposals, preserve what works
+in the rival design, and say what they would change in their own. If the designs
+converge, preserve the shared insight rather than manufacturing disagreement. If
+they diverge, inspect existing evidence for the observation that separates them.
+When an implementation would resolve the live choice, have the collaborators
+use the same validated substrate and comparison protocol in separate writable
+paths. The PI owns claim-bearing runs; do not duplicate the baseline campaign
+or change the evaluator to settle the race.
+
+Collect the replies and artifacts through the existing collaboration loop. The PI
+reconciles the evidence and takes the next action: adopt, revise, or set aside
+the constructions according to what they explain and offer on the original task,
+not how convincingly they were argued. Keep only the decision-relevant evidence
+and rationale in the existing project state.
+
 ## Creative Co-Invention And A Gemini Entry Point
 
 Creative collaboration is available to either lead PI and is not reserved to Gemini.
@@ -113,9 +139,12 @@ not absence of an entry point; request the ordinary supported permission rather 
 bypassing restrictions or installing a second copy. Do not invent a remote host route
 when the current session cannot access the PI host.
 
-Send the bounded evidence and open question, not the PI's preferred answer. Let Gemini
-propose a different assumption or computation in its own form. Treat the return as a
-construction to consider and test, not as evidence or an approval.
+Send the original problem, strongest rival, conflicting observations, and real
+constraints, not a request to repair the current mechanism. Give Gemini room to explain
+how the observations could coexist and propose a different design with a different
+observable consequence. If the evidence already points to a clear repair, do it without
+an invention call. Treat the return as a construction to consider and test, not as
+evidence or an approval.
 
 Use the verified headless invocation:
 
@@ -180,7 +209,8 @@ Keep the original program, live question, strongest supporting and contrary evid
 representative raw cases, method lineage, and next scientific action in the main
 context. Save full logs, retries, dependency traces, and long tool output with the
 delegated work or run. Return a compact account of what changed, what was verified
-or remains unverified, and where the evidence lives. Bring an execution detail back
+or remains unverified, and where the evidence lives. Surface any result that breaks a
+premise of the pending work, even if the assigned task succeeded. Bring an execution detail back
 when it changes validity, interpretation, or the next decision: a truncated input
 belongs in the PI context; ten connection retries usually do not.
 

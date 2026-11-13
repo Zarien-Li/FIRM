@@ -85,17 +85,23 @@ When experiments depend on code, record the repository and commit, license and a
 environment and hardware assumptions, missing steps, expected difficulty, and a mature
 community implementation if official code is unusable.
 
-## Codex MCP Search
+## Available Search Entry Points
 
-When using Codex for factual or literature search, call `mcp__codex__codex` directly
+Use the current host's available search and fetch tools to read primary sources. Codex
+MCP is an optional entry point, not a required dependency. Without it, use native search
+and source retrieval or a bounded reader with actual search access; a model response
+without retrieved sources is not verified literature. Do not install another CLI or
+route through an inaccessible machine merely to satisfy a tool example.
+
+When Codex MCP is available for factual or literature search, call `mcp__codex__codex` directly
 with read-only sandboxing, no approval, the current project directory, and a precise
 search prompt requesting primary-source URLs and explicit uncertainty. Omit the model
 field so the configured provider chooses it. Preserve the returned `threadId` for the
 same question and start a fresh call for unrelated work.
 
 If the exact error is `Selected model is at capacity`, retry the identical call once.
-Do not route search through `codex-search`, bare `codex`, a prompt file, or headless
-Claude. Codex can locate evidence; read the primary source before making a load-bearing
+Do not silently replace that MCP call with an unverified `codex-search`, bare `codex`,
+prompt file, or headless Claude wrapper. A collaborator can locate evidence; read the primary source before making a load-bearing
 decision.
 
 ## Return The Research Consequence

@@ -50,26 +50,33 @@ Preserve superseded reasoning through artifact links, not competing live narrati
 
 ## Carry Results Through To Decisions
 
-After reading a consequential result or coherent bundle, take responsibility for what
-follows: establish what actually ran and whether the observation is interpretable,
-explain what it changes and leaves unresolved, then choose and carry out the next useful
-authorized action. Do this before launching work that depends on that interpretation.
-The user should not have to ask why a result failed, whether it is real, or what comes
-next. Ordinary PI reasoning requires no independent review call or separate audit file.
+After a consequential result or coherent bundle, compare what actually ran with
+the question it was meant to answer. A proxy may teach something without fulfilling
+the original comparison. Distinguish what the evidence supports, what action it
+justifies now, and what the manuscript can claim. A credible local gain can justify
+building without justifying a broader claim; an unresolved caveat does not by
+itself justify another run. Make and act on the best authorized decision without
+waiting for a reviewer, user prompt, or new record.
+
+Keep executing work that remains justified across plausible outcomes. For work
+that relies on a particular interpretation, revisit its scientific rationale
+when the result arrives. If that rationale changes, change the pending work as
+well as the existing state; a prepared command, a completed predecessor, or a
+promising old summary is not a reason to launch it. Preserve independent
+commissioned comparisons, completed evidence, and explicit user obligations.
 
 On a completion event or return after interruption, consume completed but unread
-claim-relevant results before treating the project as still waiting. Terminal artifacts,
-their validity and their scientific interpretation are different responsibilities;
-finish the latter yourself when you own the run. When a reversible next action is
-already justified and authorized, decide and execute it instead of asking for routine
-permission. Report a real resource, runtime or user boundary without inventing one.
+results, including diagnostics that can change the next launch, before declaring the
+project still waiting or dispatching dependent work. Independent commissioned work
+does not wait for this interpretation. When a reversible next action is justified
+and authorized, execute it without asking for routine permission. Report a real
+resource, runtime or user boundary without inventing one.
 
-When a construction arc stops changing understanding or accepted-task value, examine
-the strongest residual gap and the explanation being assumed before buying another
-variant. Positive results also deserve this reading: decide whether they support
-further construction, a decisive comparison, or focused paper maturation. Read related
-results together when that makes their interaction intelligible; do not demand a full
-paper table or a new method after every run.
+Judge a construction arc by whether it changed understanding, design, or value on
+the intended task. If another variant would only extend a stalled arc, reconsider
+the explanation or read the strongest residual failure first. Read related runs
+together when they explain an interaction; a new result need not trigger a new
+method, a wider campaign, or a full paper table.
 
 For an existing manuscript, adoption or invalidation of evidence includes reconciling
 the affected method, tables, figures, and prose through `paper-writing`. If a dependent
@@ -96,6 +103,15 @@ cadence to the user's preference and the time until useful feedback; avoid both 
 multi-stage work and repeated unchanged logs. When yielding for a dependency, give its
 identity, last verified progress, remaining work, and how work will resume. Never claim
 automatic resumption without an installed, checked mechanism.
+
+When the user designates a Feishu document and project location, use the host's
+`lark-doc` skill to mirror material changes in the research direction, decisive
+result, or next step from the live project state. Read the target and update only
+the project's designated progress line in place, inserting it there once if
+absent. Write at most one short sentence per update; do not append history, logs,
+or routine activity, and leave all other content untouched. Skip unchanged updates.
+Without a clear target or write access, keep research moving and report the issue
+once; do not create a document or broaden access.
 
 Persist explicit durable user protocols in the existing project contract or referenced
 infrastructure source, with scope and provenance; replace superseded instructions.

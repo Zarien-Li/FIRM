@@ -32,11 +32,14 @@ with one checkpoint test or silently reduce it to a small pilot. Explain incompa
 cells or a measured budget conflict instead of manufacturing coverage. Without that
 commission, choose the foundation depth that serves the current scientific question.
 
-Deliver the authorized full comparison with aligned raw outputs, failure modes, and
-relevant cost or traces. Preserve separate development evidence for method construction.
-The first layer owns faithful comparison and observable behavior, not a causal account
-or a candidate method. Preserve the main-table conditions during development; diagnostic
-freedom does not redefine them.
+Deliver the authorized full comparison and show what it lets the PI learn. On
+development evidence, connect the table to aligned cases: where a strong method
+succeeds, where it fails, and where a serious rival behaves differently. Explain
+what assumption these observations put in doubt and which unresolved difference
+could change the design. A ranking alone does not locate a problem worth solving.
+If the comparison cannot distinguish explanations, pass on that uncertainty and
+the relevant cases, not a named failure or a proposed method. Preserve the main-table
+conditions; diagnostic freedom does not redefine them.
 
 ## Keep The Research Decision In Context
 
@@ -47,12 +50,13 @@ current question. Use bounded full-paper and code-reading collaborators through
 [collaboration.md](../research-pipeline/references/collaboration.md). The PI retains
 selection, comparability, and interpretation, not every extracted page or setup log.
 
-Keep the current field, method map, chosen matrix, unresolved semantic differences,
-strongest contrary evidence, and next decision recoverable. Reuse `BASELINE_REPRO.md`
-for comparison evidence and planned tables when coordination needs it; the sole project
-state holds the synthesis, and the campaign manifest holds execution truth. On resumption,
-verify the comparison and artifact identities before dependent work rather than
-reconstructing the matrix from conversation memory.
+Keep the field, comparison meaning, and evidence that changes the next decision
+recoverable. Use the existing baseline evidence or project state for the handoff;
+the campaign manifest holds execution truth. Before extending a comparison, ask
+what the extra evidence could change. Completing an explicitly commissioned matrix
+is itself a purpose; outside it, retain a decisive matched rival or control but do
+not turn a literature collision check into a reproduction campaign. On resumption,
+verify comparison and artifact identities before dependent work.
 
 ## Route The Work
 

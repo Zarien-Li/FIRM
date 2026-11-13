@@ -85,7 +85,14 @@ existing object; they do not redesign the research or grant paper maturity.
 
 ## Tool Policy
 
-Call `mcp__codex__codex` and `mcp__codex__codex-reply` without a `model` field. Retry
-one identical transient capacity failure. Authentication, transport, capacity, version,
+When available, call `mcp__codex__codex` and `mcp__codex__codex-reply` without a `model`
+field. On a host without that MCP, use a fresh native subagent or the bounded
+`traecli exec` entry in the collaboration reference with an explicitly available model.
+Give it the same evidence and decision question, not the main PI's conversation or
+session ID. This is an independent-review role, not a requirement to install Codex or
+obtain a provider's approval. Use the host's current skill path for the delegated role
+context and inspect the returned evidence before adopting the advice.
+
+Retry one identical transient capacity failure. Authentication, transport, capacity, version,
 or model-routing failure is infrastructure, neither approval nor rejection; continue
 non-dependent research.

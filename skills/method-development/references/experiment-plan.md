@@ -64,9 +64,12 @@ These labels describe the question; they are not gates. Before substantial compu
 consider both the best plausible gain on the original task and what a loss would
 teach. Use the opportunity and cost reasoning in
 [method-primitive-synthesis.md](method-primitive-synthesis.md), not the best-looking
-diagnostic percentage. When a planned run creates an evolving policy or dataset,
-retain decision-relevant evidence that would otherwise disappear, such as changing
-admission or effective loss weights, only when it can distinguish live explanations.
+diagnostic percentage. If a live explanation depends on evidence the run will
+overwrite or discard, plan how to retain it while it still exists. For example,
+when a changing teacher's reliance on a student path is at issue, an inline
+matched readout at the same teacher state may be cheaper and more informative
+than saving every checkpoint. Use existing traces when sufficient; do not add a
+standard probe suite or a separate run by default.
 
 ## Select Evidence For Decision Value
 
@@ -166,9 +169,14 @@ chain is sufficient, large grids that only enlarge the table belong on the desig
 high-compute machine or remain optional. This is a placement rule, not permission to
 stop at a pilot.
 
-Parallelize only runs whose relevance does not depend on unread results. While compute
-runs, advance result-independent code, baseline preparation, analysis tooling,
-literature, and recovery paths.
+Dispatch authorized work that remains useful across the plausible outcomes, including
+commissioned baseline cells, fixed evaluation, and recovery under the same protocol.
+For a successor variant, extra seed, or expansion whose scientific rationale depends
+on an unread result, prepare reusable assets if useful but keep the alternative out of
+the runnable queue. A fixed evaluation can follow its own checkpoint automatically;
+successful execution is not a reason to auto-launch a new scientific treatment. While
+compute runs, advance independent work. When the result returns, the PI decides which
+dependent work still earns a launch. An already prepared command is not a commitment.
 
 ## Plan Principle-Predicted Expansion
 

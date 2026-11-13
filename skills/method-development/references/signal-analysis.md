@@ -91,6 +91,13 @@ evidence can settle the choice; do not run all contrasts by default. Depth means
 explaining why a smaller change would or would not work, not tracing more layers
 or asserting a unique root cause before building anything.
 
+Read the proposed operation at the same resolution as the explanation. If the
+problem is interference in particular update directions, uniformly shrinking an
+update can test its magnitude but does not selectively remove those directions.
+Likewise, a useful gated variant does not realize an ungated proposal. Keep each
+answer attached to the operation that produced it. Exploration remains useful
+without silently replacing the original proposal or inheriting its attribution.
+
 ## Maintain Competing Explanations Sparingly
 
 Keep the smallest useful set, normally two or three, of alternatives whose truth would
