@@ -61,9 +61,12 @@ The appropriate evidence depends on the episode:
   and scope required by the intended paper.
 
 These labels describe the question; they are not gates. Before substantial compute,
-state the best scientific consequence of success. If perfect success only fixes a
-private cell with no accepted-task or community consequence, revise the question before
-scaling.
+consider both the best plausible gain on the original task and what a loss would
+teach. Use the opportunity and cost reasoning in
+[method-primitive-synthesis.md](method-primitive-synthesis.md), not the best-looking
+diagnostic percentage. When a planned run creates an evolving policy or dataset,
+retain decision-relevant evidence that would otherwise disappear, such as changing
+admission or effective loss weights, only when it can distinguish live explanations.
 
 ## Select Evidence For Decision Value
 
@@ -105,13 +108,14 @@ for completeness.
 
 A construction campaign follows a consequential design question. Explain how the next
 attempt uses previous observations, what remains uncertain, and what its plausible
-outcomes could teach. A precise prediction is useful when available, but an informative
-attempt need not fit an inheritance sentence or preserve the first principle. Use paired
-or compact factorial comparisons when components compensate or gate one another. Check
-utility when it can change the design, and before treating the method as positive and
-scalable. Identify the ordinary treatment that could explain the gain without the new
-principle and schedule that attribution contrast with the first informative realization,
-not as optional paper cleanup after scale or writing.
+outcomes could teach. When a less invasive explanation is still live, compare against
+the simpler treatment that could deliver the same gain. For example, distinguish a new
+loss from the effect of the added data, or a local architecture change from a better
+recipe on the existing model. Keep the accepted evaluation fixed and match exposure,
+supervision, and compute where they are not the treatment. Schedule the decisive
+contrast with the first informative realization rather than after scale or writing.
+Use paired or compact factorial comparisons when changes interact; do not add a run
+for each intervention level. Check utility before treating a method as scalable.
 
 Support or feasibility conditions describe what one frozen run is competent to test.
 If treatment formation fails, record that implementation fact; do not report method

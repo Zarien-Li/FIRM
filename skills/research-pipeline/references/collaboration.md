@@ -26,8 +26,7 @@ comparison being implemented, writable surfaces, resource envelope, and durable 
 paths. Ask the collaborator to return, as relevant to the assignment:
 
 - the actual code and configuration changed;
-- commands and execution truth;
-- raw artifacts and provenance;
+- execution outcome and paths to the commands, logs, and raw artifacts;
 - observations, implementation defects, and design consequences;
 - any evidence that the delegated premise itself was false.
 
@@ -37,23 +36,20 @@ a competing scientific state. The PI inspects the work and integrates it. Give c
 or analytical tasks room to challenge the premise and suggest a new principle; the PI
 owns its adoption and validation, not the collaborator's model name.
 
-The following are transport examples, not required model assignments. For a Claude Code
-child, invoke from the trusted project directory with a PI-authored packet and only
-the permissions needed by the task:
+## Choose The Smallest Useful Delegation
 
-```bash
-claude -p "<PI-authored transfer packet>" \
-  --append-system-prompt-file ~/.claude/skills/research-pipeline/references/delegated-task.md \
-  --permission-mode acceptEdits \
-  --output-format json
-```
+Default to the current host's native bounded subagents for separable, context-heavy
+work: implementation, environment repair, log triage, or reading a paper or code path.
+Delegate before pulling the detail into the PI conversation. Use a fresh noninteractive
+`traecli exec` on the PI host when the task needs independent context or a specific
+model, including Gemini. Fresh means no inherited conversation or preferred answer;
+it does not mean no primary evidence or no host instructions.
 
-Use a fresh invocation by default. Resume only when the exact implementation episode
-needs continuity and no active writer owns it. If a required command is not permitted,
-the PI may grant that bounded command explicitly; do not solve permission friction with
-an unrestricted standing bypass.
+These are transport choices, not model roles. Keep a small task in the PI when
+delegation would cost more than it saves. An unavailable tool or provider does not
+block ordinary research.
 
-For a GPT or other collaborator through Trae, select an available model explicitly:
+For a fresh Trae child, select an available model explicitly when model identity matters:
 
 ```bash
 traecli exec --model "<available model slug chosen by the PI>" \
@@ -62,9 +58,10 @@ traecli exec --model "<available model slug chosen by the PI>" \
   "<PI-authored transfer packet>"
 ```
 
-Use the role context installed on the caller's host; a Claude-led PI may read the same
-file under `~/.claude/skills`. The read-only sandbox suits advisory work; use supported
-task-scoped permissions for delegated implementation, never a blanket bypass. A plugin
+Omit `--model` when the verified host default is suitable. Use the role context installed
+on the caller's host; a Claude-led PI may read the same file under `~/.claude/skills`.
+The read-only sandbox suits advisory work; use supported task-scoped permissions for
+delegated implementation, never a blanket bypass. A plugin
 or project-local install uses its actual skill directory instead of an assumed global
 path. The per-call `model_instructions_file` override replaces the default main-session
 addendum without changing global config. Do not append the main PI prompt as the child's
@@ -72,11 +69,10 @@ only role instruction. Hooks, project instructions, skills, and MCP still apply.
 
 ## Complete The Collaboration Loop
 
-Bounded collaborator calls run in the foreground. A delegation is complete only
-when the child process exits, its final output returns to the PI, and the PI has
-inspected the cited artifacts. The child model cannot reliably wake a Trae session after
-the parent turn has ended, regardless of the parent model, so never rely on an unsolicited callback or treat “launched”
-as a completed handoff.
+Use the native subagent's supported result/wait mechanism or collect the foreground
+CLI call through exit. A delegation is complete when the PI has the result and has
+checked the artifacts that matter. The child cannot reliably wake a Trae session
+after the parent turn ends; do not treat “launched” as a completed handoff.
 
 Keep claim-bearing long experiments under the persistent PI. A collaborator may implement,
 debug, canary, and return a launch-ready package; the PI then uses
@@ -101,7 +97,9 @@ not the endpoint of the project.
 ## Creative Co-Invention And A Gemini Entry Point
 
 Creative collaboration is available to either lead PI and is not reserved to Gemini.
-The Gemini entry below preserves the configured option, not a mandatory invention gate.
+See [method-development](../../method-development/SKILL.md) for when a different
+design is worth soliciting. Use Gemini for an open design choice, not for a routine
+review of a design the PI has already chosen.
 
 Invoke Gemini through the local `traecli exec` command on the persistent PI's host, not
 by searching for a Gemini MCP tool or a script in each project. Resolve it with
@@ -115,30 +113,25 @@ not absence of an entry point; request the ordinary supported permission rather 
 bypassing restrictions or installing a second copy. Do not invent a remote host route
 when the current session cannot access the PI host.
 
-Invite Gemini when the project has enough reality for a new perspective to be useful:
-a design-giving problem model, an informative method failure, an unresolved shared
-incumbent assumption, or a positive primitive that may support a larger object.
-
-Give it the field, accepted evidence, contradictions, nearest rivals, implementation
-constraints, and the scientific uncertainty. Do not prescribe a fixed output schema or
-ask for generic brainstorming. Encourage a different default assumption or computation,
-then have the PI test novelty, deployable information, feasibility, and a minimal
-discriminating realization before changing project belief.
-
-Gemini is a source of constructions, not evidence. A striking proposal earns an
-implementation, not a state transition.
+Send the bounded evidence and open question, not the PI's preferred answer. Let Gemini
+propose a different assumption or computation in its own form. Treat the return as a
+construction to consider and test, not as evidence or an approval.
 
 Use the verified headless invocation:
 
 ```bash
 traecli exec --model Gemini-3.1-Pro-Preview \
-  --config "model_instructions_file=\"$HOME/.claude/skills/research-pipeline/references/delegated-task.md\"" \
+  --config 'model_backend_variant="standard"' \
+  --config "model_instructions_file=\"$HOME/.trae/skills/research-pipeline/references/delegated-task.md\"" \
   --ephemeral --skip-git-repo-check --sandbox read-only \
   "<PI-authored prompt>"
 ```
 
 Pin the listed model slug explicitly; do not rely on the parent session's default model
-or the deprecated `gemini-3.1-pro` alias. Check the invocation metadata and errors for
+or the deprecated `gemini-3.1-pro` alias. Explicit Standard Mode on the child prevents
+an inherited Max Mode from triggering the CLI's persistent auto-correction of the
+parent's configuration. Do not change the main session's model settings for a child.
+Check the invocation metadata and errors for
 routing or fallback, rather than asking the model to identify itself. Use a fresh child
 call, never `resume` or the main session's ID. `--ephemeral` avoids persisting the child
 conversation, but does not disable installed instructions, hooks, skills, or MCP servers.
@@ -184,22 +177,16 @@ chronology unless they are necessary to avoid repeating a known error.
 ## Protect The Main Context
 
 Keep the original program, live question, strongest supporting and contrary evidence,
-representative raw cases, method lineage, current positive object when one exists,
-durable artifact paths, and next scientific action in the main context. Keep downloads,
-dependency logs, long training output, full-paper extraction, compilation traces, and
-large queryable tables in durable files or bounded delegated work. Return compact
-metrics, execution truth, verified paths, and only the excerpts needed for the current
-decision; context compression must not erase contrary evidence.
+representative raw cases, method lineage, and next scientific action in the main
+context. Save full logs, retries, dependency traces, and long tool output with the
+delegated work or run. Return a compact account of what changed, what was verified
+or remains unverified, and where the evidence lives. Bring an execution detail back
+when it changes validity, interpretation, or the next decision: a truncated input
+belongs in the PI context; ten connection retries usually do not.
 
-## Isolate Context-Heavy Work
-
-Use a subagent for self-contained work whose volume would displace the live thesis,
-such as reading full papers, environment setup, log triage, independent audit, or
-repeated visual inspection. Give it the minimum task-local evidence and require a
-compact, evidence-linked return. The persistent PI retains synthesis, the evolving
-thesis, and final method choice. When independence matters, withhold the author's
-preferred framing; when creative interpretation matters, include the real
-contradictions and constraints.
+The PI reads the raw predictions, contrary cases, or training traces that determine
+the scientific decision. Context isolation is not delegation of interpretation.
+Withhold preferred framing when independence matters, not inconvenient evidence.
 
 For project-wide foundation work, separate comprehensive coverage from loading every
 file into one context. Map the project first; give readers the original arena and exact

@@ -25,10 +25,33 @@ Improve the method within the intended main comparison, not by silently changing
 evaluation conditions. A useful native or diagnostic result guides construction;
 `research-foundation/references/baseline.md` owns whether it can enter the main table.
 
-Read an informative result as a construction lesson before proposing its successor.
-Use `signal-analysis.md` when the cause is unclear, and
-`method-primitive-synthesis.md` when choosing a repair or replacement. A new name,
-benchmark, or component does not discharge the unresolved question from the last run.
+Start construction from a verified task, data and evaluation path. When it is a good
+fit, keep a strong published method runnable and reuse its implementation. For a
+learning problem, prefer fixing the training data with the recipe and model intact.
+If the data already carry the right signal but the recipe does not teach the behavior,
+change how the model learns. Change architecture locally only when the evidence points
+to a limitation of the existing representation, interface, or computation. This is an
+order of preference, not a sequence of required runs. Follow the evidence directly when
+it already locates the problem, including in inference rather than training.
+
+Explain both where the strong rival succeeds and where it fails on comparable
+development cases. Trace the failure far enough to distinguish a missing training
+signal, a signal the training rule does not use, and a limit of the computation itself.
+Trace what the model can observe, what actually drives its updates or decisions,
+and, when it generates its own training data, how those updates change the next
+round of examples. Verify the behavior learned, not just the loss or code path.
+Use `signal-analysis.md` to connect those facts to the next change, and
+`method-primitive-synthesis.md` to judge whether that change can deliver a worthwhile
+net gain on the original task. Reuse existing evidence before adding a run.
+
+Keep implementation and log-heavy diagnosis in bounded host subagents when separable;
+the PI reads the evidence that changes the design. When a real result exposes a rival
+gap or an assumption worth replacing, consider a fresh co-inventor before committing
+to the next construction, including Gemini through noninteractive Trae CLI. Give it
+the original problem, strong rival, paired development evidence and real constraints,
+not the preferred answer. Use the returned design to inform the next implementation,
+not to approve it. See [collaboration.md](../research-pipeline/references/collaboration.md)
+and [co-invention guidance](references/method-primitive-synthesis.md#use-co-invention-at-a-real-invention-point).
 
 Own improvement beyond v1: connect real experiments, model/code analysis, relevant
 primary literature, and published competitors' behavior to the next implemented change.

@@ -19,12 +19,22 @@ from [signal-analysis.md](signal-analysis.md). An unresolved closest rival permi
 exploration but keeps novelty provisional. A fashionable operator, formula, oracle,
 probe, or positive private cell is not a design opportunity by itself.
 
-A working account should connect the observed behavior to a change worth implementing
-and identify what remains unknown. It need not already explain the full mechanism.
-Construct and train when doing so is the best way to learn why the incumbent succeeds,
-where it fails, or which computation should change. Let surprising outcomes revise the
-account rather than requiring a complete causal story before implementation. A method
-name remains provisional; it is not a substitute for that learning.
+A working account should explain what the change could buy on the original task
+if it succeeds. Translate a slice-level or oracle improvement back to the full
+relevant population and the strongest usable rival: how often can it help, what
+already-correct behavior might it break, and what does it cost to identify or
+recover the right cases? For an efficiency claim, estimate how much of the total
+cost the changed computation can remove and count any overhead it introduces.
+An oracle estimates opportunity under its stated assumptions, not reachable
+performance. A small average effect can still matter on a consequential failure
+or along a meaningful cost axis; there is no fixed payoff threshold.
+
+The mechanism need not be settled. Construct and train when doing so is the best
+way to learn why the incumbent succeeds, where it fails, or which computation
+should change. When even a favorable result would leave the important gap intact
+and teach little, change the intervention or pursue a larger source of value in
+the same program. Use existing evidence and rough bounds where sufficient; no
+separate feasibility campaign is owed.
 
 ## Distinguish Sketch, Realization, And Paper Object
 
@@ -56,11 +66,37 @@ For the live candidate, write in ordinary scientific language:
 - what the smallest real implementation teaches even if it loses;
 - the low-friction adoption path and plausible transfer boundary.
 
-Possible loci include representation or state, update/read rules, routing, memory,
-objective factorization, credit assignment, training interaction, curriculum, data
-treatment, and execution semantics. Surface form is not decisive: an objective,
-threshold, verifier, policy, or wrapper can contribute when it embodies an irreducible
-new rule with real value.
+## Prefer The Least Invasive Change That Can Solve The Problem
+
+Keep the verified backbone, interfaces, and useful incumbent behavior by default.
+For failures of learned behavior, prefer these interventions in this order when
+they are plausible:
+
+- **Data:** Fix missing coverage, misleading examples, or shortcuts by using,
+  improving, or adding permissible training data. Keep the architecture and the
+  learning rule intact. More data of the same kind is not a repair if it keeps
+  rewarding the same shortcut. Do not create a new benchmark or collect human labels.
+- **Training:** If informative examples are available but the existing recipe
+  does not turn them into the intended behavior, keep the architecture and change
+  the objective, target, credit assignment, curriculum, or optimization as the
+  diagnosis warrants. A new learning rule can be the whole method.
+- **Local architecture:** If a specific representation, interface, or computation
+  cannot provide or use what the task needs under the operating constraints, change
+  that part. Preserve the rest and the behaviors it already supports. A failed run
+  or recipe is not evidence that the architecture is incapable.
+
+This is a design preference, not an approval gate or a requirement to exhaust
+earlier options. Use existing evidence, source inspection, or a targeted comparison
+to justify a deeper change; no need to run a data or training variant that cannot
+address the known limitation. If the problem is in inference or execution, change
+the relevant rule directly rather than forcing a training intervention. A broader
+architectural change needs a specific reason a local change cannot solve the
+commissioned problem, not a desire for a bigger-looking contribution.
+
+If a data-only change solves the problem, keep it. Claim only what the comparison
+establishes: more data, different supervision, or extra compute is not by itself
+evidence for a new algorithm. Match exposure and budget when claiming that an
+algorithmic change, rather than those inputs, produced the gain.
 
 ## Build For Principled Simplicity
 
@@ -230,13 +266,20 @@ answered prediction or elaborate a private cell. There is no fixed failure count
 
 ## Use Co-Invention At A Real Invention Point
 
-The lead PI owns construction. Use Gemini through
-`research-pipeline/references/collaboration.md` when a real design opportunity,
-informative failed coupling, or concrete rival gap makes a different principle useful.
-Its proposal changes the method only after collision reading, implementation, and a
-matched experiment. A concrete independent implementation, math, or novelty check can
-help at any point through `research-review`; it does not replace co-invention or grant
-permission to construct.
+The lead PI owns construction. Invite a different perspective while the choice is
+still open: before the first substantial implementation when the evidence admits
+different designs, or after a result breaks the working account and the next version
+would otherwise inherit it. Use Gemini through noninteractive `traecli exec` as
+described in [collaboration.md](../../research-pipeline/references/collaboration.md)
+when it can contribute that perspective. Do not wait for a failed series of variants
+or ask for a retrospective review of a settled design.
+
+Provide the actual contradiction, strong rivals, paired cases or a real training
+trajectory, and what the method must preserve. Ask for an alternative that would
+change the computation or learning signal and make a different prediction. The PI
+weighs it against prior work and evidence, implements a worthwhile choice, and tests
+it before treating the idea as established. Use judgment, not a cadence or quota;
+ordinary repairs and unavailable collaborators do not stop the work.
 
 ## Expand Only What The Principle Predicts
 

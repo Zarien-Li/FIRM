@@ -49,14 +49,27 @@ and use their behavior to inform invention. Do not invoke candidate maturity as 
 to ignore that commission. Otherwise expand comparisons for the live scientific decision,
 not merely to manufacture progress or fill a submission table.
 
-Before committing to a reproduction, identify the decision it serves, the actual
-implementation and intended protocol, any departures from the published method, and
-the work needed for an interpretable comparison. Reuse the run record or baseline
-note. A faithful adaptation can belong in a main table when its semantics and matched
-conditions justify the comparison; a proxy, incomplete hook, or substituted operator
-must not inherit the published method's name and evidential standing. Label departures
-where readers encounter the result, and return unresolved fidelity to the PI before
-that result determines method selection or a paper claim.
+## Choose Existing Code Before Writing A Harness
+
+Start from the accepted task, intended main-table conditions, and strongest published
+comparisons. Look at the official repositories and maintained reproductions before
+building replacements. Choose the code base by the behavior it can reproduce: a
+verifiable strong method, real benchmark inputs and raw outputs, scorer fidelity,
+target-backbone fit, and the size of any required semantic changes. README coverage,
+recency, and stars are not reproduction evidence. Pin the version and record what is
+reused, adapted, or unsupported in the existing comparison record.
+
+Reuse verified loaders, evaluators, and orchestration where their semantics agree.
+Keep the authors' method-specific training or inference logic when sharing a trainer
+would alter it. A common table does not require a common implementation. If no single
+repository fits, combine faithful upstream paths at the output/evaluation boundary;
+write only the missing pieces. When several plausible bases differ materially and the
+choice affects a costly campaign, a fresh bounded reader can independently compare them
+from the task, strong rivals, and protocol, without the PI's preferred repository.
+
+A faithful adaptation can enter the main table when its semantics and conditions justify
+the comparison. A proxy, incomplete hook, or substitute must not inherit the published
+method's name or evidential standing. Label departures at the result.
 
 Design the most consequential attribution comparison alongside the first informative
 realization. Ask what ordinary training, added data, supervision, compute, or inference
@@ -216,12 +229,26 @@ project without its own accepted value and rivals.
 
 ## Reproduce Semantics And Resolve Rivals
 
-Match every protocol element capable of changing the comparison and reconstruct a known
-case and representative metric from raw outputs. A smoke test proves execution, not
-semantic equivalence. [experiment-integrity.md](experiment-integrity.md) owns the full
-information, treatment, statistical-unit, competence, and reconstruction requirements;
-use [evidence-lineage.md](../../research-pipeline/references/shared/evidence-lineage.md)
-when verified invalidation must propagate.
+Before scaling a consequential path, compare actual local behavior with an expectation
+derived independently of the local port and its tests. Use the paper, appendix, pinned
+upstream execution, or a known example under the benchmark's scoring rules. Verify a
+real strong-method path, including the defining computation and the real evaluator on
+known outputs, then reuse that evidence wherever the relevant path is unchanged. For
+example, verify the actual checkpoint used to initialize a generation when the method
+requires reset-to-base; finishing both generations does not verify that transition.
+A canary proves only the behaviors it checked, not full-run competence or performance.
+
+When an ambiguous detail would affect many cells, use a fresh subagent if useful.
+Give it the sources and target protocol, not the local implementation or verdict.
+Ask for the expected behavior, source location, and observable evidence that would
+distinguish it from a plausible wrong port. For scoring, share the rules and raw answer
+without the local score. The PI reconciles expectations with the actual execution,
+then repairs only the affected path or keeps its evidence unresolved. Direct source
+verification suffices when the answer is clear; this is not routine double review.
+Use [collaboration.md](../../research-pipeline/references/collaboration.md) for the
+bounded handoff and [experiment-integrity.md](experiment-integrity.md) for evidence
+requirements. Propagate verified invalidation through
+[evidence-lineage.md](../../research-pipeline/references/shared/evidence-lineage.md).
 
 Before novelty lock, identify the two or three closest approaches by operational effect
 and mechanism. Ask whether they absorb the proposed principle or erase its practical

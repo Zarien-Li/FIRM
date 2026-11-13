@@ -19,11 +19,12 @@ and maintain that connected account from project artifacts and primary sources.
 
 Distinguish the commissioned field, current idea, and what has actually been implemented
 and learned. Build a published-method map, reconcile benchmark and backbone semantics,
-select a justified comparison matrix, preview its result tables, and carry its authorized
-execution through interpretable artifacts. Read successes, failures, and disagreements
-as material for invention rather than treating a large completed table as the scientific
-contribution. These are connected responsibilities, not a prescribed order or approval
-sequence.
+and preview the comparable main table. Before writing a new harness or baseline port,
+look for the best existing repository for the actual task and protocol. Use
+[baseline.md](references/baseline.md) to verify a strong published method on a real path,
+reuse trustworthy data and evaluation code, and keep paper-specific computation native
+where a shared harness would change it. A run that returns a score is not proof of a
+faithful comparison.
 
 When the user commissions baseline-first research, completing the selected non-method
 comparisons is legitimate work before a candidate exists. Do not replace that commission
@@ -31,10 +32,11 @@ with one checkpoint test or silently reduce it to a small pilot. Explain incompa
 cells or a measured budget conflict instead of manufacturing coverage. Without that
 commission, choose the foundation depth that serves the current scientific question.
 
-An existing baseline main table anchors a comparison, not just a list of scores.
-Preserve its evaluation conditions while developing the method; read `baseline.md`
-when adopting a native recipe, changing an input or evaluator, or deciding which table
-can use a result. Diagnostic freedom does not silently redefine that comparison.
+Deliver the authorized full comparison with aligned raw outputs, failure modes, and
+relevant cost or traces. Preserve separate development evidence for method construction.
+The first layer owns faithful comparison and observable behavior, not a causal account
+or a candidate method. Preserve the main-table conditions during development; diagnostic
+freedom does not redefine them.
 
 ## Keep The Research Decision In Context
 
