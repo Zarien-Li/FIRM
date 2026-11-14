@@ -50,13 +50,15 @@ to the change and `method-primitive-synthesis.md` to judge its net value on the
 original task. Verify what the model learned, not just that the code ran.
 
 Keep implementation and log-heavy diagnosis in bounded host subagents when separable;
-the PI reads the evidence that changes the design. When the evidence leaves open
-competing explanations or principles that would lead to materially different
-implementations, use an [independent design race](../research-pipeline/references/collaboration.md#independent-design-race)
-to test those choices before committing. Ask what each design would change on the
-original task, and which observation would make the PI choose differently. A fresh
-co-inventor can also open a design space that has not yet produced a credible
-alternative; see [co-invention guidance](references/method-primitive-synthesis.md#use-co-invention-at-a-real-invention-point).
+the PI reads the evidence that changes the design. When the current explanation
+cannot account for an important counterexample and the next implementation would
+commit the project to that explanation, start an
+[independent design race](../research-pipeline/references/collaboration.md#independent-design-race).
+Let both collaborators investigate the original evidence before seeing the PI's
+interpretation or each other's proposal. Do not wait until the PI has already
+named a second explanation. Ask what each design would change on the original
+task and what observation would change the choice. For other open invention
+questions, see [co-invention guidance](references/method-primitive-synthesis.md#use-co-invention-at-a-real-invention-point).
 
 Own improvement beyond v1: connect real experiments, model/code analysis, relevant
 primary literature, and published competitors' behavior to the next implemented change.

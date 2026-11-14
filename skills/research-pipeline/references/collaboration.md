@@ -97,12 +97,16 @@ not the endpoint of the project.
 ## Independent Design Race
 
 Run two bounded collaborators in parallel with separate fresh contexts, using the
-host's subagents or fresh headless calls. Give both the same research question,
-accepted comparison, strongest rival, relevant successes and failures, and real
-constraints. Withhold each other's proposal and the PI's preferred answer until
-each has independently offered an explanation, a concrete design, and an observable
-consequence. Both are authors who can revise their designs, not reviewers assigned
-to defend or attack a predetermined side.
+host's subagents or fresh headless calls. State the research question, accepted
+comparison, strongest rival, and real constraints. Give both the same original
+development evidence or read-only access to it: the counterexample the current
+account cannot explain, comparable successes and failures, and the predictions,
+traces, or source needed to interpret them. Keep the held-out evaluation out of
+design. A PI summary can point to the evidence, but must not substitute for it.
+Withhold the PI's interpretation and the other collaborator's proposal until
+each has independently explained the observations and proposed a concrete design
+with an observable consequence. Both are authors who can revise their designs,
+not reviewers assigned to defend or attack a predetermined side.
 
 Exchange the core mechanisms and predictions, not the full conversations. Ask
 each author to use the evidence to challenge both proposals, preserve what works
