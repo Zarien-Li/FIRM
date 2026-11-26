@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "supersedes": null,
+  "revision_reason": null,
+  "user_locked_conditions": [],
+  "comparisons": {
+    "main": {
+      "purpose": null,
+      "evidence_role": null,
+      "sources": [],
+      "task_and_target": null,
+      "data_revision_splits_population": null,
+      "inputs_retrieval_tools": null,
+      "backbone_regime": null,
+      "training_conditions": null,
+      "inference_conditions": null,
+      "evaluator_metrics_aggregation_failures": null,
+      "selection_policy": null,
+      "published_competitors": [],
+      "permitted_method_freedoms": [],
+      "planned_cells": [],
+      "unresolved": []
+    }
+  },
+  "unresolved": []
+}

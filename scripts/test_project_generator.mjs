@@ -84,7 +84,7 @@ function run(input, outputName, expectedStatus = 0) {
 try {
   const { outputRoot } = run(manifest, "valid");
   const projectRoot = path.join(outputRoot, "T01");
-  const expected = ["PROGRAM_ORIGIN.md", "SEED.md", "PROJECT_IDENTITY.json", "PROJECT_STATE.md", "CLAUDE.md", "prompt.txt"];
+  const expected = ["PROGRAM_ORIGIN.md", "SEED.md", "PROJECT_IDENTITY.json", "PROJECT_STATE.json", "PROJECT_STATE.md", "COMPARISON_CONTRACT.json", "CLAUDE.md", "prompt.txt"];
   assert.deepEqual(fs.readdirSync(projectRoot).sort(), expected.sort());
 
   const seed = fs.readFileSync(path.join(projectRoot, "SEED.md"), "utf8");
@@ -106,30 +106,32 @@ try {
   assert.doesNotMatch(prompt, /Ask Codex for an early|强基线和简单基线/);
   assert.match(claude, /LOCAL_INFRASTRUCTURE\.md/);
   assert.match(claude, /below 1 GB/);
-  assert.match(claude, /replacement-style current synthesis/);
-  assert.match(claude, /Writing one of those choices into the state does not turn it into a/);
-  assert.match(claude, /active paper candidate and one/);
-  assert.match(claude, /active episode as a scientific argument rather than a stage code/);
+  assert.match(claude, /sole editable scientific account/);
+  assert.match(claude, /not fixed stages or automatic stop rules/);
   assert.match(prompt, /当前研究 episode 的维护方式/);
   assert.match(prompt, /proxy 异常/);
-  assert.match(stateText, /FIRM_PROJECT_STATE_V4/);
-  assert.match(stateText, /"activeEpisode"/);
-  assert.match(stateText, /"assessment"/);
-  assert.doesNotMatch(stateText, /"promotion"/);
-  assert.doesNotMatch(stateText, /"stage"/);
+  const stateJsonPath = path.join(projectRoot, "PROJECT_STATE.json");
+  const initialState = JSON.parse(fs.readFileSync(stateJsonPath, "utf8"));
+  const comparison = JSON.parse(fs.readFileSync(path.join(projectRoot, "COMPARISON_CONTRACT.json"), "utf8"));
+  assert.equal(identity.state_contract.current_state_source, "PROJECT_STATE.json");
+  assert.deepEqual(initialState.claims, []);
+  assert.equal(initialState.nodes.program.statement, manifest.projects[0].canonicalObject);
+  assert.equal(initialState.nodes.program.parent, null);
+  assert.deepEqual(comparison.user_locked_conditions, []);
+  assert.deepEqual(comparison.comparisons.main.published_competitors, identity.origin.published_method_baselines);
+  assert.equal(comparison.comparisons.main.training_conditions, null);
+  assert.match(stateText, /Generated from PROJECT_STATE.json/);
 
   const validState = spawnSync(process.execPath, [stateValidator, statePath], { encoding: "utf8" });
   assert.equal(validState.status, 0, `stdout=${validState.stdout}\nstderr=${validState.stderr}`);
 
-  const stateJsonMatch = stateText.match(/<!-- FIRM_PROJECT_STATE_V4 -->[\s\S]*?```json\s*([\s\S]*?)\s*```/);
-  assert.ok(stateJsonMatch);
-  const contradictoryState = JSON.parse(stateJsonMatch[1]);
-  contradictoryState.activeEpisode.inheritance.failedPrediction = "";
-  const contradictoryPath = path.join(projectRoot, "PROJECT_STATE_CONTRADICTORY.md");
-  fs.writeFileSync(contradictoryPath, `<!-- FIRM_PROJECT_STATE_V4 -->\n\`\`\`json\n${JSON.stringify(contradictoryState, null, 2)}\n\`\`\`\n`);
-  const invalidState = spawnSync(process.execPath, [stateValidator, contradictoryPath], { encoding: "utf8" });
+  const contradictoryState = structuredClone(initialState);
+  contradictoryState.focus.node_id = "nonexistent";
+  fs.writeFileSync(stateJsonPath, JSON.stringify(contradictoryState));
+  const invalidState = spawnSync(process.execPath, [stateValidator, stateJsonPath], { encoding: "utf8" });
   assert.equal(invalidState.status, 1);
-  assert.match(invalidState.stderr, /inheritance\.failedPrediction/);
+  assert.match(invalidState.stderr, /unknown node/);
+  fs.writeFileSync(stateJsonPath, JSON.stringify(initialState));
 
   // Generation preserves source protocol freedoms; it does not decide comparability.
   const nativeRecipes = structuredClone(manifest);

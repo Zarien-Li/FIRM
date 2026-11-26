@@ -9,6 +9,10 @@ required=(
   CLAUDE-RESEARCH.md
   TRAE-RESEARCH.md
   skills/research-pipeline/references/delegated-task.md
+  skills/research-pipeline/references/research-tree.md
+  skills/research-pipeline/scripts/research_state.py
+  skills/research-pipeline/assets/PROJECT_STATE.template.json
+  skills/research-foundation/assets/COMPARISON_CONTRACT.template.json
   CONTRIBUTING.md
   SECURITY.md
   CHANGELOG.md
@@ -60,6 +64,8 @@ node --check "${ROOT_DIR}/scripts/validate_project_state.mjs"
 node --check "${ROOT_DIR}/scripts/lib/project-contract.mjs"
 PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/validate_skills.py"
 PYTHONDONTWRITEBYTECODE=1 python3 "${ROOT_DIR}/scripts/check-research-contract.py"
+PYTHONDONTWRITEBYTECODE=1 python3 \
+  "${ROOT_DIR}/skills/research-pipeline/tests/test_research_state.py" -v
 PYTHONDONTWRITEBYTECODE=1 python3 \
   "${ROOT_DIR}/skills/research-review/tests/test_evidence_lineage.py" -v
 PYTHONDONTWRITEBYTECODE=1 python3 \

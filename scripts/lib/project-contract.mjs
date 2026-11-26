@@ -9,10 +9,10 @@ the same PI contract; do not duplicate its research workflow or reviewer rules h
 ## Research Authority
 
 Before scientific work, read \`PROGRAM_ORIGIN.md\`, \`PROJECT_IDENTITY.json\`,
-\`SEED.md\`, and \`PROJECT_STATE.md\`. \`PROGRAM_ORIGIN.md\` preserves the
+\`SEED.md\`, \`PROJECT_STATE.json\`, and its comparison contract. \`PROGRAM_ORIGIN.md\` preserves the
 user-authorized arena and canonical object. \`PROJECT_IDENTITY.json\` is its immutable
-structured mirror. \`PROJECT_STATE.md\` is the single current scientific state for the
-project PI, the user, and portfolio tooling. No task list, session summary, review,
+structured mirror. \`PROJECT_STATE.json\` is the sole editable scientific account;
+\`PROJECT_STATE.md\` is its generated human-readable tree view. No task list, session summary, review,
 draft, archive, or identity \`current\` field may compete with it.
 
 \`prompt.txt\`, archives, prior session prose, candidate methods, failure taxonomies,
@@ -31,7 +31,9 @@ sign-off.
 Carry the intended main-table comparison into development and handoffs, not just its
 score vector. Recover its meaning from explicit user instructions, official protocols,
 and baseline artifacts; retain source-linked conditions, permitted freedoms, and unknown
-provenance in the existing comparison record. Consult the active research-foundation
+provenance in \`COMPARISON_CONTRACT.json\`. Bind consequential runs to immutable contract
+snapshots, effective settings and observed deviations; a matching hash proves identity,
+not fairness. Consult the active research-foundation
 baseline reference when changing conditions or deciding which results belong in a table.
 
 The PI may optimize architecture, loss, training, and implementation within those
@@ -91,66 +93,36 @@ research program.
 
 ## PI-Owned Project State
 
-This project's Research PI is the only author of the scientific interpretation in
-\`PROJECT_STATE.md\`. It is the sole current research state, not a state machine or
-permission gate. Maintain it as a replacement-style current synthesis: the program
-compass, strongest evidence and contrary evidence, current construction or empirical-
-contact episode, current candidate judgment if any, latest decisive experiments, and the
-next scientific action.
+Maintain \`PROJECT_STATE.json\` using the active research-pipeline research-tree
+reference and its installed templates/helper. The PI owns its scientific interpretation;
+the Markdown view is generated, not a second narrative to edit. Keep the original
+objective at the root and connect important questions, explanations, principles and
+realizations to supporting and contrary artifacts. Node kinds and branch decisions
+are scientific descriptions, not fixed stages or automatic stop rules.
 
-Keep one active episode as a scientific argument rather than a stage code: natural
-problem, provisional principle, load-bearing locus, strongest published functional and
-mechanistic rivals, discriminating prediction, substrate fidelity, latest evidence,
-and next construction. A successor realization inherits maturity only when it preserves
-the same principle and states the failed prediction, evidence-implicated component
-change, preserved useful behavior, and new discriminating prediction.
+Keep the focus's investment rationale and the parent question that would matter again
+if this implementation fails. Revisit ancestry and relevant alternatives at consequential
+results or commitments; neither a small SOTA gap nor repeated local gains selects the
+branch automatically. A child's failure does not refute a whole family, and a package
+gain does not establish its preferred principle. Preserve valid code and evidence when
+changing the explanation.
 
-Its authority is typed. Verified observations are evidence; explanations, gates,
-thresholds, route choices, paper holds, and next actions are revisable PI
-interpretations. Writing one of those choices into the state does not turn it into a
-user constraint. A binding \`forbidden\`, \`locked\`, \`terminal\`, or equivalent rule
-must cite the exact user or safety source and the object it governs. A registration
-freezes one run, not future construction or the broader program.
+On scientific change, update the affected nodes, goal/claim movement, remaining decisive
+comparisons, next action and manuscript dependencies together. Link raw results and
+execution records instead of copying logs into the tree. Consume completed unread
+results on return, verify them against actual artifacts, and execute the next useful
+authorized action without routine permission. A background launch is not a wakeup path.
 
-At session start, compare \`PROJECT_STATE.md\` against authority, current artifacts, and
-active work rather than copying an old session summary. Update it after a meaningful
-scientific transition and before the next research action: a baseline or full experiment
-is interpreted; the natural problem or explanation changes; a v1, attribution experiment,
-or v2 changes the construction; the primitive changes; evidence is invalidated by an
-implementation or evaluator defect; the blocker or next decisive action changes; or the
-work enters paper harvest. Do not update it for routine reads, downloads, edits, or
-training progress ticks.
+An agent-authored plan, interpretation or hold remains revisable, not a user boundary;
+record actual user-locked conditions with their source. Registration freezes one run,
+not the broader program. Retain the information-flow and full-data requirements of the
+active skills, including training/development/test selection, temporal/cache boundaries
+and evaluator meaning. The campaign manifest owns execution completion only.
 
-Follow the active skills for result interpretation, meaningful progress reporting,
-verified monitoring and recovery, and reconciliation with an existing manuscript.
-Before dependent work, consume completed but unread results and resolve affected stale
-state or paper claims, then execute the prepared, authorized next action without asking
-for routine approval. Distinguish observations from diagnostic explanations and overall
-method gains from evidence for the claimed primitive. A title or draft is not evidence.
-Use the same state to record any unresolved dependency and its
-next action; do not create a second synchronization queue or report file.
-
-Keep only the latest three to five decisive experiment records and link older raw
-provenance. Every retained experiment record must state \`scientificQuestion\`,
-\`comparison\`, \`execution\`, \`result\`, \`interpretation\`, and \`artifacts\`.
-Distinguish infrastructure, implementation, evaluation, and scientific failures; never
-mark infrastructure failure as scientific evidence.
-
-Before the first result guides method choice, record the train/development/test,
-selection, temporal, cache, target, external-signal, and evaluator information flow in
-the run plan. For a multi-run comparison envelope, link one mechanical
-\`CAMPAIGN_MANIFEST.json\`; it owns cell/run/attempt/artifact completion, while this file
-remains the only scientific interpretation.
-
-Keep claim-bearing work faithful to the task, model scale, training regime, information
-boundary, and compute envelope in the seed. A cheaper proxy is diagnostic until the
-incumbent phenomenon and rival ordering are shown to survive there. Do not build a new
-method around an effect created only by shrinking or otherwise changing the substrate.
-
-When the PI's artifact-grounded judgment supports focused maturation, maintain one
-active paper candidate and one principle-predicted expansion campaign. Reconcile stale drafts or alternate method
-identities before new breadth. If a method-owned precondition fails before the primary
-outcome, diagnose or repair the construction on an existing accepted surface when
-possible; do not count it as transfer failure or serially search for an easier dataset.
+For an existing project, reconcile the prior state with authority and decisive artifacts,
+preserve it as referenced history, then migrate once to the tree and generated view.
+Do not fabricate missing history, overwrite live work, or automatically restart sessions.
+When a paper candidate becomes supported, carry its coherent contribution through
+submission readiness while keeping unresolved comparisons and manuscript updates visible.
 `;
 }

@@ -38,3 +38,9 @@ and parsed outputs still require scientific validity before the PI relies on the
 
 Mechanical records establish what ran and what artifacts completed. The PI interprets
 what those artifacts mean.
+Bind consequential runs to the research-tree node and immutable comparison-contract
+snapshot, with actual effective configuration and deviations, following
+[research-tree.md](../research-pipeline/references/research-tree.md). Completion does
+not close the scientific question: deliver the actual comparison and unread evidence
+to the PI, who reconciles the branch, claim movement and next action before relying
+on it. A successful monitor or validator never awards scientific progress.

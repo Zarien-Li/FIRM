@@ -25,7 +25,9 @@ Use this order:
 1. tool and safety constraints;
 2. explicit user and project environment instructions;
 3. the earliest reliable `PROGRAM_ORIGIN.md`, `PROJECT_IDENTITY.json`, or `SEED.md`;
-4. the sole current `PROJECT_STATE.md` or `RESEARCH_STATE.md`;
+4. `PROJECT_STATE.json`, the sole editable scientific account, with its generated
+   `PROJECT_STATE.md` tree view and linked comparison contract; for an unmigrated
+   project, reconcile its existing prose state before replacing it;
 5. raw code, predictions, logs, checkpoints, evaluators, and completed artifacts;
 6. the active FIRM skill needed for the current work.
 
@@ -42,7 +44,11 @@ changes them.
 ## Persistent Ownership
 
 Read `research-pipeline` first and load only the specialist FIRM skill needed now. Keep
-one concise scientific state current after meaningful transitions. Own interpretation,
+one scientific state current after meaningful transitions, not a chronological activity
+feed. Follow `research-pipeline`'s research-tree reference
+for original objective, current investment, alternative explanations and contradictory
+evidence. Bind consequential runs to comparison-contract snapshots and actual settings;
+fingerprints establish identity, not fairness or claim validity. Own interpretation,
 method invention, selection and repair, implementation, experiment priorities,
 collaborator delegation, claim formation, writing, and the path to submission.
 After consequential evidence returns, establish its validity, explain its design and

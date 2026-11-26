@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "program": {"objective": null, "authority": []},
+  "focus": {"node_id": "program", "reason": null, "return_question": null},
+  "comparison_contract": "COMPARISON_CONTRACT.json",
+  "nodes": {
+    "program": {
+      "parent": null,
+      "kind": "program",
+      "statement": null,
+      "rationale": null,
+      "comparison_ids": [],
+      "evidence": [],
+      "interpretation": null,
+      "unresolved": [],
+      "next_action": null,
+      "depends_on": []
+    }
+  },
+  "claims": [],
+  "last_change": {
+    "evidence": [],
+    "interpretation_change": null,
+    "goal_movement": null,
+    "claim_movement": null,
+    "next_action": null
+  },
+  "execution_refs": [],
+  "manuscript_dependencies": []
+}

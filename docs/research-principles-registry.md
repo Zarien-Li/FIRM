@@ -10,7 +10,7 @@ to its canonical skill owner; runtime skills should not restate this registry.
 |---|---|---|
 | P01 | Preserve the user-defined original program separately from the current paper candidate. | `research-pipeline` |
 | P02 | Only explicit user instructions, safety rules, and live operational limits create binding constraints; agent and reviewer language remains interpretation. | `research-control-protocol.md` |
-| P03 | Keep one concise authoritative `PROJECT_STATE.md`; project-status sidecars, identity current fields, tasks, memory, drafts, and reviews cannot become competing constitutions. | `research-pipeline` |
+| P03 | Keep `PROJECT_STATE.json` as the sole editable scientific tree and generate `PROJECT_STATE.md` for readers; sidecars, drafts and task lists cannot become competing constitutions. | `research-pipeline` |
 | P04 | Re-anchor from current instructions and raw artifacts before replacing a session; compaction and old stop language are not evidence. | `collaboration.md` |
 
 ## Value And Empirical Contact

@@ -1,7 +1,8 @@
 # Reliable Multi-Run Campaigns
 
 Use when several cells, workers, baselines, datasets, models, or seeds form one evidence
-envelope. Keep scientific interpretation in `PROJECT_STATE.md`; the campaign manifest
+envelope. Keep scientific interpretation in `PROJECT_STATE.json` and its generated
+tree view; the campaign manifest
 records execution only.
 
 ## One Mechanical Manifest
@@ -17,6 +18,9 @@ A completed cell must identify its exact run and command/config, attempt-specifi
 artifacts, and validated terminal marker. Metrics may live in artifacts; interpretation
 does not belong in the manifest. The script's statuses coordinate execution and carry
 no scientific authority.
+Map each consequential cell to its comparison ID, pinned contract snapshot and research
+node through its canonical run record. Do not use execution fingerprints as proof of
+scientific comparability or substitute a new campaign for the commissioned comparison.
 
 ## Concurrency Invariants
 

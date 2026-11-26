@@ -39,7 +39,10 @@ what assumption these observations put in doubt and which unresolved difference
 could change the design. A ranking alone does not locate a problem worth solving.
 If the comparison cannot distinguish explanations, pass on that uncertainty and
 the relevant cases, not a named failure or a proposed method. Preserve the main-table
-conditions; diagnostic freedom does not redefine them.
+conditions in `COMPARISON_CONTRACT.json`; diagnostic freedom does not redefine them.
+Link formal runs and table cells to its versioned comparison identities, actual
+settings and deviations using the shared
+[research memory protocol](../research-pipeline/references/research-tree.md).
 
 ## Keep The Research Decision In Context
 

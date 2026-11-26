@@ -137,6 +137,15 @@ incumbents, first contact, `v1 -> v2`, contribution type, or paper route into ma
 steps. The prompt transfers scientific ownership; the skills supply capabilities; the
 project PI decides the research route.
 
+Initialize `PROJECT_STATE.json` from the pipeline's research-tree template and render
+`PROJECT_STATE.md` from it; do not generate a second editable prose state or invent a
+principle, failure, or claimed maturity. Initialize `COMPARISON_CONTRACT.json` from the
+foundation template with the known source map and explicit unresolved conditions.
+Generation cannot certify fair comparison, turn a suggested protocol into a user lock,
+or fill unknown training/evaluation conditions. The PI resolves them from authority
+and artifacts. See `research-pipeline/references/research-tree.md` for migration and
+run bindings; the renderer and installed skills share these exact templates.
+
 Neither the manifest nor rendered files may state that the project continues only if
 the non-binding lens or first empirical contact succeeds. Do not create durable
 thresholds, transfer quotas, dataset-count requirements, or stop language. A gate may

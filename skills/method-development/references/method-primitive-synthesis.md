@@ -207,6 +207,15 @@ readiness rather than stopping at the win fraction.
 
 ## Cultivate One Construction Arc
 
+Keep this arc in the research tree defined by the pipeline's `research-tree.md`.
+Distinguish the original problem, the current governing explanation/principle, and
+its realizations. Read the active path and relevant alternatives when choosing a
+consequential successor. Explain what evidence warrants continued optimization,
+returning to the parent question, or replacing a principle; do not use a leaderboard
+loss to collapse all three levels or let sunk implementation effort protect a broken
+premise. Compare remaining opportunity and primitive-dependent benefit against the
+best supported alternative. No fixed failure count, margin, or branch score decides it.
+
 Keep the consequential problem and accumulated lessons connected across versions.
 Explain what the previous realization taught, what changes now, what useful behavior
 is retained, and what this attempt can reveal. The governing principle may be refined
@@ -292,7 +301,7 @@ when no faithful contrast exists. Honest scope still has to serve the original p
 
 ## Durable Construction Note
 
-Use the live project state for a compact arc. Create `METHOD_PRIMITIVE.md` only when
+Use the live research tree for the compact arc. Create `METHOD_PRIMITIVE.md` only when
 multi-actor coordination needs a durable account. Include the research basis, problem
 model, principle, central design question, realization history, component jobs, rival
 gap, utility contract, bill of materials, method debt, supported expansion, and next

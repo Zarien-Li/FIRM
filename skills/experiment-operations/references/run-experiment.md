@@ -15,8 +15,12 @@ For every run retain:
 - attempt-specific log, result, checkpoint, completion/failure marker, and resume paths;
 - actual resource use, protocol deviations, and conclusions those deviations exclude.
 
-Link a main-table run to its existing comparison specification and record the effective
-settings, including defaults inherited from loaders, native scripts and evaluators.
+Link a consequential run to its research node, comparison ID, and immutable
+`COMPARISON_CONTRACT.json` snapshot/hash. Capture and fingerprint effective settings,
+including defaults inherited from loaders, native scripts and evaluators. Preserve
+deviations as expected/observed conditions and their scientific consequence. Use the
+pipeline's `research_state.py bind-run` on an existing JSON run record, or record the
+same binding in the established tracker; do not create a competing run registry.
 Verify the mapping on the real path when it changes. A run can faithfully execute its
 own spec and still be outside the main table's conditions; label and deliver that fact
 rather than treating a successful exit as authority to fill the cell. The comparison
@@ -133,6 +137,10 @@ run record, raw paths, engagement and evaluator evidence, headline values, and u
 anomalies to the PI. Distinguish execution completion from evidence validity and PI
 interpretation; do not mark unscored or unvalidated work ready for comparison. Only the
 PI updates scientific state after reading the evidence.
+Return what comparison was actually delivered, not just its exit status. The PI links
+the result to the affected research-tree node and explains goal/claim movement and the
+remaining decisive comparison. Unresolved deviations remain visible; launch success,
+matching fingerprints and run completion do not decide table eligibility.
 
 For a matrix, reconcile completed, partial, incompatible, and unresolved cells with the
 chosen comparison plan and its table sources. Explain coverage gaps and preserve the

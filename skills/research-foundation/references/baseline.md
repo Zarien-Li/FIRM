@@ -112,8 +112,10 @@ These are comparison plans, not a fabricated manuscript or evidence of paper mat
 Keep native and adapted protocols visibly distinct. Populate results from validated
 artifacts through the existing table entrypoint, not manual transcription.
 
-Use the existing baseline/comparison record, or `BASELINE_REPRO.md` when one is needed,
-as the source for both numbers and their evaluation meaning. Connect table cells to
+Use `COMPARISON_CONTRACT.json` as the versioned source of evaluation meaning, and
+validated run artifacts as the source of numbers. Use the existing baseline record
+or `BASELINE_REPRO.md` for source-backed behavioral and reproduction findings; do not
+maintain a conflicting protocol copy there. Connect table cells to
 stable campaign/run identities and record source-backed selection, adaptations,
 incompatibilities, and unresolved details there; do not create another independent
 live project state. Plan forecast and execution through `experiment-plan` and
@@ -124,8 +126,8 @@ reading, not only a launch or a set of checkpoints.
 
 Recover the intended main-table comparison from explicit user instructions, the accepted
 benchmark protocol, and the baseline artifacts. A frozen CSV or score vector alone is
-not an evaluation contract. Keep enough source-linked meaning in the existing comparison
-record to know what each cell measures: input information/context and model regime;
+not an evaluation contract. Keep enough source-linked meaning in the comparison
+contract to know what each cell measures: input information/context and model regime;
 data revision, preprocessing, split and eligible population; task/target/horizon;
 evaluator, metric units, aggregation and failure handling; checkpoint/variant selection
 and any agreed resource or tuning conditions. Record what remains unknown instead of
@@ -171,6 +173,13 @@ binding unless the user changes it. Do not treat revising an agent-authored plan
 new human approval requirement, nor silently replace a commissioned main comparison
 with the diagnostic one. Missing protocol provenance leaves the affected comparison
 unresolved, not the whole research program blocked or all completed evidence invalid.
+Use the comparison template and immutable run bindings in
+[research-tree.md](../../research-pipeline/references/research-tree.md). Record actual
+departures beside the result as expected condition, observed condition, and consequence.
+Changing a backbone, retrieval source, or training class can be a method treatment or a
+different scientific comparison; explain which, rather than imposing a field-name stop
+rule. While unresolved, retain the run's diagnostic value but do not merge its wins into
+the commissioned table. Preserve prior contracts rather than editing their history.
 
 ## Use Complete Official Data Protocols
 
@@ -269,6 +278,13 @@ still change and whether another faithful route provides the needed evidence. Ke
 necessary decisive rival even when expensive; defer comparators that add coverage but
 cannot affect the current decision. Neither a fixed paper quota nor a universal
 GPU-hour cutoff decides this tradeoff.
+If a decisive published baseline remains too expensive, retain that comparison debt.
+Seek a faithful implementation, compatible reusable artifacts, or a genuinely cheaper
+equivalent execution path. If none fits, the PI requests the actual resource gap or
+proposes an honest claim/comparison revision without silently replacing the commission.
+A homemade solver, incomplete port, or cheaper proxy cannot inherit the published
+method's name or main-table standing. Development can continue, but cannot erase that
+missing decisive rival or treat its unmeasured score as beaten.
 
 ## Read Behavior, Not Only Scores
 

@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased - 2026-11-26
+
+- Replace prose-only scientific state with one PI-owned research tree in
+  `PROJECT_STATE.json` and a generated Markdown view. Preserve competing explanations,
+  contrary evidence, branch rationale, goal/claim movement and unresolved comparisons.
+- Bind consequential runs to immutable comparison-contract snapshots, effective
+  configurations and explicit deviations. Hash checks establish identity, not fairness.
+- Preserve faithful-baseline obligations when cost blocks execution; proxies cannot
+  replace published methods or inherit their main-table standing.
+- Align project generation, local contracts, startup templates and both host prompts.
+  Unknown science stays unknown; existing projects require evidence-led reconciliation,
+  not automatic migration. Add structural tooling and tests without research-policy
+  thresholds, branch selection algorithms or new approval gates.
+
 ## 1.4.1 - 2026-10-13
 
 - Preserve each baseline main table's evaluation meaning throughout method development,

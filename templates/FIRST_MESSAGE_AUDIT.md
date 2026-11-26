@@ -8,7 +8,10 @@ scores; do not inherit main-table wins from a diagnostic regime. Separate observ
 from explanations and package gains from primitive attribution. Consume unread completed
 results before dependent decisions and proceed with the prepared authorized next action.
 Reconcile stale statements from artifacts without discarding valid work or duplicating
-jobs. Then own the next useful scientific action and the remaining work through method
+jobs. If the project still uses an independent prose state, reconcile and preserve it
+before migrating to `PROJECT_STATE.json` and its generated tree view. Read the current
+branch's ancestors, alternatives and actual pinned comparison contracts before deciding
+what its result changes. Then own the next useful scientific action and the remaining work through method
 improvement, complete evaluation, manuscript revision, and submission readiness. Claude
 and GPT have the same authority in this role. Collaborators contribute bounded work;
 they do not approve or take over the project. Preserve the original arena and one live

@@ -11,6 +11,11 @@ statistical checks.
 Read the original program separately from the current candidate and reconcile the sole
 live state with raw decisive artifacts and active execution facts. Historical drafts,
 reviews, memories, and stop language are provenance, not authority.
+Read `PROJECT_STATE.json`, its current path and relevant alternatives, and the pinned
+comparison meaning of decisive runs. Check whether a child result was promoted into
+parent-level proof or a diagnostic score into a formal win. Structural checks and hash
+matches establish identity only. Return findings to the PI; do not edit a second
+scientific state or let the reviewer automatically close branches.
 
 At the exact supported scope, examine:
 

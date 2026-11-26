@@ -37,16 +37,23 @@ the commissioned comparison or its measured win count. `research-foundation` own
 comparison meaning; preserve it during method optimization and after handoff, rather
 than discovering at paper assembly that the method was developed for another regime.
 
-Maintain one concise `PROJECT_STATE.md` or `RESEARCH_STATE.md` for both PI and user.
-Replace its synthesis after meaningful scientific change while linking raw artifacts.
-It should make the current question, strongest evidence and contradiction, problem
-account, construction lineage, frontier, live uncertainty, next action, and any paper
-argument recoverable without replaying the conversation.
+Maintain `PROJECT_STATE.json` as the sole editable scientific state, with
+`PROJECT_STATE.md` as its generated human-readable tree. Use
+[research-tree.md](references/research-tree.md) and its templates/helper when initializing,
+migrating, or updating that memory. Preserve the original objective at the root, relate
+questions, explanations, principles and implementations without a mandatory node
+taxonomy, and record why the current branch deserves investment. Read its ancestry,
+relevant alternatives and contrary evidence before consequential commitments. Link
+the comparison contract, raw evidence, execution records and manuscript dependencies;
+do not flatten all of these into a chronological activity summary.
 
 When decisive evidence changes, reconcile the affected question, method maturity,
 paper argument, next action, and execution account together. Check the facts being
 changed against current artifacts; a prior summary or newer timestamp is not validation.
 Preserve superseded reasoning through artifact links, not competing live narratives.
+Migration must reconcile old prose with original authority and decisive artifacts;
+do not infer a supported research tree from the last session's confidence. Preserve
+the old account as history and retain live jobs without restarting them.
 
 ## Carry Results Through To Decisions
 
@@ -77,6 +84,9 @@ the intended task. If another variant would only extend a stalled arc, reconside
 the explanation or read the strongest residual failure first. Read related runs
 together when they explain an interaction; a new result need not trigger a new
 method, a wider campaign, or a full paper table.
+Record whether the result changed the original-goal gap or a supported claim, which
+decisive comparison remains, and why the next action follows. Learning without claim
+movement is legitimate. A diagnostic win or a completed run is not a formal win.
 
 For an existing manuscript, adoption or invalidation of evidence includes reconciling
 the affected method, tables, figures, and prose through `paper-writing`. If a dependent
@@ -98,8 +108,9 @@ available, without inventing budgets or bypassing its stop conditions. Persisten
 also requires a real execution and notification path, owned by `experiment-operations`.
 
 Keep the user informed of meaningful changes in question, result, obstacle, next action,
-or readiness, in a short research-oriented explanation. During long work, match update
-cadence to the user's preference and the time until useful feedback; avoid both silent
+or readiness, in a short research-oriented explanation. Explain what moved, what did
+not, and what remains decisive, rather than counting launches or variants. During long
+work, match update cadence to the user's preference and the time until useful feedback; avoid both silent
 multi-stage work and repeated unchanged logs. When yielding for a dependency, give its
 identity, last verified progress, remaining work, and how work will resume. Never claim
 automatic resumption without an installed, checked mechanism.

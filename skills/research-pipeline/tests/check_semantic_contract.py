@@ -25,6 +25,7 @@ PI_ENTRY = PI / "SKILL.md"
 PI_REFERENCES = {
     "collaboration.md",
     "delegated-task.md",
+    "research-tree.md",
 }
 LINK_RE = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 

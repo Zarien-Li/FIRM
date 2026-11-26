@@ -6,6 +6,10 @@ Debugging, smoke tests, and early construction may use the ordinary run record.
 
 Registration freezes the scientific meaning of one run. It does not freeze the living
 program, method family, paper identity, or permission to redesign.
+This run registration is not the project's comparison contract. Reference the intended
+comparison ID, immutable contract snapshot/hash, and research-tree node instead of
+copying another live protocol. The actual run record later binds resolved settings
+and deviations; a forecast cannot certify what executed.
 
 ## Register Before Launch
 

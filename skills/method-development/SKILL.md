@@ -81,4 +81,9 @@ draft completes this responsibility.
 
 Read more than one reference when the live research episode genuinely couples those
 jobs. Preserve the full construction lineage and return the scientific synthesis to the
-single project state; do not create parallel method identities or procedural gates.
+single project's research tree; do not create parallel method identities or procedural gates.
+Use [research-tree.md](../research-pipeline/references/research-tree.md) to distinguish
+the enduring problem, current explanation/principle, and implementation branches.
+Update why the focus remains worth improving or why a parent question now needs a
+different answer. Neither one loss to SOTA nor a long sequence of local gains makes
+that decision automatically.

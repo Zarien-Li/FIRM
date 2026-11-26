@@ -181,7 +181,13 @@ identity for the project.
 
 ## Durable Output
 
-Keep ordinary observations in the existing state or notebook:
+Keep ordinary raw observations in the existing notebook/run artifacts. Interpret
+consequential observations in their research-tree nodes, linking supporting and contrary
+artifacts rather than copying a trace. Explain whether the result changes this
+implementation, the governing principle, or the parent question; uncertainty at one
+level must not become a conclusion at another. The tree's `last_change` carries the
+goal/claim movement and remaining decisive comparison. A useful interpretation can
+leave the claim unchanged. For a compact observation artifact, use:
 
 ```markdown
 ## Observation
